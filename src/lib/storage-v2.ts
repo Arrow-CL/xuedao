@@ -13,6 +13,7 @@ import type {
   ChapterProgress,
   QuestionRecord,
 } from "@/lib/types";
+import { getChapterScore } from "@/data/chapter-scores";
 
 // ---------------------------------------------------------------------------
 // 常量
@@ -336,18 +337,21 @@ export function clearReviewBoard(chapterId: string): void {
  * - chaptersCleared          已通关章节数
  * - totalKnowledgePointsCovered  已覆盖知识点总数（去重）
  * - streakDays               当前连续学习天数
+ * - masteredScore           已掌握的高考分数（仅已通关章节）
  */
 export function getStudyStats(): {
   totalQuestionsCompleted: number;
   chaptersCleared: number;
   totalKnowledgePointsCovered: number;
   streakDays: number;
+  masteredScore: number;
 } {
   const progress = getProgress();
 
   let totalQuestionsCompleted = 0;
   let chaptersCleared = 0;
   const allKnowledgePoints = new Set<string>();
+  let masteredScore = 0;
 
   for (const chapterId of Object.keys(progress.chapters)) {
     const chapter = progress.chapters[chapterId];
@@ -365,10 +369,58 @@ export function getStudyStats(): {
     }
   }
 
+  // 计算已掌握分数
+  for (const chapterId of Object.keys(progress.chapters)) {
+    if (progress.chapters[chapterId].isCleared) {
+      masteredScore += getChapterScore(chapterId);
+    }
+  }
+
   return {
     totalQuestionsCompleted,
     chaptersCleared,
     totalKnowledgePointsCovered: allKnowledgePoints.size,
     streakDays: progress.streakDays,
+    masteredScore,
+  };
+}
+
+/**
+ * 记录章节梳理完成
+ * - 更新 lastReviewTimestamp 为当前时间
+ * - reviewCount + 1
+ */
+export function recordReviewComplete(chapterId: string): void {
+  const progress = getProgress();
+
+  if (!progress.chapters[chapterId]) {
+    progress.chapters[chapterId] = {
+      chapterId,
+      completedQuestionIds: [],
+      coveredKnowledgePointIds: [],
+      isCleared: false,
+      totalAttempted: 0,
+    };
+  }
+
+  progress.chapters[chapterId].lastReviewTimestamp = Date.now();
+  progress.chapters[chapterId].reviewCount = (progress.chapters[chapterId].reviewCount ?? 0) + 1;
+
+  saveProgress(progress);
+}
+
+/**
+ * 获取某章节的梳理信息
+ */
+export function getChapterReviewInfo(chapterId: string): {
+  lastReviewTimestamp?: number;
+  reviewCount: number;
+} {
+  const progress = getProgress();
+  const chapter = progress.chapters[chapterId];
+  if (!chapter) return { reviewCount: 0 };
+  return {
+    lastReviewTimestamp: chapter.lastReviewTimestamp,
+    reviewCount: chapter.reviewCount ?? 0,
   };
 }

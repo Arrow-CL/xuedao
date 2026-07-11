@@ -107,6 +107,10 @@ export interface ChapterProgress {
   isCleared: boolean;
   /** 通关时间戳（通关后才有） */
   clearedAt?: number;
+  /** 上次知识梳理时间戳（ms），用于分数衰减 */
+  lastReviewTimestamp?: number;
+  /** 梳理次数，用于梳理深度等级 */
+  reviewCount?: number;
 }
 
 /** 全局用户进度 */

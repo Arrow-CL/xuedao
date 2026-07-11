@@ -21,6 +21,7 @@ interface ReviewRequest {
   chatHistory: { role: string; content: string }[];
   coveredUnits: string[];
   completedQuestions: CompletedQuestionInfo[];
+  reviewCount?: number; // 梳理次数，用于调整深度
 }
 
 function buildReviewPrompt(
@@ -28,6 +29,7 @@ function buildReviewPrompt(
   units: { id: string; name: string }[],
   coveredUnits: string[],
   completedQuestions: CompletedQuestionInfo[],
+  reviewCount: number = 0,
 ): string {
   const unitList = units
     .map((u, i) => `${i + 1}. ${u.id}: ${u.name}${coveredUnits.includes(u.id) ? " ✓" : ""}`)
@@ -78,6 +80,12 @@ ${questionData}
    - 如果该知识点对应的题目全部✅一次做对，要说"你在第X题做得很好，对这个知识点理解很到位。"
 4. 板书同步：第一次提到知识点时就板书
 
+【梳理深度——第${reviewCount}次梳理】
+${reviewCount === 0 ? `这是第一次梳理，按标准流程带学生过一遍知识点。` : ""}
+${reviewCount === 1 ? `这是第二次梳理，可以适当加深：引导学生回忆而不是直接给公式，检查薄弱环节。` : ""}
+${reviewCount >= 2 && reviewCount < 3 ? `这是第三次梳理，请关联跨章节知识，比如提到三角函数时关联函数单调性，提到导数时关联函数图像。` : ""}
+${reviewCount >= 3 ? `这是第${reviewCount}次梳理，请出1-2道综合题检验学生掌握程度。题目要跨知识点，比平时做的题更有挑战性。` : ""}
+
 【梳理流程——严格遵守】
 首次梳理某知识点时：
 1. 引用具体题号，1-2句话带出知识点，加个性化反馈（做对/做错）
@@ -122,6 +130,7 @@ export async function POST(req: NextRequest) {
       chatHistory = [],
       coveredUnits = [],
       completedQuestions = [],
+      reviewCount = 0,
     }: ReviewRequest = await req.json();
 
     if (!chapterId || !studentInput || !units || units.length === 0) {
@@ -136,6 +145,7 @@ export async function POST(req: NextRequest) {
       units,
       coveredUnits,
       completedQuestions,
+      reviewCount,
     );
 
     const apiMessages = [

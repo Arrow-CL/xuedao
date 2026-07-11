@@ -32,6 +32,8 @@ import {
   X,
   PenLine,
   ChevronDown,
+  Bot,
+  User,
 } from "lucide-react";
 
 /* ------------------------------------------------------------------ */
@@ -247,6 +249,36 @@ function parseStepTag(reply: string): {
 /* ------------------------------------------------------------------ */
 /*  Inner solve component (needs useSearchParams inside Suspense)       */
 /* ------------------------------------------------------------------ */
+
+/** 纸屑庆祝动画组件 */
+function ConfettiCelebration() {
+  const [particles] = useState(() =>
+    Array.from({ length: 30 }).map((_, i) => ({
+      id: i,
+      left: Math.random() * 100,
+      delay: Math.random() * 0.8,
+      color: ["bg-yellow-400", "bg-indigo-400", "bg-green-400", "bg-pink-400", "bg-orange-400"][i % 5],
+      size: Math.random() * 6 + 4,
+    }))
+  );
+
+  return (
+    <div className="confetti-container">
+      {particles.map((p) => (
+        <div
+          key={p.id}
+          className={`absolute top-0 ${p.color} rounded-sm animate-confetti`}
+          style={{
+            left: `${p.left}%`,
+            width: `${p.size}px`,
+            height: `${p.size}px`,
+            animationDelay: `${p.delay}s`,
+          }}
+        />
+      ))}
+    </div>
+  );
+}
 
 function SolveContent() {
   const searchParams = useSearchParams();
@@ -712,25 +744,26 @@ function SolveContent() {
           </div>
         </div>
 
-        {/* Cleared state */}
+        {/* Cleared state with celebration */}
         <div className="flex-1 flex flex-col items-center justify-center px-4">
-          <div className="text-center max-w-md">
-            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center mx-auto mb-6 shadow-lg">
-              <Trophy size={36} className="text-white" />
+          <div className="text-center max-w-md animate-celebrate">
+            {/* Trophy with glow effect */}
+            <div className="w-24 h-24 rounded-3xl bg-gradient-to-br from-yellow-400 via-orange-400 to-amber-500 flex items-center justify-center mx-auto mb-6 shadow-xl shadow-amber-200/50">
+              <Trophy size={42} className="text-white" />
             </div>
-            <h2 className="text-xl font-bold text-gray-900 mb-2">
+            <h2 className="text-2xl font-extrabold text-gray-900 mb-2">
               章节通关
             </h2>
             <p className="text-sm text-gray-500 mb-1">
               {chapterName}
             </p>
-            <p className="text-sm text-gray-500 mb-6">
+            <p className="text-sm text-gray-500 mb-8">
               你已完成 {completedCount} 道题，知识点覆盖率达 {coveragePercent}%
             </p>
             <div className="flex gap-3 justify-center">
               <button
                 onClick={() => router.push("/")}
-                className="px-5 py-2.5 bg-indigo-500 text-white rounded-xl text-sm font-medium hover:bg-indigo-600 transition-colors flex items-center gap-2"
+                className="px-6 py-2.5 bg-indigo-500 text-white rounded-xl text-sm font-medium hover:bg-indigo-600 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center gap-2 shadow-sm"
               >
                 <Map size={16} />
                 返回学习地图
@@ -738,6 +771,9 @@ function SolveContent() {
             </div>
           </div>
         </div>
+
+        {/* Confetti celebration */}
+        <ConfettiCelebration />
       </div>
     );
   }
@@ -755,30 +791,41 @@ function SolveContent() {
   }
 
   /* ---------- Solve mode ---------- */
+  const solveProgressPercent = totalQuestions > 0 ? Math.round((completedCount / totalQuestions) * 100) : 0;
+
   return (
     <div className="h-screen bg-gray-50 flex flex-col">
-      {/* ---- Top bar ---- */}
-      <div className="shrink-0 bg-white border-b border-gray-100 px-4 py-2.5">
-        <div className="max-w-4xl mx-auto flex items-center justify-between gap-2">
-          <div className="flex items-center gap-2 min-w-0">
-            <button
-              onClick={() => router.push("/")}
-              className="shrink-0 p-1.5 rounded-lg hover:bg-gray-100 transition-colors text-gray-500"
-              title="返回学习地图"
-            >
-              <ArrowLeft size={18} />
-            </button>
-            <div className="min-w-0">
-              <h2 className="text-sm font-semibold text-gray-900 truncate">
-                {chapterName}
-              </h2>
-              <p className="text-[11px] text-gray-400 truncate">
-                第 {questionIndex} 题 / 已完成 {completedCount} 题
-              </p>
+      {/* ---- Top bar with progress ---- */}
+      <div className="shrink-0 bg-white">
+        {/* Thin progress bar */}
+        <div className="w-full h-0.5 bg-gray-100">
+          <div
+            className="h-full bg-indigo-500 transition-all duration-500"
+            style={{ width: `${solveProgressPercent}%` }}
+          />
+        </div>
+        <div className="px-4 py-2.5">
+          <div className="max-w-4xl mx-auto flex items-center justify-between gap-2">
+            <div className="flex items-center gap-2 min-w-0">
+              <button
+                onClick={() => router.push("/")}
+                className="shrink-0 p-1.5 rounded-lg hover:bg-gray-100 transition-colors text-gray-500"
+                title="返回学习地图"
+              >
+                <ArrowLeft size={18} />
+              </button>
+              <div className="min-w-0">
+                <h2 className="text-sm font-semibold text-gray-900 truncate">
+                  {chapterName}
+                </h2>
+                <p className="text-[11px] text-gray-400 truncate">
+                  第 {questionIndex} 题 / 已完成 {completedCount} 题
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="shrink-0 text-xs text-gray-400 bg-gray-50 px-2.5 py-1 rounded-lg border border-gray-100">
-            {completedCount} / {totalQuestions} 题
+            <div className="shrink-0 text-xs text-gray-500 bg-indigo-50 px-2.5 py-1 rounded-lg border border-indigo-100 font-medium">
+              {completedCount} / {totalQuestions}
+            </div>
           </div>
         </div>
       </div>
@@ -886,13 +933,18 @@ function SolveContent() {
               {chat.map((m, i) => (
                 <div
                   key={i}
-                  className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}
+                  className={`flex gap-2 ${m.role === "user" ? "justify-end" : "justify-start"}`}
                 >
+                  {m.role === "assistant" && (
+                    <div className="shrink-0 w-7 h-7 rounded-full bg-indigo-100 flex items-center justify-center mt-0.5">
+                      <Bot size={14} className="text-indigo-500" />
+                    </div>
+                  )}
                   <div
-                    className={`max-w-[85%] rounded-2xl px-3.5 py-2.5 ${
+                    className={`max-w-[80%] rounded-2xl px-3.5 py-2.5 ${
                       m.role === "user"
-                        ? "bg-indigo-500 text-white"
-                        : "bg-white text-gray-800 border border-gray-100"
+                        ? "bg-indigo-500 text-white rounded-br-md"
+                        : "bg-white text-gray-800 border border-gray-100 shadow-sm rounded-bl-md"
                     }`}
                   >
                     <div className="whitespace-pre-wrap text-sm leading-relaxed">
@@ -913,11 +965,19 @@ function SolveContent() {
                       )}
                     </div>
                   </div>
+                  {m.role === "user" && (
+                    <div className="shrink-0 w-7 h-7 rounded-full bg-gray-200 flex items-center justify-center mt-0.5">
+                      <User size={14} className="text-gray-500" />
+                    </div>
+                  )}
                 </div>
               ))}
               {processing && (
-                <div className="flex justify-start">
-                  <div className="bg-white border border-gray-100 rounded-2xl px-3.5 py-2.5 text-gray-400 text-sm">
+                <div className="flex gap-2 justify-start">
+                  <div className="shrink-0 w-7 h-7 rounded-full bg-indigo-100 flex items-center justify-center mt-0.5">
+                    <Bot size={14} className="text-indigo-500" />
+                  </div>
+                  <div className="bg-white border border-gray-100 shadow-sm rounded-2xl rounded-bl-md px-3.5 py-2.5 text-gray-400 text-sm">
                     思考中...
                   </div>
                 </div>
@@ -944,14 +1004,14 @@ function SolveContent() {
                 <div className="flex gap-2">
                   <button
                     onClick={nextQuestion}
-                    className="flex-1 py-2.5 bg-indigo-500 text-white rounded-xl text-sm font-medium hover:bg-indigo-600 transition flex items-center justify-center gap-2"
+                    className="flex-1 py-2.5 bg-indigo-500 text-white rounded-xl text-sm font-medium hover:bg-indigo-600 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 shadow-sm"
                   >
                     <BookOpen size={16} />
                     下一题
                   </button>
                   <button
                     onClick={() => router.push("/")}
-                    className="flex-1 py-2.5 bg-gray-100 text-gray-700 rounded-xl text-sm font-medium hover:bg-gray-200 transition flex items-center justify-center gap-2"
+                    className="flex-1 py-2.5 bg-gray-100 text-gray-700 rounded-xl text-sm font-medium hover:bg-gray-200 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2"
                   >
                     <Map size={16} />
                     返回地图
@@ -964,7 +1024,7 @@ function SolveContent() {
                     <button
                       onClick={() => sendMessage("我不会", true)}
                       disabled={processing}
-                      className="flex items-center gap-1 px-3 py-1.5 bg-red-50 text-red-600 rounded-lg text-xs hover:bg-red-100 transition disabled:opacity-50 border border-red-100"
+                      className="flex items-center gap-1 px-3 py-1.5 bg-red-50 text-red-600 rounded-lg text-xs hover:bg-red-100 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 border border-red-100"
                     >
                       <HelpCircle size={14} />
                       我不会
@@ -972,7 +1032,7 @@ function SolveContent() {
                     <button
                       onClick={() => sendMessage("给我点提示", false)}
                       disabled={processing}
-                      className="flex items-center gap-1 px-3 py-1.5 bg-yellow-50 text-yellow-600 rounded-lg text-xs hover:bg-yellow-100 transition disabled:opacity-50 border border-yellow-100"
+                      className="flex items-center gap-1 px-3 py-1.5 bg-yellow-50 text-yellow-600 rounded-lg text-xs hover:bg-yellow-100 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 border border-yellow-100"
                     >
                       <Lightbulb size={14} />
                       要提示
@@ -1008,7 +1068,7 @@ function SolveContent() {
                     <button
                       onClick={() => fileInputRef.current?.click()}
                       disabled={processing}
-                      className="p-2 text-gray-400 hover:text-indigo-500 hover:bg-indigo-50 rounded-xl transition disabled:opacity-50"
+                      className="p-2 text-gray-400 hover:text-indigo-500 hover:bg-indigo-50 rounded-xl transition-all disabled:opacity-50 hover:scale-105 active:scale-95"
                       title="上传图片"
                     >
                       <ImagePlus size={20} />

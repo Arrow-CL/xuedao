@@ -11,6 +11,8 @@ import {
   clearReviewBoard,
   getChapterErrorRecords,
   getChapterCompletedQuestions,
+  getChapterReviewInfo,
+  recordReviewComplete,
   type ReviewBoardEntry,
 } from "@/lib/storage-v2";
 import { ArrowLeft, Send, Trash2, BookOpen } from "lucide-react";
@@ -78,6 +80,7 @@ function ReviewContent() {
   const [board, setBoard] = useState<ReviewBoardEntry[]>([]);
   const [coveredUnits, setCoveredUnits] = useState<Set<string>>(new Set());
   const [initialized, setInitialized] = useState(false);
+  const [reviewCount, setReviewCount] = useState(0);
 
   const chatRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -126,6 +129,10 @@ function ReviewContent() {
         }
       }
       completedQuestionsRef.current = completedQs;
+
+      // Load review info (reviewCount)
+      const reviewInfo = getChapterReviewInfo(chapterId);
+      setReviewCount(reviewInfo.reviewCount);
 
       setInitialized(true);
     }
@@ -198,6 +205,7 @@ function ReviewContent() {
             chatHistory,
             coveredUnits: Array.from(coveredUnits),
             completedQuestions: completedQuestionsRef.current,
+            reviewCount,
           }),
         });
 
@@ -237,6 +245,12 @@ function ReviewContent() {
       }
 
       setChat((prev) => [...prev, { role: "assistant", content: reply }]);
+
+      // Detect review completion
+      if (reply.includes("梳理完成")) {
+        recordReviewComplete(chapterId);
+        setReviewCount((prev) => prev + 1);
+      }
     } catch {
       setChat((prev) => [
         ...prev,
