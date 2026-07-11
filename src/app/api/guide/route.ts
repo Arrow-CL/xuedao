@@ -47,6 +47,7 @@ interface GuideRequest {
   studentSaidHelp?: boolean;
   chapterId?: string;
   imageUrl?: string;
+  studentImageUrl?: string; // 学生上传的图片 base64
 }
 
 /** 判断章节引导模式 */
@@ -174,10 +175,33 @@ export async function POST(req: NextRequest) {
       studentSaidHelp = false,
       chapterId,
       imageUrl = "",
+      studentImageUrl = "",
     }: GuideRequest = await req.json();
 
     if (!questionText || !studentInput) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
+    }
+
+    // 如果学生上传了图片，先做 OCR 识别，将识别结果拼接到 studentInput
+    let effectiveStudentInput = studentInput;
+    if (studentImageUrl) {
+      try {
+        const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+        const ocrRes = await fetch(`${baseUrl}/api/student-image`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ imageBase64: studentImageUrl }),
+        });
+        if (ocrRes.ok) {
+          const ocrData = await ocrRes.json();
+          if (ocrData.text) {
+            effectiveStudentInput = `学生上传了解题过程图片，OCR识别结果如下：\n${ocrData.text}`;
+          }
+        }
+      } catch (err) {
+        console.error("[guide] Student image OCR failed:", err);
+        // OCR 失败不影响主流程，继续用原始输入
+      }
     }
 
     // 判断引导模式
@@ -230,17 +254,17 @@ export async function POST(req: NextRequest) {
           ],
         } as MultiMsg);
         apiMessages.push({ role: "assistant", content: questionText } as MultiMsg);
-        apiMessages.push({ role: "user", content: studentInput } as MultiMsg);
+        apiMessages.push({ role: "user", content: effectiveStudentInput } as MultiMsg);
       } else {
         // 后续轮次：chatHistory 中已经有完整对话
-        apiMessages.push(...(chatHistory as MultiMsg[]), { role: "user", content: studentInput } as MultiMsg);
+        apiMessages.push(...(chatHistory as MultiMsg[]), { role: "user", content: effectiveStudentInput } as MultiMsg);
       }
     } else {
       // 无图题目：使用 DeepSeek
       endpoint = AI_ENDPOINT;
       apiKey = AI_API_KEY;
       model = AI_MODEL;
-      apiMessages = [systemPrompt as TextMsg, ...(chatHistory as TextMsg[]), { role: "user", content: studentInput } as TextMsg];
+      apiMessages = [systemPrompt as TextMsg, ...(chatHistory as TextMsg[]), { role: "user", content: effectiveStudentInput } as TextMsg];
     }
 
     const res = await fetch(endpoint, {

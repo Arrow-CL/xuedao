@@ -19,6 +19,7 @@ import {
   checkChapterCleared,
 } from "@/lib/recommendation";
 import type { Question, KnowledgePoint, ChapterQuestions, ChapterProgress } from "@/lib/types";
+import { compressImage } from "@/lib/image-utils";
 import {
   ArrowLeft,
   Send,
@@ -27,6 +28,8 @@ import {
   BookOpen,
   Map,
   Trophy,
+  ImagePlus,
+  X,
 } from "lucide-react";
 
 /* ------------------------------------------------------------------ */
@@ -36,6 +39,7 @@ import {
 interface ChatMsg {
   role: "user" | "assistant";
   content: string;
+  imageUrl?: string; // 学生上传的图片 base64（显示用）
 }
 
 type PageState =
@@ -236,9 +240,11 @@ function SolveContent() {
   const [summary, setSummary] = useState<string | null>(null);
   const [coveragePercent, setCoveragePercent] = useState(0);
   const [geometryAnnotations, setGeometryAnnotations] = useState<GeometryAnnotation[]>([]);
+  const [pendingImage, setPendingImage] = useState<string | null>(null); // 待发送的图片 base64
 
   const chatRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   // ---- error tracking during solving ----
   const errorCountRef = useRef(0);
@@ -353,16 +359,69 @@ function SolveContent() {
   }, [chapterId]);
 
   /* ---------------------------------------------------------------- */
+  /*  Image upload handlers                                             */
+  /* ---------------------------------------------------------------- */
+  const processImageFile = useCallback(async (file: File) => {
+    if (!file.type.startsWith("image/")) return;
+    if (file.size > 10 * 1024 * 1024) {
+      alert("图片不能超过 10MB");
+      return;
+    }
+    try {
+      const result = await compressImage(file);
+      setPendingImage(result.base64);
+    } catch {
+      alert("图片处理失败，请重试");
+    }
+  }, []);
+
+  const handleImageSelect = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      const file = e.target.files?.[0];
+      if (file) processImageFile(file);
+      // 清空 input 值，允许重复选择同一文件
+      e.target.value = "";
+    },
+    [processImageFile]
+  );
+
+  const handlePaste = useCallback(
+    (e: React.ClipboardEvent<HTMLInputElement>) => {
+      const items = e.clipboardData?.items;
+      if (!items) return;
+      for (const item of Array.from(items)) {
+        if (item.type.startsWith("image/")) {
+          e.preventDefault();
+          const file = item.getAsFile();
+          if (file) processImageFile(file);
+          return;
+        }
+      }
+    },
+    [processImageFile]
+  );
+
+  /* ---------------------------------------------------------------- */
   /*  Send a message to the guide API                                  */
   /* ---------------------------------------------------------------- */
   const sendMessage = useCallback(
     async (userText?: string, isHelp?: boolean) => {
       const text = (userText ?? input).trim();
-      if (!text || processing || !currentQuestion) return;
+      // 图片模式：有 pendingImage 就允许发送（即使文字为空）
+      if ((!text && !pendingImage) || processing || !currentQuestion) return;
 
-      const updated: ChatMsg[] = [...chat, { role: "user", content: text }];
+      const updated: ChatMsg[] = [
+        ...chat,
+        {
+          role: "user",
+          content: text || "（上传了解题过程图片）",
+          imageUrl: pendingImage || undefined,
+        },
+      ];
       setChat(updated);
       setInput("");
+      const sendingImage = pendingImage;
+      setPendingImage(null);
       setProcessing(true);
       setStepCount((s) => s + 1);
       const currentStep = stepCount + 1;
@@ -380,12 +439,13 @@ function SolveContent() {
             questionId: currentQuestion.id,
             questionText: fullQuestionText,
             answer: currentQuestion.answer ?? "",
-            studentInput: text,
+            studentInput: text || "（上传了解题过程图片）",
             currentStepNumber: currentStep,
             chatHistory: updated,
             studentSaidHelp: !!isHelp,
             chapterId,
             imageUrl: currentQuestion.imageUrl ?? "",
+            studentImageUrl: sendingImage || undefined,
           }),
         });
 
@@ -465,7 +525,7 @@ function SolveContent() {
       }
       setProcessing(false);
     },
-    [input, processing, currentQuestion, chat, stepCount, chapterId]
+    [input, processing, currentQuestion, chat, stepCount, chapterId, pendingImage]
   );
 
   /* ---------------------------------------------------------------- */
@@ -743,7 +803,17 @@ function SolveContent() {
                       {m.role === "assistant" ? (
                         <MathContent text={m.content} />
                       ) : (
-                        m.content
+                        <>
+                          {m.imageUrl && (
+                            <img
+                              src={m.imageUrl}
+                              alt="学生上传的解题过程"
+                              className="max-w-full rounded-lg mb-1.5"
+                              style={{ maxHeight: 200 }}
+                            />
+                          )}
+                          {m.content !== "（上传了解题过程图片）" && m.content}
+                        </>
                       )}
                     </div>
                   </div>
@@ -812,20 +882,54 @@ function SolveContent() {
                       要提示
                     </button>
                   </div>
+                  {/* Image preview */}
+                  {pendingImage && (
+                    <div className="relative inline-block mb-2">
+                      <img
+                        src={pendingImage}
+                        alt="预览"
+                        className="max-w-[200px] rounded-lg border border-gray-200"
+                        style={{ maxHeight: 120 }}
+                      />
+                      <button
+                        onClick={() => setPendingImage(null)}
+                        className="absolute -top-2 -right-2 p-1 bg-red-500 text-white rounded-full hover:bg-red-600 transition"
+                      >
+                        <X size={14} />
+                      </button>
+                    </div>
+                  )}
                   {/* Text input */}
                   <div className="flex gap-2">
+                    {/* Hidden file input */}
+                    <input
+                      ref={fileInputRef}
+                      type="file"
+                      accept="image/*"
+                      className="hidden"
+                      onChange={handleImageSelect}
+                    />
+                    <button
+                      onClick={() => fileInputRef.current?.click()}
+                      disabled={processing}
+                      className="p-2 text-gray-400 hover:text-indigo-500 hover:bg-indigo-50 rounded-xl transition disabled:opacity-50"
+                      title="上传图片"
+                    >
+                      <ImagePlus size={20} />
+                    </button>
                     <input
                       ref={inputRef}
                       value={input}
                       onChange={(e) => setInput(e.target.value)}
                       onKeyDown={(e) => e.key === "Enter" && sendMessage()}
+                      onPaste={handlePaste}
                       placeholder="写你的思路或答案，按回车发送..."
                       className="flex-1 px-3 py-2 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent disabled:opacity-50"
                       disabled={processing}
                     />
                     <button
                       onClick={() => sendMessage()}
-                      disabled={processing || !input.trim()}
+                      disabled={processing || (!input.trim() && !pendingImage)}
                       className="p-2 bg-indigo-500 text-white rounded-xl hover:bg-indigo-600 disabled:opacity-50 transition"
                     >
                       <Send size={18} />
