@@ -125,6 +125,20 @@ export interface UserProgress {
   lastStudyDate: string;
 }
 
+// ============ 板书步骤 ============
+
+/** 板书步骤（AI 确认正确的解题步骤） */
+export interface BoardStep {
+  /** 步骤编号 */
+  stepNumber: number;
+  /** 步骤内容（LaTeX） */
+  content: string;
+  /** 是否确认正确 */
+  isCorrect: boolean;
+  /** 记录时间 */
+  timestamp: number;
+}
+
 // ============ 推荐引擎相关 ============
 
 /** 推荐结果 */

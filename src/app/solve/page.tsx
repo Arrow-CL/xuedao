@@ -18,7 +18,7 @@ import {
   getChapterCoverage,
   checkChapterCleared,
 } from "@/lib/recommendation";
-import type { Question, KnowledgePoint, ChapterQuestions, ChapterProgress } from "@/lib/types";
+import type { Question, KnowledgePoint, ChapterQuestions, ChapterProgress, BoardStep } from "@/lib/types";
 import { compressImage } from "@/lib/image-utils";
 import {
   ArrowLeft,
@@ -30,6 +30,8 @@ import {
   Trophy,
   ImagePlus,
   X,
+  PenLine,
+  ChevronDown,
 } from "lucide-react";
 
 /* ------------------------------------------------------------------ */
@@ -216,6 +218,32 @@ function parseGeoAnnotations(reply: string): {
   return { cleanReply, annotations };
 }
 
+/**
+ * Parse [STEP:n|content] tag from AI reply.
+ * Returns the clean reply (without the tag) and the parsed step info.
+ */
+function parseStepTag(reply: string): {
+  cleanReply: string;
+  step: BoardStep | null;
+} {
+  const match = reply.match(/\[STEP:(\d+)\|([^\]]+)\]\s*$/m);
+  if (!match) return { cleanReply: reply, step: null };
+
+  const stepNumber = parseInt(match[1], 10);
+  const content = match[2].trim();
+  const cleanReply = reply.replace(match[0], "").trimEnd();
+
+  return {
+    cleanReply,
+    step: {
+      stepNumber,
+      content,
+      isCorrect: true,
+      timestamp: Date.now(),
+    },
+  };
+}
+
 /* ------------------------------------------------------------------ */
 /*  Inner solve component (needs useSearchParams inside Suspense)       */
 /* ------------------------------------------------------------------ */
@@ -241,6 +269,7 @@ function SolveContent() {
   const [coveragePercent, setCoveragePercent] = useState(0);
   const [geometryAnnotations, setGeometryAnnotations] = useState<GeometryAnnotation[]>([]);
   const [pendingImage, setPendingImage] = useState<string | null>(null); // 待发送的图片 base64
+  const [boardSteps, setBoardSteps] = useState<BoardStep[]>([]); // 板书步骤
 
   const chatRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -460,6 +489,22 @@ function SolveContent() {
           setGeometryAnnotations((prev) => [...prev, ...annotations]);
         }
 
+        // Parse [STEP:n|content] tag for board
+        const { cleanReply: stepCleanReply, step: boardStep } = parseStepTag(reply);
+        reply = stepCleanReply;
+        if (boardStep) {
+          setBoardSteps((prev) => {
+            // Replace if same step number, otherwise append
+            const exists = prev.findIndex(s => s.stepNumber === boardStep.stepNumber);
+            if (exists >= 0) {
+              const updated = [...prev];
+              updated[exists] = boardStep;
+              return updated;
+            }
+            return [...prev, boardStep];
+          });
+        }
+
         // Detect errors in AI reply (student got something wrong)
         const errorKeywords = ["不对", "不正确", "错了", "再想想", "有问题", "不是这样", "不太对", "错误", "不对哦", "差一点"];
         const hasError = errorKeywords.some(kw => reply.includes(kw));
@@ -563,6 +608,7 @@ function SolveContent() {
       setStepCount(0);
       setSummary(null);
       setGeometryAnnotations([]);
+      setBoardSteps([]); // 切换题目时清空板书
       errorCountRef.current = 0;
       errorStepsRef.current = [];
       setChat([{ role: "assistant", content: result.question.prompt }]);
@@ -739,9 +785,10 @@ function SolveContent() {
 
       {/* ---- Main body: question + chat ---- */}
       <div className="flex-1 flex flex-col lg:flex-row overflow-hidden">
-        {/* Left: Question display */}
-        <div className="lg:w-[45%] shrink-0 bg-white border-r border-gray-100 overflow-y-auto">
-          <div className="p-4 lg:p-6">
+        {/* Left: Question + Board */}
+        <div className="lg:w-[45%] shrink-0 bg-white border-r border-gray-100 overflow-y-auto flex flex-col">
+          {/* Question area */}
+          <div className="p-4 lg:p-6 border-b border-gray-100">
             <div className="text-xs text-gray-400 mb-2 font-medium">
               题目
             </div>
@@ -779,6 +826,55 @@ function SolveContent() {
                 />
               </div>
             )}
+          </div>
+
+          {/* Board area */}
+          <div className="flex-1 min-h-0 flex flex-col"
+               style={{
+                 backgroundImage: "linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px)",
+                 backgroundSize: "20px 20px",
+               }}>
+            <div className="px-4 lg:px-6 pt-4 pb-2 flex items-center gap-2">
+              <PenLine size={14} className="text-indigo-500" />
+              <span className="text-xs text-gray-500 font-medium">解题板书</span>
+            </div>
+            <div className="flex-1 overflow-y-auto px-4 lg:px-6 pb-4">
+              {boardSteps.length === 0 ? (
+                <div className="flex flex-col items-center justify-center py-8 text-gray-300">
+                  <PenLine size={24} className="mb-2" />
+                  <p className="text-xs text-gray-400 text-center leading-relaxed">
+                    完成正确步骤后将自动记录在这里
+                  </p>
+                </div>
+              ) : (
+                <div className="space-y-0">
+                  {boardSteps.map((step, idx) => (
+                    <div key={step.timestamp} className="flex items-start gap-2">
+                      {/* Step number circle + connector */}
+                      <div className="flex flex-col items-center shrink-0">
+                        <div className="w-6 h-6 rounded-full bg-indigo-500 text-white text-xs font-bold flex items-center justify-center">
+                          {step.stepNumber}
+                        </div>
+                        {idx < boardSteps.length - 1 && (
+                          <div className="w-0.5 h-6 bg-indigo-200 mt-1" />
+                        )}
+                      </div>
+                      {/* Step content card */}
+                      <div className="flex-1 pb-4">
+                        <div className="bg-indigo-50/70 border border-indigo-100 rounded-lg px-3 py-2 text-sm text-gray-800 leading-relaxed">
+                          <MathContent text={step.content} />
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                  {/* Animated indicator at bottom */}
+                  <div className="flex items-center gap-2 pl-1">
+                    <ChevronDown size={16} className="text-indigo-300 animate-bounce" />
+                    <span className="text-xs text-indigo-300">继续解题...</span>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
