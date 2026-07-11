@@ -1,0 +1,151 @@
+{
+  "module": "derivatives",
+  "items": [
+    {
+      "id": "gk-der-1",
+      "type": "derivative",
+      "difficulty": 4,
+      "equation": {
+        "latex": "f(x)=x^3-3x",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "函数 f(x)=x³-3x 在 x=1 处的切线斜率为？",
+      "answer": 0,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "f'(x)=3x²-3",
+          "expectedValue": 3
+        },
+        {
+          "key": "s2",
+          "description": "f'(1)=3·1-3=0",
+          "expectedValue": 0
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "derivatives",
+      "chapters": [
+        "derivatives"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "gk-der-2",
+      "type": "extremum",
+      "difficulty": 5,
+      "equation": {
+        "latex": "f(x)=x^3-3x+1",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "函数 f(x)=x³-3x+1 的极大值为？",
+      "answer": 3,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "f'(x)=3x²-3=0，x=±1",
+          "expectedValue": 1
+        },
+        {
+          "key": "s2",
+          "description": "f''(x)=6x，x=-1 时 f''<0，极大值",
+          "expectedValue": -1
+        },
+        {
+          "key": "s3",
+          "description": "f(-1)=(-1)³-3(-1)+1=3",
+          "expectedValue": 3
+        }
+      ],
+      "tags": [
+        "formula-recall",
+        "calculation"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "derivatives",
+      "chapters": [
+        "derivatives"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "dv-3",
+      "type": "derivative",
+      "difficulty": 3,
+      "prompt": "求f(x)=x立方在x=2处的导数。",
+      "answer": 12,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "f'(x)=3x平方",
+          "formulaKey": "power-rule"
+        },
+        {
+          "key": "s2",
+          "description": "f'(2)=12",
+          "expectedValue": 12
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "derivatives",
+      "chapters": [
+        "derivatives"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "dv-4",
+      "type": "tangent",
+      "difficulty": 4,
+      "prompt": "曲线y=x平方在点(1,1)处的切线斜率。",
+      "answer": 2,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "y'=2x",
+          "expectedValue": 2
+        },
+        {
+          "key": "s2",
+          "description": "x=1处斜率为2",
+          "expectedValue": 2
+        }
+      ],
+      "tags": [
+        "calculation"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "derivatives",
+      "chapters": [
+        "derivatives"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    }
+  ]
+}

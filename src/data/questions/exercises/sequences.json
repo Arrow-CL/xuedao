@@ -1,0 +1,146 @@
+{
+  "module": "sequences",
+  "items": [
+    {
+      "id": "gk-seq-1",
+      "type": "arithmetic",
+      "difficulty": 3,
+      "equation": {
+        "latex": "a_n等差,S_n",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "等差数列 {a_n} 中，a₂=5，a₅=11，则前 6 项和 S₆ =？",
+      "answer": 48,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "公差 d=(11-5)/3=2，a₁=3",
+          "expectedValue": 3
+        },
+        {
+          "key": "s2",
+          "description": "S₆=6×(3+13)/2=48",
+          "expectedValue": 48
+        }
+      ],
+      "tags": [
+        "formula-recall",
+        "calculation"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "sequences",
+      "chapters": [
+        "sequences"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "gk-seq-2",
+      "type": "geometric",
+      "difficulty": 4,
+      "equation": {
+        "latex": "a_n等比",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "等比数列 {a_n} 中，a₁=2，公比 q=3，则 a₁+a₃+a₅ =？",
+      "answer": 182,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "a₃=2·3²=18，a₅=2·3⁴=162",
+          "expectedValue": 18
+        },
+        {
+          "key": "s2",
+          "description": "和 = 2+18+162 = 182",
+          "expectedValue": 182
+        }
+      ],
+      "tags": [
+        "calculation"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "sequences",
+      "chapters": [
+        "sequences"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "sq-3",
+      "type": "arithmetic",
+      "difficulty": 3,
+      "prompt": "等差数列a1=2, d=3, 求a5。",
+      "answer": 14,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "an = a1 + (n-1)d",
+          "formulaKey": "arithmetic-nth"
+        },
+        {
+          "key": "s2",
+          "description": "a5 = 2+4*3 = 14",
+          "expectedValue": 14
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "sequences",
+      "chapters": [
+        "sequences"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "sq-4",
+      "type": "geometric",
+      "difficulty": 4,
+      "prompt": "等比数列a1=3, q=2, 求a4。",
+      "answer": 24,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "an = a1*q的(n-1)次方",
+          "formulaKey": "geometric-nth"
+        },
+        {
+          "key": "s2",
+          "description": "a4 = 3*2的3次方 = 24",
+          "expectedValue": 24
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "sequences",
+      "chapters": [
+        "sequences"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    }
+  ]
+}

@@ -1,0 +1,1217 @@
+{
+  "line-equation": {
+    "title": "直线方程",
+    "exercises": [
+      {
+        "id": "ag-le1",
+        "unitId": "line-equation",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "经过点 $A(2,1)$ 和 $B(6,5)$ 的直线斜率为（\nA.$1$  B.$\\dfrac{1}{2}$  C.$2$  D.$-1$）",
+        "options": [
+          "$1$",
+          "$\\dfrac{1}{2}$",
+          "$2$",
+          "$-1$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$k=\\dfrac{5-1}{6-2}=1$"
+      },
+      {
+        "id": "ag-le2",
+        "unitId": "line-equation",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "倾斜角为 $60^{\\circ}$，在 $y$ 轴上截距为 $2$ 的直线方程为（\nA.$y=\\sqrt{3}x+2$  B.$y=\\sqrt{3}x-2$  C.$y=-\\sqrt{3}x+2$  D.$y=\\dfrac{\\sqrt{3}}{3}x+2$）",
+        "options": [
+          "$y=\\sqrt{3}x+2$",
+          "$y=\\sqrt{3}x-2$",
+          "$y=-\\sqrt{3}x+2$",
+          "$y=\\dfrac{\\sqrt{3}}{3}x+2$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$k=\\tan 60^{\\circ}=\\sqrt{3}$，斜截式 $y=\\sqrt{3}x+2$"
+      },
+      {
+        "id": "ag-le3",
+        "unitId": "line-equation",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "过点 $(1,2)$ 且与直线 $x+2y-1=0$ 平行的直线方程为（\nA.$x+2y-5=0$  B.$x+2y+5=0$  C.$2x+y-5=0$  D.$2x+y+5=0$）",
+        "options": [
+          "$x+2y-5=0$",
+          "$x+2y+5=0$",
+          "$2x+y-5=0$",
+          "$2x+y+5=0$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "平行直线系 $x+2y+C=0$，代入 $(1,2)$ 得 $C=-5$"
+      },
+      {
+        "id": "ag-le4",
+        "unitId": "line-equation",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "点 $(1,0)$ 到直线 $3x+4y-5=0$ 的距离为（\nA.$\\dfrac{1}{5}$  B.$\\dfrac{2}{5}$  C.$1$  D.$2$）",
+        "options": [
+          "$\\dfrac{1}{5}$",
+          "$\\dfrac{2}{5}$",
+          "$1$",
+          "$2$"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "$d=\\dfrac{|3-5|}{5}=\\dfrac{2}{5}$"
+      },
+      {
+        "id": "ag-le5",
+        "unitId": "line-equation",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "两条平行直线 $3x+4y-10=0$ 与 $6x+8y+20=0$ 之间的距离为（\nA.$3$  B.$4$  C.$5$  D.$\\dfrac{14}{5}$）",
+        "options": [
+          "$3$",
+          "$4$",
+          "$5$",
+          "$\\dfrac{14}{5}$"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "化简第二式为 $3x+4y+10=0$，$d=\\dfrac{20}{5}=4$"
+      },
+      {
+        "id": "ag-le6",
+        "unitId": "line-equation",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "若直线 $l$ 过点 $(2,1)$，且在两坐标轴上的截距相等，则 $l$ 的方程为\\underline{\\hspace{4em}}",
+        "options": [],
+        "answer": "$x+y-3=0$ 或 $x-2y=0$",
+        "gaokaoConnection": "分 $a=b$ 和过原点两种情况讨论"
+      },
+      {
+        "id": "ag-le7",
+        "unitId": "line-equation",
+        "difficulty": 3,
+        "type": "choice",
+        "prompt": "已知 $l_1: ax+2y+1=0$ 与 $l_2: x+(a-1)y+3=0$ 互相垂直，则 $a=$（\nA.$\\dfrac{2}{3}$  B.$1$  C.$0$  D.$-1$）",
+        "options": [
+          "$\\dfrac{2}{3}$",
+          "$1$",
+          "$0$",
+          "$-1$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$A_1 A_2+B_1 B_2=0$：$a+2(a-1)=0$，$a=\\dfrac{2}{3}$"
+      },
+      {
+        "id": "ag-le8",
+        "unitId": "line-equation",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "直线 $x-\\sqrt{3}y+1=0$ 的倾斜角为（\nA.$30^{\\circ}$  B.$60^{\\circ}$  C.$120^{\\circ}$  D.$150^{\\circ}$）",
+        "options": [
+          "$30^{\\circ}$",
+          "$60^{\\circ}$",
+          "$120^{\\circ}$",
+          "$150^{\\circ}$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$k=\\dfrac{1}{\\sqrt{3}}=\\dfrac{\\sqrt{3}}{3}$，$\\alpha=30^{\\circ}$"
+      }
+    ]
+  },
+  "circle-equation": {
+    "title": "圆的方程",
+    "exercises": [
+      {
+        "id": "ag-ce1",
+        "unitId": "circle-equation",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "圆心为 $(2,-1)$，半径为 $3$ 的圆的标准方程为（\nA.$(x-2)^2+(y+1)^2=9$  B.$(x+2)^2+(y-1)^2=9$  C.$(x-2)^2+(y-1)^2=3$  D.$(x+2)^2+(y+1)^2=9$）",
+        "options": [
+          "$(x-2)^2+(y+1)^2=9$",
+          "$(x+2)^2+(y-1)^2=9$",
+          "$(x-2)^2+(y-1)^2=3$",
+          "$(x+2)^2+(y+1)^2=9$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$(x-a)^2+(y-b)^2=r^2$，注意符号"
+      },
+      {
+        "id": "ag-ce2",
+        "unitId": "circle-equation",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "圆 $x^2+y^2-4x+6y=0$ 的圆心和半径分别为（\nA.$(2,-3)$，$r=\\sqrt{13}$  B.$(-2,3)$，$r=13$  C.$(2,-3)$，$r=13$  D.$(-2,3)$，$r=\\sqrt{13}$）",
+        "options": [
+          "$(2,-3),r=\\sqrt{13}$",
+          "$(-2,3),r=13$",
+          "$(2,-3),r=13$",
+          "$(-2,3),r=\\sqrt{13}$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$(x-2)^2+(y+3)^2=13$"
+      },
+      {
+        "id": "ag-ce3",
+        "unitId": "circle-equation",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "以 $A(1,1)$、$B(2,3)$ 为直径端点的圆的方程为（\nA.$(x-\\frac{3}{2})^2+(y-2)^2=\\frac{5}{4}$  B.$(x-\\frac{3}{2})^2+(y-2)^2=5$  C.$(x-1)^2+(y-1)^2=5$  D.$(x-2)^2+(y-3)^2=\\frac{5}{4}$）",
+        "options": [
+          "$(x-\\frac{3}{2})^2+(y-2)^2=\\frac{5}{4}$",
+          "$(x-\\frac{3}{2})^2+(y-2)^2=5$",
+          "$(x-1)^2+(y-1)^2=5$",
+          "$(x-2)^2+(y-3)^2=\\frac{5}{4}$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "圆心 $(\\frac{3}{2},2)$，$r=\\frac{\\sqrt{5}}{2}$"
+      },
+      {
+        "id": "ag-ce4",
+        "unitId": "circle-equation",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "圆 $C:x^2+y^2=4$ 的圆心到直线 $x-y-2=0$ 的距离为\\underline{\\hspace{4em}}",
+        "options": [],
+        "answer": "$\\sqrt{2}$",
+        "gaokaoConnection": "$d=\\dfrac{2}{\\sqrt{2}}=\\sqrt{2}$"
+      },
+      {
+        "id": "ag-ce5",
+        "unitId": "circle-equation",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "圆 $x^2+y^2-2x-4y+4=0$ 上的点到原点的最短距离为（\nA.$\\sqrt{5}-1$  B.$\\sqrt{5}+1$  C.$\\sqrt{5}$  D.$3$）",
+        "options": [
+          "$\\sqrt{5}-1$",
+          "$\\sqrt{5}+1$",
+          "$\\sqrt{5}$",
+          "$3$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "圆心 $(1,2)$，$|OC|=\\sqrt{5}$，$r=1$，最短 $=\\sqrt{5}-1$"
+      },
+      {
+        "id": "ag-ce6",
+        "unitId": "circle-equation",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "经过 $(0,0)$、$(2,0)$、$(0,2)$ 三点的圆的标准方程为\\underline{\\hspace{4em}}",
+        "options": [],
+        "answer": "$(x-1)^2+(y-1)^2=2$",
+        "gaokaoConnection": "由对称性圆心 $(1,1)$，$r=\\sqrt{2}$"
+      },
+      {
+        "id": "ag-ce7",
+        "unitId": "circle-equation",
+        "difficulty": 3,
+        "type": "choice",
+        "prompt": "若 $x^2+y^2+2x+ky+k^2-1=0$ 表示圆，则 $k$ 的取值范围为（\nA.$(-\\sqrt{2},\\sqrt{2})$  B.$k \\neq 0$  C.$\\mathbb{R}$  D.$(-\\infty,-2)\\cup(2,+\\infty)$）",
+        "options": [
+          "$(-\\sqrt{2},\\sqrt{2})$",
+          "$k \\neq 0$",
+          "$\\mathbb{R}$",
+          "$(-\\infty,-2)\\cup(2,+\\infty)$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$1+1-k^2>0$，即 $k^2<2$"
+      }
+    ]
+  },
+  "point-circle": {
+    "title": "点与圆的位置关系",
+    "exercises": [
+      {
+        "id": "ag-pc1",
+        "unitId": "point-circle",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "点 $P(3,4)$ 与圆 $x^2+y^2=25$ 的位置关系是（\nA.在圆内  B.在圆上  C.在圆外  D.无法确定）",
+        "options": [
+          "在圆内",
+          "在圆上",
+          "在圆外",
+          "无法确定"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "$3^2+4^2=25=r^2$"
+      },
+      {
+        "id": "ag-pc2",
+        "unitId": "point-circle",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "若点 $(1,1)$ 在圆 $(x-a)^2+(y+2)^2=10$ 内部，则 $a$ 的取值范围为（\nA.$(0,2)$  B.$(-\\infty,0)\\cup(2,+\\infty)$  C.$[0,2]$  D.$(-1,3)$）",
+        "options": [
+          "$(0,2)$",
+          "$(-\\infty,0)\\cup(2,+\\infty)$",
+          "$[0,2]$",
+          "$(-1,3)$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$(1-a)^2+9<10$，$0<a<2$"
+      },
+      {
+        "id": "ag-pc3",
+        "unitId": "point-circle",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "圆 $C:x^2+y^2-2x+4y+1=0$ 的面积为\\underline{\\hspace{4em}}",
+        "options": [],
+        "answer": "$4\\pi$",
+        "gaokaoConnection": "$(x-1)^2+(y+2)^2=4$，$S=4\\pi$"
+      },
+      {
+        "id": "ag-pc4",
+        "unitId": "point-circle",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "过点 $(1,2)$ 作圆 $x^2+y^2=1$ 的两条切线，则切线长为（\nA.$2$  B.$\\sqrt{3}$  C.$\\sqrt{5}$  D.$3$）",
+        "options": [
+          "$2$",
+          "$\\sqrt{3}$",
+          "$\\sqrt{5}$",
+          "$3$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "切线长 $=\\sqrt{1+4-1}=2$"
+      },
+      {
+        "id": "ag-pc5",
+        "unitId": "point-circle",
+        "difficulty": 3,
+        "type": "choice",
+        "prompt": "圆 $C:(x-1)^2+(y-2)^2=5$ 上点 $P$ 运动，$|OP|$ 的最大值为（$O$ 为原点）（\nA.$\\sqrt{10}$  B.$\\sqrt{5}+\\sqrt{5}$  C.$2\\sqrt{5}$  D.$3\\sqrt{5}$）",
+        "options": [
+          "$\\sqrt{10}$",
+          "$\\sqrt{5}+\\sqrt{5}$",
+          "$2\\sqrt{5}$",
+          "$3\\sqrt{5}$"
+        ],
+        "answer": "C",
+        "gaokaoConnection": "$|OC|=\\sqrt{5}$，$r=\\sqrt{5}$，最大 $=2\\sqrt{5}$"
+      },
+      {
+        "id": "ag-pc6",
+        "unitId": "point-circle",
+        "difficulty": 3,
+        "type": "fill",
+        "prompt": "圆 $x^2+y^2=4$ 上的点到直线 $4x+3y-25=0$ 的最短距离为\\underline{\\hspace{4em}}",
+        "options": [],
+        "answer": "$3$",
+        "gaokaoConnection": "$d=5$，最短 $=5-2=3$"
+      }
+    ]
+  },
+  "line-circle-pos": {
+    "title": "直线与圆位置关系",
+    "exercises": [
+      {
+        "id": "ag-lc1",
+        "unitId": "line-circle-pos",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "直线 $x+y=2$ 与圆 $x^2+y^2=1$ 的位置关系是（\nA.相交  B.相切  C.相离  D.不确定）",
+        "options": [
+          "相交",
+          "相切",
+          "相离",
+          "不确定"
+        ],
+        "answer": "C",
+        "gaokaoConnection": "$d=\\sqrt{2}>1$，相离"
+      },
+      {
+        "id": "ag-lc2",
+        "unitId": "line-circle-pos",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "直线 $3x+4y-10=0$ 与圆 $(x-1)^2+(y-2)^2=4$ 的位置关系为（\nA.相交  B.相切  C.相离  D.不确定）",
+        "options": [
+          "相交",
+          "相切",
+          "相离",
+          "不确定"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$d=\\dfrac{1}{5}<2$，相交"
+      },
+      {
+        "id": "ag-lc3",
+        "unitId": "line-circle-pos",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "圆 $x^2+y^2=4$ 被直线 $x+\\sqrt{3}y=2$ 截得的弦长为（\nA.$2\\sqrt{2}$  B.$2$  C.$2\\sqrt{3}$  D.$4$）",
+        "options": [
+          "$2\\sqrt{2}$",
+          "$2$",
+          "$2\\sqrt{3}$",
+          "$4$"
+        ],
+        "answer": "C",
+        "gaokaoConnection": "$d=1$，弦长 $=2\\sqrt{3}$"
+      },
+      {
+        "id": "ag-lc4",
+        "unitId": "line-circle-pos",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "过点 $(3,1)$ 且与圆 $(x-1)^2+y^2=1$ 相切的直线有（\nA.$0$条  B.$1$条  C.$2$条  D.无数条）",
+        "options": [
+          "$0$条",
+          "$1$条",
+          "$2$条",
+          "无数条"
+        ],
+        "answer": "C",
+        "gaokaoConnection": "$d=\\sqrt{5}>1$，点在圆外，$2$ 条切线"
+      },
+      {
+        "id": "ag-lc5",
+        "unitId": "line-circle-pos",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "圆 $C:(x-2)^2+(y-1)^2=4$，直线 $l:2x-y=0$ 与 $C$ 交于 $A,B$，则 $|AB|=$\\underline{\\hspace{4em}}",
+        "options": [],
+        "answer": "$2\\sqrt{\\dfrac{11}{5}}$",
+        "gaokaoConnection": "$d=\\dfrac{3}{\\sqrt{5}}$，$|AB|=2\\sqrt{4-\\dfrac{9}{5}}=2\\sqrt{\\dfrac{11}{5}}$"
+      },
+      {
+        "id": "ag-lc6",
+        "unitId": "line-circle-pos",
+        "difficulty": 3,
+        "type": "choice",
+        "prompt": "圆 $C:(x-2)^2+(y-1)^2=4$，过 $(0,0)$ 的直线与 $C$ 交于 $A,B$，当 $|AB|$ 最大时斜率为（\nA.$\\dfrac{1}{2}$  B.$-2$  C.$-\\dfrac{1}{2}$  D.$2$）",
+        "options": [
+          "$\\dfrac{1}{2}$",
+          "$-2$",
+          "$-\\dfrac{1}{2}$",
+          "$2$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$|AB|$ 最大当直线过圆心 $(2,1)$，$k=\\dfrac{1}{2}$"
+      },
+      {
+        "id": "ag-lc7",
+        "unitId": "line-circle-pos",
+        "difficulty": 3,
+        "type": "fill",
+        "prompt": "圆 $C:(x-2)^2+(y-3)^2=1$，$P$ 在直线 $2x-y+1=0$ 上运动，过 $P$ 作 $C$ 的切线 $PA,PB$，则四边形 $PACB$ 面积的最小值为\\underline{\\hspace{4em}}",
+        "options": [],
+        "answer": "$2$",
+        "gaokaoConnection": "$S_{PACB}=2\\cdot S_{\\triangle PAC}=2\\cdot\\dfrac{1}{2}\\sqrt{PC^2-1}\\cdot 1=\\sqrt{PC^2-1}$，$PC_{\\min}$ 为圆心到直线距离"
+      }
+    ]
+  },
+  "circle-circle-pos": {
+    "title": "圆与圆位置关系",
+    "exercises": [
+      {
+        "id": "ag-cc1",
+        "unitId": "circle-circle-pos",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "圆 $C_1:x^2+y^2=1$ 与 $C_2:(x-3)^2+y^2=4$ 的位置关系是（\nA.内含  B.相交  C.外切  D.外离）",
+        "options": [
+          "内含",
+          "相交",
+          "外切",
+          "外离"
+        ],
+        "answer": "C",
+        "gaokaoConnection": "$d=3=r_1+r_2$，外切"
+      },
+      {
+        "id": "ag-cc2",
+        "unitId": "circle-circle-pos",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "圆 $x^2+y^2=4$ 与 $(x-3)^2+(y-3)^2=9$ 的公切线条数为（\nA.$1$  B.$2$  C.$3$  D.$4$）",
+        "options": [
+          "$1$",
+          "$2$",
+          "$3$",
+          "$4$"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "$d=3\\sqrt{2}$，$1<d<5$，相交，$2$ 条公切线"
+      },
+      {
+        "id": "ag-cc3",
+        "unitId": "circle-circle-pos",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "圆 $x^2+y^2-4x=0$ 与 $x^2+y^2-4y=0$ 的公共弦所在直线方程为\\underline{\\hspace{4em}}",
+        "options": [],
+        "answer": "$x-y=0$",
+        "gaokaoConnection": "两式相减得 $x-y=0$"
+      },
+      {
+        "id": "ag-cc4",
+        "unitId": "circle-circle-pos",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "圆 $C_1:x^2+y^2=r^2$ 与 $C_2:(x-4)^2+y^2=4$ 外切，则 $r=$（\nA.$1$  B.$2$  C.$3$  D.$6$）",
+        "options": [
+          "$1$",
+          "$2$",
+          "$3$",
+          "$6$"
+        ],
+        "answer": "D",
+        "gaokaoConnection": "外切 $d=r+2$，$4=r+2$，$r=2$... 需考虑 $C_1$ 在左还是右"
+      },
+      {
+        "id": "ag-cc5",
+        "unitId": "circle-circle-pos",
+        "difficulty": 3,
+        "type": "choice",
+        "prompt": "两圆 $C_1:(x-1)^2+(y-1)^2=1$ 与 $C_2:(x-3)^2+(y-3)^2=9$ 的外公切线方程为（\nA.$x+y-2=0$  B.$x-y-2=0$  C.$x+y-6=0$  D.$x-y=0$）",
+        "options": [
+          "$x+y-2=0$",
+          "$x-y-2=0$",
+          "$x+y-6=0$",
+          "$x-y=0$"
+        ],
+        "answer": "D",
+        "gaokaoConnection": "连心线 $y=x$ 即 $x-y=0$ 不是公切线而是连心线本身，需排除"
+      },
+      {
+        "id": "ag-cc6",
+        "unitId": "circle-circle-pos",
+        "difficulty": 3,
+        "type": "fill",
+        "prompt": "两圆 $x^2+y^2=1$ 与 $(x-2)^2+y^2=r^2$ 有公共点，则 $r$ 的取值范围为\\underline{\\hspace{4em}}",
+        "options": [],
+        "answer": "$[1,3]$",
+        "gaokaoConnection": "$d=2$，$|r-1| \\leq 2 \\leq r+1$，$r \\in [1,3]$"
+      }
+    ]
+  },
+  "symmetry-mistakes": {
+    "title": "对称问题与高考高频易错点",
+    "exercises": [
+      {
+        "id": "ag-sm1",
+        "unitId": "symmetry-mistakes",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "点 $(2,3)$ 关于直线 $x+y=0$ 的对称点为（\nA.$(-3,-2)$  B.$(-2,-3)$  C.$(3,2)$  D.$(-2,3)$）",
+        "options": [
+          "$(-3,-2)$",
+          "$(-2,-3)$",
+          "$(3,2)$",
+          "$(-2,3)$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "关于 $x+y=0$：$(x,y)\\to(-y,-x)$"
+      },
+      {
+        "id": "ag-sm2",
+        "unitId": "symmetry-mistakes",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "直线 $2x-y+1=0$ 关于 $x$ 轴对称的直线方程为（\nA.$2x+y+1=0$  B.$2x+y-1=0$  C.$2x-y-1=0$  D.$-2x+y+1=0$）",
+        "options": [
+          "$2x+y+1=0$",
+          "$2x+y-1=0$",
+          "$2x-y-1=0$",
+          "$-2x+y+1=0$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$y\\to -y$：$2x+y+1=0$"
+      },
+      {
+        "id": "ag-sm3",
+        "unitId": "symmetry-mistakes",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "直线 $y=2x+1$ 关于 $y=x$ 对称的直线方程为（\nA.$y=2x+1$  B.$y=\\frac{1}{2}x-\\frac{1}{2}$  C.$y=\\frac{1}{2}x+\\frac{1}{2}$  D.$x=2y+1$）",
+        "options": [
+          "$y=2x+1$",
+          "$y=\\dfrac{1}{2}x-\\dfrac{1}{2}$",
+          "$y=\\dfrac{1}{2}x+\\dfrac{1}{2}$",
+          "$x=2y+1$"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "交换 $x,y$ 得 $x=2y+1$ 即 $y=\\dfrac{1}{2}x-\\dfrac{1}{2}$"
+      },
+      {
+        "id": "ag-sm4",
+        "unitId": "symmetry-mistakes",
+        "difficulty": 3,
+        "type": "choice",
+        "prompt": "点 $(1,2)$ 关于直线 $y=x+1$ 的对称点为（\nA.$(0,3)$  B.$(1,2)$  C.$(3,0)$  D.$(2,1)$）",
+        "options": [
+          "$(0,3)$",
+          "$(1,2)$",
+          "$(3,0)$",
+          "$(2,1)$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "设 $(a,b)$，中点在直线上且连线垂直，解得 $(0,3)$"
+      },
+      {
+        "id": "ag-sm5",
+        "unitId": "symmetry-mistakes",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "直线 $x-2y+1=0$ 与 $2x-y-1=0$ 关于某条直线对称，则对称轴为（\nA.$x-y=0$  B.$x+y=0$  C.$y=x$  D.$x+y-1=0$）",
+        "options": [
+          "$x-y=0$",
+          "$x+y=0$",
+          "$y=x$",
+          "$x+y-1=0$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "两直线斜率互为负倒数，关于 $y=x$ 即 $x-y=0$ 对称"
+      },
+      {
+        "id": "ag-sm6",
+        "unitId": "symmetry-mistakes",
+        "difficulty": 3,
+        "type": "fill",
+        "prompt": "已知点 $P(2,3)$ 关于直线 $l:3x-4y+4=0$ 的对称点为 $P'$，则 $|PP'|=$\\underline{\\hspace{4em}}",
+        "options": [],
+        "answer": "$2$",
+        "gaokaoConnection": "$P$ 到 $l$ 的距离 $d=\\dfrac{|6-12+4|}{5}=\\dfrac{2}{5}$，$|PP'|=2d=\\dfrac{4}{5}$"
+      }
+    ]
+  },
+  "conic-basics": {
+    "title": "基础预备知识",
+    "exercises": [
+      {
+        "id": "ag-cb1",
+        "unitId": "conic-basics",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "抛物线 $y^2=4x$ 的焦点坐标为（\nA.$(1,0)$  B.$(0,1)$  C.$(-1,0)$  D.$(2,0)$）",
+        "options": [
+          "$(1,0)$",
+          "$(0,1)$",
+          "$(-1,0)$",
+          "$(2,0)$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$2p=4$，焦点 $(1,0)$"
+      },
+      {
+        "id": "ag-cb2",
+        "unitId": "conic-basics",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "椭圆 $\\dfrac{x^2}{9}+\\dfrac{y^2}{4}=1$ 的离心率为（\nA.$\\dfrac{\\sqrt{5}}{3}$  B.$\\dfrac{5}{9}$  C.$\\dfrac{\\sqrt{5}}{9}$  D.$\\dfrac{2}{3}$）",
+        "options": [
+          "$\\dfrac{\\sqrt{5}}{3}$",
+          "$\\dfrac{5}{9}$",
+          "$\\dfrac{\\sqrt{5}}{9}$",
+          "$\\dfrac{2}{3}$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$c=\\sqrt{5}$，$e=\\dfrac{\\sqrt{5}}{3}$"
+      },
+      {
+        "id": "ag-cb3",
+        "unitId": "conic-basics",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "双曲线 $\\dfrac{x^2}{4}-\\dfrac{y^2}{9}=1$ 的渐近线为（\nA.$y=\\pm\\dfrac{3}{2}x$  B.$y=\\pm\\dfrac{2}{3}x$  C.$y=\\pm\\dfrac{9}{4}x$  D.$y=\\pm x$）",
+        "options": [
+          "$y=\\pm\\dfrac{3}{2}x$",
+          "$y=\\pm\\dfrac{2}{3}x$",
+          "$y=\\pm\\dfrac{9}{4}x$",
+          "$y=\\pm x$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$y=\\pm\\dfrac{b}{a}x=\\pm\\dfrac{3}{2}x$"
+      },
+      {
+        "id": "ag-cb4",
+        "unitId": "conic-basics",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "抛物线 $y=\\dfrac{1}{4}x^2$ 的焦点到准线距离为（\nA.$1$  B.$2$  C.$\\dfrac{1}{2}$  D.$4$）",
+        "options": [
+          "$1$",
+          "$2$",
+          "$\\dfrac{1}{2}$",
+          "$4$"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "$x^2=4y$，$p=2$"
+      },
+      {
+        "id": "ag-cb5",
+        "unitId": "conic-basics",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "双曲线 $\\dfrac{x^2}{a^2}-\\dfrac{y^2}{3}=1\\;(a>0)$ 的离心率为 $2$，则 $a=$\\underline{\\hspace{4em}}",
+        "options": [],
+        "answer": "$1$",
+        "gaokaoConnection": "$4a^2=a^2+3$，$a=1$"
+      }
+    ]
+  },
+  "ellipse": {
+    "title": "椭圆",
+    "exercises": [
+      {
+        "id": "ag-el1",
+        "unitId": "ellipse",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "椭圆 $\\dfrac{x^2}{16}+\\dfrac{y^2}{9}=1$ 的焦点坐标为（\nA.$(\\pm\\sqrt{7},0)$  B.$(0,\\pm\\sqrt{7})$  C.$(\\pm 5,0)$  D.$(0,\\pm 5)$）",
+        "options": [
+          "$(\\pm\\sqrt{7},0)$",
+          "$(0,\\pm\\sqrt{7})$",
+          "$(\\pm 5,0)$",
+          "$(0,\\pm 5)$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$c=\\sqrt{16-9}=\\sqrt{7}$"
+      },
+      {
+        "id": "ag-el2",
+        "unitId": "ellipse",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "椭圆离心率 $e=\\dfrac{\\sqrt{3}}{2}$，则 $\\dfrac{b}{a}=$（\nA.$\\dfrac{1}{2}$  B.$\\dfrac{\\sqrt{3}}{2}$  C.$\\dfrac{1}{4}$  D.$\\dfrac{\\sqrt{2}}{2}$）",
+        "options": [
+          "$\\dfrac{1}{2}$",
+          "$\\dfrac{\\sqrt{3}}{2}$",
+          "$\\dfrac{1}{4}$",
+          "$\\dfrac{\\sqrt{2}}{2}$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$\\dfrac{b}{a}=\\sqrt{1-\\dfrac{3}{4}}=\\dfrac{1}{2}$"
+      },
+      {
+        "id": "ag-el3",
+        "unitId": "ellipse",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "椭圆 $C:\\dfrac{x^2}{4}+y^2=1$ 的焦点 $F_1,F_2$，$P$ 在 $C$ 上且 $|PF_1|=2$，则 $|PF_2|=$（\nA.$1$  B.$2$  C.$3$  D.$4$）",
+        "options": [
+          "$1$",
+          "$2$",
+          "$3$",
+          "$4$"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "$|PF_1|+|PF_2|=4$，$|PF_2|=2$"
+      },
+      {
+        "id": "ag-el4",
+        "unitId": "ellipse",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "椭圆 $\\dfrac{x^2}{25}+\\dfrac{y^2}{16}=1$ 的 $F_1,F_2$，$P$ 在椭圆上，$\\angle F_1PF_2=60^{\\circ}$，$S_{\\triangle PF_1F_2}=$（\nA.$8\\sqrt{3}$  B.$4\\sqrt{3}$  C.$16\\sqrt{3}$  D.$8$）",
+        "options": [
+          "$8\\sqrt{3}$",
+          "$4\\sqrt{3}$",
+          "$16\\sqrt{3}$",
+          "$8$"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "余弦定理 + 面积公式，$|PF_1||PF_2|=16$，$S=4\\sqrt{3}$"
+      },
+      {
+        "id": "ag-el5",
+        "unitId": "ellipse",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "椭圆 $\\dfrac{x^2}{9}+\\dfrac{y^2}{4}=1$ 弦 $AB$ 中点 $(1,1)$，则 $AB$ 斜率为（\nA.$-\\dfrac{4}{9}$  B.$-\\dfrac{9}{4}$  C.$\\dfrac{4}{9}$  D.$\\dfrac{9}{4}$）",
+        "options": [
+          "$-\\dfrac{4}{9}$",
+          "$-\\dfrac{9}{4}$",
+          "$\\dfrac{4}{9}$",
+          "$\\dfrac{9}{4}$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "点差法 $k=-\\dfrac{4}{9}$"
+      },
+      {
+        "id": "ag-el6",
+        "unitId": "ellipse",
+        "difficulty": 3,
+        "type": "choice",
+        "prompt": "椭圆 $\\dfrac{x^2}{4}+y^2=1$，直线 $y=kx+m$ 交于 $A,B$，弦中点 $M$ 满足 $OM\\perp AB$，则 $k^2+m^2=$（\nA.$\\dfrac{3}{4}$  B.$\\dfrac{1}{2}$  C.$1$  D.$\\dfrac{3}{2}$）",
+        "options": [
+          "$\\dfrac{3}{4}$",
+          "$\\dfrac{1}{2}$",
+          "$1$",
+          "$\\dfrac{3}{2}$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "点差法 + $OM\\perp AB$ 条件联立"
+      },
+      {
+        "id": "ag-el7",
+        "unitId": "ellipse",
+        "difficulty": 3,
+        "type": "choice",
+        "prompt": "过椭圆 $\\dfrac{x^2}{4}+\\dfrac{y^2}{3}=1$ 右焦点 $F$ 作弦 $AB$，$\\overrightarrow{FA}\\cdot\\overrightarrow{FB}$ 的最小值为（\nA.$-\\dfrac{3}{4}$  B.$-\\dfrac{1}{2}$  C.$-1$  D.$-\\dfrac{3}{2}$）",
+        "options": [
+          "$-\\dfrac{3}{4}$",
+          "$-\\dfrac{1}{2}$",
+          "$-1$",
+          "$-\\dfrac{3}{2}$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$F(1,0)$，设 $x=my+1$ 联立，用韦达定理求最小值"
+      }
+    ]
+  },
+  "hyperbola": {
+    "title": "双曲线",
+    "exercises": [
+      {
+        "id": "ag-hy1",
+        "unitId": "hyperbola",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "双曲线 $\\dfrac{x^2}{9}-\\dfrac{y^2}{16}=1$ 的离心率为（\nA.$\\dfrac{5}{3}$  B.$\\dfrac{4}{3}$  C.$\\dfrac{5}{4}$  D.$\\dfrac{3}{4}$）",
+        "options": [
+          "$\\dfrac{5}{3}$",
+          "$\\dfrac{4}{3}$",
+          "$\\dfrac{5}{4}$",
+          "$\\dfrac{3}{4}$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$a=3,b=4,c=5$，$e=\\dfrac{5}{3}$"
+      },
+      {
+        "id": "ag-hy2",
+        "unitId": "hyperbola",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "双曲线 $\\dfrac{x^2}{3}-y^2=1$ 的渐近线为（\nA.$y=\\pm\\sqrt{3}x$  B.$y=\\pm\\dfrac{\\sqrt{3}}{3}x$  C.$y=\\pm 3x$  D.$y=\\pm x$）",
+        "options": [
+          "$y=\\pm\\sqrt{3}x$",
+          "$y=\\pm\\dfrac{\\sqrt{3}}{3}x$",
+          "$y=\\pm 3x$",
+          "$y=\\pm x$"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "$\\dfrac{b}{a}=\\dfrac{1}{\\sqrt{3}}=\\dfrac{\\sqrt{3}}{3}$"
+      },
+      {
+        "id": "ag-hy3",
+        "unitId": "hyperbola",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "双曲线离心率 $e=\\sqrt{3}$，则渐近线与 $x$ 轴所成锐角正切值为（\nA.$\\sqrt{2}$  B.$\\sqrt{3}$  C.$\\dfrac{\\sqrt{3}}{2}$  D.$2$）",
+        "options": [
+          "$\\sqrt{2}$",
+          "$\\sqrt{3}$",
+          "$\\dfrac{\\sqrt{3}}{2}$",
+          "$2$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$\\dfrac{b}{a}=\\sqrt{e^2-1}=\\sqrt{2}$"
+      },
+      {
+        "id": "ag-hy4",
+        "unitId": "hyperbola",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "双曲线 $\\dfrac{x^2}{4}-\\dfrac{y^2}{5}=1$ 的焦点到渐近线距离为\\underline{\\hspace{4em}}",
+        "options": [],
+        "answer": "$\\sqrt{5}$",
+        "gaokaoConnection": "$c=3$，渐近线 $\\sqrt{5}x\\pm 2y=0$，$d=\\dfrac{3\\sqrt{5}}{3}=\\sqrt{5}$"
+      },
+      {
+        "id": "ag-hy5",
+        "unitId": "hyperbola",
+        "difficulty": 3,
+        "type": "choice",
+        "prompt": "双曲线 $\\dfrac{x^2}{9}-\\dfrac{y^2}{16}=1$ 的 $F_1,F_2$，$P$ 在曲线上且 $\\overrightarrow{PF_1}\\cdot\\overrightarrow{PF_2}=0$，则 $|PF_1|^2+|PF_2|^2=$（\nA.$100$  B.$74$  C.$50$  D.$36$）",
+        "options": [
+          "$100$",
+          "$74$",
+          "$50$",
+          "$36$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$\\angle F_1PF_2=90^{\\circ}$，$|F_1F_2|=10$，$|PF_1|^2+|PF_2|^2=100$"
+      },
+      {
+        "id": "ag-hy6",
+        "unitId": "hyperbola",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "渐近线 $y=\\pm 2x$ 且过 $(1,0)$ 的双曲线方程为（\nA.$\\dfrac{x^2}{1}-\\dfrac{y^2}{4}=1$  B.$\\dfrac{x^2}{4}-\\dfrac{y^2}{1}=1$  C.$\\dfrac{y^2}{4}-\\dfrac{x^2}{1}=1$  D.以上均可能）",
+        "options": [
+          "$\\dfrac{x^2}{1}-\\dfrac{y^2}{4}=1$",
+          "$\\dfrac{x^2}{4}-\\dfrac{y^2}{1}=1$",
+          "$\\dfrac{y^2}{4}-\\dfrac{x^2}{1}=1$",
+          "以上均可能"
+        ],
+        "answer": "D",
+        "gaokaoConnection": "焦点可在 $x$ 轴或 $y$ 轴，两种情况"
+      },
+      {
+        "id": "ag-hy7",
+        "unitId": "hyperbola",
+        "difficulty": 3,
+        "type": "choice",
+        "prompt": "过双曲线 $\\dfrac{x^2}{a^2}-\\dfrac{y^2}{b^2}=1$ 焦点 $F(c,0)$ 作渐近线垂线，垂足 $P$，则 $|PF|=$（\nA.$b$  B.$a$  C.$c$  D.$\\dfrac{ab}{c}$）",
+        "options": [
+          "$b$",
+          "$a$",
+          "$c$",
+          "$\\dfrac{ab}{c}$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "焦点到渐近线距离 $=\\dfrac{bc}{c}=b$"
+      }
+    ]
+  },
+  "parabola": {
+    "title": "抛物线",
+    "exercises": [
+      {
+        "id": "ag-pa1",
+        "unitId": "parabola",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "抛物线 $y^2=8x$ 的焦点坐标为（\nA.$(2,0)$  B.$(0,2)$  C.$(4,0)$  D.$(0,4)$）",
+        "options": [
+          "$(2,0)$",
+          "$(0,2)$",
+          "$(4,0)$",
+          "$(0,4)$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$p=4$，焦点 $(2,0)$"
+      },
+      {
+        "id": "ag-pa2",
+        "unitId": "parabola",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "抛物线 $x^2=4y$ 的准线为（\nA.$y=-1$  B.$y=1$  C.$y=-2$  D.$y=-4$）",
+        "options": [
+          "$y=-1$",
+          "$y=1$",
+          "$y=-2$",
+          "$y=-4$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$p=2$，准线 $y=-1$"
+      },
+      {
+        "id": "ag-pa3",
+        "unitId": "parabola",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "抛物线 $y^2=2px\\;(p>0)$ 上 $M(3,4)$，则 $p=$（\nA.$\\dfrac{8}{3}$  B.$4$  C.$8$  D.$16$）",
+        "options": [
+          "$\\dfrac{8}{3}$",
+          "$4$",
+          "$8$",
+          "$16$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$16=6p$，$p=\\dfrac{8}{3}$"
+      },
+      {
+        "id": "ag-pa4",
+        "unitId": "parabola",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "抛物线 $y^2=4x$ 焦点 $F$，$P$ 在抛物线上且 $|PF|=5$，则 $P$ 到准线距离为（\nA.$3$  B.$4$  C.$5$  D.$6$）",
+        "options": [
+          "$3$",
+          "$4$",
+          "$5$",
+          "$6$"
+        ],
+        "answer": "C",
+        "gaokaoConnection": "抛物线定义：到焦点距离 $=$ 到准线距离"
+      },
+      {
+        "id": "ag-pa5",
+        "unitId": "parabola",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "抛物线 $y^2=2x$ 焦点弦 $|AB|$ 的最小值为（\nA.$2$  B.$3$  C.$4$  D.$1$）",
+        "options": [
+          "$2$",
+          "$3$",
+          "$4$",
+          "$1$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$p=1$，通径 $=2p=2$ 为最小值"
+      },
+      {
+        "id": "ag-pa6",
+        "unitId": "parabola",
+        "difficulty": 3,
+        "type": "choice",
+        "prompt": "抛物线 $y^2=4x$ 焦点 $F$，过 $F$ 直线交于 $A,B$，$|AF|=2|BF|$，则 $|AB|=$（\nA.$\\dfrac{9}{2}$  B.$\\dfrac{15}{4}$  C.$4$  D.$6$）",
+        "options": [
+          "$\\dfrac{9}{2}$",
+          "$\\dfrac{15}{4}$",
+          "$4$",
+          "$6$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "焦半径公式 $|AF|=x_A+1$，$|BF|=x_B+1$，联立求解"
+      },
+      {
+        "id": "ag-pa7",
+        "unitId": "parabola",
+        "difficulty": 3,
+        "type": "fill",
+        "prompt": "抛物线 $y^2=4x$ 上点 $P$ 到 $F$ 的距离等于到 $x=3$ 的距离，则 $P$ 的横坐标为\\underline{\\hspace{4em}}",
+        "options": [],
+        "answer": "$1$",
+        "gaokaoConnection": "$x_P+1=3-x_P$，$x_P=1$"
+      }
+    ]
+  },
+  "line-conic-method": {
+    "title": "直线与圆锥曲线通用解题套路",
+    "exercises": [
+      {
+        "id": "ag-lcm1",
+        "unitId": "line-conic-method",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "已知椭圆 $C:\\dfrac{x^2}{4}+y^2=1$，直线 $l:y=x+m$ 与 $C$ 交于 $A,B$。\n(1) 若 $|AB|=\\dfrac{3\\sqrt{2}}{2}$，求 $m$；\n(2) 求 $\\triangle AOB$ 面积的最大值。",
+        "options": [],
+        "answer": "(1) $m=\\pm\\dfrac{\\sqrt{2}}{2}$\n(2) $S_{\\max}=1$",
+        "gaokaoConnection": "联立 $(1+k^2)x^2+2kmx+m^2-1=0$，弦长公式 + 面积公式"
+      },
+      {
+        "id": "ag-lcm2",
+        "unitId": "line-conic-method",
+        "difficulty": 3,
+        "type": "solve",
+        "prompt": "椭圆 $C:\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1\\;(a>b>0)$，$e=\\dfrac{\\sqrt{2}}{2}$，过右焦点 $F$ 的直线 $l$ 与 $C$ 交于 $A,B$。\n(1) 设 $a^2=2$，求 $C$ 的方程；\n(2) 若 $\\overrightarrow{OA}\\cdot\\overrightarrow{OB}=0$，求 $l$ 的斜率。",
+        "options": [],
+        "answer": "(1) $\\dfrac{x^2}{2}+y^2=1$\n(2) $k=\\pm 1$",
+        "gaokaoConnection": "$e^2=\\dfrac{1}{2}$，$b^2=\\dfrac{a^2}{2}=1$"
+      },
+      {
+        "id": "ag-lcm3",
+        "unitId": "line-conic-method",
+        "difficulty": 3,
+        "type": "solve",
+        "prompt": "抛物线 $C:y^2=4x$ 焦点 $F$，直线 $l:x=my+1$ 交 $C$ 于 $A,B$。\n(1) 证明 $\\overrightarrow{FA}\\cdot\\overrightarrow{FB}$ 为定值；\n(2) 求 $\\triangle AOB$ 面积的最大值。",
+        "options": [],
+        "answer": "(1) 定值 $-3$\n(2) $S_{\\max}=2\\sqrt{2}$",
+        "gaokaoConnection": "$y_1y_2=-4$，$x_1x_2=1$"
+      },
+      {
+        "id": "ag-lcm4",
+        "unitId": "line-conic-method",
+        "difficulty": 3,
+        "type": "solve",
+        "prompt": "双曲线 $C:\\dfrac{x^2}{4}-\\dfrac{y^2}{5}=1$ 的 $F_1,F_2$，过 $F_2$ 的直线 $l$ 与右支交于 $A,B$。\n(1) 若 $l\\perp x$ 轴，求 $|AB|$；\n(2) 若 $\\triangle F_1AB$ 周长为 $20$，求 $|AB|$。",
+        "options": [],
+        "answer": "(1) $|AB|=5$\n(2) $|AB|=\\dfrac{28}{3}$",
+        "gaokaoConnection": "(1) $x=3$ 代入得 $y=\\pm\\dfrac{5}{2}$；(2) 周长 $=|AF_1|+|BF_1|+|AB|=2a+2|AB|=20$... 需推导"
+      },
+      {
+        "id": "ag-lcm5",
+        "unitId": "line-conic-method",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "椭圆 $C:\\dfrac{x^2}{9}+\\dfrac{y^2}{4}=1$，$M(1,1)$。\n(1) 过 $M$ 作 $C$ 的弦 $AB$ 使 $M$ 为 $AB$ 中点，求 $AB$ 方程；\n(2) 求 $|AB|$。",
+        "options": [],
+        "answer": "(1) $4x+9y-13=0$\n(2) 需联立计算",
+        "gaokaoConnection": "点差法 $k=-\\dfrac{4}{9}$"
+      },
+      {
+        "id": "ag-lcm6",
+        "unitId": "line-conic-method",
+        "difficulty": 3,
+        "type": "solve",
+        "prompt": "抛物线 $C:x^2=4y$ 焦点 $F$，准线 $l$。过 $F$ 作直线交 $C$ 于 $A,B$。\n(1) 若 $|AF|=2|BF|$，求 $|AB|$；\n(2) 证明：以 $AB$ 为直径的圆与 $y$ 轴相切。",
+        "options": [],
+        "answer": "(1) $|AB|=\\dfrac{9}{2}$\n(2) 略",
+        "gaokaoConnection": "设 $y=kx+1$，联立 $x^2-4kx-4=0$"
+      }
+    ]
+  },
+  "conic-conclusions": {
+    "title": "高考高频二级结论",
+    "exercises": [
+      {
+        "id": "ag-ccn1",
+        "unitId": "conic-conclusions",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "（焦点弦最小值）椭圆 $\\dfrac{x^2}{4}+y^2=1$ 过焦点 $F$ 的弦 $|AB|$ 最小值为（\nA.$1$  B.$2$  C.$3$  D.$\\sqrt{3}$）",
+        "options": [
+          "$1$",
+          "$2$",
+          "$3$",
+          "$\\sqrt{3}$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$a=2,b=1$，通径 $=\\dfrac{2b^2}{a}=1$ 为最小值"
+      },
+      {
+        "id": "ag-ccn2",
+        "unitId": "conic-conclusions",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "（抛物线焦点弦 $y_Ay_B$）抛物线 $y^2=4x$ 焦点弦 $AB$，$y_Ay_B=$（\nA.$-4$  B.$4$  C.$-2$  D.$2$）",
+        "options": [
+          "$-4$",
+          "$4$",
+          "$-2$",
+          "$2$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$y_Ay_B=-p^2=-4$"
+      },
+      {
+        "id": "ag-ccn3",
+        "unitId": "conic-conclusions",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "（椭圆焦半径）椭圆 $\\dfrac{x^2}{25}+\\dfrac{y^2}{16}=1$ 上 $P(3,y_0)$ 到右焦点距离为（\nA.$\\dfrac{16}{5}$  B.$\\dfrac{34}{5}$  C.$7$  D.$3$）",
+        "options": [
+          "$\\dfrac{16}{5}$",
+          "$\\dfrac{34}{5}$",
+          "$7$",
+          "$3$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$e=\\dfrac{3}{5}$，$|PF_2|=a-ex=5-\\dfrac{9}{5}=\\dfrac{16}{5}$"
+      },
+      {
+        "id": "ag-ccn4",
+        "unitId": "conic-conclusions",
+        "difficulty": 3,
+        "type": "choice",
+        "prompt": "（双曲线焦点三角形面积）$\\dfrac{x^2}{3}-y^2=1$，$P$ 使 $\\angle F_1PF_2=90^{\\circ}$，$S_{\\triangle PF_1F_2}=$（\nA.$1$  B.$2$  C.$\\sqrt{3}$  D.$\\dfrac{\\sqrt{3}}{2}$）",
+        "options": [
+          "$1$",
+          "$2$",
+          "$\\sqrt{3}$",
+          "$\\dfrac{\\sqrt{3}}{2}$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "勾股定理 + 定义，$S=\\dfrac{1}{2}\\cdot|PF_1|\\cdot|PF_2|=b^2=1$... 需验证"
+      },
+      {
+        "id": "ag-ccn5",
+        "unitId": "conic-conclusions",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "（抛物线切线）$y^2=4x$ 在 $(1,2)$ 处切线方程为（\nA.$x-y+1=0$  B.$x+y-3=0$  C.$2x-y=0$  D.$x-2y+3=0$）",
+        "options": [
+          "$x-y+1=0$",
+          "$x+y-3=0$",
+          "$2x-y=0$",
+          "$x-2y+3=0$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$yy_0=2(x+x_0)$，即 $2y=2(x+1)$"
+      },
+      {
+        "id": "ag-ccn6",
+        "unitId": "conic-conclusions",
+        "difficulty": 3,
+        "type": "choice",
+        "prompt": "（椭圆焦点弦面积）椭圆 $\\dfrac{x^2}{25}+\\dfrac{y^2}{16}=1$ 过左焦点的弦 $AB$，$\\triangle ABF_2$ 面积最大值为（\nA.$12$  B.$16$  C.$20$  D.$24$）",
+        "options": [
+          "$12$",
+          "$16$",
+          "$20$",
+          "$24$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$S=\\dfrac{1}{2}\\cdot|F_1F_2|\\cdot h_{AB}$，需优化"
+      }
+    ]
+  },
+  "conic-mistakes": {
+    "title": "高频易错丢分点",
+    "exercises": [
+      {
+        "id": "ag-cm1",
+        "unitId": "conic-mistakes",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "（易错：开口方向）准线 $x=-2$，焦点在 $x$ 轴正半轴，抛物线方程为（\nA.$y^2=8x$  B.$y^2=4x$  C.$x^2=8y$  D.$y^2=-8x$）",
+        "options": [
+          "$y^2=8x$",
+          "$y^2=4x$",
+          "$x^2=8y$",
+          "$y^2=-8x$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$p=4$，焦点 $(2,0)$，$y^2=8x$"
+      },
+      {
+        "id": "ag-cm2",
+        "unitId": "conic-mistakes",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "（易错：焦点三角形讨论）椭圆 $\\dfrac{x^2}{5}+y^2=1$ 上 $P$ 使 $\\triangle PF_1F_2$ 为直角三角形，这样的 $P$ 有（\nA.$2$  B.$4$  C.$6$  D.$8$）个",
+        "options": [
+          "$2$个",
+          "$4$个",
+          "$6$个",
+          "$8$个"
+        ],
+        "answer": "C",
+        "gaokaoConnection": "直角在 $P$、$F_1$、$F_2$ 各不同情况，共 $6$ 个"
+      },
+      {
+        "id": "ag-cm3",
+        "unitId": "conic-mistakes",
+        "difficulty": 3,
+        "type": "choice",
+        "prompt": "（易错：联立判别式）$y=kx+1$ 与 $\\dfrac{x^2}{4}+y^2=1$ 交于两个不同点，$k$ 范围（\nA.$|k|>\\dfrac{\\sqrt{3}}{3}$  B.$k\\in\\mathbb{R}$\nC.$|k|<\\dfrac{\\sqrt{3}}{2}$  D.$k\\neq 0$）",
+        "options": [
+          "$|k|>\\dfrac{\\sqrt{3}}{3}$",
+          "$k\\in\\mathbb{R}$",
+          "$|k|<\\dfrac{\\sqrt{3}}{2}$",
+          "$k\\neq 0$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "联立后 $\\Delta>0$ 恒成立，但 $(0,1)$ 为切点，排除 $k=0$"
+      },
+      {
+        "id": "ag-cm4",
+        "unitId": "conic-mistakes",
+        "difficulty": 3,
+        "type": "choice",
+        "prompt": "（易错：双曲线支）过 $\\dfrac{x^2}{4}-\\dfrac{y^2}{5}=1$ 右焦点 $(3,0)$ 与两支各交一点的直线斜率范围（\nA.$|k|<\\dfrac{\\sqrt{5}}{2}$  B.$|k|>\\dfrac{\\sqrt{5}}{2}$  C.$|k|<\\dfrac{\\sqrt{5}}{3}$  D.$|k|>\\dfrac{\\sqrt{5}}{3}$）",
+        "options": [
+          "$|k|<\\dfrac{\\sqrt{5}}{2}$",
+          "$|k|>\\dfrac{\\sqrt{5}}{2}$",
+          "$|k|<\\dfrac{\\sqrt{5}}{3}$",
+          "$|k|>\\dfrac{\\sqrt{5}}{3}$"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "与两支各交一点需 $|k|>\\dfrac{\\sqrt{5}}{2}$"
+      },
+      {
+        "id": "ag-cm5",
+        "unitId": "conic-mistakes",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "（易错：$a,b,c$ 对应关系）$\\dfrac{x^2}{9}+\\dfrac{y^2}{4}=1$ 的焦点与 $\\dfrac{x^2}{a^2}-\\dfrac{y^2}{b^2}=1$ 的焦点相同且 $e_{双}=\\dfrac{3}{2}e_{椭}$，则 $b=$（\nA.$1$  B.$2$  C.$3$  D.$4$）",
+        "options": [
+          "$1$",
+          "$2$",
+          "$3$",
+          "$4$"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$c=\\sqrt{5}$，$e_{双}=\\dfrac{3\\sqrt{5}}{6}=\\dfrac{\\sqrt{5}}{2}$，$a_{双}=\\dfrac{\\sqrt{5}}{\\sqrt{5}/2}=2$，$b^2=5-4=1$"
+      }
+    ]
+  }
+}

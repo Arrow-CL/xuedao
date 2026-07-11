@@ -1,0 +1,562 @@
+{
+  "sets-logic": {
+    "concept": {
+      "title": "集合的基本概念",
+      "content": "集合的基本概念\n1. 定义\n把**确定的、互不相同**的对象汇集在一起构成集合；集合中的每个对象叫**元素**。\n2. 元素三大特性\n1. **确定性**：给定集合，任一对象能明确判断是否属于它；\n2. **互异性**：同一个集合中元素互不重复；\n3. **无序性**：集合元素无先后顺序，\\{1,2\\}=\\{2,1\\}。\n3. 元素与集合关系\n- 属于：a\\in A，a是集合A的元素\n- 不属于：a\\notin A，a不是集合A的元素\n4. 常用数集（必背符号）\n\\mathbb{N}：自然数集 \\{0,1,2,3\\cdots\\}\n\\mathbb{N}^* / \\mathbb{N}_+：正整数集 \\{1,2,3\\cdots\\}\n\\mathbb{Z}：整数集 \\{\\dots,-2,-1,0,1,2\\dots\\}\n\\mathbb{Q}：有理数集\n\\mathbb{R}：实数集\n\\varnothing：空集（不含任何元素）\n集合的3种表示方法\n1. **列举法**：把元素一一写出，\\{1,2,3,4\\}\n2. **描述法**：\\{x\\mid x满足条件\\}\n例：\\{x\\mid x>2,x\\in\\mathbb{R}\\} 表示大于2的全体实数\n3. **Venn图法**：用封闭图形直观表示集合"
+    },
+    "relations": {
+      "title": "集合间的关系",
+      "content": "集合间的关系\n1. 子集\n若集合A中任意元素都属于B，称A\\subseteq B（A包含于B）\n- 性质：A\\subseteq A；\\varnothing\\subseteq任意集合\n2. 真子集\nA\\subseteq B且存在元素x\\in B,x\\notin A，记作A\\subsetneqq B\n- 性质：\\varnothing\\subsetneqq任意**非空**集合\n3. 相等集合\nA\\subseteq B且B\\subseteq A \\iff A=B\n4. 子集个数公式（高频考点）\n若集合A有n个元素：\n1. 子集总数：\\mathbf{2^n}\n2. 真子集个数：\\mathbf{2^n -1}\n3. 非空子集个数：\\mathbf{2^n -1}\n4. 非空真子集个数：\\mathbf{2^n -2}\n\n例：A=\\{1,2,3\\}，n=3，子集共2^3=8个"
+    },
+    "operations": {
+      "title": "集合的基本运算",
+      "content": "集合的基本运算（必考）\n设全集为U，集合A、B都是U的子集\n1. 交集 A\\cap B\n定义：同时属于A和B的所有元素\nA\\cap B=\\{x\\mid x\\in A \\text{ 且 } x\\in B\\}\n性质：\nA\\cap A=A,\\ A\\cap\\varnothing=\\varnothing,\\ A\\cap B=B\\cap A\n若A\\subseteq B，则A\\cap B=A\n\n2. 并集 A\\cup B\n定义：属于A或属于B的所有元素\nA\\cup B=\\{x\\mid x\\in A \\text{ 或 } x\\in B\\}\n性质：\nA\\cup A=A,\\ A\\cup\\varnothing=A,\\ A\\cup B=B\\cup A\n若A\\subseteq B，则A\\cup B=B\n\n3. 补集 \\complement_U A\n定义：全集中不属于A的元素构成的集合\n\\complement_U A=\\{x\\mid x\\in U \\text{ 且 } x\\notin A\\}\n性质：\nA\\cup(\\complement_U A)=U,\\quad A\\cap(\\complement_U A)=\\varnothing\n\\complement_U(\\complement_U A)=A\n\\complement_U \\varnothing=U,\\quad \\complement_U U=\\varnothing\n\n4. 德摩根定律（化简难题用）\n\\complement_U(A\\cap B)=(\\complement_U A)\\cup(\\complement_U B)\n\\complement_U(A\\cup B)=(\\complement_U A)\\cap(\\complement_U B)"
+    },
+    "condition": {
+      "title": "充分条件与必要条件",
+      "content": "充分条件与必要条件\n设命题p,q\n1. p\\Rightarrow q：p是q**充分条件**；q是p**必要条件**\n2. p\\Leftrightarrow q（互相推出）：p是q**充要条件**（等价）\n3. 推导记忆\n小范围\\Rightarrow大范围\n例：x>2 \\Rightarrow x>1，x>2是x>1充分不必要\n4. 四种条件分类\n(1) p\\Rightarrow q, q\\nRightarrow p：充分不必要\n(2) p\\nRightarrow q, q\\Rightarrow p：必要不充分\n(3) p\\Leftrightarrow q：充要条件\n(4) p\\nRightarrow q, q\\nRightarrow p：既不充分也不必要\n\n解题方法：\n- 画推导方向箭头图，看能否从p推到q、能否从q推到p\n- 集合角度：设p对应集合A，q对应集合B，A\\subseteq B则p是q充分条件"
+    },
+    "quantifier": {
+      "title": "全称量词与存在量词",
+      "content": "全称量词与存在量词\n1. 量词定义\n全称量词：\\forall，任意、所有、全部\n全称命题：\\forall x\\in M, p(x)\n存在量词：\\exists，存在、有一个、至少一个\n特称命题：\\exists x\\in M, p(x)\n\n2. 命题否定（高考必考）\n规则：**改量词，否结论**\n(1) 全称命题否定为特称命题\n\\forall x\\in M,p(x) 否定：\\exists x\\in M,\\neg p(x)\n(2) 特称命题否定为全称命题\n\\exists x\\in M,p(x) 否定：\\forall x\\in M,\\neg p(x)\n\n3. 常见词语否定对照表\n大于> → 小于等于\\le\n小于< → 大于等于\\ge\n都是 → 不都是\n至少一个 → 一个也没有\n至多一个 → 至少两个\n存在 → 任意\n任意 → 存在\n\n注意区分：\n- 命题否定：只否定结论，不否定条件\n- 否命题：条件和结论全部否定"
+    }
+  },
+  "derivatives": {
+    "derivative-concept": {
+      "title": "导数的概念与几何意义",
+      "content": "导数的概念与几何意义\n1. 平均变化率\n函数 y=f(x) 在区间 [x_0,x_0+\\Delta x]\n\\frac{\\Delta y}{\\Delta x}=\\frac{f(x_0+\\Delta x)-f(x_0)}{\\Delta x}\n\n2. 瞬时变化率（导数定义）\nf'(x_0)=\\lim_{\\Delta x \\to 0}\\frac{f(x_0+\\Delta x)-f(x_0)}{\\Delta x}\n记法：y'\\big|_{x=x_0},\\ \\dfrac{dy}{dx}\\big|_{x=x_0}\n\n3. 导函数\n区间内任意点导数：f'(x)=\\lim\\limits_{\\Delta x \\to 0}\\dfrac{f(x+\\Delta x)-f(x)}{\\Delta x}\n\n4. 几何意义（必考）\nf'(x_0)= 曲线 y=f(x) 在点 P(x_0,f(x_0)) 处**切线斜率 k**\n- 切线方程：\\mathbf{y-f(x_0)=f'(x_0)(x-x_0)}\n- 法线方程（垂直切线）：y-f(x_0)=-\\dfrac{1}{f'(x_0)}(x-x_0)\\quad(f'(x_0)\\neq0)\n易错区分：\n1. **在点处切线**：点在曲线上，直接套公式；\n2. **过点切线**：点不一定在曲线上，设切点 (x_1,f(x_1)) 列方程求解。\n\n5. 物理意义\n位移 s(t)，瞬时速度 v(t)=s'(t)；速度 v(t)，加速度 a(t)=v'(t)"
+    },
+    "derivative-formulas": {
+      "title": "基本初等函数求导公式",
+      "content": "基本初等函数求导公式（必背）\n1. (C)'=0（C 常数）\n2. (x^\\mu)'=\\mu x^{\\mu-1}\n3. (\\sin x)'=\\cos x\n4. (\\cos x)'=-\\sin x\n5. (e^x)'=e^x\n6. (a^x)'=a^x\\ln a\\ (a>0,a\\neq1)\n7. (\\ln x)'=\\dfrac1x\n8. (\\log_a x)'=\\dfrac{1}{x\\ln a}\\ (a>0,a\\neq1)"
+    },
+    "derivative-rules": {
+      "title": "四则运算法则",
+      "content": "四则运算法则\n设 f(x),g(x) 均可导：\n1. 和差：\\big[f(x)\\pm g(x)\\big]'=f'(x)\\pm g'(x)\n2. 乘积：\\big[f(x)\\cdot g(x)\\big]'=f'(x)g(x)+f(x)g'(x)\n3. 商：\\left[\\dfrac{f(x)}{g(x)}\\right]'=\\dfrac{f'(x)g(x)-f(x)g'(x)}{\\big[g(x)\\big]^2}\\ \\big(g(x)\\neq0\\big)\n\n复合函数求导（核心难点）\ny=f(u),\\ u=g(x)，则 \\mathbf{y'_x=y'_u\\cdot u'_x}\n例：y=\\sin(2x+1)\ny'=\\cos(2x+1)\\cdot(2x+1)'=2\\cos(2x+1)"
+    },
+    "derivative-monotonicity": {
+      "title": "导数与函数单调性",
+      "content": "导数与函数单调性（大题核心）\n设函数 y=f(x) 在区间 I 可导\n1. **单调递增**：f'(x)>0 在区间恒成立；\n   若 f'(x)\\ge0，且仅有限个点 f'(x)=0，函数仍单调递增；\n2. **单调递减**：f'(x)<0 在区间恒成立；\n   若 f'(x)\\le0，且仅有限个点 f'(x)=0，函数仍单调递减；\n3. 求解单调区间步骤：\n   ① 求定义域；② 求 f'(x)；③ 解方程 f'(x)=0；\n   ④ 零点划分定义域区间，列表判断 f'(x) 正负；\n4. 已知单调性求参数：\n   f(x) 在区间递增 \\iff f'(x)\\ge0 在区间恒成立；\n   f(x) 在区间递减 \\iff f'(x)\\le0 在区间恒成立。"
+    },
+    "derivative-extremum": {
+      "title": "极值与最值",
+      "content": "极值与最值\n1. 极值定义\nx_0 附近：\n- 若 f(x_0) 比两侧都大：f(x_0) 极大值，x_0 极大值点；\n- 若 f(x_0) 比两侧都小：f(x_0) 极小值，x_0 极小值点。\n\n2. 极值判定第一充分条件\nf'(x_0)=0，且左右导数变号：\n1. 左正右负 → x_0 极大值点；\n2. 左负右正 → x_0 极小值点；\n3. 左右同号 → x_0 不是极值点。\n\n3. 极值判定第二充分条件（二阶导）\nf'(x_0)=0,\\ f''(x_0)\\neq0\n1. f''(x_0)<0 → 极大值；\n2. f''(x_0)>0 → 极小值。\n\n4. 闭区间 [a,b] 最值步骤\n1. 求区间内全部极值；\n2. 计算区间端点函数值 f(a),f(b)；\n3. 全部数值对比：最大为最大值，最小为最小值。"
+    },
+    "derivative-always": {
+      "title": "恒成立与存在性问题",
+      "content": "恒成立/存在性问题（高考压轴高频）\n定义域 x\\in D\n1. \\forall x\\in D,\\ f(x)\\ge m 恒成立 \\iff f(x)_{\\min}\\ge m\n2. \\forall x\\in D,\\ f(x)\\le m 恒成立 \\iff f(x)_{\\max}\\le m\n3. \\exists x\\in D,\\ f(x)\\ge m 有解 \\iff f(x)_{\\max}\\ge m\n4. \\exists x\\in D,\\ f(x)\\le m 有解 \\iff f(x)_{min}\\le m"
+    },
+    "derivative-zeros": {
+      "title": "导数与零点",
+      "content": "导数与零点（方程根个数）\n题型：判断 f(x)=0 实根数量\n步骤：\n1. 求定义域、单调性、极值；\n2. 分析两端极限（x\\to+\\infty,\\ x\\to-\\infty 或区间端点）；\n3. 结合极值正负画图，数曲线与 x 轴交点个数。"
+    },
+    "derivative-construct": {
+      "title": "导数构造函数",
+      "content": "导数构造函数（不等式证明难点）\n常见构造模板：\n1. xf(x) 型：含 xf'(x)+f(x)，构造 g(x)=x\\cdot f(x)\n2. \\dfrac{f(x)}{x} 型：含 xf'(x)-f(x)，构造 g(x)=\\dfrac{f(x)}{x}\n3. e^x f(x) 型：含 f'(x)+f(x)，构造 g(x)=e^x f(x)\n4. \\dfrac{f(x)}{e^x} 型：含 f'(x)-f(x)，构造 g(x)=\\dfrac{f(x)}{e^x}"
+    },
+    "derivative-integral": {
+      "title": "定积分",
+      "content": "定积分（理科/新高考拓展）\n1. 微积分基本定理（牛顿-莱布尼茨）\n若 F'(x)=f(x)，则\n\\int_a^b f(x)dx=F(b)-F(a)\nF(x) 称为 f(x) 的一个原函数。\n\n2. 定积分几何意义\n1. f(x)\\ge0：\\int_a^b f(x)dx = 曲线、x 轴、x=a,x=b 围成面积；\n2. f(x)<0：积分值为负，面积取绝对值；\n3. 两曲线 y=f(x),y=g(x)\\ (f(x)\\ge g(x)) 围成面积：\nS=\\int_a^b \\big[f(x)-g(x)\\big]dx\n\n3. 定积分性质\n\\int_a^b f(x)dx=-\\int_b^a f(x)dx,\\quad \\int_a^a f(x)dx=0\n\\int_a^b [f(x)\\pm g(x)]dx=\\int_a^b f(x)dx \\pm \\int_a^b g(x)dx"
+    },
+    "derivative-mistakes": {
+      "title": "常见易错点汇总",
+      "content": "常见易错点汇总\n1. 求切线：区分\"在点\"和\"过点\"，极易漏解；\n2. 单调区间：定义域优先，区间不能用并集符号 \\cup，只能逗号分隔；\n3. 恒成立问题：f'(x)\\ge0 而非 f'(x)>0，漏掉等号丢分；\n4. 极值点：f'(x_0)=0 只是必要不充分条件，导数为0不一定是极值；\n5. 闭区间最值：必须算端点，不能只看极值；\n6. 复合函数求导：多层复合逐层求导，不要漏乘内层导数；\n7. 含参讨论：二次导函数分开口、判别式、根的大小分类讨论。"
+    }
+  },
+  "trigonometric": {
+    "trig-angle-rad": {
+      "title": "任意角与弧度制",
+      "content": "任意角与弧度制\n1. 角的概念推广\n- 正角：逆时针旋转；负角：顺时针旋转；零角：不旋转\n- 终边相同的角：\\alpha=\\beta+2k\\pi,\\ k\\in\\mathbb{Z}\n- 象限角：\n  一象限：2k\\pi<\\alpha<2k\\pi+\\dfrac{\\pi}{2}\n  二象限：2k\\pi+\\dfrac{\\pi}{2}<\\alpha<2k\\pi+\\pi\n  三象限：2k\\pi+\\pi<\\alpha<2k\\pi+\\dfrac{3\\pi}{2}\n  四象限：2k\\pi+\\dfrac{3\\pi}{2}<\\alpha<2k\\pi+2\\pi\n- 轴线角（坐标轴上）：\\alpha=\\dfrac{k\\pi}{2},\\ k\\in\\mathbb{Z}\n\n2. 弧度制\n1. 换算：180^\\circ=\\pi\\ \\mathrm{rad}\n   1^\\circ=\\dfrac{\\pi}{180}\\ \\mathrm{rad},\\quad 1\\ \\mathrm{rad}=\\left(\\dfrac{180}{\\pi}\\right)^\\circ\n2. 弧长公式：l=|\\alpha|\\cdot r\n3. 扇形面积：S=\\dfrac12lr=\\dfrac12|\\alpha|r^2"
+    },
+    "trig-def": {
+      "title": "三角函数定义",
+      "content": "三角函数定义（单位圆/坐标定义）\n设角\\alpha终边上一点P(x,y)，r=\\sqrt{x^2+y^2}\n\\sin\\alpha=\\frac{y}{r},\\ \\cos\\alpha=\\frac{x}{r},\\ \\tan\\alpha=\\frac{y}{x}(x\\neq0)\n单位圆r=1：\\sin\\alpha=y,\\ \\cos\\alpha=x,\\ \\tan\\alpha=\\dfrac{y}{x}\n\n符号口诀\n一全正、二正弦、三正切、四余弦"
+    },
+    "trig-same-angle": {
+      "title": "同角三角函数基本关系",
+      "content": "同角三角函数基本关系\n1. 平方关系：\\mathbf{\\sin^2\\alpha+\\cos^2\\alpha=1}\n   变形：\\sin\\alpha=\\pm\\sqrt{1-\\cos^2\\alpha},\\ \\cos\\alpha=\\pm\\sqrt{1-\\sin^2\\alpha}（符号看象限）\n2. 商数关系：\\mathbf{\\tan\\alpha=\\dfrac{\\sin\\alpha}{\\cos\\alpha}}\n3. 衍生：1+\\tan^2\\alpha=\\dfrac{1}{\\cos^2\\alpha}"
+    },
+    "trig-induction": {
+      "title": "诱导公式",
+      "content": "诱导公式（口诀：奇变偶不变，符号看象限）\n1. \\alpha+2k\\pi\n\\sin(\\alpha+2k\\pi)=\\sin\\alpha,\\ \\cos(\\alpha+2k\\pi)=\\cos\\alpha,\\ \\tan(\\alpha+2k\\pi)=\\tan\\alpha\n\n2. -\\alpha\n\\sin(-\\alpha)=-\\sin\\alpha,\\ \\cos(-\\alpha)=\\cos\\alpha,\\ \\tan(-\\alpha)=-\\tan\\alpha\n\n3. \\pi\\pm\\alpha\n\\sin(\\pi-\\alpha)=\\sin\\alpha,\\ \\sin(\\pi+\\alpha)=-\\sin\\alpha\n\\cos(\\pi-\\alpha)=-\\cos\\alpha,\\ \\cos(\\pi+\\alpha)=-\\cos\\alpha\n\\tan(\\pi-\\alpha)=-\\tan\\alpha,\\ \\tan(\\pi+\\alpha)=\\tan\\alpha\n\n4. \\dfrac{\\pi}{2}\\pm\\alpha（奇偶变换，sin↔cos）\n\\sin\\left(\\dfrac{\\pi}{2}-\\alpha\\right)=\\cos\\alpha,\\ \\sin\\left(\\dfrac{\\pi}{2}+\\alpha\\right)=\\cos\\alpha\n\\cos\\left(\\dfrac{\\pi}{2}-\\alpha\\right)=\\sin\\alpha,\\ \\cos\\left(\\dfrac{\\pi}{2}+\\alpha\\right)=-\\sin\\alpha"
+    },
+    "trig-graphs": {
+      "title": "三角函数图像与性质",
+      "content": "三角函数图像与性质（y=\\sin x,y=\\cos x,y=\\tan x）\n1. y=\\sin x\n- 定义域：\\mathbb{R}；值域：[-1,1]\n- 周期：T=2\\pi；奇函数；对称轴x=\\dfrac{\\pi}{2}+k\\pi；对称中心(k\\pi,0)\n- 单调增：\\left[-\\dfrac{\\pi}{2}+2k\\pi,\\dfrac{\\pi}{2}+2k\\pi\\right]\n- 单调减：\\left[\\dfrac{\\pi}{2}+2k\\pi,\\dfrac{3\\pi}{2}+2k\\pi\\right]\n\n2. y=\\cos x\n- 定义域：\\mathbb{R}；值域：[-1,1]\n- 周期：T=2\\pi；偶函数；对称轴x=k\\pi；对称中心\\left(\\dfrac{\\pi}{2}+k\\pi,0\\right)\n- 单调增：[\\pi+2k\\pi,2\\pi+2k\\pi]\n- 单调减：[2k\\pi,\\pi+2k\\pi]\n\n3. y=\\tan x\n- 定义域：x\\neq\\dfrac{\\pi}{2}+k\\pi；值域：\\mathbb{R}\n- 周期：T=\\pi；奇函数；对称中心\\left(\\dfrac{k\\pi}{2},0\\right)\n- 单调增：\\left(-\\dfrac{\\pi}{2}+k\\pi,\\dfrac{\\pi}{2}+k\\pi\\right)，无递减区间\n\n4. 正弦型函数 y=A\\sin(\\omega x+\\varphi)+B\n1. 参数含义：\n   - |A|：振幅；B：上下平移中线；\n   - 周期 T=\\dfrac{2\\pi}{|\\omega|}；频率f=\\dfrac1T；\\varphi初相\n2. 五点作图法：令\\omega x+\\varphi依次取0,\\dfrac{\\pi}{2},\\pi,\\dfrac{3\\pi}{2},2\\pi\n3. 图像变换（两种顺序）\n   - 先平移后伸缩：y=\\sin x\\xrightarrow{\\text{左}\\varphi}\\sin(x+\\varphi)\\xrightarrow{\\text{横轴缩}\\omega}\\sin(\\omega x+\\varphi)\n   - 先伸缩后平移：y=\\sin x\\xrightarrow{\\text{横轴缩}\\omega}\\sin(\\omega x)\\xrightarrow{\\text{左}\\frac{\\varphi}{\\omega}}\\sin\\left[\\omega\\left(x+\\frac{\\varphi}{\\omega}\\right)\\right]"
+    },
+    "trig-identities": {
+      "title": "三角恒等变换",
+      "content": "三角恒等变换（高考核心计算）\n1. 和差公式\n\\sin(\\alpha\\pm\\beta)=\\sin\\alpha\\cos\\beta\\pm\\cos\\alpha\\sin\\beta\n\\cos(\\alpha\\pm\\beta)=\\cos\\alpha\\cos\\beta\\mp\\sin\\alpha\\sin\\beta\n\\tan(\\alpha\\pm\\beta)=\\frac{\\tan\\alpha\\pm\\tan\\beta}{1\\mp\\tan\\alpha\\tan\\beta}\n\n2. 二倍角公式\n\\sin2\\alpha=2\\sin\\alpha\\cos\\alpha\n\\cos2\\alpha=\\cos^2\\alpha-\\sin^2\\alpha=2\\cos^2\\alpha-1=1-2\\sin^2\\alpha\n\\tan2\\alpha=\\frac{2\\tan\\alpha}{1-\\tan^2\\alpha}\n\n3. 降幂公式（高频化简）\n\\sin^2\\alpha=\\frac{1-\\cos2\\alpha}{2},\\quad \\cos^2\\alpha=\\frac{1+\\cos2\\alpha}{2}\n\n4. 辅助角公式（必考）\na\\sin x+b\\cos x=\\sqrt{a^2+b^2}\\sin(x+\\varphi)\n其中\\tan\\varphi=\\dfrac{b}{a}，用于求值域、最值、周期\n\n5. 半角、积化和差、和差化积（了解）\n半角：\\sin\\dfrac{\\alpha}{2}=\\pm\\sqrt{\\dfrac{1-\\cos\\alpha}{2}},\\ \\cos\\dfrac{\\alpha}{2}=\\pm\\sqrt{\\dfrac{1+\\cos\\alpha}{2}}"
+    },
+    "trig-triangle": {
+      "title": "解三角形",
+      "content": "解三角形（三角函数应用题核心）\n设\\triangle ABC内角A,B,C，对边a,b,c，外接圆半径R\n\n1. 内角和：A+B+C=\\pi\n推论：\\sin(A+B)=\\sin C,\\ \\cos(A+B)=-\\cos C\n\n2. 正弦定理\n\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}=2R\n变形：a=2R\\sin A,\\ \\sin A:\\sin B:\\sin C=a:b:c\n\n3. 余弦定理\na^2=b^2+c^2-2bc\\cos A\n\\cos A=\\frac{b^2+c^2-a^2}{2bc}\n\n4. 三角形面积公式\nS=\\frac12ab\\sin C=\\frac12bc\\sin A=\\frac12ac\\sin B\n\n5. 三角形判断\n- a^2=b^2+c^2：直角；a^2>b^2+c^2：钝角；a^2<b^2+c^2：锐角"
+    },
+    "trig-gaokao": {
+      "title": "高考高频题型与拓展",
+      "content": "高考高频题型考点总结\n1. 给值求值：同角平方关系+象限判断符号（你手写那道题）\n2. 诱导公式化简、角度转换\n3. y=A\\sin(\\omega x+\\varphi)求周期、单调区间、最值、图像平移\n4. 恒等变换：二倍角+降幂+辅助角求值域\n5. 解三角形：正余弦定理+面积+实际测量应用题\n6. 三角图像结合零点、对称轴、对称中心综合题\n\n【高考不考，作为了解】反三角函数\n1. y=\\arcsin x：定义域[-1,1]，值域\\left[-\\dfrac{\\pi}{2},\\dfrac{\\pi}{2}\\right]，奇函数\n2. y=\\arccos x：定义域[-1,1]，值域[0,\\pi]\n3. y=\\arctan x：定义域\\mathbb{R}，值域\\left(-\\dfrac{\\pi}{2},\\dfrac{\\pi}{2}\\right)，奇函数"
+    }
+  },
+  "sequences": {
+    "seq-concept": {
+      "title": "数列基础概念",
+      "content": "数列基础概念\n1. 定义\n按一定顺序排成的一列数 a_1,a_2,a_3,\\dots,a_n,\\dots，记作 \\{a_n\\}\n- a_1：首项；a_n：第 n 项；n：项数（n\\in \\mathbb{N}^*）\n2. 数列分类\n1. 按项数：**有穷数列**、**无穷数列**\n2. 按单调性：递增、递减、常数列、摆动数列\n3. 按规律：等差、等比、递推数列\n\n3. 通项公式 a_n=f(n)\n用 n 直接表示第 n 项，可求任意一项。\n\n4. 前 n 项和 S_n\nS_n=a_1+a_2+\\dots+a_n\n**核心万能关系式（必考）**\n\\mathbf{a_n= S_1,\\ n=1 \\\\ S_n-S_{n-1},\\ n\\ge2 }\n易错点：求出 n\\ge2 的表达式后，**必须验证 n=1 是否满足**，不满足则分段写。\n\n5. 递推公式\n用前一项/前几项表示后一项，如 a_{n+1}=2a_n+1。"
+    },
+    "arithmetic": {
+      "title": "等差数列",
+      "content": "等差数列（核心1）\n1. 定义\n从第2项起，后项减前项为固定常数 d（公差）\na_{n+1}-a_n=d\\quad(n\\in\\mathbb{N}^*)\n\n2. 通项公式\na_n=a_1+(n-1)d\n推广（任意两项）：\\mathbf{a_m=a_n+(m-n)d}\n\n3. 前 n 项和公式\nS_n=\\frac{n(a_1+a_n)}{2}\nS_n=na_1+\\frac{n(n-1)}{2}d\n函数特征：S_n=\\dfrac{d}{2}n^2+\\left(a_1-\\dfrac{d}{2}\\right)n，是**无常数项二次函数**。\n\n4. 等差数列核心性质\n1. 若 m+n=p+q，则 \\mathbf{a_m+a_n=a_p+a_q}\n   特例：m+n=2k \\implies a_m+a_n=2a_k（a_k 中项）\n2. 片段和性质：S_k,\\ S_{2k}-S_k,\\ S_{3k}-S_{2k},\\dots 仍成等差数列，公差 k^2d\n3. 项数为 2n：S_{\\text{偶}}-S_{\\text{奇}}=nd；\\dfrac{S_{\\text{奇}}}{S_{\\text{偶}}}=\\dfrac{a_n}{a_{n+1}}\n4. 项数为 2n-1：S_{2n-1}=(2n-1)a_n；S_{\\text{奇}}-S_{\\text{偶}}=a_n\n\n5. 等差中项\n三数 a,A,b 成等差 \\iff 2A=a+b"
+    },
+    "geometric": {
+      "title": "等比数列",
+      "content": "等比数列（核心2）\n1. 定义\n从第2项起，后项比前项为固定常数 q（公比，q\\neq0，各项 a_n\\neq0）\n\\frac{a_{n+1}}{a_n}=q\n\n2. 通项公式\na_n=a_1 q^{n-1}\n推广：\\mathbf{a_m=a_n q^{m-n}}\n\n3. 前 n 项和公式（分 q=1、q\\neq1 两类，极易漏讨论）\n- 当 q=1（常数列）：\\mathbf{S_n=na_1}\n- 当 q\\neq1：\nS_n=\\frac{a_1(1-q^n)}{1-q}=\\frac{a_1-a_n q}{1-q}\n函数特征：S_n=Aq^n-A（常数项与系数互为相反数）\n\n4. 等比数列核心性质\n1. 若 m+n=p+q，则 \\mathbf{a_m\\cdot a_n=a_p\\cdot a_q}\n   特例：m+n=2k \\implies a_m a_n=a_k^2\n2. 片段和性质：S_k,\\ S_{2k}-S_k,\\ S_{3k}-S_{2k},\\dots 成等比数列（**要求 S_k\\neq0**）\n3. 同号项才能取中项\n\n5. 等比中项\n三数 a,G,b 成等比 \\iff G^2=ab\\quad(ab>0)"
+    },
+    "seq-formula": {
+      "title": "数列通项求法",
+      "content": "数列通项 a_n 7种求法（大题必考）\n1. 已知 S_n 求 a_n\n用分段式 a_n= S_1 \\ n=1 \\\\ S_n-S_{n-1} \\ n\\ge2 ，验证首项。\n\n2. 等差型：a_{n+1}-a_n=f(n)\n累加法：左右全部相加消去中间项。\n\n3. 等比型：\\dfrac{a_{n+1}}{a_n}=f(n)\n累乘法：左右累乘约分。\n\n4. 一阶线性递推：a_{n+1}=pa_n+q\\ (p\\neq0,1)\n构造等比数列：设 a_{n+1}+t=p(a_n+t)，解出 t=\\dfrac{q}{p-1}，则 \\{a_n+t\\} 为公比 p 的等比数列。\n\n5. a_{n+1}=pa_n+f(n)（配凑等差/等比）\n例：a_{n+1}=2a_n+2^n，两边同除 2^{n+1} 构造新等差数列。\n\n6. 取倒数型：a_{n+1}=\\dfrac{pa_n}{qa_n+r}\n两边取倒数：\\dfrac{1}{a_{n+1}}=\\dfrac{r}{p}\\cdot\\dfrac{1}{a_n}+\\dfrac{q}{p}，转化为一阶线性递推。\n\n7. 特征方程（二阶线性 a_{n+2}=pa_{n+1}+qa_n）\n解特征方程 x^2-px-q=0，分两不等实根、两相等实根、共轭虚根三种情况写通项。"
+    },
+    "seq-sum": {
+      "title": "数列求和方法",
+      "content": "数列求和6大方法（高考大题高频）\n1. 公式法\n等差、等比直接套求和公式；常用自然数求和：\n\\sum_{k=1}^n k=\\frac{n(n+1)}{2},\\quad \\sum_{k=1}^n k^2=\\frac{n(n+1)(2n+1)}{6}\n\n2. 分组求和\n通项拆成等差+等比/可求和数列，分开求和再相加。\n例：a_n=2n+3^n，S_n=\\sum2n+\\sum3^n\n\n3. 裂项相消（高频）\n分式拆成两项差，相加中间全部抵消，常见模板：\n1. \\dfrac{1}{n(n+k)}=\\dfrac1k\\left(\\dfrac1n-\\dfrac{1}{n+k}\\right)\n2. \\dfrac{1}{\\sqrt{n+k}+\\sqrt{n}}=\\dfrac1k(\\sqrt{n+k}-\\sqrt{n})\n3. \\dfrac{1}{(2n-1)(2n+1)}=\\dfrac12\\left(\\dfrac{1}{2n-1}-\\dfrac{1}{2n+1}\\right)\n\n4. 错位相减（等差×等比专用）\n通项 a_n=(An+B)\\cdot q^n（等差×等比），步骤：\n1. 写出 S_n；\n2. 两边同乘公比 q 得 qS_n；\n3. 两式错位相减，中间为等比数列，化简求解。\n\n5. 倒序相加\n对称项相加为定值，典型：等差数列求和、f(x)+f(1-x) 型数列。\n\n6. 奇偶分类求和\n通项含 (-1)^n、分段项，分 n 奇数、偶数讨论。"
+    },
+    "seq-mistakes": {
+      "title": "数列常见易错点",
+      "content": "数列常见易错点\n1. S_n 求 a_n 忘记验证 n=1，导致分段；\n2. 等比求和不分 q=1 和 q\\neq1，直接套分式公式扣分；\n3. 等比数列片段和 S_k,S_{2k}-S_k,\\dots 忽略 S_k=0 不成等比；\n4. 裂项相消漏系数、剩首尾项数算错；\n5. 错位相减相减时符号出错、等比项数统计错误；\n6. 等比中项 G^2=ab，a,b 必须同号，负数无实数中项；\n7. 公比 q=0 不是合法等比数列，所有项不能为0。"
+    },
+    "seq-gaokao": {
+      "title": "高考常考题型",
+      "content": "高考常考题型\n1. 基础：等差等比求通项、求和、参数；\n2. 中档：S_n 与 a_n 互推、累加法/累乘法求通项；\n3. 大题：裂项相消、错位相减求和；\n4. 压轴：递推构造新数列、数列不等式证明、存在性问题。"
+    }
+  },
+  "vectors-app": {
+    "vec-basics": {
+      "title": "向量基础概念",
+      "content": "向量基础概念\n1. **向量定义**：既有大小又有方向的量；只有大小无方向的叫**数量**。\n2. **表示方法**\n   - 有向线段：\\overrightarrow{AB}（起点A，终点B）\n   - 小写字母：\\mathbf{a},\\mathbf{b},\\mathbf{c}\n3. **模长**：向量的长度，记作|\\overrightarrow{AB}|、|\\mathbf{a}|，模是**非负实数**。\n4. 特殊向量\n   - 零向量\\mathbf{0}：长度为0，方向任意；\\mathbf{0}与任意向量平行。\n   - 单位向量：模长|\\mathbf{e}|=1；与\\mathbf{a}同向单位向量：\\mathbf{e}_\\mathbf{a}=\\dfrac{\\mathbf{a}}{|\\mathbf{a}|}\\ (\\mathbf{a}\\neq\\mathbf{0})。\n5. 向量关系\n   - 相等向量：长度相等、方向相同，\\mathbf{a}=\\mathbf{b}。\n   - 相反向量：长度相等、方向相反，\\mathbf{a}+(-\\mathbf{a})=\\mathbf{0}。\n   - 平行（共线）向量：方向相同/相反，记作\\mathbf{a}\\parallel\\mathbf{b}；**零向量平行所有向量**。\n   - 垂直向量：夹角90^\\circ，记作\\mathbf{a}\\perp\\mathbf{b}。"
+    },
+    "vec-linear": {
+      "title": "向量线性运算",
+      "content": "向量线性运算（加减、数乘）\n1. 向量加法\n- 三角形法则：\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}（首尾相接）\n- 平行四边形法则：同起点两向量，对角线为和向量\n运算律：\n\\mathbf{a}+\\mathbf{b}=\\mathbf{b}+\\mathbf{a}；(\\mathbf{a}+\\mathbf{b})+\\mathbf{c}=\\mathbf{a}+(\\mathbf{b}+\\mathbf{c})；\\mathbf{a}+\\mathbf{0}=\\mathbf{a}\n\n2. 向量减法\n\\mathbf{a}-\\mathbf{b}=\\mathbf{a}+(-\\mathbf{b})；几何：同起点，\\mathbf{a}-\\mathbf{b} 指向**被减向量终点**。\n\n3. 实数与向量数乘 \\lambda\\mathbf{a}\n1. 模：|\\lambda\\mathbf{a}|=|\\lambda|\\cdot|\\mathbf{a}|\n2. 方向：\n   \\lambda>0，\\lambda\\mathbf{a} 与\\mathbf{a}同向；\\lambda<0反向；\\lambda=0，\\lambda\\mathbf{a}=\\mathbf{0}\n运算律：\n\\lambda(\\mu\\mathbf{a})=(\\lambda\\mu)\\mathbf{a}；(\\lambda+\\mu)\\mathbf{a}=\\lambda\\mathbf{a}+\\mu\\mathbf{a}；\\lambda(\\mathbf{a}+\\mathbf{b})=\\lambda\\mathbf{a}+\\lambda\\mathbf{b}\n\n4. 共线向量定理（必考）\n向量\\mathbf{a}\\neq\\mathbf{0}，\\mathbf{b}\\parallel\\mathbf{a} \\iff 存在唯一实数\\lambda，使 \\mathbf{b}=\\lambda\\mathbf{a}。\n\n5. 平面向量基本定理\n若\\mathbf{e}_1,\\mathbf{e}_2是同一平面**不共线基底**，平面内任意向量\\mathbf{a}，存在唯一实数\\lambda_1,\\lambda_2：\n\\mathbf{a}=\\lambda_1\\mathbf{e}_1+\\lambda_2\\mathbf{e}_2\n推论：三点A,B,C共线 \\iff \\overrightarrow{OC}=x\\overrightarrow{OA}+y\\overrightarrow{OB} 且 x+y=1。"
+    },
+    "vec-coord": {
+      "title": "平面向量坐标运算",
+      "content": "平面向量坐标运算\n设\\mathbf{a}=(x_1,y_1),\\mathbf{b}=(x_2,y_2)，实数\\lambda\n1. 加减：\n\\mathbf{a}+\\mathbf{b}=(x_1+x_2,\\ y_1+y_2)\n\\mathbf{a}-\\mathbf{b}=(x_1-x_2,\\ y_1-y_2)\n2. 数乘：\\lambda\\mathbf{a}=(\\lambda x_1,\\ \\lambda y_1)\n3. 两点向量：A(x_1,y_1),B(x_2,y_2)，\\overrightarrow{AB}=(x_2-x_1,\\ y_2-y_1)\n4. 模长公式：|\\mathbf{a}|=\\sqrt{x_1^2+y_1^2}\n5. 平行判定：\\mathbf{a}\\parallel\\mathbf{b} \\iff x_1y_2 - x_2y_1 = 0"
+    },
+    "vec-dot": {
+      "title": "平面向量数量积",
+      "content": "平面向量数量积（点乘，核心大题考点）\n1. 定义\n两向量夹角\\theta\\in[0,\\pi]，\n\\mathbf{a}\\cdot\\mathbf{b}=|\\mathbf{a}||\\mathbf{b}|\\cos\\theta\n- \\theta=0^\\circ同向：\\mathbf{a}\\cdot\\mathbf{b}=|\\mathbf{a}||\\mathbf{b}|\n- \\theta=90^\\circ垂直：\\mathbf{a}\\cdot\\mathbf{b}=0\n- \\theta=180^\\circ反向：\\mathbf{a}\\cdot\\mathbf{b}=-|\\mathbf{a}||\\mathbf{b}|\n\n2. 坐标公式\n\\mathbf{a}=(x_1,y_1),\\mathbf{b}=(x_2,y_2)\n\\mathbf{a}\\cdot\\mathbf{b}=x_1x_2+y_1y_2\n\n3. 夹角公式\n\\cos\\theta=\\frac{\\mathbf{a}\\cdot\\mathbf{b}}{|\\mathbf{a}|\\cdot|\\mathbf{b}|}=\\frac{x_1x_2+y_1y_2}{\\sqrt{x_1^2+y_1^2}\\cdot\\sqrt{x_2^2+y_2^2}}\n\n4. 垂直充要条件\n\\mathbf{a}\\perp\\mathbf{b} \\iff \\mathbf{a}\\cdot\\mathbf{b}=0 \\iff x_1x_2+y_1y_2=0\n\n5. 数量积运算律\n\\mathbf{a}\\cdot\\mathbf{b}=\\mathbf{b}\\cdot\\mathbf{a}\n(\\lambda\\mathbf{a})\\cdot\\mathbf{b}=\\lambda(\\mathbf{a}\\cdot\\mathbf{b})=\\mathbf{a}\\cdot(\\lambda\\mathbf{b})\n(\\mathbf{a}+\\mathbf{b})\\cdot\\mathbf{c}=\\mathbf{a}\\cdot\\mathbf{c}+\\mathbf{b}\\cdot\\mathbf{c}\n\n6. 重要恒等式\n|\\mathbf{a}\\pm\\mathbf{b}|^2=|\\mathbf{a}|^2\\pm2\\mathbf{a}\\cdot\\mathbf{b}+|\\mathbf{b}|^2\n|\\mathbf{a}|^2=\\mathbf{a}\\cdot\\mathbf{a}=x_1^2+y_1^2\n\n投影向量\n\\mathbf{a}在\\mathbf{b}方向上的投影数量：\n\\text{proj}_\\mathbf{b}\\mathbf{a}=|\\mathbf{a}|\\cos\\theta=\\frac{\\mathbf{a}\\cdot\\mathbf{b}}{|\\mathbf{b}|}\n投影向量：\\left(\\dfrac{\\mathbf{a}\\cdot\\mathbf{b}}{|\\mathbf{b}|^2}\\right)\\mathbf{b}"
+    },
+    "vec-geometry": {
+      "title": "向量与平面几何常用结论",
+      "content": "向量与平面几何常用结论\n1. 中点公式：A(x_1,y_1),B(x_2,y_2)，中点M\\left(\\dfrac{x_1+x_2}{2},\\dfrac{y_1+y_2}{2}\\right)\n\\overrightarrow{OM}=\\dfrac12(\\overrightarrow{OA}+\\overrightarrow{OB})\n2. 重心：\\triangle ABC重心G，\\overrightarrow{AG}=\\dfrac13(\\overrightarrow{AB}+\\overrightarrow{AC})，\\overrightarrow{OG}=\\dfrac13(\\overrightarrow{OA}+\\overrightarrow{OB}+\\overrightarrow{OC})\n3. 平行四边形：对角线向量 \\overrightarrow{AC}=\\overrightarrow{AB}+\\overrightarrow{AD},\\ \\overrightarrow{BD}=\\overrightarrow{AD}-\\overrightarrow{AB}\n4. 三角形中线：AM为中线，则\\overrightarrow{AM}=\\dfrac12(\\overrightarrow{AB}+\\overrightarrow{AC})"
+    },
+    "vec-inequality": {
+      "title": "向量解不等式",
+      "content": "向量解不等式（模长不等式）\n三角不等式：\n||\\mathbf{a}|-|\\mathbf{b}|| \\le |\\mathbf{a}\\pm\\mathbf{b}| \\le |\\mathbf{a}|+|\\mathbf{b}|\n- 同向取等：|\\mathbf{a}+\\mathbf{b}|=|\\mathbf{a}|+|\\mathbf{b}|\n- 反向取等：|\\mathbf{a}-\\mathbf{b}|=|\\mathbf{a}|+|\\mathbf{b}|"
+    },
+    "vec-mistakes": {
+      "title": "高频易错点",
+      "content": "高频易错点\n1. 向量不能直接比较大小，只有模长能比；\n2. \\mathbf{a}\\cdot\\mathbf{b}=0 只能推出垂直，不能推出\\mathbf{a}=\\mathbf{0}或\\mathbf{b}=\\mathbf{0}；\n3. 数量积不满足结合律：(\\mathbf{a}\\cdot\\mathbf{b})\\cdot\\mathbf{c}\\neq\\mathbf{a}\\cdot(\\mathbf{b}\\cdot\\mathbf{c})；\n4. 平行坐标条件别记反：x_1y_2=x_2y_1，不是x_1x_2=y_1y_2；\n5. 三点共线条件：\\overrightarrow{OC}=x\\overrightarrow{OA}+y\\overrightarrow{OB} 必须满足x+y=1；\n6. 夹角范围[0,\\pi]，钝角等价\\mathbf{a}\\cdot\\mathbf{b}<0且不反向；锐角等价\\mathbf{a}\\cdot\\mathbf{b}>0且不同向。"
+    }
+  },
+  "func-concept": {
+    "func-foundation": {
+      "title": "函数基础",
+      "content": "函数基础（高考选择第1/3题必考，5分）\n1. 函数三要素（判断相等函数）\n1. 定义域、对应法则、值域；**两函数相等 ⇨ 定义域+对应法则完全相同**\n2. 定义域求法（高频坑点）\n   - 分式：分母≠0；偶次根式：被开方数≥0\n   - \\log_a x：真数x>0，底数a>0,a≠1；x^0：底数≠0；\\tan x：x\\neq\\frac{\\pi}{2}+k\\pi\n   - 复合函数f(g(x))：内层g(x)值域⊆外层f(x)定义域\n3. 复合定义域两类题型\n   - 已知f(x)定义域x∈[a,b]，求f(g(x))：解a≤g(x)≤b\n   - 已知f(g(x))定义域x∈[a,b]，求f(x)：求g(x)在[a,b]的值域\n4. 分段函数（近10年高考22次考查）\n   - 本质：**一个函数**，分段求值先判断自变量区间；\n   - 考法：分段比较大小、分段解不等式、分段求参数。"
+    },
+    "func-monotonicity": {
+      "title": "单调性",
+      "content": "单调性（选择、大题高频，导数大题基础）\n1. 定义与判定\n设x_1<x_2，区间I内：\n- f(x_1)<f(x_2)：单调递增；f(x_1)>f(x_2)：单调递减\n判定3种方法：\n1. **定义法**：大题证明单调性标准步骤（作差→因式分解→判正负）\n2. **图像法**：左低右高增，左高右低减\n3. **导数法（高三核心）**：f'(x)>0递增；f'(x)<0递减；单点导数为0不改变单调性\n\n2. 复合函数口诀：**同增异减**\ny=f(g(x))，内外单调性相同则整体增，相反则减\n\n3. 高考三大考法\n1. 比较函数值大小：自变量化到同一单调区间，用单调性比\n2. 解抽象不等式f(a)>f(b)：脱f，必须附带定义域限制\n3. 已知单调求参数：递增\\Leftrightarrow f'(x)\\ge0恒成立；递减\\Leftrightarrow f'(x)\\le0恒成立（必带等号）\n\n易错：单调区间不能用\\cup，多个区间用逗号隔开"
+    },
+    "func-parity": {
+      "title": "奇偶性",
+      "content": "奇偶性（选择填空必考，常结合单调性解不等式）\n1. 前提：定义域**关于原点对称**，不对称直接非奇非偶\n1. 偶函数：f(-x)=f(x)，图像关于y轴对称；\n2. 奇函数：f(-x)=-f(x)，图像关于原点对称；\n   隐藏结论：若x=0在定义域内，则\\mathbf{f(0)=0}（求参数神器）\n\n2. 奇偶运算（公共定义域）\n奇±奇=奇；偶±偶=偶；奇×奇=偶；偶×偶=偶；奇×偶=奇\n\n3. 高考4类题型\n1. 判断奇偶性；2. 已知奇偶求解析式；3. 已知奇偶求参数；\n4. **奇偶+单调性解不等式**（高频）：f(x)+f(-2x-1)>0转化为f(x)>f(2x+1)再脱f"
+    },
+    "func-symmetry-periodicity": {
+      "title": "对称性与周期性",
+      "content": "对称性+周期性（高考多选/压轴小题难点，综合必考）\n\n（一）轴对称（x=m为对称轴）\nf(m+x)=f(m-x) \\iff 图像关于x=m对称\n特例：m=0即偶函数，对称轴x=0\n\n（二）中心对称（(m,0)对称中心）\nf(m+x)+f(m-x)=0 \\iff 关于(m,0)中心对称\n特例：m=0即奇函数；拓展f(m+x)+f(m-x)=2n，对称中心(m,n)\n\n（三）周期推导（高考核心结论，直接套用）\n1. f(x+a)=f(x) \\Rightarrow T=a\n2. f(x+a)=-f(x) \\Rightarrow T=2a\n3. f(x+a)=\\pm\\dfrac{1}{f(x)} \\Rightarrow T=2a\n\n（四）双对称推周期（高频多选考点）\n1. 两条对称轴x=a、x=b \\Rightarrow T=2|b-a|\n2. 两个对称中心(a,0)、(b,0) \\Rightarrow T=2|b-a|\n3. 一条对称轴+一个对称中心 \\Rightarrow T=4|b-a|"
+    },
+    "func-transform": {
+      "title": "函数图像变换",
+      "content": "函数图像变换（选择题识图5分，数形结合工具）\n基础函数y=f(x)变换口诀：\n1. **平移**：左加右减（对x），上加下减（对整体y）\n   易错：先伸缩后平移，需给x提系数，例y=f(2x)左移1个单位\\Rightarrow y=f[2(x+1)]\n2. **伸缩**\n   y=f(\\omega x)：横坐标缩为原来\\dfrac{1}{|\\omega|}；y=Af(x)：纵坐标扩|A|倍\n3. **翻折变换（识图高频）**\n   - y=|f(x)|：x轴下方图像翻折到上方；\n   - y=f(|x|)：保留y轴右侧，右侧镜像复制到左侧\n4. **对称变换**\n   y=-f(x)（x轴对称）；y=f(-x)（y轴对称）；y=-f(-x)（原点对称）"
+    },
+    "func-zeros": {
+      "title": "函数零点",
+      "content": "函数零点（选择、填空、导数大题通用）\n1. 零点定义：f(x)=0的实数根，即图像与x轴交点横坐标\n2. 零点存在定理（充分不必要条件）\nf(x)在[a,b]连续，f(a)·f(b)<0 \\Rightarrow (a,b)至少1个零点；\n单调函数满足f(a)f(b)<0，则**有且仅有1个零点**\n\n3. 高考零点考法\n1. 判断零点所在区间；2. 判断零点个数（数形结合：拆成y_1、y_2看交点）；\n3. 含参函数零点求参数范围（画图+极值分析）"
+    },
+    "func-mistakes": {
+      "title": "高频易错丢分点",
+      "content": "高考高频易错丢分点（阅卷常扣分）\n1. 求定义域漏对数、分式、根式限制；复合函数忽略内层值域\n2. 判断奇偶性不先验证定义域是否关于原点对称\n3. 奇函数在x=0有定义，忘记f(0)=0隐藏条件\n4. 单调区间用并集符号\\cup，必须用逗号分隔\n5. 图像平移伸缩顺序混淆，先伸缩后平移忘记提取x系数\n6. 零点定理：f(a)f(b)>0不能推出无零点\n7. 恒成立求参数漏写等号，写成f'(x)>0而非f'(x)\\ge0"
+    }
+  },
+  "quadratic-ineq": {
+    "ineq-properties": {
+      "title": "不等式基本性质",
+      "content": "不等式基本性质（选择填空基础）\n设 a,b,c,d\\in\\mathbb R\n1. 对称性：a>b \\iff b<a\n2. 传递性：a>b,\\ b>c \\implies a>c\n3. 加减性质：a>b \\iff a+c>b+c；同向可加：a>b,c>d \\implies a+c>b+d\n4. 乘除变号核心（高频易错）\n   - a>b,\\ c>0 \\implies ac>bc,\\ \\dfrac{a}{c}>\\dfrac{b}{c}\n   - a>b,\\ c<0 \\implies ac<bc,\\ \\dfrac{a}{c}<\\dfrac{b}{c}\n5. 正数同向可乘：a>b>0,c>d>0 \\implies ac>bd\n6. 乘方开方（仅正数）：a>b>0 \\implies a^n>b^n,\\ \\sqrt[n]{a}>\\sqrt[n]{b}\\ (n\\in\\mathbb N^*)\n7. 倒数性质\n   a>b>0 \\implies \\dfrac1a<\\dfrac1b；a>0>b \\implies \\dfrac1a>\\dfrac1b\n8. 可减不可同向减、可除不可同向除：a>b,c>d 不能推出 a-c>b-d"
+    },
+    "ineq-polynomial": {
+      "title": "整式不等式",
+      "content": "整式不等式\n1. 一元一次不等式 ax+b>0\n- a>0：x>-\\dfrac{b}{a}\n- a<0：x<-\\dfrac{b}{a}\n- a=0：b<0 全体实数；b\\ge0 无解\n\n2. 一元二次不等式 ax^2+bx+c>0\n步骤：①化二次项系数 a>0；②求方程根；③看判别式 \\Delta=b^2-4ac\n1. \\Delta>0，两根 x_1<x_2\n   ax^2+bx+c>0 \\Rightarrow x<x_1 或 x>x_2\n   ax^2+bx+c<0 \\Rightarrow x_1<x<x_2\n2. \\Delta=0，重根 x_0\n   ax^2+bx+c>0 \\Rightarrow x\\neq x_0；ax^2+bx+c<0 无解\n3. \\Delta<0\n   ax^2+bx+c>0 解集 \\mathbb R；ax^2+bx+c<0 无解\n\n3. 含参二次不等式讨论三步\n① 二次项系数：a=0（一次）、a>0、a<0；\n② 判别式：\\Delta>0、\\Delta=0、\\Delta<0；\n③ 两根不等时，比较两根大小。\n\n4. 高次整式不等式（穿针引线法）\n1. 最高次系数化为正数；\n2. 因式分解，求出全部零点；\n3. 零点标数轴，**奇穿偶回**（偶次重根不穿过数轴）；\n4. 大于0取数轴上方区间，小于0取下方。"
+    },
+    "ineq-fraction": {
+      "title": "分式不等式",
+      "content": "分式不等式（禁止直接乘分母）\n等价转化（分母恒不为0）\n1. \\dfrac{f(x)}{g(x)}>0 \\iff f(x)\\cdot g(x)>0\n2. \\dfrac{f(x)}{g(x)}\\ge0 \\iff f(x)\\cdot g(x)\\ge0\\\\g(x)\\neq0\n3. \\dfrac{f(x)}{g(x)}<0、\\dfrac{f(x)}{g(x)}\\le0 同理"
+    },
+    "ineq-absolute": {
+      "title": "绝对值不等式",
+      "content": "绝对值不等式\n1. 基础单绝对值（a>0）\n|x|<a \\iff -a<x<a\n|x|>a \\iff x>a \\text{ 或 } x<-a\n\n2. 双绝对值 |x-m|+|x-n|\n解法1：**零点分段法**\n① 零点 x=m、x=n；② 分三段去绝对值；③ 分段求解取并集\n解法2：几何意义\n|x-a|+|x-b| 表示数轴上点x到a、b距离和，最小值 |a-b|\n||x-a|-|x-b|| 距离差的绝对值，最大值 |a-b|\n\n3. 绝对值三角不等式\n||a|-|b|| \\le |a\\pm b| \\le |a|+|b|\n- |a+b|=|a|+|b| \\iff ab\\ge0（同号）\n- |a-b|=|a|+|b| \\iff ab\\le0（异号）\n\n4. |f(x)|>g(x)、|f(x)|<g(x)\n|f(x)|>g(x) \\iff f(x)>g(x) \\text{ 或 } f(x)<-g(x)\n|f(x)|<g(x) \\iff -g(x)<f(x)<g(x)\\quad(g(x)>0)"
+    },
+    "ineq-radical": {
+      "title": "根式不等式",
+      "content": "根式不等式（定义域优先，偶次根式被开方数≥0）\n1. \\sqrt{f(x)}>g(x)\n   f(x)\\ge0\\\\g(x)<0 \\quad \\text{或} \\quad f(x)\\ge0\\\\g(x)\\ge0\\\\f(x)>[g(x)]^2\n2. \\sqrt{f(x)}<g(x) \\iff f(x)\\ge0\\\\g(x)>0\\\\f(x)<[g(x)]^2"
+    },
+    "ineq-mean": {
+      "title": "均值不等式",
+      "content": "均值不等式（高考求最值核心，大题必考）\n1. 二元基本不等式（一正、二定、三相等）\na>0,b>0：\\dfrac{a+b}{2}\\ge\\sqrt{ab}\n- 和定积最大：a+b=S \\implies ab\\le\\left(\\dfrac S2\\right)^2\n- 积定和最小：ab=P \\implies a+b\\ge2\\sqrt{P}\n等号成立条件：a=b\n\n2. 通用变形（全体实数成立）\na^2+b^2\\ge2ab，等号 a=b\n\n3. 四元均值链（记熟放缩）\n\\dfrac{2}{\\dfrac1a+\\dfrac1b}\\le \\sqrt{ab}\\le \\dfrac{a+b}{2}\\le \\sqrt{\\dfrac{a^2+b^2}{2}}\\quad(a,b>0)\n调和平均 ≤ 几何平均 ≤ 算术平均 ≤ 平方平均\n\n4. 三元均值\na,b,c>0,\\ \\dfrac{a+b+c}{3}\\ge\\sqrt[3]{abc}，等号 a=b=c\n\n5. 配凑常用题型\n1. x+\\dfrac{k}{x}\\ (x>0) 直接用；x<0 提取负号转化正数\n2. 一次乘积：(ax+b)(cx+d) 拆项凑和为定值\n3. 分式：分子二次、分母一次，分离常数再均值\n\n关键坑点\n不满足正数、和/积不为定值、等号取不到，一律改用导数求最值。"
+    },
+    "ineq-linear-program": {
+      "title": "线性规划",
+      "content": "线性规划（老高考选择，新高考弱化）\n1. 可行域：二元一次不等式组，平面公共区域；边界实线含等号，虚线不含\n2. 三类目标函数几何意义\n   ① z=ax+by：平移直线，截距最值；b正负决定截距与z增减关系\n   ② z=\\dfrac{y-n}{x-m}：可行域点与定点(m,n)连线斜率\n   ③ z=(x-m)^2+(y-n)^2：可行域点到定点距离平方\n3. 结论：线性目标函数最值一定在可行域顶点取得"
+    },
+    "ineq-always-exists": {
+      "title": "恒成立与存在性问题",
+      "content": "恒成立、存在性问题（导数压轴大题必考）\n设 x\\in D 为函数定义域\n1. 恒成立（全部x满足）\n\\forall x\\in D,\\ f(x)>k \\iff f(x)_{\\min}>k\n\\forall x\\in D,\\ f(x)<k \\iff f(x)_{\\max}<k\n2. 存在性（至少一个x满足）\n\\exists x\\in D,\\ f(x)>k \\iff f(x)_{\\max}>k\n\\exists x\\in D,\\ f(x)<k \\iff f(x)_{\\min}<k\n3. 二次函数区间恒成立模板 f(x)=ax^2+bx+c>0,x\\in[m,n]\n- a>0：\\Delta<0 恒成立；或端点f(m)>0,f(n)>0且对称轴在区间外侧\n- a<0：区间两端点函数值均大于0"
+    },
+    "ineq-proof": {
+      "title": "不等式证明方法",
+      "content": "不等式证明四大方法\n1. **作差法**：A-B>0 \\iff A>B（基础证明）\n2. **作商法**：A,B>0,\\ \\dfrac{A}{B}>1 \\iff A>B\n3. **均值不等式放缩**：适合整式、分式最值证明\n4. **构造函数法（高考主流）**\n构造 g(x)=f(x)-h(x)，求导判断单调性，证明 g(x)_{\\min}>0\n5. **放缩法（数列不等式专用）**\n裂项放缩、均值放缩、分式缩放、指数缩放"
+    },
+    "ineq-mistakes": {
+      "title": "高考高频易错点",
+      "content": "高考高频易错点汇总\n1. 分式不等式直接乘分母，忽略分母≠0；\n2. 不等式两边同乘负数忘记变不等号；\n3. 均值不等式忽略\"正数\"前提，等号取不到硬套；\n4. 含参二次不等式不讨论二次项系数a=0的一次情况；\n5. 绝对值、根式不等式忘记先写定义域；\n6. 恒成立、存在性搞反最大最小值；\n7. 穿针引线法最高次系数不化为正、重根忘记\"奇穿偶回\"；\n8. 线性规划目标函数b正负混淆，截距与z增减关系判断错误。"
+    }
+  },
+  "exp-log": {
+    "exp-powers": {
+      "title": "指数与指数幂运算",
+      "content": "指数与指数幂运算\n1. 根式\n若 x^n=a，则 x 叫 a 的 n 次方根\n- n 奇数：\\sqrt[n]{a^n}=a\n- n 偶数：\\sqrt[n]{a^n}=|a|\n\n2. 分数指数幂（a>0）\na^\\frac{m}{n}=\\sqrt[n]{a^m},\\quad a^{-\\frac{m}{n}}=\\dfrac{1}{\\sqrt[n]{a^m}}\n\n3. 指数运算法则（a>0,b>0）\na^m\\cdot a^n=a^{m+n},\\quad \\dfrac{a^m}{a^n}=a^{m-n}\n(a^m)^n=a^{mn},\\quad (ab)^n=a^n b^n"
+    },
+    "exp-function": {
+      "title": "指数函数",
+      "content": "指数函数 y=a^x\\ (a>0,a\\neq1)\n1. 基础三要素\n- 定义域：\\mathbb R；值域：(0,+\\infty)，**函数值恒大于0**\n- 过定点：(0,1)，x=0 时 y=1\n\n2. 单调性分两类\n1. a>1：在 \\mathbb R 上**单调递增**\n   x>0\\Rightarrow y>1；x<0\\Rightarrow 0<y<1\n2. 0<a<1：在 \\mathbb R 上**单调递减**\n   x>0\\Rightarrow 0<y<1；x<0\\Rightarrow y>1\n\n3. 图像特征\n- y=a^x 与 y=\\left(\\dfrac1a\\right)^x 关于 y 轴对称\n- 底数越大，a>1 时图像在 x>0 越靠上；0<a<1 时 x>0 越靠下\n\n4. 复合指数函数 y=a^{f(x)}\n单调性：**同增异减**\na>1：f(x) 增则整体增；0<a<1：f(x) 增则整体减"
+    },
+    "log-operations": {
+      "title": "对数与对数运算",
+      "content": "对数与对数运算\n1. 对数定义（指数逆运算）\n若 a>0,a\\neq1,\\ a^x=N，则 x=\\log_a N\n- 底数 a>0,a\\neq1；真数 N>0（**负数、0无对数**）\n- 恒等式：a^{\\log_a N}=N,\\ \\log_a a^x=x\n\n2. 特殊对数\n- 常用对数：\\lg N=\\log_{10}N\n- 自然对数：\\ln N=\\log_e N,\\ e\\approx2.71828\n\n3. 对数基本性质\n\\log_a 1=0,\\quad \\log_a a=1\n\n4. 对数四则运算法则（a>0,a\\neq1,M>0,N>0）\n1. \\log_a(MN)=\\log_a M+\\log_a N\n2. \\log_a\\dfrac{M}{N}=\\log_a M-\\log_a N\n3. \\log_a M^n=n\\log_a M\n4. \\log_{a^m}b^n=\\dfrac{n}{m}\\log_a b\n\n5. 换底公式（必考）\n\\log_a b=\\frac{\\log_c b}{\\log_c a}\\quad(c>0,c\\neq1)\n推论：\n\\log_a b=\\dfrac{1}{\\log_b a};\\quad \\log_a b\\cdot\\log_b c=\\log_a c"
+    },
+    "log-function": {
+      "title": "对数函数",
+      "content": "对数函数 y=\\log_a x\\ (a>0,a\\neq1)\n1. 基础三要素\n- 定义域：\\mathbf{(0,+\\infty)}（真数大于0，求定义域高频坑点）\n- 值域：\\mathbb R\n- 过定点：(1,0)，x=1 时 y=0\n\n2. 单调性分类\n1. a>1：在 (0,+\\infty) **单调递增**\n   x>1\\Rightarrow y>0；0<x<1\\Rightarrow y<0\n2. 0<a<1：在 (0,+\\infty) **单调递减**\n   x>1\\Rightarrow y<0；0<x<1\\Rightarrow y>0\n\n3. 图像关系\n- y=\\log_a x 与 y=a^x 互为**反函数**，图像关于直线 y=x 对称\n- y=\\log_a x 与 y=\\log_{\\frac1a}x 关于 x 轴对称\n\n4. 复合对数函数 y=\\log_a f(x)\n1. 定义域优先：f(x)>0\n2. 单调性：同增异减\na>1：f(x) 增则整体增；0<a<1：f(x) 增则整体减"
+    },
+    "inverse-function": {
+      "title": "反函数核心考点",
+      "content": "反函数核心考点\n1. y=a^x 与 y=\\log_a x 互为反函数\n2. 反函数性质：\n   - 定义域、值域互换\n   - 图像关于直线 y=x 对称\n   - 若点 (m,n) 在原函数上，则 (n,m) 在反函数上"
+    },
+    "exp-log-ineq": {
+      "title": "指数对数方程与不等式",
+      "content": "指数对数方程、不等式\n1. 指数不等式 a^{f(x)}>a^{g(x)}\n- a>1：f(x)>g(x)\n- 0<a<1：f(x)<g(x)\n\n2. 对数不等式 \\log_a f(x)>\\log_a g(x)\n**必须同时满足三层**：\n\nf(x)>0\\\\\ng(x)>0\\\\\na>1: f(x)>g(x) \\quad / \\quad 0<a<1: f(x)<g(x)\n"
+    },
+    "exp-log-gaokao": {
+      "title": "高考高频题型与易错点",
+      "content": "高考高频题型与易错点\n\n常考题型\n1. 指数、对数化简求值（选择前3题）\n2. 比较大小：构造指数/对数函数，结合单调性、中间值0、1\n3. 求复合函数定义域（对数真数>0最容易漏）\n4. 复合函数单调区间、值域\n5. 指数对数不等式、恒成立求参数\n6. 导数大题：e^x、\\ln x 求导、放缩证明不等式\n\n高频丢分易错点\n1. 对数忽略真数>0，求定义域、解不等式漏限制；\n2. 对数运算法则混淆：\\log_a(M\\pm N)\\neq\\log_a M\\pm\\log_a N；\n3. 底数含参时，不讨论 a>1 和 0<a<1 两种单调性；\n4. 比较大小忘记引入中间量 0、1；\n5. 指数函数值域恒大于0，做题忽略隐藏范围；\n6. 换底公式变形记反，倒数关系混淆。"
+    },
+    "exp-log-derivative": {
+      "title": "e^x 与 ln x 导数",
+      "content": "补充：e^x 与 \\ln x 导数（导数大题专用）\n(e^x)'=e^x,\\quad (\\ln x)'=\\dfrac1x\n拓展：(a^x)'=a^x\\ln a,\\quad (\\log_a x)'=\\dfrac{1}{x\\ln a}"
+    }
+  },
+  "complex": {
+    "complex-basics": {
+      "title": "复数基本概念",
+      "content": "复数基本概念\n1. **复数标准形式**\nz=a+bi\\quad(a,b\\in\\mathbb R)\n- a：实部，记作 \\mathrm{Re}(z)\n- b：虚部，记作 \\mathrm{Im}(z)\n- i：虚数单位，规定 \\mathbf{i^2=-1}\n\n2. 分类\n- 实数：b=0，z=a\n- 虚数：b\\neq0\n- 纯虚数：a=0,b\\neq0，z=bi\n- 复数相等：a+bi=c+di \\iff a=c\\\\b=d\n\n3. 共轭复数\nz=a+bi，共轭 \\overline{z}=a-bi\n性质：z+\\overline{z}=2a,\\ z-\\overline{z}=2bi,\\ z\\cdot\\overline{z}=a^2+b^2\n\n4. 复数的模\n|z|=|a+bi|=\\sqrt{a^2+b^2}\n性质：|z_1\\cdot z_2|=|z_1|\\cdot|z_2|,\\ \\left|\\dfrac{z_1}{z_2}\\right|=\\dfrac{|z_1|}{|z_2|},\\ |z^n|=|z|^n"
+    },
+    "complex-i-period": {
+      "title": "虚数单位i的周期性",
+      "content": "虚数单位 i 的周期性（必考）\ni^1=i,\\ i^2=-1,\\ i^3=-i,\\ i^4=1\n周期为4，计算 i^n 对 n 除以4看余数：\n余数1→i；余数2→-1；余数3→-i；余0→1"
+    },
+    "complex-operations": {
+      "title": "复数四则运算",
+      "content": "复数四则运算\n设 z_1=a+bi,\\ z_2=c+di\n1. 加减：实部、虚部分别加减\nz_1\\pm z_2=(a\\pm c)+(b\\pm d)i\n\n2. 乘法：多项式展开，i^2=-1\nz_1z_2=(ac-bd)+(ad+bc)i\n\n3. 除法（分母实数化，乘分母共轭）\n\\frac{z_1}{z_2}=\\frac{a+bi}{c+di}=\\frac{(a+bi)(c-di)}{(c+di)(c-di)}=\\frac{ac+bd}{c^2+d^2}+\\frac{bc-ad}{c^2+d^2}i"
+    },
+    "complex-geometry": {
+      "title": "复数几何意义",
+      "content": "复数几何意义（复平面）\n1. 复平面：横轴实轴，纵轴虚轴；z=a+bi \\leftrightarrow 点 Z(a,b) \\leftrightarrow 向量 \\overrightarrow{OZ}\n2. 模 |z|：向量 \\overrightarrow{OZ} 的长度，原点到点(a,b)距离\n3. |z-z_0|：复平面内点Z到定点Z_0的距离\n- |z-(a+bi)|=r：以(a,b)为圆心，r为半径的圆\n- |z-z_1|=|z-z_2|：两点Z_1,Z_2垂直平分线\n- |z-z_1|+|z-z_2|=2a\\ (2a>|Z_1Z_2|)：椭圆"
+    },
+    "complex-trig-form": {
+      "title": "复数三角形式",
+      "content": "复数三角形式（拓展，新高考偶考）\nz=r(\\cos\\theta+i\\sin\\theta)，r=|z|，\\theta辐角\n乘除几何意义：相乘模相乘、辐角相加；相除模相除、辐角相减"
+    },
+    "complex-tips": {
+      "title": "常用结论与易错点",
+      "content": "常用结论与高考易错点\n\n常用速算\n1. (1\\pm i)^2=\\pm2i\n2. \\dfrac{1+i}{1-i}=i,\\ \\dfrac{1-i}{1+i}=-i\n3. z\\cdot\\overline{z}=|z|^2，实数\n\n易错丢分点\n1. 纯虚数要求：实部a=0且虚部b\\neq0，只写a=0会扣分\n2. 虚部是实数b，不含i，如z=2+3i虚部为3不是3i\n3. 复数不能比较大小，只有实数可比大小\n4. 除法忘记分母乘共轭实数化，直接分子分母分开除\n5. i^2=-1容易写成1"
+    }
+  },
+  "solid-geometry": {
+    "solid-shapes": {
+      "title": "空间几何体",
+      "content": "空间几何体\n1. 多面体\n\n（1）棱柱\n- 定义：两个底面平行全等，侧棱平行且相等\n- 直棱柱：侧棱⊥底面；正棱柱：底面正多边形+直棱柱\n- 体积：\\mathbf{V=S_{\\text{底}} \\cdot h}\n\n（2）棱锥\n- 正棱锥：底面正多边形，顶点在底面投影为中心\n- 体积：\\mathbf{V=\\dfrac13 S_{\\text{底}} \\cdot h}\n\n（3）棱台（棱锥截去顶部）\n体积：V=\\dfrac13 h(S_{\\text{上}}+\\sqrt{S_{\\text{上}}S_{\\text{下}}}+S_{\\text{下}})\n\n2. 旋转体\n\n（1）圆柱\n底面半径r，高h，母线l=h\n侧面积：S_{\\text{侧}}=2\\pi r h；表面积：S=2\\pi r h+2\\pi r^2\n体积：V=\\pi r^2 h\n\n（2）圆锥\n底面半径r，高h，母线l=\\sqrt{r^2+h^2}\n侧面积：S_{\\text{侧}}=\\pi r l；表面积：S=\\pi r l+\\pi r^2\n体积：V=\\dfrac13 \\pi r^2 h\n\n（3）圆台\nV=\\dfrac13 \\pi h(r^2+Rr+R^2)\n\n（4）球（高考高频）\n半径R\n表面积：\\mathbf{S=4\\pi R^2}\n体积：\\mathbf{V=\\dfrac43 \\pi R^3}\n**外接球/内切球核心结论**\n1. 长方体/长方体外接球：直径=体对角线 2R=\\sqrt{a^2+b^2+c^2}\n2. 正四面体外接球：R=\\dfrac{\\sqrt{6}}{4}a，内切球r=\\dfrac{\\sqrt{6}}{12}a\n3. 直角三角形为底面的三棱锥外接球：斜边为外接球大圆直径\n\n3. 三视图与直观图\n1. 三视图规则：长对正、高平齐、宽相等；实线可见，虚线遮挡\n2. 斜二测画法：\n   - 平行x轴长度不变；平行y轴长度减半，夹角45°/135°\n   - 直观图面积 S'=\\dfrac{\\sqrt{2}}{4}S_{\\text{原图}}"
+    },
+    "solid-relations": {
+      "title": "空间点线面位置关系",
+      "content": "空间点、直线、平面位置关系\n1. 平面基本公理（证明大题依据）\n1. 公理1：直线两点在平面内 ⇒ 整条直线在平面内（证线在面内）\n2. 公理2：不共线三点确定唯一平面；推论：直线+直线外一点/两相交直线/两平行直线定平面\n3. 公理3：两平面有公共点 ⇒ 有且仅有一条过该点公共直线（证交线）\n4. 公理4（平行传递）：a\\parallel b,b\\parallel c \\Rightarrow a\\parallel c\n\n2. 空间两直线位置关系\n1. 共面：相交（1个公共点）、平行（无公共点）\n2. 异面直线：不同在任一平面，无公共点、不平行不相交\n- 异面直线夹角：平移至相交，取锐角/直角，范围\\mathbf{\\left(0,\\dfrac{\\pi}{2}\\right]}\n\n3. 直线与平面位置关系\n1. 直线在平面内：无数交点\n2. 直线与平面相交：1个交点\n3. 直线与平面平行：无交点\n\n4. 平面与平面位置关系\n1. 平行：无公共点\n2. 相交：一条公共直线；二面角范围\\mathbf{[0,\\pi]}"
+    },
+    "solid-parallel": {
+      "title": "平行判定与性质",
+      "content": "平行判定与性质（大题证明第一问必考）\n1. 线线平行\n1. 中位线、平行四边形对边平行\n2. 线面平行 ⇒ 线线平行：a\\parallel\\alpha,\\ a\\subset\\beta,\\ \\alpha\\cap\\beta=b \\Rightarrow a\\parallel b\n3. 面面平行 ⇒ 线线平行：\\alpha\\parallel\\beta,\\ \\gamma\\cap\\alpha=a,\\gamma\\cap\\beta=b \\Rightarrow a\\parallel b\n4. 垂直同一平面两直线平行：a\\perp\\alpha,b\\perp\\alpha \\Rightarrow a\\parallel b\n\n2. 线面平行\n**判定**：平面外一条直线平行平面内一条直线 ⇒ 线面平行\na\\not\\subset\\alpha,\\ b\\subset\\alpha,\\ a\\parallel b \\Rightarrow a\\parallel\\alpha\n**性质**：线面平行，过直线平面与已知面交线平行于该直线\n\n3. 面面平行\n**判定**：一个平面内两条相交直线都平行另一平面 ⇒ 面面平行\na\\cap b=P,\\ a,b\\subset\\alpha,\\ a\\parallel\\beta,b\\parallel\\beta \\Rightarrow \\alpha\\parallel\\beta\n**推论**：垂直同一直线两平面平行；两平面分别有两组相交平行线对应平行\n**性质**：面面平行，任意平面截两平面，交线互相平行"
+    },
+    "solid-perpendicular": {
+      "title": "垂直判定与性质",
+      "content": "垂直判定与性质（高考核心难点）\n1. 线线垂直\n1. 平面内勾股定理垂直\n2. 线面垂直 ⇒ 线线垂直：a\\perp\\alpha,b\\subset\\alpha \\Rightarrow a\\perp b\n3. 三垂线定理：平面斜线射影垂直直线 ⇒ 斜线垂直该直线\n\n2. 线面垂直\n**判定**：直线垂直平面内两条相交直线 ⇒ 线面垂直\nl\\perp a,l\\perp b,\\ a\\cap b=P,\\ a,b\\subset\\alpha \\Rightarrow l\\perp\\alpha\n**性质**：垂直同一平面直线互相平行；线面垂直，则直线垂直平面内所有直线\n\n3. 面面垂直\n**判定**：一个平面过另一平面一条垂线 ⇒ 面面垂直\nl\\perp\\beta,\\ l\\subset\\alpha \\Rightarrow \\alpha\\perp\\beta\n**性质**：面面垂直，在一个面内垂直交线的直线垂直另一平面\n\\alpha\\perp\\beta,\\alpha\\cap\\beta=l,\\ a\\subset\\alpha,a\\perp l \\Rightarrow a\\perp\\beta"
+    },
+    "solid-angles": {
+      "title": "空间角",
+      "content": "空间角（计算必考，几何法/空间向量法）\n1. 异面直线所成角\\theta\n范围：\\left(0,\\dfrac{\\pi}{2}\\right]\n向量公式：\\cos\\theta=\\dfrac{|\\mathbf{m}\\cdot\\mathbf{n}|}{|\\mathbf{m}|\\cdot|\\mathbf{n}|}，取绝对值\n\n2. 线面角\\theta（直线与平面）\n定义：直线与平面中射影夹角，范围\\left[0,\\dfrac{\\pi}{2}\\right]\n向量公式：直线方向向量\\mathbf{s}，平面法向量\\mathbf{n}\n\\sin\\theta=\\dfrac{|\\mathbf{s}\\cdot\\mathbf{n}|}{|\\mathbf{s}|\\cdot|\\mathbf{n}|}\n\n3. 二面角\\theta（两平面夹角）\n范围：[0,\\pi]\n两平面法向量\\mathbf{n_1},\\mathbf{n_2}\n\\cos\\theta=\\pm\\dfrac{\\mathbf{n_1}\\cdot\\mathbf{n_2}}{|\\mathbf{n_1}|\\cdot|\\mathbf{n_2}|}\n符号判断：看图二面角为锐角取正，钝角取负"
+    },
+    "solid-distances": {
+      "title": "空间距离",
+      "content": "空间距离（向量万能公式）\n1. 两点距离：|\\overrightarrow{AB}|=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}\n2. 点到平面距离（高频）\n平面法向量\\mathbf{n}，平面内任一点P，外点M\nd=\\dfrac{|\\overrightarrow{PM}\\cdot\\mathbf{n}|}{|\\mathbf{n}|}\n3. 线面平行、面面平行距离等价于点到平面距离\n4. 异面直线距离：转化为线面距离"
+    },
+    "solid-vectors": {
+      "title": "空间直角坐标系与空间向量",
+      "content": "空间直角坐标系与空间向量（大题通用解法）\n1. 向量运算\n设\\mathbf{a}=(x_1,y_1,z_1),\\mathbf{b}=(x_2,y_2,z_2)\n- 加减：\\mathbf{a}\\pm\\mathbf{b}=(x_1\\pm x_2,y_1\\pm y_2,z_1\\pm z_2)\n- 数乘：\\lambda\\mathbf{a}=(\\lambda x_1,\\lambda y_1,\\lambda z_1)\n- 数量积：\\mathbf{a}\\cdot\\mathbf{b}=x_1x_2+y_1y_2+z_1z_2\n- 模：|\\mathbf{a}|=\\sqrt{x_1^2+y_1^2+z_1^2}\n\n2. 平行垂直判定\n- \\mathbf{a}\\parallel\\mathbf{b} \\iff x_1=\\lambda x_2,y_1=\\lambda y_2,z_1=\\lambda z_2\n- \\mathbf{a}\\perp\\mathbf{b} \\iff \\mathbf{a}\\cdot\\mathbf{b}=0 \\iff x_1x_2+y_1y_2+z_1z_2=0\n\n3. 平面法向量求法\n平面内两不共线向量\\mathbf{a},\\mathbf{b}，设法向量\\mathbf{n}=(x,y,z)\n联立方程组\\mathbf{n}\\cdot\\mathbf{a}=0,\\mathbf{n}\\cdot\\mathbf{b}=0，赋值求解一组解"
+    },
+    "solid-mistakes": {
+      "title": "高考高频易错点",
+      "content": "高考高频易错点\n1. 证明线面平行，漏写\"直线不在平面内\"条件扣分；\n2. 证明线面垂直，只证垂直一条直线，必须两条相交直线；\n3. 面面垂直性质使用时，忘记\"直线在面内、垂直交线\"两个前提；\n4. 异面直线夹角余弦不加绝对值，算出钝角；\n5. 线面角混淆正弦、余弦公式；\n6. 球外接模型不会找球心；斜二测面积换算系数记反；\n7. 体积计算忘记\\dfrac13（棱锥、圆锥）；\n8. 二面角法向量夹角和二面角本身相等/互补判断错误。"
+    }
+  },
+  "space-vectors": {
+    "sv-basics": {
+      "title": "空间向量基本概念",
+      "content": "空间向量基本概念\n1. **定义**：空间中具有大小、方向的量，记作 \\mathbf{a},\\mathbf{b},\\mathbf{c}；有向线段 \\overrightarrow{AB}\n2. **模长**：向量长度 |\\mathbf{a}|，非负实数；\n3. 特殊向量\n   - 零向量 \\mathbf{0}：模为0，方向任意；与任意向量平行、垂直；\n   - 单位向量：|\\mathbf{e}|=1；与非零向量 \\mathbf{a} 同向单位向量：\\mathbf{e}_\\mathbf{a}=\\dfrac{\\mathbf{a}}{|\\mathbf{a}|}；\n4. 向量关系\n   - 相等向量：模相等、方向相同；\n   - 相反向量：\\mathbf{a} 与 -\\mathbf{a}，模相等、方向相反；\n   - 平行（共线）向量：方向相同/相反，\\mathbf{a}\\parallel\\mathbf{b}；零向量平行所有向量；\n   - 垂直向量：夹角 90^\\circ，\\mathbf{a}\\perp\\mathbf{b}。"
+    },
+    "sv-linear": {
+      "title": "空间向量线性运算",
+      "content": "空间向量线性运算（几何+坐标）\n设 \\mathbf{a}=(x_1,y_1,z_1),\\mathbf{b}=(x_2,y_2,z_2)，实数 \\lambda\n\n1. 加法\n几何：平行四边形法则、三角形法则\n坐标：\\mathbf{a}+\\mathbf{b}=(x_1+x_2,\\ y_1+y_2,\\ z_1+z_2)\n运算律：交换律、结合律\n\n2. 减法\n\\mathbf{a}-\\mathbf{b}=\\mathbf{a}+(-\\mathbf{b})；几何：\\overrightarrow{AB}-\\overrightarrow{AC}=\\overrightarrow{CB}\n坐标：\\mathbf{a}-\\mathbf{b}=(x_1-x_2,\\ y_1-y_2,\\ z_1-z_2)\n\n3. 数乘 \\lambda\\mathbf{a}\n- 模：|\\lambda\\mathbf{a}|=|\\lambda|\\cdot|\\mathbf{a}|\n- 方向：\\lambda>0 同向；\\lambda<0 反向；\\lambda=0 得零向量\n坐标：\\lambda\\mathbf{a}=(\\lambda x_1,\\lambda y_1,\\lambda z_1)\n运算律：\\lambda(\\mathbf{a}\\pm\\mathbf{b})=\\lambda\\mathbf{a}\\pm\\lambda\\mathbf{b}\n\n4. 共线向量定理（线线平行证明）\n\\mathbf{a}\\neq\\mathbf{0}，则 \\mathbf{b}\\parallel\\mathbf{a} \\iff \\exists \\lambda\\in\\mathbb R,\\ \\mathbf{b}=\\lambda\\mathbf{a}\n坐标等价：\\dfrac{x_1}{x_2}=\\dfrac{y_1}{y_2}=\\dfrac{z_1}{z_2}（分母不为0）\n\n5. 空间向量基本定理（基底）\n若 \\mathbf{e}_1,\\mathbf{e}_2,\\mathbf{e}_3 不共面（一组基底），空间任意向量 \\mathbf{p}，存在唯一实数 x,y,z：\n\\mathbf{p}=x\\mathbf{e}_1+y\\mathbf{e}_2+z\\mathbf{e}_3\n推论：四点 P,A,B,C 共面 \\iff \\overrightarrow{OP}=x\\overrightarrow{OA}+y\\overrightarrow{OB}+z\\overrightarrow{OC},\\ x+y+z=1"
+    },
+    "sv-dot": {
+      "title": "空间向量数量积",
+      "content": "空间向量数量积（点乘，核心计算工具）\n1. 定义\n两向量夹角 \\theta\\in[0,\\pi]\n\\mathbf{a}\\cdot\\mathbf{b}=|\\mathbf{a}||\\mathbf{b}|\\cos\\theta\n- \\theta=90^\\circ：\\mathbf{a}\\cdot\\mathbf{b}=0（垂直判定）\n- \\theta=0：\\mathbf{a}\\cdot\\mathbf{b}=|\\mathbf{a}||\\mathbf{b}|；\\theta=\\pi：\\mathbf{a}\\cdot\\mathbf{b}=-|\\mathbf{a}||\\mathbf{b}|\n\n2. 坐标公式\n\\mathbf{a}\\cdot\\mathbf{b}=x_1x_2+y_1y_2+z_1z_2\n\n3. 核心推导公式\n1. 模长：|\\mathbf{a}|=\\sqrt{\\mathbf{a}\\cdot\\mathbf{a}}=\\sqrt{x_1^2+y_1^2+z_1^2}\n2. 夹角余弦：\n\\cos\\theta=\\frac{\\mathbf{a}\\cdot\\mathbf{b}}{|\\mathbf{a}|\\cdot|\\mathbf{b}|}=\\frac{x_1x_2+y_1y_2}{\\sqrt{x_1^2+y_1^2}\\cdot\\sqrt{x_2^2+y_2^2+z_2^2}}\n3. 垂直充要条件：\n\\mathbf{a}\\perp\\mathbf{b} \\iff \\mathbf{a}\\cdot\\mathbf{b}=0 \\iff x_1x_2+y_1y_2+z_1z_2=0\n\n4. 运算律\n\\mathbf{a}\\cdot\\mathbf{b}=\\mathbf{b}\\cdot\\mathbf{a}\n(\\lambda\\mathbf{a})\\cdot\\mathbf{b}=\\lambda(\\mathbf{a}\\cdot\\mathbf{b})\n(\\mathbf{a}+\\mathbf{b})\\cdot\\mathbf{c}=\\mathbf{a}\\cdot\\mathbf{c}+\\mathbf{b}\\cdot\\mathbf{c}\n\n5. 投影\n\\mathbf{a} 在 \\mathbf{b} 方向投影数量：\\text{proj}_\\mathbf{b}\\mathbf{a}=\\dfrac{\\mathbf{a}\\cdot\\mathbf{b}}{|\\mathbf{b}|}"
+    },
+    "sv-coords": {
+      "title": "空间直角坐标系",
+      "content": "空间直角坐标系\n1. 坐标轴：x,y,z 两两垂直，单位正交基底 \\mathbf{i}=(1,0,0),\\mathbf{j}=(0,1,0),\\mathbf{k}=(0,0,1)\n2. 点坐标：P(x,y,z)；两点 A(x_1,y_1,z_1),B(x_2,y_2,z_2)\n\\overrightarrow{AB}=(x_2-x_1,\\ y_2-y_1,\\ z_2-z_1)\n3. 两点距离公式\n|\\overrightarrow{AB}|=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}"
+    },
+    "sv-normal": {
+      "title": "平面法向量",
+      "content": "平面法向量（立体几何必考）\n1. 求法\n平面内取两个不共线向量 \\mathbf{m},\\mathbf{n}，设法向量 \\mathbf{n}_0=(x,y,z)，联立：\n\\mathbf{n}_0\\cdot\\mathbf{m}=0,\\mathbf{n}_0\\cdot\\mathbf{n}=0\n给其中一个未知数赋值，解出一组法向量。\n\n2. 法向量核心用途\n1. 判断线面、面面平行/垂直；\n2. 求线面角、二面角；\n3. 求点到平面距离。"
+    },
+    "sv-parallel-perp": {
+      "title": "空间平行与垂直向量判定",
+      "content": "空间平行、垂直向量判定（证明大题）\n设直线方向向量 \\mathbf{s}_1,\\mathbf{s}_2；平面法向量 \\mathbf{n}_1,\\mathbf{n}_2\n\n1. 线线平行\nl_1\\parallel l_2 \\iff \\mathbf{s}_1=\\lambda \\mathbf{s}_2\n\n2. 线线垂直\nl_1\\perp l_2 \\iff \\mathbf{s}_1\\cdot\\mathbf{s}_2=0\n\n3. 线面平行\nl\\parallel\\alpha \\iff \\mathbf{s}\\perp\\mathbf{n} \\iff \\mathbf{s}\\cdot\\mathbf{n}=0（直线不在平面内）\n\n4. 线面垂直\nl\\perp\\alpha \\iff \\mathbf{s}=\\lambda \\mathbf{n}（直线方向向量平行平面法向量）\n\n5. 面面平行\n\\alpha\\parallel\\beta \\iff \\mathbf{n}_1=\\lambda \\mathbf{n}_2（两平面法向量共线）\n\n6. 面面垂直\n\\alpha\\perp\\beta \\iff \\mathbf{n}_1\\cdot\\mathbf{n}_2=0（两平面法向量点积为0）"
+    },
+    "sv-angles": {
+      "title": "三类空间角计算",
+      "content": "三类空间角计算公式（高考计算核心）\n1. 异面直线所成角 \\theta\n范围：\\mathbf{\\theta\\in\\left(0,\\dfrac{\\pi}{2}\\right]}，余弦取绝对值\n\\cos\\theta=\\frac{|\\mathbf{s}_1\\cdot\\mathbf{s}_2|}{|\\mathbf{s}_1|\\cdot|\\mathbf{s}_2|}\n\n2. 直线与平面所成角 \\theta\n范围：\\mathbf{\\theta\\in\\left[0,\\dfrac{\\pi}{2}\\right]}\n直线方向向量 \\mathbf{s}，平面法向量 \\mathbf{n}\n\\sin\\theta=\\frac{|\\mathbf{s}\\cdot\\mathbf{n}|}{|\\mathbf{s}|\\cdot|\\mathbf{n}|}\n记忆：线面角是直线与射影夹角，与法向量夹角互余，用正弦。\n\n3. 二面角 \\theta\n范围：\\mathbf{\\theta\\in[0,\\pi]}\n两平面法向量 \\mathbf{n}_1,\\mathbf{n}_2\n\\cos\\langle\\mathbf{n}_1,\\mathbf{n}_2\\rangle=\\frac{\\mathbf{n}_1\\cdot\\mathbf{n}_2}{|\\mathbf{n}_1|\\cdot|\\mathbf{n}_2|}\n判断：\n- 二面角为锐角/直角：\\theta=\\langle\\mathbf{n}_1,\\mathbf{n}_2\\rangle\n- 二面角为钝角：\\theta=\\pi-\\langle\\mathbf{n}_1,\\mathbf{n}_2\\rangle\n看图直观判断正负，不用死记符号。"
+    },
+    "sv-distances": {
+      "title": "空间距离公式",
+      "content": "空间距离公式\n1. 点到平面距离（高频）\n已知平面法向量 \\mathbf{n}，平面内任一点 P，平面外点 M\nd=\\dfrac{|\\overrightarrow{PM}\\cdot\\mathbf{n}|}{|\\mathbf{n}|}\n\n2. 线面平行距离 = 线上任意一点到平面距离\n3. 面面平行距离 = 一个平面内任意一点到另一平面距离"
+    },
+    "sv-mistakes": {
+      "title": "高考高频易错点",
+      "content": "高考高频易错点\n1. 异面直线夹角余弦不加绝对值，算出钝角扣分；\n2. 线面角混淆正弦、余弦公式；\n3. 证明线面平行，只证向量垂直法向量，漏写\"直线不在平面内\"；\n4. 二面角法向量夹角与二面角本身相等/互补判断错误；\n5. 四点共面条件 x+y+z=1 容易遗忘；\n6. 零向量和任意向量平行、垂直，做题特殊情况单独讨论；\n7. 求平面法向量方程组解算错误，赋值随意导致向量出错。"
+    }
+  },
+  "lines-circles": {
+    "line-equation": {
+      "title": "直线方程",
+      "content": "直线方程\n1. 直线倾斜角与斜率\n1. 倾斜角\\alpha：直线向上方向与x轴正半轴夹角，范围\\mathbf{[0,\\pi)}\n2. 斜率k：k=\\tan\\alpha\n   - \\alpha=0，k=0；0<\\alpha<\\dfrac{\\pi}{2}，k>0；\n   - \\alpha=\\dfrac{\\pi}{2}，**斜率不存在**（竖直线x=m）；\n   - \\dfrac{\\pi}{2}<\\alpha<\\pi，k<0\n3. 两点斜率公式：过A(x_1,y_1),B(x_2,y_2)\n\n\n2. 直线5种方程形式\n1. **点斜式**：过(x_0,y_0)，斜率k\ny-y_0=k(x-x_0)，**不能表示竖直线**\n2. **斜截式**：y=kx+b，b为y轴截距\n3. **两点式**：\\dfrac{y-y_1}{y_2-y_1}=\\dfrac{x-x_1}{x_2-x_1}，不能表示横竖直线\n4. **截距式**：\\dfrac{x}{a}+\\dfrac{y}{b}=1，a横截距，b纵截距；**a,b\\neq0**，不过原点、不垂直坐标轴\n5. **一般式**：Ax+By+C=0\\ (A,B不同时为0)\n   - 斜率k=-\\dfrac{A}{B}(B\\neq0)；横截距-\\dfrac{C}{A}，纵截距-\\dfrac{C}{B}\n\n3. 两直线位置关系\n设l_1:A_1x+B_1y+C_1=0,\\ l_2:A_2x+B_2y+C_2=0\n1. 平行：A_1B_2=A_2B_1 且 A_1C_2\\neq A_2C_1\n   斜率版：k_1=k_2，截距不等\n2. 垂直：A_1A_2+B_1B_2=0\n   斜率版：k_1\\cdot k_2=-1（一条水平一条竖直也垂直）\n3. 相交：A_1B_2\\neq A_2B_1，交点联立方程求解\n\n4. 距离公式（高频）\n1. 两点距离：|AB|=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}\n2. 点P(x_0,y_0)到直线Ax+By+C=0距离\n\n3. 两平行线Ax+By+C_1=0,\\ Ax+By+C_2=0距离\n\n\n5. 直线系方程\n1. 过定点(x_0,y_0)：y-y_0=k(x-x_0)（不含竖线）\n2. 过两直线交点：A_1x+B_1y+C_1+\\lambda(A_2x+B_2y+C_2)=0"
+    },
+    "circle-equation": {
+      "title": "圆的方程",
+      "content": "圆的方程\n1. 标准方程（圆心半径式）\n圆心C(a,b)，半径r：\n\n- 圆心(0,0)单位圆：x^2+y^2=1\n\n2. 一般方程\n\n配方：\\left(x+\\dfrac{D}{2}\\right)^2+\\left(y+\\dfrac{E}{2}\\right)^2=\\dfrac{D^2+E^2-4F}{4}\n- 条件：D^2+E^2-4F>0，才有实圆\n- 圆心\\left(-\\dfrac{D}{2},-\\dfrac{E}{2}\\right)，半径r=\\dfrac12\\sqrt{D^2+E^2-4F}\n\n3. 三点求圆\n设一般式，代入三点解D、E、F；或找两条弦垂直平分线交点得圆心。"
+    },
+    "point-circle": {
+      "title": "点与圆的位置关系",
+      "content": "点与圆的位置关系\n点P(x_0,y_0)，圆(x-a)^2+(y-b)^2=r^2，记d=|PC|\n1. d>r：点在圆外；\n2. d=r：点在圆上；\n3. d<r：点在圆内。\n\n代数判断：代入左边(x_0-a)^2+(y_0-b)^2，和r^2比大小。"
+    },
+    "line-circle-pos": {
+      "title": "直线与圆位置关系",
+      "content": "直线与圆位置关系（核心考点）\n圆心到直线距离d，半径r\n1. 相离：d>r，无交点；\n2. 相切：d=r，1个交点（切线）；\n3. 相交：d<r，2个交点，弦长公式：\n\n\n切线相关公式\n1. 圆上一点P(x_0,y_0)的切线：(x_0-a)(x-a)+(y_0-b)(y-b)=r^2\n2. 过圆外一点切线长：L=\\sqrt{|PC|^2-r^2}"
+    },
+    "circle-circle-pos": {
+      "title": "圆与圆位置关系",
+      "content": "圆与圆位置关系\n两圆圆心距d=|C_1C_2|，半径r_1,r_2（r_1\\ge r_2）\n1. 外离：d>r_1+r_2，无交点；\n2. 外切：d=r_1+r_2，1个公共点；\n3. 相交：r_1-r_2<d<r_1+r_2，2个公共点；\n4. 内切：d=r_1-r_2，1个公共点；\n5. 内含：d<r_1-r_2，无交点。\n\n公共弦方程：两圆一般式相减，消去二次项，得到直线Ax+By+C=0。"
+    },
+    "symmetry-mistakes": {
+      "title": "对称问题与高考高频易错点",
+      "content": "对称问题（小题高频）\n1. 点关于直线对称：设对称点，满足两点连线垂直直线、中点在直线上，联立求解；\n2. 直线关于点对称：直线上两点求对称点，两点写直线；\n3. 圆对称：圆心对称，半径不变。\n\n高考高频易错点\n1. 求斜率忽略倾斜角\\alpha=\\dfrac{\\pi}{2}斜率不存在；\n2. 截距式混淆截距与长度，截距可正可负可0；\n3. 平行线距离公式必须两直线A、B完全相同；\n4. 直线与圆相交，弦长忘记乘2；\n5. 圆一般式忘记D^2+E^2-4F>0条件；\n6. 判断两直线垂直，斜率存在才可用k_1k_2=-1，竖直+水平直线要单独判断；\n7. 过圆外一点作切线，容易漏一条切线。"
+    }
+  },
+  "conic-sections": {
+    "conic-basics": {
+      "title": "基础预备知识",
+      "content": "圆锥曲线统一定义（第二定义）\n平面内动点P到定点F（焦点）距离与到定直线l（准线）距离之比为离心率e\ne=\\frac{|PF|}{d}\n- 0<e<1：椭圆\n- e=1：抛物线\n- e>1：双曲线\n\n焦半径（动点到焦点距离）\n利用第二定义直接写，不用两点距离公式，大幅简化计算。\n\n通径\n过焦点垂直对称轴的弦，长度：\n椭圆/双曲线：\\dfrac{2b^2}{a}；抛物线：2p"
+    },
+    "ellipse": {
+      "title": "椭圆",
+      "content": "椭圆（0<e<1）\n标准方程（焦点在x轴）\n\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\quad(a>b>0)\n- 长轴长2a，短轴2b；焦距2c，核心关系：\\mathbf{a^2=b^2+c^2}\n- 焦点：F_1(-c,0),F_2(c,0)\n- 离心率：e=\\dfrac{c}{a}\\in(0,1)\n- 准线：x=\\pm\\dfrac{a^2}{c}\n\n焦点在y轴\n\\frac{y^2}{a^2}+\\frac{x^2}{b^2}=1\\quad(a>b>0)\n焦点(0,\\pm c)，其余不变。\n\n第一定义（必考）\n动点P满足|PF_1|+|PF_2|=2a\\ (2a>2c)\n- 若2a=2c：轨迹为线段F_1F_2\n- 若2a<2c：无轨迹\n\n几何性质\n1. 范围：x\\in[-a,a],y\\in[-b,b]\n2. 对称性：关于x轴、y轴、原点中心对称\n3. 顶点：(\\pm a,0),(0,\\pm b)\n4. 焦半径（P(x_0,y_0)）：|PF_1|=a+ex_0,\\ |PF_2|=a-ex_0\n5. 焦点三角形PF_1F_2\n   面积：S=b^2\\tan\\dfrac{\\theta}{2}，\\theta=\\angle F_1PF_2"
+    },
+    "hyperbola": {
+      "title": "双曲线",
+      "content": "双曲线（e>1）\n标准方程（焦点x轴）\n\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\n- 实轴2a，虚轴2b；焦距2c，核心：\\mathbf{c^2=a^2+b^2}\n- 焦点(\\pm c,0)，离心率e=\\dfrac{c}{a}>1\n- 渐近线（高频考点）：\\mathbf{y=\\pm\\dfrac{b}{a}x}\n- 准线：x=\\pm\\dfrac{a^2}{c}\n\n焦点y轴\n\\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1\n渐近线：y=\\pm\\dfrac{a}{b}x\n\n第一定义\n||PF_1|-|PF_2||=2a\\quad(2a<2c)\n- 2a=2c：两条射线；2a>2c：无轨迹\n\n几何性质\n1. 范围：|x|\\ge a，两支向外无限延伸\n2. 对称性：x、y轴、原点对称\n3. 顶点：(\\pm a,0)\n4. 焦半径：P(x_0,y_0)在右支 |PF_1|=ex_0+a,\\ |PF_2|=ex_0-a\n5. 焦点三角形面积：S=\\dfrac{b^2}{\\tan\\frac{\\theta}{2}}\n\n等轴双曲线\na=b，方程x^2-y^2=\\lambda，渐近线y=\\pm x，e=\\sqrt{2}"
+    },
+    "parabola": {
+      "title": "抛物线",
+      "content": "抛物线（e=1）\n四种标准形式（开口方向）\n1. 开口向右：y^2=2px\\ (p>0)\n   焦点F\\left(\\dfrac{p}{2},0\\right)，准线x=-\\dfrac{p}{2}\n2. 开口向左：y^2=-2px\n3. 开口向上：x^2=2py\n4. 开口向下：x^2=-2py\n\n定义\n动点P到焦点距离 = 到准线距离 |PF|=d\n\n核心性质\n1. 只有1个焦点、1条准线、1个顶点，无对称中心\n2. 焦半径：P(x_0,y_0)，|PF|=x_0+\\dfrac{p}{2}（右开口）\n3. 过焦点弦AB结论（大题秒杀）\n   - x_1x_2=\\dfrac{p^2}{4},\\ y_1y_2=-p^2\n   - 弦长|AB|=x_1+x_2+p\n   - \\dfrac{1}{|AF|}+\\dfrac{1}{|BF|}=\\dfrac{2}{p}"
+    },
+    "line-conic-method": {
+      "title": "直线与圆锥曲线通用解题套路",
+      "content": "直线与圆锥曲线通用解题套路（大题必考）\n联立方程标准步骤\n1. 设直线：斜率存在y=kx+m；斜率不存在单独讨论x=t\n2. 与曲线方程联立，消元得一元二次方程 Ax^2+Bx+C=0\n3. 判别式 \\Delta=B^2-4AC\n   - \\Delta>0：两个交点（相交）\n   - \\Delta=0：相切；\\Delta<0：无交点\n4. 韦达定理（核心工具）\n设交点A(x_1,y_1),B(x_2,y_2)\nx_1+x_2=-\\frac{B}{A},\\quad x_1x_2=\\frac{C}{A}\n\n弦长公式\n|AB|=\\sqrt{1+k^2}\\cdot\\sqrt{(x_1+x_2)^2-4x_1x_2}\nk为直线斜率；竖直线x=t，弦长直接|y_1-y_2|\n\n中点弦点差法（小题速解）\n曲线两点A,B，中点M(x_0,y_0)，代入曲线两式相减，快速求斜率：\n- 椭圆：k_{AB}\\cdot k_{OM}=-\\dfrac{b^2}{a^2}\n- 双曲线：k_{AB}\\cdot k_{OM}=\\dfrac{b^2}{a^2}\n- 抛物线y^2=2px：k_{AB}=\\dfrac{p}{y_0}\n\n点到直线距离（面积问题）\n三角形面积 S=\\dfrac12\\cdot|AB|\\cdot d，d为定点到直线距离"
+    },
+    "conic-conclusions": {
+      "title": "高考高频二级结论",
+      "content": "高考高频二级结论（选择填空提速）\n1. 椭圆上一点与两顶点连线斜率乘积：k_1k_2=-\\dfrac{b^2}{a^2}\n2. 双曲线上一点与两顶点连线斜率乘积：k_1k_2=\\dfrac{b^2}{a^2}\n3. 过椭圆外一点两条切线切点弦方程：\\dfrac{x_0x}{a^2}+\\dfrac{y_0y}{b^2}=1\n4. 双曲线切点弦：\\dfrac{x_0x}{a^2}-\\dfrac{y_0y}{b^2}=1"
+    },
+    "conic-mistakes": {
+      "title": "高频易错丢分点",
+      "content": "高频易错丢分点\n1. 椭圆、双曲线a,b,c关系记混：椭圆a^2=b^2+c^2，双曲线c^2=a^2+b^2\n2. 双曲线渐近线写反a、b，焦点在y轴时分母颠倒\n3. 联立方程忘记讨论**斜率不存在**的直线\n4. 大题不写判别式\\Delta，直接用韦达定理扣分\n5. 抛物线焦点弦结论只记右开口，换开口方向不会变通\n6. 点差法只适用于有两个交点，必须验证\\Delta>0\n7. 离心率范围求解忽略曲线自身范围限制"
+    }
+  },
+  "counting": {
+    "counting-principles": {
+      "title": "两大基本计数原理",
+      "content": "两大基本计数原理（所有排列组合基础）\n分类加法计数原理\n完成一件事有**多类方案**，各类方案互不重叠，第i类有n_i种方法\n总方法数：\\mathbf{N=n_1+n_2+n_3+\\dots+n_k}\n核心关键词：**分类、或、一步完成**\n\n分步乘法计数原理\n完成一件事需要**分多步**，每一步缺一不可，第i步有m_i种方法\n总方法数：\\mathbf{N=m_1\\times m_2\\times m_3\\times\\dots\\times m_k}\n核心关键词：**分步、且、多步依次完成**\n\n区分技巧\n能一步做完→加法；必须分多步依次做→乘法。"
+    },
+    "permutation": {
+      "title": "排列",
+      "content": "排列\n排列定义\n从n个不同元素中，取出m(m\\le n)个**有序**排成一列，记为\\mathrm{A}_n^m\n\n排列公式\n\\mathrm{A}_n^m = n(n-1)(n-2)\\dots(n-m+1)=\\frac{n!}{(n-m)!}\n\n全排列（m=n）\nn个元素全部有序排列：\\mathrm{A}_n^n = n! = n\\times(n-1)\\times\\dots\\times1\n规定：\\mathbf{0!=1}\n\n常见排列题型\n1. 特殊元素/特殊位置优先排；\n2. 相邻问题：**捆绑法**（相邻元素捆成整体，内部再排列）；\n3. 不相邻问题：**插空法**（先排无限制元素，空位插入不相邻元素）；\n4. 定序问题：部分元素顺序固定，总排列除以固定元素全排列。"
+    },
+    "combination": {
+      "title": "组合",
+      "content": "组合\n组合定义\n从n个不同元素中，取出m(m\\le n)个**无序**组成一组，记\\mathrm{C}_n^m\n\n组合公式\n\\mathrm{C}_n^m=\\frac{\\mathrm{A}_n^m}{\\mathrm{A}_m^m}=\\frac{n!}{m!(n-m)!}\n\n组合两大核心性质\n1. \\mathbf{\\mathrm{C}_n^m=\\mathrm{C}_n^{n-m}}（对称，简化计算，如\\mathrm{C}_{10}^8=\\mathrm{C}_{10}^2）\n2. \\mathbf{\\mathrm{C}_n^0=\\mathrm{C}_n^n=1}\n\n组合典型模型\n1. 分组分配问题（高考大题高频）\n   - 平均分组：分k组数量相同，最后除以\\mathrm{A}_k^k消去重复分组；\n   - 不平均分组：直接分步组合；\n   - 分组后分给不同对象：分组完成再乘\\mathrm{A}_k^k分配。\n2. 隔板法：相同元素分给不同对象，n个相同元素分给k人，每人至少1个：\\mathrm{C}_{n-1}^{k-1}；允许为空：\\mathrm{C}_{n+k-1}^{k-1}。\n3. 至多至少问题：正面复杂用**间接法**（总数−对立情况）。"
+    },
+    "counting-strategy": {
+      "title": "排列组合通用解题思路",
+      "content": "排列组合通用解题思路\n1. 先判断：元素是否可重复、有序（排列）还是无序（组合）；\n2. 特殊优先：有约束元素/位置先处理；\n3. 相邻捆绑、不相邻插空；\n4. 正面计算量大，用间接排除法；\n5. 平均分组必除组数阶乘，分配给不同对象再乘排列。"
+    },
+    "binomial": {
+      "title": "二项式定理",
+      "content": "二项式定理（计数原理延伸，选择填空必考）\n二项展开式\n(a+b)^n=\\mathrm{C}_n^0a^n+\\mathrm{C}_n^1a^{n-1}b+\\mathrm{C}_n^2a^{n-2}b^2+\\dots+\\mathrm{C}_n^nb^n\n\n通项公式（核心，求指定项专用）\n第\\mathbf{r+1}项：\\mathbf{T_{r+1}=\\mathrm{C}_n^r a^{n-r} b^r}\\quad(r=0,1,2\\dots n)\n注意：项数是r+1，不是r，极易算错。\n\n二项式系数性质\n1. 对称性：\\mathrm{C}_n^r=\\mathrm{C}_n^{n-r}；\n2. 增减性：中间项二项式系数最大\n   - n偶数：中间1项r=\\dfrac{n}{2}；\n   - n奇数：中间两项r=\\dfrac{n-1}{2},\\dfrac{n+1}{2}；\n3. 所有二项式系数和：令a=b=1，\\mathbf{\\mathrm{C}_n^0+\\mathrm{C}_n^1+\\dots+\\mathrm{C}_n^n=2^n}；\n4. 奇数项二项式系数和 = 偶数项二项式系数和 = 2^{n-1}；\n5. 赋值法通用技巧：求系数和、常数项、奇次/偶次项系数，分别令x=1、x=-1、x=0代入。\n\n区分两个概念\n1. **二项式系数**：仅指\\mathrm{C}_n^r，只和n、r有关；\n2. **项的系数**：展开式中每一项完整数字因数，包含a、b自带系数。"
+    },
+    "counting-mistakes": {
+      "title": "高考高频易错点",
+      "content": "高考高频易错点\n1. 分不清分类加法、分步乘法，重复/漏算；\n2. 排列有序、组合无序混淆，该用组合却用排列；\n3. 平均分组忘记除以组数阶乘，造成重复计数；\n4. 二项通项T_{r+1}误当成第r项，指数算错；\n5. 二项式系数与项的系数概念混淆；\n6. 隔板法只适用于**相同元素**，不同元素不能用；\n7. 相邻捆绑后忘记内部元素自身排列；\n8. 含0阶乘0!=1容易错记为0。"
+    }
+  },
+  "probability": {
+    "event-prob": {
+      "title": "随机事件与概率基础",
+      "content": "随机事件与概率基础\n事件分类\n1. **必然事件**：一定发生，概率 P=1\n2. **不可能事件**：一定不发生，概率 P=0\n3. **随机事件**：可能发生也可能不发生，0<P<1\n\n事件的关系与运算\n设 A、B 为随机事件\n1. **包含**：A\\subseteq B，A 发生则 B 一定发生\n2. **相等**：A\\subseteq B 且 B\\subseteq A \\iff A=B\n3. **并事件（和事件）**：A\\cup B（A+B），A、B 至少一个发生\n4. **交事件（积事件）**：A\\cap B（AB），A、B 同时发生\n5. **互斥事件（互不相容）**：A\\cap B=\\varnothing，不能同时发生\n   加法公式：P(A\\cup B)=P(A)+P(B)\n6. **对立事件**：互斥且 A\\cup B=\\Omega（全集），记 \\overline{A} 为 A 的对立事件\n   核心公式：\\mathbf{P(\\overline{A})=1-P(A)}\n   区分：对立一定互斥，互斥不一定对立\n\n概率基本性质\n1. 0\\le P(A)\\le1；P(\\Omega)=1，P(\\varnothing)=0\n2. 若 A\\subseteq B，则 P(A)\\le P(B)\n3. 通用加法公式（任意两事件）：\nP(A\\cup B)=P(A)+P(B)-P(AB)"
+    },
+    "classical-prob": {
+      "title": "古典概型",
+      "content": "古典概型（基础必考）\n两个条件\n1. 有限性：基本事件总数有限；\n2. 等可能性：每个基本事件发生概率相等。\n\n计算公式\n\\mathbf{P(A)=\\dfrac{\\text{事件}A\\text{包含的基本事件数}m}{\\text{试验总基本事件数}n}}\n\n计数工具\n- 列举法：简单枚举\n- 排列：有序，A_n^k=\\dfrac{n!}{(n-k)!}\n- 组合：无序，C_n^k=\\dfrac{n!}{k!(n-k)!}\n\n常见模型\n摸球、抽签、分组、数字、排队问题"
+    },
+    "geometric-prob": {
+      "title": "几何概型",
+      "content": "几何概型（小题高频）\n两个条件\n1. 基本事件无限；2. 每个事件等可能。\n\n计算公式\nP(A)=\\frac{\\text{构成事件}A\\text{的几何度量}}{\\text{试验全部结果的几何度量}}\n几何度量：长度、面积、体积\n\n两类典型\n1. 长度型：数轴区间、线段动点；\n2. 面积型：平面区域（二维坐标求面积，高考最多）；\n3. 体积型：空间几何体（极少考）"
+    },
+    "conditional-independence": {
+      "title": "条件概率与独立事件",
+      "content": "条件概率与独立事件\n条件概率\n在 A 发生前提下 B 发生的概率：\nP(B|A)=\\frac{P(AB)}{P(A)}\\quad(P(A)>0)\n变形乘法公式：\\mathbf{P(AB)=P(A)\\cdot P(B|A)}\n\n相互独立事件\nA、B 发生互不影响\n判定：P(AB)=P(A)\\cdot P(B)\n性质：A 与 \\overline{B}、\\overline{A} 与 B、\\overline{A} 与 \\overline{B} 均独立\n\nn 重独立重复试验（二项分布）\n单次试验：只有发生/不发生两种结果，单次成功概率 p\nn 次试验恰好发生 k 次概率：\n\\mathbf{P(X=k)=C_n^k p^k (1-p)^{n-k}} \\quad(k=0,1,2\\dots n)"
+    },
+    "prob-mistakes": {
+      "title": "高考高频易错点",
+      "content": "高考高频易错点\n1. 互斥、对立、独立概念混淆；独立不能推出互斥\n2. 古典概型分不清有序/无序，排列组合混用算错总数\n3. 几何概型看错度量（面积题误用长度）\n4. 条件概率公式记反，P(B|A)\\neq P(A|B)\n5. 二项分布前提：独立重复、每次概率不变；不放回抽样是超几何，不是二项\n6. 方差线性变换：常数b不影响方差，只有a^2倍\n7. 正态分布对称轴是x=\\mu，左右对称概率相等\n8. 分布列概率求和不等于1，计算失误扣分"
+    }
+  },
+  "random-vars": {
+    "rv-basics": {
+      "title": "随机变量基础概念",
+      "content": "随机变量基础概念\n**随机变量**：随机试验结果对应一个实数，记作 X,Y,\\xi\n分类\n    - **离散型随机变量**：取值有限/可一一列举（如0,1,2,3…）\n    - **连续型随机变量**：取值充满一段区间（正态分布是典型）\n样本空间：所有基本事件集合 \\Omega"
+    },
+    "distribution": {
+      "title": "离散型随机变量分布列",
+      "content": "离散型随机变量分布列\n分布列写法\n设 X 所有取值 x_1,x_2,\\dots,x_n，对应概率 p_1,p_2,\\dots,p_n\n| X | x_1 | x_2 | \\dots | x_n |\n|-----|-------|-------|---------|-------|\n| P | p_1 | p_2 | \\dots | p_n |\n\n两条核心性质（大题必写验证）\n① 每个概率非负：\\mathbf{p_i\\ge 0}\n② 全部概率之和为1：\\mathbf{p_1+p_2+\\dots+p_n=1}\n\n分布列求法步骤\n1. 写出随机变量所有可能取值；\n2. 逐个计算每个取值对应的概率；\n3. 列表，验证概率和为1。"
+    },
+    "expectation": {
+      "title": "期望",
+      "content": "期望（均值）E(X)\n计算公式\nE(X)=x_1p_1+x_2p_2+\\dots+x_np_n\n含义：随机变量平均取值。\n\n线性运算性质（万能）\na,b 为常数：\n\\mathbf{E(aX+b)=aE(X)+b}\n拓展：E(X+Y)=E(X)+E(Y)"
+    },
+    "variance": {
+      "title": "方差与标准差",
+      "content": "方差 D(X)、标准差 \\sqrt{D(X)}\n定义公式\nD(X)=\\sum_{i=1}^n \\big[x_i-E(X)\\big]^2 \\cdot p_i\n标准差：\\sigma=\\sqrt{D(X)}\n意义：方差越大，数据波动越大、越不稳定。\n\n简化计算公式（做题优先用）\n\\mathbf{D(X)=E(X^2)-\\big[E(X)\\big]^2}\n\n方差运算性质\n\\mathbf{D(aX+b)=a^2 D(X)}\n注意：常数 b 不改变方差，只有系数 a 平方倍。"
+    },
+    "common-distributions": {
+      "title": "四大常见离散分布",
+      "content": "四大常见离散分布（必背期望、方差）\n两点分布（0-1分布）\n试验只有两种结果：成功/失败\nX=1（成功）概率 p，X=0（失败）概率 1-p\nE(X)=p,\\quad D(X)=p(1-p)\n\n二项分布 X\\sim B(n,p)\n条件：n 次**独立重复试验**，单次成功概率固定 p，无放回不适用\nX：n 次中成功次数\n概率公式：\nP(X=k)=\\mathrm{C}_n^k \\, p^k \\, (1-p)^{n-k},\\quad k=0,1,\\dots,n\n期望方差：\n\\mathbf{E(X)=np,\\quad D(X)=np(1-p)}\n\n超几何分布\n条件：N 件产品，其中 M 件次品，不放回抽取 n 件，X 为次品数量\n概率公式：\nP(X=k)=\\frac{\\mathrm{C}_M^k \\cdot \\mathrm{C}_{N-M}^{n-k}}{\\mathrm{C}_N^n}\n期望（无需背复杂方差）：\n\\mathbf{E(X)=n\\cdot \\frac{M}{N}}\n区分二项/超几何：\n- 有放回、独立重复 → 二项分布；\n- 不放回、总体有限 → 超几何分布。\n\n几何分布（拓展，部分地区考）\n不断试验直到首次成功，单次成功率 p\nP(X=k)=(1-p)^{k-1}p\nE(X)=\\frac{1}{p},\\quad D(X)=\\frac{1-p}{p^2}"
+    },
+    "normal-distribution": {
+      "title": "正态分布",
+      "content": "连续型随机变量——正态分布 X\\sim N(\\mu,\\sigma^2)\n图像与参数含义\n正态曲线：y=\\varphi_{\\mu,\\sigma}(x)\n- \\mu：期望，对称轴 x=\\mu；决定图像左右位置\n- \\sigma^2：方差，\\sigma 越大，图像越矮胖，波动越大；\\sigma 越小越瘦高\n\n核心性质\n1. 曲线关于直线 x=\\mu 对称；\n2. P(X>\\mu)=P(X<\\mu)=0.5；\n3. E(X)=\\mu,\\ D(X)=\\sigma^2。\n\n3\\sigma原则（考试唯一需要记忆数值）\n\n\nP(\\mu-\\sigma<X<\\mu+\\sigma)\\approx 0.6827 \\\\\nP(\\mu-2\\sigma<X<\\mu+2\\sigma)\\approx 0.9545 \\\\\nP(\\mu-3\\sigma<X<\\mu+3\\sigma)\\approx 0.9973\n\n\n实际应用：几乎全部数据落在 (\\mu-3\\sigma,\\mu+3\\sigma) 内。\n\n标准化变换\n令 Z=\\dfrac{X-\\mu}{\\sigma}，则 Z\\sim N(0,1)（标准正态分布）。"
+    },
+    "prob-template": {
+      "title": "概率大题通用解题模板",
+      "content": "概率大题通用解题模板\n1. 确定随机变量 X 的所有取值；\n2. 判断分布类型（二项/超几何/普通离散）；\n3. 逐个计算每个取值的概率；\n4. 列出分布列，验证概率和为1；\n5. 计算期望 E(X)、方差 D(X)；\n6. 根据题意作答（最值、决策、预测）。"
+    },
+    "rv-mistakes": {
+      "title": "高考高频易错点",
+      "content": "高考高频易错点\n1. 二项分布、超几何分布混淆，不放回误用二项；\n2. 方差性质记错：D(aX+b)\\neq aD(X)+b，无常数项、系数要平方；\n3. 分布列概率求和不等于1，计算概率时排列组合出错；\n4. 正态分布对称轴看错，左右概率算反；\n5. 求 E(X^2) 不能直接等于 [E(X)]^2，必须单独计算；\n6. 独立事件才能用二项分布，不独立只能逐个算分布列；\n7. 区分离散（列表）、连续（正态，无分布列）。"
+    }
+  },
+  "statistics": {
+    "sampling": {
+      "title": "随机抽样",
+      "content": "随机抽样\n1. 简单随机抽样\n- 特点：总体有限、逐个抽取、等概率、不放回\n- 两种方法：抽签法、随机数表法\n\n2. 系统抽样（等距抽样）\n步骤：\n1. 编号；2. 分段间隔 k=\\dfrac{N}{n}（N总体容量，n样本容量）；\n3. 第一段随机抽起始编号；4. 依次加k得到所有样本\n- 适用：总体数量大\n\n3. 分层抽样（高考高频）\n- 适用：总体由差异明显的几部分组成（分层）\n- 核心：每层抽样比例相等 \\dfrac{n}{N}=\\dfrac{n_1}{N_1}=\\dfrac{n_2}{N_2}\n- 每层抽取数量：n_i=\\dfrac{N_i}{N}\\cdot n"
+    },
+    "estimation": {
+      "title": "用样本估计总体",
+      "content": "用样本估计总体\n图表类\n1. **频率分布表/频率分布直方图**\n- 组距、分组、频数、频率：\\text{频率}=\\dfrac{\\text{频数}}{\\text{样本容量}}\n- 直方图纵轴：\\mathbf{\\dfrac{\\text{频率}}{\\text{组距}}}\n- 矩形面积 = 本组频率；所有矩形面积和=1\n- 组中值：区间中点，用于估算平均数\n\n2. **茎叶图**\n- 优点：保留原始数据，方便计算中位数、平均数\n- 茎：十位/高位；叶：个位/低位\n\n3. 折线图、条形图、扇形图\n扇形图：圆心角 =360^\\circ\\times 对应频率\n\n样本数字特征（大题必算）\n设样本数据 x_1,x_2,\\dots,x_n\n1. **平均数**\n\\bar{x}=\\dfrac{1}{n}(x_1+x_2+\\dots+x_n)\n频率直方图估算：每组组中值 × 本组频率，全部相加\n\n2. **中位数**\n从小到大排序，中间数：\n- n奇数：第\\dfrac{n+1}{2}项；\n- n偶数：中间两项平均值；\n直方图：找左右面积各0.5的分界横坐标\n\n3. **众数**\n出现次数最多的数据；直方图最高矩形中点横坐标\n\n4. **极差**：最大值-最小值\n\n5. **方差、标准差（衡量波动）**\n方差：s^2=\\dfrac{1}{n}\\left[(x_1-\\bar{x})^2+(x_2-\\bar{x})^2+\\dots+(x_n-\\bar{x})^2\\right]\n标准差：s=\\sqrt{s^2}\n- s^2越大，数据波动越大；方差越小，数据越稳定\n- 线性变换性质：若 y_i=ax_i+b，则 \\bar{y}=a\\bar{x}+b,\\ s_y^2=a^2 s_x^2"
+    },
+    "correlation": {
+      "title": "变量的相关性",
+      "content": "变量的相关性\n1. 相关关系\n- 正相关：x变大，y整体变大，散点从左下到右上\n- 负相关：x变大，y整体变小，散点从左上到右下\n\n2. 相关系数 r\nr=\\dfrac{\\sum_{i=1}^n (x_i-\\bar{x})(y_i-\\bar{y})}{\\sqrt{\\sum_{i=1}^n (x_i-\\bar{x})^2}\\cdot\\sqrt{\\sum_{i=1}^n (y_i-\\bar{y})^2}}\n- r\\in[-1,1]\n- |r|越接近1，线性相关性越强；|r|越接近0，几乎无线性相关\n- r>0正相关；r<0负相关\n\n3. 线性回归方程（必考大题）\n回归直线：\\mathbf{\\hat{y}=\\hat{b}x+\\hat{a}}\n1. 斜率公式：\n\\hat{b}=\\dfrac{\\sum_{i=1}^n (x_i-\\bar{x})(y_i-\\bar{y})}{\\sum_{i=1}^n (x_i-\\bar{x})^2}\n2. 截距：\\hat{a}=\\bar{y}-\\hat{b}\\bar{x}\n3. 核心性质：回归直线**必过样本中心点** (\\bar{x},\\bar{y})\n4. 预报：代入x得到\\hat{y}，仅预测，不是真实值"
+    },
+    "independence-test": {
+      "title": "独立性检验",
+      "content": "独立性检验（2×2列联表）\n2×2列联表\n|       | A类 | \\bar{A}类 | 合计 |\n|-------|-----|------------|------|\n| B类   | a | b        | a+b|\n| \\bar{B}类 | c | d        | c+d|\n| 合计  | a+c | b+d      | n=a+b+c+d |\n\n卡方统计量\n\\chi^2=\\dfrac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}\n\n临界值判断（常用）\n- \\chi^2\\ge2.706：90%把握认为两个变量有关\n- \\chi^2\\ge3.841：95%把握认为有关\n- \\chi^2\\ge6.635：99%把握认为有关\n- \\chi^2越小，越无充分证据说明相关；\\chi^2=0完全独立"
+    },
+    "stats-mistakes": {
+      "title": "高考高频易错点",
+      "content": "高考高频易错点\n1. 频率直方图纵轴是\\dfrac{\\text{频率}}{\\text{组距}}，不是频率；求频率要乘组距\n2. 方差公式分母是n，不要记成n-1（高中统计统一除以n）\n3. 回归方程一定过(\\bar{x},\\bar{y})，小题可直接用此求参数\n4. 独立性检验仅判断**是否线性相关**，不能证明因果关系\n5. 分层抽样计算每层数量，比例不要算反\n6. 线性变换后方差只乘a^2，常数b不改变方差\n7. 中位数、众数、平均数区分：平均数受极端值影响最大"
+    }
+  },
+  "data-analysis": {
+    "paired-data": {
+      "title": "成对数据概念",
+      "content": "成对数据概念\n成对数据：两组变量 (x_1,y_1),(x_2,y_2),\\dots,(x_n,y_n)，每组(x,y)是同一观测对象的两个指标（如身高与体重、广告投入与销量），用来研究**变量间相关关系**，区别于单一变量的频率分布。"
+    },
+    "scatter-plot": {
+      "title": "散点图",
+      "content": "散点图（直观判断相关性）\n1. 画法：平面直角坐标系，以x为横轴、y为纵轴，描出全部样本点(x_i,y_i)\n2. 四类相关趋势\n- **正相关**：x增大，y整体上升，点从左下到右上\n- **负相关**：x增大，y整体下降，点从左上到右下\n- **线性相关**：点大致集中在一条直线附近\n- **无相关**：点散乱无规律，看不出增减趋势\n3. 强弱判断：点越贴近直线，相关性越强；点越分散，相关性越弱。"
+    },
+    "correlation-coeff": {
+      "title": "样本相关系数",
+      "content": "样本相关系数 r（定量衡量线性相关强弱）\n公式\n\nr=\\frac{\\sum_{i=1}^n (x_i-\\bar{x})(y_i-\\bar{y})}{\\sqrt{\\sum_{i=1}^n (x_i-\\bar{x})^2}\\cdot\\sqrt{\\sum_{i=1}^n (y_i-\\bar{y})^2}}\n\n\n核心取值规则\n1. r\\in[-1,1]\n2. r>0：正相关；r<0：负相关\n3. |r| 越接近 1，线性相关性越强；\n   |r| 越接近 0，几乎无线性相关\n   - |r|\\in[0.75,1]：高度线性相关\n   - |r|\\in[0.3,0.75)：中度线性相关\n   - |r|\\in[0,0.3)：弱线性相关"
+    },
+    "linear-regression": {
+      "title": "一元线性回归方程",
+      "content": "一元线性回归方程（成对数据核心考点）\n回归直线形式\n\\hat{y}=\\hat{b}x+\\hat{a}\n\\hat{y}：y 的预报值（不是真实值）\n\n系数计算公式\n斜率（回归系数）：\n\n\\hat{b}=\\frac{\\sum_{i=1}^n (x_i-\\bar{x})(y_i-\\bar{y})}{\\sum_{i=1}^n (x_i-\\bar{x})^2}\n\n截距：\n\\hat{a}=\\bar{y}-\\hat{b}\\bar{x}\n\n必记核心性质\n回归直线**一定经过成对数据的样本中心点** \\mathbf{(\\bar{x},\\bar{y})}\n小题速算技巧：已知\\bar{x},\\bar{y},\\hat{b}，直接代入求\\hat{a}。\n\n线性变换性质\n若 x'=mx+t,\\ y'=ny+s，新回归系数可按比例换算，考试常结合数据缩放出题。"
+    },
+    "residual": {
+      "title": "残差与残差分析",
+      "content": "残差与残差分析（判断线性拟合效果）\n**残差定义**：真实值 y_i 减去预报值 \\hat{y}_i\ne_i=y_i-\\hat{y}_i\n\n残差图：以x为横轴、残差e_i为纵轴描点\n   - 残差点均匀分布在水平带状区域，无规律：线性模型拟合良好；\n   - 残差点有曲线趋势、开口变大/变小：线性模型不合适，改用非线性回归。\n\n相关指数 R^2（拟合优度）\n\nR^2=1-\\frac{\\sum_{i=1}^n (y_i-\\hat{y}_i)^2}{\\sum_{i=1}^n (y_i-\\bar{y})^2}\n\n- R^2\\in[0,1]\n- R^2 越接近1，残差平方和越小，模型拟合效果越好；\n- R^2 越接近0，拟合效果越差。"
+    },
+    "nonlinear-regression": {
+      "title": "非线性回归",
+      "content": "非线性回归（成对数据拓展）\n当散点呈现曲线趋势，通过换元转化为线性回归：\n1. 反比例型：y=\\dfrac{k}{x}+b，令 t=\\dfrac{1}{x}，化为 \\hat{y}=kt+b\n2. 指数型：y=ae^{bx}，两边取自然对数 \\ln y=\\ln a+bx，令 z=\\ln y，得 \\hat{z}=bx+\\ln a\n3. 幂函数型：y=ax^b，取对数 \\ln y=\\ln a+b\\ln x，令 z=\\ln y,t=\\ln x，化为线性\n4. 二次型：y=ax^2+bx+c，令 t=x^2，转化二元线性"
+    },
+    "independence-test": {
+      "title": "独立性检验",
+      "content": "独立性检验（分类成对数据，2×2列联表）\n针对**分类变量**的成对数据（如\"是否吸烟\"与\"是否患病\"），判断两个分类变量是否独立。\n\n2×2列联表（成对分类数据）\n|          | 变量A1 | 变量A2 | 合计 |\n|----------|--------|--------|------|\n| 变量B1   | a    | b    | a+b|\n| 变量B2   | c    | d    | c+d|\n| 合计     | a+c  | b+d  | n=a+b+c+d |\n\n\\chi^2（卡方）统计量\n\n\\chi^2=\\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}\n\n\n临界值判断（标准）\n- \\chi^2 \\ge 2.706：90%把握认为两个变量有关联\n- \\chi^2 \\ge 3.841：95%把握认为有关联\n- \\chi^2 \\ge 6.635：99%把握认为有关联"
+    },
+    "da-problem-types": {
+      "title": "高考常考题型",
+      "content": "高考常考题型\n1. 给成对数据，画散点图判断正负相关；\n2. 计算相关系数r，判断线性相关强弱；\n3. 求线性回归方程，利用回归方程做预测；\n4. 残差、R^2 判断模型拟合好坏；\n5. 非线性换元转化为线性回归；\n6. 2×2列联表卡方独立性检验。"
+    },
+    "da-mistakes": {
+      "title": "高频易错点",
+      "content": "高频易错点\n1. 回归方程\\hat{y}是预报值，不能写等号y=\\hat{b}x+\\hat{a}；\n2. 相关系数r只能判断**线性**相关，曲线相关时|r|可能接近0；\n3. 独立性检验仅能判断\"有无关联\"，**不能证明因果关系**；\n4. R^2越大拟合越好，不要记反；\n5. 非线性回归换元后，最后要还原x,y，不能直接用t,z作答。"
+    }
+  }
+}

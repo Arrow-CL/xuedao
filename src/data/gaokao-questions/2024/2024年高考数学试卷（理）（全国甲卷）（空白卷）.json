@@ -1,0 +1,512 @@
+{
+  "year": 2024,
+  "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+  "totalQuestions": 23,
+  "questions": [
+    {
+      "number": 1,
+      "section": "选择题",
+      "prompt": "设，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "10D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 2,
+      "section": "选择题",
+      "prompt": "集合，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sets-logic"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 3,
+      "section": "选择题",
+      "prompt": "若实数满足约束条件，则的最小值为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 4,
+      "section": "选择题",
+      "prompt": "等差数列的前项和为，若，，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "1D. 2"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 5,
+      "section": "选择题",
+      "prompt": "已知双曲线的上、下焦点分别为，点在该双曲线上，则该双曲线的离心率为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "4B. 3C. 2D."
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 6,
+      "section": "选择题",
+      "prompt": "设函数，则曲线在处的切线与两坐标轴围成的三角形的面积为（   ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept",
+        "trigonometric",
+        "lines-circles"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 7,
+      "section": "选择题",
+      "prompt": "函数在区间的大致图像为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2024年高考数学试卷（理）（_q7_image40.png",
+        "gaokao-images/2024年高考数学试卷（理）（_q7_image41.png",
+        "gaokao-images/2024年高考数学试卷（理）（_q7_image42.png",
+        "gaokao-images/2024年高考数学试卷（理）（_q7_image43.png"
+      ]
+    },
+    {
+      "number": 8,
+      "section": "选择题",
+      "prompt": "已知，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 9,
+      "section": "选择题",
+      "prompt": "已知向量，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "“”是“”的必要条件B. “”是“”的必要条件"
+        },
+        {
+          "label": "C",
+          "text": "“”是“”的充分条件D. “”是“”的充分条件"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "vectors-app"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 10,
+      "section": "选择题",
+      "prompt": "设两个平面，是两条直线，且.下列四个命题：\n①若，则或          ②若，则\n③若，且，则       ④若与和所成的角相等，则\n其中所有真命题的编号是（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "①③B. ②④C. ①②③D. ①③④"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 11,
+      "section": "选择题",
+      "prompt": "在中内角所对边分别为，若，，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 12,
+      "section": "选择题",
+      "prompt": "已知b是的等差中项，直线与圆交于两点，则的最小值为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "2B. 3C. 4D."
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 13,
+      "section": "填空题",
+      "prompt": "的展开式中，各项系数的最大值是______．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 14,
+      "section": "填空题",
+      "prompt": "已知甲、乙两个圆台上、下底面的半径均为和，母线长分别为和，则两个圆台的体积之比______．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry",
+        "lines-circles"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 15,
+      "section": "填空题",
+      "prompt": "已知，，则______．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 16,
+      "section": "填空题",
+      "prompt": "有6个相同的球，分别标有数字1、2、3、4、5、6，从中不放回地随机抽取3次，每次取1个球.记为前两次取出的球上数字的平均值，为取出的三个球上数字的平均值，则与差的绝对值不超过的概率是______．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry",
+        "counting",
+        "probability"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 17,
+      "section": "解答题",
+      "prompt": "某工厂进行生产线智能化升级改造，升级改造后，从该工厂甲、乙两个车间产品中随机抽取150件进行检验，数据如下：\n优级品\n合格品\n不合格品\n总计\n甲车间\n26\n24\n0\n50\n乙车间\n70\n28\n2\n100\n总计\n96\n52\n2\n150\n（1）填写如下列联表：\n优级品\n非优级品\n甲车间\n乙车间\n能否有的把握认为甲、乙两车间产品的优级品率存在差异？能否有的把握认为甲，乙两车间产品的优级品率存在差异？\n（2）已知升级改造前该工厂产品的优级品率，设为升级改造后抽取的n件产品的优级品率.如果，则认为该工厂产品的优级品率提高了，根据抽取的150件产品的数据，能否认为生产线智能化升级改造后，该工厂产品的优级品率提高了？（）\n附：\n0.050\n0.010\n0.001\nk",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "填写如下列联表："
+        },
+        {
+          "number": 2,
+          "text": "已知升级改造前该工厂产品的优级品率，设为升级改造后抽取的n件产品的优级品率.如果，则认为该工厂产品的优级品率提高了，根据抽取的150件产品的数据，能否认为生产线智能化升级改造后，该工厂产品的优级品率提高了？（）"
+        }
+      ],
+      "chapters": [
+        "counting",
+        "probability"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 18,
+      "section": "填空题",
+      "prompt": "记为数列\\{a_n\\}的前n项和S_n，且S_n = 2a_n - 1． （1）求\\{a_n\\}的通项公式； （2）设b_n = \\frac{1}{a_n a_{n+1}}，求数列\\{b_n\\}的前n项和为T_n．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 3
+    },
+    {
+      "number": 19,
+      "section": "填空题",
+      "prompt": "如图，在以A，B，C，D，E，F为顶点的五面体中，四边形ABCD与四边形ADEF均为等腰梯形，AB \\parallel CD，AD \\parallel EF，AB = 2CD，AD = 2EF，\\angle BAD = 60^\\circ，M为AD的中点． （1）证明：BM \\parallel平面CDE； （2）求二面角B-CE-D的正弦值．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ],
+      "difficulty": 4,
+      "images": [
+        "/gaokao-images/2024年高考数学试卷（理）（_q19_image109.png"
+      ]
+    },
+    {
+      "number": 20,
+      "section": "填空题",
+      "prompt": "设椭圆\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1（a > b > 0）的右焦点为F，点P在C上，且PF \\perp x轴． （1）求C的方程； （2）过点F的直线与C交于A, B两点，M为线段AB的中点，直线OM交直线x = a于点N，证明：NF \\perp x轴．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 4
+    },
+    {
+      "number": 21,
+      "section": "填空题",
+      "prompt": "已知函数f(x) = e^x - ax - 1． （1）当a = 1时，求f(x)的极值； （2）当x \\geq 0时，f(x) \\geq 0恒成立，求a的取值范围． （二）选考题：共10分，请考生在第22、23题中任选一题作答，并用2B铅笔将所选题号涂黑，多涂、错涂、漏涂均不给分，如果多做，则按所做的第一题计分． [选修4-4：坐标系与参数方程]",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "derivatives"
+      ],
+      "difficulty": 4
+    },
+    {
+      "number": 22,
+      "section": "填空题",
+      "prompt": "在平面直角坐标系xOy中，以坐标原点为极点，x轴的正半轴为极轴建立极坐标系，曲线C的极坐标方程为\\rho = 2\\cos\\theta． （1）写出C的直角坐标方程； （2）设直线l：\\begin{cases} x = 1 + t \\\\ y = t \\end{cases}（t为参数），若C与l相交于A, B两点，若|AB| = \\sqrt{2}，求a的值． [选修4-5：不等式选讲]",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "lines-circles"
+      ],
+      "difficulty": 3
+    },
+    {
+      "number": 23,
+      "section": "填空题",
+      "prompt": "实数a, b, c满足a + b + c = 1． （1）证明：a^2 + b^2 + c^2 \\geq \\frac{1}{3}； （2）证明：\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} \\geq 9．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "quadratic-ineq"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

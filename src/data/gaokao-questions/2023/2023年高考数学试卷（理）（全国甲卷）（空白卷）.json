@@ -1,0 +1,532 @@
+{
+  "year": 2023,
+  "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+  "totalQuestions": 23,
+  "questions": [
+    {
+      "number": 1,
+      "section": "选择题",
+      "prompt": "设集合A=\\{x\\mid x=2k,k\\in\\mathbb{Z}\\}，B=\\{x\\mid x=2k+1,k\\in\\mathbb{Z}\\}，U=\\mathbb{Z}，则\\complement_U(A\\cup B)=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\varnothing"
+        },
+        {
+          "label": "B",
+          "text": "\\mathbb{Z}"
+        },
+        {
+          "label": "C",
+          "text": "A"
+        },
+        {
+          "label": "D",
+          "text": "B"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sets-logic"
+      ],
+      "difficulty": 1,
+      "answerHint": "整数集分为奇数和偶数，并集为全体整数，补集为空集。"
+    },
+    {
+      "number": 2,
+      "section": "选择题",
+      "prompt": "若复数z=\\dfrac{2\\mathrm{i}}{1+\\mathrm{i}}，则|z|=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "-1"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        },
+        {
+          "label": "C",
+          "text": "1"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "complex"
+      ],
+      "difficulty": 2,
+      "answerHint": "化简复数，利用模长公式计算。"
+    },
+    {
+      "number": 3,
+      "section": "选择题",
+      "prompt": "执行下面的程序框图，输出的S=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "21"
+        },
+        {
+          "label": "B",
+          "text": "34"
+        },
+        {
+          "label": "C",
+          "text": "55"
+        },
+        {
+          "label": "D",
+          "text": "89"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 2,
+      "answerHint": "模拟循环，注意初始值和递推关系。"
+    },
+    {
+      "number": 4,
+      "section": "选择题",
+      "prompt": "向量\\vec{a}=(1,2)，\\vec{b}=(3,4)，且\\vec{a}\\cdot\\vec{b}=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "11"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        },
+        {
+          "label": "D",
+          "text": "8"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "vectors-app"
+      ],
+      "difficulty": 1,
+      "answerHint": "直接利用向量点积公式计算。"
+    },
+    {
+      "number": 5,
+      "section": "选择题",
+      "prompt": "已知正项等比数列\\{a_n\\}中��a_1=1，S_n为前n项和，S_3=7，则a_4=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        },
+        {
+          "label": "C",
+          "text": "15"
+        },
+        {
+          "label": "D",
+          "text": "30"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 2,
+      "answerHint": "设公比为\\(q\\)，由\\(S_3\\)求出\\(q\\)，再求\\(a_4\\)。"
+    },
+    {
+      "number": 6,
+      "section": "选择题",
+      "prompt": "有50人报名足球俱乐部，60人报名乒乓球俱乐部，70人报名足球或乒乓球俱乐部，若已知某人报足球俱乐部，则其报乒乓球俱乐部概率为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.8"
+        },
+        {
+          "label": "B",
+          "text": "0.4"
+        },
+        {
+          "label": "C",
+          "text": "0.2"
+        },
+        {
+          "label": "D",
+          "text": "0.1"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "probability"
+      ],
+      "difficulty": 3,
+      "answerHint": "利用容斥原理求交集人数，再计算条件概率。"
+    },
+    {
+      "number": 7,
+      "section": "选择题",
+      "prompt": "“”是“”（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "充分条件但不是必要条件B. 必要条件但不是充分条件"
+        },
+        {
+          "label": "C",
+          "text": "充要条件D. 既不是充分条件也不是必要条件"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 8,
+      "section": "选择题",
+      "prompt": "已知双曲线\\dfrac{x^2}{a^2}-\\dfrac{y^2}{b^2}=1的离心率为\\sqrt{5}，其中一条渐近线与圆(x-2)^2+y^2=4交于A，B两点，则|AB|=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\dfrac{4\\sqrt{5}}{5}"
+        },
+        {
+          "label": "B",
+          "text": "\\dfrac{8\\sqrt{5}}{5}"
+        },
+        {
+          "label": "C",
+          "text": "\\dfrac{12\\sqrt{5}}{5}"
+        },
+        {
+          "label": "D",
+          "text": "\\dfrac{16\\sqrt{5}}{5}"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections",
+        "lines-circles"
+      ],
+      "difficulty": 4,
+      "answerHint": "由离心率求渐近线斜率，利用弦心距求弦长。"
+    },
+    {
+      "number": 9,
+      "section": "选择题",
+      "prompt": "有五名志愿者参加社区服务，共服务星期六、星期天两天，每天从中任选两人参加服务，则恰有1人连续参加两天服务选择种数为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "120"
+        },
+        {
+          "label": "B",
+          "text": "60"
+        },
+        {
+          "label": "C",
+          "text": "40"
+        },
+        {
+          "label": "D",
+          "text": "30"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "counting"
+      ],
+      "difficulty": 3,
+      "answerHint": "先选连续两天的人，再选其余各天的人，注意排除重复。"
+    },
+    {
+      "number": 10,
+      "section": "选择题",
+      "prompt": "已知f(x)=\\sin\\left(2x+\\dfrac{\\pi}{3}\\right)，g(x)为f(x)向左平移\\dfrac{\\pi}{6}个单位所得函数，则y=f(x)与y=g(x)的交点个数为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric"
+      ],
+      "difficulty": 3,
+      "answerHint": "写出\\(g(x)\\)表达式，解方程求交点。"
+    },
+    {
+      "number": 11,
+      "section": "选择题",
+      "prompt": "在四棱锥P-ABCD中，底面ABCD为正方形，PA\\perp底面ABCD，PA=AB=2，则\\triangle PBC的面积为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\sqrt{5}"
+        },
+        {
+          "label": "B",
+          "text": "2\\sqrt{5}"
+        },
+        {
+          "label": "C",
+          "text": "3\\sqrt{5}"
+        },
+        {
+          "label": "D",
+          "text": "4\\sqrt{5}"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry"
+      ],
+      "difficulty": 3,
+      "answerHint": "利用线面垂直得三角形边长，计算面积。"
+    },
+    {
+      "number": 12,
+      "section": "选择题",
+      "prompt": "已知椭圆\\dfrac{x^2}{4}+\\dfrac{y^2}{3}=1，F_1，F_2为两个焦点，O为原点，P为椭圆上一点，\\angle F_1PF_2=60^\\circ，则|OP|=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\dfrac{\\sqrt{7}}{2}"
+        },
+        {
+          "label": "B",
+          "text": "\\dfrac{\\sqrt{13}}{2}"
+        },
+        {
+          "label": "C",
+          "text": "\\dfrac{\\sqrt{19}}{2}"
+        },
+        {
+          "label": "D",
+          "text": "\\dfrac{\\sqrt{31}}{2}"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 4,
+      "answerHint": "利用椭圆定义和余弦定理求\\(|PF_1|\\cdot|PF_2|\\)，再结合中线公式求\\(|OP|\\)。"
+    },
+    {
+      "number": 13,
+      "section": "选择题",
+      "prompt": "若f(x)=x\\ln(x+\\sqrt{1+x^2})为偶函数，则a=________．",
+      "type": "choice",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 3,
+      "answerHint": "利用偶函数定义，代入特殊值或化简表达式。"
+    },
+    {
+      "number": 14,
+      "section": "选择题",
+      "prompt": "设x，y满足约束条件\\begin{cases}x+y\\leq 4\\\\ x-y\\leq 2\\\\ x\\geq 0, y\\geq 0\\end{cases}，设z=2x+y，则z的最大值为____________．",
+      "type": "choice",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "quadratic-ineq"
+      ],
+      "difficulty": 2,
+      "answerHint": "画出可行域，平移目标函数求最大值。"
+    },
+    {
+      "number": 15,
+      "section": "选择题",
+      "prompt": "在正方体ABCD-A_1B_1C_1D_1中，E，F分别为CD，CC_1的中点，则以EF为直径的球面与正方体每条棱的交点总数为____________．",
+      "type": "choice",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry"
+      ],
+      "difficulty": 4,
+      "answerHint": "确定球心位置和半径，判断与各棱的距离。"
+    },
+    {
+      "number": 16,
+      "section": "选择题",
+      "prompt": "在\\triangle ABC中，AB=2，AC=3，\\angle BAC=60^\\circ，D为BC上一点，AD为\\angle BAC的平分线，则AD=_________．",
+      "type": "choice",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ],
+      "difficulty": 3,
+      "answerHint": "利用角平分线定理或向量法求\\(AD\\)长度。"
+    },
+    {
+      "number": 17,
+      "section": "填空题",
+      "prompt": "已知数列\\{a_n\\}中，a_1=1，S_n为前n项和，a_{n+1}=2S_n+1． （1）求\\{a_n\\}的通项公式； （2）求数列\\{a_n\\}的前n项和．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 3,
+      "answerHint": "利用\\(a_{n+1}=S_{n+1}-S_n\\)转化为递推关系。"
+    },
+    {
+      "number": 18,
+      "section": "填空题",
+      "prompt": "在三��柱ABC-A_1B_1C_1中，AA_1\\perp底面ABC，AB\\perp AC，A_1到平面BCC_1B_1的距离为1． （1）求证：AB\\perp平面ACC_1A_1； （2）若直线AA_1与BB_1距离为2，求AB_1与平面BCC_1B_1所成角的正弦值．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ],
+      "difficulty": 5,
+      "answerHint": "建立空间直角坐标系，利用向量法求解。"
+    },
+    {
+      "number": 19,
+      "section": "填空题",
+      "prompt": "为探究某药物对小鼠的生长抑制作用，将40只小鼠均分为两组，分别为对照组（不加药物）和实验组（加药物）． （1）设其中两只小鼠中对照组小鼠数目为\\xi，求\\xi的分布列和数学期望； （2）测得40只小鼠体重如下（单位：g）：（已按从小到大排好） 对照组：17.3  18.4  20.1  20.4  21.5  23.2  24.6  24.8  25.0  25.4  26.3  26.4  26.5  26.8  27.0  27.4  27.5  27.6  28.3 实验组：5.4   6.6   6.8    6.9  7.8   8.2   9.4  10.0  10.4  11.2  14.4  17.3  19.2  20.2  23.6  23.8  24.5  25.1  25.2  26.0 （i）求40只小鼠体重的中位数m，并完成下面2×2列联表： \\begin{tabular}{c|c|c} & 对照组 & 实验组 \\\\ \\hline 体重小于m & & \\\\ \\hline 体重大于等于m & & \\\\ \\end{tabular} （ii）根据2×2列联表，能否有95%的把握认为药物对小鼠生长有抑制作用． 参考数据：P(K^2\\geq k_0) 0.10 0.05 0.010；k_0 2.706 3.841 6.635",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "statistics",
+        "data-analysis"
+      ],
+      "difficulty": 3,
+      "answerHint": "先求中位数，再计算\\(K^2\\)统计量。"
+    },
+    {
+      "number": 20,
+      "section": "填空题",
+      "prompt": "已知直线l:y=kx+1与抛物线C:y^2=4x交于A，B两点，且|AB|=2\\sqrt{10}． （1）求k； （2）设C的焦点为F，M，N为C上两点，\\overrightarrow{FM}\\cdot\\overrightarrow{FN}=0，求\\triangle FMN面积的最小值．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 5,
+      "answerHint": "联立方程利用弦长公式求\\(k\\)，第二问设直线方程利用垂直条件。"
+    },
+    {
+      "number": 21,
+      "section": "填空题",
+      "prompt": "已知f(x)=\\dfrac{1}{x}+a\\ln x （1）若a=1，讨论f(x)的单调性； （2）若f(x)\\geq 0恒成立，求a的取值范围．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "derivatives",
+        "exp-log"
+      ],
+      "difficulty": 5,
+      "answerHint": "求导分析单调性，分离参数求最值。"
+    },
+    {
+      "number": 22,
+      "section": "解答题",
+      "prompt": "已知C: \\begin{cases}x=2\\cos\\theta\\\\ y=2\\sin\\theta\\end{cases}，直线l: \\begin{cases}x=t\\cos\\alpha\\\\ y=t\\sin\\alpha\\end{cases}（t为参数），\\alpha为l的倾斜角，l与x轴，y轴正半轴交于A，B两点，|AB|=2． Sub: (1) 求\\alpha的值； (2) 以原点为极点，x轴正半轴为极轴建立极坐标系，求l的极坐标方程．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求的值；"
+        },
+        {
+          "number": 2,
+          "text": "以原点为极点，x轴正半轴为极轴建立极坐标系，求l的极坐标方程．"
+        }
+      ],
+      "chapters": [
+        "lines-circles"
+      ],
+      "difficulty": 3,
+      "answerHint": "写出直线参数方程，求交点坐标，利用距离公���。"
+    },
+    {
+      "number": 23,
+      "section": "解答题",
+      "prompt": "已知f(x)=|x-a|+|x+2a|． Sub: (1) 求不等式f(x)\\leq 3a的解集； (2) 若曲线y=f(x)与坐标轴所围成的图形的面积为2，求a．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求不等式解集；"
+        },
+        {
+          "number": 2,
+          "text": "若曲线与坐标轴所围成的图形的面积为2，求．"
+        }
+      ],
+      "chapters": [
+        "quadratic-ineq"
+      ],
+      "difficulty": 4,
+      "answerHint": "分类讨论去绝对值，利用面积条件求参数。"
+    }
+  ]
+}

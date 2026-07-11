@@ -1,0 +1,69 @@
+{
+  "unit": "complex",
+  "exercises": [
+    {
+      "id": "gk-comp-1",
+      "type": "complex-op",
+      "difficulty": 3,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "(1+i)/(1-i) = a+bi，求 a²+b²",
+      "answer": 1,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "(1+i)/(1-i) 分母实数化",
+          "expectedValue": 1
+        },
+        {
+          "key": "s2",
+          "description": "=(1+i)²/2=2i/2=i",
+          "expectedValue": 1
+        },
+        {
+          "key": "s3",
+          "description": "a=0,b=1,a²+b²=1",
+          "expectedValue": 1
+        }
+      ],
+      "tags": [
+        "formula-recall",
+        "calculation"
+      ],
+      "commonMistakes": []
+    },
+    {
+      "id": "gk-comp-2",
+      "type": "complex-mod",
+      "difficulty": 3,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "复数 z=(3+4i)i 的模为？",
+      "answer": 5,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "z=3i+4i²=-4+3i",
+          "expectedValue": -4
+        },
+        {
+          "key": "s2",
+          "description": "|z|=\\sqrt{(-4}²+3²)=5",
+          "expectedValue": 5
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": []
+    }
+  ]
+}

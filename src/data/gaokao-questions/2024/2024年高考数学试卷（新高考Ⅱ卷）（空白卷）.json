@@ -1,0 +1,493 @@
+{
+  "year": 2024,
+  "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+  "totalQuestions": 19,
+  "questions": [
+    {
+      "number": 1,
+      "section": "选择题",
+      "prompt": "已知，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "0B. 1C."
+        },
+        {
+          "label": "D",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 2,
+      "section": "选择题",
+      "prompt": "已知命题p：\\forall x\\in\\mathbb{R}，x^2+1>0；命题q：\\exists x\\in\\mathbb{R}，x^2-2x+1\\leq0，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "p和q都是真命题"
+        },
+        {
+          "label": "B",
+          "text": "和q都是真命题"
+        },
+        {
+          "label": "C",
+          "text": "p和都是真命题"
+        },
+        {
+          "label": "D",
+          "text": "和都是真命题"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sets-logic"
+      ],
+      "difficulty": 1
+    },
+    {
+      "number": 3,
+      "section": "选择题",
+      "prompt": "已知向量\\vec{a}，\\vec{b}满足|\\vec{a}|=1，|\\vec{b}|=2，且\\vec{a}\\cdot\\vec{b}=0，则|\\vec{a}+\\vec{b}|=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "—"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "vectors-app"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 4,
+      "section": "选择题",
+      "prompt": "某农业研究部门在面积相等的100块稻田上种植一种新型水稻，得到各块稻田的亩产量（单位：kg）并部分整理下表 亩产量 [900，950） [950，1000） [1000，1050） [1100，1150） [1150，1200） 频数 6 12 18 24 10 据表中数据，结论中正确的是（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "100块稻田亩产量的中位数小于1050kg"
+        },
+        {
+          "label": "B",
+          "text": "100块稻田中亩产量低于1100kg的稻田所占比例超过80%"
+        },
+        {
+          "label": "C",
+          "text": "100块稻田亩产量的极差介于200kg至300kg之间"
+        },
+        {
+          "label": "D",
+          "text": "100块稻田亩产量的平均值介于900kg至1000kg之间"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "statistics"
+      ],
+      "difficulty": 3
+    },
+    {
+      "number": 5,
+      "section": "选择题",
+      "prompt": "已知曲线C：\\frac{x^2}{4}+\\frac{y^2}{9}=1（y\\geq0），从C上任意一点P向x轴作垂线段，P'为垂足，则线段PP'的中点M的轨迹方程为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "（）"
+        },
+        {
+          "label": "B",
+          "text": "（）"
+        },
+        {
+          "label": "C",
+          "text": "（）"
+        },
+        {
+          "label": "D",
+          "text": "（）"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 3
+    },
+    {
+      "number": 6,
+      "section": "选择题",
+      "prompt": "设函数f(x)=\\sin(\\omega x+\\frac{\\pi}{3})，g(x)=\\cos(\\omega x-\\frac{\\pi}{6})，当\\omega>0时，曲线y=f(x)与y=g(x)恰有一个交点，则\\omega=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "—"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "1"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric"
+      ],
+      "difficulty": 4
+    },
+    {
+      "number": 7,
+      "section": "选择题",
+      "prompt": "已知正三棱台ABC-A_1B_1C_1的体积为\\frac{7\\sqrt{3}}{12}，AB=2，A_1B_1=1，则A_1B与平面ABC所成角的正切值为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "—"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry"
+      ],
+      "difficulty": 4
+    },
+    {
+      "number": 8,
+      "section": "选择题",
+      "prompt": "设函数f(x)=\\begin{cases} x^2-2x+2, & x\\leq1 \\\\ \\ln x, & x>1 \\end{cases}，若f(a)=f(b)，则a+b最小值为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "—"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept",
+        "derivatives"
+      ],
+      "difficulty": 5
+    },
+    {
+      "number": 9,
+      "section": "多选题",
+      "prompt": "对于���数f(x)=\\sin x和g(x)=\\cos x，下列正确的有（    ）",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "与有相同零点"
+        },
+        {
+          "label": "B",
+          "text": "与有相同最大值"
+        },
+        {
+          "label": "C",
+          "text": "与有相同最小正周期"
+        },
+        {
+          "label": "D",
+          "text": "与的图像有相同的对称轴"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 10,
+      "section": "多选题",
+      "prompt": "抛物线C：y^2=4x的准线为l，P为C上的动点，过P作\\odot A：(x-2)^2+y^2=1的一条切线，Q为切点，过P作l的垂线，垂足为B，则（    ）",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "l与相切"
+        },
+        {
+          "label": "B",
+          "text": "当P，A，B三点共线时，"
+        },
+        {
+          "label": "C",
+          "text": "当时，"
+        },
+        {
+          "label": "D",
+          "text": "满足的点有且仅有2个"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections",
+        "lines-circles"
+      ],
+      "difficulty": 5
+    },
+    {
+      "number": 11,
+      "section": "多选题",
+      "prompt": "设函数，则（    ）",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "当时，有三个零点"
+        },
+        {
+          "label": "B",
+          "text": "当时，是的极大值点"
+        },
+        {
+          "label": "C",
+          "text": "存在a，b，使得为曲线的对称轴"
+        },
+        {
+          "label": "D",
+          "text": "存在a，使得点为曲线的对称中心"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 12,
+      "section": "填空题",
+      "prompt": "记为等差数列的前n项和，若，，则________.",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 13,
+      "section": "填空题",
+      "prompt": "已知为第一象限角，为第三象限角，，，则_______.",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 14,
+      "section": "填空题",
+      "prompt": "在如图的4×4方格表中选4个方格，要求每行和每列均恰有一个方格被选中，则共有________种选法，在所有符合上述要求的选法中，选中方格中的4个数之和的最大值是________．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "counting"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2024年高考数学试卷（新高考_q14_image74.png"
+      ]
+    },
+    {
+      "number": 15,
+      "section": "解答题",
+      "prompt": "记的内角A，B，C的对边分别为a，b，c，已知．\n（1）求A．\n（2）若，，求的周长．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求A．"
+        },
+        {
+          "number": 2,
+          "text": "若，，求的周长．"
+        }
+      ],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 16,
+      "section": "解答题",
+      "prompt": "已知函数．\n（1）当时，求曲线在点处的切线方程；\n（2）若有极小值，且极小值小于0，求a的取值范围．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "当时，求曲线在点处的切线方程；"
+        },
+        {
+          "number": 2,
+          "text": "若有极小值，且极小值小于0，求a的取值范围．"
+        }
+      ],
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept",
+        "derivatives",
+        "lines-circles"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 17,
+      "section": "解答题",
+      "prompt": "如图，平面四边形ABCD中，，，，，，点E，F满足，，将沿EF对折至，使得．\n（1）证明：；\n（2）求面PCD与面PBF所成的二面角的正弦值．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "证明：；"
+        },
+        {
+          "number": 2,
+          "text": "求面PCD与面PBF所成的二面角的正弦值．"
+        }
+      ],
+      "chapters": [
+        "trigonometric",
+        "space-vectors"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2024年高考数学试卷（新高考_q17_image92.png"
+      ]
+    },
+    {
+      "number": 18,
+      "section": "解答题",
+      "prompt": "某投篮比赛分为两个阶段，每个参赛队由两名队员组成，比赛具体规则如下：第一阶段由参赛队中一名队员投篮3次，若3次都未投中，则该队被淘汰，比赛成员为0分；若至少投中一次，则该队进入第二阶段，由该队的另一名队员投篮3次，每次投中得5分，未投中得0分.该队的比赛成绩为第二阶段的得分总和．某参赛队由甲、乙两名队员组成，设甲每次投中的概率为p，乙每次投中的概率为q，各次投中与否相互独立．\n（1）若，，甲参加第一阶段比赛，求甲、乙所在队比赛成绩不少于5分的概率．\n（2）假设，\n（i）为使得甲、乙所在队的比赛成绩为15分的概率最大，应该由谁参加第一阶段比赛？\n（ii）为使得甲、乙，所在队的比赛成绩的数学期望最大，应该由谁参加第一阶段比赛？",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "若，，甲参加第一阶段比赛，求甲、乙所在队比赛成绩不少于5分的概率．"
+        },
+        {
+          "number": 2,
+          "text": "假设，"
+        },
+        {
+          "number": "i",
+          "text": "为使得甲、乙所在队的比赛成绩为15分的概率最大，应该由谁参加第一阶段比赛？"
+        },
+        {
+          "number": "ii",
+          "text": "为使得甲、乙，所在队的比赛成绩的数学期望最大，应该由谁参加第一阶段比赛？"
+        }
+      ],
+      "chapters": [
+        "probability",
+        "random-vars"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 19,
+      "section": "解答题",
+      "prompt": "已知双曲线，点在上，为常数，．按照如下方式依次构造点，过作斜率为的直线与的左支交于点，令为关于轴的对称点，记的坐标为.\n（1）若，求；\n（2）证明：数列是公比为的等比数列；\n（3）设为的面积，证明：对任意的正整数，.",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "若，求；"
+        },
+        {
+          "number": 2,
+          "text": "证明：数列是公比为的等比数列；"
+        },
+        {
+          "number": 3,
+          "text": "设为的面积，证明：对任意的正整数，."
+        }
+      ],
+      "chapters": [
+        "sequences",
+        "conic-sections"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

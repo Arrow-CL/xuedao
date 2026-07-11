@@ -1,0 +1,188 @@
+{
+  "module": "exp-log",
+  "items": [
+    {
+      "id": "gk-pow-1",
+      "type": "power",
+      "difficulty": 3,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "幂函数 y=x^α 的图像过点(2,8)，则 α =？",
+      "answer": 3,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "代入：8=2^α",
+          "expectedValue": 8
+        },
+        {
+          "key": "s2",
+          "description": "2^α=8，α=3",
+          "expectedValue": 3
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "exp-log",
+      "chapters": [
+        "exp-log"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "gk-exp-1",
+      "type": "exponential",
+      "difficulty": 3,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "计算 2^log₂5 =？",
+      "answer": 5,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "a^log_aN=N",
+          "expectedValue": 1
+        },
+        {
+          "key": "s2",
+          "description": "2^log₂5 = 5",
+          "expectedValue": 5
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "exp-log",
+      "chapters": [
+        "exp-log"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "gk-log-1",
+      "type": "logarithmic",
+      "difficulty": 4,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "log₂6 - log₂3 =？",
+      "answer": 1,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "log₂6 - log₂3 = log₂(6/3)",
+          "expectedValue": 2
+        },
+        {
+          "key": "s2",
+          "description": "log₂2 = 1",
+          "expectedValue": 1
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "exp-log",
+      "chapters": [
+        "exp-log"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "el-4",
+      "type": "log",
+      "difficulty": 3,
+      "prompt": "计算log_2 8 + log_3 9。",
+      "answer": 5,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "log_2 8 = 3",
+          "expectedValue": 3
+        },
+        {
+          "key": "s2",
+          "description": "log_3 9 = 2",
+          "expectedValue": 2
+        },
+        {
+          "key": "s3",
+          "description": "3+2=5",
+          "expectedValue": 5
+        }
+      ],
+      "tags": [
+        "calculation"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "exp-log",
+      "chapters": [
+        "exp-log"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "el-5",
+      "type": "exponential",
+      "difficulty": 3,
+      "prompt": "若2的x次方=8，求x的值。",
+      "answer": 3,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "8=2的3次方",
+          "expectedValue": 3
+        },
+        {
+          "key": "s2",
+          "description": "2的x次方=2的3次方，x=3",
+          "expectedValue": 3
+        }
+      ],
+      "tags": [
+        "calculation"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "exp-log",
+      "chapters": [
+        "exp-log"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    }
+  ]
+}

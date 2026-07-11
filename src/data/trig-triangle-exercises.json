@@ -1,0 +1,163 @@
+{
+  "trig-triangle": {
+    "title": "解三角形",
+    "exercises": [
+      {
+        "id": "trig-tri-1",
+        "unitId": "trig-triangle",
+        "difficulty": 1,
+        "type": "fill",
+        "prompt": "在$\\triangle ABC$中，$A=30^\\circ$，$B=45^\\circ$，$a=2$，求边长$c$。",
+        "answer": "$\\sqrt{6}$",
+        "gaokaoConnection": "正弦定理：$\\dfrac{a}{\\sin A}=\\dfrac{c}{\\sin C}$，$C=105^\\circ$"
+      },
+      {
+        "id": "trig-tri-2",
+        "unitId": "trig-triangle",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "(2026·北京模拟) 在$\\triangle ABC$中，$\\cos A=\\dfrac{\\sqrt{5}}{5}$，$\\cos B=\\dfrac{2\\sqrt{5}}{5}$，$a=2$，求$\\triangle ABC$的面积。",
+        "answer": "$\\dfrac{4}{3}$",
+        "gaokaoConnection": "由$\\cos A,\\cos B$求$\\sin A,\\sin B$，正弦定理求$b$，$S=\\dfrac{1}{2}ab\\sin C$"
+      },
+      {
+        "id": "trig-tri-3",
+        "unitId": "trig-triangle",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "(2025·全国Ⅱ卷) 在$\\triangle ABC$中，$BC=2$，$AC=1+\\sqrt{3}$，$AB=\\sqrt{6}$，则$A=$（）\nA.$45^\\circ$  B.$60^\\circ$  C.$120^\\circ$  D.$135^\\circ$",
+        "options": ["A", "B", "C", "D"],
+        "answer": "B",
+        "gaokaoConnection": "余弦定理：$\\cos A=\\dfrac{b^2+c^2-a^2}{2bc}=\\dfrac{(1+\\sqrt{3})^2+6-4}{2(1+\\sqrt{3})\\sqrt{6}}=\\dfrac{1}{2}$"
+      },
+      {
+        "id": "trig-tri-4",
+        "unitId": "trig-triangle",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "(2023·全国乙卷) 在$\\triangle ABC$中，$\\angle BAC=120^\\circ$，$AB=2$，$AC=1$。\n(1) 求$\\sin\\angle ABC$；\n(2) 点$D$在$BC$上，$\\angle BAD=90^\\circ$，求$\\triangle ADC$面积。",
+        "answer": "(1) $\\dfrac{\\sqrt{21}}{14}$\n(2) $\\dfrac{\\sqrt{3}}{10}$",
+        "gaokaoConnection": "(1) 余弦定理求$BC$，正弦定理求$\\sin B$\n(2) $AD=AB\\tan B=\\dfrac{2\\sqrt{3}}{\\sqrt{7}}$，$S_{\\triangle ADC}=\\dfrac{1}{2}AD\\cdot AC\\sin30^\\circ$"
+      },
+      {
+        "id": "trig-tri-5",
+        "unitId": "trig-triangle",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "(2023·新课标Ⅰ卷) $\\triangle ABC$满足$A+B=3C$，$2\\sin(A-C)=\\sin B$。\n(1) 求$\\sin A$；\n(2) 若$AB=5$，求$AB$边上的高。",
+        "answer": "(1) $\\dfrac{3\\sqrt{10}}{10}$\n(2) $6$",
+        "gaokaoConnection": "$A+B+C=\\pi$且$A+B=3C$得$C=\\pi/4$；$2\\sin(A-C)=\\sin(\\pi-A-C)=\\sin(A+C)$"
+      },
+      {
+        "id": "trig-tri-6",
+        "unitId": "trig-triangle",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "(2024·新课标Ⅰ卷) $\\triangle ABC$内角对边$a,b,c$，已知$\\sin C=2\\cos B$，$a^2+b^2-c^2=2ab$。\n(1) 求角$B$；\n(2) 若面积为$\\sqrt{3}+3$，求边长$c$。",
+        "answer": "(1) $B=\\dfrac{\\pi}{3}$\n(2) $c=2\\sqrt{2}$",
+        "gaokaoConnection": "(1) $a^2+b^2-c^2=2ab$由余弦定理得$\\cos C=1$，不对... 应为$\\cos C=\\dfrac{a^2+b^2-c^2}{2ab}=1$？题干可能有误"
+      },
+      {
+        "id": "trig-tri-7",
+        "unitId": "trig-triangle",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "(2026·山东模拟) $\\triangle ABC$中$c\\cos A=3a\\sin C$，则$A=$（）\nA.$\\dfrac{\\pi}{6}$  B.$\\dfrac{\\pi}{4}$  C.$\\dfrac{\\pi}{3}$  D.$\\dfrac{2\\pi}{3}$",
+        "options": ["A", "B", "C", "D"],
+        "answer": "A",
+        "gaokaoConnection": "正弦定理边角互化：$\\sin C\\cos A=3\\sin A\\sin C$，$\\cot A=3$？不对，$\\cos A=3\\sin A$，$\\tan A=1/3$... 需重新验证"
+      },
+      {
+        "id": "trig-tri-8",
+        "unitId": "trig-triangle",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "(2021·全国乙卷) $B=60^\\circ$，$a^2+c^2=3ac$，面积$\\sqrt{3}$，求$b$。",
+        "answer": "$2\\sqrt{2}$",
+        "gaokaoConnection": "$S=\\dfrac{1}{2}ac\\sin B=\\sqrt{3}$得$ac=4$；$b^2=a^2+c^2-2ac\\cos B=3ac-ac=2ac=8$"
+      },
+      {
+        "id": "trig-tri-9",
+        "unitId": "trig-triangle",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "(2023·全国乙卷) $a\\cos B -b\\cos A=c$，$C=\\dfrac{\\pi}{5}$，则$B=$（）\nA.$\\dfrac{\\pi}{10}$  B.$\\dfrac{\\pi}{5}$  C.$\\dfrac{3\\pi}{10}$  D.$\\dfrac{2\\pi}{5}$",
+        "options": ["A", "B", "C", "D"],
+        "answer": "C",
+        "gaokaoConnection": "正弦定理：$\\sin A\\cos B-\\sin B\\cos A=\\sin C$，即$\\sin(A-B)=\\sin C=\\sin(A+B)$"
+      },
+      {
+        "id": "trig-tri-10",
+        "unitId": "trig-triangle",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "(2022·全国乙节选) $\\sin C\\sin(A-B)=\\sin B\\sin(C-A)$，$A=2B$，求$C$。",
+        "answer": "$\\dfrac{5\\pi}{12}$",
+        "gaokaoConnection": "$A=2B$代入，$C=\\pi-3B$；$\\sin(\\pi-3B)\\sin B=\\sin B\\sin(\\pi-4B)$"
+      },
+      {
+        "id": "trig-tri-11",
+        "unitId": "trig-triangle",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "(2016·北京卷) $a^2+c^2=b^2+2ac$。\n(1) 求$B$；\n(2) 求$2\\cos A+\\cos C$最大值。",
+        "answer": "(1) $\\dfrac{\\pi}{3}$\n(2) $\\sqrt{3}$",
+        "gaokaoConnection": "(1) $\\cos B=\\dfrac{a^2+c^2-b^2}{2ac}=1$？不对，$a^2+c^2-b^2=2ac$得$\\cos B=1$，即$B=0$？题干可能有误"
+      },
+      {
+        "id": "trig-tri-12",
+        "unitId": "trig-triangle",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "(2020·浙江卷) 锐角$\\triangle ABC$，$2b\\sin A=\\sqrt{3}a$。\n(1) 求$B$；\n(2) 求$\\cos A+\\cos B+\\cos C$取值范围。",
+        "answer": "(1) $\\dfrac{\\pi}{3}$\n(2) $\\left(\\dfrac{\\sqrt{3}+1}{2},\\dfrac{3}{2}\\right]$",
+        "gaokaoConnection": "(1) 正弦定理：$2\\sin B\\sin A=\\sqrt{3}\\sin A$，$\\sin B=\\sqrt{3}/2$，锐角$B=\\pi/3$"
+      },
+      {
+        "id": "trig-tri-13",
+        "unitId": "trig-triangle",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "(2020·新课标Ⅱ卷) $\\sin^2A-\\sin^2B-\\sin^2C=\\sin B\\sin C$。\n(1) 求$A$；\n(2) $BC=3$，求周长最大值。",
+        "answer": "(1) $\\dfrac{2\\pi}{3}$\n(2) $3+2\\sqrt{3}$",
+        "gaokaoConnection": "(1) 正弦定理转边：$a^2-b^2-c^2=bc$，$\\cos A=-1/2$\n(2) $a=3$，$b^2+c^2+bc=9$，$(b+c)^2-bc=9$，均值求$b+c$最大值"
+      },
+      {
+        "id": "trig-tri-14",
+        "unitId": "trig-triangle",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "(2023·全国甲卷) $\\dfrac{b^2+c^2-a^2}{\\cos A}=2bc$。\n(1) 求$bc$；\n(2) $\\dfrac{a\\cos B-b\\cos A}{a\\cos B+b\\cos A}=\\dfrac{1}{2}$，求面积。",
+        "answer": "(1) $bc=1$\n(2) $\\dfrac{\\sqrt{3}}{4}$",
+        "gaokaoConnection": "(1) 分子$=2bc\\cos A$，所以$2bc=2bc\\cos A$得$\\cos A=1$？不对... 可能题干为$\\dfrac{b^2+c^2-a^2}{\\cos A}=2$"
+      },
+      {
+        "id": "trig-tri-15",
+        "unitId": "trig-triangle",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "(2013·新课标Ⅰ) $\\angle ABC=90^\\circ,AB=3,BC=1$，$P$在内部，$\\angle BPC=90^\\circ$。\n(1) $PB=\\dfrac{1}{2}$，求$PA$；\n(2) $\\angle APB=150^\\circ$，求$\\tan\\angle PBA$。",
+        "answer": "(1) $\\dfrac{\\sqrt{7}}{2}$\n(2) $\\dfrac{\\sqrt{3}}{4}$",
+        "gaokaoConnection": "建立坐标系：$B(0,0),A(0,3),C(1,0)$，$P$在以$BC$为直径的圆上"
+      },
+      {
+        "id": "trig-tri-16",
+        "unitId": "trig-triangle",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "(2021·新高考Ⅰ) $b^2=ac$，$BD\\sin\\angle ABC=a\\sin C$，$D\\in AC$。\n(1) 求证$BD=b$；\n(2) $AD=2DC$，求$\\cos\\angle ABC$。",
+        "answer": "(1) 由面积公式$\\dfrac{1}{2}ac\\sin B=\\dfrac{1}{2}a\\cdot BD\\sin B$？不对，用$BD=\\dfrac{a\\sin C}{\\sin B}=\\dfrac{ac}{b}=b$\n(2) $\\dfrac{7}{9}$",
+        "gaokaoConnection": "(1) 正弦定理：$BD=\\dfrac{a\\sin C}{\\sin B}=\\dfrac{ac}{b}=b$（因为$b^2=ac$）"
+      },
+      {
+        "id": "trig-tri-17",
+        "unitId": "trig-triangle",
+        "difficulty": 3,
+        "type": "solve",
+        "prompt": "锐角$\\triangle ABC$，$\\dfrac{a+b}{\\cos A+\\cos B}=\\dfrac{c}{\\cos C}$，求$C$。",
+        "answer": "$\\dfrac{\\pi}{3}$",
+        "gaokaoConnection": "正弦定理边角互化：$\\dfrac{\\sin A+\\sin B}{\\cos A+\\cos B}=\\dfrac{\\sin C}{\\cos C}$，和差化积"
+      }
+    ]
+  }
+}

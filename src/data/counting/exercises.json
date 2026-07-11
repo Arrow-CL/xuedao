@@ -1,0 +1,93 @@
+{
+  "unit": "counting",
+  "exercises": [
+    {
+      "id": "gk-perm-1",
+      "type": "permutation",
+      "difficulty": 4,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "从 5 人中选 3 人排成一排，有多少种排法？",
+      "answer": 60,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "P(5,3)=5×4×3",
+          "expectedValue": 5
+        },
+        {
+          "key": "s2",
+          "description": "=60",
+          "expectedValue": 60
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": []
+    },
+    {
+      "id": "gk-perm-2",
+      "type": "combination",
+      "difficulty": 4,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "从 5 人中选 3 人组成小组，有多少种选法？",
+      "answer": 10,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "C(5,3)=5!/(3!·2!)",
+          "expectedValue": 5
+        },
+        {
+          "key": "s2",
+          "description": "=10",
+          "expectedValue": 10
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": []
+    },
+    {
+      "id": "gk-perm-3",
+      "type": "binomial",
+      "difficulty": 5,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "(x+2)⁴ 展开式中 x² 的系数为？",
+      "answer": 24,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "T=C(4,2)·x²·2²",
+          "expectedValue": 6
+        },
+        {
+          "key": "s2",
+          "description": "C(4,2)=6, 2²=4, 系数=24",
+          "expectedValue": 24
+        }
+      ],
+      "tags": [
+        "formula-recall",
+        "calculation"
+      ],
+      "commonMistakes": []
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "module": "solid-geometry",
+  "items": [
+    {
+      "id": "so-1",
+      "type": "volume",
+      "difficulty": 3,
+      "prompt": "长方体长宽高分别为3,4,5，求体积。",
+      "answer": 60,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "V = 长*宽*高",
+          "formulaKey": "rectangular-volume"
+        },
+        {
+          "key": "s2",
+          "description": "V = 3*4*5 = 60",
+          "expectedValue": 60
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "solid-geometry",
+      "chapters": [
+        "solid-geometry"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "so-2",
+      "type": "volume",
+      "difficulty": 3,
+      "prompt": "长方体长宽高分别为3,4,5，求体积。",
+      "answer": 60,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "V = 长*宽*高",
+          "formulaKey": "rectangular-volume"
+        },
+        {
+          "key": "s2",
+          "description": "V = 3*4*5 = 60",
+          "expectedValue": 60
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "solid-geometry",
+      "chapters": [
+        "solid-geometry"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "so-3",
+      "type": "cylinder",
+      "difficulty": 3,
+      "prompt": "圆柱底面半径2，高3，求侧面积（pi约3.14）。",
+      "answer": 37.68,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "侧面积S=2*pi*r*h",
+          "formulaKey": "cylinder-side"
+        },
+        {
+          "key": "s2",
+          "description": "S=2*3.14*2*3=37.68",
+          "expectedValue": 37.68
+        }
+      ],
+      "tags": [
+        "formula-recall",
+        "calculation"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "solid-geometry",
+      "chapters": [
+        "solid-geometry"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "so-4",
+      "type": "parallel",
+      "difficulty": 4,
+      "prompt": "正方体中，一条棱与它相对的面是什么位置关系？",
+      "answer": 1,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "棱与对面的棱平行，所以棱与对面平行",
+          "expectedValue": 1
+        },
+        {
+          "key": "s2",
+          "description": "棱平行于它相对的面",
+          "expectedValue": 1
+        }
+      ],
+      "tags": [
+        "concept-confusion"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "solid-geometry",
+      "chapters": [
+        "solid-geometry"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    }
+  ]
+}

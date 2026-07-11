@@ -1,0 +1,537 @@
+{
+  "year": 2022,
+  "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+  "totalQuestions": 23,
+  "questions": [
+    {
+      "number": 1,
+      "section": "选择题",
+      "prompt": "设集合A=\\{x\\mid -2\\leq x\\leq 2\\}，B=\\{x\\mid x^2-3x+2\\leq 0\\}，则A\\cap B=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\{x\\mid 1\\leq x\\leq 2\\}"
+        },
+        {
+          "label": "B",
+          "text": "\\{x\\mid -2\\leq x\\leq 1\\}"
+        },
+        {
+          "label": "C",
+          "text": "\\{x\\mid -2\\leq x\\leq 2\\}"
+        },
+        {
+          "label": "D",
+          "text": "\\{x\\mid x\\leq 2\\}"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sets-logic",
+        "quadratic-ineq"
+      ],
+      "difficulty": 1,
+      "answerHint": "解二次不等式求B，再求交集"
+    },
+    {
+      "number": 2,
+      "section": "选择题",
+      "prompt": "某社区通过公益讲座以普及社区居民垃圾分类知识．为了解讲座效果，随机抽取10位社区居民，让他们在讲座前和讲座后各回答一份垃圾分类知识问卷，这10位社区居民在讲座前和讲座后问卷答题的正确率如下图：\n则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "讲座前问卷答题的正确率的中位数小于"
+        },
+        {
+          "label": "B",
+          "text": "讲座后问卷答题的正确率的平均数大于"
+        },
+        {
+          "label": "C",
+          "text": "讲座前问卷答题的正确率的标准差小于讲座后正确率的标准差"
+        },
+        {
+          "label": "D",
+          "text": "讲座后问卷答题的正确率的极差大于讲座前正确率的极差"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "counting",
+        "probability"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2022年高考数学试卷（文）（_q2_image9.png"
+      ]
+    },
+    {
+      "number": 3,
+      "section": "选择题",
+      "prompt": "若z=1+i，则|z^2-2z|=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "\\sqrt{2}"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "complex"
+      ],
+      "difficulty": 1,
+      "answerHint": "代入z计算并求模"
+    },
+    {
+      "number": 4,
+      "section": "选择题",
+      "prompt": "如图，网格纸上绘制的是一个多面体的三视图，网格小正方形的边长为1，则该多面体的体积为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "8B. 12C. 16D. 20"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2022年高考数学试卷（文）（_q4_image18.png"
+      ]
+    },
+    {
+      "number": 5,
+      "section": "选择题",
+      "prompt": "将函数f(x)=\\sin(\\omega x+\\frac{\\pi}{3})的图像向左平移\\frac{\\pi}{2}个单位长度后得到曲线C，若C关于y轴对称，则\\omega的最小值是（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{1}{6}"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{1}{4}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{1}{3}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{1}{2}"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric"
+      ],
+      "difficulty": 3,
+      "answerHint": "平移后函数为偶函数，利用诱导公式求ω"
+    },
+    {
+      "number": 6,
+      "section": "选择题",
+      "prompt": "从分别写有1，2，3，4，5，6的6张卡片中无放回随机抽取2张，则抽到的2张卡片上的数字之积是4的倍数的概率为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{1}{5}"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{2}{5}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{3}{5}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{4}{5}"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "counting",
+        "probability"
+      ],
+      "difficulty": 2,
+      "answerHint": "列举所有可能，统计满足条件的个数"
+    },
+    {
+      "number": 7,
+      "section": "选择题",
+      "prompt": "函数y=(3^x-3^{-x})\\cos x在区间[-\\frac{\\pi}{2},\\frac{\\pi}{2}]的图象大致为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "图像A"
+        },
+        {
+          "label": "B",
+          "text": "图像B"
+        },
+        {
+          "label": "C",
+          "text": "图像C"
+        },
+        {
+          "label": "D",
+          "text": "图像D"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept",
+        "trigonometric"
+      ],
+      "difficulty": 3,
+      "answerHint": "判断奇偶性和特殊点函数值"
+    },
+    {
+      "number": 8,
+      "section": "选择题",
+      "prompt": "当x=1时，函数f(x)=a\\ln x+\\frac{b}{x}取得最大值-2，则f'(2)=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "-1"
+        },
+        {
+          "label": "B",
+          "text": "-\\frac{1}{2}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{1}{2}"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "derivatives"
+      ],
+      "difficulty": 3,
+      "answerHint": "由极值条件求a,b，再求导数值"
+    },
+    {
+      "number": 9,
+      "section": "选择题",
+      "prompt": "在长方体ABCD-A_1B_1C_1D_1中，已知B_1D与平面ABCD和平面AA_1B_1B所成角均为30^\\circ，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "AB=2AD"
+        },
+        {
+          "label": "B",
+          "text": "AB与平面AB_1C_1D所成的角为30^\\circ"
+        },
+        {
+          "label": "C",
+          "text": "AC=CB_1"
+        },
+        {
+          "label": "D",
+          "text": "B_1D与平面BB_1C_1C所成的角为45^\\circ"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ],
+      "difficulty": 4,
+      "answerHint": "利用线面角定义和长方体性质求解"
+    },
+    {
+      "number": 10,
+      "section": "选择题",
+      "prompt": "甲、乙两个圆锥的母线长相等，侧面展开图的圆心角之和为2\\pi，侧面积分别为S_甲和S_乙，体积分别为V_甲和V_乙．若\\frac{S_甲}{S_乙}=2，则\\frac{V_甲}{V_乙}=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\sqrt{5}"
+        },
+        {
+          "label": "B",
+          "text": "2\\sqrt{2}"
+        },
+        {
+          "label": "C",
+          "text": "\\sqrt{10}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{\\sqrt{10}}{2}"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry"
+      ],
+      "difficulty": 4,
+      "answerHint": "利用侧面积比求半径比，再求体积比"
+    },
+    {
+      "number": 11,
+      "section": "选择题",
+      "prompt": "已知椭圆C:\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1(a>b>0)的离心率为\\frac{1}{3}，A_1、A_2分别为C的左、右顶点，B为C的上顶点．若\\overrightarrow{BA_1}\\cdot\\overrightarrow{BA_2}=-1，则C的方程为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{x^2}{18}+\\frac{y^2}{16}=1"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{x^2}{9}+\\frac{y^2}{8}=1"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{x^2}{9}+\\frac{y^2}{6}=1"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{x^2}{3}+\\frac{y^2}{2}=1"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections",
+        "vectors-app"
+      ],
+      "difficulty": 3,
+      "answerHint": "由离心率和向量数量积列方程求a,b"
+    },
+    {
+      "number": 12,
+      "section": "选择题",
+      "prompt": "已知a=\\frac{1}{9}，b=\\cos\\frac{1}{9}，c=4\\sin\\frac{1}{9}，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "c>b>a"
+        },
+        {
+          "label": "B",
+          "text": "b>a>c"
+        },
+        {
+          "label": "C",
+          "text": "a>b>c"
+        },
+        {
+          "label": "D",
+          "text": "a>c>b"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric",
+        "exp-log"
+      ],
+      "difficulty": 5,
+      "answerHint": "利用三角函数线或导数比较大小"
+    },
+    {
+      "number": 13,
+      "section": "选择题",
+      "prompt": "已知向量\\vec{a}=(m,3)，\\vec{b}=(1,m+1)．若\\vec{a}\\perp\\vec{b}，则m=______________．",
+      "type": "choice",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "vectors-app"
+      ],
+      "difficulty": 1,
+      "answerHint": "利用垂直的充要条件列方程"
+    },
+    {
+      "number": 14,
+      "section": "选择题",
+      "prompt": "设点M在直线x+y-1=0上，点(0,0)和(1,0)均在\\odot M上，则\\odot M的方程为______________．",
+      "type": "choice",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "lines-circles"
+      ],
+      "difficulty": 2,
+      "answerHint": "设圆心坐标，利用两点到圆心距离相等求参数"
+    },
+    {
+      "number": 15,
+      "section": "选择题",
+      "prompt": "记双曲线C:\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1(a>0,b>0)离心率为e，写出满足条件“直线y=2x与C无公共点”的e的一个值______________．",
+      "type": "choice",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 3,
+      "answerHint": "联立方程无解，利用判别式或渐近线斜率"
+    },
+    {
+      "number": 16,
+      "section": "选择题",
+      "prompt": "已知\\triangle ABC中，点D在边BC上，\\angle ADB=120^\\circ，AD=2，CD=2BD．当\\frac{AB}{AC}取得最小值时，BD=________．",
+      "type": "choice",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ],
+      "difficulty": 5,
+      "answerHint": "设BD=x，用余弦定理表示AB,AC，求函数最小值"
+    },
+    {
+      "number": 17,
+      "section": "填空题",
+      "prompt": "甲、乙两城之间的长途客车均由A和B两家公司运营，为了解这两家公司长途客车的运行情况，随机调查了甲、乙两城之间的500个班次，得到下面列联表：\n准点班次数 未准点班次数\nA 240 20\nB 210 30\n（1）根据上表，分别估计这两家公司甲、乙两城之间的长途客车准点的概率；\n（2）能否有90%把握认为甲、乙两城之间的长途客车是否准点与客车所属公司有关？\n附：K^2=\\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}，\nP(K^2\\geq k_0) 0.100 0.050 0.010\nk_0 2.706 3.841 6.635",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "statistics",
+        "data-analysis"
+      ],
+      "difficulty": 2,
+      "answerHint": "计算频率作为概率，再计算K^2并与临界值比较"
+    },
+    {
+      "number": 18,
+      "section": "填空题",
+      "prompt": "记S_n为数列\\{a_n\\}的前n项和．已知\\frac{2S_n}{n}+n=2a_{n+1}．\n（1）证明：\\{a_n\\}是等差数列；\n（2）若a_4,a_7,a_9成等比数列，求S_n的最小值．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "sequences",
+        "derivatives"
+      ],
+      "difficulty": 3,
+      "answerHint": "利用an与Sn关系，证明等差数列，再求Sn最小值"
+    },
+    {
+      "number": 19,
+      "section": "解答题",
+      "prompt": "小明同学参加综合实践活动，设计了一个封闭的包装盒，包装盒如图所示：底面是边长为8（单位：）的正方形，均为正三角形，且它们所在的平面都与平面垂直．\n（1）证明：平面；\n（2）求该包装盒的容积（不计包装盒材料的厚度）．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "证明：平面；"
+        },
+        {
+          "number": 2,
+          "text": "求该包装盒的容积（不计包装盒材料的厚度）．"
+        }
+      ],
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2022年高考数学试卷（文）（_q19_image95.png"
+      ]
+    },
+    {
+      "number": 20,
+      "section": "填空题",
+      "prompt": "已知函数f(x)=x^3-x，曲线y=f(x)在点(x_1,f(x_1))处的切线也是曲线y=g(x)=x^2+ax+1的切线．\n（1）若x_1=-1，求a；\n（2）求a的取值范围．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "derivatives"
+      ],
+      "difficulty": 5,
+      "answerHint": "求切线方程，联立判别式为零，转化为方程有解问题"
+    },
+    {
+      "number": 21,
+      "section": "填空题",
+      "prompt": "设抛物线C:y^2=2px(p>0)的焦点为F，点D(p,0)，过F的直线交C于M，N两点．当直线MD垂直于x轴时，|MF|=2．\n（1）求C的方程；\n（2）设直线MD与C的另一个交点分别为A，B，记直线MN,AB的倾斜角分别为\\alpha,\\beta．当\\alpha-\\beta取得最大值时，求直线AB的方程．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections",
+        "derivatives"
+      ],
+      "difficulty": 5,
+      "answerHint": "利用抛物线定义求p，设直线方程联立，用斜率表示角度差"
+    },
+    {
+      "number": 22,
+      "section": "填空题",
+      "prompt": "在直角坐标系xOy中，曲线C_1的参数方程为\\begin{cases}x=2+t\\\\ y=1-t\\end{cases}（t为参数），曲线C_2的参数方程为\\begin{cases}x=2+s\\\\ y=-s\\end{cases}（s为参数）．\n（1）写出C_1的普通方程；\n（2）以坐标原点为极点，x轴正半轴为极轴建立极坐标系，曲线C_3的极坐标方程为2\\cos\\theta-\\sin\\theta=0，求C_3与C_1交点的直角坐标，及C_3与C_2交点的直角坐标．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "lines-circles"
+      ],
+      "difficulty": 2,
+      "answerHint": "消参得普通方程，联立求交点"
+    },
+    {
+      "number": 23,
+      "section": "填空题",
+      "prompt": "已知a，b，c均为正数，且a^2+b^2+4c^2=3，证明：\n（1）a+b+2c\\leq 3；\n（2）若b=2c，则\\frac{1}{a}+\\frac{1}{c}\\geq 3．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "quadratic-ineq"
+      ],
+      "difficulty": 4,
+      "answerHint": "利用柯西不等式和基本不等式证明"
+    }
+  ]
+}

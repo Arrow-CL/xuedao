@@ -1,0 +1,519 @@
+{
+  "year": 2022,
+  "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+  "totalQuestions": 23,
+  "questions": [
+    {
+      "number": 1,
+      "section": "选择题",
+      "prompt": "集合，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sets-logic"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 2,
+      "section": "选择题",
+      "prompt": "设，其中为实数，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2022年高考数学试卷（文）（_q2_image9.png"
+      ]
+    },
+    {
+      "number": 3,
+      "section": "选择题",
+      "prompt": "已知向量，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "2B. 3C. 4D. 5"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "vectors-app"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 4,
+      "section": "选择题",
+      "prompt": "分别统计了甲、乙两位同学16周的各周课外体育运动时长（单位：h），得如下茎叶图：\n则下列结论中错误的是（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "甲同学周课外体育运动时长的样本中位数为7.4"
+        },
+        {
+          "label": "B",
+          "text": "乙同学周课外体育运动时长的样本平均数大于8"
+        },
+        {
+          "label": "C",
+          "text": "甲同学周课外体育运动时长大于8的概率的估计值大于0.4"
+        },
+        {
+          "label": "D",
+          "text": "乙同学周课外体育运动时长大于8的概率的估计值大于0.6"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2022年高考数学试卷（文）（_q4_image18.png"
+      ]
+    },
+    {
+      "number": 5,
+      "section": "选择题",
+      "prompt": "若x，y满足约束条件则的最大值是（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B. 4C. 8D. 12"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 6,
+      "section": "选择题",
+      "prompt": "设F为抛物线的焦点，点A在C上，点，若，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "2B."
+        },
+        {
+          "label": "C",
+          "text": "3D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 7,
+      "section": "选择题",
+      "prompt": "执行下边的程序框图，输出的（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "3B. 4C. 5D. 6"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2022年高考数学试卷（文）（_q7_image31.png",
+        "gaokao-images/2022年高考数学试卷（文）（_q7_image32.png",
+        "gaokao-images/2022年高考数学试卷（文）（_q7_image33.png",
+        "gaokao-images/2022年高考数学试卷（文）（_q7_image34.png"
+      ]
+    },
+    {
+      "number": 8,
+      "section": "选择题",
+      "prompt": "如图是下列四个函数中的某个函数在区间的大致图像，则该函数是（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 9,
+      "section": "选择题",
+      "prompt": "并计算得． （1）估计该林区这种树木平均一棵的根��横截面积与平均一棵的材积量； （2）求该林区这种树木的根部横截面积与材积量的样本相关系数（精确到0.01）； （3）现测量了该林区所有这种树木的根部横截面积，并得到所有这种树木的根部横截面积总和为\\sum_{i=1}^{n}x_i．已知树木的材积量与其根部横截面积近似成正比．利用以上数据给出该林区这种树木的总材积量的估计值． 附：相关系数r=\\frac{\\sum_{i=1}^{n}(x_i-\\bar{x})(y_i-\\bar{y})}{\\sqrt{\\sum_{i=1}^{n}(x_i-\\bar{x})^2\\sum_{i=1}^{n}(y_i-\\bar{y})^2}}．",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "平面平面"
+        },
+        {
+          "label": "B",
+          "text": "平面平面"
+        },
+        {
+          "label": "C",
+          "text": "平面平面"
+        },
+        {
+          "label": "D",
+          "text": "平面平面"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "statistics"
+      ],
+      "difficulty": 3
+    },
+    {
+      "number": 10,
+      "section": "选择题",
+      "prompt": "已知函数f(x)=\\ln x + \\frac{a}{x}． （1）当a=1时，求f(x)的最大值； （2）若f(x)恰有一个零点，求a的取值范围．",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "14"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "derivatives"
+      ],
+      "difficulty": 4
+    },
+    {
+      "number": 11,
+      "section": "选择题",
+      "prompt": "函数在区间的最小值、最大值分别为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 12,
+      "section": "选择题",
+      "prompt": "已知球O的半径为1，四棱锥的顶点为O，底面的四个顶点均在球O的球面上，则当该四棱锥的体积最大时，其高为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry",
+        "lines-circles"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 13,
+      "section": "选择题",
+      "prompt": "记S_n为等差数列\\{a_n\\}的前n项和．若a_2=3，S_5=25，则公差d=_______．",
+      "type": "choice",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 14,
+      "section": "选择题",
+      "prompt": "从甲、乙等5名同学中随机选3名参加社区服务工作，则甲、乙都入选概率为____________．",
+      "type": "choice",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "probability"
+      ],
+      "difficulty": 1
+    },
+    {
+      "number": 15,
+      "section": "选择题",
+      "prompt": "过四点(0,0)，(4,0)，(-1,1)，(4,2)中的三点的一个圆的方程为____________．",
+      "type": "choice",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "lines-circles"
+      ],
+      "difficulty": 3
+    },
+    {
+      "number": 16,
+      "section": "选择题",
+      "prompt": "若f(x)=\\ln\\left|a+\\frac{1}{1-x}\\right|+b是奇函数，则a=_____，b=______．",
+      "type": "choice",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 3
+    },
+    {
+      "number": 17,
+      "section": "填空题",
+      "prompt": "记\\triangle ABC的内角A，B，C的对边分别为a，b，c，已知\\sin C\\sin(A-B)=\\sin B\\sin(C-A)．\n（1）若A=2B，求C；\n（2）证明：2a^2=b^2+c^2",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric"
+      ],
+      "difficulty": 4
+    },
+    {
+      "number": 18,
+      "section": "解答题",
+      "prompt": "如图，四面体中，，E为AC的中点．\n（1）证明：平面平面ACD；\n（2）设，点F在BD上，当的面积最小时，求三棱锥的体积．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "证明：平面平面ACD；"
+        },
+        {
+          "number": 2,
+          "text": "设，点F在BD上，当的面积最小时，求三棱锥的体积．"
+        }
+      ],
+      "chapters": [
+        "solid-geometry"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 19,
+      "section": "填空题",
+      "prompt": "某地经过多年的环境治理，已将荒山改造成了绿水青山．为估计一林区某种树木的总材积量，随机选取了10棵这种树木，测量每棵树的根部横截面积（单位：\\text{m}^2）和材积量（单位：\\text{m}^3），得到如下数据：\n样本号ｉ 1 2 3 4 5 6 7 8 9 10 总和\n根部横截面积x_i 0.04 0.06 0.04 0.08 0.08 0.05 0.05 0.07 0.07 0.06 0.6\n材积量y_i 0.25 0.40 0.22 0.54 0.51 0.34 0.36 0.46 0.42 0.40 3.9\n并计算得\\sum_{i=1}^{10}x_i^2=0.038，\\sum_{i=1}^{10}x_i y_i=0.2474，\\sum_{i=1}^{10}y_i^2=1.6158．\n（1）估计该林区这种树木平均一棵的根部横截面积与平均一棵的材积量；\n（2）求该林区这种树木的根部横截面积与材积量的样本相关系数（精确到0.01）；\n（3）现测量了该林区所有这种树木的根部横截面积，并得到所有这种树木的根部横截面积总和为186\\text{ m}^2．已知树木的材积量与其根部横截面积近似线性相关，请估计该林区这种树木的总材积量．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "statistics"
+      ],
+      "difficulty": 3
+    },
+    {
+      "number": 20,
+      "section": "解答题",
+      "prompt": "已知函数．\n（1）当时，求的最大值；\n（2）若恰有一个零点，求a的取值范围．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "当时，求的最大值；"
+        },
+        {
+          "number": 2,
+          "text": "若恰有一个零点，求a的取值范围．"
+        }
+      ],
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 21,
+      "section": "填空题",
+      "prompt": "已知椭圆E的中心为坐标原点，对称轴为x轴、y轴，且过两点A(0,-2)和B\\left(\\frac{3}{2},-1\\right)． （1）求E的方程； （2）设过点P(1,-2)的直线交E于M，N两点，过M且平行于x轴的直线与线段AB交于点T，点H满足\\overrightarrow{MT}=\\overrightarrow{TH}．证明：直线HN过定点．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 4
+    },
+    {
+      "number": 22,
+      "section": "填空题",
+      "prompt": "在直角坐标系xOy中，曲线C的参数方程为\\begin{cases}x=2\\cos t \\\\ y=4\\sin t\\end{cases}，（t为参数），以坐标原点为极点，x轴正半轴为极轴建立极坐标系，已知直线l的极坐标方程为\\rho\\sin\\left(\\theta+\\frac{\\pi}{4}\\right)+2\\sqrt{2}=0． （1）写出l的直角坐标方程； （2）若l与C有公共点，求m的取值范围．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "lines-circles"
+      ],
+      "difficulty": 3
+    },
+    {
+      "number": 23,
+      "section": "填空题",
+      "prompt": "已知a，b，c都是正数，且a^2+b^2+c^2=1，证明： （1）a+b+c\\leq\\sqrt{3}； （2）\\frac{1}{a^2}+\\frac{1}{b^2}+\\frac{1}{c^2}\\geq9；",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "quadratic-ineq"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

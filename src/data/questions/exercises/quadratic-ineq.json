@@ -1,0 +1,223 @@
+{
+  "module": "quadratic-ineq",
+  "items": [
+    {
+      "id": "gk-quad-1",
+      "type": "discriminant",
+      "difficulty": 4,
+      "equation": {
+        "latex": "x^2-2x+1=0",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "若关于 x 的方程 x²-2x+m=0 有两个不相等的实数根，则 m 的取值范围是？",
+      "answer": -3,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "写出判别式 Δ = (-2)²-4·1·m",
+          "formulaKey": "discriminant"
+        },
+        {
+          "key": "s2",
+          "description": "Δ > 0，即 4-4m>0",
+          "expectedValue": 1
+        },
+        {
+          "key": "s3",
+          "description": "解得 m<1",
+          "expectedValue": -3
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "quadratic-ineq",
+      "chapters": [
+        "quadratic-ineq"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "gk-quad-2",
+      "type": "quadratic",
+      "difficulty": 4,
+      "equation": {
+        "latex": "2x^2-4x+1=0",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "方程 2x²-4x+1=0 的两根为 x₁,x₂，则 x₁²+x₂² =？",
+      "answer": 3,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "韦达定理：x₁+x₂=2，x₁·x₂=1/2",
+          "expectedValue": 2
+        },
+        {
+          "key": "s2",
+          "description": "x₁²+x₂² = (x₁+x₂)²-2x₁x₂ = 4-1",
+          "expectedValue": 3
+        }
+      ],
+      "tags": [
+        "formula-recall",
+        "calculation"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "quadratic-ineq",
+      "chapters": [
+        "quadratic-ineq"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "gk-ineq-1",
+      "type": "basic-ineq",
+      "difficulty": 4,
+      "equation": {
+        "latex": "x+1/x≥2",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "已知 x>0，则 x + 4/x 的最小值为？",
+      "answer": 4,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "基本不等式：x+4/x≥2\\sqrt{x·4/x}=4",
+          "expectedValue": 4
+        }
+      ],
+      "tags": [
+        "formula-recall",
+        "concept"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "quadratic-ineq",
+      "chapters": [
+        "quadratic-ineq"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "gk-ineq-2",
+      "type": "quadratic-ineq",
+      "difficulty": 3,
+      "equation": {
+        "latex": "x^2-3x+2<0",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "不等式 x²-3x+2<0 的解集为？",
+      "answer": 2,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "因式分解：(x-1)(x-2)<0",
+          "expectedValue": 1
+        },
+        {
+          "key": "s2",
+          "description": "解集为 {x|1<x<2}",
+          "expectedValue": 2
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "quadratic-ineq",
+      "chapters": [
+        "quadratic-ineq"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "qi-3",
+      "type": "discriminant",
+      "difficulty": 3,
+      "prompt": "方程x平方-6x+9=0的判别式Delta是多少？",
+      "answer": 0,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "Delta = b平方-4ac",
+          "formulaKey": "discriminant"
+        },
+        {
+          "key": "s2",
+          "description": "Delta = 36-36 = 0",
+          "expectedValue": 0
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "quadratic-ineq",
+      "chapters": [
+        "quadratic-ineq"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "qi-4",
+      "type": "inequality",
+      "difficulty": 4,
+      "prompt": "解不等式x平方-5x+6>0。",
+      "answer": 1,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "因式分解为(x-2)(x-3)>0",
+          "expectedValue": 1
+        },
+        {
+          "key": "s2",
+          "description": "解集为x<2或x>3",
+          "expectedValue": 1
+        }
+      ],
+      "tags": [
+        "calculation"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "quadratic-ineq",
+      "chapters": [
+        "quadratic-ineq"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "module": "lines-circles",
+  "items": [
+    {
+      "id": "gk-line-1",
+      "type": "slope",
+      "difficulty": 3,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "过点 A(1,2) 和 B(3,6) 的直线斜率为？",
+      "answer": 2,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "k=(6-2)/(3-1)=4/2",
+          "expectedValue": 2
+        },
+        {
+          "key": "s2",
+          "description": "k=2",
+          "expectedValue": 2
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "lines-circles",
+      "chapters": [
+        "lines-circles"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "gk-line-2",
+      "type": "distance",
+      "difficulty": 4,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "点 P(1,2) 到直线 3x+4y-5=0 的距离为？",
+      "answer": 1.2,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "d=|3·1+4·2-5|/\\sqrt{3²+4²}",
+          "expectedValue": 6
+        },
+        {
+          "key": "s2",
+          "description": "=6/5=1.2",
+          "expectedValue": 1.2
+        }
+      ],
+      "tags": [
+        "formula-recall",
+        "calculation"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "lines-circles",
+      "chapters": [
+        "lines-circles"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "gk-circ-1",
+      "type": "circle-eq",
+      "difficulty": 3,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "圆心为 (1,-2)，半径为 3 的圆的标准方程为？左侧的值为 (x-1)²+(y+2)² = ?",
+      "answer": 9,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "圆方程：(x-1)²+(y+2)²=r²",
+          "expectedValue": 1
+        },
+        {
+          "key": "s2",
+          "description": "r²=9",
+          "expectedValue": 9
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "lines-circles",
+      "chapters": [
+        "lines-circles"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "gk-circ-2",
+      "type": "circle-line",
+      "difficulty": 4,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "圆 x²+y²=4 与直线 y=x 的相交弦长？",
+      "answer": 2.828,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "圆心(0,0)到直线 x-y=0 距离 d=0",
+          "expectedValue": 0
+        },
+        {
+          "key": "s2",
+          "description": "弦长=2r=4，半弦长=2",
+          "expectedValue": 2.828
+        }
+      ],
+      "tags": [
+        "formula-recall",
+        "calculation"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "lines-circles",
+      "chapters": [
+        "lines-circles"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "lc-5",
+      "type": "line-eq",
+      "difficulty": 3,
+      "prompt": "过点(1,2)且斜率为3的直线方程。",
+      "answer": 1,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "点斜式 y-y0 = k(x-x0)",
+          "formulaKey": "point-slope"
+        },
+        {
+          "key": "s2",
+          "description": "y-2 = 3(x-1)，即y=3x-1",
+          "expectedValue": 1
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "lines-circles",
+      "chapters": [
+        "lines-circles"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "lc-6",
+      "type": "circle",
+      "difficulty": 3,
+      "prompt": "圆心(1,-2)半径3的圆的方程。",
+      "answer": 1,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "(x-a)平方+(y-b)平方=r平方",
+          "formulaKey": "circle-eq"
+        },
+        {
+          "key": "s2",
+          "description": "(x-1)平方+(y+2)平方=9",
+          "expectedValue": 1
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "lines-circles",
+      "chapters": [
+        "lines-circles"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    }
+  ]
+}

@@ -1,0 +1,537 @@
+{
+  "year": 2026,
+  "paper": "数学二卷",
+  "totalQuestions": 19,
+  "questions": [
+    {
+      "number": 1,
+      "section": "选择题",
+      "prompt": "(1-3i(2 =",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "- 8 + 6i"
+        },
+        {
+          "label": "B",
+          "text": "- 8 - 6i"
+        },
+        {
+          "label": "C",
+          "text": "8 + 6i"
+        },
+        {
+          "label": "D",
+          "text": "8 - 6i"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 2,
+      "section": "选择题",
+      "prompt": "已知向量 →a , b→ 满足 | →a+b→| = 1 , | →a -b→| =  3 ，则 →a . b→ =（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "—"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "vectors-app"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/数学二卷_q2_image1.png"
+      ]
+    },
+    {
+      "number": 3,
+      "section": "选择题",
+      "prompt": "已知集合A = {0 , 1 , 3 , 6 , 9} , B = {x |  x = x}，则A ∩ B =（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "{0 , 1}"
+        },
+        {
+          "label": "B",
+          "text": "{3 , 6}"
+        },
+        {
+          "label": "C",
+          "text": "{0 , 1 , 9}"
+        },
+        {
+          "label": "D",
+          "text": "{0 , 3 , 9}"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sets-logic"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/数学二卷_q3_image2.png"
+      ]
+    },
+    {
+      "number": 4,
+      "section": "选择题",
+      "prompt": "双曲线 C a>0 ,b>0(过点 (1 , 0( 和  , 则其渐近线方程为",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "y =±3、2 x"
+        },
+        {
+          "label": "B",
+          "text": "y =±4、3 x"
+        },
+        {
+          "label": "C",
+          "text": "y  x"
+        },
+        {
+          "label": "D",
+          "text": "y  x"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/数学二卷_q4_image3.png",
+        "gaokao-images/数学二卷_q4_image4.png",
+        "gaokao-images/数学二卷_q4_image5.png",
+        "gaokao-images/数学二卷_q4_image6.png"
+      ]
+    },
+    {
+      "number": 5,
+      "section": "选择题",
+      "prompt": "棱台上下底面均为有一个内角是 60。的菱形, 且上下底面边长分别为 2 和 3 , 该棱台的高为  3 , 则该棱台体积为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "—"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/数学二卷_q5_image7.png"
+      ]
+    },
+    {
+      "number": 6,
+      "section": "选择题",
+      "prompt": "甲、乙、丙、丁等 8 人分成A, B 两技术小组,要求每组 4 人，且甲乙必须在同一组，丙丁不能在同一组，共有多少分配方案（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "16"
+        },
+        {
+          "label": "D",
+          "text": "24"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "counting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 7,
+      "section": "选择题",
+      "prompt": "已知 α 为第二象限角, 且 3sin2αcosα = 8sinαcos2α , 则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "—"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/数学二卷_q7_image8.png"
+      ]
+    },
+    {
+      "number": 8,
+      "section": "选择题",
+      "prompt": "已知f(x(为定义在R 上的偶函数, 且f(x(+f (x-2( = 0 , 当x ∈  , 3ΓLI时,f (x( = x2 + ax + b , 则",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "a =-2 , b =-3"
+        },
+        {
+          "label": "B",
+          "text": "a =-2 , b = 3"
+        },
+        {
+          "label": "C",
+          "text": "a =-4 , b =-3"
+        },
+        {
+          "label": "D",
+          "text": "a =-4 , b = 3"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/数学二卷_q8_image9.png",
+        "gaokao-images/数学二卷_q8_image10.png"
+      ]
+    },
+    {
+      "number": 9,
+      "section": "多选题",
+      "prompt": "已知 ⊙ O : x2 + y2 = 1 ,⊙ A : x2 + y2 - 6x - 8y +k = 0 , 则（    ）",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "点A 的坐标为 (-3 ,-4("
+        },
+        {
+          "label": "B",
+          "text": "k = 9 时, ⊙ A 与x 轴相切"
+        },
+        {
+          "label": "C",
+          "text": "当k =-11 时, ⊙ A 与 ⊙ O 相切"
+        },
+        {
+          "label": "D",
+          "text": "当 ⊙ O 与 ⊙ A 相交时, 两交点所在直线的方程是 6x + 8y-k- 2 = 0"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 10,
+      "section": "多选题",
+      "prompt": "等比数列 {an{的公比 q ≠ 1 , a1> 0 , 2a3 = a2 + a1 , 记前n 项和为Sn , 则（    ）",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "q"
+        },
+        {
+          "label": "B",
+          "text": "Sn >"
+        },
+        {
+          "label": "C",
+          "text": "2Sn+2 = Sn+1 + Sn               D Sk"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/数学二卷_q10_image11.png",
+        "gaokao-images/数学二卷_q10_image12.png",
+        "gaokao-images/数学二卷_q10_image13.png",
+        "gaokao-images/数学二卷_q10_image14.png"
+      ]
+    },
+    {
+      "number": 11,
+      "section": "多选题",
+      "prompt": "已知抛物线 E : y2 = 8x , 斜率 k(k>0( 的直线 l 过点 (1 ,0(、△ABC 为等边三角形, A 在y 轴上, B , C 在l上, 则",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "抛物线准线方程为x =-2"
+        },
+        {
+          "label": "B",
+          "text": "l 与y 轴交点为 (0 ,-k("
+        },
+        {
+          "label": "C",
+          "text": "若 l 与E 相交于唯一点B , 则抛物线焦点在"
+        },
+        {
+          "label": "D",
+          "text": "k = 2 时, △ABC 面积最小值为 直线AB 上"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric",
+        "conic-sections"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/数学二卷_q11_image15.png"
+      ]
+    },
+    {
+      "number": 12,
+      "section": "选择题",
+      "prompt": "6                                        4                                       .   2（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "—"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 13,
+      "section": "填空题",
+      "prompt": "若函数f(x( = 2x + 2-x - m 有两个零点, 则m 的取值范围是        .________",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 14,
+      "section": "填空题",
+      "prompt": "球 O 的体积为 4 3 π , A , B , C , D 四点均在球 O 的球面上, △ABC 为等边三角形, DA = DB = DC =  2 ,则 △ABC 的面积为        .",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric",
+        "solid-geometry"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/数学二卷_q14_image16.png",
+        "gaokao-images/数学二卷_q14_image17.png"
+      ]
+    },
+    {
+      "number": 15,
+      "section": "解答题",
+      "prompt": "某工厂抽取一批电子元件检测, 记录第一次出现故障的时间(天), 绘制成如下的频率分布直方图: (1) 求第一四分位数和中位数; (2) 设p为首次故障时间小于365天的概率估计值. (i) 求p; (ii) 工厂向某用户销售100件电子元件, X为这100件产品首次出现故障小于365天的件数, 则X \\sim B(100, p), 求E(X), D(X).",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求第一四分位数和中位数;"
+        },
+        {
+          "number": 2,
+          "text": "入p为首次故障时间小于 365 天的概率估计值. (i) 求入p ; (ii)工厂向某用户销售 100 件电子元件, X 为这 100 件产品首次出现故障小于 365 天的件数, 则 X ∼ B (100 ,入p(, 求E(X(, D (X( . y0.035 0.030.025 0.020.015 0.010.005O    345   355   365   375   385   395   405   415   425      ① y"
+        }
+      ],
+      "chapters": [
+        "statistics",
+        "random-vars"
+      ],
+      "difficulty": 3
+    },
+    {
+      "number": 16,
+      "section": "解答题",
+      "prompt": "三棱锥A-BCD中, E在BD上, AE \\perp CE, AE \\perp DE, CD \\perp AD. (1) 证明: CD \\perp AB; (2) 若DE=2, BE=1, AE=2, CD=2\\sqrt{3}, 求AD与平面ABC所成角的正弦值.",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "证明: CD ⊥ AB ;"
+        },
+        {
+          "number": 2,
+          "text": "若DE = 2 , BE = 1 , AE =  2 , CD = 2 3 ，求AD 与平面ABC 所成角的正弦值. BDEA B D E A C"
+        }
+      ],
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ],
+      "difficulty": 4
+    },
+    {
+      "number": 17,
+      "section": "解答题",
+      "prompt": "在 △ABC 中, 已知 cosB  cos2 (A+C( + sinAsinC = 1.\n(1)证明: △ABC 为钝角三角形；\n(2)若 △ABC 面积为 ，求 △ABC 周长.",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "证明: △ABC 为钝角三角形；"
+        },
+        {
+          "number": 2,
+          "text": "若 △ABC 面积为 ，求 △ABC 周长."
+        }
+      ],
+      "chapters": [
+        "trigonometric"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/数学二卷_q17_image21.png",
+        "gaokao-images/数学二卷_q17_image22.png"
+      ]
+    },
+    {
+      "number": 18,
+      "section": "解答题",
+      "prompt": "椭圆E: \\frac{x^2}{a^2}+y^2=1 (a>1), 过右焦点垂直于x轴的直线被E所截线段长为\\frac{2}{a}. (1) 求E的离心率; (2) O为坐标原点, 给定点G(t_0,0)(t_0\\neq0); A(x_0,y_0)(y_0\\neq0)在E上, 过点A作y轴的垂线, 交于点B, AO与GB交于点P. 当A在E上运动时, P的轨迹为M. (i)求M的方程; (ii)M是否有中心点? 当t_0为何值时, M有中心点? 当M有中心点时, 平移M到M', 使O为M'的中心点, 说明M'为何形状?",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求E 的离心率；"
+        },
+        {
+          "number": 2,
+          "text": "O 为坐标原点，给定点 G(t0 , 0((t0 ≠0(；A(x0 ,y0((y0 ≠0(在E 上，过点A 作y 轴的垂线，交于点B , AO与 GB 交于点P。当 A 在E 上运动时, P 的轨迹为M. (i)求M 的方程; (ii)M 是否有中心点? 当 t0 为何值时, M 有中心点? 当M 有中心点时, 平移M 到M9 , 使 O 为M9 的中心点,说明M9 为何形状?"
+        }
+      ],
+      "chapters": [
+        "conic-sections",
+        "lines-circles"
+      ],
+      "difficulty": 5
+    },
+    {
+      "number": 19,
+      "section": "选择题",
+      "prompt": "19                                      19                                      19（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

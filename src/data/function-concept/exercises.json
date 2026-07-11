@@ -1,0 +1,102 @@
+{
+  "unit": "function-concept",
+  "exercises": [
+    {
+      "id": "gk-func-1",
+      "type": "domain",
+      "difficulty": 3,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "函数 f(x)=√(x-2) + 1/(x-3) 的定义域为？",
+      "answer": 3,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "x-2≥0，x≥2",
+          "expectedValue": 2
+        },
+        {
+          "key": "s2",
+          "description": "x-3≠0，x≠3",
+          "expectedValue": 2
+        },
+        {
+          "key": "s3",
+          "description": "[2,3)∪(3,+∞)",
+          "expectedValue": 3
+        }
+      ],
+      "tags": [
+        "concept"
+      ],
+      "commonMistakes": []
+    },
+    {
+      "id": "gk-func-2",
+      "type": "monotonicity",
+      "difficulty": 4,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "函数 f(x)=x²-2x 的单调递减区间为？",
+      "answer": 1,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "f'(x)=2x-2",
+          "expectedValue": 2
+        },
+        {
+          "key": "s2",
+          "description": "令 f'(x)<0 得 x<1",
+          "expectedValue": 1
+        },
+        {
+          "key": "s3",
+          "description": "递减区间 (-∞,1]",
+          "expectedValue": 1
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": []
+    },
+    {
+      "id": "gk-func-3",
+      "type": "parity",
+      "difficulty": 3,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "函数 f(x)=x³+1 的奇偶性为？",
+      "answer": 3,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "f(-x)=(-x)³+1=-x³+1",
+          "expectedValue": -1
+        },
+        {
+          "key": "s2",
+          "description": "f(-x)≠f(x) 且 f(-x)≠-f(x)，非奇非偶",
+          "expectedValue": 3
+        }
+      ],
+      "tags": [
+        "concept"
+      ],
+      "commonMistakes": []
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "unit": "conic-sections",
+  "exercises": [
+    {
+      "id": "gk-el-1",
+      "type": "ellipse",
+      "difficulty": 4,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "椭圆 x²/25+y²/16=1 的焦距为？",
+      "answer": 6,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "a²=25, b²=16",
+          "expectedValue": 25
+        },
+        {
+          "key": "s2",
+          "description": "c²=a²-b²=9, c=3",
+          "expectedValue": 3
+        },
+        {
+          "key": "s3",
+          "description": "焦距 2c=6",
+          "expectedValue": 6
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": []
+    },
+    {
+      "id": "gk-hyp-1",
+      "type": "hyperbola",
+      "difficulty": 4,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "双曲线 x²/9-y²/16=1 的渐近线方程？斜率 k=?",
+      "answer": 1.333,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "a²=9, b²=16, a=3, b=4",
+          "expectedValue": 3
+        },
+        {
+          "key": "s2",
+          "description": "渐近线 y=±(b/a)x, k=±4/3",
+          "expectedValue": 1.333
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": []
+    },
+    {
+      "id": "gk-par-1",
+      "type": "parabola",
+      "difficulty": 4,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "抛物线 y²=8x 的焦点坐标为 (p/2,0)，p=?",
+      "answer": 4,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "2p=8",
+          "expectedValue": 8
+        },
+        {
+          "key": "s2",
+          "description": "p=4",
+          "expectedValue": 4
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": []
+    }
+  ]
+}

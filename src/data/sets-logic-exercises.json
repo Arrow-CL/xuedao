@@ -1,0 +1,231 @@
+{
+  "concept": {
+    "title": "集合的基本概念",
+    "exercises": [
+      {
+        "id": "concept-1",
+        "unitId": "concept",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "已知集合 $A=\\{x\\in \\mathbf{N}\\mid \\dfrac{3}{x-1}\\in \\mathbf{Z}\\}$，则集合 $A=$",
+        "options": ["$\\{-2,0,1,2,4\\}$", "$\\{0,2,4\\}$", "$\\{2,4\\}$", "$\\{0,1,2,4\\}$"],
+        "answer": "B",
+        "gaokaoConnection": "描述法求集合元素，注意代表元 $x$ 的范围限制（这里是自然数集）"
+      },
+      {
+        "id": "concept-2",
+        "unitId": "concept",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "集合 $A=\\{1,x,y\\}$，$B=\\{x,x^2,xy\\}$，若 $A=B$，则 $x^{2026}+y^{2026}=$",
+        "options": ["$-1$", "$0$", "$1$", "$2$"],
+        "answer": "A",
+        "gaokaoConnection": "集合相等+互异性，由集合相等列方程组求解，注意检验互异性"
+      },
+      {
+        "id": "concept-3",
+        "unitId": "concept",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "集合 $A=\\{x\\in \\mathbf{Z}\\mid x^2-x-6<0\\}$，则 $A$ 的子集个数为",
+        "options": ["$4$", "$8$", "$16$", "$32$"],
+        "answer": "C",
+        "gaokaoConnection": "子集个数公式：$n$ 个元素集合有 $2^n$ 个子集，先解不等式确定元素个数"
+      },
+      {
+        "id": "concept-4",
+        "unitId": "concept",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "班级42人参加数、理、化小组，每人至多参加2组；参加数学28人，物理16人，化学14人；同时数学化学7人，物理化学5人，则同时参加数学和物理的有____人。",
+        "answer": "10",
+        "gaokaoConnection": "容斥原理（韦恩图）解题，设三组分别为A、B、C，用 $|A|+|B|+|C|-|A\\cap B|-|B\\cap C|-|A\\cap C|+|A\\cap B\\cap C|=42$"
+      }
+    ]
+  },
+  "relations": {
+    "title": "集合间的关系",
+    "exercises": [
+      {
+        "id": "relations-1",
+        "unitId": "relations",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "集合 $A=\\{-1,0,1,3\\}$，$B=\\{x\\mid |x-2|\\le m\\}$，若 $A\\subseteq B$，则实数 $m$ 最小值为",
+        "options": ["$1$", "$2$", "$3$", "$4$"],
+        "answer": "C",
+        "gaokaoConnection": "子集与绝对值不等式结合，$A$ 的最大偏离为 3，需 $m\\ge 3$"
+      },
+      {
+        "id": "relations-2",
+        "unitId": "relations",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "集合 $A=\\{x\\mid x^2-9\\le 0\\}$，$B=\\{x\\mid x+t\\le 0\\}$，若 $A\\subseteq B$，则实数 $t$ 的取值范围",
+        "options": ["$(-\\infty,-3]$", "$(-\\infty,3]$", "$[3,+\\infty)$", "$[-3,+\\infty)$"],
+        "answer": "A",
+        "gaokaoConnection": "$A=[-3,3]$，$B=(-\\infty,-t]$，$A\\subseteq B$ 需要 $-t\\ge 3$ 即 $t\\le -3$"
+      },
+      {
+        "id": "relations-3",
+        "unitId": "relations",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "函数 $f(x)=\\sqrt{x^2-4}$ 的定义域为集合 $A$，$B=\\{x\\in \\mathbf{R}\\mid 1<bx<3\\}$，$B\\subseteq A$，则实数 $b$ 的范围",
+        "options": ["$\\left[-\\dfrac{3}{2},\\dfrac{3}{2}\\right]$", "$\\left(-\\infty,-\\dfrac{3}{2}\\right]\\cup \\left[\\dfrac{3}{2},+\\infty\\right)$", "$[-2,2]$", "$(-\\infty,-2]\\cup [2,+\\infty)$"],
+        "answer": "B",
+        "gaokaoConnection": "定义域 $A=(-\\infty,-2]\\cup[2,+\\infty)$，$B\\subseteq A$ 需要区间 $(1/b, 3/b)$ 完全在 $A$ 内"
+      },
+      {
+        "id": "relations-4",
+        "unitId": "relations",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "集合 $A=\\{x\\mid 2<x\\le 6\\}$，$B=\\{x\\mid a<x<2a\\}$\n(1) 若 $B\\subseteq A$，求实数 $a$ 的取值范围；\n(2) 是否存在实数 $a$，使得 $A=B$？若存在求出 $a$，不存在说明理由。",
+        "answer": "(1) $\\dfrac{4}{3}\\le a\\le 3$\n(2) 不存在，$A$ 含端点 6 而 $B$ 不含端点，无法相等",
+        "gaokaoConnection": "子集关系求参数范围，注意开区间和闭区间的区别，第(2)问考查端点是否包含"
+      }
+    ]
+  },
+  "operations": {
+    "title": "集合的基本运算",
+    "exercises": [
+      {
+        "id": "operations-1",
+        "unitId": "operations",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "全集 $U=\\{1,2,3,4,5,6,7\\}$，集合 $A=\\{2,4,6\\}$，则 $\\complement_{U} A$ 的元素个数为",
+        "options": ["$3$", "$4$", "$5$", "$6$"],
+        "answer": "B",
+        "gaokaoConnection": "补集定义：全集去掉 $A$ 中的元素，$|U|-|A|=7-3=4$"
+      },
+      {
+        "id": "operations-2",
+        "unitId": "operations",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "$A=\\{-2,0,3,5\\}$，$B=\\{x\\mid |x-2|\\le 2\\}$，则 $A\\cap B=$",
+        "options": ["$\\{0,3\\}$", "$\\{0,2,3\\}$", "$\\{-2,0\\}$", "$\\{3,5\\}$"],
+        "answer": "A",
+        "gaokaoConnection": "先求 $B=\\{x\\mid 0\\le x\\le 4\\}$，再取交集 $\\{0,3\\}$"
+      },
+      {
+        "id": "operations-3",
+        "unitId": "operations",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "$A=\\{x\\mid -1<x<3\\}$，$B=\\{x\\mid x^2-4x+3\\le 0\\}$，则 $A\\cup B=$",
+        "options": ["$(-1,3]$", "$[-1,3]$", "$[1,3]$", "$(-1,+\\infty)$"],
+        "answer": "A",
+        "gaokaoConnection": "$B=\\{x\\mid 1\\le x\\le 3\\}$，$A=(-1,3)$，$A\\cup B=(-1,3]$"
+      },
+      {
+        "id": "operations-4",
+        "unitId": "operations",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "全集 $U=\\mathbf{R}$，$M=\\{x\\mid x\\ge 2\\}$，$N=\\{x\\mid 0<x<4\\}$，则 $\\{x\\mid x\\ge 4\\}=$",
+        "options": ["$\\complement_{U}(M\\cup N)$", "$N\\cap \\complement_{U} M$", "$\\complement_{U}(M\\cap N)$", "$M\\cap \\complement_{U} N$"],
+        "answer": "D",
+        "gaokaoConnection": "集合表达式等价转换，$\\{x\\ge 4\\}=\\{x\\ge 2\\}\\cap\\{x\\ge 4 \\text{ 或 } x<0\\}=M\\cap \\complement_U N$"
+      },
+      {
+        "id": "operations-5",
+        "unitId": "operations",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "已知全集 $U=\\mathbf{R}$，集合 $A=\\{x\\mid x^2-3x-4<0\\}$，$B=\\{x\\mid m-1\\le x\\le m+1\\}$，当 $m=2$ 时，求 $A\\cup B$ 与 $\\complement_{U} A$。",
+        "answer": "$A=(-1,4)$，$B=[1,3]$，$A\\cup B=(-1,4)$；$\\complement_{U} A=(-\\infty,-1]\\cup[4,+\\infty)$",
+        "gaokaoConnection": "先解二次不等式确定集合，再进行交并补运算"
+      }
+    ]
+  },
+  "condition": {
+    "title": "充分条件与必要条件",
+    "exercises": [
+      {
+        "id": "condition-1",
+        "unitId": "condition",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "$x\\in \\mathbf{R}$，\\u201c$x=1$\\u201d是\\u201c$\\cos(\\pi x)=1$\\u201d的",
+        "options": ["充分不必要条件", "必要不充分条件", "充要条件", "既不充分也不必要条件"],
+        "answer": "A",
+        "gaokaoConnection": "$x=1\\Rightarrow \\cos\\pi=-1\\ne 1$，但 $\\cos\\pi x=1$ 的解为 $x=2k$，不推出 $x=1$"
+      },
+      {
+        "id": "condition-2",
+        "unitId": "condition",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "$a>0,b>0$，\\u201c$ab\\ge 9$\\u201d是\\u201c$a+b\\ge 6$\\u201d的",
+        "options": ["充分不必要条件", "必要不充分条件", "充要条件", "既不充分也不必要条件"],
+        "answer": "A",
+        "gaokaoConnection": "由均值不等式 $a+b\\ge 2\\sqrt{ab}\\ge 2\\sqrt{9}=6$，但 $a=1,b=10$ 时 $a+b=11\\ge 6$ 而 $ab=10<9$"
+      },
+      {
+        "id": "condition-3",
+        "unitId": "condition",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "集合 $A=\\{x\\mid x>3\\}$，$B=\\{x\\mid kx>2\\}$，$x\\in A$ 是 $x\\in B$ 充分不必要条件，则 $k$ 的范围",
+        "options": ["$\\left(0,\\dfrac{2}{3}\\right]$", "$\\left[\\dfrac{2}{3},+\\infty\\right)$", "$(-\\infty,0)$", "$\\left(0,\\dfrac{2}{3}\\right)$"],
+        "answer": "A",
+        "gaokaoConnection": "$x\\in A\\Rightarrow x\\in B$ 即 $x>3$ 时 $kx>2$ 恒成立，需 $3k>2$ 即 $k>\\frac{2}{3}$；但不必要因为 $x>6$ 时更小的 $k$ 也行"
+      },
+      {
+        "id": "condition-4",
+        "unitId": "condition",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "已知 $p$：$x^2-6x+8<0$；$q$：$(x-m)(x-m-2)<0$\n(1) 若 $p$ 是 $q$ 充分不必要条件，求 $m$ 取值范围；\n(2) 若 $\\neg p$ 是 $\\neg q$ 必要不充分条件，求 $m$ 取值范围。",
+        "answer": "(1) $2\\le m\\le 3$\n(2) $1\\le m\\le 4$",
+        "gaokaoConnection": "充分不必要条件转化为集合包含关系：$p$ 对应集合是 $q$ 对应集合的真子集"
+      }
+    ]
+  },
+  "quantifier": {
+    "title": "全称量词与存在量词",
+    "exercises": [
+      {
+        "id": "quantifier-1",
+        "unitId": "quantifier",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "命题\\u201c$\\forall x\\in \\mathbf{R},\\, 2x^2+x\\ne 0$\\u201d的否定为",
+        "options": ["$\\forall x\\notin \\mathbf{R},\\, 2x^2+x\\ne 0$", "$\\exists x\\in \\mathbf{R},\\, 2x^2+x=0$", "$\\exists x\\notin \\mathbf{R},\\, 2x^2+x=0$", "$\\forall x\\in \\mathbf{R},\\, 2x^2+x=0$"],
+        "answer": "B",
+        "gaokaoConnection": "命题否定规则：改量词、否结论。$\\forall$ 改 $\\exists$，$\\ne 0$ 改 $=0$"
+      },
+      {
+        "id": "quantifier-2",
+        "unitId": "quantifier",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "$p$：$\\forall x\\in \\mathbf{R},\\, |x-2|>1$；$q$：$\\exists x>0,\\, x^2=x$，判断真假",
+        "options": ["$p$、$q$ 均真", "$\\neg p$、$q$ 均真", "$p$、$\\neg q$ 均真", "$\\neg p$、$\\neg q$ 均真"],
+        "answer": "B",
+        "gaokaoConnection": "$p$：$x=2$ 时 $|0|=0\\not>1$，故 $p$ 假；$q$：$x=1$ 时 $1=1$ 成立，故 $q$ 真"
+      },
+      {
+        "id": "quantifier-3",
+        "unitId": "quantifier",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "命题 $p$：$\\exists x\\in [0,2],\\, x^2+2<a$；命题 $q$：$\\forall x>0,\\, ax\\le x^2+1$。$p$、$q$ 有且只有一个为真，求 $a$ 的取值范围____。",
+        "answer": "$a \\in (-\\infty,-2]\\cup(4,8]$",
+        "gaokaoConnection": "分情况讨论：$p$ 真 $q$ 假、$p$ 假 $q$ 真，求参数范围的并集"
+      },
+      {
+        "id": "quantifier-4",
+        "unitId": "quantifier",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "已知命题 $p$：$\\exists x\\in [-1,3],\\, x^2-a\\le 0$；命题 $q$：$\\forall x\\in \\mathbf{R},\\, x^2+2ax+1>0$。\n(1) 写出 $\\neg p$、$\\neg q$；\n(2) 若 $p, q$ 一真一假，求实数 $a$ 的取值范围。",
+        "answer": "(1) $\\neg p$：$\\forall x\\in[-1,3],\\, x^2>a$；$\\neg q$：$\\exists x\\in\\mathbf{R},\\, x^2+2ax+1\\le 0$\n(2) $a\\in(-\\infty,-1)\\cup[3,+\\infty)$",
+        "gaokaoConnection": "先否定再化简，$p$ 真需要 $a\\ge 9$，$q$ 真需要 $|a|<1$，一真一假取范围并集的补集"
+      }
+    ]
+  }
+}

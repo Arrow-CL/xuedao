@@ -1,0 +1,531 @@
+{
+  "year": 2021,
+  "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+  "totalQuestions": 23,
+  "questions": [
+    {
+      "number": 1,
+      "section": "选择题",
+      "prompt": "设z=\\frac{1-i}{1+i}+2i，则|z|=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{1}{2}"
+        },
+        {
+          "label": "C",
+          "text": "1"
+        },
+        {
+          "label": "D",
+          "text": "\\sqrt{2}"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "complex"
+      ],
+      "difficulty": 1,
+      "answerHint": "化简复数后求模"
+    },
+    {
+      "number": 2,
+      "section": "选择题",
+      "prompt": "已知集合S=\\{s|s=2n+1,n\\in Z\\}，T=\\{t|t=4n+1,n\\in Z\\}，则S\\cap T=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\varnothing"
+        },
+        {
+          "label": "B",
+          "text": "S"
+        },
+        {
+          "label": "C",
+          "text": "T"
+        },
+        {
+          "label": "D",
+          "text": "Z"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sets-logic"
+      ],
+      "difficulty": 1,
+      "answerHint": "分析集合元素特征"
+    },
+    {
+      "number": 3,
+      "section": "选择题",
+      "prompt": "已知命题p:\\exists x\\in R,\\sin x<1；命题q:\\forall x\\in R,e^{|x|}\\ge 1，则下列命题中为真命题的是（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "p\\land q"
+        },
+        {
+          "label": "B",
+          "text": "\\neg p\\land q"
+        },
+        {
+          "label": "C",
+          "text": "p\\land \\neg q"
+        },
+        {
+          "label": "D",
+          "text": "\\neg(p\\lor q)"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sets-logic",
+        "exp-log"
+      ],
+      "difficulty": 2,
+      "answerHint": "判断p,q真假后复合"
+    },
+    {
+      "number": 4,
+      "section": "选择题",
+      "prompt": "设函数f(x)=\\frac{1-x}{1+x}，则下列函数中为奇函数的是（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "f(x-1)-1"
+        },
+        {
+          "label": "B",
+          "text": "f(x-1)+1"
+        },
+        {
+          "label": "C",
+          "text": "f(x+1)-1"
+        },
+        {
+          "label": "D",
+          "text": "f(x+1)+1"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2,
+      "answerHint": "利用奇函数定义或图像变换"
+    },
+    {
+      "number": 5,
+      "section": "选择题",
+      "prompt": "在正方体ABCD-A_1B_1C_1D_1中，P为B_1D_1的中点，则直线PB与AD_1所成的角为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{\\pi}{2}"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{\\pi}{3}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{\\pi}{4}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{\\pi}{6}"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ],
+      "difficulty": 3,
+      "answerHint": "建系或用几何法平移"
+    },
+    {
+      "number": 6,
+      "section": "选择题",
+      "prompt": "将5名北京冬奥会志愿者分配到花样滑冰、短道速滑、冰球和冰壶4个项目进行培训，每名志愿者只分配到1个项目，每个项目至少分配1名志愿者，则不同的分配方案共有（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "60种"
+        },
+        {
+          "label": "B",
+          "text": "120种"
+        },
+        {
+          "label": "C",
+          "text": "240种"
+        },
+        {
+          "label": "D",
+          "text": "480种"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "counting"
+      ],
+      "difficulty": 3,
+      "answerHint": "先分组再分配"
+    },
+    {
+      "number": 7,
+      "section": "选择题",
+      "prompt": "把函数y=f(x)图像上所有点的横坐标缩短到原来的\\frac{1}{2}倍，纵坐标不变，再把所得曲线向右平移\\frac{\\pi}{3}个单位长度，得到函数y=\\sin(x-\\frac{\\pi}{4})的图像，则f(x)=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\sin(\\frac{x}{2}-\\frac{7\\pi}{12})"
+        },
+        {
+          "label": "B",
+          "text": "\\sin(\\frac{x}{2}+\\frac{\\pi}{12})"
+        },
+        {
+          "label": "C",
+          "text": "\\sin(2x-\\frac{7\\pi}{12})"
+        },
+        {
+          "label": "D",
+          "text": "\\sin(2x+\\frac{\\pi}{12})"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric"
+      ],
+      "difficulty": 3,
+      "answerHint": "逆向变换"
+    },
+    {
+      "number": 8,
+      "section": "选择题",
+      "prompt": "在区间(0,1)与(1,2)中各随机取1个数，则两数之和大于\\frac{7}{4}的概率为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{7}{9}"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{23}{32}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{9}{32}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{2}{9}"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "probability"
+      ],
+      "difficulty": 3,
+      "answerHint": "几���概型"
+    },
+    {
+      "number": 9,
+      "section": "选择题",
+      "prompt": "魏晋时刘徽撰写的《海岛算经》是有关测量的数学著作，其中第一题是测海岛的高．如图，点，，在水平线上，和是两个垂直于水平面且等高的测量标杆的高度，称为“表高”，称为“表距”，和都称为“表目距”，与的差称为“表目距的差”则海岛的高（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "表高B. 表高"
+        },
+        {
+          "label": "C",
+          "text": "表距D. 表距"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "vectors-app"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2021年高考数学试卷（理）（_q9_image62.png"
+      ]
+    },
+    {
+      "number": 10,
+      "section": "选择题",
+      "prompt": "设a\\neq 0，若x=a为函数f(x)=a(x-a)^2(x-b)的极大值点，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "a<b"
+        },
+        {
+          "label": "B",
+          "text": "a>b"
+        },
+        {
+          "label": "C",
+          "text": "ab<a^2"
+        },
+        {
+          "label": "D",
+          "text": "ab>a^2"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "derivatives"
+      ],
+      "difficulty": 4,
+      "answerHint": "分析导数符号或图像"
+    },
+    {
+      "number": 11,
+      "section": "选择题",
+      "prompt": "设B是椭圆C:\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1(a>b>0)上顶点，若C上的任意一点P都满足|PB|\\le 2b，则C的离心率的取值范围是（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "[\\frac{\\sqrt{2}}{2},1)"
+        },
+        {
+          "label": "B",
+          "text": "[\\frac{1}{2},1)"
+        },
+        {
+          "label": "C",
+          "text": "(0,\\frac{\\sqrt{2}}{2}]"
+        },
+        {
+          "label": "D",
+          "text": "(0,\\frac{1}{2}]"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 4,
+      "answerHint": "转化为二次函数最值"
+    },
+    {
+      "number": 12,
+      "section": "选择题",
+      "prompt": "设a=2\\ln 1.01，b=\\ln 1.02，c=\\sqrt{1.04}-1．则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "a<b<c"
+        },
+        {
+          "label": "B",
+          "text": "b<c<a"
+        },
+        {
+          "label": "C",
+          "text": "b<a<c"
+        },
+        {
+          "label": "D",
+          "text": "c<a<b"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "exp-log",
+        "func-concept"
+      ],
+      "difficulty": 5,
+      "answerHint": "构造函数比较大小"
+    },
+    {
+      "number": 13,
+      "section": "选择题",
+      "prompt": "已知双曲线C:\\frac{x^2}{m}-y^2=1(m>0)的一条渐近线为\\sqrt{3}x+y=0，则C的焦距为_________．",
+      "type": "choice",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 2,
+      "answerHint": "由渐近线求m"
+    },
+    {
+      "number": 14,
+      "section": "选择题",
+      "prompt": "已知向量\\vec{a}=(3,1)，\\vec{b}=(1,0)，\\vec{c}=\\vec{a}+k\\vec{b}，若\\vec{a}\\perp\\vec{c}，则k=__________．",
+      "type": "choice",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "vectors-app"
+      ],
+      "difficulty": 1,
+      "answerHint": "垂直数量积为0"
+    },
+    {
+      "number": 15,
+      "section": "选择题",
+      "prompt": "记\\triangle ABC的内角A，B，C的对边分别为a，b，c，面积为\\sqrt{3}，B=60^\\circ，a^2+c^2=3ac，则b=________．",
+      "type": "choice",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric"
+      ],
+      "difficulty": 3,
+      "answerHint": "面积公式和余弦定理"
+    },
+    {
+      "number": 16,
+      "section": "选择题",
+      "prompt": "以图①为正视图，在图②③④⑤中选两个分别作为侧视图和俯视图，组成某个三棱锥的三视图，则所选侧视图和俯视图的编号依次为_________（写出符合要求的一组答案即可）．",
+      "type": "choice",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry"
+      ],
+      "difficulty": 3,
+      "answerHint": "根据正视图想象"
+    },
+    {
+      "number": 17,
+      "section": "填空题",
+      "prompt": "某厂研制了一种生产高精产品的设备，为检验新设备生产产品的某项指标有无提高，用一台旧设备和一台新设备各生产了10件产品，得到各件产品该项指标数据如下：\\n旧设备：9.8,10.3,10.0,10.2,9.9,9.8,10.0,10.1,10.2,9.7\\n新设备：10.1,10.4,10.1,10.0,10.1,10.3,10.6,10.5,10.4,10.5\\n旧设备和新设备生产产品的该项指标的样本平均数分别记为\\bar{x}和\\bar{y}，样本方差分别记为s_1^2和s_2^2．\\n（1）求\\bar{x}，\\bar{y}，s_1^2，s_2^2；\\n（2）判断新设备生产产品的该项指标的均值较旧设备是否有显著提高（如果\\bar{y}-\\bar{x}\\ge 2\\sqrt{\\frac{s_1^2+s_2^2}{10}}，则认为新设备生产产品的该项指标的均值较旧设备有显著提高，否则不认为有显著提高）．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "statistics",
+        "data-analysis"
+      ],
+      "difficulty": 3,
+      "answerHint": "计算平均数方差并比较"
+    },
+    {
+      "number": 18,
+      "section": "解答题",
+      "prompt": "如图，四棱锥底面是矩形，底面，，为的中点，且．\n（1）求；\n（2）求二面角的正弦值．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求；"
+        },
+        {
+          "number": 2,
+          "text": "求二面角的正弦值．"
+        }
+      ],
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2021年高考数学试卷（理）（_q18_image114.png"
+      ]
+    },
+    {
+      "number": 19,
+      "section": "填空题",
+      "prompt": "记S_n为数列\\{a_n\\}的前n项和，b_n为数列\\{S_n\\}的前n项积，已知\\frac{1}{S_n}+\\frac{1}{b_n}=2．\\n（1）证明：数列\\{b_n\\}是等差数列;\\n（2）求\\{a_n\\}的通项公式．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 4,
+      "answerHint": "利用递推关系"
+    },
+    {
+      "number": 20,
+      "section": "填空题",
+      "prompt": "设函数f(x)=\\ln(a-x)，已知x=0是函数y=xf(x)的极值点．\\n（1）求a；\\n（2）设函数g(x)=\\frac{x+f(x)}{xf(x)}．证明:g(x)<1．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "derivatives",
+        "exp-log"
+      ],
+      "difficulty": 5,
+      "answerHint": "求导找极值点，构造函数证明"
+    },
+    {
+      "number": 21,
+      "section": "填空题",
+      "prompt": "已知抛物线C:x^2=2py(p>0)焦点为F，且F与圆M:x^2+(y+4)^2=1上点的距离的最小值为4．\\n（1）求p；\\n（2）若点P在M上，PA,PB是C的两条切线，A,B是切点，求\\triangle PAB面积的最大值．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections",
+        "derivatives"
+      ],
+      "difficulty": 5,
+      "answerHint": "利用导数求切线，联立求面积"
+    },
+    {
+      "number": 22,
+      "section": "填空题",
+      "prompt": "在直角坐标系xOy中，\\odot C的圆心为C(2,1)，半径为1．\\n（1）写出\\odot C的一个参数方程;\\n（2）过点F(4,1)作\\odot C的两条切线．以坐标原点为极点，x轴正半轴为极轴建立极坐标系，求这两条切线的极坐标方程．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "lines-circles"
+      ],
+      "difficulty": 3,
+      "answerHint": "参数方程形式，极坐标转化"
+    },
+    {
+      "number": 23,
+      "section": "填空题",
+      "prompt": "已知函数f(x)=|x-a|+|x+3|．\\n（1）当a=1时，求不等式f(x)\\ge 6的解集;\\n（2）若f(x)>-a，求a的取值范围．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "quadratic-ineq"
+      ],
+      "difficulty": 3,
+      "answerHint": "分段讨论或利用绝对值几何意义"
+    }
+  ]
+}

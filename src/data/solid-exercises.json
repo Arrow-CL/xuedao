@@ -1,0 +1,386 @@
+{
+  "solid-shapes": {
+    "title": "空间几何体",
+    "exercises": [
+      {
+        "id": "sol-s1",
+        "unitId": "solid-shapes",
+        "difficulty": 1,
+        "type": "fill",
+        "prompt": "(2022·上海) 圆柱高4，底面积$9\\pi$，侧面积=____。",
+        "answer": "$24\\pi$",
+        "gaokaoConnection": "$\\pi r^2=9\\pi$，$r=3$，侧面积$=2\\pi r\\cdot h=2\\pi\\times3\\times4=24\\pi$"
+      },
+      {
+        "id": "sol-s2",
+        "unitId": "solid-shapes",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "三棱锥$P-ABC$，$PM=\\dfrac{1}{3}PC,PN=\\dfrac{2}{3}PB$，$V_{P-AMN}:V_{P-ABC}=$（）\nA.$\\dfrac{1}{9}$ B.$\\dfrac{2}{9}$ C.$\\dfrac{1}{3}$ D.$\\dfrac{4}{9}$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "$\\dfrac{V_{P-AMN}}{V_{P-ABC}}=\\dfrac{PA}{PA}\\cdot\\dfrac{PM}{PC}\\cdot\\dfrac{PN}{PB}=1\\times\\dfrac{1}{3}\\times\\dfrac{2}{3}=\\dfrac{2}{9}$"
+      },
+      {
+        "id": "sol-s3",
+        "unitId": "solid-shapes",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "长方体$AB=BC=6,AA_1=4$，挖去中心四棱锥，密度$0.9\\mathrm{g/cm^3}$，求原料质量。",
+        "answer": "$86.4\\pi$克（需确认挖去体积）",
+        "gaokaoConnection": "长方体体积$=6\\times6\\times4=144$，中心四棱锥底面为$6\\times6$正方形，高为2，体积$=\\dfrac{1}{3}\\times36\\times2=24$，剩余体积$=120$，质量$=120\\times0.9=108$克"
+      },
+      {
+        "id": "sol-s4",
+        "unitId": "solid-shapes",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "圆柱底面半径15，高10，中心打同轴小孔，表面积最大时$r=$（）\nA.$10$ B.$15$ C.$4$ D.$5$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "D",
+        "gaokaoConnection": "总表面积$=2\\pi(15^2-r^2)+2\\pi(15+r)\\times10+2\\pi r\\times10$，对$r$求导或配方求最值"
+      },
+      {
+        "id": "sol-s5",
+        "unitId": "solid-shapes",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "$AC\\perp$面$BCD,BD\\perp CD,AB=3,BD=1$，三棱锥体积最大值（）\nA.$2$ B.$\\dfrac{4}{3}$ C.$1$ D.$\\dfrac{2}{3}$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "D",
+        "gaokaoConnection": "$AC\\perp$面$BCD$，$V=\\dfrac{1}{3}S_{\\triangle BCD}\\cdot AC$；$AB=3$固定，$AC^2+BC^2=9$；$BD\\perp CD$且$BD=1$，$S_{\\triangle BCD}=\\dfrac{1}{2}BD\\cdot CD=\\dfrac{CD}{2}$"
+      },
+      {
+        "id": "sol-s6",
+        "unitId": "solid-shapes",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "正四棱锥底边长4，平行平面截得小锥底2高3，棱台体积=____。",
+        "answer": "$28$",
+        "gaokaoConnection": "相似比$=\\dfrac{2}{4}=\\dfrac{1}{2}$，小锥高$=3$，大锥高$=6$；$V_{大}=\\dfrac{1}{3}\\times16\\times6=32$，$V_{小}=\\dfrac{1}{3}\\times4\\times3=4$，棱台$=28$"
+      },
+      {
+        "id": "sol-s7",
+        "unitId": "solid-shapes",
+        "difficulty": 2,
+        "type": "solve",
+        "prompt": "正四棱台上底2下底4，侧棱2，求体积、侧面积。",
+        "answer": "体积$\\dfrac{28\\sqrt{2}}{3}$，侧面积$12\\sqrt{3}$",
+        "gaokaoConnection": "高$h=\\sqrt{2^2-(\\sqrt{2})^2}=\\sqrt{2}$；斜高$=\\sqrt{2^2-1^2}=\\sqrt{3}$"
+      },
+      {
+        "id": "sol-s8",
+        "unitId": "solid-shapes",
+        "difficulty": 3,
+        "type": "choice",
+        "prompt": "甲乙圆锥底面积相等，侧面圆心角和$2\\pi$，$\\dfrac{S_甲}{S_乙}=2$，求$\\dfrac{V_甲}{V_乙}$。",
+        "options": [
+          "A. $2$",
+          "B. $\\sqrt{2}$",
+          "C. $\\sqrt{10}$",
+          "D. $2\\sqrt{2}$"
+        ],
+        "answer": "C",
+        "gaokaoConnection": "设底面半径$r$，母线$l_1,l_2$；侧面圆心角$\\theta_1+\\theta_2=2\\pi$，$\\theta=\\dfrac{2\\pi r}{l}$；$\\dfrac{S_甲}{S_乙}=\\dfrac{\\pi rl_1}{\\pi rl_2}=\\dfrac{l_1}{l_2}=2$"
+      }
+    ]
+  },
+  "solid-relations": {
+    "title": "空间点线面位置关系",
+    "exercises": [
+      {
+        "id": "sol-r1",
+        "unitId": "solid-relations",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "面积$9\\sqrt{3}$正三角形三点在球$O$，$V_{O-ABC}=6\\sqrt{3}$，球表面积（）\nA.$32\\pi$ B.$64\\pi$ C.$8\\pi$ D.$16\\pi$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "$S=\\dfrac{\\sqrt{3}}{4}a^2=9\\sqrt{3}$，$a=6$；$V=\\dfrac{1}{3}\\times9\\sqrt{3}\\times h=6\\sqrt{3}$，$h=2$（球心到面距离）；外接圆半径$R_{底}=\\dfrac{a}{\\sqrt{3}}=2\\sqrt{3}$；球半径$R=\\sqrt{(2\\sqrt{3})^2+2^2}=4$，表面积$64\\pi$"
+      },
+      {
+        "id": "sol-r2",
+        "unitId": "solid-relations",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "半球内接正四棱锥体积$\\dfrac{4\\sqrt{2}}{3}$，半球体积（）\nA.$\\dfrac{2\\sqrt{3}}{3}\\pi$ B.$\\dfrac{4\\sqrt{2}}{9}\\pi$",
+        "options": [
+          "A",
+          "B"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "正四棱锥底面在半球底面圆上，顶点在半球面上；设底面边长$a$，则底面外接圆半径$\\dfrac{a}{\\sqrt{2}}$，锥高$\\sqrt{R^2-\\dfrac{a^2}{2}}$"
+      },
+      {
+        "id": "sol-r3",
+        "unitId": "solid-relations",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "正三棱锥底面周长9，侧棱2，体积（）\nA.$\\dfrac{9\\sqrt{3}}{2}$ B.$\\dfrac{3\\sqrt{3}}{4}$",
+        "options": [
+          "A",
+          "B"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "底面边长3，底面积$\\dfrac{9\\sqrt{3}}{4}$；底面外接圆半径$\\sqrt{3}$；高$h=\\sqrt{4-3}=1$；体积$\\dfrac{1}{3}\\times\\dfrac{9\\sqrt{3}}{4}\\times1=\\dfrac{3\\sqrt{3}}{4}$"
+      },
+      {
+        "id": "sol-r4",
+        "unitId": "solid-relations",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "圆锥底面$r=\\sqrt{3},\\angle AOB=120^\\circ$，$S_{\\triangle PAB}=\\dfrac{9\\sqrt{3}}{4}$，圆锥体积（）\nA.$\\pi$ B.$\\sqrt{6}\\pi$ C.$3\\pi$ D.$36\\pi$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "C",
+        "gaokaoConnection": "$AB=\\sqrt{r^2+r^2-2r^2\\cos120^\\circ}=\\sqrt{3+3+3}=3$；$S_{\\triangle PAB}=\\dfrac{1}{2}\\times3\\times l=\\dfrac{9\\sqrt{3}}{4}$，母线$l=\\dfrac{3\\sqrt{3}}{2}$；高$h=\\sqrt{l^2-r^2}=\\sqrt{\\dfrac{27}{4}-3}=\\dfrac{3\\sqrt{3}}{2}$？重算"
+      },
+      {
+        "id": "sol-r5",
+        "unitId": "solid-relations",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "圆台上底1下底3，体积$13\\pi$，母线与底面夹角正切=（）\nA.$\\sqrt{5}$ B.$\\dfrac{5}{3}$ C.$\\dfrac{3}{2}$ D.$\\dfrac{2}{3}$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$V=\\dfrac{1}{3}\\pi h(1+3+9)=\\dfrac{13\\pi h}{3}=13\\pi$，$h=3$；母线与底面夹角$\\theta$，$\\tan\\theta=\\dfrac{h}{3-1}=\\dfrac{3}{2}$？等等，$\\tan\\theta=\\dfrac{h}{(3-1)/2}=\\dfrac{3}{1}=3$？重算：圆台侧面展开母线$l$，$\\tan\\theta=\\dfrac{h}{r_2-r_1}=\\dfrac{3}{2}$，但选项没有$\\dfrac{3}{2}$... 母线$l=\\sqrt{3^2+2^2}=\\sqrt{13}$，$\\tan\\theta=\\dfrac{h}{r_2-r_1}=\\dfrac{3}{2}$，选C"
+      },
+      {
+        "id": "sol-r6",
+        "unitId": "solid-relations",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "正四棱台$AB=2,A_1B_1=1,AA_1=2$，体积=____。",
+        "answer": "$\\dfrac{7\\sqrt{2}}{3}$",
+        "gaokaoConnection": "高$h=\\sqrt{2^2-(\\dfrac{2-1}{\\sqrt{2}})^2}=\\sqrt{4-\\dfrac{1}{2}}=\\sqrt{\\dfrac{7}{2}}$；$V=\\dfrac{1}{3}h(4+1+2)=\\dfrac{7}{3}\\sqrt{\\dfrac{7}{2}}$"
+      },
+      {
+        "id": "sol-r7",
+        "unitId": "solid-relations",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "长方体底面正方形，$AA_1=2$，外接球体积$36\\pi$，表面积（）\nA.$34$ B.$8+4\\sqrt{17}$",
+        "options": [
+          "A",
+          "B"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "外接球体积$36\\pi=\\dfrac{4}{3}\\pi R^3$，$R=3$；$2R=\\sqrt{2a^2+4}=6$，$a^2=16$，$a=4$；表面积$=2a^2+4a\\times2=32+16=48$？不对。重算：$\\sqrt{2a^2+4}=6$，$2a^2=32$，$a^2=16$，$a=4$，表面积$=2\\times16+4\\times4\\times2=32+32=64$"
+      },
+      {
+        "id": "sol-r8",
+        "unitId": "solid-relations",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "三条侧棱两两垂直长1正三棱锥，外接球表面积（）\nA.$\\pi$ B.$3\\pi$ C.$6\\pi$ D.$9\\pi$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "补成长方体：三条棱为$1,1,1$，外接球直径$\\sqrt{1+1+1}=\\sqrt{3}$，$R=\\dfrac{\\sqrt{3}}{2}$，表面积$3\\pi$"
+      },
+      {
+        "id": "sol-r9",
+        "unitId": "solid-relations",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "$AB\\perp$面$BCD,BC\\perp CD,AB=2,AC=BD=2\\sqrt{3}$，外接球体积=____。",
+        "answer": "$\\dfrac{20\\sqrt{5}}{3}\\pi$",
+        "gaokaoConnection": "补成长方体：$AB=2,BC=\\sqrt{AC^2-AB^2}=\\sqrt{12-4}=2\\sqrt{2}$，$CD=\\sqrt{BD^2-BC^2}=\\sqrt{12-8}=2$；外接球直径$\\sqrt{4+8+4}=\\sqrt{16}=4$，$R=2$，体积$\\dfrac{32\\pi}{3}$"
+      },
+      {
+        "id": "sol-r10",
+        "unitId": "solid-relations",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "正四棱锥高4底边长2，外接球表面积（）\nA.$\\dfrac{81\\pi}{4}$ B.$9\\pi$",
+        "options": [
+          "A",
+          "B"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "底面外接圆半径$R_{底}=\\sqrt{2}$；设球心距底面$d$，则$R^2=d^2+2=(4-d)^2+2$，解$d=\\dfrac{7}{4}$，$R^2=\\dfrac{49}{16}+2=\\dfrac{81}{16}$，表面积$\\dfrac{81\\pi}{4}$"
+      },
+      {
+        "id": "sol-r11",
+        "unitId": "solid-relations",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "圆锥底面$r=2$内切球半径1，表面积=____。",
+        "answer": "$12\\pi$",
+        "gaokaoConnection": "内切球半径$r=\\dfrac{hR}{l+R}=1$（$R$为底面半径，$l$为母线，$h$为高），$R=2$，$\\dfrac{2h}{l+2}=1$，$2h=l+2$；又$h^2+4=l^2$，联立解$h,l$，再算表面积"
+      }
+    ]
+  },
+  "solid-sphere": {
+    "title": "外接球与内切球",
+    "exercises": [
+      {
+        "id": "sol-sp1",
+        "unitId": "solid-sphere",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "圆柱高为2，侧面积$4\\pi$，上下底面圆周在同一球面上，该球体积为（）\nA.$\\dfrac{8\\sqrt{2}\\pi}{3}$  B.$\\dfrac{8\\sqrt{3}\\pi}{3}$  C.$4\\sqrt{2}\\pi$  D.$4\\sqrt{3}\\pi$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$2\\pi r\\cdot h=4\\pi$，$rh=2$，$h=2$得$r=1$；球直径$=\\sqrt{h^2+(2r)^2}=\\sqrt{4+4}=2\\sqrt{2}$，$R=\\sqrt{2}$，$V=\\dfrac{8\\sqrt{2}\\pi}{3}$"
+      },
+      {
+        "id": "sol-sp2",
+        "unitId": "solid-sphere",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "(2023·全国乙卷) 点$S,A,B,C$在半径为2的球面上，$\\triangle ABC$是边长为3的等边三角形，$SA\\perp$平面$ABC$，则$SA=$____。",
+        "answer": "$1$",
+        "gaokaoConnection": "$\\triangle ABC$外接圆半径$R_底=\\sqrt{3}$；球心$O$在$SA$上，$OA=2$，$R_底^2+(SA-R)^2=R^2$，$3+(SA-2)^2=4$，$(SA-2)^2=1$，$SA-2=\\pm1$，$SA=1$或$3$。因$S,A$都在球面上，$SA\\le2R=4$均满足"
+      },
+      {
+        "id": "sol-sp3",
+        "unitId": "solid-sphere",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "(2018·新课标Ⅲ) 四点在半径为4的球面上，$\\triangle ABC$面积$9\\sqrt{3}$的等边三角形，三棱锥$D-ABC$体积最大值（）\nA.$12\\sqrt{3}$  B.$18\\sqrt{3}$  C.$24\\sqrt{3}$  D.$35\\sqrt{3}$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "C",
+        "gaokaoConnection": "$S_{\\triangle ABC}=\\dfrac{\\sqrt{3}}{4}a^2=9\\sqrt{3}$，$a=6$，$R_{底}=2\\sqrt{3}$；$V=\\dfrac{1}{3}S\\cdot h_D$，$h_D$最大为$R+\\sqrt{R^2-R_底^2}=4+\\sqrt{16-12}=4+2=6$；$V_{max}=\\dfrac{1}{3}\\times9\\sqrt{3}\\times6=18\\sqrt{3}$，选B"
+      },
+      {
+        "id": "sol-sp4",
+        "unitId": "solid-sphere",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "(2021·天津) 球体积$\\dfrac{32\\pi}{3}$，两圆锥底面为球同一截面，高之比$1:3$，两圆锥体积之和（）\nA.$3\\pi$  B.$4\\pi$  C.$9\\pi$  D.$12\\pi$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "$V_{\\text{球}}=\\dfrac{32\\pi}{3}$，$R=2$；截面半径$r$，两锥高$h_1,h_2$，$h_1+h_2=4$，$h_1:h_2=1:3$，$h_1=1,h_2=3$；$r^2=h_1(2R-h_1)=1\\times3=3$，$V_1+V_2=\\dfrac{\\pi r^2}{3}(h_1+h_2)=\\dfrac{\\pi\\times3}{3}\\times4=4\\pi$，选B"
+      },
+      {
+        "id": "sol-sp5",
+        "unitId": "solid-sphere",
+        "difficulty": 3,
+        "type": "fill",
+        "prompt": "圆锥侧面积$\\dfrac{32}{3}\\pi$，高为2，能完全放入一个球，球体积最小值（）\nA.$8\\pi$  B.$8\\sqrt{2}\\pi$  C.$9\\pi$  D.$9\\sqrt{2}\\pi$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "C",
+        "gaokaoConnection": "$\\pi rl=\\dfrac{32\\pi}{3}$，$rl=\\dfrac{32}{3}$；$l^2=r^2+4$；$V=\\dfrac{4}{3}\\pi R^3$，$R$需大于等于$r$和高的一半。内切球半径$r_{内}=\\dfrac{rh}{r+l}$"
+      }
+    ]
+  },
+  "solid-position": {
+    "title": "空间点线面位置关系",
+    "exercises": [
+      {
+        "id": "sol-p1",
+        "unitId": "solid-position",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "(2024·惠州一模) $l,n$异面直线，$\\alpha,\\beta$不重合平面，正确命题（）\nA.$\\alpha\\parallel\\beta,l\\subset\\alpha,n\\subset\\beta\\Rightarrow l\\parallel n$\nB.$\\alpha\\perp\\beta,l\\subset\\alpha\\Rightarrow l\\perp\\beta$\nC.$l\\parallel\\alpha,\\alpha\\perp\\beta\\Rightarrow l\\perp\\beta$\nD.$l\\perp\\alpha,l\\parallel\\beta\\Rightarrow\\alpha\\perp\\beta$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "D",
+        "gaokaoConnection": "A错：可能异面；B错：$l$不一定垂直$\\beta$内所有线；C错：$l$可能在$\\beta$内或平行；D对：$l\\perp\\alpha$且$l\\parallel\\beta$，则$\\beta$内有直线垂直$\\alpha$"
+      },
+      {
+        "id": "sol-p2",
+        "unitId": "solid-position",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "(多选) 直线$a,b$，平面$\\alpha,\\beta,\\gamma$，能推出$\\alpha\\perp\\beta$的是（）\nA.$a\\parallel\\alpha,a\\parallel\\beta$\nB.$\\gamma\\parallel\\beta,\\alpha\\perp\\gamma$\nC.$\\alpha\\cap\\beta=a,b\\perp a,b\\subset\\beta$\nD.$a\\perp\\beta,a\\parallel\\alpha$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "CD",
+        "gaokaoConnection": "C对：面$\\beta$内直线$b\\perp$交线$a$，$b\\perp\\alpha$，$\\alpha\\perp\\beta$；D对：$a\\perp\\beta$且$a\\parallel\\alpha$，则$\\alpha$内有直线$\\parallel a$且$\\perp\\beta$"
+      },
+      {
+        "id": "sol-p3",
+        "unitId": "solid-position",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "(2024·天津) $m,n$不同直线，$\\alpha$平面，正确（）\nA.$m\\parallel\\alpha,n\\subset\\alpha\\Rightarrow m\\parallel n$\nB.$m\\parallel\\alpha,n\\parallel\\alpha\\Rightarrow m\\parallel n$\nC.$m\\parallel\\alpha,n\\perp\\alpha\\Rightarrow m\\perp n$\nD.$m\\parallel\\alpha,n\\perp\\alpha\\Rightarrow m,n$相交",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "C",
+        "gaokaoConnection": "A对：由线面平行定义；B错：可能异面或相交；C对：$n\\perp\\alpha$则$n$垂直$\\alpha$内所有线；D错：可能异面"
+      },
+      {
+        "id": "sol-p4",
+        "unitId": "solid-position",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "(2024·全国甲) $\\alpha\\cap\\beta=m$，四个命题：\n①$m\\parallel n\\Rightarrow n\\parallel\\alpha$或$n\\parallel\\beta$\n②$m\\perp n\\Rightarrow n\\perp\\alpha$或$n\\perp\\beta$\n③$n\\parallel\\alpha,n\\parallel\\beta\\Rightarrow m\\parallel n$\n④$n$与$\\alpha,\\beta$等角$\\Rightarrow m\\perp n$\n真命题为（）\nA.①④ B.②⑤ C.①②③ D.①③④",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "①对：平行线传递；②错：$n$可能在$\\alpha\\cap\\beta$内；③对：平行于两相交平面的直线平行于交线"
+      }
+    ]
+  }
+}

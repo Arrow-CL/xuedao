@@ -1,0 +1,145 @@
+{
+  "module": "probability",
+  "items": [
+    {
+      "id": "gk-prob-1",
+      "type": "probability",
+      "difficulty": 3,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "掷两枚骰子，点数之和为 7 的概率为？",
+      "answer": 6,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "总结果数 6×6=36",
+          "expectedValue": 36
+        },
+        {
+          "key": "s2",
+          "description": "和为7有6种：(1,6)(2,5)(3,4)(4,3)(5,2)(6,1)",
+          "expectedValue": 6
+        },
+        {
+          "key": "s3",
+          "description": "P=6/36=1/6",
+          "expectedValue": 6
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "probability",
+      "chapters": [
+        "probability"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "gk-prob-2",
+      "type": "expected",
+      "difficulty": 4,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "随机变量 X~B(4,0.5)，求 E(X)=np",
+      "answer": 2,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "二项分布期望 E(X)=np",
+          "expectedValue": 1
+        },
+        {
+          "key": "s2",
+          "description": "n=4,p=0.5, E(X)=2",
+          "expectedValue": 2
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "probability",
+      "chapters": [
+        "probability"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pb-3",
+      "type": "classical",
+      "difficulty": 3,
+      "prompt": "袋中3红2白，随机摸1球是红球的概率？",
+      "answer": 0.6,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "P = 红球数/总球数 = 3/5",
+          "expectedValue": 0.6
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "probability",
+      "chapters": [
+        "probability"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pb-4",
+      "type": "independent",
+      "difficulty": 4,
+      "prompt": "P(A)=0.5, P(B)=0.4, P(A∩B)=0.2，A和B是否独立？",
+      "answer": 1,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "若独立则P(A∩B)=P(A)*P(B)",
+          "expectedValue": 0.2
+        },
+        {
+          "key": "s2",
+          "description": "0.5*0.4=0.2=P(A∩B)，所以独立",
+          "expectedValue": 1
+        }
+      ],
+      "tags": [
+        "concept-confusion"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "probability",
+      "chapters": [
+        "probability"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    }
+  ]
+}

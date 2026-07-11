@@ -1,0 +1,145 @@
+{
+  "module": "space-vectors",
+  "items": [
+    {
+      "id": "gk-sv-1",
+      "type": "space-volume",
+      "difficulty": 3,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "球的半径 R=3，球的体积 V（保留 π 的系数）为？",
+      "answer": 36,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "V=4πR³/3",
+          "expectedValue": 1
+        },
+        {
+          "key": "s2",
+          "description": "V=4π·27/3=36π",
+          "expectedValue": 36
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "space-vectors",
+      "chapters": [
+        "space-vectors"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "gk-sv-2",
+      "type": "space-vec",
+      "difficulty": 4,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "a=(1,2,2)，求 |a|",
+      "answer": 3,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "|a|=\\sqrt{1²+2²+2²}",
+          "expectedValue": 1
+        },
+        {
+          "key": "s2",
+          "description": "=√9=3",
+          "expectedValue": 3
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "space-vectors",
+      "chapters": [
+        "space-vectors"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "sv-3",
+      "type": "angle",
+      "difficulty": 4,
+      "prompt": "a=(1,0,1), b=(0,1,0)，求cos<a,b>。",
+      "answer": 0,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "cos_theta = (a点乘b)/(|a||b|)",
+          "formulaKey": "cos-angle"
+        },
+        {
+          "key": "s2",
+          "description": "a点乘b=0，cos=0",
+          "expectedValue": 0
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "space-vectors",
+      "chapters": [
+        "space-vectors"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "sv-4",
+      "type": "coordinate",
+      "difficulty": 4,
+      "prompt": "点A(1,2,3), B(4,5,6)，求向量AB的坐标。",
+      "answer": 3,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "AB = (4-1, 5-2, 6-3)",
+          "expectedValue": 3
+        },
+        {
+          "key": "s2",
+          "description": "AB = (3,3,3)",
+          "expectedValue": 3
+        }
+      ],
+      "tags": [
+        "calculation"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "space-vectors",
+      "chapters": [
+        "space-vectors"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    }
+  ]
+}

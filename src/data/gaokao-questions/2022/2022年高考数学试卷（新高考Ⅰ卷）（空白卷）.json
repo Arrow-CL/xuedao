@@ -1,0 +1,548 @@
+{
+  "year": 2022,
+  "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+  "totalQuestions": 22,
+  "questions": [
+    {
+      "number": 1,
+      "section": "选择题",
+      "prompt": "若集合，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sets-logic"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 2,
+      "section": "选择题",
+      "prompt": "已知函数f(x)=e^x+ax和g(x)=ax-\\ln x有相同的最小值．\n  Sub: (1) 求a；\n(2) 证明：存在直线y=b，其与两条曲线y=f(x)和y=g(x)共有三个不同的交点，并且从左到右的三个交点的横坐标成等差数列．",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "—"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "1"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "derivatives"
+      ],
+      "difficulty": 5
+    },
+    {
+      "number": 3,
+      "section": "选择题",
+      "prompt": "在中，点D在边AB上，．记，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2022年高考数学试卷（新高考_q3_image20.png"
+      ]
+    },
+    {
+      "number": 4,
+      "section": "选择题",
+      "prompt": "南水北调工程缓解了北方一些地区水资源短缺问题，其中一部分水蓄入某水库.已知该水库水位为海拔时，相应水面的面积为；水位为海拔时，相应水面的面积为，将该水库在这两个水位间的形状看作一个棱台，则该水库水位从海拔上升到时，增加的水量约为（）（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 5,
+      "section": "选择题",
+      "prompt": "从2至8的7个整数中随机取2个不同的数，则这2个数互质的概率为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "probability"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 6,
+      "section": "选择题",
+      "prompt": "已知椭圆\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1，C的上顶点为A，两个焦点为F_1，F_2，离心率为\\frac{1}{2}．过F_1且垂直于AF_2的直线与C交于D，E两点，|DE| = 6，则\\triangle ADE的周长是________________．",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 5
+    },
+    {
+      "number": 7,
+      "section": "选择题",
+      "prompt": "设，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 8,
+      "section": "选择题",
+      "prompt": "已知正四棱锥的侧棱长为l，其各顶点都在同一球面上.若该球的体积为，且，则该正四棱锥体积的取值范围是（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "quadratic-ineq",
+        "solid-geometry"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 9,
+      "section": "多选题",
+      "prompt": "已知正方体，则（    ）",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "直线与所成的角为B. 直线与所成的角为"
+        },
+        {
+          "label": "C",
+          "text": "直线与平面所成角为D. 直线与平面ABCD所成的角为"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 10,
+      "section": "多选题",
+      "prompt": "一医疗团队为研究某地的一种地方性疾病与当地居民的卫生习惯（卫生习惯分为良好和不够良好两类）的关系，在已患该疾病的病例中随机调查了100例（称为病例组），同时在未患该疾病的���群中随机调查了100人（称为对照组），得到如下数据：\n\\begin{array}{c|cc}\n & \\text{不够良好} & \\text{良好} \\\\ \\hline\n\\text{病例组} & 40 & 60 \\\\\n\\text{对照组} & 10 & 90\n\\end{array}\n  Sub: (1) 能否有99%的把握认为患该疾病群体与未患该疾病群体的卫生习惯有差异？\n(2) 从该地的人群中任选一人，A表示事件“选到的人卫生习惯不够良好”，B表示事件“选到的人患有该疾病”．\\frac{P(B|A)}{P(B|\\bar{A})}与\\frac{P(A|B)}{P(\\bar{A}|B)}的比值是卫生习惯不够良好对患该疾病风险程度的一项度量指标，记该指标为R．\n（ⅰ）证明：R = \\frac{P(A|B)}{P(\\bar{A}|B)} \\cdot \\frac{P(\\bar{A}|\\bar{B})}{P(A|\\bar{B})}；\n（ⅱ）利用该调查数据，给出P(A|B)，P(A|\\bar{B})的估计值，并利用（ⅰ）的结果给出R的估计值．\n附：K^2 = \\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}，P(K^2 \\ge 6.635) = 0.010",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "有两个极值点"
+        },
+        {
+          "label": "B",
+          "text": "有三个零点 |"
+        },
+        {
+          "label": "C",
+          "text": "点是曲线的对称中心"
+        },
+        {
+          "label": "D",
+          "text": "直线是曲线的切线"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "statistics",
+        "probability"
+      ],
+      "difficulty": 4
+    },
+    {
+      "number": 11,
+      "section": "多选题",
+      "prompt": "已知O为坐标原点，点在抛物线上，过点的直线交C于P，Q两点，则（    ）",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "C的准线为B. 直线AB与C相切"
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2022年高考数学试卷（新高考_q11_image66.png"
+      ]
+    },
+    {
+      "number": 12,
+      "section": "多选题",
+      "prompt": "已知函数及其导函数的定义域均为，记，若，均为偶函数，则（    ）",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 13,
+      "section": "填空题",
+      "prompt": "的展开式中的系数为________________（用数字作答）．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 14,
+      "section": "填空题",
+      "prompt": "写出与圆和都相切的一条直线的方程________________．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "lines-circles"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 15,
+      "section": "填空题",
+      "prompt": "若曲线有两条过坐标原点的切线，则a的取值范围是________________．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "quadratic-ineq",
+        "lines-circles"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 16,
+      "section": "填空题",
+      "prompt": "已知椭圆，C的上顶点为A，两个焦点为，，离心率为．过且垂直于的直线与C交于D，E两点，，则的周长是________________．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "vectors-app",
+        "conic-sections"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 17,
+      "section": "解答题",
+      "prompt": "记为数列的前n项和，已知是公差为的等差数列．\n（1）求的通项公式；\n（2）证明：．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求的通项公式；"
+        },
+        {
+          "number": 2,
+          "text": "证明：．"
+        }
+      ],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 18,
+      "section": "解答题",
+      "prompt": "记的内角A，B，C的对边分别为a，b，c，已知．\n（1）若，求B；\n（2）求的最小值．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "若，求B；"
+        },
+        {
+          "number": 2,
+          "text": "求的最小值．"
+        }
+      ],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 19,
+      "section": "解答题",
+      "prompt": "如图，直三棱柱的体积为4，的面积为．\n（1）求A到平面的距离；\n（2）设D为的中点，，平面平面，求二面角的正弦值．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求A到平面的距离；"
+        },
+        {
+          "number": 2,
+          "text": "设D为的中点，，平面平面，求二面角的正弦值．"
+        }
+      ],
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2022年高考数学试卷（新高考_q19_image94.png"
+      ]
+    },
+    {
+      "number": 20,
+      "section": "解答题",
+      "prompt": "一医疗团队为研究某地的一种地方性疾病与当地居民的卫生习惯（卫生习惯分为良好和不够良好两类）的关系，在已患该疾病的病例中随机调查了100例（称为病例组），同时在未患该疾病的人群中随机调查了100人（称为对照组），得到如下数据：\n不够良好\n良好\n病例组\n40\n60\n对照组\n10\n90\n（1）能否有99%的把握认为患该疾病群体与未患该疾病群体的卫生习惯有差异？\n（2）从该地的人群中任选一人，A表示事件“选到的人卫生习惯不够良好”，B表示事件“选到的人患有该疾病”．与的比值是卫生习惯不够良好对患该疾病风险程度的一项度量指标，记该指标为R．\n（ⅰ）证明：；\n（ⅱ）利用该调查数据，给出的估计值，并利用（ⅰ）的结果给出R的估计值．\n附，\n0050\n0.010\n0.001\nk",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "能否有99%的把握认为患该疾病群体与未患该疾病群体的卫生习惯有差异？"
+        },
+        {
+          "number": 2,
+          "text": "从该地的人群中任选一人，A表示事件“选到的人卫生习惯不够良好”，B表示事件“选到的人患有该疾病”．与的比值是卫生习惯不够良好对患该疾病风险程度的一项度量指标，记该指标为R．"
+        }
+      ],
+      "chapters": [
+        "probability"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2022年高考数学试卷（新高考_q20_image104.png"
+      ]
+    },
+    {
+      "number": 21,
+      "section": "解答题",
+      "prompt": "已知点在双曲线上，直线l交C于P，Q两点，直线的斜率之和为0．\n（1）求l的斜率；\n（2）若，求的面积．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求l的斜率；"
+        },
+        {
+          "number": 2,
+          "text": "若，求的面积．"
+        }
+      ],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 22,
+      "section": "解答题",
+      "prompt": "已知函数和有相同的最小值．\n（1）求a；\n（2）证明：存在直线，其与两条曲线和共有三个不同的交点，并且从左到右的三个交点的横坐标成等差数列．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求a；"
+        },
+        {
+          "number": 2,
+          "text": "证明：存在直线，其与两条曲线和共有三个不同的交点，并且从左到右的三个交点的横坐标成等差数列．"
+        }
+      ],
+      "chapters": [
+        "func-concept",
+        "sequences"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

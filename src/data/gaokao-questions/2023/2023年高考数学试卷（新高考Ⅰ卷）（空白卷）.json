@@ -1,0 +1,539 @@
+{
+  "year": 2023,
+  "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+  "totalQuestions": 22,
+  "questions": [
+    {
+      "number": 1,
+      "section": "选择题",
+      "prompt": "已知集合A=\\{x\\mid x^2-2x-3\\leq 0\\}，B=\\{x\\mid x>1\\}，则A\\cap B=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "—"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sets-logic"
+      ],
+      "difficulty": 1
+    },
+    {
+      "number": 2,
+      "section": "选择题",
+      "prompt": "已知z=\\frac{2i}{1+i}，则z+\\overline{z}=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "—"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "0"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "complex"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 3,
+      "section": "选择题",
+      "prompt": "已知向量\\vec{a}=(1,2)，\\vec{b}=(3,4)，若\\vec{a}\\perp(\\vec{a}+\\lambda\\vec{b})，则\\lambda=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "—"
+        },
+        {
+          "label": "B",
+          "text": "|"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "vectors-app"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 4,
+      "section": "选择题",
+      "prompt": "设函数f(x)=x^2-2ax+1在区间[1,3]上单调递减，则a的取值范围是（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "—"
+        },
+        {
+          "label": "B",
+          "text": "|"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 3
+    },
+    {
+      "number": 5,
+      "section": "选择题",
+      "prompt": "设椭圆的离心率分别为．若，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 6,
+      "section": "选择题",
+      "prompt": "过点(0,2)与圆x^2+y^2-4x+1=0相切两条直线的夹角为\\theta，则\\sin\\theta=（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "lines-circles"
+      ],
+      "difficulty": 4
+    },
+    {
+      "number": 7,
+      "section": "选择题",
+      "prompt": "记S_n为数列\\{a_n\\}的前n项和，设甲：\\{a_n\\}为等差数列；乙：\\{\\frac{S_n}{n}\\}为等差数列，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "甲是乙的充分条件但不是必��条件"
+        },
+        {
+          "label": "B",
+          "text": "甲是乙的必要条件但不是充分条件"
+        },
+        {
+          "label": "C",
+          "text": "甲是乙的充要条件"
+        },
+        {
+          "label": "D",
+          "text": "甲既不是乙的充分条件也不是乙的必要条件"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 3
+    },
+    {
+      "number": 8,
+      "section": "选择题",
+      "prompt": "已知，则（    ）．",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 9,
+      "section": "多选题",
+      "prompt": "有一组样本数据x_1,x_2,\\ldots,x_6，其中x_1是最小值，x_6是最大值，则（    ）",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "的平均数等于的平均数"
+        },
+        {
+          "label": "B",
+          "text": "的中位数等于的中位数"
+        },
+        {
+          "label": "C",
+          "text": "的标准差不小于的标准差"
+        },
+        {
+          "label": "D",
+          "text": "的极差不大于的极差"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "statistics"
+      ],
+      "difficulty": 3
+    },
+    {
+      "number": 10,
+      "section": "多选题",
+      "prompt": "噪声污染问题越来越受到重视．用声压级来度量��音的强弱，定义声压级L_p=20\\lg\\frac{p}{p_0}，其中常数p_0是听觉下限阈值，p是实际声压．下表为不同声源的声压级：\n声源\t与声源的距离\t声压级\n燃油汽车\t10\tL_1\n混合动力汽车\t10\tL_2\n电动汽车\t10\t40\n已知在距离燃油汽车、混合动力汽车、电动汽车10m处测得实际声压分别为p_1,p_2,p_3，则（    ）",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "—"
+        },
+        {
+          "label": "B",
+          "text": "|"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "exp-log"
+      ],
+      "difficulty": 5
+    },
+    {
+      "number": 11,
+      "section": "多选题",
+      "prompt": "已知函数定义域为\\mathbb{R}，f(x+y)+f(x-y)=f(x)f(y)，f(1)=1，则（    ）．",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "f(0)=0"
+        },
+        {
+          "label": "B",
+          "text": "f(2)=2"
+        },
+        {
+          "label": "C",
+          "text": "f(x)是偶函数"
+        },
+        {
+          "label": "D",
+          "text": "x=2为f(x)的极小值点"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 4
+    },
+    {
+      "number": 12,
+      "section": "多选题",
+      "prompt": "下列物体中，能够被整体放入棱长为1（单位：m）的正方体容器（容器壁厚度忽略不计）内的有（    ）",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "直径为\\sqrt{3}的球体"
+        },
+        {
+          "label": "B",
+          "text": "所有棱长均为\\sqrt{2}的四面体"
+        },
+        {
+          "label": "C",
+          "text": "底面直径为1，高为1的圆柱体"
+        },
+        {
+          "label": "D",
+          "text": "底面直径为\\sqrt{2}，高为\\frac{1}{2}的圆柱体"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry"
+      ],
+      "difficulty": 3
+    },
+    {
+      "number": 13,
+      "section": "填空题",
+      "prompt": "某学校开设了4门体育类选修课和4门艺术类选修课，学生需从这8门课中选修2门或3门课，并且每类选修课至少选修1门，则不同的选课方案共有________种（用数字作答）．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "counting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 14,
+      "section": "填空题",
+      "prompt": "在正四棱台ABCD-A_1B_1C_1D_1中，AB=2，A_1B_1=1，AA_1=\\sqrt{2}，则该棱台的体积为________．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry"
+      ],
+      "difficulty": 3
+    },
+    {
+      "number": 15,
+      "section": "填空题",
+      "prompt": "已知函数f(x)=\\cos\\omega x-1在区间[0,2\\pi]有且仅有3个零点，则\\omega的取值范围是________．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric"
+      ],
+      "difficulty": 4
+    },
+    {
+      "number": 16,
+      "section": "填空题",
+      "prompt": "已知双曲线\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1的左、右焦点分别为F_1、F_2．点P在C上，点Q在y轴上，F_1P \\perp F_1Q，F_2P \\parallel F_2Q，则C的离心率为________．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 5
+    },
+    {
+      "number": 17,
+      "section": "解答题",
+      "prompt": "已知在\\triangle ABC中，A+B=3C，2\\sin(A-C)=\\sin B．\n(1) 求\\sin A；\n(2) 设AB=5，求AB边上的高．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求；"
+        },
+        {
+          "number": 2,
+          "text": "设，求边上的高．"
+        }
+      ],
+      "chapters": [
+        "trigonometric"
+      ],
+      "difficulty": 3
+    },
+    {
+      "number": 18,
+      "section": "解答题",
+      "prompt": "如图，在正四棱柱中，．点分别在棱,上，．\n\n（1）证明：；\n（2）点在棱上，当二面角时，求．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "证明：；"
+        },
+        {
+          "number": 2,
+          "text": "点在棱上，当二面角时，求．"
+        }
+      ],
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 19,
+      "section": "解答题",
+      "prompt": "已知函数．\n（1）讨论的单调性；\n（2）证明：当时，．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "讨论的单调性；"
+        },
+        {
+          "number": 2,
+          "text": "证明：当时，．"
+        }
+      ],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2023年高考数学试卷（新高考_q19_image103.png"
+      ]
+    },
+    {
+      "number": 20,
+      "section": "解答题",
+      "prompt": "设等差数列\\{a_n\\}的公差为d，且d>1．令b_n=\\frac{n^2+n}{a_n}，记S_n、T_n分别为数列\\{a_n\\}、\\{b_n\\}的前n项和．\n(1) 若3a_2=3a_1+a_3，S_3+T_3=21，求\\{a_n\\}的通项公式；\n(2) 若\\{b_n\\}为等差数列，且S_{99}-T_{99}=99，求d．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "若，求的通项公式；"
+        },
+        {
+          "number": 2,
+          "text": "若为等差数列，且，求．"
+        }
+      ],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 5
+    },
+    {
+      "number": 21,
+      "section": "解答题",
+      "prompt": "甲、乙两人投篮，每次由其中一人投篮，规则如下：若命中则此人继续投篮，若未命中则换为对方投篮．无论之前投篮情况如何，甲每次投篮的命中率均为0.6，乙每次投篮的命中率均为0.8．由抽签确定第1次投篮的人选，第1次投篮的人是甲、乙的概率各为0.5．\n(1) 求第2次投篮的人是乙的概率；\n(2) 求第n次投篮的人是甲的概率；\n(3) 已知：若随机变量X服从两点分布，且P(X=1)=p，P(X=0)=1-p，则E(X)=p．记前n次（即从第1次到第n次投篮）中甲投篮的次数为Y，求E(Y)．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求第2次投篮的人是乙的概率；"
+        },
+        {
+          "number": 2,
+          "text": "求第次投篮的人是甲的概率；"
+        },
+        {
+          "number": 3,
+          "text": "已知：若随机变量服从两点分布，且，则．记前次（即从第1次到第次投篮）中甲投篮的次数为，求．"
+        }
+      ],
+      "chapters": [
+        "probability",
+        "sequences"
+      ],
+      "difficulty": 4
+    },
+    {
+      "number": 22,
+      "section": "解答题",
+      "prompt": "在直角坐标系xOy中，点P到x轴的距离等于点P到点(0,\\frac{1}{2})的距离，记动点P的轨迹为W．\n(1) 求W的方程；\n(2) 已知矩形ABCD有三个顶点在W上，证明：矩形的周长大于3\\sqrt{3}．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求的方程；"
+        },
+        {
+          "number": 2,
+          "text": "已知矩形有三个顶点在上，证明：矩形的周长大于．"
+        }
+      ],
+      "chapters": [
+        "conic-sections",
+        "derivatives"
+      ],
+      "difficulty": 5
+    }
+  ]
+}

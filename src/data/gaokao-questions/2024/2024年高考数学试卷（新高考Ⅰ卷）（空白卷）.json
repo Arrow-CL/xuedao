@@ -1,0 +1,508 @@
+{
+  "year": 2024,
+  "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+  "totalQuestions": 19,
+  "questions": [
+    {
+      "number": 1,
+      "section": "选择题",
+      "prompt": "已知集合A=\\{x\\mid -2<x<3\\}，B=\\{x\\mid x^2-4x+3<0\\}，则A\\cap B=",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "(-2,1)"
+        },
+        {
+          "label": "B",
+          "text": "(1,3)"
+        },
+        {
+          "label": "C",
+          "text": "(-2,3)"
+        },
+        {
+          "label": "D",
+          "text": "(-\\infty,1)"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sets-logic",
+        "quadratic-ineq"
+      ],
+      "difficulty": 1,
+      "answerHint": "解二次不等式求出集合B，再求交集。"
+    },
+    {
+      "number": 2,
+      "section": "选择题",
+      "prompt": "若，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 3,
+      "section": "选择题",
+      "prompt": "已知向量\\vec{a}=(0,1)，\\vec{b}=(2,x)，若\\vec{b}\\perp(\\vec{b}-4\\vec{a})，则x=",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "-2"
+        },
+        {
+          "label": "B",
+          "text": "-1"
+        },
+        {
+          "label": "C",
+          "text": "1"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "vectors-app"
+      ],
+      "difficulty": 2,
+      "answerHint": "利用垂直的向量数量积为零列方程求解。"
+    },
+    {
+      "number": 4,
+      "section": "选择题",
+      "prompt": "已知\\cos(\\alpha+\\beta)=m，\\tan\\alpha\\tan\\beta=2，则\\cos(\\alpha-\\beta)=",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "-3m"
+        },
+        {
+          "label": "B",
+          "text": "-\\frac{m}{3}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{m}{3}"
+        },
+        {
+          "label": "D",
+          "text": "3m"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric"
+      ],
+      "difficulty": 3,
+      "answerHint": "利用和差角公式与正切积的关系进行转化。"
+    },
+    {
+      "number": 5,
+      "section": "选择题",
+      "prompt": "已知圆柱和圆锥底面半径相等，侧面积相等，且它们的高均为\\sqrt{3}，则圆锥的体积为",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "2\\sqrt{3}\\pi"
+        },
+        {
+          "label": "B",
+          "text": "3\\sqrt{3}\\pi"
+        },
+        {
+          "label": "C",
+          "text": "6\\sqrt{3}\\pi"
+        },
+        {
+          "label": "D",
+          "text": "9\\sqrt{3}\\pi"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry"
+      ],
+      "difficulty": 2,
+      "answerHint": "利用侧面积公式求出底面半径，再求圆锥体积。"
+    },
+    {
+      "number": 6,
+      "section": "选择题",
+      "prompt": "已知函数f(x)=\\begin{cases} e^x+\\ln(x+1), & x\\geq 0 \\\\ x^2+ax+a, & x<0 \\end{cases}在R上单调递增，则a取值的范围是",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "(-\\infty,0]"
+        },
+        {
+          "label": "B",
+          "text": "[-1,0]"
+        },
+        {
+          "label": "C",
+          "text": "[-1,1]"
+        },
+        {
+          "label": "D",
+          "text": "[0,+\\infty)"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept",
+        "derivatives"
+      ],
+      "difficulty": 3,
+      "answerHint": "分别考虑分段函数在每一段上的单调性，并保证在分界点处左极限不大于右极限。"
+    },
+    {
+      "number": 7,
+      "section": "选择题",
+      "prompt": "当x\\in[0,2\\pi]时，曲线y=\\sin x与y=2\\sin(3x-\\frac{\\pi}{6})的交点个数为",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "8"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric"
+      ],
+      "difficulty": 3,
+      "answerHint": "利用三角函数的周期性和图像分析交点个数。"
+    },
+    {
+      "number": 8,
+      "section": "选择题",
+      "prompt": "已知函数f(x)的定义域为R，f(x)>f(x-1)+f(x-2)，且当x<3时f(x)=x，则下列结论中一定正确的是",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "f(10)>100"
+        },
+        {
+          "label": "B",
+          "text": "f(20)>1000"
+        },
+        {
+          "label": "C",
+          "text": "f(10)<1000"
+        },
+        {
+          "label": "D",
+          "text": "f(20)<10000"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept",
+        "sequences"
+      ],
+      "difficulty": 4,
+      "answerHint": "利用递推不等式和初始条件逐步放缩。"
+    },
+    {
+      "number": 9,
+      "section": "多选题",
+      "prompt": "为了解推动出口后的亩收入（单位：万元）情况，从该种植区抽取样本，得到推动出口后亩收入的样本均值\\bar{x}=2.1，样本方差s^2=0.01，已知该种植区以往的亩收入服从正态分布N(1.8,0.1^2)，假设推动出口后的亩收入服从正态分布N(\\bar{x},s^2)，则（若随机变量Z服从正态分布N(\\mu,\\sigma^2)，P(Z\\leq\\mu+\\sigma)\\approx0.8413）",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "P(\\text{出口后亩收入}>2)>0.8"
+        },
+        {
+          "label": "B",
+          "text": "P(\\text{出口后亩收入}>2)<0.5"
+        },
+        {
+          "label": "C",
+          "text": "P(\\text{出口前亩收入}>2)>0.8"
+        },
+        {
+          "label": "D",
+          "text": "P(\\text{出口前亩收入}>2)<0.5"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "statistics",
+        "probability",
+        "random-vars"
+      ],
+      "difficulty": 3,
+      "answerHint": "利用正态分布的性质和给定概率值进行估算。"
+    },
+    {
+      "number": 10,
+      "section": "多选题",
+      "prompt": "设函数f(x)=(x-1)^2(x-4)，则",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "x=1是f(x)的极小值点"
+        },
+        {
+          "label": "B",
+          "text": "当0<x<1时，f(x)<f(x^2)"
+        },
+        {
+          "label": "C",
+          "text": "当1<x<2时，f(x)<f(2-x)"
+        },
+        {
+          "label": "D",
+          "text": "当-1<x<0时，f(x)>f(2-x)"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept",
+        "derivatives"
+      ],
+      "difficulty": 3,
+      "answerHint": "利用导数分析极值点，并比较函数值大小。"
+    },
+    {
+      "number": 11,
+      "section": "多选题",
+      "prompt": "造型\\square可以做成美丽的丝带，将其看作图中曲线C的一部分.已知C过坐标原点O.且C上的点满足横坐标大于-2，到点F(2,0)的距离与到定直线x=-2的距离之积为4，则",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "a=-2"
+        },
+        {
+          "label": "B",
+          "text": "点(2\\sqrt{2},0)在C上"
+        },
+        {
+          "label": "C",
+          "text": "C在第一象限的点的纵坐标的最大值为1"
+        },
+        {
+          "label": "D",
+          "text": "当点(x_0,y_0)在C上时，y_0\\leq\\frac{2}{x_0+2}"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 4,
+      "answerHint": "根据题意建立曲线方程，再逐项验证。"
+    },
+    {
+      "number": 12,
+      "section": "填空题",
+      "prompt": "设双曲线\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1的左右焦点分别为F_1，F_2，过F_2作平行于y轴的直线交C于A，B两点，若|AB|=13，|F_1A|=10，则C的离心率为___________．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 3,
+      "answerHint": "利用双曲线的定义和通径公式建立方程。"
+    },
+    {
+      "number": 13,
+      "section": "填空题",
+      "prompt": "若曲线y=e^x+x在点(0,1)处的切线也是曲线y=\\ln(x+1)+a的切线，则a=__________.",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "derivatives",
+        "exp-log"
+      ],
+      "difficulty": 3,
+      "answerHint": "先求第一条曲线的切线方程，再设切点与第二条曲线联立。"
+    },
+    {
+      "number": 14,
+      "section": "填空题",
+      "prompt": "甲、乙两人各有四张卡片，每张卡片上标有一个数字，甲的卡片上分别标有数字1，3，5，7，乙的卡片上分别标有数字2，4，6，8，两人进行四轮比赛，在每轮比赛中，两人各自从自己持有的卡片中随机选一张，并比较所选卡片上数字的大小，数字大的人得1分，数字小的人得0分，然后各自弃置此轮所选的卡片（弃置的卡片在此后的轮次中不能使用）.则四轮比赛后，甲的总得分不小于2的概率为_________.",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "counting",
+        "probability"
+      ],
+      "difficulty": 4,
+      "answerHint": "考虑所有可能的配对情况，利用组合计数和对称性计算。"
+    },
+    {
+      "number": 15,
+      "section": "解答题",
+      "prompt": "记\\triangle ABC内角A、B、C的对边分别为a，b，c，已知\\sin C=2\\cos B，a^2+b^2-c^2=2ab\n(1) 求B；\n(2) 若\\triangle ABC的面积为3\\sqrt{3}，求c．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求B；"
+        },
+        {
+          "number": 2,
+          "text": "若的面积为，求c．"
+        }
+      ],
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ],
+      "difficulty": 3,
+      "answerHint": "利用余弦定理和正弦定理进行边角互化。"
+    },
+    {
+      "number": 16,
+      "section": "解答题",
+      "prompt": "已知A(0,-2)和B(\\frac{6}{3},1)为椭圆\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1上两点.\n(1) 求C的离心率;\n(2) 若过P的直线交C于另一点B，且\\triangle ABP的面积为9，求\\ell的方程．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求C的离心率;"
+        },
+        {
+          "number": 2,
+          "text": "若过P的直线交C于另一点B，且的面积为9，求的方程．"
+        }
+      ],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 4,
+      "answerHint": "利用椭圆方程求出参数，再设直线方程联立求解。"
+    },
+    {
+      "number": 17,
+      "section": "解答题",
+      "prompt": "如图，四棱锥中，底面ABCD，，．\n（1）若，证明：平面；\n（2）若，且二面角的正弦值为，求．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "若，证明：平面；"
+        },
+        {
+          "number": 2,
+          "text": "若，且二面角的正弦值为，求．"
+        }
+      ],
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2024年高考数学试卷（新高考_q17_image92.png"
+      ]
+    },
+    {
+      "number": 18,
+      "section": "解答题",
+      "prompt": "已知函数f(x)=\\ln\\frac{x}{2-x}+ax+b(x-1)^3\n(1) 若b=0，且f'(x)\\geq0，求a的最小值；\n(2) 证明：曲线y=f(x)是中心对称图形；\n(3) 若当且仅当1<x<2时f(x)>0，求b的取值范围．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "若，且，求的最小值；"
+        },
+        {
+          "number": 2,
+          "text": "证明：曲线是中心对称图形；"
+        },
+        {
+          "number": 3,
+          "text": "若当且仅当，求的取值范围．"
+        }
+      ],
+      "chapters": [
+        "func-concept",
+        "exp-log",
+        "derivatives"
+      ],
+      "difficulty": 5,
+      "answerHint": "利用导数研究单调性，利用对称性定义证明，利用恒成立条件求参数范围。"
+    },
+    {
+      "number": 19,
+      "section": "解答题",
+      "prompt": "设m为正整数，数列是公差不为0的等差数列，若从中删去两项和后剩余的项可被平均分为组，且每组的4个数都能构成等差数列，则称数列是可分数列．\n（1）写出所有，，使数列是可分数列；\n（2）当时，证明：数列是可分数列；\n（3）从中一次任取两个数和，记数列是可分数列的概率为，证明：．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "写出所有，，使数列是可分数列；"
+        },
+        {
+          "number": 2,
+          "text": "当时，证明：数列是可分数列；"
+        },
+        {
+          "number": 3,
+          "text": "从中一次任取两个数和，记数列是可分数列的概率为，证明：．"
+        }
+      ],
+      "chapters": [
+        "sequences",
+        "probability"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

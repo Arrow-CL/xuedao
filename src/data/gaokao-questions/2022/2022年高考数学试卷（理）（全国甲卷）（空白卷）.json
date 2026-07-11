@@ -1,0 +1,551 @@
+{
+  "year": 2022,
+  "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+  "totalQuestions": 23,
+  "questions": [
+    {
+      "number": 1,
+      "section": "选择题",
+      "prompt": "若，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 2,
+      "section": "选择题",
+      "prompt": "某社区通过公益讲座以普及社区居民的垃圾分类知识．为了解讲座效果，随机抽取10位社区居民，让他们在讲座前和讲座后各回答一份垃圾分类知识问卷，这10位社区居民在讲座前和讲座后问卷答题的正确率如下图：\n则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "讲座前问卷答题的正确率的中位数小于"
+        },
+        {
+          "label": "B",
+          "text": "讲座后问卷答题的正确率的平均数大于"
+        },
+        {
+          "label": "C",
+          "text": "讲座前问卷答题的正确率的标准差小于讲座后正确率的标准差"
+        },
+        {
+          "label": "D",
+          "text": "讲座后问卷答题的正确率的极差大于讲座前正确率的极差"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "counting",
+        "probability"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2022年高考数学试卷（理）（_q2_image9.png"
+      ]
+    },
+    {
+      "number": 3,
+      "section": "选择题",
+      "prompt": "设全集，集合，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sets-logic"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 4,
+      "section": "选择题",
+      "prompt": "如图，网格纸上绘制的是一个多面体的三视图，网格小正方形的边长为1，则该多面体的体积为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "8B. 12C. 16D. 20"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2022年高考数学试卷（理）（_q4_image19.png"
+      ]
+    },
+    {
+      "number": 5,
+      "section": "选择题",
+      "prompt": "函数在区间的图象大致为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2022年高考数学试卷（理）（_q5_image22.png",
+        "gaokao-images/2022年高考数学试卷（理）（_q5_image23.png",
+        "gaokao-images/2022年高考数学试卷（理）（_q5_image24.png",
+        "gaokao-images/2022年高考数学试卷（理）（_q5_image25.png"
+      ]
+    },
+    {
+      "number": 6,
+      "section": "选择题",
+      "prompt": "当x = 1时，函数f(x) = ax^3 + bx取得最大值2，则f'(1) =（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "—"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "derivatives"
+      ],
+      "difficulty": 4
+    },
+    {
+      "number": 7,
+      "section": "选择题",
+      "prompt": "在长方体ABCD-A_1B_1C_1D_1中，已知B_1D与平面ABCD和平面AA_1B_1B所成的角均为30^\\circ，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "—"
+        },
+        {
+          "label": "B",
+          "text": "AB与平面所成的角为"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "与平面所成的角为"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry"
+      ],
+      "difficulty": 4
+    },
+    {
+      "number": 8,
+      "section": "选择题",
+      "prompt": "沈括的《梦溪笔谈》是中国古代科技史上的杰作，其中收录了计算圆弧长度的“会圆术”，如图，是以O为圆心，OA为半径的圆弧，C是AB的中点，D在上，．“会圆术”给出的弧长的近似值s的计算公式：．当时，（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "lines-circles"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2022年高考数学试卷（理）（_q8_image48.png"
+      ]
+    },
+    {
+      "number": 9,
+      "section": "选择题",
+      "prompt": "甲、乙两个圆锥母线长相等，侧面展开图的圆心角之和为，侧面积分别为和，体积分别为和．若，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry",
+        "lines-circles"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 10,
+      "section": "选择题",
+      "prompt": "椭圆的左顶点为A，点P，Q均在C上，且关于y轴对称．若直线的斜率之积为，则C的离心率为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 11,
+      "section": "选择题",
+      "prompt": "设函数在区间恰有三个极值点、两个零点，则的取值范围是（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept",
+        "derivatives"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 12,
+      "section": "选择题",
+      "prompt": "已知，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 13,
+      "section": "填空题",
+      "prompt": "设向量，的夹角的余弦值为，且，，则_________．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 14,
+      "section": "填空题",
+      "prompt": "若双曲线的渐近线与圆相切，则_________．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "lines-circles",
+        "conic-sections"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 15,
+      "section": "填空题",
+      "prompt": "从正方体的8个顶点中任选4个，则这4个点在同一个平面的概率为________．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry",
+        "probability"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 16,
+      "section": "填空题",
+      "prompt": "已知中，点D边BC上，．当取得最小值时，________．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 17,
+      "section": "解答题",
+      "prompt": "记为数列的前n项和．已知．\n（1）证明：是等差数列；\n（2）若成等比数列，求的最小值．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "证明：是等差数列；"
+        },
+        {
+          "number": 2,
+          "text": "若成等比数列，求的最小值．"
+        }
+      ],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 18,
+      "section": "解答题",
+      "prompt": "在四棱锥中，底面．\n（1）证明：；\n（2）求PD与平面所成的角的正弦值．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "证明：；"
+        },
+        {
+          "number": 2,
+          "text": "求PD与平面所成的角的正弦值．"
+        }
+      ],
+      "chapters": [
+        "trigonometric",
+        "solid-geometry"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2022年高考数学试卷（理）（_q18_image103.png"
+      ]
+    },
+    {
+      "number": 19,
+      "section": "解答题",
+      "prompt": "甲、乙两个学校进行体育比赛，比赛共设三个项目，每个项目胜方得10分，负方得0分，没有平局．三个项目比赛结束后，总得分高的学校获得冠军．已知甲学校在三个项目中获胜的概率分别为0.5，0.4，0.8，各项目的比赛结果相互独立．\n（1）求甲学校获得冠军的概率；\n（2）用X表示乙学校的总得分，求X的分布列与期望．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求甲学校获得冠军的概率；"
+        },
+        {
+          "number": 2,
+          "text": "用X表示乙学校的总得分，求X的分布列与期望．"
+        }
+      ],
+      "chapters": [
+        "probability",
+        "random-vars"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 20,
+      "section": "解答题",
+      "prompt": "设抛物线焦点为F，点，过F的直线交C于M，N两点．当直线MD垂直于x轴时，．\n（1）求C的方程；\n（2）设直线与C的另一个交点分别为A，B，记直线的倾斜角分别为．当取得最大值时，求直线AB的方程．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求C的方程；"
+        },
+        {
+          "number": 2,
+          "text": "设直线与C的另一个交点分别为A，B，记直线的倾斜角分别为．当取得最大值时，求直线AB的方程．"
+        }
+      ],
+      "chapters": [
+        "vectors-app",
+        "conic-sections"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 21,
+      "section": "填空题",
+      "prompt": "已知函数f(x)=\\ln x+\\frac{a}{x}． （1）若f(x)\\geq 0，求a的取值范围； （2）证明：若f(x)有两个零点，则x_1x_2>e^2．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "derivatives"
+      ],
+      "difficulty": 5
+    },
+    {
+      "number": 22,
+      "section": "填空题",
+      "prompt": "在直角坐标系xOy中，曲线C_1的参数方程为\\begin{cases}x=2\\cos t\\\\ y=4\\sin t\\end{cases}（t为参数），曲线C_2的参数方程为\\begin{cases}x=2+2\\cos s\\\\ y=2\\sin s\\end{cases}（s为参数）． （1）写出C_1的普通方程； （2）以坐标原点为极点，x轴正半轴为极轴建立极坐标系，曲线C_3的极坐标方程为\\rho\\cos\\theta-2\\rho\\sin\\theta=0，求C_3与C_1交点的直角坐标，及C_3与C_2交点的直角坐标．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "lines-circles"
+      ],
+      "difficulty": 3
+    },
+    {
+      "number": 23,
+      "section": "填空题",
+      "prompt": "已知a，b，c均为正数，且a^2+b^2+c^2=1，证明： （1）ab+bc+ca\\leq 1； （2）若b=c，则\\frac{1}{a}+\\frac{1}{b}\\geq 2\\sqrt{2}．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "quadratic-ineq"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

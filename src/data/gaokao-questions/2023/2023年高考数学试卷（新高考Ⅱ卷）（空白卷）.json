@@ -1,0 +1,561 @@
+{
+  "year": 2023,
+  "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+  "totalQuestions": 22,
+  "questions": [
+    {
+      "number": 1,
+      "section": "选择题",
+      "prompt": "在复平面内，\\frac{1-i}{2+2i}对应的点位于（    ）．",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "第一象限"
+        },
+        {
+          "label": "B",
+          "text": "第二象限"
+        },
+        {
+          "label": "C",
+          "text": "第三象限"
+        },
+        {
+          "label": "D",
+          "text": "第四象限"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "complex"
+      ],
+      "difficulty": 2,
+      "answerHint": "化简复数，确定实部和虚部的符号"
+    },
+    {
+      "number": 2,
+      "section": "选择题",
+      "prompt": "设集合A=\\{x\\mid x^2-4x+3=0\\}，B=\\{x\\mid ax-1=0\\}，若B\\subseteq A，则a=（    ）．",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{1}{3}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{1}{2}"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sets-logic"
+      ],
+      "difficulty": 2,
+      "answerHint": "解方程求集合A，再讨论B为空集和非空集的情况"
+    },
+    {
+      "number": 3,
+      "section": "选择题",
+      "prompt": "某学校为了解学生参加体育运动的情况，用比例分配的分层随机抽样方法作抽样调查，拟从初中部和高中部两层共抽取60名学生，已知该校初中部和高中部分别有400名和200名学生，则不同的抽样结果共有（    ）．",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "C_{400}^{40}\\cdot C_{200}^{20}种"
+        },
+        {
+          "label": "B",
+          "text": "C_{400}^{20}\\cdot C_{200}^{40}种"
+        },
+        {
+          "label": "C",
+          "text": "C_{400}^{30}\\cdot C_{200}^{30}种"
+        },
+        {
+          "label": "D",
+          "text": "C_{400}^{60}\\cdot C_{200}^{0}种"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "statistics",
+        "counting"
+      ],
+      "difficulty": 3,
+      "answerHint": "先计算各层应抽人数，再计算组合数"
+    },
+    {
+      "number": 4,
+      "section": "选择题",
+      "prompt": "若f(x)=(x+a)\\ln\\frac{2x-1}{2x+1}为偶函数，则a=（    ）．",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "-1"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{1}{2}"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept",
+        "exp-log"
+      ],
+      "difficulty": 3,
+      "answerHint": "利用偶函数定义f(-x)=f(x)，代入化简求a"
+    },
+    {
+      "number": 5,
+      "section": "选择题",
+      "prompt": "已知椭圆\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1的左、右焦点分别为F_1，F_2，直线y=kx与C交于A，B两点，若\\triangle F_1AB面积是\\triangle F_2AB面积的2倍，则k=（    ）．",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{\\sqrt{3}}{3}"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{\\sqrt{2}}{2}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{2}{3}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{1}{3}"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 4,
+      "answerHint": "利用椭圆对称性，面积比等于焦点到直线距离比"
+    },
+    {
+      "number": 6,
+      "section": "选择题",
+      "prompt": "已知函数f(x)=a\\ln x - x在区间(0, e]上单调递增，则a的最小值为（    ）．",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "-1"
+        },
+        {
+          "label": "B",
+          "text": "e"
+        },
+        {
+          "label": "C",
+          "text": "-e"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "derivatives",
+        "exp-log"
+      ],
+      "difficulty": 3,
+      "answerHint": "求导，转化为f'(x)≥0在(0,e]恒成立"
+    },
+    {
+      "number": 7,
+      "section": "选择题",
+      "prompt": "已知\\alpha为锐角，\\cos\\alpha=\\frac{1+\\sqrt{5}}{4}，则\\sin\\frac{\\alpha}{2}=（    ）．",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{\\sqrt{5}-1}{4}"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{\\sqrt{5}+1}{4}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{3-\\sqrt{5}}{4}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{3+\\sqrt{5}}{4}"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric"
+      ],
+      "difficulty": 3,
+      "answerHint": "利用半角公式sin(α/2)=√((1-cosα)/2)"
+    },
+    {
+      "number": 8,
+      "section": "选择题",
+      "prompt": "记S_n为等比数列\\{a_n\\}的前n项和，若S_4=-5，S_6=21S_2，则S_8=（    ）．",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "120"
+        },
+        {
+          "label": "B",
+          "text": "85"
+        },
+        {
+          "label": "C",
+          "text": "-85"
+        },
+        {
+          "label": "D",
+          "text": "-120"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 4,
+      "answerHint": "利用等比数列前n项和性质，S2,S4-S2,S6-S4,S8-S6成等比"
+    },
+    {
+      "number": 9,
+      "section": "多选题",
+      "prompt": "已知圆锥的顶点为P，底面圆心为O，AB为底面直径，\\angle APB=120^\\circ，PA=2，点C在底面圆周上，且二面角P-AC-O为45°，则（    ）．",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "该圆锥的体积为\\pi"
+        },
+        {
+          "label": "B",
+          "text": "该圆锥的侧面积为4\\sqrt{3}\\pi"
+        },
+        {
+          "label": "C",
+          "text": "AC=2\\sqrt{2}"
+        },
+        {
+          "label": "D",
+          "text": "\\triangle PAC面积为\\sqrt{3}"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ],
+      "difficulty": 4,
+      "answerHint": "先求圆锥底面半径和高，再计算各选项"
+    },
+    {
+      "number": 10,
+      "section": "多选题",
+      "prompt": "设O为坐标原点，直线x=-1过抛物线y^2=2px的焦点，且与C交于M，N两点，l为C的准线，则（    ）．",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "p=2"
+        },
+        {
+          "label": "B",
+          "text": "|MN|=\\frac{8}{3}"
+        },
+        {
+          "label": "C",
+          "text": "以MN为直径的圆与l相切"
+        },
+        {
+          "label": "D",
+          "text": "\\triangle OMN为等腰三角形"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 4,
+      "answerHint": "由直线过焦点得p=2，联立方程求交点坐标"
+    },
+    {
+      "number": 11,
+      "section": "多选题",
+      "prompt": "若函数f(x)=ax^3+bx^2+cx+d既有极大值也有极小值，则（    ）．",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "b^2-3ac>0"
+        },
+        {
+          "label": "B",
+          "text": "b^2-3ac<0"
+        },
+        {
+          "label": "C",
+          "text": "a>0"
+        },
+        {
+          "label": "D",
+          "text": "a<0"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "derivatives"
+      ],
+      "difficulty": 4,
+      "answerHint": "求导得二次函数，需有两个不同实根"
+    },
+    {
+      "number": 12,
+      "section": "多选题",
+      "prompt": "在信道内传输0，1信号，信号的传输相互独立．发送0时，收到1的概率为\\alpha，收到0的概率为1-\\alpha；发送1时，收到0的概率为\\beta，收到1的概率为1-\\beta. 考虑两种传输方案：单次传输和三次传输．单次传输是指每个信号只发送1次，三次传输 是指每个信号重复发送3次．收到的信号需要译码，译码规则如下：单次传输时，收到的信号即为译码；三次传输时，收到的信号中出现次数多的即为译码（例如，若依次收到1，0，1，则译码为1）.",
+      "type": "multi-choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "采用单次传输方案，若依次发送1，0，1，则依次收到l，0，1的概率为(1-\\beta)(1-\\alpha)(1-\\beta)"
+        },
+        {
+          "label": "B",
+          "text": "采用三次传输方案，若发送1，则依次收到1，0，1的概率为(1-\\beta)\\beta(1-\\beta)"
+        },
+        {
+          "label": "C",
+          "text": "采用三次传输方案，若发送1，则译码为1的概率为(1-\\beta)^3+3(1-\\beta)^2\\beta"
+        },
+        {
+          "label": "D",
+          "text": "当0<\\alpha<\\frac{1}{2}时，若发送0，则采用三次传输方案译码为0的概率大于采用单次传输方案译码为0的概率"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "probability",
+        "random-vars"
+      ],
+      "difficulty": 5,
+      "answerHint": "分别计算各选项概率，注意独立性"
+    },
+    {
+      "number": 13,
+      "section": "填空题",
+      "prompt": "已知向量\\vec{a}，\\vec{b}满足|\\vec{a}|=1，|\\vec{b}|=2，\\vec{a}\\cdot\\vec{b}=1，则|\\vec{a}+\\vec{b}|=______．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "vectors-app"
+      ],
+      "difficulty": 2,
+      "answerHint": "利用模长公式|a+b|^2=|a|^2+|b|^2+2a·b"
+    },
+    {
+      "number": 14,
+      "section": "填空题",
+      "prompt": "底面边长为4的正四棱锥被平行于其底面的平面所截，截去一个底面边长为2，高为3的正四棱锥，所得棱台的体积为______．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "solid-geometry"
+      ],
+      "difficulty": 3,
+      "answerHint": "利用相似比求原棱锥高，再用大体积减小体积"
+    },
+    {
+      "number": 15,
+      "section": "填空题",
+      "prompt": "已知直线y=kx+1与圆x^2+y^2=4交于A，B两点，写出满足“\\triangle OAB面积为\\sqrt{3}”的m的一个值______．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "lines-circles"
+      ],
+      "difficulty": 3,
+      "answerHint": "利用弦长公式和点到直线距离求面积"
+    },
+    {
+      "number": 16,
+      "section": "填空题",
+      "prompt": "已知函数，如图A，B是直线与曲线的两个交点，若，则______．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2023年高考数学试卷（新高考_q16_image86.png"
+      ]
+    },
+    {
+      "number": 17,
+      "section": "解答题",
+      "prompt": "记\\triangle ABC的内角A,B,C的对边分别为a,b,c，已知\\triangle ABC的面积为\\frac{\\sqrt{3}}{2}，D为BC中点，且AD=1．\n(1) 若\\angle ADC=\\frac{\\pi}{3}，求\\tan B；\n(2) 若b^2+c^2=8，求b,c．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "若，求；"
+        },
+        {
+          "number": 2,
+          "text": "若，求．"
+        }
+      ],
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ],
+      "difficulty": 4,
+      "answerHint": "利用中线向量公式和面积公式建立方程"
+    },
+    {
+      "number": 18,
+      "section": "解答题",
+      "prompt": "为等差数列，，记，分别为数列，的前n项和，，．\n（1）求的通项公式；\n（2）证明：当时，．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求的通项公式；"
+        },
+        {
+          "number": 2,
+          "text": "证明：当时，．"
+        }
+      ],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 19,
+      "section": "解答题",
+      "prompt": "某研究小组经过研究发现某种疾病的患病者与未患病者的某项医学指标有明显差异，经过大量调查，得到如下的患病者和未患病者该指标的频率分布直方图：\n利用该指标制定一个检测标准，需要确定临界值c，将该指标大于c的人判定为阳性，小于或等于c的人判定为阴性．此检测标准的漏诊率是将患病者判定为阴性的概率，记为p(c)；误诊率是将未患病者判定为阳性的概率，记为q(c)．假设数据在组内均匀分布，以事件发生的频率作为相应事件发生的概率．\n(1) 当漏诊率p(c)=0.5\\%时，求临界值c和误诊率q(c)；\n(2) 设函数f(c)=p(c)+q(c)，当c\\in[5,15]时，求f(c)的解析式，并求f(c)在区间[5,15]的最小值．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "当漏诊率％时，求临界值c和误诊率；"
+        },
+        {
+          "number": 2,
+          "text": "设函数，当时，求的解析式，并求在区间的最小值．"
+        }
+      ],
+      "chapters": [
+        "statistics",
+        "data-analysis",
+        "probability"
+      ],
+      "difficulty": 4,
+      "answerHint": "根据频率分布直方图，利用面积求临界值"
+    },
+    {
+      "number": 20,
+      "section": "解答题",
+      "prompt": "如图，三棱锥中，，，，E为BC的中点．\n\n（1）证明：；\n（2）点F满足，求二面角的正弦值．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "证明：；"
+        },
+        {
+          "number": 2,
+          "text": "点F满足，求二面角的正弦值．"
+        }
+      ],
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2023年高考数学试卷（新高考_q20_image116.png"
+      ]
+    },
+    {
+      "number": 21,
+      "section": "解答题",
+      "prompt": "已知双曲线C的中心为坐标原点，左焦点为，离心率为．\n（1）求C的方程；\n（2）记C的左、右顶点分别为，，过点的直线与C的左支交于M，N两点，M在第二象限，直线与交于点P．证明:点在定直线上.",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求C的方程；"
+        },
+        {
+          "number": 2,
+          "text": "记C的左、右顶点分别为，，过点的直线与C的左支交于M，N两点，M在第二象限，直线与交于点P．证明:点在定直线上."
+        }
+      ],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 22,
+      "section": "解答题",
+      "prompt": "（1）证明：当0<x<1时，x-x^2<\\sin x<x；\n(2) 已知函数f(x)=\\cos ax-\\ln(1-x^2)，若x=0是f(x)的极大值点，求a的取值范围．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 2,
+          "text": "已知函数，若是的极大值点，求a的取值范围．"
+        }
+      ],
+      "chapters": [
+        "derivatives",
+        "trigonometric",
+        "exp-log"
+      ],
+      "difficulty": 5,
+      "answerHint": "构造函数利用导数证���不等式，再讨论极值点条件"
+    }
+  ]
+}

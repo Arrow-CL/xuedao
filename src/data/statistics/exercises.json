@@ -1,0 +1,64 @@
+{
+  "unit": "statistics",
+  "exercises": [
+    {
+      "id": "gk-stat-1",
+      "type": "mean",
+      "difficulty": 3,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "数据 2,4,6,8,10 的均值为？",
+      "answer": 6,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "均值=(2+4+6+8+10)/5",
+          "expectedValue": 30
+        },
+        {
+          "key": "s2",
+          "description": "=6",
+          "expectedValue": 6
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": []
+    },
+    {
+      "id": "gk-stat-2",
+      "type": "variance",
+      "difficulty": 4,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "数据 2,4,6,8,10 的方差为？",
+      "answer": 8,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "均值=6",
+          "expectedValue": 6
+        },
+        {
+          "key": "s2",
+          "description": "方差=[(2-6)²+(4-6)²+(6-6)²+(8-6)²+(10-6)²]/5",
+          "expectedValue": 8
+        }
+      ],
+      "tags": [
+        "formula-recall",
+        "calculation"
+      ],
+      "commonMistakes": []
+    }
+  ]
+}

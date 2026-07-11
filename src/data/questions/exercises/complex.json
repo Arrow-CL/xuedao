@@ -1,0 +1,151 @@
+{
+  "module": "complex",
+  "items": [
+    {
+      "id": "gk-comp-1",
+      "type": "complex-op",
+      "difficulty": 3,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "(1+i)/(1-i) = a+bi，求 a²+b²",
+      "answer": 1,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "(1+i)/(1-i) 分母实数化",
+          "expectedValue": 1
+        },
+        {
+          "key": "s2",
+          "description": "=(1+i)²/2=2i/2=i",
+          "expectedValue": 1
+        },
+        {
+          "key": "s3",
+          "description": "a=0,b=1,a²+b²=1",
+          "expectedValue": 1
+        }
+      ],
+      "tags": [
+        "formula-recall",
+        "calculation"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "complex",
+      "chapters": [
+        "complex"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "gk-comp-2",
+      "type": "complex-mod",
+      "difficulty": 3,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "复数 z=(3+4i)i 的模为？",
+      "answer": 5,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "z=3i+4i²=-4+3i",
+          "expectedValue": -4
+        },
+        {
+          "key": "s2",
+          "description": "|z|=\\sqrt{(-4}²+3²)=5",
+          "expectedValue": 5
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "complex",
+      "chapters": [
+        "complex"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "cx-3",
+      "type": "multiply",
+      "difficulty": 3,
+      "prompt": "计算(1+2i)(3-i)，写成a+bi形式。",
+      "answer": 5,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "(1+2i)(3-i)=3-i+6i-2i平方",
+          "formulaKey": "complex-mul"
+        },
+        {
+          "key": "s2",
+          "description": "=5+5i，a=5, b=5",
+          "expectedValue": 5
+        }
+      ],
+      "tags": [
+        "calculation"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "complex",
+      "chapters": [
+        "complex"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "cx-4",
+      "type": "conjugate",
+      "difficulty": 3,
+      "prompt": "复数z=3+4i的共轭复数z̄是多少？",
+      "answer": 3,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "共轭复数虚部变号",
+          "formulaKey": "conjugate"
+        },
+        {
+          "key": "s2",
+          "description": "z̄ = 3-4i",
+          "expectedValue": 3
+        }
+      ],
+      "tags": [
+        "concept-confusion"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "complex",
+      "chapters": [
+        "complex"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    }
+  ]
+}

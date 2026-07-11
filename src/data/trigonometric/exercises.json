@@ -1,0 +1,69 @@
+{
+  "unit": "trigonometric",
+  "exercises": [
+    {
+      "id": "gk-trig-1",
+      "type": "trig-value",
+      "difficulty": 3,
+      "equation": {
+        "latex": "sin(α+π/2)=?",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "若 sinα=3/5，α 在第二象限，则 sin(α+π/2) =？",
+      "answer": -0.6,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "sin(α+π/2) = cosα",
+          "expectedValue": 1
+        },
+        {
+          "key": "s2",
+          "description": "α在第二象限，cosα<0，cosα=-\\sqrt{1-sin²α}",
+          "expectedValue": -4
+        },
+        {
+          "key": "s3",
+          "description": "cosα=-4/5=-0.8",
+          "expectedValue": -0.8
+        }
+      ],
+      "tags": [
+        "formula-recall",
+        "calculation"
+      ],
+      "commonMistakes": []
+    },
+    {
+      "id": "gk-trig-2",
+      "type": "trig-identity",
+      "difficulty": 4,
+      "equation": {
+        "latex": "sin2α=?",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "已知 cosα=4/5，α∈(0,π/2)，则 sin2α =？",
+      "answer": 0.96,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "sinα=\\sqrt{1-cos²α}=3/5",
+          "expectedValue": 0.6
+        },
+        {
+          "key": "s2",
+          "description": "sin2α=2sinα·cosα",
+          "expectedValue": 0.96
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": []
+    }
+  ]
+}

@@ -1,0 +1,525 @@
+{
+  "year": 2023,
+  "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+  "totalQuestions": 22,
+  "questions": [
+    {
+      "number": 1,
+      "section": "选择题",
+      "prompt": "设全集，集合，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sets-logic"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 2,
+      "section": "选择题",
+      "prompt": "（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B. 1C."
+        },
+        {
+          "label": "D",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 3,
+      "section": "选择题",
+      "prompt": "已知向量，则（    ）\n4. 某校文艺部有4名学生，其中高一、高二年级各2名．从这4名学生中随机选2名组织校文艺汇演，则这2名学生来自不同年级的概率为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "vectors-app",
+        "probability"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 5,
+      "section": "选择题",
+      "prompt": "记为等差数列的前项和．若，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "25B. 22C. 20D. 15"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 6,
+      "section": "选择题",
+      "prompt": "执行下边的程序框图，则输出的（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "21B. 34C. 55D. 89"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2023年高考数学试卷（文）（_q6_image30.png"
+      ]
+    },
+    {
+      "number": 7,
+      "section": "选择题",
+      "prompt": "设为椭圆的两个焦点，点在上，若，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "1B. 2C. 4D. 5"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 8,
+      "section": "选择题",
+      "prompt": "曲线在点处切线方程为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "derivatives",
+        "lines-circles"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 9,
+      "section": "选择题",
+      "prompt": "已知双曲线的离心率为，其中一条渐近线与圆交于A，B两点，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 10,
+      "section": "选择题",
+      "prompt": "在三棱锥中，是边长为2的等边三角形，，则该棱锥的体积为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "1B."
+        },
+        {
+          "label": "C",
+          "text": "2D. 3"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "trigonometric",
+        "solid-geometry"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 11,
+      "section": "选择题",
+      "prompt": "已知函数．记，则（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "B."
+        },
+        {
+          "label": "C",
+          "text": "D."
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 12,
+      "section": "选择题",
+      "prompt": "函数的图象由的图象向左平移个单位长度得到，则的图象与直线的交点个数为（    ）",
+      "type": "choice",
+      "options": [
+        {
+          "label": "A",
+          "text": "1B. 2C. 3D. 4"
+        },
+        {
+          "label": "B",
+          "text": "—"
+        },
+        {
+          "label": "C",
+          "text": "—"
+        },
+        {
+          "label": "D",
+          "text": "—"
+        }
+      ],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 13,
+      "section": "填空题",
+      "prompt": "记为等比数列前项和．若，则的公比为________．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 14,
+      "section": "填空题",
+      "prompt": "若为偶函数，则________．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 15,
+      "section": "填空题",
+      "prompt": "若x，y满足约束条件，则的最大值为________．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 16,
+      "section": "填空题",
+      "prompt": "在正方体中，为的中点，若该正方体的棱与球的球面有公共点，则球的半径的取值范围是________．",
+      "type": "fill",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "quadratic-ineq",
+        "solid-geometry",
+        "lines-circles"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 17,
+      "section": "解答题",
+      "prompt": "记的内角的对边分别为，已知．\n（1）求；\n（2）若，求面积．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求；"
+        },
+        {
+          "number": 2,
+          "text": "若，求面积．"
+        }
+      ],
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 18,
+      "section": "解答题",
+      "prompt": "如图，在三棱柱中，平面．\n\n（1）证明：平面平面；\n（2）设，求四棱锥的高．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "证明：平面平面；"
+        },
+        {
+          "number": 2,
+          "text": "设，求四棱锥的高．"
+        }
+      ],
+      "chapters": [
+        "solid-geometry"
+      ],
+      "difficulty": 2,
+      "images": [
+        "gaokao-images/2023年高考数学试卷（文）（_q18_image81.png"
+      ]
+    },
+    {
+      "number": 19,
+      "section": "解答题",
+      "prompt": "一项试验旨在研究臭氧效应，试验方案如下：选40只小白鼠，随机地将其中20只分配到试验组，另外20只分配到对照组，试验组的小白鼠饲养在高浓度臭氧环境，对照组的小白鼠饲养在正常环境，一段时间后统计每只小白鼠体重的增加量（单位：g）．试验结果如下：\n对照组的小白鼠体重的增加量从小到大排序为",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [],
+      "chapters": [
+        "counting",
+        "probability"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 20,
+      "section": "解答题",
+      "prompt": "已知函数．\n（1）当时，讨论的单调性；\n（2）若，求的取值范围．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "当时，讨论的单调性；"
+        },
+        {
+          "number": 2,
+          "text": "若，求的取值范围．"
+        }
+      ],
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 21,
+      "section": "解答题",
+      "prompt": "已知直线与抛物线交于两点，．\n（1）求；\n（2）设为的焦点，为上两点，且，求面积的最小值．\n（二）选考题：共10分.请考生在第22、23题中任选一题作答.如果多做，则按所做的第一题计分.\n[选修4-4：坐标系与参数方程]（10分）",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求；"
+        },
+        {
+          "number": 2,
+          "text": "设为的焦点，为上两点，且，求面积的最小值．"
+        }
+      ],
+      "chapters": [
+        "conic-sections"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 22,
+      "section": "解答题",
+      "prompt": "已知点，直线（为参数），为的倾斜角，与轴正半轴、轴正半轴分别交于，且．\n（1）求；\n（2）以坐标原点为极点，轴正半轴为极轴建立极坐标系，求的极坐标方程．\n[选修4-5：不等式选讲]（10分）",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求；"
+        },
+        {
+          "number": 2,
+          "text": "以坐标原点为极点，轴正半轴为极轴建立极坐标系，求的极坐标方程．"
+        }
+      ],
+      "chapters": [
+        "quadratic-ineq"
+      ],
+      "difficulty": 2
+    },
+    {
+      "number": 23,
+      "section": "解答题",
+      "prompt": "已知．\n（1）求不等式的解集；\n（2）若曲线与轴所围成的图形的面积为2，求．",
+      "type": "essay",
+      "options": [],
+      "subQuestions": [
+        {
+          "number": 1,
+          "text": "求不等式的解集；"
+        },
+        {
+          "number": 2,
+          "text": "若曲线与轴所围成的图形的面积为2，求．"
+        }
+      ],
+      "chapters": [
+        "quadratic-ineq"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

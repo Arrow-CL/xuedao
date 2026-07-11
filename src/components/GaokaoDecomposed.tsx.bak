@@ -1,0 +1,650 @@
+﻿"use client";
+
+import { useCallback, useEffect, useRef, useState } from "react";
+import MathContent from "@/components/MathContent";
+import Whiteboard from "@/components/Whiteboard";
+import {
+  createSolutionTrace,
+  parseStudentInput,
+  analyzeStep,
+  applyAnalysis,
+  continueSolution,
+  tagError,
+} from "@/lib/solution-trace";
+import { SolutionTrace, ParsedStep } from "@/types";
+import storage from "@/lib/storage";
+
+interface GaokaoQ {
+  id: string;
+  year: number;
+  paper: string;
+  number: number;
+  prompt: string;
+  type: string;
+  difficulty: number;
+  chapters: string[];
+  options?: { label: string; text: string }[];
+  fullPrompt?: string;
+  images?: string[];
+  answer?: string;
+}
+
+interface Props {
+  moduleId: string;
+  canvasContent?: string;
+  onClearCanvas?: () => void;
+  onUpdateCanvas?: (text: string) => void;
+}
+
+const CN: Record<string, string> = {
+  "sets-logic": "集合", "quadratic-ineq": "不等式", "func-concept": "函数", "exp-log": "指数对数",
+  "trigonometric": "三角函数", "vectors-app": "平面向量", "complex": "复数", "solid-geometry": "立体几何",
+  "statistics": "统计", "probability": "概率", "space-vectors": "空间向量", "lines-circles": "直线圆",
+  "conic-sections": "圆锥曲线", "sequences": "数列", "derivatives": "导数", "counting": "计数原理",
+  "random-vars": "随机变量", "data-analysis": "数据分析",
+};
+
+const clean = (s: string) => s.replace(/\\\(/g, "").replace(/\\\)/g, "").replace(/\\n/g, " ").replace(/\n/g, " ").replace(/\s+/g, " ").trim();
+
+const buildPrompt = (q: GaokaoQ) => {
+  const b = clean(q.prompt);
+  if (q.options && q.options.length > 0) {
+    const ok = q.options.filter(o => o.text && o.text.trim());
+    if (ok.length > 0) return b + "\n" + ok.map(o => o.label + ". " + clean(o.text)).join("\n");
+  }
+  return b;
+};
+
+const paperName = (p: string) =>
+  p.replace(/年高考数学试卷（/g, " ").replace(/（新高考/g, "").replace(/[（）]/g, "").replace(/空白卷/g, "").replace(/\s+/g, " ").trim();
+
+const TYPE_LABELS: Record<string, string> = {
+  "choice": "单选题", "fill": "填空题", "solution": "解答题", "essay": "解答题", "multi-choice": "多选题",
+};
+
+function Stars({ n }: { n: number }) {
+  return (
+    <span className="inline-flex gap-0.5">
+      {Array.from({ length: 5 }, (_, i) => (
+        <span key={i} className={i < n ? "text-amber-400" : "text-gray-200"}>★</span>
+      ))}
+    </span>
+  );
+}
+
+// 瀵硅瘽娑堟伅绫诲瀷
+interface ChatMessage {
+  role: "user" | "assistant" | "system" | "step-correct" | "step-error" | "step-help";
+  content: string;
+  stepId?: string;
+  isImage?: boolean;
+}
+
+export default function GaokaoDecomposed({ moduleId: id }: Props) {
+  const [questions, setQuestions] = useState<GaokaoQ[]>([]);
+  const [doneIds, setDoneIds] = useState<string[]>([]);
+  const [currentQ, setCurrentQ] = useState<GaokaoQ | null>(null);
+  const [started, setStarted] = useState(false);
+  const [input, setInput] = useState("");
+  const [chat, setChat] = useState<ChatMessage[]>([]);
+  const [processing, setProcessing] = useState(false);
+  const [done, setDone] = useState(false);
+  const [pastedImage, setPastedImage] = useState<string | null>(null);
+  const [ocrText, setOcrText] = useState("");
+  const [trace, setTrace] = useState<SolutionTrace | null>(null);
+  const [allDone, setAllDone] = useState(false);
+  const [teachingSteps, setTeachingSteps] = useState<{ number: number; text: string }[]>([]);
+  const [teachingVisibleCount, setTeachingVisibleCount] = useState(0);
+  const [aiCallCountDisplay, setAiCallCountDisplay] = useState(0);
+
+  const loadedRef = useRef(false);
+  const storageKey = "study-math:gaokao-done:" + id;
+  const followUpRef = useRef<HTMLInputElement>(null);
+  const chatEndRef = useRef<HTMLDivElement>(null);
+
+  // 鍔犺浇棰樼洰
+  useEffect(() => {
+    if (loadedRef.current) return;
+    loadedRef.current = true;
+    let d: string[] = [];
+    try { const s = localStorage.getItem(storageKey); if (s) d = JSON.parse(s); } catch {}
+    setDoneIds(d);
+    fetch("/api/gaokao-questions?chapter=" + id)
+      .then(r => r.json())
+      .then(r => {
+        if (!r.questions) return;
+        const unseen = (r.questions as GaokaoQ[]).filter(q => !d.includes(q.id));
+        if (unseen.length === 0) { setAllDone(true); return; }
+        for (let i = unseen.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [unseen[i], unseen[j]] = [unseen[j], unseen[i]];
+        }
+        setQuestions(unseen); setCurrentQ(unseen[0]);
+      }).catch(() => {});
+  }, [id]);
+
+  useEffect(() => { chatEndRef.current?.scrollIntoView({ behavior: "smooth" }); }, [chat]);
+
+  // Progressive teaching steps
+  useEffect(() => {
+    if (teachingSteps.length === 0 || teachingVisibleCount >= teachingSteps.length) return;
+    const t = setTimeout(() => setTeachingVisibleCount(p => Math.min(p + 1, teachingSteps.length)), 1500);
+    return () => clearTimeout(t);
+  }, [teachingSteps, teachingVisibleCount]);
+
+  const start = useCallback(() => {
+    if (!currentQ) return;
+    setStarted(true);
+    setChat([]);
+    setDone(false);
+    setTeachingSteps([]);
+    setTeachingVisibleCount(0);
+    setAiCallCountDisplay(0);
+    // 鍒涘缓瑙ｉ杞ㄨ抗
+    const qText = buildPrompt(currentQ);
+    const newTrace = createSolutionTrace(currentQ.id, qText, currentQ.type);
+    setTrace(newTrace);
+  }, [currentQ]);
+
+  useEffect(() => { if (done) { const t = setTimeout(() => next(), 1200); return () => clearTimeout(t); } }, [done]);
+
+  // === 鏍稿績锛氬鐞嗗鐢熸彁浜?===
+  const submit = useCallback(async (externalText?: string) => {
+    const text = (externalText || input).trim();
+    if (!text || processing || !trace || !currentQ) return;
+    setProcessing(true);
+
+    const userMsg: ChatMessage = { role: "user", content: text };
+    setChat(prev => [...prev, userMsg]);
+    setInput("");
+
+    // 1. 鏈湴瑙ｆ瀽瀛︾敓杈撳叆
+    const parsedStep = parseStudentInput(text);
+
+    // 2. 鏈湴鍒嗘瀽姝ラ瀵归敊
+    const analysis = analyzeStep(trace, parsedStep);
+
+    // 3. Apply analysis result, update trace
+    const updatedTrace = applyAnalysis(trace, parsedStep, analysis);
+    setTrace(updatedTrace);
+    setAiCallCountDisplay(updatedTrace.aiCallCount);
+
+    // 4. 鏍规嵁鏈湴鍒嗘瀽缁撴灉鍐冲畾鏄惁闇€瑕佽皟AI
+    let reply: ChatMessage | null = null;
+
+    if (analysis.hasError && analysis.localHint && analysis.confidence >= 0.7) {
+      // 鏈湴楂樼疆淇″害妫€娴嬪埌閿欒 鈫?鐩存帴缁欐湰鍦版彁绀猴紝涓嶈皟AI
+      reply = {
+        role: "step-error",
+        content: `⚠️ Check this step. How did you get this from the previous step? Try again.`,
+        stepId: parsedStep.id,
+      };
+    } else if (analysis.isCorrect && !analysis.needAI) {
+      // 鏈湴楠岃瘉姝ｇ‘ 鈫?鐩存帴纭锛屼笉璋傾I
+      const progressPct = Math.round(analysis.progress * 100);
+      if (analysis.isComplete) {
+        reply = {
+          role: "step-correct",
+          content: `✅ Correct! You solved this problem! Answer: ${parsedStep.expressions[parsedStep.expressions.length - 1] || text}`,
+        };
+        setDone(true);
+      } else {
+        reply = {
+          role: "step-correct",
+          content: `鉁?杩欐鏄鐨勶紒锛堝凡瀹屾垚绾?{progressPct}%锛夌户缁啓涓嬩笅涓€姝ュ惂銆俙,
+        };
+      }
+    } else if (analysis.needAI || (analysis.isCorrect && analysis.confidence < 0.5)) {
+      // 闇€瑕丄I浠嬪叆锛堟湰鍦板垽鏂笉浜嗭紝鎴栦綆缃俊搴︼級鈫?璋傾I
+      try {
+        const qText = buildPrompt(currentQ);
+        const localContext = analysis.localHint
+          ? `锛堟湰鍦版娴嬪彲鑳芥湁閿欒锛?{analysis.localHint}锛岃纭鎴栬ˉ鍏咃級`
+          : analysis.isCorrect
+          ? `锛堟湰鍦板垵姝ュ垽鏂繖姝ュ彲鑳芥纭紝浣嗛渶瑕佺‘璁わ級`
+          : '';
+
+        // 鏋勫缓缁橝I鐨勬秷鎭紝甯︿笂鏈湴宸插垎鏋愮殑淇℃伅锛屽噺灏慉I宸ヤ綔閲?        const messagesForAI: { role: string; content: string }[] = [
+          {
+            role: "system",
+            content: `浣犳槸"瀛﹀"AI鏁板杈呭鑰佸笀銆傚綋鍓嶉鐩細
+${qText}
+
+銆愭湰鍦扮郴缁熷凡鍒嗘瀽銆?- 棰樼洰宸茬煡鍙傛暟锛?{JSON.stringify(updatedTrace.knownParams)}
+- 瀛︾敓宸叉帹瀵煎嚭鐨勯噺锛?{JSON.stringify(updatedTrace.derivedVars)}
+${localContext}
+- 瀛︾敓宸插啓姝ラ鏁帮細${updatedTrace.steps.length}
+
+銆愪綘鐨勪换鍔°€?1. 鍒ゆ柇瀛︾敓鏈€鏂拌繖姝ユ槸鍚︽纭?2. 濡傛灉鏈夐敊璇紝鐩存帴鎸囧嚭閿欒鍦ㄥ摢閲岋紝闂?浠庝笂涓€姝ュ埌杩欎竴姝ヤ綘鏄€庝箞鎯崇殑锛?
+3. 濡傛灉姝ｇ‘浣嗘病鍋氬畬锛岄紦鍔辩户缁紝涓嶈缁欑瓟妗?4. 濡傛灉瀛︾敓宸茬粡鍋氬浜嗗畬鏁磋В绛旓紝鍥炲鏈熬鍔犮€愭纭€?5. 璇皵瑕佽€愬績榧撳姳锛屽儚鑰佸笀瀵瑰鐢熻璇?6. 濡傛灉瀛︾敓鐨勬楠ゆ槸瀵圭殑锛岀洿鎺ヨ偗瀹氾紝涓嶈閲嶅姝ｇ‘姝ラ`,
+          },
+          ...updatedTrace.steps.map((s, i) => ({
+            role: "user" as const,
+            content: `锛堝鐢熺${i + 1}姝ワ級${s.raw}`,
+          })),
+        ];
+
+        const res = await fetch("/api/tutor", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ messages: messagesForAI, moduleId: id, unitName: "楂樿€冮缁冧範" }),
+        });
+        const data = await res.json();
+        const aiReply = data.reply || "";
+
+        if (aiReply.includes("銆愭纭€?)) {
+          reply = { role: "step-correct", content: "鉁?" + aiReply.replace("銆愭纭€?, "").trim() };
+          setDone(true);
+        } else {
+          reply = { role: "assistant", content: aiReply };
+        }
+      } catch {
+        reply = { role: "assistant", content: "锛圓I杩炴帴鏆備笉鍙敤锛屼綘缁х画鍐欙紝鍐欏畬鎴戝啀甯綘鐪嬶級" };
+      }
+    }
+
+    if (reply) {
+      setChat(prev => [...prev, reply!]);
+    }
+
+    // 璁板綍閿欒鍒版湰鍦板瓨鍌?    if (analysis.hasError && currentQ) {
+      try {
+        storage.logError("local", {
+          userId: "local",
+          exerciseId: currentQ.id,
+          tags: [tagError(analysis.errorType)],
+          studentAnswer: text,
+          correctAnswer: 0,
+          timestamp: Date.now(),
+          moduleId: id,
+        });
+      } catch {}
+    }
+
+    setProcessing(false);
+  }, [input, processing, trace, currentQ, id]);
+
+  const followUpSubmit = useCallback(() => {
+    const t = followUpRef.current ? followUpRef.current!.value : "";
+    if (!t.trim()) return;
+    followUpRef.current!.value = "";
+    setInput(t);
+    submit(t);
+  }, [submit]);
+
+  // === "鎯充笉鍑烘潵浜? 鈫?鏈湴浼樺厛缁啓 ===
+  const handleCantDo = useCallback(async () => {
+    if (processing || !trace || !currentQ) return;
+    setProcessing(true);
+
+    // 1. 鍏堝皾璇曟湰鍦扮画鍐?    const continuation = continueSolution(trace);
+
+    if (continuation.canContinue && continuation.nextExpression) {
+      // 鏈湴鑳界画鍐欙紒涓嶉渶瑕佽皟AI
+      const helpStep: ChatMessage = {
+        role: "step-help",
+        content: `娌″叧绯伙紝鎴戞潵甯︿綘缁х画銆俓n\n${continuation.explanation}\n\n鎵€浠ヤ笅涓€姝ユ槸锛?{continuation.nextExpression}`,
+      };
+      setChat(prev => [...prev, helpStep]);
+
+      // 鎶婂府鍔╂楠ゅ姞鍏ヨ建杩?      const helpParsed: ParsedStep = {
+        id: `help-${Date.now()}`,
+        raw: continuation.nextExpression,
+        expressions: [continuation.nextExpression],
+        textExplanation: '',
+        status: 'help-step',
+        verifiedBy: 'local',
+        confidence: 1,
+        isFromHelp: true,
+        timestamp: Date.now(),
+      };
+      setTrace(prev => prev ? {
+        ...prev,
+        steps: [...prev.steps, helpParsed],
+        lastLocalVerdict: '鏈湴缁啓浜嗕竴姝?,
+      } : prev);
+
+      // 濡傛灉鏄渶缁堢瓟妗堬紝鏄剧ず璁茶В鍚庢爣璁板畬鎴?      if (continuation.isFinal) {
+        setTimeout(() => {
+          setChat(prev => [...prev, {
+            role: "step-correct",
+            content: `杩欏氨鏄畬鏁寸殑瑙ｉ杩囩▼浜嗐€備綘鍙互瀵圭収涓€涓嬭嚜宸卞啓鍒板摢涓€姝ワ紝鏄摢閲屽崱浣忕殑銆備笅娆¤瘯鐫€鑷繁绠楀埌鏈€鍚庡摝锛乣,
+          }]);
+          setDone(true);
+        }, 2000);
+      }
+
+      setProcessing(false);
+      return;
+    }
+
+    // 2. 鏈湴缁啓涓嶄簡锛堥潪璁＄畻棰?澶嶆潅棰樺瀷锛夆啋 鎵嶈皟AI
+    try {
+      const qText = buildPrompt(currentQ);
+      const aiPrompt = continuation.aiPromptHint || `瀛︾敓鍗′綇浜嗭紝璇蜂粠瀛︾敓宸插啓鐨勬楠ゅ紑濮嬬户缁瑙ｏ紝姣忎竴姝ラ兘瑕佽鏄?涓婁竴姝ユ€庝箞寰楀埌杩欎竴姝?銆俙;
+
+      const messagesForAI: { role: string; content: string }[] = [
+        {
+          role: "system",
+          content: `浣犳槸"瀛﹀"AI鏁板杈呭鑰佸笀銆傚綋鍓嶉鐩細
+${qText}
+
+銆愭湰鍦扮郴缁熶俊鎭€?- 宸茬煡鍙傛暟锛?{JSON.stringify(trace.knownParams)}
+- 宸叉帹瀵奸噺锛?{JSON.stringify(trace.derivedVars)}
+- 鏈湴鏃犳硶鑷姩缁啓锛堣繖鍙兘鏄瘉鏄庨銆佸嚑浣曢鎴栭渶瑕佺瓥鐣ラ€夋嫨鐨勯锛塦,
+        },
+        ...trace.steps.map((s, i) => ({
+          role: "user" as const,
+          content: `锛堝鐢熺${i + 1}姝ワ級${s.raw}`,
+        })),
+        { role: "user", content: "锛堝鐢熻涓嶄細浜嗭級" + aiPrompt },
+      ];
+
+      const res = await fetch("/api/tutor", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages: messagesForAI, moduleId: id, unitName: "鏉夸功" }),
+      });
+      const data = await res.json();
+      const reply = data.reply || "";
+
+      setChat(prev => [...prev, { role: "assistant", content: reply }]);
+
+      // 瑙ｆ瀽AI杩斿洖鐨勬楠ゅ仛娓愯繘灞曠ず
+      const lines = reply.split("\n").filter((l: string) => l.trim().length > 0);
+      const steps = lines.map((l: string, i: number) => ({ number: i + 1, text: l }));
+      if (steps.length > 1) {
+        setTeachingSteps(steps);
+        setTeachingVisibleCount(Math.min(1, steps.length));
+      }
+    } catch {
+      setChat(prev => [...prev, { role: "assistant", content: "锛圓I杩炴帴澶辫触锛岃绋嶅悗鍐嶈瘯锛? }]);
+    }
+
+    setProcessing(false);
+  }, [processing, trace, currentQ, id]);
+
+  // 璇锋眰鎻愮ず锛堣交閲忓府鍔╋級
+  const requestHint = useCallback(async () => {
+    if (processing || !trace || !currentQ) return;
+    setProcessing(true);
+    try {
+      const qText = buildPrompt(currentQ);
+      const res = await fetch("/api/tutor", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          messages: [
+            {
+              role: "system",
+              content: `棰樼洰锛?{qText}\n\n瀛︾敓鎯充簡寰堜箙杩樻槸涓嶄細锛岃缁欎竴涓皬鎻愮ず锛屽彧鎸囧嚭鍒囧叆鐐规垨鍏抽敭鍏紡锛屼笉瑕佺粰瀹屾暣杩囩▼锛屼笉瑕佺洿鎺ョ畻銆傚鐢熷凡鍐欙細${trace.steps.map(s => s.raw).join(' 鈫?') || '杩樻病寮€濮?}`,
+            },
+          ],
+          moduleId: id, unitName: "鎻愮ず",
+        }),
+      });
+      const data = await res.json();
+      setChat(prev => [...prev, { role: "assistant", content: "馃挕 " + (data.reply || "璇曡瘯浠庨鐩潯浠跺叆鎵嬶紝鎯虫兂鍙互鐢ㄥ摢涓叕寮忥紵") }]);
+    } catch {
+      setChat(prev => [...prev, { role: "assistant", content: "馃挕 璇曡瘯浠庨鐩潯浠跺叆鎵嬶紝鎯虫兂鍙互鐢ㄥ摢涓叕寮忥紵" }]);
+    }
+    setProcessing(false);
+  }, [processing, trace, currentQ, id]);
+
+  // 绮樿创鍥剧墖澶勭悊
+  const handlePaste = useCallback(async (e: React.ClipboardEvent) => {
+    const items = e.clipboardData.items;
+    let imgFile: File | null = null;
+    for (let i = 0; i < items.length; i++) {
+      if (items[i].type.startsWith("image/")) {
+        imgFile = items[i].getAsFile();
+        break;
+      }
+    }
+    if (!imgFile) return;
+    e.preventDefault();
+    setProcessing(true);
+    try {
+      const reader = new FileReader();
+      reader.onload = async () => {
+        const dataUrl = reader.result as string;
+        setChat(prev => [...prev, { role: "user", content: dataUrl, isImage: true }]);
+        let text = "";
+        try {
+          const visionRes = await fetch("/api/vision-recognize", {
+            method: "POST", headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ image: dataUrl }),
+          });
+          if (visionRes.ok) {
+            const visionData = await visionRes.json();
+            text = visionData.text || "";
+          }
+        } catch {}
+        if (!text) {
+          try {
+            const res = await fetch("/api/ocr", {
+              method: "POST", headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ image: dataUrl }),
+            });
+            const data = await res.json();
+            text = data.text || "";
+          } catch {}
+        }
+        if (text) {
+          setOcrText(text);
+          setChat(prev => [...prev, { role: "system", content: `锛堣瘑鍒埌鍐呭锛?{text}锛塦 }]);
+        }
+        setProcessing(false);
+      };
+      reader.readAsDataURL(imgFile);
+    } catch { setProcessing(false); }
+  }, []);
+
+  const next = useCallback(() => {
+    if (!currentQ) return;
+    const updated = [...doneIds, currentQ.id];
+    setDoneIds(updated);
+    try { localStorage.setItem(storageKey, JSON.stringify(updated)); } catch {}
+    const remaining = questions.filter(q => !updated.includes(q.id));
+    if (remaining.length === 0) { setAllDone(true); return; }
+    setQuestions(remaining); setCurrentQ(remaining[0]);
+    setStarted(false); setChat([]); setDone(false); setTrace(null);
+    setTeachingSteps([]); setTeachingVisibleCount(0);
+    setAiCallCountDisplay(0); setOcrText("");
+  }, [currentQ, doneIds, questions, storageKey]);
+
+  // ===== early returns =====
+  if (allDone) return (
+    <div className="rounded-xl border border-green-200 bg-gradient-to-br from-green-50 to-emerald-50 p-8 text-center">
+      <div className="text-5xl mb-4">馃帀</div>
+      <h3 className="text-lg font-semibold text-green-800 mb-1">鏈珷楂樿€冮鍏ㄩ儴瀹屾垚</h3>
+      <p className="text-sm text-green-600">宸茬粌涔?{doneIds.length} 閬撶湡棰?/p>
+      <div className="mt-4 inline-flex items-center gap-1.5 text-xs text-green-500">
+        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        宸插畬鎴愬叏閮ㄩ鐩?      </div>
+    </div>
+  );
+
+  if (!currentQ) {
+    return (
+      <div className="rounded-xl border border-gray-200 bg-white p-8 text-center">
+        <div className="animate-spin inline-block w-6 h-6 border-2 border-gray-300 border-t-blue-500 rounded-full" />
+        <p className="text-sm text-gray-400 mt-3">鍔犺浇棰樼洰涓?..</p>
+      </div>
+    );
+  }
+
+  const totalCount = doneIds.length + questions.length;
+  const currentIndex = doneIds.length + 1;
+
+  return (
+    <div className="rounded-xl border border-gray-200 bg-white overflow-hidden shadow-sm">
+      {/* Question header bar */}
+      <div className="flex items-center justify-between px-4 py-2.5 border-b border-gray-100 bg-white">
+        <div className="flex items-center gap-2 text-xs text-gray-500">
+          <span className="text-gray-400 font-medium">{currentIndex}/{totalCount}</span>
+          <span className="text-gray-300">|</span>
+          <span>{TYPE_LABELS[currentQ.type] || currentQ.type}</span>
+          <span className="text-gray-300">|</span>
+          <span>{paperName(currentQ.paper)}</span>
+        </div>
+        <div className="flex items-center gap-3">
+          {aiCallCountDisplay > 0 && (
+            <span className="text-[10px] text-gray-400 bg-gray-50 px-2 py-0.5 rounded">AI璋冪敤: {aiCallCountDisplay}娆?/span>
+          )}
+          <Stars n={currentQ.difficulty} />
+        </div>
+      </div>
+
+      {/* Main content: left whiteboard + right chat */}
+      <div className="grid grid-cols-[1fr_380px] min-h-[520px] divide-x divide-gray-100">
+        {/* LEFT: Whiteboard area */}
+        <div className="flex flex-col min-h-0">
+          <Whiteboard
+            question={currentQ.fullPrompt || buildPrompt(currentQ)}
+            steps={trace?.steps.map(s => ({
+              number: parseInt(s.id.split('-').pop() || '0'),
+              text: s.raw,
+              correct: s.status === 'correct' || s.status === 'correct-ai' || s.status === 'help-step',
+              comment: s.errorHint || '',
+            })) || []}
+            year={currentQ?.year}
+            difficulty={currentQ?.difficulty}
+            images={currentQ?.images}
+            teachingSteps={teachingSteps.length > 0 ? teachingSteps : undefined}
+            teachingVisibleCount={teachingVisibleCount}
+            ocrText={ocrText}
+          />
+        </div>
+
+        {/* RIGHT: Chat panel */}
+        <div className="flex flex-col h-full min-h-0 bg-gray-50/50">
+          <div className="flex-1 overflow-y-auto p-4 space-y-3">
+            {chat.length === 0 ? (
+              <div className="h-full flex flex-col items-center justify-center text-center px-4">
+                <div className="w-12 h-12 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center mb-3">
+                  <svg className="w-6 h-6 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 0 01-.923 1.785A5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z" />
+                  </svg>
+                </div>
+                <p className="text-sm text-gray-400 mb-1">鍒嗘寮曞寮忓埛棰?/p>
+                <p className="text-xs text-gray-300">鍦ㄤ笅鏂瑰啓涓嬩綘鐨勮В棰樿繃绋?br/>绯荤粺浼氳嚜鍔ㄨ瘑鍒閿欏苟寮曞浣?/p>
+                {!started && (
+                  <button
+                    onClick={start}
+                    className="mt-5 px-6 py-2.5 bg-blue-500 text-white rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors shadow-sm"
+                  >
+                    寮€濮嬪仛棰?                  </button>
+                )}
+              </div>
+            ) : (
+              chat.map((m, i) => (
+                <div key={i} className={"flex items-start gap-2 " + (m.role === "user" || m.role === "step-correct" || m.role === "step-error" || m.role === "step-help" ? "flex-row-reverse" : "")}>
+                  <div className={"flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-medium " + (
+                    m.role === "user" ? "bg-blue-100 text-blue-600"
+                    : m.role === "step-correct" ? "bg-green-100 text-green-600"
+                    : m.role === "step-error" ? "bg-red-100 text-red-600"
+                    : m.role === "step-help" ? "bg-amber-100 text-amber-600"
+                    : "bg-gray-200 text-gray-500"
+                  )}>
+                    {m.role === "user" ? "鎴?
+                     : m.role === "step-correct" ? "鉁?
+                     : m.role === "step-error" ? "!"
+                     : m.role === "step-help" ? "馃挕"
+                     : m.role === "system" ? "路"
+                     : "AI"}
+                  </div>
+                  <div className={"max-w-[85%] rounded-xl px-3.5 py-2.5 text-sm leading-relaxed shadow-sm " + (
+                    m.role === "user"
+                      ? "bg-blue-500 text-white rounded-tr-sm"
+                      : m.role === "step-correct"
+                      ? "bg-green-50 text-green-800 rounded-tl-sm border border-green-100"
+                      : m.role === "step-error"
+                      ? "bg-red-50 text-red-800 rounded-tl-sm border border-red-100"
+                      : m.role === "step-help"
+                      ? "bg-amber-50 text-amber-800 rounded-tl-sm border border-amber-100"
+                      : m.role === "system"
+                      ? "bg-gray-100 text-gray-500 italic text-xs rounded-tl-sm"
+                      : "bg-white text-gray-800 rounded-tl-sm border border-gray-100"
+                  )}>
+                    <div className="whitespace-pre-wrap">
+                      {m.isImage
+                        ? <img src={m.content} className="max-w-full rounded" alt="" />
+                        : <MathContent text={m.content} />}
+                    </div>
+                  </div>
+                </div>
+              ))
+            )}
+            {processing && (
+              <div className="flex items-start gap-2">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs font-medium text-gray-500">AI</div>
+                <div className="bg-white border border-gray-100 rounded-xl rounded-tl-sm px-3.5 py-2.5 shadow-sm">
+                  <span className="inline-flex gap-1">
+                    <span className="w-1.5 h-1.5 bg-gray-300 rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
+                    <span className="w-1.5 h-1.5 bg-gray-300 rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
+                    <span className="w-1.5 h-1.5 bg-gray-300 rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
+                  </span>
+                </div>
+              </div>
+            )}
+            <div ref={chatEndRef} />
+          </div>
+
+          {/* Hint buttons + input area */}
+          {started && !done && (
+            <div className="p-4 border-t border-gray-100 bg-white space-y-2.5">
+              <div className="flex gap-2">
+                <button
+                  onClick={requestHint}
+                  disabled={processing}
+                  className="py-1 px-3 rounded-lg border border-gray-200 bg-white text-xs text-gray-400 hover:border-blue-300 hover:text-blue-500 hover:bg-blue-50/40 transition-all disabled:opacity-50"
+                >
+                  馃挕 缁欎釜灏忔彁绀?                </button>
+                <button
+                  onClick={handleCantDo}
+                  disabled={processing}
+                  className="py-1 px-3 rounded-lg border border-gray-200 bg-white text-xs text-gray-400 hover:border-amber-300 hover:text-amber-500 hover:bg-amber-50/40 transition-all disabled:opacity-50"
+                >
+                  鎯充笉鍑烘潵浜嗭紝甯︽垜鍋?                </button>
+              </div>
+
+              <div className="flex gap-2">
+                <input
+                  ref={followUpRef}
+                  placeholder="鍐欎笅浣犺繖涓€姝ョ殑杩囩▼..."
+                  className="flex-1 rounded-lg border border-gray-200 px-3.5 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400/30 focus:border-blue-400 transition-shadow placeholder:text-gray-300"
+                  disabled={processing}
+                  onPaste={handlePaste}
+                  onKeyDown={e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); followUpSubmit(); } }}
+                />
+                <button
+                  onClick={followUpSubmit}
+                  disabled={processing}
+                  className="flex-shrink-0 px-4 py-2 bg-blue-500 text-white rounded-lg text-sm font-medium hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 transition-colors shadow-sm"
+                >
+                  {processing ? (
+                    <span className="inline-block w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                  ) : "鎻愪氦"}
+                </button>
+              </div>
+              <p className="text-[10px] text-gray-300">鏀寔绮樿创鍥剧墖璇嗗埆鎵嬪啓杩囩▼</p>
+            </div>
+          )}
+
+          {done && (
+            <div className="text-center py-3">
+              <span className="inline-flex items-center gap-1.5 text-sm text-green-600 font-medium">
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                鏈宸插畬鎴愶紝鑷姩杩涘叆涓嬩竴棰?..
+              </span>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+

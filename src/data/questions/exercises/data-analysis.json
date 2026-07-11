@@ -1,0 +1,123 @@
+{
+  "module": "data-analysis",
+  "items": [
+    {
+      "id": "da-1",
+      "type": "regression",
+      "difficulty": 4,
+      "prompt": "回归方程y=2x+1中，x每增加1，y变化多少？",
+      "answer": 2,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "回归系数2即为x每变化1时y的变化量",
+          "expectedValue": 2
+        }
+      ],
+      "tags": [
+        "concept-confusion"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "data-analysis",
+      "chapters": [
+        "data-analysis"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "da-2",
+      "type": "regression",
+      "difficulty": 4,
+      "prompt": "回归方程y=2x+1中，x每增加1，y变化多少？",
+      "answer": 2,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "回归系数2即为变化量",
+          "expectedValue": 2
+        }
+      ],
+      "tags": [
+        "concept-confusion"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "data-analysis",
+      "chapters": [
+        "data-analysis"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "da-3",
+      "type": "correlation",
+      "difficulty": 3,
+      "prompt": "相关系数r=0.9表示什么程度的线性相关？",
+      "answer": 1,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "|r|越接近1线性相关性越强",
+          "expectedValue": 1
+        },
+        {
+          "key": "s2",
+          "description": "r=0.9>0.8，强正线性相关",
+          "expectedValue": 1
+        }
+      ],
+      "tags": [
+        "concept-confusion"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "data-analysis",
+      "chapters": [
+        "data-analysis"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    },
+    {
+      "id": "da-4",
+      "type": "independence",
+      "difficulty": 4,
+      "prompt": "卡方检验中chi平方=5.024>3.841，是否拒绝H0？",
+      "answer": 1,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "chi平方大于临界值，落在拒绝域",
+          "expectedValue": 1
+        },
+        {
+          "key": "s2",
+          "description": "拒绝H0，认为两变量有关",
+          "expectedValue": 1
+        }
+      ],
+      "tags": [
+        "concept-confusion"
+      ],
+      "commonMistakes": [],
+      "source": "basic",
+      "chapter": "data-analysis",
+      "chapters": [
+        "data-analysis"
+      ],
+      "round": [
+        1
+      ],
+      "status": "active"
+    }
+  ]
+}

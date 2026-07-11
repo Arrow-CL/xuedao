@@ -1,0 +1,7415 @@
+{
+  "sets-logic": [
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 2,
+      "prompt": "已知集合S=\\{s|s=2n+1,n\\in Z\\}，T=\\{t|t=4n+1,n\\in Z\\}，则S\\cap T=（    ）",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 3,
+      "prompt": "已知命题p:\\exists x\\in R,\\sin x<1；命题q:\\forall x\\in R,e^{|x|}\\ge 1，则下列命题中为真命题的是（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 1,
+      "prompt": "集合，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 1,
+      "prompt": "设集合A=\\{x\\mid -2\\leq x\\leq 2\\}，B=\\{x\\mid x^2-3x+2\\leq 0\\}，则A\\cap B=（    ）",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "sets-logic",
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 1,
+      "prompt": "若集合，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 1,
+      "prompt": "已知集合A=\\{x\\mid -2<x<3\\}，B=\\{x\\mid x^2-4x+3\\leq 0\\}，则A\\cap B=",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "sets-logic",
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 1,
+      "prompt": "设全集，集合M满足，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 3,
+      "prompt": "设全集，集合，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 17,
+      "prompt": "已知为等差数列，是公比为2的等比数列，且．\n（1）证明：；\n（2）求集合中元素个数．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic",
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 1,
+      "prompt": "设集合A=\\{0,-1,2\\}，B=\\{x \\mid x^2 - x - 2 = 0\\}，则A \\cap B = （    ）",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 1,
+      "prompt": "设全集，集合，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 1,
+      "prompt": "已知集合A=\\{x\\mid x^2-2x-3\\leq 0\\}，B=\\{x\\mid x>1\\}，则A\\cap B=（    ）",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 1,
+      "prompt": "设集合A=\\{x\\mid x=2k,k\\in\\mathbb{Z}\\}，B=\\{x\\mid x=2k+1,k\\in\\mathbb{Z}\\}，U=\\mathbb{Z}，则\\complement_U(A\\c...",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 2,
+      "prompt": "设全集U=\\{1,2,3,4,5\\}，集合M=\\{1,4\\}，N=\\{2,5\\}，则\\complement_U (M \\cup N) = （    ）",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 2,
+      "prompt": "设集合A=\\{x\\mid x^2-4x+3=0\\}，B=\\{x\\mid ax-1=0\\}，若B\\subseteq A，则a=（    ）．",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 2,
+      "prompt": "设集合，集合，，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 2,
+      "prompt": "集合，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 10,
+      "prompt": "已知等差数列的公差为，集合，若，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic",
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 23,
+      "prompt": "已知f(x)=|x-1|+|x+2|. Sub: (1) 求不等式f(x)\\leq5解集； (2) 在直角坐标系xOy中，求不等式组\\begin{cases}f(x)\\leq y\\\\y\\leq 3\\e...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 1,
+      "prompt": "集合A=\\{x\\mid -2<x<2\\}，B=\\{x\\mid x^2-3x<0\\}，则A\\cap B=（    ）",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "quadratic-ineq",
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 1,
+      "prompt": "已知集合A=\\{x\\mid -2<x<3\\}，B=\\{x\\mid x^2-4x+3<0\\}，则A\\cap B=",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "sets-logic",
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 2,
+      "prompt": "已知命题p：\\forall x\\in\\mathbb{R}，x^2+1>0；命题q：\\exists x\\in\\mathbb{R}，x^2-2x+1\\leq0，则（    ）",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 2,
+      "prompt": "集合，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 1,
+      "prompt": "已知集合A=\\{x\\mid x^2-3x+2<0\\}，B=\\{x\\mid x^2-4x+3>0\\}，则A\\cap B=（   ）",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "sets-logic",
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 2,
+      "prompt": "设全集，集合，则元素个数为（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 3,
+      "prompt": "已知集合则（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 3,
+      "prompt": "已知集合A = {0 , 1 , 3 , 6 , 9} , B = {x |  x = x}，则A ∩ B =（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 8,
+      "prompt": "设 U = { (x1 ,x2 ,x3(|xi ∈{-2 ,-1 , 1 , 2 ], i = 1 , 2 , 3{为空间中 64 个点构成的集合, 记 P   (1 , 1 , 1(  , 记样本空...",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic",
+        "probability",
+        "statistics",
+        "random-vars"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 19,
+      "prompt": "已知函数f(x(  的定义域为R，且当x < 0 时，f(x(= 2x .对任意x0 ∈ R，定义集合D(x0(= {d ∈ R ∣ f(x0 + d(   > f (x0(}.\n(1) 若当x ≥ ...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic",
+        "func-concept"
+      ]
+    }
+  ],
+  "quadratic-ineq": [
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 23,
+      "prompt": "已知函数f(x)=|x-a|+|x+3|．\\n（1）当a=1时，求不等式f(x)\\ge 6的解集;\\n（2）若f(x)>-a，求a的取值范围．",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 1,
+      "prompt": "设集合A=\\{x\\mid -2\\leq x\\leq 2\\}，B=\\{x\\mid x^2-3x+2\\leq 0\\}，则A\\cap B=（    ）",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "sets-logic",
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 1,
+      "prompt": "已知集合A=\\{x\\mid -2<x<3\\}，B=\\{x\\mid x^2-4x+3\\leq 0\\}，则A\\cap B=",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "sets-logic",
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 8,
+      "prompt": "已知正四棱锥的侧棱长为l，其各顶点都在同一球面上.若该球的体积为，且，则该正四棱锥体积的取值范围是（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 11,
+      "prompt": "设函数在区间恰有三个极值点、两个零点，则的取值范围是（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 15,
+      "prompt": "若曲线有两条过坐标原点的切线，则a的取值范围是________________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 20,
+      "prompt": "已知函数．\n（1）当时，求的最大值；\n（2）若恰有一个零点，求a的取值范围．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 22,
+      "prompt": "已知函数．\n（1）当时，讨论的单调性；\n（2）当时，，求a的取值范围；\n（3）设，证明：．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 23,
+      "prompt": "已知a，b，c都是正数，且a^2+b^2+c^2=1，证明： （1）a+b+c\\leq\\sqrt{3}； （2）\\frac{1}{a^2}+\\frac{1}{b^2}+\\frac{1}{c^2}\\ge...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 23,
+      "prompt": "已知a，b，c均为正数，且a^2+b^2+4c^2=3，证明：\n（1）a+b+2c\\leq 3；\n（2）若b=2c，则\\frac{1}{a}+\\frac{1}{c}\\geq 3．",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 23,
+      "prompt": "已知a，b，c都是正数，且a^2 + b^2 + c^2 = 1，证明： （1）ab + bc + ca \\leq 1； （2）\\frac{1}{a} + \\frac{1}{b} + \\frac{1}...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 23,
+      "prompt": "已知a，b，c均为正数，且a^2+b^2+c^2=1，证明： （1）ab+bc+ca\\leq 1； （2）若b=c，则\\frac{1}{a}+\\frac{1}{b}\\geq 2\\sqrt{2}．",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 14,
+      "prompt": "若x，y满足约束条件\\begin{cases} x+y\\geq 2 \\\\ x+2y\\leq 4 \\\\ y\\geq 0 \\end{cases}，则z=2x-y的最大值为______.",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 14,
+      "prompt": "设x，y满足约束条件\\begin{cases}x+y\\leq 4\\\\ x-y\\leq 2\\\\ x\\geq 0, y\\geq 0\\end{cases}，设z=2x+y，则z的最大值为__________...",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 15,
+      "prompt": "若x，y满足约束条件\\begin{cases} x - y + 1 \\ge 0 \\\\ x + y - 3 \\le 0 \\\\ y \\ge 0 \\end{cases}，则z = 2x + y的最大值为__...",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 16,
+      "prompt": "在正方体中，为的中点，若该正方体的棱与球的球面有公共点，则球的半径的取值范围是________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "solid-geometry",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 20,
+      "prompt": "已知函数．\n（1）当时，讨论的单调性；\n（2）若，求的取值范围．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 22,
+      "prompt": "已知点，直线（为参数），为的倾斜角，与轴正半轴、轴正半轴分别交于，且．\n（1）求；\n（2）以坐标原点为极点，轴正半轴为极轴建立极坐标系，求的极坐标方程．\n[选修4-5：不等式选讲]（10分）",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 23,
+      "prompt": "已知f(x) = |x-1| + |x+2|\n（1）求不等式f(x) \\le 5的解集；\n（2）在直角坐标系xOy中，求不等式组\\begin{cases} f(x) \\le y \\\\ y \\le 3 ...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 23,
+      "prompt": "已知．\n（1）求不等式的解集；\n（2）若曲线与轴所围成的图形的面积为2，求．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 23,
+      "prompt": "已知f(x)=|x-a|+|x+2a|． Sub: (1) 求不等式f(x)\\leq 3a的解集； (2) 若曲线y=f(x)与坐标轴所围成的图形的面积为2，求a．",
+      "type": "essay",
+      "difficulty": 4,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 23,
+      "prompt": "实数a, b, c满足a + b + c = 1． （1）证明：a^2 + b^2 + c^2 \\geq \\frac{1}{3}； （2）证明：\\frac{1}{a} + \\frac{1}{b} + ...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 1,
+      "prompt": "集合A=\\{x\\mid -2<x<2\\}，B=\\{x\\mid x^2-3x<0\\}，则A\\cap B=（    ）",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "quadratic-ineq",
+        "sets-logic"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 1,
+      "prompt": "已知集合A=\\{x\\mid -2<x<3\\}，B=\\{x\\mid x^2-4x+3<0\\}，则A\\cap B=",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "sets-logic",
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 3,
+      "prompt": "若实数x,y满足约束条件\\begin{cases}x+y\\ge 2\\\\ x-y\\le 0\\\\ y\\le 3\\end{cases}，则z=2x+y的最小值为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 16,
+      "prompt": "已知函数．\n（1）当时，求曲线在点处的切线方程；\n（2）若有极小值，且极小值小于0，求a的取值范围．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept",
+        "derivatives",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 20,
+      "prompt": "实数a,b,c满足a+b+c=1． （1）证明：a^2+b^2+c^2\\ge\\frac{1}{3}； （2）证明：\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\\ge 9．",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 23,
+      "prompt": "实数a, b, c满足a + b + c = 1． （1）证明：a^2 + b^2 + c^2 \\geq \\frac{1}{3}； （2）证明：\\frac{1}{a} + \\frac{1}{b} + ...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 1,
+      "prompt": "已知集合A=\\{x\\mid x^2-3x+2<0\\}，B=\\{x\\mid x^2-4x+3>0\\}，则A\\cap B=（   ）",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "sets-logic",
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 4,
+      "prompt": "不等式的解集是（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 7,
+      "prompt": "若圆上到直线的距离为1的点有且仅有2个，则r的取值范围是（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 13,
+      "prompt": "若函数f(x( = 2x + 2-x - m 有两个零点, 则m 的取值范围是        .________",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept"
+      ]
+    }
+  ],
+  "func-concept": [
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 4,
+      "prompt": "设函数f(x)=\\frac{1-x}{1+x}，则下列函数中为奇函数的是（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 12,
+      "prompt": "设a=2\\ln 1.01，b=\\ln 1.02，c=\\sqrt{1.04}-1．则（    ）",
+      "type": "choice",
+      "difficulty": 5,
+      "chapters": [
+        "exp-log",
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 1,
+      "prompt": "若，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 2,
+      "prompt": "设，其中为实数，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 2,
+      "prompt": "（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 2,
+      "prompt": "已知，且，其中a，b实数，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 3,
+      "prompt": "在中，点D在边AB上，．记，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 4,
+      "prompt": "分别统计了甲、乙两位同学16周的各周课外体育运动时长（单位：h），得如下茎叶图：\n则下列结论中错误的是（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 4,
+      "prompt": "嫦娥二号卫星在完成探月任务后，继续进行深空探测，成为我国第一颗环绕太阳飞行的人造行星，为研究嫦娥二号绕日周期与地球绕日周期的比值，用到数列：，，，…，依此类推，其中．则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept",
+        "solid-geometry",
+        "sequences"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 5,
+      "prompt": "若x，y满足约束条件则的最大值是（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 5,
+      "prompt": "函数在区间的图象大致为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 6,
+      "prompt": "若，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 6,
+      "prompt": "执行下边的程序框图，输出的（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 7,
+      "prompt": "执行下边的程序框图，输出的（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 7,
+      "prompt": "函数y=(3^x-3^{-x})\\cos x在区间[-\\frac{\\pi}{2},\\frac{\\pi}{2}]的图象大致为（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "func-concept",
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 7,
+      "prompt": "设，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 8,
+      "prompt": "如图是下列四个函数中的某个函数在区间的大致图像，则该函数是（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 8,
+      "prompt": "已知函数f(x)的定义域为R，且f(x+y)+f(x-y)=f(x)f(y)，f(1)=1，则\\sum_{k=1}^{22}f(k)=",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 11,
+      "prompt": "函数在区间的最小值、最大值分别为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 11,
+      "prompt": "设函数在区间恰有三个极值点、两个零点，则的取值范围是（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 12,
+      "prompt": "已知函数及其导函数的定义域均为，记，若，均为偶函数，则（    ）",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 12,
+      "prompt": "若x，y满足x^2+y^2-xy=1，则",
+      "type": "multi-choice",
+      "difficulty": 4,
+      "chapters": [
+        "trigonometric",
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 12,
+      "prompt": "已知函数的定义域均为R，且．若的图像关于直线对称，，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 12,
+      "prompt": "已知，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 13,
+      "prompt": "的展开式中的系数为________________（用数字作答）．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 16,
+      "prompt": "若f(x)=\\ln\\left|a+\\frac{1}{1-x}\\right|+b是奇函数，则a=_____，b=______．",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 16,
+      "prompt": "已知中，点D边BC上，．当取得最小值时，________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 18,
+      "prompt": "记的内角A，B，C的对边分别为a，b，c，已知．\n（1）若，求B；\n（2）求的最小值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 20,
+      "prompt": "已知函数．\n（1）当时，求的最大值；\n（2）若恰有一个零点，求a的取值范围．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 22,
+      "prompt": "已知函数和有相同的最小值．\n（1）求a；\n（2）证明：存在直线，其与两条曲线和共有三个不同的交点，并且从左到右的三个交点的横坐标成等差数列．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept",
+        "sequences"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 22,
+      "prompt": "已知函数．\n（1）当时，讨论的单调性；\n（2）当时，，求a的取值范围；\n（3）设，证明：．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 1,
+      "prompt": "设，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 2,
+      "prompt": "（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 3,
+      "prompt": "若实数满足约束条件，则的最小值为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 4,
+      "prompt": "设函数f(x)=x^2-2ax+1在区间[1,3]上单调递减，则a的取值范围是（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 4,
+      "prompt": "若f(x)=(x+a)\\ln\\frac{2x-1}{2x+1}为偶函数，则a=（    ）．",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "func-concept",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 4,
+      "prompt": "已知是偶函数，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 5,
+      "prompt": "已知f(x) = \\frac{x}{e^x - e^{-x}}是偶函数，则a = （    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 6,
+      "prompt": "执行下边的程序框图，则输出的（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 6,
+      "prompt": "已知函数在区间单调递增，直线和为函数的图像的两条对称轴，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 6,
+      "prompt": "设函数，则曲线在处的切线与两坐标轴围成的三角形的面积为（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept",
+        "trigonometric",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 7,
+      "prompt": "“”是“”（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 8,
+      "prompt": "已知，则（    ）．",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 8,
+      "prompt": "已知，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 10,
+      "prompt": "设两个平面，是两条直线，且.下列四个命题：\n①若，则或          ②若，则\n③若，且，则       ④若与和所成的角相等，则\n其中所有真命题的编号是（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 11,
+      "prompt": "已知函数．记，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 11,
+      "prompt": "已知函数定义域为\\mathbb{R}，f(x+y)+f(x-y)=f(x)f(y)，f(1)=1，则（    ）．",
+      "type": "multi-choice",
+      "difficulty": 4,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 12,
+      "prompt": "函数的图象由的图象向左平移个单位长度得到，则的图象与直线的交点个数为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 13,
+      "prompt": "若f(x)=x\\ln(x+\\sqrt{1+x^2})为偶函数，则a=________．",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 14,
+      "prompt": "若，则________．（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 14,
+      "prompt": "若为偶函数，则________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 15,
+      "prompt": "若x，y满足约束条件，则的最大值为________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 15,
+      "prompt": "已知，，则______．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 16,
+      "prompt": "已知函数，如图A，B是直线与曲线的两个交点，若，则______．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 17,
+      "prompt": "记的内角的对边分别为，已知．\n（1）求；\n（2）若，求面积．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 19,
+      "prompt": "已知函数．\n（1）讨论的单调性；\n（2）证明：当时，．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 20,
+      "prompt": "已知函数．\n（1）当时，讨论的单调性；\n（2）若，求的取值范围．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 1,
+      "prompt": "已知，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 1,
+      "prompt": "设，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 2,
+      "prompt": "设，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 2,
+      "prompt": "若，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 3,
+      "prompt": "若实数满足约束条件，则的最小值为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 6,
+      "prompt": "已知函数f(x)=\\begin{cases} e^x+\\ln(x+1), & x\\geq 0 \\\\ x^2+ax+a, & x<0 \\end{cases}在R上单调递增，则a取值的范围是",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "func-concept",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 6,
+      "prompt": "设函数，则曲线在处的切线与两坐标轴围成的三角形的面积为（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept",
+        "trigonometric",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 7,
+      "prompt": "函数在区间的大致图像为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 8,
+      "prompt": "已知函数f(x)的定义域为R，f(x)>f(x-1)+f(x-2)，且当x<3时f(x)=x，则下列结论中一定正确的是",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "func-concept",
+        "sequences"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 8,
+      "prompt": "设函数f(x)=\\begin{cases} x^2-2x+2, & x\\leq1 \\\\ \\ln x, & x>1 \\end{cases}，若f(a)=f(b)，则a+b最小值为（    ）",
+      "type": "choice",
+      "difficulty": 5,
+      "chapters": [
+        "func-concept",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 8,
+      "prompt": "已知，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 10,
+      "prompt": "设函数f(x)=(x-1)^2(x-4)，则",
+      "type": "multi-choice",
+      "difficulty": 3,
+      "chapters": [
+        "func-concept",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 10,
+      "prompt": "设两个平面，是两条直线，且.下列四个命题：\n①若，则或          ②若，则\n③若，且，则       ④若与和所成的角相等，则\n其中所有真命题的编号是（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 11,
+      "prompt": "设函数，则（    ）",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 11,
+      "prompt": "在中内角所对边分别为，若，，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 12,
+      "prompt": "函数f(x)=x^2-2x+3在[-1,2]上的最大值是______．",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 13,
+      "prompt": "已知，，则______．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 13,
+      "prompt": "已知为第一象限角，为第三象限角，，，则_______.",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 13,
+      "prompt": "的展开式中，各项系数的最大值是______．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 14,
+      "prompt": "曲线y=x^2与y=\\ln x在(0,+\\infty)上有两个不同交点，则a的取值范围为______．",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "func-concept",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 15,
+      "prompt": "记的内角A，B，C的对边分别为a，b，c，已知．\n（1）求A．\n（2）若，，求的周长．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 15,
+      "prompt": "已知，，则______．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 16,
+      "prompt": "如图，在以A，B，C，D，E，F为顶点的五面体中，四边形ABCD与四边形ADEF均为等腰梯形，，，，为的中点.\n（1）证明：平面；\n（2）求点到的距离.",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 16,
+      "prompt": "已知函数．\n（1）当时，求曲线在点处的切线方程；\n（2）若有极小值，且极小值小于0，求a的取值范围．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept",
+        "derivatives",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 17,
+      "prompt": "已知函数f(x)=x\\ln x． （1）求f(x)的单调区间； （2）若a>0时，证明：当x>0时，f(x)\\ge a(x-1)恒成立．",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "func-concept",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 18,
+      "prompt": "已知函数f(x)=\\ln\\frac{x}{2-x}+ax+b(x-1)^3\n(1) 若b=0，且f'(x)\\geq0，求a的最小值；\n(2) 证明：曲线y=f(x)是中心对称图形；\n(3) 若当且仅当...",
+      "type": "essay",
+      "difficulty": 5,
+      "chapters": [
+        "func-concept",
+        "exp-log",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 2,
+      "prompt": "已知，则=（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 4,
+      "prompt": "若点是函数的图象的一个对称中心，则a的最小值为（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 5,
+      "prompt": "在中，，，，则（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 8,
+      "prompt": "已知，，则（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 10,
+      "prompt": "已知是定义在R上的奇函数，且当时，，则（   ）",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 11,
+      "prompt": "已知的面积为，若，则（   ）",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 13,
+      "prompt": "若是函数的极值点，则________",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 15,
+      "prompt": "已知函数．\n(1)求;\n(2)设函数，求的值域和单调区间．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 18,
+      "prompt": "已知函数，其中．\n(1)证明：在区间存在唯一的极值点和唯一的零点；\n(2)设分别为在区间的极值点和零点.\n（i）设函数·证明：在区间单调递减；\n（ii）比较与的大小，并证明你的结论．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 19,
+      "prompt": "（1）设函数,求在的最大值；\n（2）给定，设a为实数，证明：存在，使得；\n（3）若存在使得对任意x，都有，求b的最小值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 1,
+      "prompt": "(1-3i(2 =",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 8,
+      "prompt": "已知f(x(为定义在R 上的偶函数, 且f(x(+f (x-2( = 0 , 当x ∈  , 3ΓLI时,f (x( = x2 + ax + b , 则",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 9,
+      "prompt": "已知 ⊙ O : x2 + y2 = 1 ,⊙ A : x2 + y2 - 6x - 8y +k = 0 , 则（    ）",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 12,
+      "prompt": "6                                        4                                       .   2（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 13,
+      "prompt": "若函数f(x( = 2x + 2-x - m 有两个零点, 则m 的取值范围是        .________",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 19,
+      "prompt": "已知函数f(x(  的定义域为R，且当x < 0 时，f(x(= 2x .对任意x0 ∈ R，定义集合D(x0(= {d ∈ R ∣ f(x0 + d(   > f (x0(}.\n(1) 若当x ≥ ...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic",
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 19,
+      "prompt": "19                                      19                                      19（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept"
+      ]
+    }
+  ],
+  "exp-log": [
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 3,
+      "prompt": "已知命题p:\\exists x\\in R,\\sin x<1；命题q:\\forall x\\in R,e^{|x|}\\ge 1，则下列命题中为真命题的是（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 12,
+      "prompt": "设a=2\\ln 1.01，b=\\ln 1.02，c=\\sqrt{1.04}-1．则（    ）",
+      "type": "choice",
+      "difficulty": 5,
+      "chapters": [
+        "exp-log",
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 20,
+      "prompt": "设函数f(x)=\\ln(a-x)，已知x=0是函数y=xf(x)的极值点．\\n（1）求a；\\n（2）设函数g(x)=\\frac{x+f(x)}{xf(x)}．证明:g(x)<1．",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "derivatives",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 12,
+      "prompt": "已知a=\\frac{1}{9}，b=\\cos\\frac{1}{9}，c=4\\sin\\frac{1}{9}，则（    ）",
+      "type": "choice",
+      "difficulty": 5,
+      "chapters": [
+        "trigonometric",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 4,
+      "prompt": "若f(x)=(x+a)\\ln\\frac{2x-1}{2x+1}为偶函数，则a=（    ）．",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "func-concept",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 6,
+      "prompt": "已知函数f(x)=a\\ln x - x在区间(0, e]上单调递增，则a的最小值为（    ）．",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "derivatives",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 10,
+      "prompt": "噪声污染问题越来越受到重视．用声压级来度量��音的强弱，定义声压级L_p=20\\lg\\frac{p}{p_0}，其中常数p_0是听觉下限阈值，p是实际声压．下表为不同声源的声压级：\n声源\t与声源的距离...",
+      "type": "multi-choice",
+      "difficulty": 5,
+      "chapters": [
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 16,
+      "prompt": "设a\\in(0,1)，若函数f(x)=a^x+\\log_a x在(0,+\\infty)上单调递增，则a取值范围是______.",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "exp-log",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 20,
+      "prompt": "已知函数f(x) = \\ln(1+x) + ax e^{-x}．\n（1）当a=1时，求曲线y=f(x)在点(0,f(0))处的切线方程．\n（2）若函数f(x)在(-1,0)单调递增，求a的取值范围．",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "derivatives",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 21,
+      "prompt": "已知f(x)=\\dfrac{1}{x}+a\\ln x （1）若a=1，讨论f(x)的单调性； （2）若f(x)\\geq 0恒成立，求a的取值范围．",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "derivatives",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 22,
+      "prompt": "（1）证明：当0<x<1时，x-x^2<\\sin x<x；\n(2) 已知函数f(x)=\\cos ax-\\ln(1-x^2)，若x=0是f(x)的极大值点，求a的取值范围．",
+      "type": "essay",
+      "difficulty": 5,
+      "chapters": [
+        "derivatives",
+        "trigonometric",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 13,
+      "prompt": "若曲线y=e^x+x在点(0,1)处的切线也是曲线y=\\ln(x+1)+a的切线，则a=__________.",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "derivatives",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 18,
+      "prompt": "已知函数f(x)=\\ln\\frac{x}{2-x}+ax+b(x-1)^3\n(1) 若b=0，且f'(x)\\geq0，求a的最小值；\n(2) 证明：曲线y=f(x)是中心对称图形；\n(3) 若当且仅当...",
+      "type": "essay",
+      "difficulty": 5,
+      "chapters": [
+        "func-concept",
+        "exp-log",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 5,
+      "prompt": "已知\\log_2 a > \\log_2 b，则下列不等式成立的是（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 8,
+      "prompt": "若实数x,y,z满足2^x=3^y=6^z，则x,y,z的大小关系不可能是（   ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 21,
+      "prompt": "已知函数 f(x) = \\ln x - ax，若 f(x) 在 (0, +\\infty) 上有两个零点，则 a 的取值范围为",
+      "type": "choice",
+      "difficulty": 5,
+      "chapters": [
+        "derivatives",
+        "exp-log"
+      ]
+    }
+  ],
+  "trigonometric": [
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 7,
+      "prompt": "把函数y=f(x)图像上所有点的横坐标缩短到原来的\\frac{1}{2}倍，纵坐标不变，再把所得曲线向右平移\\frac{\\pi}{3}个单位长度，得到函数y=\\sin(x-\\frac{\\pi}{4})...",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 15,
+      "prompt": "记\\triangle ABC的内角A，B，C的对边分别为a，b，c，面积为\\sqrt{3}，B=60^\\circ，a^2+c^2=3ac，则b=________．",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 18,
+      "prompt": "如图，四棱锥底面是矩形，底面，，为的中点，且．\n（1）求；\n（2）求二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 5,
+      "prompt": "将函数f(x)=\\sin(\\omega x+\\frac{\\pi}{3})的图像向左平移\\frac{\\pi}{2}个单位长度后得到曲线C，若C关于y轴对称，则\\omega的最小值是（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 7,
+      "prompt": "函数y=(3^x-3^{-x})\\cos x在区间[-\\frac{\\pi}{2},\\frac{\\pi}{2}]的图象大致为（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "func-concept",
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 9,
+      "prompt": "已知函数f(x)=\\sin(2x+\\varphi)的图像关于点(\\frac{2\\pi}{3},0)中心对称，则",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 12,
+      "prompt": "已知a=\\frac{1}{9}，b=\\cos\\frac{1}{9}，c=4\\sin\\frac{1}{9}，则（    ）",
+      "type": "choice",
+      "difficulty": 5,
+      "chapters": [
+        "trigonometric",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 12,
+      "prompt": "若x，y满足x^2+y^2-xy=1，则",
+      "type": "multi-choice",
+      "difficulty": 4,
+      "chapters": [
+        "trigonometric",
+        "func-concept"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 13,
+      "prompt": "设向量，的夹角的余弦值为，且，，则_________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 15,
+      "prompt": "记函数f(x)=\\cos(\\omega x + \\varphi)（\\omega>0，0<\\varphi<\\pi）的最小正周期为T，若f(T)=\\frac{\\sqrt{3}}{2}，x=\\frac{\\p...",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 16,
+      "prompt": "已知\\triangle ABC中，点D在边BC上，\\angle ADB=120^\\circ，AD=2，CD=2BD．当\\frac{AB}{AC}取得最小值时，BD=________．",
+      "type": "choice",
+      "difficulty": 5,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 17,
+      "prompt": "记\\triangle ABC的内角A，B，C的对边分别为a，b，c，已知\\sin C\\sin(A-B)=\\sin B\\sin(C-A)．\n（1）若A=2B，求C；\n（2）证明：2a^2=b^2+c^2",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 17,
+      "prompt": "记\\triangle ABC的内角A,B,C的对边分别为a,b,c，已知\\sin C \\sin(A-B) = \\sin B \\sin(C-A)． （1）证明：2a^2 = b^2 + c^2； （2）...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 18,
+      "prompt": "记\\triangle ABC的内角A，B，C的对边分别为a，b，c，分别以a，b，c为边长的三个正三角形的面积依次为S_1,S_2,S_3，已知S_1-S_2+S_3=\\frac{\\sqrt{3}}{...",
+      "type": "essay",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 18,
+      "prompt": "如图，四面体中，，E为的中点．\n（1）证明：平面平面；\n（2）设，点F在上，当面积最小时，求与平面所成的角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 18,
+      "prompt": "在四棱锥中，底面．\n（1）证明：；\n（2）求PD与平面所成的角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 19,
+      "prompt": "小明同学参加综合实践活动，设计了一个封闭的包装盒，包装盒如图所示：底面是边长为8（单位：）的正方形，均为正三角形，且它们所在的平面都与平面垂直．\n（1）证明：平面；\n（2）求该包装盒的容积（不计包装盒...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 19,
+      "prompt": "如图，直三棱柱的体积为4，的面积为．\n（1）求A到平面的距离；\n（2）设D为的中点，，平面平面，求二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 20,
+      "prompt": "如图，是三棱锥的高，，，E是的中点．\n（1）证明：平面；\n（2）若，，，求二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 22,
+      "prompt": "在直角坐标系xOy中，曲线C的参数方程为\\begin{cases} x = 2 \\cos t \\\\ y = \\sqrt{3} \\sin t \\end{cases}，（t为参数），以坐标原点为极点，x轴...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 4,
+      "prompt": "在\\triangle ABC中，内角A,B,C的对边分别是a,b,c，若\\cos A = \\frac{1}{2}，且b=3，c=4，则a = （    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 6,
+      "prompt": "设函数，则曲线在处的切线与两坐标轴围成的三角形的面积为（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept",
+        "trigonometric",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 7,
+      "prompt": "已知\\alpha为锐角，\\cos\\alpha=\\frac{1+\\sqrt{5}}{4}，则\\sin\\frac{\\alpha}{2}=（    ）．",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 7,
+      "prompt": "函数f(x) = \\sin 2x + \\sqrt{3}\\cos 2x在区间[0,\\pi]的大致图像为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 9,
+      "prompt": "已知为等腰直角三角形，AB为斜边，为等边三角形，若二面角为，则直线CD与平面ABC所成角的正切值为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 10,
+      "prompt": "已知函数f(x) = \\sin(\\omega x + \\varphi)在区间\\left[\\frac{\\pi}{6}, \\frac{\\pi}{2}\\right]单调递增，直线x = \\frac{\\pi}...",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 10,
+      "prompt": "在三棱锥中，是边长为2的等边三角形，，则该棱锥的体积为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 10,
+      "prompt": "已知f(x)=\\sin\\left(2x+\\dfrac{\\pi}{3}\\right)，g(x)为f(x)向左平移\\dfrac{\\pi}{6}个单位所得函数，则y=f(x)与y=g(x)的交点个数为（  ...",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 11,
+      "prompt": "在\\triangle ABC中，内角A,B,C所对边分别为a,b,c，若a=2, b=3, \\cos C=\\frac{1}{4}，则c=（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 15,
+      "prompt": "已知函数f(x)=\\cos\\omega x-1在区间[0,2\\pi]有且仅有3个零点，则\\omega的取值范围是________．",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 16,
+      "prompt": "在\\triangle ABC中，AB=2，AC=3，\\angle BAC=60^\\circ，D为BC上一点，AD为\\angle BAC的平分线，则AD=_________．",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 17,
+      "prompt": "已知在\\triangle ABC中，A+B=3C，2\\sin(A-C)=\\sin B．\n(1) 求\\sin A；\n(2) 设AB=5，求AB边上的高．",
+      "type": "essay",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 17,
+      "prompt": "记\\triangle ABC的内角A,B,C的对边分别为a,b,c，已知\\triangle ABC的面积为\\frac{\\sqrt{3}}{2}，D为BC中点，且AD=1．\n(1) 若\\angle AD...",
+      "type": "essay",
+      "difficulty": 4,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 18,
+      "prompt": "在\\triangle ABC中，已知\\angle BAC=120^\\circ，AB=2，AC=1。\\n（1）求\\sin\\angle ABC；\\n（2）若D为BC上一点，且\\angle BAD=90^\\...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 19,
+      "prompt": "如图，在三棱锥中，，，，，BP，AP，BC的中点分别为D，E，O，，点F在AC上，.\n（1）证明：平面；\n（2）证明：平面平面BEF；\n（3）求二面角的正弦值.",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 19,
+      "prompt": "如图，在以A，B，C，D，E，F为顶点的五面体中，四边形ABCD与四边形ADEF均为等腰梯形，，，，为的中点．\n（1）证明：平面；\n（2）求二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 20,
+      "prompt": "如图，三棱锥中，，，，E为BC的中点．\n\n（1）证明：；\n（2）点F满足，求二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 22,
+      "prompt": "（1）证明：当0<x<1时，x-x^2<\\sin x<x；\n(2) 已知函数f(x)=\\cos ax-\\ln(1-x^2)，若x=0是f(x)的极大值点，求a的取值范围．",
+      "type": "essay",
+      "difficulty": 5,
+      "chapters": [
+        "derivatives",
+        "trigonometric",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 4,
+      "prompt": "已知\\cos(\\alpha+\\beta)=m，\\tan\\alpha\\tan\\beta=2，则\\cos(\\alpha-\\beta)=",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 6,
+      "prompt": "设函数f(x)=\\sin(\\omega x+\\frac{\\pi}{3})，g(x)=\\cos(\\omega x-\\frac{\\pi}{6})，当\\omega>0时，曲线y=f(x)与y=g(x)恰有一...",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 6,
+      "prompt": "设函数，则曲线在处的切线与两坐标轴围成的三角形的面积为（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept",
+        "trigonometric",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 7,
+      "prompt": "当x\\in[0,2\\pi]时，曲线y=\\sin x与y=2\\sin(3x-\\frac{\\pi}{6})的交点个数为",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 8,
+      "prompt": "函数f(x)=\\sin x+\\cos x在区间[0,2\\pi]的大致图像为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 9,
+      "prompt": "已知\\tan\\alpha=2，则\\sin2\\alpha=（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 9,
+      "prompt": "对于���数f(x)=\\sin x和g(x)=\\cos x，下列正确的有（    ）",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 11,
+      "prompt": "在\\triangle ABC中内角A,B,C所对边分别为a,b,c，若a=2,b=3,\\cos C=\\frac{1}{4}，则c=（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 15,
+      "prompt": "记\\triangle ABC内角A、B、C的对边分别为a，b，c，已知\\sin C=2\\cos B，a^2+b^2-c^2=2ab\n(1) 求B；\n(2) 若\\triangle ABC的面积为3\\sq...",
+      "type": "essay",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 17,
+      "prompt": "如图，四棱锥中，底面ABCD，，．\n（1）若，证明：平面；\n（2）若，且二面角的正弦值为，求．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 17,
+      "prompt": "如图，平面四边形ABCD中，，，，，，点E，F满足，，将沿EF对折至，使得．\n（1）证明：；\n（2）求面PCD与面PBF所成的二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 17,
+      "prompt": "如图所示的四棱锥中，平面，．\n(1)证明：平面平面；\n(2)，，，，在同一个球面上，设该球面的球心为．\n（i）证明：在平面上；\n（ⅱ）求直线与直线所成角的余弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 17,
+      "prompt": "如图，在四边形中，，F为CD的中点，点E在AB上，，，将四边形沿翻折至四边形，使得面与面EFCB所成的二面角为．\n(1)证明:平面；\n(2)求面与面所成的二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 6,
+      "prompt": "已知函数 f(x) = a\\sin x + \\cos x 的最大值为 1，则 a =",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 7,
+      "prompt": "已知 α 为第二象限角, 且 3sin2αcosα = 8sinαcos2α , 则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 11,
+      "prompt": "已知抛物线 E : y2 = 8x , 斜率 k(k>0( 的直线 l 过点 (1 ,0(、△ABC 为等边三角形, A 在y 轴上, B , C 在l上, 则",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 13,
+      "prompt": "已知f(x)=2\\sin (\\omega x+\\theta)(\\omega \\in \\mathbb{Z} , 0\\leq \\theta <2\\pi)是偶函数,f(x)在区间 [0, \\frac{\\pi...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 14,
+      "prompt": "球 O 的体积为 4 3 π , A , B , C , D 四点均在球 O 的球面上, △ABC 为等边三角形, DA = DB = DC =  2 ,则 △ABC 的面积为        .",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 16,
+      "prompt": "已知在 \\triangle ABC 中，AB = 3 , BC = 2\\sqrt{3} , \\cos B = \\frac{\\sqrt{3}}{3} Sub: (1) 求 \\cos A； (2) 设D ...",
+      "type": "essay",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 17,
+      "prompt": "在 △ABC 中, 已知 cosB  cos2 (A+C( + sinAsinC = 1.\n(1)证明: △ABC 为钝角三角形；\n(2)若 △ABC 面积为 ，求 △ABC 周长.",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric"
+      ]
+    }
+  ],
+  "vectors-app": [
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 9,
+      "prompt": "魏晋时刘徽撰写的《海岛算经》是有关测量的数学著作，其中第一题是测海岛的高．如图，点，，在水平线上，和是两个垂直于水平面且等高的测量标杆的高度，称为“表高”，称为“表距”，和都称为“表目距”，与的差称为...",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 14,
+      "prompt": "已知向量\\vec{a}=(3,1)，\\vec{b}=(1,0)，\\vec{c}=\\vec{a}+k\\vec{b}，若\\vec{a}\\perp\\vec{c}，则k=__________．",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 3,
+      "prompt": "已知向量，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 3,
+      "prompt": "已知向量满足，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 4,
+      "prompt": "已知向量\\vec{a}=(3,4)，\\vec{b}=(1,0)，\\vec{c}=\\vec{a}+t\\vec{b}，若\\langle\\vec{a},\\vec{c}\\rangle=\\langle\\vec{...",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 11,
+      "prompt": "已知椭圆C:\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1(a>b>0)的离心率为\\frac{1}{3}，A_1、A_2分别为C的左、右顶点，B为C的上顶点．若\\overright...",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "conic-sections",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 13,
+      "prompt": "已知向量\\vec{a}=(m,3)，\\vec{b}=(1,m+1)．若\\vec{a}\\perp\\vec{b}，则m=______________．",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 13,
+      "prompt": "设向量，的夹角的余弦值为，且，，则_________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 16,
+      "prompt": "已知\\triangle ABC中，点D在边BC上，\\angle ADB=120^\\circ，AD=2，CD=2BD．当\\frac{AB}{AC}取得最小值时，BD=________．",
+      "type": "choice",
+      "difficulty": 5,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 16,
+      "prompt": "已知椭圆，C的上顶点为A，两个焦点为，，离心率为．过且垂直于的直线与C交于D，E两点，，则的周长是________________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app",
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 19,
+      "prompt": "小明同学参加综合实践活动，设计了一个封闭的包装盒，包装盒如图所示：底面是边长为8（单位：）的正方形，均为正三角形，且它们所在的平面都与平面垂直．\n（1）证明：平面；\n（2）求该包装盒的容积（不计包装盒...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 20,
+      "prompt": "设抛物线焦点为F，点，过F的直线交C于M，N两点．当直线MD垂直于x轴时，．\n（1）求C的方程；\n（2）设直线与C的另一个交点分别为A，B，记直线的倾斜角分别为．当取得最大值时，求直线AB的方程．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app",
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 3,
+      "prompt": "已知向量，则（    ）\n4. 某校文艺部有4名学生，其中高一、高二年级各2名．从这4名学生中随机选2名组织校文艺汇演，则这2名学生来自不同年级的概率为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app",
+        "probability"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 3,
+      "prompt": "已知向量\\vec{a}=(1,2)，\\vec{b}=(3,4)，若\\vec{a}\\perp(\\vec{a}+\\lambda\\vec{b})，则\\lambda=（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 4,
+      "prompt": "向量\\vec{a}=(1,2)，\\vec{b}=(3,4)，且\\vec{a}\\cdot\\vec{b}=（    ）",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 6,
+      "prompt": "正方形ABCD的边长是2，E是AB的中点，则\\overrightarrow{EC} \\cdot \\overrightarrow{ED} = （    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 9,
+      "prompt": "已知向量a = (x+1,x)，b = (x,2)，则（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 13,
+      "prompt": "已知向量\\vec{a}，\\vec{b}满足|\\vec{a}|=1，|\\vec{b}|=2，\\vec{a}\\cdot\\vec{b}=1，则|\\vec{a}+\\vec{b}|=______．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 16,
+      "prompt": "在\\triangle ABC中，AB=2，AC=3，\\angle BAC=60^\\circ，D为BC上一点，AD为\\angle BAC的平分线，则AD=_________．",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 17,
+      "prompt": "记\\triangle ABC的内角A,B,C的对边分别为a,b,c，已知\\triangle ABC的面积为\\frac{\\sqrt{3}}{2}，D为BC中点，且AD=1．\n(1) 若\\angle AD...",
+      "type": "essay",
+      "difficulty": 4,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 18,
+      "prompt": "在\\triangle ABC中，已知\\angle BAC=120^\\circ，AB=2，AC=1。\\n（1）求\\sin\\angle ABC；\\n（2）若D为BC上一点，且\\angle BAD=90^\\...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 3,
+      "prompt": "已知向量\\vec{a}=(0,1)，\\vec{b}=(2,x)，若\\vec{b}\\perp(\\vec{b}-4\\vec{a})，则x=",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 3,
+      "prompt": "已知向量\\vec{a}，\\vec{b}满足|\\vec{a}|=1，|\\vec{b}|=2，且\\vec{a}\\cdot\\vec{b}=0，则|\\vec{a}+\\vec{b}|=（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 9,
+      "prompt": "已知向量，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 11,
+      "prompt": "在\\triangle ABC中内角A,B,C所对边分别为a,b,c，若a=2,b=3,\\cos C=\\frac{1}{4}，则c=（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 15,
+      "prompt": "记\\triangle ABC内角A、B、C的对边分别为a，b，c，已知\\sin C=2\\cos B，a^2+b^2-c^2=2ab\n(1) 求B；\n(2) 若\\triangle ABC的面积为3\\sq...",
+      "type": "essay",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 18,
+      "prompt": "设椭圆\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1(a>b>0)右焦点为F，点P(1,\\frac{3}{2})在C上，且PF\\perp x轴． （1）求C的方程； （2）过点F的...",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 19,
+      "prompt": "在平面直角坐标系xOy中，以坐标原点为极点，x轴的正半轴为极轴建立极坐标系，曲线C的极坐标方程为\\rho=2\\cos\\theta。 （1）���出C的直角坐标方程； （2）设直线l：\\begin{ca...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "lines-circles",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 6,
+      "prompt": "帆船比赛中，运动员可借助风力计测定风速的大小和方向，测出的结果在航海学中称为视风风速，视风风速对应的向量，是真风风速对应的向量与船行风速对应的向量之和，其中船行风速对应的向量与船速对应的向量大小相等，...",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app",
+        "probability"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 10,
+      "prompt": "设抛物线的焦点为F，过F的直线交C于A、B，过F且垂直于的直线交于E，过点A作准线l的垂线，垂足为D，则（    ）",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app",
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 12,
+      "prompt": "已知平面向量若，则________",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 2,
+      "prompt": "已知向量 →a , b→ 满足 | →a+b→| = 1 , | →a -b→| =  3 ，则 →a . b→ =（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 16,
+      "prompt": "已知在 \\triangle ABC 中，AB = 3 , BC = 2\\sqrt{3} , \\cos B = \\frac{\\sqrt{3}}{3} Sub: (1) 求 \\cos A； (2) 设D ...",
+      "type": "essay",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric",
+        "vectors-app"
+      ]
+    }
+  ],
+  "complex": [
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 1,
+      "prompt": "设z=\\frac{1-i}{1+i}+2i，则|z|=（    ）",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "complex"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 3,
+      "prompt": "若z=1+i，则|z^2-2z|=（    ）",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "complex"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 1,
+      "prompt": "在复平面内，\\frac{1-i}{2+2i}对应的点位于（    ）．",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "complex"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 1,
+      "prompt": "设z = \\frac{1-i}{1+i} + 2i，则|z| =（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "complex"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 2,
+      "prompt": "已知z=\\frac{2i}{1+i}，则z+\\overline{z}=（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "complex"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 2,
+      "prompt": "若复数z=\\dfrac{2\\mathrm{i}}{1+\\mathrm{i}}，则|z|=（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "complex"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 1,
+      "prompt": "已知复数 z = \\frac{1+i}{1-i}，则 z 的虚部为",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "complex"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 9,
+      "prompt": "设 z = 3 + 2i , 则",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "complex"
+      ]
+    }
+  ],
+  "solid-geometry": [
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 5,
+      "prompt": "在正方体ABCD-A_1B_1C_1D_1中，P为B_1D_1的中点，则直线PB与AD_1所成的角为（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 16,
+      "prompt": "以图①为正视图，在图②③④⑤中选两个分别作为侧视图和俯视图，组成某个三棱锥的三视图，则所选侧视图和俯视图的编号依次为_________（写出符合要求的一组答案即可）．",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 18,
+      "prompt": "如图，四棱锥底面是矩形，底面，，为的中点，且．\n（1）求；\n（2）求二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 4,
+      "prompt": "如图，网格纸上绘制的是一个多面体的三视图，网格小正方形的边长为1，则该多面体的体积为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 4,
+      "prompt": "南水北调工程缓解了北方一些地区水资源短缺问题，其中一部分水蓄入某水库.已知该水库水位为海拔时，相应水面的面积为；水位为海拔时，相应水面的面积为，将该水库在这两个水位间的形状看作一个棱台，则该水库水位从...",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 4,
+      "prompt": "嫦娥二号卫星在完成探月任务后，继续进行深空探测，成为我国第一颗环绕太阳飞行的人造行星，为研究嫦娥二号绕日周期与地球绕日周期的比值，用到数列：，，，…，依此类推，其中．则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept",
+        "solid-geometry",
+        "sequences"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 4,
+      "prompt": "如图，网格纸上绘制的是一个多面体的三视图，网格小正方形的边长为1，则该多面体的体积为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 7,
+      "prompt": "已知正三棱台的高为1，上、下底面边长分别为3\\sqrt{3}和4\\sqrt{3}，其顶点都在同一球面上，则该球的表面积为",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 7,
+      "prompt": "在正方体中，E，F分别为的中点，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 7,
+      "prompt": "在长方体ABCD-A_1B_1C_1D_1中，已知B_1D与平面ABCD和平面AA_1B_1B所成的角均为30^\\circ，则（    ）",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 8,
+      "prompt": "已知正四棱锥的侧棱长为l，其各顶点都在同一球面上.若该球的体积为，且，则该正四棱锥体积的取值范围是（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 9,
+      "prompt": "在长方体ABCD-A_1B_1C_1D_1中，已知B_1D与平面ABCD和平面AA_1B_1B所成角均为30^\\circ，则（    ）",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 9,
+      "prompt": "已知正方体，则（    ）",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 9,
+      "prompt": "已知球O的半径为1，四棱锥的顶点为O，底面的四个顶点均在球O的球面上，则当该四棱锥的体积最大时，其高为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 9,
+      "prompt": "甲、乙两个圆锥母线长相等，侧面展开图的圆心角之和为，侧面积分别为和，体积分别为和．若，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 10,
+      "prompt": "甲、乙两个圆锥的母线长相等，侧面展开图的圆心角之和为2\\pi，侧面积分别为S_甲和S_乙，体积分别为V_甲和V_乙．若\\frac{S_甲}{S_乙}=2，则\\frac{V_甲}{V_乙}=（    ）",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 11,
+      "prompt": "如图，四边形为正方形，平面，，记三棱锥，，的体积分别为，则（    ）",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 12,
+      "prompt": "已知球O的半径为1，四棱锥的顶点为O，底面的四个顶点均在球O的球面上，则当该四棱锥的体积最大时，其高为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 15,
+      "prompt": "从正方体的8个顶点中任选4个，则这4个点在同一个平面的概率为________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "probability"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 18,
+      "prompt": "如图，四面体中，，E为AC的中点．\n（1）证明：平面平面ACD；\n（2）设，点F在BD上，当的面积最小时，求三棱锥的体积．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 18,
+      "prompt": "如图，四面体中，，E为的中点．\n（1）证明：平面平面；\n（2）设，点F在上，当面积最小时，求与平面所成的角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 18,
+      "prompt": "在四棱锥中，底面．\n（1）证明：；\n（2）求PD与平面所成的角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 19,
+      "prompt": "如图，直三棱柱的体积为4，的面积为．\n（1）求A到平面的距离；\n（2）设D为的中点，，平面平面，求二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 20,
+      "prompt": "如图，是三棱锥的高，，，E是的中点．\n（1）证明：平面；\n（2）若，，，求二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 3,
+      "prompt": "如图，网格纸上绘制的一个零件的三视图，网格小正方形的边长为1，则该零件的表面积为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 3,
+      "prompt": "如图，网格纸上绘制的一个零件的三视图，网格小正方形的边长为1，则该零件的表面积为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 8,
+      "prompt": "已知圆锥PO的底面半径为，O为底面圆心，PA，PB为圆锥的母线，，若的面积等于，则该圆锥的体积为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 9,
+      "prompt": "已知圆锥的顶点为P，底面圆心为O，AB为底面直径，\\angle APB=120^\\circ，PA=2，点C在底面圆周上，且二面角P-AC-O为45°，则（    ）．",
+      "type": "multi-choice",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 10,
+      "prompt": "在三棱锥中，是边长为2的等边三角形，，则该棱锥的体积为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 11,
+      "prompt": "在四棱锥P-ABCD中，底面ABCD为正方形，PA\\perp底面ABCD，PA=AB=2，则\\triangle PBC的面积为（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 12,
+      "prompt": "下列物体中，能够被整体放入棱长为1（单位：m）的正方体容器（容器壁厚度忽略不计）内的有（    ）",
+      "type": "multi-choice",
+      "difficulty": 3,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 14,
+      "prompt": "在正四棱台ABCD-A_1B_1C_1D_1中，AB=2，A_1B_1=1，AA_1=\\sqrt{2}，则该棱台的体积为________．",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 14,
+      "prompt": "底面边长为4的正四棱锥被平行于其底面的平面所截，截去一个底面边长为2，高为3的正四棱锥，所得棱台的体积为______．",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 14,
+      "prompt": "已知甲、乙两个圆台上、下底面的半径均为r��R，母线长分别为l_1和l_2，则两个圆台的体积之比\\frac{V_1}{V_2}=______．",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 15,
+      "prompt": "在正方体ABCD-A_1B_1C_1D_1中，E，F分别为CD，CC_1的中点，则以EF为直径的球面与正方体每条棱的交点总数为____________．",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 16,
+      "prompt": "已知点S,A,B,C均在半径为2的球面上，\\triangle ABC是边长为3的等边三角形，SA \\perp平面ABC，则SA = ________．",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 16,
+      "prompt": "在正方体中，为的中点，若该正方体的棱与球的球面有公共点，则球的半径的取值范围是________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "solid-geometry",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 18,
+      "prompt": "如图，在三棱柱中，平面．\n\n（1）证明：平面平面；\n（2）设，求四棱锥的高．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 18,
+      "prompt": "如图，在正四棱柱中，．点分别在棱,上，．\n\n（1）证明：；\n（2）点在棱上，当二面角时，求．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 18,
+      "prompt": "在三��柱ABC-A_1B_1C_1中，AA_1\\perp底面ABC，AB\\perp AC，A_1到平面BCC_1B_1的距离为1． （1）求证：AB\\perp平面ACC_1A_1； （2）若直线AA...",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 19,
+      "prompt": "如图，在三棱锥中，，，，，的中点分别为，点在上，．\n（1）求证：//平面；\n（2）若，求三棱锥的体积．",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 19,
+      "prompt": "如图，在三棱锥中，，，，，BP，AP，BC的中点分别为D，E，O，，点F在AC上，.\n（1）证明：平面；\n（2）证明：平面平面BEF；\n（3）求二面角的正弦值.",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 20,
+      "prompt": "如图，三棱锥中，，，，E为BC的中点．\n\n（1）证明：；\n（2）点F满足，求二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 5,
+      "prompt": "已知圆柱和圆锥底面半径相等，侧面积相等，且它们的高均为\\sqrt{3}，则圆锥的体积为",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 7,
+      "prompt": "已知正三棱台ABC-A_1B_1C_1的体积为\\frac{7\\sqrt{3}}{12}，AB=2，A_1B_1=1，则A_1B与平面ABC所成角的正切值为（    ）",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 10,
+      "prompt": "设\\alpha,\\beta是两个平面，m,n是两条直线，且m\\subset\\alpha,n\\subset\\beta。下列四个命题： ①若m\\parallel\\beta，则m\\parallel n或m\\...",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 14,
+      "prompt": "已知甲、乙两个圆台上、下底面的半径均为和，母线长分别为和，则两个圆台的体积之比______．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 16,
+      "prompt": "有6个相同的球，分别标有数字1、2、3、4、5、6，从中不放回地随机抽取3次，每次取1个球.记为前两次取出的球上数字的平均值，为取出的三个球上数字的平均值，则与差的绝对值不超过的概率是______．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "counting",
+        "probability"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 17,
+      "prompt": "如图，四棱锥中，底面ABCD，，．\n（1）若，证明：平面；\n（2）若，且二面角的正弦值为，求．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 19,
+      "prompt": "如图，在以A，B，C，D，E，F为顶点的五面体中，四边形ABCD与四边形ADEF均为等腰梯形，AB \\parallel CD，AD \\parallel EF，AB = 2CD，AD = 2EF，\\an...",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 9,
+      "prompt": "在正三棱柱中，D为BC中点，则（    ）",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 14,
+      "prompt": "一个箱子里有5个相同的球，分别以1~5标号，若每次取一颗，有放回地取三次，记至少取出一次的球的个数X，则数学期望         .",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "random-vars"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 14,
+      "prompt": "一个底面半径为，高为的封闭圆柱形容器（容器壁厚度忽略不计）内有两个半径相等的铁球，则铁球半径的最大值为            ．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 17,
+      "prompt": "如图所示的四棱锥中，平面，．\n(1)证明：平面平面；\n(2)，，，，在同一个球面上，设该球面的球心为．\n（i）证明：在平面上；\n（ⅱ）求直线与直线所成角的余弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 19,
+      "prompt": "甲、乙两人进行乒乓球练习，每个球胜者得1分，负者得0分．设每个球甲胜的概率为，乙胜的概率为q，，且各球的胜负相互独立，对正整数，记为打完k个球后甲比乙至少多得2分的概率，为打完k个球后乙比甲至少多得2...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "probability"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 5,
+      "prompt": "棱台上下底面均为有一个内角是 60。的菱形, 且上下底面边长分别为 2 和 3 , 该棱台的高为  3 , 则该棱台体积为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 10,
+      "prompt": "在空间中, A、B 为两个定点, 动点 C 到直线AB 的距离为 2 , 动点D 到直线AB 的距离为 1 , 若二面角 C - AB - D 为 60° , 则",
+      "type": "multi-choice",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 14,
+      "prompt": "球 O 的体积为 4 3 π , A , B , C , D 四点均在球 O 的球面上, △ABC 为等边三角形, DA = DB = DC =  2 ,则 △ABC 的面积为        .",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 15,
+      "prompt": "如图，在直三棱柱ABC - A1B1C1 中，∠ACB = 90° , AC = BC , D , E 分别为AB , A1C1 的中点.\n(1)证明: DE ⎳ 平面BCC1B1；\n(2)设 CC1...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 16,
+      "prompt": "三棱锥A-BCD中, E在BD上, AE \\perp CE, AE \\perp DE, CD \\perp AD. (1) 证明: CD \\perp AB; (2) 若DE=2, BE=1, AE=2,...",
+      "type": "essay",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 17,
+      "prompt": "设整数N ≥ 2.某同学用一个球进行投篮练习, 至多投置N 次, 当且仅当投中 1 次时或N 次均未投中时, 停止练习.设该同学每次投中的概率为p(0<p<1(  , 各次投中与否相互独立.记X 为停...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "probability",
+        "random-vars"
+      ]
+    }
+  ],
+  "space-vectors": [
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 5,
+      "prompt": "在正方体ABCD-A_1B_1C_1D_1中，P为B_1D_1的中点，则直线PB与AD_1所成的角为（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 18,
+      "prompt": "如图，四棱锥底面是矩形，底面，，为的中点，且．\n（1）求；\n（2）求二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 9,
+      "prompt": "在长方体ABCD-A_1B_1C_1D_1中，已知B_1D与平面ABCD和平面AA_1B_1B所成角均为30^\\circ，则（    ）",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 19,
+      "prompt": "如图，直三棱柱的体积为4，的面积为．\n（1）求A到平面的距离；\n（2）设D为的中点，，平面平面，求二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 20,
+      "prompt": "如图，是三棱锥的高，，，E是的中点．\n（1）证明：平面；\n（2）若，，，求二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 9,
+      "prompt": "已知圆锥的顶点为P，底面圆心为O，AB为底面直径，\\angle APB=120^\\circ，PA=2，点C在底面圆周上，且二面角P-AC-O为45°，则（    ）．",
+      "type": "multi-choice",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 9,
+      "prompt": "已知为等腰直角三角形，AB为斜边，为等边三角形，若二面角为，则直线CD与平面ABC所成角的正切值为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 18,
+      "prompt": "如图，在正四棱柱中，．点分别在棱,上，．\n\n（1）证明：；\n（2）点在棱上，当二面角时，求．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 18,
+      "prompt": "在三��柱ABC-A_1B_1C_1中，AA_1\\perp底面ABC，AB\\perp AC，A_1到平面BCC_1B_1的距离为1． （1）求证：AB\\perp平面ACC_1A_1； （2）若直线AA...",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 19,
+      "prompt": "如图，在三棱锥中，，，，，BP，AP，BC的中点分别为D，E，O，，点F在AC上，.\n（1）证明：平面；\n（2）证明：平面平面BEF；\n（3）求二面角的正弦值.",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 19,
+      "prompt": "如图，在以A，B，C，D，E，F为顶点的五面体中，四边形ABCD与四边形ADEF均为等腰梯形，，，，为的中点．\n（1）证明：平面；\n（2）求二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 20,
+      "prompt": "如图，三棱锥中，，，，E为BC的中点．\n\n（1）证明：；\n（2）点F满足，求二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 10,
+      "prompt": "设\\alpha,\\beta是两个平面，m,n是两条直线，且m\\subset\\alpha,n\\subset\\beta。下列四个命题： ①若m\\parallel\\beta，则m\\parallel n或m\\...",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 17,
+      "prompt": "如图，四棱锥中，底面ABCD，，．\n（1）若，证明：平面；\n（2）若，且二面角的正弦值为，求．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 17,
+      "prompt": "如图，平面四边形ABCD中，，，，，，点E，F满足，，将沿EF对折至，使得．\n（1）证明：；\n（2）求面PCD与面PBF所成的二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 19,
+      "prompt": "如图，在以A，B，C，D，E，F为顶点的五面体中，四边形ABCD与四边形ADEF均为等腰梯形，AB \\parallel CD，AD \\parallel EF，AB = 2CD，AD = 2EF，\\an...",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 17,
+      "prompt": "如图，在四边形中，，F为CD的中点，点E在AB上，，，将四边形沿翻折至四边形，使得面与面EFCB所成的二面角为．\n(1)证明:平面；\n(2)求面与面所成的二面角的正弦值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 3,
+      "prompt": "设 U = \\{(x_1, x_2, x_3) \\mid x_i \\in \\{-2, -1, 1, 2\\}, i = 1, 2, 3\\} 为空间中 64 个点构成的集合，记 P(1, 1, 1)，记样...",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "random-vars",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 10,
+      "prompt": "在空间中, A、B 为两个定点, 动点 C 到直线AB 的距离为 2 , 动点D 到直线AB 的距离为 1 , 若二面角 C - AB - D 为 60° , 则",
+      "type": "multi-choice",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 16,
+      "prompt": "三棱锥A-BCD中, E在BD上, AE \\perp CE, AE \\perp DE, CD \\perp AD. (1) 证明: CD \\perp AB; (2) 若DE=2, BE=1, AE=2,...",
+      "type": "essay",
+      "difficulty": 4,
+      "chapters": [
+        "solid-geometry",
+        "space-vectors"
+      ]
+    }
+  ],
+  "sequences": [
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 19,
+      "prompt": "记S_n为数列\\{a_n\\}的前n项和，b_n为数列\\{S_n\\}的前n项积，已知\\frac{1}{S_n}+\\frac{1}{b_n}=2．\\n（1）证明：数列\\{b_n\\}是等差数列;\\n（2）求...",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 3,
+      "prompt": "图1是中国古代建筑中的举架结构，DD_1是桁，相邻桁的水平距离称为步，垂直距离称为举，图2是某古代建筑屋顶截面的示意图．其中DD_1，CC_1，BB_1，AA_1是举，OD_1，DC_1，CB_1，B...",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "sequences",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 4,
+      "prompt": "嫦娥二号卫星在完成探月任务后，继续进行深空探测，成为我国第一颗环绕太阳飞行的人造行星，为研究嫦娥二号绕日周期与地球绕日周期的比值，用到数列：，，，…，依此类推，其中．则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept",
+        "solid-geometry",
+        "sequences"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 8,
+      "prompt": "已知等比数列的前3项和为168，，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 13,
+      "prompt": "记S_n为等差数列\\{a_n\\}的前n项和．若a_2=3，S_5=25，则公差d=_______．",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 17,
+      "prompt": "记为数列的前n项和，已知是公差为的等差数列．\n（1）求的通项公式；\n（2）证明：．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 17,
+      "prompt": "已知为等差数列，是公比为2的等比数列，且．\n（1）证明：；\n（2）求集合中元素个数．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic",
+        "sequences"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 17,
+      "prompt": "记为数列的前n项和．已知．\n（1）证明：是等差数列；\n（2）若成等比数列，求的最小值．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 18,
+      "prompt": "记S_n为数列\\{a_n\\}的前n项和．已知\\frac{2S_n}{n}+n=2a_{n+1}．\n（1）证明：\\{a_n\\}是等差数列；\n（2）若a_4,a_7,a_9成等比数列，求S_n的最小值．",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "sequences",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 22,
+      "prompt": "已知函数和有相同的最小值．\n（1）求a；\n（2）证明：存在直线，其与两条曲线和共有三个不同的交点，并且从左到右的三个交点的横坐标成等差数列．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept",
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 3,
+      "prompt": "执行下面的程序框图，输出的S=（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 4,
+      "prompt": "等差数列\\{a_n\\}的前n项和为S_n，若S_5 = S_{10}，a_5 = 1，则a_1 =（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 5,
+      "prompt": "记为等差数列的前项和．若，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 5,
+      "prompt": "已知正项等比数列\\{a_n\\}中��a_1=1，S_n为前n项和，S_3=7，则a_4=（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 7,
+      "prompt": "记S_n为数列\\{a_n\\}的前n项和，设甲：\\{a_n\\}为等差数列；乙：\\{\\frac{S_n}{n}\\}为等差数列，则（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 8,
+      "prompt": "记S_n为等比数列\\{a_n\\}的前n项和，若S_4=-5，S_6=21S_2，则S_8=（    ）．",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 10,
+      "prompt": "已知等差数列的公差为，集合，若，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic",
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 12,
+      "prompt": "已知b是a与c的等差中项，直线ax+by+c=0与圆x^2+y^2=1交于A,B两点，则|AB|的最小值为（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "lines-circles",
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 13,
+      "prompt": "记为等比数列前项和．若，则的公比为________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 15,
+      "prompt": "已知\\{a_n\\}为等比数列，a_2a_4a_5=a_3a_6，a_9a_{10}=-8，则a_7=______.",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 17,
+      "prompt": "已知数列\\{a_n\\}中，a_1=1，S_n为前n项和，a_{n+1}=2S_n+1． （1）求\\{a_n\\}的通项公式； （2）求数列\\{a_n\\}的前n项和．",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 18,
+      "prompt": "记S_n为等差数列\\{a_n\\}的前n项和，已知a_2 = 3，S_5 = 25．\n（1）求\\{a_n\\}的通项公式；\n（2）求数列\\{|a_n|\\}的前n项和T_n．",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 18,
+      "prompt": "为等差数列，，记，分别为数列，的前n项和，，．\n（1）求的通项公式；\n（2）证明：当时，．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 18,
+      "prompt": "记为数列\\{a_n\\}的前n项和S_n，且S_n = 2a_n - 1． （1）求\\{a_n\\}的通项公式； （2）设b_n = \\frac{1}{a_n a_{n+1}}，求数列\\{b_n\\}的前n...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 20,
+      "prompt": "设等差数列\\{a_n\\}的公差为d，且d>1．令b_n=\\frac{n^2+n}{a_n}，记S_n、T_n分别为数列\\{a_n\\}、\\{b_n\\}的前n项和．\n(1) 若3a_2=3a_1+a_3，...",
+      "type": "essay",
+      "difficulty": 5,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 21,
+      "prompt": "甲、乙两人投篮，每次由其中一人投篮，规则如下：若命中则此人继续投篮，若未命中则换为对方投篮．无论之前投篮情况如何，甲每次投篮的命中率均为0.6，乙每次投篮的命中率均为0.8．由抽签确定第1次投篮的人选...",
+      "type": "essay",
+      "difficulty": 4,
+      "chapters": [
+        "probability",
+        "sequences"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 4,
+      "prompt": "等差数列\\{a_n\\}的前n项和为S_n，若S_3=6，a_4=4，则S_5=（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 4,
+      "prompt": "等差数列的前项和为，若，，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 8,
+      "prompt": "已知函数f(x)的定义域为R，f(x)>f(x-1)+f(x-2)，且当x<3时f(x)=x，则下列结论中一定正确的是",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "func-concept",
+        "sequences"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 12,
+      "prompt": "记为等差数列的前n项和，若，，则________.",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 12,
+      "prompt": "已知b是的等差中项，直线与圆交于两点，则的最小值为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 15,
+      "prompt": "已知等比数列\\{a_n\\}前n项和为S_n，且S_3=7,a_2=2。 （1）求\\{a_n\\}的通项公式； （2）求数列\\{n a_n\\}的通项公式。",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 18,
+      "prompt": "记为数列\\{a_n\\}的前n项和S_n，且S_n = 2a_n - 1． （1）求\\{a_n\\}的通项公式； （2）设b_n = \\frac{1}{a_n a_{n+1}}，求数列\\{b_n\\}的前n...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 19,
+      "prompt": "设m为正整数，数列是公差不为0的等差数列，若从中删去两项和后剩余的项可被平均分为组，且每组的4个数都能构成等差数列，则称数列是可分数列．\n（1）写出所有，，使数列是可分数列；\n（2）当时，证明：数列是...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "sequences",
+        "probability"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 19,
+      "prompt": "已知双曲线，点在上，为常数，．按照如下方式依次构造点，过作斜率为的直线与的左支交于点，令为关于轴的对称点，记的坐标为.\n（1）若，求；\n（2）证明：数列是公比为的等比数列；\n（3）设为的面积，证明：对...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "sequences",
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 7,
+      "prompt": "记为等差数列的前n项和，若则（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 9,
+      "prompt": "记为等比数列的前n项和，为的公比，若，则（   ）",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 13,
+      "prompt": "若一个等比数列的前4项和为4，前8项和为68，则该等比数列的公比为         .________",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 16,
+      "prompt": "设数列满足，\n(1)证明：为等差数列；\n(2)设，求．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 2,
+      "prompt": "一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深远的历史文化闻名遐迩，该塔群共有 108 座塔，依山势自上而下排成 12 行，将第 i 行中塔的座数记为 a_i (i = 1, 2, \\d...",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 7,
+      "prompt": "一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深远的历史文化闻名遐迩，该塔群共有 108 座塔，依山势自上而下排成 12 行，将第 i 行中塔的座数记为 ai      (i = 1 ,2...",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 10,
+      "prompt": "等比数列 {an{的公比 q ≠ 1 , a1> 0 , 2a3 = a2 + a1 , 记前n 项和为Sn , 则（    ）",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "sequences"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 14,
+      "prompt": "设实数 q 满足: 存在数列 {a_n} , 使得对于任意 n \\in \\mathbb{N}^* , 均有 a_1 + a_2 + \\ldots + a_{3n} = n^2 + n , 且 {a_n...",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "sequences"
+      ]
+    }
+  ],
+  "derivatives": [
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 10,
+      "prompt": "设a\\neq 0，若x=a为函数f(x)=a(x-a)^2(x-b)的极大值点，则（    ）",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 20,
+      "prompt": "设函数f(x)=\\ln(a-x)，已知x=0是函数y=xf(x)的极值点．\\n（1）求a；\\n（2）设函数g(x)=\\frac{x+f(x)}{xf(x)}．证明:g(x)<1．",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "derivatives",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 21,
+      "prompt": "已知抛物线C:x^2=2py(p>0)焦点为F，且F与圆M:x^2+(y+4)^2=1上点的距离的最小值为4．\\n（1）求p；\\n（2）若点P在M上，PA,PB是C的两条切线，A,B是切点，求\\tri...",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 2,
+      "prompt": "已知函数f(x)=e^x+ax和g(x)=ax-\\ln x有相同的最小值．\n  Sub: (1) 求a；\n(2) 证明：存在直线y=b，其与两条曲线y=f(x)和y=g(x)共有三个不同的交点，并且从...",
+      "type": "choice",
+      "difficulty": 5,
+      "chapters": [
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 6,
+      "prompt": "当x = 1时，函数f(x) = ax^3 + bx取得最大值2，则f'(1) =（    ）",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 8,
+      "prompt": "当x=1时，函数f(x)=a\\ln x+\\frac{b}{x}取得最大值-2，则f'(2)=（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 10,
+      "prompt": "已知函数f(x)=\\ln x + \\frac{a}{x}． （1）当a=1时，求f(x)的最大值； （2）若f(x)恰有一个零点，求a的取值范围．",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 11,
+      "prompt": "设函数在区间恰有三个极值点、两个零点，则的取值范围是（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 14,
+      "prompt": "曲线y=\\ln|x|过坐标原点两条切线的方程为____________，____________．",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 16,
+      "prompt": "已知x=1和x=3分别是函数f(x)=2a^x - ex^2（a>0且a\\neq 1）的极小值点和极大值点．若x_1 < x_2，则a的取值范围是____________．",
+      "type": "choice",
+      "difficulty": 5,
+      "chapters": [
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 18,
+      "prompt": "记S_n为数列\\{a_n\\}的前n项和．已知\\frac{2S_n}{n}+n=2a_{n+1}．\n（1）证明：\\{a_n\\}是等差数列；\n（2）若a_4,a_7,a_9成等比数列，求S_n的最小值．",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "sequences",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 20,
+      "prompt": "已知函数f(x)=x^3-x，曲线y=f(x)在点(x_1,f(x_1))处的切线也是曲线y=g(x)=x^2+ax+1的切线．\n（1）若x_1=-1，求a；\n（2）求a的取值范围．",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 21,
+      "prompt": "设抛物线C:y^2=2px(p>0)的焦点为F，点D(p,0)，过F的直线交C于M，N两点．当直线MD垂直于x轴时，|MF|=2．\n（1）求C的方程；\n（2）设直线MD与C的另一个交点分别为A，B，记...",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 21,
+      "prompt": "已知函数f(x) = \\ln x - ax + \\frac{1}{x}． （1）当a=1时，求曲线y=f(x)在点(1,f(1))处的切线方程； （2）若f(x)在区间(0,1)和(1,+\\infty...",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 21,
+      "prompt": "已知函数f(x)=\\ln x+\\frac{a}{x}． （1）若f(x)\\geq 0，求a的取值范围； （2）证明：若f(x)有两个零点，则x_1x_2>e^2．",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 6,
+      "prompt": "已知函数f(x)=a\\ln x - x在区间(0, e]上单调递增，则a的最小值为（    ）．",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "derivatives",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 8,
+      "prompt": "函数f(x) = x^3 - 3x + a存在3个零点，则a的取值范围是（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 8,
+      "prompt": "曲线在点处切线方程为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "derivatives",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 11,
+      "prompt": "若函数f(x)=ax^3+bx^2+cx+d既有极大值也有极小值，则（    ）．",
+      "type": "multi-choice",
+      "difficulty": 4,
+      "chapters": [
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 16,
+      "prompt": "设a\\in(0,1)，若函数f(x)=a^x+\\log_a x在(0,+\\infty)上单调递增，则a取值范围是______.",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "exp-log",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 20,
+      "prompt": "已知函数f(x) = \\ln(1+x) + ax e^{-x}．\n（1）当a=1时，求曲线y=f(x)在点(0,f(0))处的切线方程．\n（2）若函数f(x)在(-1,0)单调递增，求a的取值范围．",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "derivatives",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 20,
+      "prompt": "已知椭圆C：\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1（a>b>0）的离心率为\\frac{\\sqrt{2}}{2}，点A(-2,0)在C上。\\n（1）求C的方程；\\n（2）过点...",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 21,
+      "prompt": "已知函数f(x)=x^3-ax^2+bx. （1）当a=1,b=3时，求曲线y=f(x)在点(1,f(1))处的切线方程； （2）是否存在a，b，使得曲线y=f(x)关于直线x=2对称，若存在，求a，...",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 21,
+      "prompt": "已知f(x)=\\dfrac{1}{x}+a\\ln x （1）若a=1，讨论f(x)的单调性； （2）若f(x)\\geq 0恒成立，求a的取值范围．",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "derivatives",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 21,
+      "prompt": "已知函数f(x) = e^x - ax - 1． （1）当a = 1时，求f(x)的极值； （2）当x \\geq 0时，f(x) \\geq 0恒成立，求a的取值范围． （二）选考题：共10分，请考生在...",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 22,
+      "prompt": "在直角坐标系xOy中，点P到x轴的距离等于点P到点(0,\\frac{1}{2})的距离，记动点P的轨迹为W．\n(1) 求W的方程；\n(2) 已知矩形ABCD有三个顶点在W上，证明：矩形的周长大于3\\s...",
+      "type": "essay",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 22,
+      "prompt": "（1）证明：当0<x<1时，x-x^2<\\sin x<x；\n(2) 已知函数f(x)=\\cos ax-\\ln(1-x^2)，若x=0是f(x)的极大值点，求a的取值范围．",
+      "type": "essay",
+      "difficulty": 5,
+      "chapters": [
+        "derivatives",
+        "trigonometric",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 6,
+      "prompt": "已知函数f(x)=\\begin{cases} e^x+\\ln(x+1), & x\\geq 0 \\\\ x^2+ax+a, & x<0 \\end{cases}在R上单调递增，则a取值的范围是",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "func-concept",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 7,
+      "prompt": "曲线y=x^3-3x在x=1处的切线与坐标轴围成的面积为（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 8,
+      "prompt": "设函数f(x)=\\begin{cases} x^2-2x+2, & x\\leq1 \\\\ \\ln x, & x>1 \\end{cases}，若f(a)=f(b)，则a+b最小值为（    ）",
+      "type": "choice",
+      "difficulty": 5,
+      "chapters": [
+        "func-concept",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 10,
+      "prompt": "设函数f(x)=(x-1)^2(x-4)，则",
+      "type": "multi-choice",
+      "difficulty": 3,
+      "chapters": [
+        "func-concept",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 13,
+      "prompt": "若曲线y=e^x+x在点(0,1)处的切线也是曲线y=\\ln(x+1)+a的切线，则a=__________.",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "derivatives",
+        "exp-log"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 14,
+      "prompt": "曲线y=x^2与y=\\ln x在(0,+\\infty)上有两个不同交点，则a的取值范围为______．",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "func-concept",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 16,
+      "prompt": "已知函数．\n（1）当时，求曲线在点处的切线方程；\n（2）若有极小值，且极小值小于0，求a的取值范围．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept",
+        "derivatives",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 17,
+      "prompt": "已知函数f(x)=x\\ln x． （1）求f(x)的单调区间； （2）若a>0时，证明：当x>0时，f(x)\\ge a(x-1)恒成立．",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "func-concept",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 18,
+      "prompt": "已知函数f(x)=\\ln\\frac{x}{2-x}+ax+b(x-1)^3\n(1) 若b=0，且f'(x)\\geq0，求a的最小值；\n(2) 证明：曲线y=f(x)是中心对称图形；\n(3) 若当且仅当...",
+      "type": "essay",
+      "difficulty": 5,
+      "chapters": [
+        "func-concept",
+        "exp-log",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 21,
+      "prompt": "已知函数f(x) = e^x - ax - 1． （1）当a = 1时，求f(x)的极值； （2）当x \\geq 0时，f(x) \\geq 0恒成立，求a的取值范围． （二）选考题：共10分，请考生在...",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 12,
+      "prompt": "若直线是曲线的切线，则         .________",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "derivatives",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 13,
+      "prompt": "若是函数的极值点，则________",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 18,
+      "prompt": "已知函数，其中．\n(1)证明：在区间存在唯一的极值点和唯一的零点；\n(2)设分别为在区间的极值点和零点.\n（i）设函数·证明：在区间单调递减；\n（ii）比较与的大小，并证明你的结论．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 4,
+      "prompt": "曲线 y = 5x + 8\\ln x 在点 (1, 5) 的切线方程为",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 21,
+      "prompt": "已知函数 f(x) = \\ln x - ax，若 f(x) 在 (0, +\\infty) 上有两个零点，则 a 的取值范围为",
+      "type": "choice",
+      "difficulty": 5,
+      "chapters": [
+        "derivatives",
+        "exp-log"
+      ]
+    }
+  ],
+  "counting": [
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 6,
+      "prompt": "将5名北京冬奥会志愿者分配到花样滑冰、短道速滑、冰球和冰壶4个项目进行培训，每名志愿者只分配到1个项目，每个项目至少分配1名志愿者，则不同的分配方案共有（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "counting"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 2,
+      "prompt": "某社区通过公益讲座以普及社区居民垃圾分类知识．为了解讲座效果，随机抽取10位社区居民，让他们在讲座前和讲座后各回答一份垃圾分类知识问卷，这10位社区居民在讲座前和讲座后问卷答题的正确率如下图：\n则（ ...",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "counting",
+        "probability"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 2,
+      "prompt": "某社区通过公益讲座以普及社区居民的垃圾分类知识．为了解讲座效果，随机抽取10位社区居民，让他们在讲座前和讲座后各回答一份垃圾分类知识问卷，这10位社区居民在讲座前和讲座后问卷答题的正确率如下图：\n则（...",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "counting",
+        "probability"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 5,
+      "prompt": "有甲、乙、丙、丁、戊5名同学站成一排参加文艺汇演，若甲不站在两端，丙和丁相邻，则不同排列方式共有",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "counting"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 6,
+      "prompt": "从分别写有1，2，3，4，5，6的6张卡片中无放回随机抽取2张，则抽到的2张卡片上的数字之积是4的倍数的概率为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "counting",
+        "probability"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 3,
+      "prompt": "某学校为了解学生参加体育运动的情况，用比例分配的分层随机抽样方法作抽样调查，拟从初中部和高中部两层共抽取60名学生，已知该校初中部和高中部分别有400名和200名学生，则不同的抽样结果共有（    ）...",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "counting"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 7,
+      "prompt": "甲乙两位同学从6种课外读物中各自选读2种，则这两人选读的课外读物中恰有1种相同的选法共有（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "counting"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 9,
+      "prompt": "有五名志愿者参加社区服务，共服务星期六、星期天两天，每天从中任选两人参加服务，则恰有1人连续参加两天服务选择种数为（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "counting"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 13,
+      "prompt": "某学校开设了4门体育类选修课和4门艺术类选修课，学生需从这8门课中选修2门或3门课，并且每类选修课至少选修1门，则不同的选课方案共有________种（用数字作答）．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "counting"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 13,
+      "prompt": "(x+\\frac{1}{x})^6的展开式中，各项系数的最大值是______．",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "counting"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 19,
+      "prompt": "一项试验旨在研究臭氧效应，试验方案如下：选40只小白鼠，随机地将其中20只分配到试验组，另外20只分配到对照组，试验组的小白鼠饲养在高浓度臭氧环境，对照组的小白鼠饲养在正常环境，一段时间后统计每只小白...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "counting",
+        "probability"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 5,
+      "prompt": "甲、乙、丙、丁四人排成一列，丙不在排头，且甲或乙在排尾的概率是（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "counting",
+        "probability"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 14,
+      "prompt": "甲、乙两人各有四张卡片，每张卡片上标有一个数字，甲的卡片上分别标有数字1，3，5，7，乙的卡片上分别标有数字2，4，6，8，两人进行四轮比赛，在每轮比赛中，两人各自从自己持有的卡片中随机选一张，并比较...",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "counting",
+        "probability"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 14,
+      "prompt": "在如图的4×4方格表中选4个方格，要求每行和每列均恰有一个方格被选中，则共有________种选法，在所有符合上述要求的选法中，选中方格中的4个数之和的最大值是________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "counting"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 16,
+      "prompt": "有6个相同的球，分别标有数字1、2、3、4、5、6，从中不放回地随机抽取3次，每次取1个球.记为前两次取出的球上数字的平均值，为取出的三个球上数字的平均值，则与差的绝对值不超过的概率是______．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "counting",
+        "probability"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 17,
+      "prompt": "某工厂进行生产线智能化升级改造，升级改造后，从该工厂甲、乙两个车间产品中随机抽取150件进行检验，数据如下：\n优级品\n合格品\n不合格品\n总计\n甲车间\n26\n24\n0\n50\n乙车间\n70\n28\n2\n10...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "counting",
+        "probability"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 6,
+      "prompt": "甲、乙、丙、丁等 8 人分成A, B 两技术小组,要求每组 4 人，且甲乙必须在同一组，丙丁不能在同一组，共有多少分配方案（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "counting"
+      ]
+    }
+  ],
+  "probability": [
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 8,
+      "prompt": "在区间(0,1)与(1,2)中各随机取1个数，则两数之和大于\\frac{7}{4}的概率为（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "probability"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 2,
+      "prompt": "某社区通过公益讲座以普及社区居民垃圾分类知识．为了解讲座效果，随机抽取10位社区居民，让他们在讲座前和讲座后各回答一份垃圾分类知识问卷，这10位社区居民在讲座前和讲座后问卷答题的正确率如下图：\n则（ ...",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "counting",
+        "probability"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 2,
+      "prompt": "某社区通过公益讲座以普及社区居民的垃圾分类知识．为了解讲座效果，随机抽取10位社区居民，让他们在讲座前和讲座后各回答一份垃圾分类知识问卷，这10位社区居民在讲座前和讲座后问卷答题的正确率如下图：\n则（...",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "counting",
+        "probability"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 5,
+      "prompt": "从2至8的7个整数中随机取2个不同的数，则这2个数互质的概率为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "probability"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 6,
+      "prompt": "从分别写有1，2，3，4，5，6的6张卡片中无放回随机抽取2张，则抽到的2张卡片上的数字之积是4的倍数的概率为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "counting",
+        "probability"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 10,
+      "prompt": "一医疗团队为研究某地的一种地方性疾病与当地居民的卫生习惯（卫生习惯分为良好和不够良好两类）的关系，在已患该疾病的病例中随机调查了100例（称为病例组），同时在未患该疾病的���群中随机调查了100人（...",
+      "type": "multi-choice",
+      "difficulty": 4,
+      "chapters": [
+        "statistics",
+        "probability"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 13,
+      "prompt": "从甲、乙等5名同学中随机选3名参加社区服务工作，则甲、乙都入选的概率为____________．",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "probability"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 14,
+      "prompt": "从甲、乙等5名同学中随机选3名参加社区服务工作，则甲、乙都入选概率为____________．",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "probability"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 15,
+      "prompt": "从正方体的8个顶点中任选4个，则这4个点在同一个平面的概率为________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "probability"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 19,
+      "prompt": "在某地区进行流行病学调查，随机调查了100位某种疾病患者的年龄，得到如下的样本数据的频率分布直方图：\n(1) 估计该地区这种疾病患者平均年龄（同一组中的数据用该组区间的中点值为代表）；\n(2) 估计该...",
+      "type": "essay",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "probability"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 19,
+      "prompt": "甲、乙两个学校进行体育比赛，比赛共设三个项目，每个项目胜方得10分，负方得0分，没有平局．三个项目比赛结束后，总得分高的学校获得冠军．已知甲学校在三个项目中获胜的概率分别为0.5，0.4，0.8，各项...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "probability",
+        "random-vars"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 20,
+      "prompt": "一医疗团队为研究某地的一种地方性疾病与当地居民的卫生习惯（卫生习惯分为良好和不够良好两类）的关系，在已患该疾病的病例中随机调查了100例（称为病例组），同时在未患该疾病的人群中随机调查了100人（称为...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "probability"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 3,
+      "prompt": "已知向量，则（    ）\n4. 某校文艺部有4名学生，其中高一、高二年级各2名．从这4名学生中随机选2名组织校文艺汇演，则这2名学生来自不同年级的概率为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app",
+        "probability"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 5,
+      "prompt": "设O为平面坐标系的坐标原点，在区域内随机取一点，记该点为A，则直线OA的倾斜角不大于的概率为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "probability"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 6,
+      "prompt": "有50人报名足球俱乐部，60人报名乒乓球俱乐部，70人报名足球或乒乓球俱乐部，若已知某人报足球俱乐部，则其报乒乓球俱乐部概率为（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "probability"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 7,
+      "prompt": "设O为平面坐标系的坐标原点，在区域\\{(x,y) \\mid 1 \\le x^2+y^2 \\le 4\\}内随机取一点A，则直线OA的倾斜角不大于\\frac{\\pi}{4}的概率为（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "probability"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 9,
+      "prompt": "某学校举办作文比赛，共6个主题，每位参赛同学从中随机抽取一个主题准备作文，则甲、乙两位参赛同学抽到不同主题概率为（    ）",
+      "type": "choice",
+      "difficulty": 1,
+      "chapters": [
+        "probability"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 12,
+      "prompt": "在信道内传输0，1信号，信号的传输相互独立．发送0时，收到1的概率为\\alpha，收到0的概率为1-\\alpha；发送1时，收到0的概率为\\beta，收到1的概率为1-\\beta. 考虑两种传输方案：...",
+      "type": "multi-choice",
+      "difficulty": 5,
+      "chapters": [
+        "probability",
+        "random-vars"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 16,
+      "prompt": "有6个相同的球，分别标有数字1、2、3、4、5、6，从中不放回地随机抽取3次，每次取1个球.记\\bar{x}为前两次取出的球上数字的平均值，\\bar{y}为取出的三个球上数字的平均值，则\\bar{x}...",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "probability"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 19,
+      "prompt": "一项试验旨在研究臭氧效应，试验方案如下：选40只小白鼠，随机地将其中20只分配到试验组，另外20只分配到对照组，试验组的小白鼠饲养在高浓度臭氧环境，对照组的小白鼠饲养在正常环境，一段时间后统计每只小白...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "counting",
+        "probability"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 19,
+      "prompt": "某研究小组经过研究发现某种疾病的患病者与未患病者的某项医学指标有明显差异，经过大量调查，得到如下的患病者和未患病者该指标的频率分布直方图：\n利用该指标制定一个检测标准，需要确定临界值c，将该指标大于c...",
+      "type": "essay",
+      "difficulty": 4,
+      "chapters": [
+        "statistics",
+        "data-analysis",
+        "probability"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 21,
+      "prompt": "甲、乙两人投篮，每次由其中一人投篮，规则如下：若命中则此人继续投篮，若未命中则换为对方投篮．无论之前投篮情况如何，甲每次投篮的命中率均为0.6，乙每次投篮的命中率均为0.8．由抽签确定第1次投篮的人选...",
+      "type": "essay",
+      "difficulty": 4,
+      "chapters": [
+        "probability",
+        "sequences"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 5,
+      "prompt": "甲、乙、丙、丁四人排成一列，丙不在排头，且甲或乙在排尾的概率是（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "counting",
+        "probability"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 9,
+      "prompt": "为了解推动出口后的亩收入（单位：万元）情况，从该种植区抽取样本，得到推动出口后亩收入的样本均值\\bar{x}=2.1，样本方差s^2=0.01，已知该种植区以往的亩收入服从正态分布N(1.8,0.1^...",
+      "type": "multi-choice",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "probability",
+        "random-vars"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 14,
+      "prompt": "甲、乙两人各有四张卡片，每张卡片上标有一个数字，甲的卡片上分别标有数字1，3，5，7，乙的卡片上分别标有数字2，4，6，8，两人进行四轮比赛，在每轮比赛中，两人各自从自己持有的卡片中随机选一张，并比较...",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "counting",
+        "probability"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 16,
+      "prompt": "有6个相同的球，分别标有数字1、2、3、4、5、6，从中不放回地随机抽取3次，每次取1个球.记为前两次取出的球上数字的平均值，为取出的三个球上数字的平均值，则与差的绝对值不超过的概率是______．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "counting",
+        "probability"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 17,
+      "prompt": "某工厂进行生产线智能化升级改造，升级改造后，从该工厂甲、乙两个车间产品中随机抽取150件进行检验，数据如下：\n优级品\n合格品\n不合格品\n总计\n甲车间\n26\n24\n0\n50\n乙车间\n70\n28\n2\n10...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "counting",
+        "probability"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 18,
+      "prompt": "某投篮比赛分为两个阶段，每个参赛队由两名队员组成，比赛具体规则如下：第一阶段由参赛队中一名队员投篮3次，若3次都未投中，则该队被淘汰，比赛成员为0分；若至少投中一次，则该队进入第二阶段，由该队的另一名...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "probability",
+        "random-vars"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 19,
+      "prompt": "设m为正整数，数列是公差不为0的等差数列，若从中删去两项和后剩余的项可被平均分为组，且每组的4个数都能构成等差数列，则称数列是可分数列．\n（1）写出所有，，使数列是可分数列；\n（2）当时，证明：数列是...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "sequences",
+        "probability"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 6,
+      "prompt": "帆船比赛中，运动员可借助风力计测定风速的大小和方向，测出的结果在航海学中称为视风风速，视风风速对应的向量，是真风风速对应的向量与船行风速对应的向量之和，其中船行风速对应的向量与船速对应的向量大小相等，...",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app",
+        "probability"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 15,
+      "prompt": "为研究某疾病与超声波检查结果的关系，从做过超声波检查的人群中随机调查了1000人，得到如下列联表：\n超声波检查结果组别\n正常\n不正常\n合计\n患该疾病\n20\n180\n200\n未患该疾病\n780\n20\n8...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "probability",
+        "data-analysis"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 19,
+      "prompt": "甲、乙两人进行乒乓球练习，每个球胜者得1分，负者得0分．设每个球甲胜的概率为，乙胜的概率为q，，且各球的胜负相互独立，对正整数，记为打完k个球后甲比乙至少多得2分的概率，为打完k个球后乙比甲至少多得2...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "probability"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 8,
+      "prompt": "设 U = { (x1 ,x2 ,x3(|xi ∈{-2 ,-1 , 1 , 2 ], i = 1 , 2 , 3{为空间中 64 个点构成的集合, 记 P   (1 , 1 , 1(  , 记样本空...",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic",
+        "probability",
+        "statistics",
+        "random-vars"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 17,
+      "prompt": "设整数N ≥ 2.某同学用一个球进行投篮练习, 至多投置N 次, 当且仅当投中 1 次时或N 次均未投中时, 停止练习.设该同学每次投中的概率为p(0<p<1(  , 各次投中与否相互独立.记X 为停...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "probability",
+        "random-vars"
+      ]
+    }
+  ],
+  "statistics": [
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 17,
+      "prompt": "某厂研制了一种生产高精产品的设备，为检验新设备生产产品的某项指标有无提高，用一台旧设备和一台新设备各生产了10件产品，得到各件产品该项指标数据如下：\\n旧设备：9.8,10.3,10.0,10.2,9...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "data-analysis"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 9,
+      "prompt": "并计算得． （1）估计该林区这种树木平均一棵的根��横截面积与平均一棵的材积量； （2）求该林区这种树木的根部横截面积与材积量的样本相关系数（精确到0.01）； （3）现测量了该林区所有这种树木的根部...",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "statistics"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 10,
+      "prompt": "一医疗团队为研究某地的一种地方性疾病与当地居民的卫生习惯（卫生习惯分为良好和不够良好两类）的关系，在已患该疾病的病例中随机调查了100例（称为病例组），同时在未患该疾病的���群中随机调查了100人（...",
+      "type": "multi-choice",
+      "difficulty": 4,
+      "chapters": [
+        "statistics",
+        "probability"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 10,
+      "prompt": "Q3 [填空题]: 9 并计算得\\sum_{i=1}^{10} x_i = 0.6，\\sum_{i=1}^{10} y_i = 3.9，\\sum_{i=1}^{10} x_i^2 = 0.038，\\s...",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "data-analysis"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 17,
+      "prompt": "甲、乙两城之间的长途客车均由A和B两家公司运营，为了解这两家公司长途客车的运行情况，随机调查了甲、乙两城之间的500个班次，得到下面列联表：\n准点班次数 未准点班次数\nA 240 20\nB 210 3...",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "statistics",
+        "data-analysis"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 19,
+      "prompt": "某地经过多年的环境治理，已将荒山改造成了绿水青山．为估计一林区某种树木的总材积量，随机选取了10棵这种树木，测量每棵树的根部横截面积（单位：\\text{m}^2）和材积量（单位：\\text{m}^3）...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "statistics"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 19,
+      "prompt": "在某地区进行流行病学调查，随机调查了100位某种疾病患者的年龄，得到如下的样本数据的频率分布直方图：\n(1) 估计该地区这种疾病患者平均年龄（同一组中的数据用该组区间的中点值为代表）；\n(2) 估计该...",
+      "type": "essay",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "probability"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 19,
+      "prompt": "某地经过多年的环境治理，已将荒山改造成了绿水青山．为估计一林区某种树木的总材积量，随机选取了10棵这种树木，测量每棵树的根部横截面积（单位：m^2）和材积量（单位：m^3），得到如下数据： 样本号ｉ ...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "data-analysis"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 3,
+      "prompt": "某学校为了解学生参加体育运动的情况，用比例分配的分层随机抽样方法作抽样调查，拟从初中部和高中部两层共抽取60名学生，已知该校初中部和高中部分别有400名和200名学生，则不同的抽样结果共有（    ）...",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "counting"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 9,
+      "prompt": "有一组样本数据x_1,x_2,\\ldots,x_6，其中x_1是最小值，x_6是最大值，则（    ）",
+      "type": "multi-choice",
+      "difficulty": 3,
+      "chapters": [
+        "statistics"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 17,
+      "prompt": "某厂为比较甲乙两种工艺对橡胶产品伸缩率的处理效应，进行10次配对试验，每次配对试验选用材质相同的两个橡胶产品，随机地选其中一个用甲工艺处理，另一个用乙工艺处理，测量处理后的橡胶产品的伸缩率．甲、乙两种...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "data-analysis"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 17,
+      "prompt": "某厂为比较甲乙两种工艺对橡胶产品伸缩率处理效应，进行10次配对试验，每次配对试验选用材质相同的两个橡胶产品，随机地选其中一个用甲工艺处理，另一个用乙工艺处理，测量处理后的橡胶产品的伸缩率，甲、乙两种工...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "data-analysis"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 19,
+      "prompt": "某研究小组经过研究发现某种疾病的患病者与未患病者的某项医学指标有明显差异，经过大量调查，得到如下的患病者和未患病者该指标的频率分布直方图：\n利用该指标制定一个检测标准，需要确定临界值c，将该指标大于c...",
+      "type": "essay",
+      "difficulty": 4,
+      "chapters": [
+        "statistics",
+        "data-analysis",
+        "probability"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 19,
+      "prompt": "为探究某药物对小鼠的生长抑制作用，将40只小鼠均分为两组，分别为对照组（不加药物）和实验组（加药物）． （1）设其中两只小鼠中对照组小鼠数目为\\xi，求\\xi的分布列和数学期望； （2）测得40只小鼠...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "data-analysis"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 4,
+      "prompt": "某农业研究部门在面积相等的100块稻田上种植一种新型水稻，得到各块稻田的亩产量（单位：kg）并部分整理下表 亩产量 [900，950） [950，1000） [1000，1050） [1100，115...",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "statistics"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 9,
+      "prompt": "为了解推动出口后的亩收入（单位：万元）情况，从该种植区抽取样本，得到推动出口后亩收入的样本均值\\bar{x}=2.1，样本方差s^2=0.01，已知该种植区以往的亩收入服从正态分布N(1.8,0.1^...",
+      "type": "multi-choice",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "probability",
+        "random-vars"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 1,
+      "prompt": "样本数据2，8，14，16，20的平均数为（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "statistics"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 8,
+      "prompt": "设 U = { (x1 ,x2 ,x3(|xi ∈{-2 ,-1 , 1 , 2 ], i = 1 , 2 , 3{为空间中 64 个点构成的集合, 记 P   (1 , 1 , 1(  , 记样本空...",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic",
+        "probability",
+        "statistics",
+        "random-vars"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 15,
+      "prompt": "某工厂抽取一批电子元件检测, 记录第一次出现故障的时间(天), 绘制成如下的频率分布直方图: (1) 求第一四分位数和中位数; (2) 设p为首次故障时间小于365天的概率估计值. (i) 求p; (...",
+      "type": "essay",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "random-vars"
+      ]
+    }
+  ],
+  "data-analysis": [
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 17,
+      "prompt": "某厂研制了一种生产高精产品的设备，为检验新设备生产产品的某项指标有无提高，用一台旧设备和一台新设备各生产了10件产品，得到各件产品该项指标数据如下：\\n旧设备：9.8,10.3,10.0,10.2,9...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "data-analysis"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 10,
+      "prompt": "Q3 [填空题]: 9 并计算得\\sum_{i=1}^{10} x_i = 0.6，\\sum_{i=1}^{10} y_i = 3.9，\\sum_{i=1}^{10} x_i^2 = 0.038，\\s...",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "data-analysis"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 17,
+      "prompt": "甲、乙两城之间的长途客车均由A和B两家公司运营，为了解这两家公司长途客车的运行情况，随机调查了甲、乙两城之间的500个班次，得到下面列联表：\n准点班次数 未准点班次数\nA 240 20\nB 210 3...",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "statistics",
+        "data-analysis"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 19,
+      "prompt": "某地经过多年的环境治理，已将荒山改造成了绿水青山．为估计一林区某种树木的总材积量，随机选取了10棵这种树木，测量每棵树的根部横截面积（单位：m^2）和材积量（单位：m^3），得到如下数据： 样本号ｉ ...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "data-analysis"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 17,
+      "prompt": "某厂为比较甲乙两种工艺对橡胶产品伸缩率的处理效应，进行10次配对试验，每次配对试验选用材质相同的两个橡胶产品，随机地选其中一个用甲工艺处理，另一个用乙工艺处理，测量处理后的橡胶产品的伸缩率．甲、乙两种...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "data-analysis"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 17,
+      "prompt": "某厂为比较甲乙两种工艺对橡胶产品伸缩率处理效应，进行10次配对试验，每次配对试验选用材质相同的两个橡胶产品，随机地选其中一个用甲工艺处理，另一个用乙工艺处理，测量处理后的橡胶产品的伸缩率，甲、乙两种工...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "data-analysis"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 17,
+      "prompt": "某工厂进行生产线智能化升级改造，升级改造后，从该工厂甲、乙两个车间产品中随机抽取150件进行检验，数据如下：\n\\begin{tabular}{|c|c|c|c|c|}\n\\hline & 优级品 & 合...",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "data-analysis"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 19,
+      "prompt": "某研究小组经过研究发现某种疾病的患病者与未患病者的某项医学指标有明显差异，经过大量调查，得到如下的患病者和未患病者该指标的频率分布直方图：\n利用该指标制定一个检测标准，需要确定临界值c，将该指标大于c...",
+      "type": "essay",
+      "difficulty": 4,
+      "chapters": [
+        "statistics",
+        "data-analysis",
+        "probability"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 19,
+      "prompt": "为探究某药物对小鼠的生长抑制作用，将40只小鼠均分为两组，分别为对照组（不加药物）和实验组（加药物）． （1）设其中两只小鼠中对照组小鼠数目为\\xi，求\\xi的分布列和数学期望； （2）测得40只小鼠...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "data-analysis"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 15,
+      "prompt": "为研究某疾病与超声波检查结果的关系，从做过超声波检查的人群中随机调查了1000人，得到如下列联表：\n超声波检查结果组别\n正常\n不正常\n合计\n患该疾病\n20\n180\n200\n未患该疾病\n780\n20\n8...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "probability",
+        "data-analysis"
+      ]
+    }
+  ],
+  "random-vars": [
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 13,
+      "prompt": "已知随机变量X服从正态分布N(2,\\sigma^2)，且P(2<X\\leq 2.5)=0.36，则P(X>2.5)=____________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "random-vars"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 19,
+      "prompt": "甲、乙两个学校进行体育比赛，比赛共设三个项目，每个项目胜方得10分，负方得0分，没有平局．三个项目比赛结束后，总得分高的学校获得冠军．已知甲学校在三个项目中获胜的概率分别为0.5，0.4，0.8，各项...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "probability",
+        "random-vars"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 12,
+      "prompt": "在信道内传输0，1信号，信号的传输相互独立．发送0时，收到1的概率为\\alpha，收到0的概率为1-\\alpha；发送1时，收到0的概率为\\beta，收到1的概率为1-\\beta. 考虑两种传输方案：...",
+      "type": "multi-choice",
+      "difficulty": 5,
+      "chapters": [
+        "probability",
+        "random-vars"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 9,
+      "prompt": "为了解推动出口后的亩收入（单位：万元）情况，从该种植区抽取样本，得到推动出口后亩收入的样本均值\\bar{x}=2.1，样本方差s^2=0.01，已知该种植区以往的亩收入服从正态分布N(1.8,0.1^...",
+      "type": "multi-choice",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "probability",
+        "random-vars"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 18,
+      "prompt": "某投篮比赛分为两个阶段，每个参赛队由两名队员组成，比赛具体规则如下：第一阶段由参赛队中一名队员投篮3次，若3次都未投中，则该队被淘汰，比赛成员为0分；若至少投中一次，则该队进入第二阶段，由该队的另一名...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "probability",
+        "random-vars"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 14,
+      "prompt": "一个箱子里有5个相同的球，分别以1~5标号，若每次取一颗，有放回地取三次，记至少取出一次的球的个数X，则数学期望         .",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "random-vars"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 3,
+      "prompt": "设 U = \\{(x_1, x_2, x_3) \\mid x_i \\in \\{-2, -1, 1, 2\\}, i = 1, 2, 3\\} 为空间中 64 个点构成的集合，记 P(1, 1, 1)，记样...",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "random-vars",
+        "space-vectors"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 8,
+      "prompt": "设 U = { (x1 ,x2 ,x3(|xi ∈{-2 ,-1 , 1 , 2 ], i = 1 , 2 , 3{为空间中 64 个点构成的集合, 记 P   (1 , 1 , 1(  , 记样本空...",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "sets-logic",
+        "probability",
+        "statistics",
+        "random-vars"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 15,
+      "prompt": "某工厂抽取一批电子元件检测, 记录第一次出现故障的时间(天), 绘制成如下的频率分布直方图: (1) 求第一四分位数和中位数; (2) 设p为首次故障时间小于365天的概率估计值. (i) 求p; (...",
+      "type": "essay",
+      "difficulty": 3,
+      "chapters": [
+        "statistics",
+        "random-vars"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 17,
+      "prompt": "设整数N ≥ 2.某同学用一个球进行投篮练习, 至多投置N 次, 当且仅当投中 1 次时或N 次均未投中时, 停止练习.设该同学每次投中的概率为p(0<p<1(  , 各次投中与否相互独立.记X 为停...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "probability",
+        "random-vars"
+      ]
+    }
+  ],
+  "lines-circles": [
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 22,
+      "prompt": "在直角坐标系xOy中，\\odot C的圆心为C(2,1)，半径为1．\\n（1）写出\\odot C的一个参数方程;\\n（2）过点F(4,1)作\\odot C的两条切线．以坐标原点为极点，x轴正半轴为极轴...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 3,
+      "prompt": "图1是中国古代建筑中的举架结构，DD_1是桁，相邻桁的水平距离称为步，垂直距离称为举，图2是某古代建筑屋顶截面的示意图．其中DD_1，CC_1，BB_1，AA_1是举，OD_1，DC_1，CB_1，B...",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "sequences",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 8,
+      "prompt": "沈括的《梦溪笔谈》是中国古代科技史上的杰作，其中收录了计算圆弧长度的“会圆术”，如图，是以O为圆心，OA为半径的圆弧，C是AB的中点，D在上，．“会圆术”给出的弧长的近似值s的计算公式：．当时，（  ...",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 9,
+      "prompt": "已知球O的半径为1，四棱锥的顶点为O，底面的四个顶点均在球O的球面上，则当该四棱锥的体积最大时，其高为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 9,
+      "prompt": "甲、乙两个圆锥母线长相等，侧面展开图的圆心角之和为，侧面积分别为和，体积分别为和．若，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 11,
+      "prompt": "双曲线C的两个焦点为，以C的实轴为直径的圆记为D，过作D的切线与C交于M，N两点，且，则C的离心率为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "lines-circles",
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 12,
+      "prompt": "已知球O的半径为1，四棱锥的顶点为O，底面的四个顶点均在球O的球面上，则当该四棱锥的体积最大时，其高为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 14,
+      "prompt": "设点M在直线x+y-1=0上，点(0,0)和(1,0)均在\\odot M上，则\\odot M的方程为______________．",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 14,
+      "prompt": "写出与圆和都相切的一条直线的方程________________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 14,
+      "prompt": "过四点(0,0), (4,0), (-1,1), (4,2)中的三点的一个圆的方程为____________．",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 14,
+      "prompt": "若双曲线的渐近线与圆相切，则_________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "lines-circles",
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 15,
+      "prompt": "过四点(0,0)，(4,0)，(-1,1)，(4,2)中的三点的一个圆的方程为____________．",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 15,
+      "prompt": "若曲线有两条过坐标原点的切线，则a的取值范围是________________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 15,
+      "prompt": "设点A(-2,3)，B(0,a)，若直线AB关于y=a对称的直线与圆(x+3)^2+(y+2)^2=1有公共点，则a的取值范围是________．",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 22,
+      "prompt": "在直角坐标系xOy中，曲线C的参数方程为\\begin{cases}x=2\\cos t \\\\ y=4\\sin t\\end{cases}，（t为参数），以坐标原点为极点，x轴正半轴为极轴建立极坐标系，已知...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 22,
+      "prompt": "在直角坐标系xOy中，曲线C_1的参数方程为\\begin{cases}x=2+t\\\\ y=1-t\\end{cases}（t为参数），曲线C_2的参数方程为\\begin{cases}x=2+s\\\\ y=...",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 22,
+      "prompt": "在直角坐标系xOy中，曲线C的参数方程为\\begin{cases} x = 2 \\cos t \\\\ y = \\sqrt{3} \\sin t \\end{cases}，（t为参数），以坐标原点为极点，x轴...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "trigonometric",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 22,
+      "prompt": "在直角坐标系xOy中，曲线C_1的参数方程为\\begin{cases}x=2\\cos t\\\\ y=4\\sin t\\end{cases}（t为参数），曲线C_2的参数方程为\\begin{cases}x=...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 6,
+      "prompt": "过点(0,2)与圆x^2+y^2-4x+1=0相切两条直线的夹角为\\theta，则\\sin\\theta=（    ）",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 6,
+      "prompt": "设函数，则曲线在处的切线与两坐标轴围成的三角形的面积为（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept",
+        "trigonometric",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 8,
+      "prompt": "曲线在点处切线方程为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "derivatives",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 8,
+      "prompt": "已知圆锥PO的底面半径为，O为底面圆心，PA，PB为圆锥的母线，，若的面积等于，则该圆锥的体积为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 8,
+      "prompt": "已知双曲线\\dfrac{x^2}{a^2}-\\dfrac{y^2}{b^2}=1的离心率为\\sqrt{5}，其中一条渐近线与圆(x-2)^2+y^2=4交于A，B两点，则|AB|=（    ）",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "conic-sections",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 11,
+      "prompt": "已知实数x,y满足x^2 + y^2 - 4x - 2y - 4 = 0，则x - y的最大值是（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 12,
+      "prompt": "已知\\odot O的半径为1，直线PA与\\odot O相切于点A，直线PB与\\odot O交于B，C两点，D为BC的中点，若|PO|=\\sqrt{3}，则|PD|\\cdot\\cos\\angle PDO...",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 12,
+      "prompt": "已知b是a与c的等差中项，直线ax+by+c=0与圆x^2+y^2=1交于A,B两点，则|AB|的最小值为（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "lines-circles",
+        "sequences"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 15,
+      "prompt": "已知直线y=kx+1与圆x^2+y^2=4交于A，B两点，写出满足“\\triangle OAB面积为\\sqrt{3}”的m的一个值______．",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 16,
+      "prompt": "在正方体中，为的中点，若该正方体的棱与球的球面有公共点，则球的半径的取值范围是________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "solid-geometry",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 22,
+      "prompt": "在直角坐标系xOy中，以坐标原点为极点，x轴正半轴为极轴建立极坐标系，曲线C_1的极坐标方程为\\rho = 2\\sin\\theta，曲线C_2：\\begin{cases} x = 2\\cos\\alph...",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 22,
+      "prompt": "在直角坐标系xOy中，以坐标原点O为极点，x轴正半轴为极轴建立极坐标系，曲线C_1的极坐标方程为\\rho=2\\cos\\theta，曲线C_2：\\begin{cases}x=m+\\cos\\varphi\\...",
+      "type": "essay",
+      "difficulty": 3,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 22,
+      "prompt": "已知C: \\begin{cases}x=2\\cos\\theta\\\\ y=2\\sin\\theta\\end{cases}，直线l: \\begin{cases}x=t\\cos\\alpha\\\\ y=t\\sin...",
+      "type": "essay",
+      "difficulty": 3,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 22,
+      "prompt": "在平面直角坐标系xOy中，以坐标原点为极点，x轴的正半轴为极轴建立极坐标系，曲线C的极坐标方程为\\rho = 2\\cos\\theta． （1）写出C的直角坐标方程； （2）设直线l：\\begin{ca...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 6,
+      "prompt": "设函数，则曲线在处的切线与两坐标轴围成的三角形的面积为（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "func-concept",
+        "trigonometric",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 10,
+      "prompt": "抛物线C：y^2=4x的准线为l，P为C上的动点，过P作\\odot A：(x-2)^2+y^2=1的一条切线，Q为切点，过P作l的垂线，垂足为B，则（    ）",
+      "type": "multi-choice",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 14,
+      "prompt": "已知甲、乙两个圆台上、下底面的半径均为和，母线长分别为和，则两个圆台的体积之比______．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 16,
+      "prompt": "已知函数．\n（1）当时，求曲线在点处的切线方程；\n（2）若有极小值，且极小值小于0，求a的取值范围．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "quadratic-ineq",
+        "func-concept",
+        "derivatives",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 19,
+      "prompt": "在平面直角坐标系xOy中，以坐标原点为极点，x轴的正半轴为极轴建立极坐标系，曲线C的极坐标方程为\\rho=2\\cos\\theta。 （1）���出C的直角坐标方程； （2）设直线l：\\begin{ca...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "lines-circles",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 22,
+      "prompt": "在平面直角坐标系xOy中，以坐标原点为极点，x轴的正半轴为极轴建立极坐标系，曲线C的极坐标方程为\\rho = 2\\cos\\theta． （1）写出C的直角坐标方程； （2）设直线l：\\begin{ca...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 12,
+      "prompt": "若直线是曲线的切线，则         .________",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "derivatives",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 14,
+      "prompt": "一个底面半径为，高为的封闭圆柱形容器（容器壁厚度忽略不计）内有两个半径相等的铁球，则铁球半径的最大值为            ．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "solid-geometry",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 11,
+      "prompt": "已知圆 C_1 : (x+1)^2 + y^2 = 1 , 圆 C_2 : (x-1)^2 + y^2 = 1 , 圆 C_3 : x^2 + (y - \\sqrt{3})^2 = 1 , 直线 l ...",
+      "type": "multi-choice",
+      "difficulty": 4,
+      "chapters": [
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 18,
+      "prompt": "椭圆E: \\frac{x^2}{a^2}+y^2=1 (a>1), 过右焦点垂直于x轴的直线被E所截线段长为\\frac{2}{a}. (1) 求E的离心率; (2) O为坐标原点, 给定点G(t_0,...",
+      "type": "essay",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections",
+        "lines-circles"
+      ]
+    }
+  ],
+  "conic-sections": [
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 11,
+      "prompt": "设B是椭圆C:\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1(a>b>0)上顶点，若C上的任意一点P都满足|PB|\\le 2b，则C的离心率的取值范围是（    ）",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 13,
+      "prompt": "已知双曲线C:\\frac{x^2}{m}-y^2=1(m>0)的一条渐近线为\\sqrt{3}x+y=0，则C的焦距为_________．",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2021,
+      "paper": "2021年高考数学试卷（理）（全国乙卷）（新课标Ⅰ）（空白卷）",
+      "number": 21,
+      "prompt": "已知抛物线C:x^2=2py(p>0)焦点为F，且F与圆M:x^2+(y+4)^2=1上点的距离的最小值为4．\\n（1）求p；\\n（2）若点P在M上，PA,PB是C的两条切线，A,B是切点，求\\tri...",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 5,
+      "prompt": "设F为抛物线的焦点，点A在C上，点，若，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 6,
+      "prompt": "设F为抛物线的焦点，点A在C上，点，若，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 6,
+      "prompt": "已知椭圆\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1，C的上顶点为A，两个焦点为F_1，F_2，离心率为\\frac{1}{2}．过F_1且垂直于AF_2的直线与C交于D，...",
+      "type": "choice",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 10,
+      "prompt": "已知O为坐标原点，过抛物线C:y^2=2px(p>0)焦点F的直线与C交于A，B两点，其中A在第一象限，点M(p,0)，若|AF|=|AM|，则",
+      "type": "multi-choice",
+      "difficulty": 4,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 10,
+      "prompt": "椭圆的左顶点为A，点P，Q均在C上，且关于y轴对称．若直线的斜率之积为，则C的离心率为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 11,
+      "prompt": "已知椭圆C:\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1(a>b>0)的离心率为\\frac{1}{3}，A_1、A_2分别为C的左、右顶点，B为C的上顶点．若\\overright...",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "conic-sections",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 11,
+      "prompt": "已知O为坐标原点，点在抛物线上，过点的直线交C于P，Q两点，则（    ）",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 11,
+      "prompt": "双曲线C的两个焦点为，以C的实轴为直径的圆记为D，过作D的切线与C交于M，N两点，且，则C的离心率为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "lines-circles",
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 14,
+      "prompt": "若双曲线的渐近线与圆相切，则_________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "lines-circles",
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 15,
+      "prompt": "记双曲线C:\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1(a>0,b>0)离心率为e，写出满足条件“直线y=2x与C无公共点”的e的一个值______________．",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 16,
+      "prompt": "已知椭圆，C的上顶点为A，两个焦点为，，离心率为．过且垂直于的直线与C交于D，E两点，，则的周长是________________．",
+      "type": "fill",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app",
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 16,
+      "prompt": "已知直线l与椭圆\\frac{x^2}{6}+\\frac{y^2}{3}=1在第一象限交于A，B两点，l与x轴，y轴分别交于M，N两点，且|MA|=|NB|，|MN|=2\\sqrt{3}，则l方程为__...",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 20,
+      "prompt": "已知椭圆E的中心为坐标原点，对称轴为x轴、y轴，且过两点A(0,-2)，B\\left(\\frac{3}{2},-1\\right)． （1）求E的方程； （2）设过点P(1,-2)的直线交E于M，N两点...",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 20,
+      "prompt": "设抛物线焦点为F，点，过F的直线交C于M，N两点．当直线MD垂直于x轴时，．\n（1）求C的方程；\n（2）设直线与C的另一个交点分别为A，B，记直线的倾斜角分别为．当取得最大值时，求直线AB的方程．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app",
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 21,
+      "prompt": "已知椭圆E的中心为坐标原点，对称轴为x轴、y轴，且过两点A(0,-2)和B\\left(\\frac{3}{2},-1\\right)． （1）求E的方程； （2）设过点P(1,-2)的直线交E于M，N两点...",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 21,
+      "prompt": "设抛物线C:y^2=2px(p>0)的焦点为F，点D(p,0)，过F的直线交C于M，N两点．当直线MD垂直于x轴时，|MF|=2．\n（1）求C的方程；\n（2）设直线MD与C的另一个交点分别为A，B，记...",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 21,
+      "prompt": "已知点在双曲线上，直线l交C于P，Q两点，直线的斜率之和为0．\n（1）求l的斜率；\n（2）若，求的面积．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2022,
+      "paper": "2022年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 21,
+      "prompt": "已知双曲线C: \\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1(a>0,b>0)的右焦点为F(2,0)，渐近线方程为y=\\pm\\sqrt{3}x．\n(1) 求C的方程；\n(2) 过...",
+      "type": "essay",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 5,
+      "prompt": "设椭圆的离心率分别为．若，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 5,
+      "prompt": "已知椭圆\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1的左、右焦点分别为F_1，F_2，直线y=kx与C交于A，B两点，若\\triangle F_1AB面积是\\triangle F...",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 5,
+      "prompt": "已知双曲线的上、下焦点分别为F_1(0,4)，F_2(0,-4)，点P(-6,4)在该双曲线上，则该双曲线的离心率为（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 7,
+      "prompt": "设为椭圆的两个焦点，点在上，若，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 8,
+      "prompt": "已知双曲线\\dfrac{x^2}{a^2}-\\dfrac{y^2}{b^2}=1的离心率为\\sqrt{5}，其中一条渐近线与圆(x-2)^2+y^2=4交于A，B两点，则|AB|=（    ）",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "conic-sections",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 9,
+      "prompt": "已知双曲线的离心率为，其中一条渐近线与圆交于A，B两点，则（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 10,
+      "prompt": "设O为坐标原点，直线x=-1过抛物线y^2=2px的焦点，且与C交于M，N两点，l为C的准线，则（    ）．",
+      "type": "multi-choice",
+      "difficulty": 4,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 11,
+      "prompt": "设A，B为双曲线上两点，下列四个点中，可为线段AB中点的是（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 12,
+      "prompt": "设A，B为双曲线\\frac{x^2}{9} - \\frac{y^2}{16} = 1上两点，下列四个点中，可为线段AB中点的是（    ）",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 12,
+      "prompt": "已知椭圆\\dfrac{x^2}{4}+\\dfrac{y^2}{3}=1，F_1，F_2为两个焦点，O为原点，P为椭圆上一点，\\angle F_1PF_2=60^\\circ，则|OP|=（    ）",
+      "type": "choice",
+      "difficulty": 4,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 13,
+      "prompt": "已知点A(1,\\sqrt{2})在抛物线C：y^2 = 2px上，则A到C的准线的距离为______.",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 13,
+      "prompt": "已知点A(1,\\sqrt{2})在抛物线C：y^2=2px上，则A到C的准线的距离为______.",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 16,
+      "prompt": "已知双曲线\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1的左、右焦点分别为F_1、F_2．点P在C上，点Q在y轴上，F_1P \\perp F_1Q，F_2P \\parallel F...",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国乙卷）（空白卷）",
+      "number": 20,
+      "prompt": "已知椭圆C：\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1（a>b>0）的离心率为\\frac{\\sqrt{2}}{2}，点A(-2,0)在C上。\\n（1）求C的方程；\\n（2）过点...",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 20,
+      "prompt": "已知直线l:y=kx+1与抛物线C:y^2=4x交于A，B两点，且|AB|=2\\sqrt{10}． （1）求k； （2）设C的焦点为F，M，N为C上两点，\\overrightarrow{FM}\\cdo...",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 20,
+      "prompt": "设椭圆\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1（a > b > 0）的右焦点为F，点P在C上，且PF \\perp x轴． （1）求C的方程； （2）过点F的直线与C交...",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国乙卷）（空白卷）",
+      "number": 21,
+      "prompt": "已知椭圆\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1的离心率是\\frac{\\sqrt{2}}{2}，点A(-2,0)在C上．\n（1）求C的方程；\n（2）过点(-2,3)直线交C于...",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 21,
+      "prompt": "已知直线与抛物线交于两点，．\n（1）求；\n（2）设为的焦点，为上两点，且，求面积的最小值．\n（二）选考题：共10分.请考生在第22、23题中任选一题作答.如果多做，则按所做的第一题计分.\n[选修4-4...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 21,
+      "prompt": "已知双曲线C的中心为坐标原点，左焦点为，离心率为．\n（1）求C的方程；\n（2）记C的左、右顶点分别为，，过点的直线与C的左支交于M，N两点，M在第二象限，直线与交于点P．证明:点在定直线上.",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2023,
+      "paper": "2023年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 22,
+      "prompt": "在直角坐标系xOy中，点P到x轴的距离等于点P到点(0,\\frac{1}{2})的距离，记动点P的轨迹为W．\n(1) 求W的方程；\n(2) 已知矩形ABCD有三个顶点在W上，证明：矩形的周长大于3\\s...",
+      "type": "essay",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections",
+        "derivatives"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 5,
+      "prompt": "已知曲线C：\\frac{x^2}{4}+\\frac{y^2}{9}=1（y\\geq0），从C上任意一点P向x轴作垂线段，P'为垂足，则线段PP'的中点M的轨迹方程为（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 5,
+      "prompt": "已知双曲线的上、下焦点分别为，点在该双曲线上，则该双曲线的离心率为（    ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 6,
+      "prompt": "已知双曲线\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1的上、下焦点分别为F_1,F_2，点P(2,3)在该双曲线上，则该双曲线的离心率为（    ）",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 10,
+      "prompt": "抛物线C：y^2=4x的准线为l，P为C上的动点，过P作\\odot A：(x-2)^2+y^2=1的一条切线，Q为切点，过P作l的垂线，垂足为B，则（    ）",
+      "type": "multi-choice",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections",
+        "lines-circles"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 11,
+      "prompt": "造型\\square可以做成美丽的丝带，将其看作图中曲线C的一部分.已知C过坐标原点O.且C上的点满足横坐标大于-2，到点F(2,0)的距离与到定直线x=-2的距离之积为4，则",
+      "type": "multi-choice",
+      "difficulty": 4,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 12,
+      "prompt": "设双曲线\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1的左右焦点分别为F_1，F_2，过F_2作平行于y轴的直线交C于A，B两点，若|AB|=13，|F_1A|=10，则C的离心率...",
+      "type": "fill",
+      "difficulty": 3,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 16,
+      "prompt": "已知A(0,-2)和B(\\frac{6}{3},1)为椭圆\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1上两点.\n(1) 求C的离心率;\n(2) 若过P的直线交C于另一点B，且\\t...",
+      "type": "essay",
+      "difficulty": 4,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（文）（全国甲卷）（空白卷）",
+      "number": 18,
+      "prompt": "设椭圆\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1(a>b>0)右焦点为F，点P(1,\\frac{3}{2})在C上，且PF\\perp x轴． （1）求C的方程； （2）过点F的...",
+      "type": "fill",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections",
+        "vectors-app"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 19,
+      "prompt": "已知双曲线，点在上，为常数，．按照如下方式依次构造点，过作斜率为的直线与的左支交于点，令为关于轴的对称点，记的坐标为.\n（1）若，求；\n（2）证明：数列是公比为的等比数列；\n（3）设为的面积，证明：对...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "sequences",
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2024,
+      "paper": "2024年高考数学试卷（理）（全国甲卷）（空白卷）",
+      "number": 20,
+      "prompt": "设椭圆\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1（a > b > 0）的右焦点为F，点P在C上，且PF \\perp x轴． （1）求C的方程； （2）过点F的直线与C交...",
+      "type": "fill",
+      "difficulty": 4,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 3,
+      "prompt": "若双曲线C的虚轴长为实轴长的倍，则C的离心率为（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 6,
+      "prompt": "设抛物线的焦点为点A在C上，过A作的准线的垂线，垂足为B，若直线BF的方程为，则（   ）",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 10,
+      "prompt": "设抛物线的焦点为F，过F的直线交C于A、B，过F且垂直于的直线交于E，过点A作准线l的垂线，垂足为D，则（    ）",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "vectors-app",
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 11,
+      "prompt": "双曲线的左、右焦点分别是，左、右顶点分别为，以为直径的圆与C的一条渐近线交于M、N两点，且，则（   ）",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅱ卷）（空白卷）",
+      "number": 16,
+      "prompt": "已知椭圆的离心率为，长轴长为4．\n(1)求C的方程；\n(2)过点的直线l与C交于两点，为坐标原点，若的面积为，求．",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2025,
+      "paper": "2025年高考数学试卷（新高考Ⅰ卷）（空白卷）",
+      "number": 18,
+      "prompt": "设椭圆的离心率为，下顶点为A，右顶点为B，．\n(1)求椭圆的标准方程；\n(2)已知动点P不在y轴上，点R在射线AP上，且满足．\n（i）设，求点的坐标（用m，n表示）；\n（ⅱ）设O为坐标原点，是椭圆上的...",
+      "type": "essay",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 4,
+      "prompt": "双曲线 C a>0 ,b>0(过点 (1 , 0( 和  , 则其渐近线方程为",
+      "type": "choice",
+      "difficulty": 2,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 5,
+      "prompt": "已知抛物线 C_1: y^2 = 2p_1x (p_1 > 0) 和 C_2: x^2 = 2p_2y (p_2 > 0) 均经过点 (4, 8)，则 C_1 的焦点与 C_2 的焦点之间的距离为",
+      "type": "choice",
+      "difficulty": 3,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 11,
+      "prompt": "已知抛物线 E : y2 = 8x , 斜率 k(k>0( 的直线 l 过点 (1 ,0(、△ABC 为等边三角形, A 在y 轴上, B , C 在l上, 则",
+      "type": "multi-choice",
+      "difficulty": 2,
+      "chapters": [
+        "trigonometric",
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 12,
+      "prompt": "双曲线 5x^2 - 6y^2 = 1 的离心率为 \\frac{\\sqrt{30}}{5} .",
+      "type": "fill",
+      "difficulty": 1,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学一卷",
+      "number": 18,
+      "prompt": "已知椭圆 C: \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1 (a>b>0) 的左焦点为F(-1 , 0) , 离心率为 \\frac{1}{2} . Sub: (1) 求 C 的...",
+      "type": "essay",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections"
+      ]
+    },
+    {
+      "year": 2026,
+      "paper": "数学二卷",
+      "number": 18,
+      "prompt": "椭圆E: \\frac{x^2}{a^2}+y^2=1 (a>1), 过右焦点垂直于x轴的直线被E所截线段长为\\frac{2}{a}. (1) 求E的离心率; (2) O为坐标原点, 给定点G(t_0,...",
+      "type": "essay",
+      "difficulty": 5,
+      "chapters": [
+        "conic-sections",
+        "lines-circles"
+      ]
+    }
+  ]
+}

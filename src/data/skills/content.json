@@ -1,0 +1,176 @@
+{
+  "set-concept": {
+    "id": "set-concept",
+    "title": "集合的概念与表示",
+    "chapterId": "sets-logic",
+    "prerequisites": [],
+    "round1": {
+      "formulas": [
+        {
+          "id": "f1",
+          "latex": "a \\in A",
+          "desc": "元素 a 属于集合 A"
+        },
+        {
+          "id": "f2",
+          "latex": "a \\notin A",
+          "desc": "元素 a 不属于集合 A"
+        },
+        {
+          "id": "f3",
+          "latex": "\\{a_1, a_2, \\dots, a_n\\}",
+          "desc": "列举法表示集合"
+        },
+        {
+          "id": "f4",
+          "latex": "\\{x \\mid p(x)\\}",
+          "desc": "描述法表示集合"
+        }
+      ],
+      "properties": [
+        {
+          "id": "p1",
+          "title": "确定性",
+          "content": "集合中的元素必须是确定的"
+        },
+        {
+          "id": "p2",
+          "title": "互异性",
+          "content": "集合中的元素互不相同"
+        },
+        {
+          "id": "p3",
+          "title": "无序性",
+          "content": "集合中的元素没有顺序之分"
+        },
+        {
+          "id": "p4",
+          "title": "常见数集",
+          "content": "N(自然数) Z(整数) Q(有理数) R(实数)"
+        }
+      ],
+      "examples": [
+        {
+          "id": "e1",
+          "problem": "判断 0 是否属于集合 {x|x^2-3x+2=0}",
+          "solution": "解方程得 x=1 或 x=2，0 不是解，所以 0 不属于该集合",
+          "steps": [
+            "解方程 x^2-3x+2=0",
+            "得 x=1, x=2",
+            "0 不在其中"
+          ]
+        },
+        {
+          "id": "e2",
+          "problem": "用列举法表示 {x\\in N|1<x\\le5}",
+          "solution": "x 为 2,3,4,5，集合为 {2,3,4,5}",
+          "steps": [
+            "x 是自然数",
+            "1<x\\le5 得 2,3,4,5"
+          ]
+        }
+      ]
+    }
+  },
+  "set-relations": {
+    "id": "set-relations",
+    "title": "集合间的基本关系",
+    "chapterId": "sets-logic",
+    "prerequisites": [
+      "set-concept"
+    ],
+    "round1": {
+      "formulas": [
+        {
+          "id": "f1",
+          "latex": "A \\subseteq B",
+          "desc": "A 是 B 的子集"
+        },
+        {
+          "id": "f2",
+          "latex": "A \\subset B",
+          "desc": "A 是 B 的真子集"
+        },
+        {
+          "id": "f3",
+          "latex": "A = B \\iff A \\subseteq B \\land B \\subseteq A",
+          "desc": "集合相等"
+        }
+      ],
+      "properties": [
+        {
+          "id": "p1",
+          "title": "自反性",
+          "content": "任何集合都是自身的子集"
+        },
+        {
+          "id": "p2",
+          "title": "传递性",
+          "content": "A\\subseteq B, B\\subseteq C \\Rightarrow A\\subseteq C"
+        }
+      ],
+      "examples": [
+        {
+          "id": "e1",
+          "problem": "A={1,2,3}，求 A 的所有子集",
+          "solution": "\\varnothing,\\{1\\},\\{2\\},\\{3\\},\\{1,2\\},\\{1,3\\},\\{2,3\\},\\{1,2,3\\}，共 8 个",
+          "steps": [
+            "n=3",
+            "子集个数 2^3=8"
+          ]
+        }
+      ]
+    }
+  },
+  "set-operations": {
+    "id": "set-operations",
+    "title": "集合的基本运算",
+    "chapterId": "sets-logic",
+    "prerequisites": [
+      "set-relations"
+    ],
+    "round1": {
+      "formulas": [
+        {
+          "id": "f1",
+          "latex": "A \\cap B = \\{x \\mid x \\in A \\land x \\in B\\}",
+          "desc": "交集"
+        },
+        {
+          "id": "f2",
+          "latex": "A \\cup B = \\{x \\mid x \\in A \\lor x \\in B\\}",
+          "desc": "并集"
+        },
+        {
+          "id": "f3",
+          "latex": "\\complement_U A = \\{x \\mid x \\in U \\land x \\notin A\\}",
+          "desc": "补集"
+        }
+      ],
+      "properties": [
+        {
+          "id": "p1",
+          "title": "交换律",
+          "content": "A\\cap B = B\\cap A, A\\cup B = B\\cup A"
+        },
+        {
+          "id": "p2",
+          "title": "分配律",
+          "content": "A\\cap (B\\cup C) = (A\\cap B)\\cup (A\\cap C)"
+        }
+      ],
+      "examples": [
+        {
+          "id": "e1",
+          "problem": "U={1,2,3,4,5}, A={1,2}, B={2,3}，求 A\\cup B, A\\cap B, \\complement_U A",
+          "solution": "A\\cup B={1,2,3}, A\\cap B={2}, \\complement_U A={3,4,5}",
+          "steps": [
+            "A\\cup B 取所有元素",
+            "A\\cap B 取公共元素",
+            "\\complement_U A 从 U 中去掉 A"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "unit": "space-vectors",
+  "exercises": [
+    {
+      "id": "gk-sv-1",
+      "type": "space-volume",
+      "difficulty": 3,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "球的半径 R=3，球的体积 V（保留 π 的系数）为？",
+      "answer": 36,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "V=4πR³/3",
+          "expectedValue": 1
+        },
+        {
+          "key": "s2",
+          "description": "V=4π·27/3=36π",
+          "expectedValue": 36
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": []
+    },
+    {
+      "id": "gk-sv-2",
+      "type": "space-vec",
+      "difficulty": 4,
+      "equation": {
+        "latex": "",
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "prompt": "a=(1,2,2)，求 |a|",
+      "answer": 3,
+      "steps": [
+        {
+          "key": "s1",
+          "description": "|a|=\\sqrt{1²+2²+2²}",
+          "expectedValue": 1
+        },
+        {
+          "key": "s2",
+          "description": "=√9=3",
+          "expectedValue": 3
+        }
+      ],
+      "tags": [
+        "formula-recall"
+      ],
+      "commonMistakes": []
+    }
+  ]
+}

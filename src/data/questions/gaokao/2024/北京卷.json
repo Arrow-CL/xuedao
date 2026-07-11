@@ -1,0 +1,279 @@
+{
+  "source": "2024年高考北京卷数学",
+  "year": 2024,
+  "province": "北京",
+  "questions": [
+    {
+      "id": "bj2024-1",
+      "chapter": "sets-logic",
+      "chapters": [
+        "sets-logic"
+      ],
+      "difficulty": 3,
+      "round": [
+        1,
+        2,
+        3
+      ],
+      "type": "choice",
+      "options": [
+        "(-2,2]",
+        "[0,1)",
+        "(0,1)",
+        "[-2,2]"
+      ],
+      "prompt": "已知集合 A={x|-2<x<1}，B={x|0≤x≤2}，则A∪B=",
+      "answer": "A",
+      "steps": [
+        {
+          "key": "s1",
+          "description": "A∪B={x|-2<x≤2}"
+        }
+      ],
+      "tags": [
+        "sets"
+      ],
+      "status": "active",
+      "source": "2024北京卷"
+    },
+    {
+      "id": "bj2024-2",
+      "chapter": "complex",
+      "chapters": [
+        "complex"
+      ],
+      "difficulty": 3,
+      "round": [
+        1,
+        2,
+        3
+      ],
+      "type": "choice",
+      "options": [
+        "-1-2i",
+        "-1+2i",
+        "1-2i",
+        "1+2i"
+      ],
+      "prompt": "若(2i+1)(z-1)=5，则z=",
+      "answer": "C",
+      "steps": [
+        {
+          "key": "s1",
+          "description": "z-1=5/(2i+1)"
+        },
+        {
+          "key": "s2",
+          "description": "z=1+5(2i-1)/5=2i"
+        }
+      ],
+      "tags": [
+        "complex"
+      ],
+      "status": "active",
+      "source": "2024北京卷"
+    },
+    {
+      "id": "bj2024-3",
+      "chapter": "lines-circles",
+      "chapters": [
+        "lines-circles"
+      ],
+      "difficulty": 3,
+      "round": [
+        1,
+        2,
+        3
+      ],
+      "type": "choice",
+      "options": [
+        "-2",
+        "-1",
+        "1",
+        "2"
+      ],
+      "prompt": "圆 x²+y²=4 的圆心到直线 3x+4y-5=0 的距离为",
+      "answer": "A",
+      "steps": [
+        {
+          "key": "s1",
+          "description": "d=|0+0-5|/√(9+16)=5/5=1"
+        }
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "status": "active",
+      "source": "2024北京卷"
+    },
+    {
+      "id": "bj2024-4",
+      "chapter": "quadratic-ineq",
+      "chapters": [
+        "quadratic-ineq"
+      ],
+      "difficulty": 4,
+      "round": [
+        1,
+        2,
+        3
+      ],
+      "type": "choice",
+      "options": [
+        "(-∞,-2]",
+        "[-2,0]",
+        "[-2,2]",
+        "[2,+∞)"
+      ],
+      "prompt": "已知 a>0，不等式 x²-2ax-3a²<0 的解集为",
+      "answer": "A",
+      "steps": [
+        {
+          "key": "s1",
+          "description": "(x+a)(x-3a)<0"
+        },
+        {
+          "key": "s2",
+          "description": "-a<x<3a"
+        }
+      ],
+      "tags": [
+        "inequality"
+      ],
+      "status": "active",
+      "source": "2024北京卷"
+    },
+    {
+      "id": "bj2024-5",
+      "chapter": "trigonometric",
+      "chapters": [
+        "trigonometric"
+      ],
+      "difficulty": 4,
+      "round": [
+        1,
+        2,
+        3
+      ],
+      "type": "choice",
+      "options": [
+        "-√3/2",
+        "-1/2",
+        "0",
+        "1/2"
+      ],
+      "prompt": "sin210° =",
+      "answer": "C",
+      "steps": [
+        {
+          "key": "s1",
+          "description": "sin210°=sin(180°+30°)=-sin30°=-1/2"
+        }
+      ],
+      "tags": [
+        "trig"
+      ],
+      "status": "active",
+      "source": "2024北京卷"
+    },
+    {
+      "id": "bj2024-6",
+      "chapter": "sequences",
+      "chapters": [
+        "sequences"
+      ],
+      "difficulty": 4,
+      "round": [
+        1,
+        2,
+        3
+      ],
+      "type": "choice",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "prompt": "等比数列{a_n}中，a₁=2，公比 q=3，则 a₃=",
+      "answer": "C",
+      "steps": [
+        {
+          "key": "s1",
+          "description": "a₃=a₁·q²=2·9=18"
+        }
+      ],
+      "tags": [
+        "sequence"
+      ],
+      "status": "active",
+      "source": "2024北京卷"
+    },
+    {
+      "id": "bj2024-7",
+      "chapter": "func-concept",
+      "chapters": [
+        "func-concept"
+      ],
+      "difficulty": 3,
+      "round": [
+        1,
+        2,
+        3
+      ],
+      "type": "choice",
+      "options": [
+        "(-∞,1)",
+        "(1,2)",
+        "[1,+∞)",
+        "R"
+      ],
+      "prompt": "函数 f(x)=√(x-1) 的定义域为",
+      "answer": "C",
+      "steps": [
+        {
+          "key": "s1",
+          "description": "x-1≥0→x≥1"
+        }
+      ],
+      "tags": [
+        "function"
+      ],
+      "status": "active",
+      "source": "2024北京卷"
+    },
+    {
+      "id": "bj2024-8",
+      "chapter": "data-analysis",
+      "chapters": [
+        "data-analysis"
+      ],
+      "difficulty": 4,
+      "round": [
+        1,
+        2,
+        3
+      ],
+      "type": "choice",
+      "options": [
+        "0.2",
+        "0.3",
+        "0.4",
+        "0.5"
+      ],
+      "prompt": "袋中有3个红球2个白球，随机取2个，恰有1个红球的概率为",
+      "answer": "C",
+      "steps": [
+        {
+          "key": "s1",
+          "description": "P=C(3,1)·C(2,1)/C(5,2)=6/10=0.6"
+        }
+      ],
+      "tags": [
+        "probability"
+      ],
+      "status": "active",
+      "source": "2024北京卷"
+    }
+  ]
+}

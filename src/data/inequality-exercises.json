@@ -1,0 +1,299 @@
+{
+  "ineq-properties": {
+    "title": "不等式基本性质",
+    "exercises": [
+      {
+        "id": "ineq-prop-1",
+        "unitId": "ineq-properties",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "(多选)下列结论正确的是\nA.若$a>b$，则$ac> bc$\nB.若$a>b>0$，则$\\dfrac{1}{a}<\\dfrac{1}{b}$\nC.若$ac^2>bc^2$，则$a>b$\nD.若$a<b$，则$a^2<b^2$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "BC",
+        "gaokaoConnection": "不等式基本性质：注意乘法时$c$的符号，倒数在正数范围内成立"
+      },
+      {
+        "id": "ineq-prop-2",
+        "unitId": "ineq-properties",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "若$a,b,c\\in \\mathbf{R}$，$a>b$，则下列不等式成立的是\nA.$\\dfrac{1}{a}<\\dfrac{1}{b}$\nB.$a^2>b^2$\nC.$a|c|>b|c|$\nD.$\\dfrac{a}{c^2+1}>\\dfrac{b}{c^2+1}$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "D",
+        "gaokaoConnection": "$c^2+1>0$恒成立，不等式两边同除正数不等号方向不变"
+      },
+      {
+        "id": "ineq-prop-3",
+        "unitId": "ineq-properties",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "(多选)已知$a,b,c,d$均为实数，则下列命题正确的是\nA.若$a>b,c>d$，则$a-d>b-c$\nB.若$a>b,c>d$，则$ac> bd$\nC.若$a>b,c>d>0$，则$\\dfrac{a}{d}>\\dfrac{b}{c}$\nD.若$ab>0,bc-ad>0$，则$\\dfrac{c}{a}>\\dfrac{d}{b}$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "AD",
+        "gaokaoConnection": "不等式性质的综合运用，注意正负号对乘除的影响"
+      },
+      {
+        "id": "ineq-prop-4",
+        "unitId": "ineq-properties",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "(多选)已知实数$a, b, c$满足$a>b>c$，且$a+b+c=0$，则下列说法正确的是\nA.$\\dfrac{1}{a-c}>\\dfrac{1}{b-c}$\nB.$a-c>2b$\nC.$a^2>b^2$\nD.$ab+ bc>0$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "BC",
+        "gaokaoConnection": "由$a+b+c=0$且$a>b>c$可推出$a>0,c<0$，结合条件分析各选项"
+      }
+    ]
+  },
+  "ineq-polynomial": {
+    "title": "整式不等式",
+    "exercises": [
+      {
+        "id": "ineq-poly-1",
+        "unitId": "ineq-polynomial",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "关于$x$的不等式$ax^2+bx+c>0$的解集为$(-1,3)$，则\nA.$a>0$\tB.$ab>0$\tC.$bc<0$\tD.$abc<0$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "D",
+        "gaokaoConnection": "由解集为$(-1,3)$知$a<0$，再由韦达定理求$b,c$与$a$的关系"
+      },
+      {
+        "id": "ineq-poly-2",
+        "unitId": "ineq-polynomial",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "对$\\forall x\\in[1,2]$，不等式$x^2-ax+a-1\\le0$恒成立的一个充分不必要条件为\nA.$a\\ge3$\tB.$a>4$\tC.$a>2$\tD.$a<3$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "先求充要条件$a\\ge3$，再找其真子集作为充分不必要条件"
+      },
+      {
+        "id": "ineq-poly-3",
+        "unitId": "ineq-polynomial",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "方程$x^2-mx+1=0$在区间$(-1,2)$上有根，则实数$m$的取值范围是______。",
+        "answer": "$(-\\infty,-2]\\cup[2,+\\infty)$",
+        "gaokaoConnection": "区间有根问题：端点函数值异号或判别式非负且顶点在区间内"
+      },
+      {
+        "id": "ineq-poly-4",
+        "unitId": "ineq-polynomial",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "关于$x$的一元二次方程$ax^2+2x-1=0$有两个不相等的正根的充要条件是\nA.$a<-1$\tB.$-1<a<0$\tC.$a<0$\tD.$0<a<1$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "两正根条件：$\\Delta>0$、$x_1+x_2>0$、$x_1x_2>0$三者联立"
+      },
+      {
+        "id": "ineq-poly-5",
+        "unitId": "ineq-polynomial",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "若方程$x^2+mx-1=0$在$(1,+\\infty)$上仅有1个实根，则$m$的取值范围是______。",
+        "answer": "$(-\\infty,0)$",
+        "gaokaoConnection": "区间内仅有1个根：结合函数单调性和端点值符号分析"
+      },
+      {
+        "id": "ineq-poly-6",
+        "unitId": "ineq-polynomial",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "若关于$x$的不等式$x^2-ax-3<0$解集为$(x_0,x_0+4)$，则实数$a=$______。",
+        "answer": "$\\pm 2$",
+        "gaokaoConnection": "解集宽度为4，即两根之差为4，由$|x_1-x_2|=\\sqrt{\\Delta}/|a|=4$求解"
+      }
+    ]
+  },
+  "ineq-mean": {
+    "title": "均值不等式",
+    "exercises": [
+      {
+        "id": "ineq-mean-1",
+        "unitId": "ineq-mean",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "函数$y=x+\\dfrac{4}{x+2}$在$(-2,+\\infty)$上的最小值是______。",
+        "answer": "2",
+        "gaokaoConnection": "配凑法：$y=(x+2)+\\dfrac{4}{x+2}-2\\ge 2\\sqrt{4}-2=2$"
+      },
+      {
+        "id": "ineq-mean-2",
+        "unitId": "ineq-mean",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "已知函数$f(x)=4x+\\dfrac{a}{x}(x>0,a>0)$在$x=3$时取得最小值，则$a=$______。",
+        "answer": "36",
+        "gaokaoConnection": "均值不等式取等条件：$4x=\\dfrac{a}{x}$时$x=\\sqrt{a}/2=3$"
+      },
+      {
+        "id": "ineq-mean-3",
+        "unitId": "ineq-mean",
+        "difficulty": 1,
+        "type": "fill",
+        "prompt": "已知$0<x<1$，则$x(4-3x)$的最大值为______。",
+        "answer": "$\\dfrac{4}{3}$",
+        "gaokaoConnection": "二次函数求最值或均值不等式：$3x(4-3x)/3\\le \\dfrac{1}{3}\\cdot(\\dfrac{3x+4-3x}{2})^2$"
+      },
+      {
+        "id": "ineq-mean-4",
+        "unitId": "ineq-mean",
+        "difficulty": 1,
+        "type": "choice",
+        "prompt": "已知$x,y$均为正数，且$2x+4y=6$，则$xy$的最大值为\nA.$\\dfrac{9}{2}$\tB.$\\dfrac{9}{8}$\tC.$\\dfrac{3}{2}$\tD.$\\dfrac{9}{4}$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "B",
+        "gaokaoConnection": "和定积最大：$2x\\cdot4y\\le(\\dfrac{2x+4y}{2})^2=9$，所以$xy\\le\\dfrac{9}{8}$"
+      },
+      {
+        "id": "ineq-mean-5",
+        "unitId": "ineq-mean",
+        "difficulty": 1,
+        "type": "fill",
+        "prompt": "已知$a>0,b>0,a+b=1$，则$\\dfrac{2}{a}+\\dfrac{2}{b}$的最小值为______。",
+        "answer": "8",
+        "gaokaoConnection": "乘1法：$(\\dfrac{2}{a}+\\dfrac{2}{b})(a+b)=4+\\dfrac{2b}{a}+\\dfrac{2a}{b}\\ge 8$"
+      },
+      {
+        "id": "ineq-mean-6",
+        "unitId": "ineq-mean",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "正数$a,b$满足$\\dfrac{1}{a}+b=2$，则$\\dfrac{b}{a}$的最大值为\nA.$1$\tB.$2$\tC.$3$\tD.$4$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "消元后用均值：$\\dfrac{b}{a}=b(2-b)\\le(\\dfrac{b+2-b}{2})^2=1$"
+      },
+      {
+        "id": "ineq-mean-7",
+        "unitId": "ineq-mean",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "若$a>0,b>0$，且$2a+b=2$，则$\\dfrac{ab}{a+2b}$的最大值为______。",
+        "answer": "$\\dfrac{1}{4}$",
+        "gaokaoConnection": "倒数后换元：设$t=\\dfrac{a}{b}$，转化为单变量函数求最值"
+      },
+      {
+        "id": "ineq-mean-8",
+        "unitId": "ineq-mean",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "若$x^2+y^2=1$，则$3x-4y$的最大值是______。",
+        "answer": "5",
+        "gaokaoConnection": "三角换元：设$x=\\cos\\theta,y=\\sin\\theta$，则$3x-4y=5\\cos(\\theta+\\varphi)\\le 5$"
+      },
+      {
+        "id": "ineq-mean-9",
+        "unitId": "ineq-mean",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "$y=3-a+\\dfrac{6}{a+6},-6\\le a\\le3$ 的最大值为\nA.$9$\tB.$\\dfrac{9}{2}$\tC.$3$\tD.$\\dfrac{3\\sqrt{2}}{2}$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "设$t=a+6\\in[0,9]$，$y=9-t+\\dfrac{6}{t}$，求导或用均值分析"
+      },
+      {
+        "id": "ineq-mean-10",
+        "unitId": "ineq-mean",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "已知$a,b\\in\\mathbf{R}$，且$a-3b+6=0$，则$2^a+\\dfrac{1}{8^b}$的最小值为______。",
+        "answer": "$4\\sqrt{2}$",
+        "gaokaoConnection": "由$a=3b-6$，$2^a+8^{-b}=2^{3b-6}+2^{-3b}=\\dfrac{2^{3b}}{64}+\\dfrac{1}{2^{3b}}$，均值不等式"
+      },
+      {
+        "id": "ineq-mean-11",
+        "unitId": "ineq-mean",
+        "difficulty": 1,
+        "type": "fill",
+        "prompt": "设$a,b>0$，$a+\\dfrac{1}{b}=1$，则$b+\\dfrac{1}{a}$的最小值为______。",
+        "answer": "$\\dfrac{5}{2}$",
+        "gaokaoConnection": "由$a=1-\\dfrac{1}{b}$，$b+\\dfrac{1}{a}=b+\\dfrac{b}{b-1}=(b-1)+\\dfrac{1}{b-1}+2\\ge 4$？不，用$a+b\\ge2\\sqrt{ab}$"
+      },
+      {
+        "id": "ineq-mean-12",
+        "unitId": "ineq-mean",
+        "difficulty": 2,
+        "type": "fill",
+        "prompt": "若$x,y>0,2x-y=1$，则$x+\\dfrac{1}{y}$的最小值为______。",
+        "answer": "$\\dfrac{3}{2}+\\sqrt{2}$",
+        "gaokaoConnection": "$y=2x-1$，$x+\\dfrac{1}{2x-1}$，求导得$x=\\dfrac{1+\\sqrt{2}}{2}$时取最小值"
+      },
+      {
+        "id": "ineq-mean-13",
+        "unitId": "ineq-mean",
+        "difficulty": 3,
+        "type": "fill",
+        "prompt": "已知$x>0,y>0$，且$\\dfrac{2}{x}+\\dfrac{1}{y}=1$，则$\\dfrac{x}{2x-1}+\\dfrac{y}{y-4}$最小值______。",
+        "answer": "$\\dfrac{9}{2}$",
+        "gaokaoConnection": "由$\\dfrac{2}{x}+\\dfrac{1}{y}=1$得$x=\\dfrac{2y}{y-1}$，消元后代入化简"
+      },
+      {
+        "id": "ineq-mean-14",
+        "unitId": "ineq-mean",
+        "difficulty": 2,
+        "type": "choice",
+        "prompt": "已知$0<x<1$，关于$x$的不等式$\\dfrac{4}{x}+\\dfrac{1}{1-x}<m^2-8m$有解，则实数$m$的取值范围是\nA.$(-\\infty,-9)\\cup(1,+\\infty)$\nB.$(-1,9)$\nC.$(-\\infty,-1)\\cup(9,+\\infty)$\nD.$(-\\infty,-1]\\cup[9,+\\infty)$",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "A",
+        "gaokaoConnection": "有解$\\Leftrightarrow m^2-8m>f(x)_{\\max}$，求$f(x)=\\dfrac{4}{x}+\\dfrac{1}{1-x}$在$(0,1)$的最大值"
+      }
+    ]
+  }
+}
