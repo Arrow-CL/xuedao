@@ -48,6 +48,12 @@ interface GuideRequest {
   chapterId?: string;
   imageUrl?: string;
   studentImageUrl?: string; // 学生上传的图片 base64
+  triggerMiniReview?: boolean;
+  errorCount?: number;
+  errorSteps?: string[];
+  chapterName?: string;
+  completedCount?: number;
+  coveragePercent?: number;
 }
 
 /** 判断章节引导模式 */
@@ -92,7 +98,7 @@ function buildBasicPrompt(questionText: string, answerContext: string, stepNumbe
    1.向量坐标相加减
    2.向量垂直数量积为零，$\\vec{a} \\perp \\vec{b} \\Rightarrow \\vec{a} \\cdot \\vec{b} = 0$
    3.数量积坐标运算，$\\vec{a} \\cdot \\vec{b} = x_1 x_2 + y_1 y_2$
-   回顾完后，预告下一题的方向："下一题我们会在此基础上增加xxx"，让学生知道下一题会学什么。最后在回复末尾加上 【完成】
+   回顾完后，预告下一题的方向和知识点："下一题会用到[具体知识点名称]，想想这个知识点你还记得多少。"如果不确定具体知识点，就说"下一题会在xxx方向上继续深入"。最后在回复末尾加上 【完成】
 
 知识呈现方式：
 - 用数学语言表达概念和公式，让学生在做题过程中自然总结知识点
@@ -106,6 +112,11 @@ function buildBasicPrompt(questionText: string, answerContext: string, stepNumbe
 - 所有数学公式和表达式必须用 $...$ 包裹（如 $\\vec{a} \\cdot \\vec{c} = 0$、$k = -\\frac{10}{3}$）
 - 列条件或公式时用纯换行分隔，不要用 - 开头（避免LaTeX把减号和向量箭头连在一起渲染成"负向量"）
 - 用中文回复
+
+知识关联提示规则：
+- 如果这道题用到了学生之前学过的其他章节知识，自然地提一句，比如"这里用到了你在集合中学过的交集运算"
+- 但不要每次都提，只在确实有明确关联时提
+- 提及关联时，在回复最末尾（[GEO:...]标注之前）添加标记：[RELATED:章节名-知识点名]
 
 板书标记规则（严格遵守）：
 - 当你认可学生的某一步正确时，在该步回复的最末尾（在[GEO:...]标注之前）添加一个标记：[STEP:步骤编号|步骤结论LaTeX]
@@ -146,7 +157,7 @@ function buildAdvancedPrompt(questionText: string, answerContext: string, stepNu
    1.空间向量建系
    2.求平面的法向量，$\\vec{n} = (x, y, z)$
    3.求点到平面的距离公式
-   回顾完后，预告下一题的方向："下一题我们会在此基础上增加xxx"。最后在回复末尾加上 【完成】
+   回顾完后，预告下一题的方向和知识点："下一题会用到[具体知识点名称]，想想这个知识点你还记得多少。"如果不确定具体知识点，就说"下一题会在xxx方向上继续深入"。最后在回复末尾加上 【完成】
 
 知识呈现方式：
 - 用数学语言表达概念和公式
@@ -159,6 +170,11 @@ function buildAdvancedPrompt(questionText: string, answerContext: string, stepNu
 - 所有数学公式和表达式必须用 $...$ 包裹
 - 列条件或公式时用纯换行分隔，不要用 - 开头
 - 用中文回复
+
+知识关联提示规则：
+- 如果这道题用到了学生之前学过的其他章节知识，自然地提一句，比如"这里用到了你在集合中学过的交集运算"
+- 但不要每次都提，只在确实有明确关联时提
+- 提及关联时，在回复最末尾（[GEO:...]标注之前）添加标记：[RELATED:章节名-知识点名]
 
 板书标记规则（严格遵守）：
 - 当你认可学生的某一步/某个阶段正确时，在该步回复的最末尾（在[GEO:...]标注之前）添加一个标记：[STEP:步骤编号|步骤结论LaTeX]
@@ -192,6 +208,12 @@ export async function POST(req: NextRequest) {
       chapterId,
       imageUrl = "",
       studentImageUrl = "",
+      triggerMiniReview = false,
+      errorCount,
+      errorSteps,
+      chapterName,
+      completedCount,
+      coveragePercent,
     }: GuideRequest = await req.json();
 
     if (!questionText || !studentInput) {
@@ -227,10 +249,29 @@ export async function POST(req: NextRequest) {
     const answerContext = answer ? `\n\n（这道题的正确答案是：${answer}，供你参考判断学生是否做对，但不要直接告诉学生）` : "";
 
     // 根据模式构建不同的 system prompt
-    const systemPromptContent =
-      guideMode === "advanced"
-        ? buildAdvancedPrompt(questionText, answerContext, currentStepNumber)
-        : buildBasicPrompt(questionText, answerContext, currentStepNumber);
+    let systemPromptContent: string;
+    if (triggerMiniReview) {
+      // 小回顾模式
+      const errorContext = (errorCount && errorCount > 0)
+        ? `这4道题中学生出错了${errorCount}次。${errorSteps?.length ? "出错的地方：" + errorSteps.join("、") : ""}`
+        : "这4道题学生全部一次做对。";
+      systemPromptContent = `你是"学导"AI，一位苏格拉底式的数学辅导老师。
+      
+学生刚刚在"${chapterName}"章节完成了4道题，当前知识点覆盖率约${coveragePercent}%。${errorContext}
+
+小回顾规则：
+1. 用轻松温暖的语气开头夸奖，比如"这4道题做得不错！"
+2. 总结这4道题大概覆盖了哪些方向的知识点
+3. ${errorCount && errorCount > 0 ? "温柔地提一下错误，比如'第X题那个步骤后来纠正过来了，记住xxx就好'。不要批评，不要让学生感到挫败" : "表扬学生全部做对，鼓励继续"}
+4. 不出题，不考核，不要问"你会不会"之类的问题
+5. 最后自然地说"准备好了我们继续"或类似的话
+
+语气：轻松、温暖、像朋友聊天。用中文回复。`;
+    } else if (guideMode === "advanced") {
+      systemPromptContent = buildAdvancedPrompt(questionText, answerContext, currentStepNumber);
+    } else {
+      systemPromptContent = buildBasicPrompt(questionText, answerContext, currentStepNumber);
+    }
 
     const systemPrompt = {
       role: "system",

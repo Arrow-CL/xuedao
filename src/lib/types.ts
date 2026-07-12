@@ -141,6 +141,8 @@ export interface BoardStep {
   isCorrect: boolean;
   /** 记录时间 */
   timestamp: number;
+  /** 关联的其他章节知识（可选） */
+  related?: string;
 }
 
 // ============ 推荐引擎相关 ============

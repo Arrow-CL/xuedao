@@ -10,6 +10,7 @@ import { getAllGaokaoQuestions } from "@/data/gaokao-questions";
 import {
   getProgress,
   getChapterProgress,
+  getChapterReviewInfo,
   recordQuestionComplete,
   saveProgress,
 } from "@/lib/storage-v2";
@@ -34,6 +35,7 @@ import {
   ChevronDown,
   Bot,
   User,
+  Sparkles,
 } from "lucide-react";
 
 /* ------------------------------------------------------------------ */
@@ -49,7 +51,9 @@ interface ChatMsg {
 type PageState =
   | "no-chapter"       // 没有 chapterId
   | "no-questions"     // 章节暂无题目
+  | "warmup"           // 知识预习
   | "solving"          // 正在做题
+  | "mini-review"      // 每4题小回顾
   | "chapter-cleared"  // 章节通关
   | "loading";         // 初始化中
 
@@ -222,17 +226,19 @@ function parseGeoAnnotations(reply: string): {
 
 /**
  * Parse [STEP:n|content] tag from AI reply.
+ * Also supports optional related field: [STEP:n|content|related:章节名-知识点名]
  * Returns the clean reply (without the tag) and the parsed step info.
  */
 function parseStepTag(reply: string): {
   cleanReply: string;
   step: BoardStep | null;
 } {
-  const match = reply.match(/\[STEP:(\d+)\|([^\]]+)\]\s*$/m);
+  const match = reply.match(/\[STEP:(\d+)\|([^\]\|]+)(?:\|related:([^\]]+))?\]\s*$/m);
   if (!match) return { cleanReply: reply, step: null };
 
   const stepNumber = parseInt(match[1], 10);
   const content = match[2].trim();
+  const related = match[3]?.trim();
   const cleanReply = reply.replace(match[0], "").trimEnd();
 
   return {
@@ -242,6 +248,7 @@ function parseStepTag(reply: string): {
       content,
       isCorrect: true,
       timestamp: Date.now(),
+      ...(related ? { related } : {}),
     },
   };
 }
@@ -302,6 +309,8 @@ function SolveContent() {
   const [geometryAnnotations, setGeometryAnnotations] = useState<GeometryAnnotation[]>([]);
   const [pendingImage, setPendingImage] = useState<string | null>(null); // 待发送的图片 base64
   const [boardSteps, setBoardSteps] = useState<BoardStep[]>([]); // 板书步骤
+  const [warmupContent, setWarmupContent] = useState<string | null>(null); // 知识预习内容
+  const [miniReviewContent, setMiniReviewContent] = useState<string | null>(null); // 小回顾内容
 
   const chatRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -330,6 +339,7 @@ function SolveContent() {
 
   /* ---- Initialize: get chapter data and recommend first question ---- */
   useEffect(() => {
+    (async () => {
     if (!chapterId) {
       setPageState("no-chapter");
       return;
@@ -393,7 +403,7 @@ function SolveContent() {
       }
     } else {
       setCompletedCount(0);
-      // No progress yet - recommend first question
+      // No progress yet - show warmup first, then recommend first question
       if (questions.length === 0) {
         setPageState("no-questions");
         return;
@@ -411,13 +421,47 @@ function SolveContent() {
       if (result.question) {
         setCurrentQuestion(result.question);
         setQuestionIndex(1);
-        setChat([{ role: "assistant", content: result.question.prompt }]);
-        setPageState("solving");
+        // 知识预习：调用 warmup API
+        const ch = chapters.find((c) => c.id === chapterId);
+        if (ch && ch.units.length > 0) {
+          setPageState("warmup");
+          try {
+            const warmupRes = await fetch("/api/warmup", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                chapterId,
+                chapterName: ch.title,
+                units: ch.units,
+              }),
+            });
+            if (warmupRes.ok) {
+              const warmupData = await warmupRes.json();
+              setWarmupContent(warmupData.reply ?? "");
+            }
+          } catch {
+            // warmup 失败不阻塞，直接进入做题
+            setWarmupContent(null);
+            setChat([{ role: "assistant", content: result.question.prompt }]);
+            setPageState("solving");
+          }
+        } else {
+          setChat([{ role: "assistant", content: result.question.prompt }]);
+          setPageState("solving");
+        }
       } else {
         setPageState("no-questions");
       }
     }
+    })();  // async IIFE end
   }, [chapterId]);
+
+  /* ---- 开始做题（warmup 后调用） ---- */
+  const startSolving = useCallback(() => {
+    if (!currentQuestion) return;
+    setChat([{ role: "assistant", content: currentQuestion.prompt }]);
+    setPageState("solving");
+  }, [currentQuestion]);
 
   /* ---------------------------------------------------------------- */
   /*  Image upload handlers                                             */
@@ -608,7 +652,54 @@ function SolveContent() {
   /* ---------------------------------------------------------------- */
   /*  Next question: use recommendation engine                         */
   /* ---------------------------------------------------------------- */
-  const nextQuestion = useCallback(() => {
+  const nextQuestion = useCallback(async () => {
+    const newCompletedCount = completedCount + 1;
+
+    // 每4题触发小回顾
+    if (newCompletedCount > 0 && newCompletedCount % 4 === 0) {
+      const knowledgePoints = buildKnowledgePoints(chapterId);
+      const chapterQuestions = buildChapterQuestions(chapterId);
+      const chapterProg = getChapterProgress(chapterId);
+      const compatibleProgress: ChapterProgress = {
+        chapterId,
+        completedQuestionIds: chapterProg?.completedQuestionIds ?? [],
+        coveredKnowledgePointIds: chapterProg?.coveredKnowledgePointIds ?? [],
+        totalAttempted: chapterProg?.completedQuestionIds?.length ?? 0,
+        isCleared: chapterProg?.isCleared ?? false,
+      };
+      const coverage = getChapterCoverage(chapterId, knowledgePoints, compatibleProgress);
+      setCoveragePercent(coverage.percentage);
+
+      setPageState("mini-review");
+      setProcessing(true);
+      try {
+        const res = await fetch("/api/guide", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            questionId: "",
+            questionText: "",
+            studentInput: "触发小回顾",
+            currentStepNumber: 0,
+            triggerMiniReview: true,
+            errorCount: errorCountRef.current,
+            errorSteps: errorStepsRef.current,
+            chapterName,
+            completedCount: newCompletedCount,
+            coveragePercent: coverage.percentage,
+          }),
+        });
+        if (res.ok) {
+          const data = await res.json();
+          setMiniReviewContent(data.reply ?? "做得不错，继续加油！");
+        }
+      } catch {
+        setMiniReviewContent(null);
+      }
+      setProcessing(false);
+      return;
+    }
+
     const knowledgePoints = buildKnowledgePoints(chapterId);
     const chapterQuestions = buildChapterQuestions(chapterId);
     const chapterProg = getChapterProgress(chapterId);
@@ -649,11 +740,150 @@ function SolveContent() {
       // No more questions
       setPageState("chapter-cleared");
     }
-  }, [chapterId, questionIndex, chapterName]);
+  }, [chapterId, questionIndex, chapterName, completedCount]);
 
   /* ================================================================ */
   /*  RENDER                                                            */
   /* ================================================================ */
+
+  /* ---------- Warmup (知识预习) ---------- */
+  if (pageState === "warmup") {
+    return (
+      <div className="min-h-screen bg-gray-50 flex flex-col">
+        {/* Top bar */}
+        <div className="shrink-0 bg-white border-b border-gray-100 px-4 py-2.5">
+          <div className="max-w-4xl mx-auto flex items-center gap-2">
+            <button
+              onClick={() => router.push("/")}
+              className="shrink-0 p-1.5 rounded-lg hover:bg-gray-100 transition-colors text-gray-500"
+              title="返回学习地图"
+            >
+              <ArrowLeft size={18} />
+            </button>
+            <h2 className="text-sm font-semibold text-gray-900 truncate">
+              {chapterName}
+            </h2>
+          </div>
+        </div>
+
+        {/* Warmup content */}
+        <div className="flex-1 flex flex-col">
+          <div className="max-w-2xl mx-auto flex-1 px-4 py-8">
+            <div className="mb-6">
+              <div className="flex items-center gap-2 mb-4">
+                <BookOpen className="h-5 w-5 text-indigo-500" />
+                <h3 className="text-lg font-bold text-gray-900">知识点预习</h3>
+              </div>
+              <div className="rounded-xl border border-gray-200 bg-white p-5">
+                {warmupContent ? (
+                  <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-wrap">
+                    {warmupContent}
+                  </p>
+                ) : (
+                  <div className="flex items-center gap-2 text-sm text-gray-400">
+                    <div className="w-4 h-4 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin" />
+                    正在加载预习内容...
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <button
+              onClick={startSolving}
+              disabled={!warmupContent}
+              className="w-full py-3 bg-indigo-500 text-white rounded-xl text-sm font-medium hover:bg-indigo-600 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 shadow-sm"
+            >
+              <BookOpen size={16} />
+              开始做题
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  /* ---------- Mini Review (每4题小回顾) ---------- */
+  if (pageState === "mini-review") {
+    return (
+      <div className="min-h-screen bg-gray-50 flex flex-col">
+        {/* Top bar */}
+        <div className="shrink-0 bg-white border-b border-gray-100 px-4 py-2.5">
+          <div className="max-w-4xl mx-auto flex items-center gap-2">
+            <button
+              onClick={() => router.push("/")}
+              className="shrink-0 p-1.5 rounded-lg hover:bg-gray-100 transition-colors text-gray-500"
+              title="返回学习地图"
+            >
+              <ArrowLeft size={18} />
+            </button>
+            <h2 className="text-sm font-semibold text-gray-900 truncate">
+              {chapterName}
+            </h2>
+          </div>
+        </div>
+
+        {/* Mini review content */}
+        <div className="flex-1 flex flex-col items-center justify-center px-4">
+          <div className="max-w-md w-full text-center">
+            <div className="w-16 h-16 rounded-2xl bg-amber-100 flex items-center justify-center mx-auto mb-5">
+              <Trophy size={28} className="text-amber-500" />
+            </div>
+            <h3 className="text-lg font-bold text-gray-900 mb-4">阶段小结</h3>
+            <div className="rounded-xl border border-gray-200 bg-white p-5 text-left mb-6">
+              {processing ? (
+                <div className="flex items-center gap-2 text-sm text-gray-400 justify-center py-4">
+                  <div className="w-4 h-4 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin" />
+                  正在总结...
+                </div>
+              ) : miniReviewContent ? (
+                <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-wrap">
+                  {miniReviewContent}
+                </p>
+              ) : (
+                <p className="text-sm text-gray-500">做得不错，继续加油！</p>
+              )}
+            </div>
+            <button
+              onClick={() => {
+                // 继续进入下一题：递归调用 nextQuestion（跳过小回顾检查）
+                setPageState("solving");
+                const knowledgePoints = buildKnowledgePoints(chapterId);
+                const chapterQuestions = buildChapterQuestions(chapterId);
+                const chapterProg = getChapterProgress(chapterId);
+                const compatibleProgress: ChapterProgress = {
+                  chapterId,
+                  completedQuestionIds: chapterProg?.completedQuestionIds ?? [],
+                  coveredKnowledgePointIds: chapterProg?.coveredKnowledgePointIds ?? [],
+                  totalAttempted: chapterProg?.completedQuestionIds?.length ?? 0,
+                  isCleared: chapterProg?.isCleared ?? false,
+                };
+                const result = recommendNext(chapterId, chapterQuestions, knowledgePoints, compatibleProgress);
+                if (result.question) {
+                  setCurrentQuestion(result.question);
+                  setQuestionIndex((prev) => prev + 1);
+                  setDone(false);
+                  setStepCount(0);
+                  setSummary(null);
+                  setGeometryAnnotations([]);
+                  setBoardSteps([]);
+                  errorCountRef.current = 0;
+                  errorStepsRef.current = [];
+                  setMiniReviewContent(null);
+                  setChat([{ role: "assistant", content: result.question.prompt }]);
+                } else {
+                  setPageState("chapter-cleared");
+                }
+              }}
+              className="w-full py-3 bg-indigo-500 text-white rounded-xl text-sm font-medium hover:bg-indigo-600 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 shadow-sm"
+            >
+              <BookOpen size={16} />
+              继续做题
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   /* ---------- No chapter selected ---------- */
   if (pageState === "no-chapter") {
@@ -760,7 +990,7 @@ function SolveContent() {
             <p className="text-sm text-gray-500 mb-8">
               你已完成 {completedCount} 道题，知识点覆盖率达 {coveragePercent}%
             </p>
-            <div className="flex gap-3 justify-center">
+            <div className="flex gap-3 justify-center mb-3">
               <button
                 onClick={() => router.push("/")}
                 className="px-6 py-2.5 bg-indigo-500 text-white rounded-xl text-sm font-medium hover:bg-indigo-600 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center gap-2 shadow-sm"
@@ -769,6 +999,27 @@ function SolveContent() {
                 返回学习地图
               </button>
             </div>
+            {/* 梳理按钮 */}
+            {(() => {
+              const reviewInfo = getChapterReviewInfo(chapterId);
+              const hasNoReview = reviewInfo.reviewCount === 0;
+              return (
+                <div className="text-center">
+                  <button
+                    onClick={() => router.push("/review?chapter=" + chapterId)}
+                    className="px-5 py-2.5 bg-green-50 text-green-700 border border-green-200 rounded-xl text-sm font-medium hover:bg-green-100 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 inline-flex items-center gap-2"
+                  >
+                    <Sparkles size={16} />
+                    {reviewInfo.reviewCount > 0 ? `第${reviewInfo.reviewCount + 1}次梳理` : "梳理知识点"}
+                  </button>
+                  {hasNoReview && (
+                    <p className="text-xs text-gray-400 mt-2">
+                      梳理一遍知识点可以巩固记忆，对应的分值也能保持住
+                    </p>
+                  )}
+                </div>
+              );
+            })()}
           </div>
         </div>
 
@@ -910,6 +1161,11 @@ function SolveContent() {
                       <div className="flex-1 pb-4">
                         <div className="bg-indigo-50/70 border border-indigo-100 rounded-lg px-3 py-2 text-sm text-gray-800 leading-relaxed">
                           <MathContent text={step.content} />
+                          {step.related && (
+                            <p className="text-[10px] text-indigo-400 mt-1">
+                              关联：{step.related}
+                            </p>
+                          )}
                         </div>
                       </div>
                     </div>

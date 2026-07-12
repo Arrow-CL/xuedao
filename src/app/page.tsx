@@ -26,6 +26,11 @@ import {
   BookOpen,
   Trophy,
   Sparkles,
+  Star,
+  Target,
+  Rocket,
+  Clock,
+  X,
 } from "lucide-react";
 
 /* ------------------------------------------------------------------ */
@@ -100,6 +105,51 @@ export default function Home() {
     masteredScore: 0,
   });
   const [loaded, setLoaded] = useState(false);
+  const [memoryAlertDismissed, setMemoryAlertDismissed] = useState(false);
+
+  /* ---- 今日推荐 & 记忆检查 ---- */
+  // 有进行中的章节（unlocked && !isCleared && completedCount > 0）
+  const activeChapter = chapterStates.find(
+    (ch) => ch.unlocked && !ch.isCleared && ch.completedCount > 0
+  );
+
+  // 推荐章节（无进行中章节时）
+  const recommendations = (() => {
+    if (activeChapter) return null; // 有进行中的章节时不显示推荐
+    const easy = chapterStates
+      .filter((ch) => ch.difficulty <= 1 && !ch.isCleared && !ch.started)
+      .sort((a, b) => a.coveredKP - b.coveredKP)[0];
+    const medium = chapterStates
+      .filter((ch) => ch.difficulty >= 2 && ch.difficulty <= 3 && !ch.isCleared && ch.started)
+      .sort((a, b) => a.coveredKP - b.coveredKP)[0];
+    const hard = chapterStates
+      .filter((ch) => ch.difficulty >= 3 && ch.isCleared)
+      .sort((a, b) => a.reviewCount - b.reviewCount)[0];
+    return { easy, medium, hard };
+  })();
+
+  // 记忆检查：已通关但超过7天未梳理
+  const memoryCheckChapter = (() => {
+    if (memoryAlertDismissed) return null;
+    if (typeof window === "undefined") return null;
+    // 每日只显示一次
+    if (sessionStorage.getItem("xuedao_memory_check_today")) return null;
+    const now = Date.now();
+    const sevenDays = 7 * 24 * 3600 * 1000;
+    return chapterStates.find(
+      (ch) =>
+        ch.isCleared &&
+        ch.lastReviewTimestamp &&
+        now - ch.lastReviewTimestamp > sevenDays
+    ) ?? null;
+  })();
+
+  const dismissMemoryAlert = () => {
+    setMemoryAlertDismissed(true);
+    if (typeof window !== "undefined") {
+      sessionStorage.setItem("xuedao_memory_check_today", "1");
+    }
+  };
 
   /* 加载数据 */
   useEffect(() => {
@@ -110,7 +160,7 @@ export default function Home() {
 
     const states: ChapterState[] = sorted.map((ch) => {
       const cp = getChapterProgress(ch.id);
-      const unlocked = ch.order <= maxOrder;
+      const unlocked = true;
       const reviewInfo = getChapterReviewInfo(ch.id);
       return {
         id: ch.id,
@@ -237,6 +287,104 @@ export default function Home() {
           </div>
         </div>
       </header>
+
+      {/* ---- 记忆检查提示（可关闭） ---- */}
+      {memoryCheckChapter && (
+        <div className="mb-4 rounded-xl border border-amber-200 bg-amber-50 p-4 flex items-center gap-3">
+          <Clock className="h-5 w-5 text-amber-500 shrink-0" />
+          <div className="flex-1 min-w-0">
+            <p className="text-sm text-amber-800 font-medium">
+              {memoryCheckChapter.title}已经有一段时间没复习了，分值正在变暗
+            </p>
+            <p className="text-xs text-amber-600 mt-0.5">快速回顾一下可以恢复记忆</p>
+          </div>
+          <div className="flex items-center gap-2 shrink-0">
+            <button
+              onClick={() => router.push("/review?chapter=" + memoryCheckChapter.id)}
+              className="text-xs font-medium px-3 py-1.5 rounded-lg bg-amber-500 text-white hover:bg-amber-600 transition-colors"
+            >
+              快速回顾
+            </button>
+            <button
+              onClick={dismissMemoryAlert}
+              className="text-xs px-2 py-1.5 rounded-lg text-amber-600 hover:bg-amber-100 transition-colors"
+            >
+              稍后
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* ---- 今日推荐 ---- */}
+      {activeChapter ? (
+        <div className="mb-6 rounded-xl border border-indigo-100 bg-gradient-to-r from-indigo-50 to-white p-4 flex items-center gap-3">
+          <div className="shrink-0 w-10 h-10 rounded-xl bg-indigo-100 flex items-center justify-center">
+            <BookOpen className="h-5 w-5 text-indigo-600" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-sm text-gray-800 font-medium">继续学习 {activeChapter.title}</p>
+            <p className="text-xs text-gray-500 mt-0.5">{activeChapter.completedCount} 道已完成，继续加油</p>
+          </div>
+          <button
+            onClick={() => router.push("/solve?chapter=" + activeChapter.id)}
+            className="shrink-0 text-xs font-medium px-4 py-2 rounded-xl bg-indigo-500 text-white hover:bg-indigo-600 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center gap-1"
+          >
+            继续
+            <ChevronRight className="h-3.5 w-3.5" />
+          </button>
+        </div>
+      ) : recommendations ? (
+        <div className="mb-6">
+          <div className="flex items-center gap-1.5 mb-3">
+            <Star className="h-4 w-4 text-amber-500" />
+            <span className="text-sm font-semibold text-gray-800">今日推荐</span>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            {recommendations.easy && (
+              <div
+                onClick={() => router.push("/solve?chapter=" + recommendations.easy!.id)}
+                className="cursor-pointer rounded-xl border border-green-200 bg-gradient-to-br from-green-50 to-white p-4 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+              >
+                <div className="flex items-center gap-1.5 mb-2">
+                  <Target className="h-4 w-4 text-green-600" />
+                  <span className="text-xs font-bold text-green-700">基础巩固</span>
+                  <span className="text-[10px] text-green-600 bg-green-100 px-1.5 py-0.5 rounded-full ml-auto">{recommendations.easy.score}分</span>
+                </div>
+                <p className="text-sm font-semibold text-gray-800">{recommendations.easy.title}</p>
+                <p className="text-xs text-gray-500 mt-1">{recommendations.easy.difficulty <= 1 ? "打好基础，这些分不能丢" : "巩固薄弱环节"}</p>
+              </div>
+            )}
+            {recommendations.medium && (
+              <div
+                onClick={() => router.push("/solve?chapter=" + recommendations.medium!.id)}
+                className="cursor-pointer rounded-xl border border-indigo-200 bg-gradient-to-br from-indigo-50 to-white p-4 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+              >
+                <div className="flex items-center gap-1.5 mb-2">
+                  <Rocket className="h-4 w-4 text-indigo-600" />
+                  <span className="text-xs font-bold text-indigo-700">进阶提升</span>
+                  <span className="text-[10px] text-indigo-600 bg-indigo-100 px-1.5 py-0.5 rounded-full ml-auto">{recommendations.medium.score}分</span>
+                </div>
+                <p className="text-sm font-semibold text-gray-800">{recommendations.medium.title}</p>
+                <p className="text-xs text-gray-500 mt-1">深入提升，拿下更多分数</p>
+              </div>
+            )}
+            {recommendations.hard && (
+              <div
+                onClick={() => router.push("/solve?chapter=" + recommendations.hard!.id)}
+                className="cursor-pointer rounded-xl border border-amber-200 bg-gradient-to-br from-amber-50 to-white p-4 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+              >
+                <div className="flex items-center gap-1.5 mb-2">
+                  <Flame className="h-4 w-4 text-amber-600" />
+                  <span className="text-xs font-bold text-amber-700">挑战突破</span>
+                  <span className="text-[10px] text-amber-600 bg-amber-100 px-1.5 py-0.5 rounded-full ml-auto">{recommendations.hard.score}分</span>
+                </div>
+                <p className="text-sm font-semibold text-gray-800">{recommendations.hard.title}</p>
+                <p className="text-xs text-gray-500 mt-1">突破难点，拉开差距</p>
+              </div>
+            )}
+          </div>
+        </div>
+      ) : null}
 
       {/* ---- 章节列表 ---- */}
       <section>
@@ -389,10 +537,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---- 底部 ---- */}
-      <footer className="mt-10 text-center text-xs text-gray-400">
-        <p>完成当前章节即可解锁下一章</p>
-      </footer>
     </div>
   );
 }
