@@ -6,14 +6,8 @@
         "id": "ineq-prop-1",
         "unitId": "ineq-properties",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(多选)下列结论正确的是\nA.若$a>b$，则$ac> bc$\nB.若$a>b>0$，则$\\dfrac{1}{a}<\\dfrac{1}{b}$\nC.若$ac^2>bc^2$，则$a>b$\nD.若$a<b$，则$a^2<b^2$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
+        "type": "fill",
+        "prompt": "(多选)下列结论正确的是____。",
         "answer": "BC",
         "gaokaoConnection": "不等式基本性质：注意乘法时$c$的符号，倒数在正数范围内成立"
       },
@@ -21,29 +15,17 @@
         "id": "ineq-prop-2",
         "unitId": "ineq-properties",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "若$a,b,c\\in \\mathbf{R}$，$a>b$，则下列不等式成立的是\nA.$\\dfrac{1}{a}<\\dfrac{1}{b}$\nB.$a^2>b^2$\nC.$a|c|>b|c|$\nD.$\\dfrac{a}{c^2+1}>\\dfrac{b}{c^2+1}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "D",
+        "type": "fill",
+        "prompt": "若$a,b,c\\in \\mathbf{R}$，$a>b$，则下列不等式成立的是____。",
+        "answer": "$\\dfrac{a}{c^2+1}>\\dfrac{b}{c^2+1}$",
         "gaokaoConnection": "$c^2+1>0$恒成立，不等式两边同除正数不等号方向不变"
       },
       {
         "id": "ineq-prop-3",
         "unitId": "ineq-properties",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(多选)已知$a,b,c,d$均为实数，则下列命题正确的是\nA.若$a>b,c>d$，则$a-d>b-c$\nB.若$a>b,c>d$，则$ac> bd$\nC.若$a>b,c>d>0$，则$\\dfrac{a}{d}>\\dfrac{b}{c}$\nD.若$ab>0,bc-ad>0$，则$\\dfrac{c}{a}>\\dfrac{d}{b}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
+        "type": "fill",
+        "prompt": "(多选)已知$a,b,c,d$均为实数，则下列命题正确的是____。",
         "answer": "AD",
         "gaokaoConnection": "不等式性质的综合运用，注意正负号对乘除的影响"
       },
@@ -51,14 +33,8 @@
         "id": "ineq-prop-4",
         "unitId": "ineq-properties",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(多选)已知实数$a, b, c$满足$a>b>c$，且$a+b+c=0$，则下列说法正确的是\nA.$\\dfrac{1}{a-c}>\\dfrac{1}{b-c}$\nB.$a-c>2b$\nC.$a^2>b^2$\nD.$ab+ bc>0$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
+        "type": "fill",
+        "prompt": "(多选)已知实数$a, b, c$满足$a>b>c$，且$a+b+c=0$，则下列说法正确的是____。",
         "answer": "BC",
         "gaokaoConnection": "由$a+b+c=0$且$a>b>c$可推出$a>0,c<0$，结合条件分析各选项"
       }
@@ -71,30 +47,18 @@
         "id": "ineq-poly-1",
         "unitId": "ineq-polynomial",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "关于$x$的不等式$ax^2+bx+c>0$的解集为$(-1,3)$，则\nA.$a>0$\tB.$ab>0$\tC.$bc<0$\tD.$abc<0$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "D",
+        "type": "fill",
+        "prompt": "关于$x$的不等式$ax^2+bx+c>0$的解集为$(-1,3)$，则____。",
+        "answer": "$abc<0$",
         "gaokaoConnection": "由解集为$(-1,3)$知$a<0$，再由韦达定理求$b,c$与$a$的关系"
       },
       {
         "id": "ineq-poly-2",
         "unitId": "ineq-polynomial",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "对$\\forall x\\in[1,2]$，不等式$x^2-ax+a-1\\le0$恒成立的一个充分不必要条件为\nA.$a\\ge3$\tB.$a>4$\tC.$a>2$\tD.$a<3$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "对$\\forall x\\in[1,2]$，不等式$x^2-ax+a-1\\le0$恒成立的一个充分不必要条件为____。",
+        "answer": "$a>4$",
         "gaokaoConnection": "先求充要条件$a\\ge3$，再找其真子集作为充分不必要条件"
       },
       {
@@ -110,15 +74,9 @@
         "id": "ineq-poly-4",
         "unitId": "ineq-polynomial",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "关于$x$的一元二次方程$ax^2+2x-1=0$有两个不相等的正根的充要条件是\nA.$a<-1$\tB.$-1<a<0$\tC.$a<0$\tD.$0<a<1$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "关于$x$的一元二次方程$ax^2+2x-1=0$有两个不相等的正根的充要条件是____。",
+        "answer": "$-1<a<0$",
         "gaokaoConnection": "两正根条件：$\\Delta>0$、$x_1+x_2>0$、$x_1x_2>0$三者联立"
       },
       {
@@ -175,15 +133,9 @@
         "id": "ineq-mean-4",
         "unitId": "ineq-mean",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "已知$x,y$均为正数，且$2x+4y=6$，则$xy$的最大值为\nA.$\\dfrac{9}{2}$\tB.$\\dfrac{9}{8}$\tC.$\\dfrac{3}{2}$\tD.$\\dfrac{9}{4}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "已知$x,y$均为正数，且$2x+4y=6$，则$xy$的最大值为____。",
+        "answer": "$\\dfrac{9}{8}$",
         "gaokaoConnection": "和定积最大：$2x\\cdot4y\\le(\\dfrac{2x+4y}{2})^2=9$，所以$xy\\le\\dfrac{9}{8}$"
       },
       {
@@ -199,15 +151,9 @@
         "id": "ineq-mean-6",
         "unitId": "ineq-mean",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "正数$a,b$满足$\\dfrac{1}{a}+b=2$，则$\\dfrac{b}{a}$的最大值为\nA.$1$\tB.$2$\tC.$3$\tD.$4$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "正数$a,b$满足$\\dfrac{1}{a}+b=2$，则$\\dfrac{b}{a}$的最大值为____。",
+        "answer": "$1$",
         "gaokaoConnection": "消元后用均值：$\\dfrac{b}{a}=b(2-b)\\le(\\dfrac{b+2-b}{2})^2=1$"
       },
       {
@@ -232,15 +178,9 @@
         "id": "ineq-mean-9",
         "unitId": "ineq-mean",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$y=3-a+\\dfrac{6}{a+6},-6\\le a\\le3$ 的最大值为\nA.$9$\tB.$\\dfrac{9}{2}$\tC.$3$\tD.$\\dfrac{3\\sqrt{2}}{2}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "$y=3-a+\\dfrac{6}{a+6},-6\\le a\\le3$ 的最大值为____。",
+        "answer": "$9$",
         "gaokaoConnection": "设$t=a+6\\in[0,9]$，$y=9-t+\\dfrac{6}{t}$，求导或用均值分析"
       },
       {
@@ -283,15 +223,9 @@
         "id": "ineq-mean-14",
         "unitId": "ineq-mean",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "已知$0<x<1$，关于$x$的不等式$\\dfrac{4}{x}+\\dfrac{1}{1-x}<m^2-8m$有解，则实数$m$的取值范围是\nA.$(-\\infty,-9)\\cup(1,+\\infty)$\nB.$(-1,9)$\nC.$(-\\infty,-1)\\cup(9,+\\infty)$\nD.$(-\\infty,-1]\\cup[9,+\\infty)$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "已知$0<x<1$，关于$x$的不等式$\\dfrac{4}{x}+\\dfrac{1}{1-x}<m^2-8m$有解，则实数$m$的取值范围是____。",
+        "answer": "$(-\\infty,-9)\\cup(1,+\\infty)$",
         "gaokaoConnection": "有解$\\Leftrightarrow m^2-8m>f(x)_{\\max}$，求$f(x)=\\dfrac{4}{x}+\\dfrac{1}{1-x}$在$(0,1)$的最大值"
       }
     ]

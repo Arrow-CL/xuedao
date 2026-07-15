@@ -2,8 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 
 const API_KEY = process.env.BAIDU_OCR_API_KEY || "";
 const SECRET_KEY = process.env.BAIDU_OCR_SECRET_KEY || "";
-const TOKEN_URL = "https://aip.baidubce.com/oauth/2.0/token";
-const OCR_URL = "https://aip.baidubce.com/rest/2.0/ocr/v1/formula";
+const TOKEN_URL = process.env.BAIDU_OCR_TOKEN_URL || "https://aip.baidubce.com/oauth/2.0/token";
+const OCR_URL = process.env.BAIDU_OCR_URL || "https://aip.baidubce.com/rest/2.0/ocr/v1/formula";
 
 let cachedToken: { token: string; expires: number } | null = null;
 

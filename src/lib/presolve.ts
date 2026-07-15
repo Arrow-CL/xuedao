@@ -28,6 +28,8 @@ export interface PresolvedStep {
   reasoning: string;
   /** 学生做到这一步时，怎么验证自己做对了 */
   checkHint: string;
+  /** 这一步对应的图形元素（数形结合） */
+  stepGeometry?: StepGeometry;
 }
 
 /** 知识碎片（引导时按需呈现） */
@@ -45,7 +47,35 @@ export interface KnowledgeFragment {
 // ============ Prompt 版本控制 ============
 // 每次修改 presolve/guide prompt 时递增此版本号
 // 旧版本的缓存会自动失效，强制重新预求解
-export const PROMPT_VERSION = 4;
+export const PROMPT_VERSION = 10;
+
+/** 几何图形描述（用于 Canvas 可视化 — 整体概览） */
+export interface GeometryDiagram {
+  shape: "parallelogram" | "triangle" | "circle" | "polygon" | "coordinate";
+  points: Record<string, { x: number; y: number }>;
+  labels?: string[];
+  annotations?: string[];
+}
+
+/** 单步图形元素（板书某一步对应的图形增量） */
+export interface StepGeometry {
+  /** 这一步要显示的图形类型 */
+  type: "coordinate-system" | "shape" | "points" | "vectors" | "annotations";
+  /** 图形主体描述（复用 GeometryDiagram 格式） */
+  shape?: "parallelogram" | "triangle" | "circle" | "polygon" | "coordinate";
+  /** 这一步涉及的顶点坐标（逐步累积显示） */
+  points?: Record<string, { x: number; y: number }>;
+  /** 这一步要显示的边/线段（连接哪些点） */
+  edges?: Array<{ from: string; to: string; style?: "solid" | "dashed" | "bold" }>;
+  /** 这一步要标注的向量 */
+  vectors?: Array<{ from: string; to: string; label: string }>;
+  /** 标注文字（如"中点"、"AB=3"等） */
+  labels?: string[];
+  /** 坐标系参数（建立坐标系时使用） */
+  axis?: { originX: number; originY: number; xMax: number; yMax: number };
+  /** 额外说明文字 */
+  caption?: string;
+}
 
 /** 题目的完整预求解结果 */
 export interface PresolvedQuestion {
@@ -72,6 +102,8 @@ export interface PresolvedQuestion {
   solvedAt: number;
   /** 生成此结果的 prompt 版本 */
   promptVersion: number;
+  /** 几何图形描述（可选） */
+  diagram?: GeometryDiagram;
 }
 
 // ============ 预求解缓存（静态 JSON + localStorage 增量） ============
@@ -151,7 +183,8 @@ export function getAllCachedPresolves(): Record<string, PresolvedQuestion> {
 
 /**
  * 比对学生输入与参考解步骤
- * 返回最匹配的步骤编号和匹配度
+ * 核心逻辑：不仅匹配当前步骤的表达式，还要匹配所有步骤的 result
+ * 学生可能跳步但结果正确（如直接得出 sinAsinC=sin²B，跳过了中间形式）
  */
 export function matchStudentStep(
   studentInput: string,
@@ -171,13 +204,12 @@ export function matchStudentStep(
   let bestDiff = "";
 
   for (const step of steps) {
-    // 检查学生的输入是否和这一步的表达式匹配
     const exprClean = step.expression.replace(/\s+/g, "").toLowerCase();
     const resultClean = step.result.replace(/\s+/g, "").toLowerCase();
 
     let confidence = 0;
 
-    // 精确匹配结果
+    // 精确匹配结果（最重要的判断：学生得出了这一步的结论）
     if (cleaned.includes(resultClean) && resultClean.length > 0) {
       confidence = 0.95;
     }
@@ -187,10 +219,11 @@ export function matchStudentStep(
     }
     // 部分匹配（包含关键数字或符号）
     else {
-      const keyParts = exprClean.replace(/[=+\-*/^()]/g, " ").split(/\s+/).filter(p => p.length > 1);
-      const matchCount = keyParts.filter(p => cleaned.includes(p)).length;
-      if (keyParts.length > 0 && matchCount / keyParts.length > 0.5) {
-        confidence = matchCount / keyParts.length;
+      // 同时检查 expression 和 result 中的关键部分
+      const allParts = (exprClean + " " + resultClean).replace(/[=+\-*/^()$\\]/g, " ").split(/\s+/).filter(p => p.length > 1);
+      const matchCount = allParts.filter(p => cleaned.includes(p)).length;
+      if (allParts.length > 0 && matchCount / allParts.length > 0.4) {
+        confidence = matchCount / allParts.length;
       }
     }
 

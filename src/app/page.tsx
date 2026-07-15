@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { chapters } from "@/data/chapters";
+import { knowledgeExercises } from "@/data/knowledge-exercises";
+import { getAllGaokaoQuestions } from "@/data/gaokao-questions";
 import {
   getProgress,
   getChapterProgress,
@@ -155,13 +157,25 @@ export default function Home() {
   useEffect(() => {
     const progress: UserProgress = getProgress();
     const maxOrder = progress.maxUnlockedOrder ?? 1;
+    const allGaokao = getAllGaokaoQuestions();
 
     const sorted = [...chapters].sort((a, b) => a.order - b.order);
 
     const states: ChapterState[] = sorted.map((ch) => {
       const cp = getChapterProgress(ch.id);
-      const unlocked = true;
+      // 解锁逻辑：order <= maxOrder 的章节解锁
+      const unlocked = ch.order <= maxOrder;
       const reviewInfo = getChapterReviewInfo(ch.id);
+      
+      // 计算该章节总题数：高考题 + 练习题
+      const gaokaoCount = (allGaokao[ch.id] ?? []).length;
+      let exerciseCount = 0;
+      for (const unit of ch.units) {
+        const unitExercises = knowledgeExercises[unit.id];
+        if (unitExercises) exerciseCount += unitExercises.length;
+      }
+      const totalQuestions = gaokaoCount + exerciseCount;
+      
       return {
         id: ch.id,
         title: ch.title,
@@ -169,7 +183,7 @@ export default function Home() {
         difficulty: ch.difficulty,
         unlocked,
         completedCount: cp?.completedQuestionIds?.length ?? 0,
-        totalQuestions: 0,
+        totalQuestions,
         isCleared: cp?.isCleared ?? false,
         started: cp !== null,
         coveredKP: cp?.coveredKnowledgePointIds?.length ?? 0,

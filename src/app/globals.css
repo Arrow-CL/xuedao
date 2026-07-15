@@ -22,6 +22,7 @@ body {
 /* KaTeX 适配 */
 .katex { font-size: 1.05em !important; }
 .katex .katex-html { white-space: normal; }
+.katex .katex-mathml { display: none !important; }
 
 /* 自定义动画 */
 @keyframes pulse-subtle {

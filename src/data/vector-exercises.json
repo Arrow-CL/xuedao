@@ -6,105 +6,63 @@
         "id": "vec-l1",
         "unitId": "vec-linear",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2024·浙江) $\\overrightarrow{AB}=\\boldsymbol{e}_1+2\\boldsymbol{e}_2,\\overrightarrow{BC}=-3\\boldsymbol{e}_1+2\\boldsymbol{e}_2,\\overrightarrow{DA}=3\\boldsymbol{e}_1-6\\boldsymbol{e}_2$，三点共线的是（）\nA.$A,B,C$  B.$A,B,D$  C.$A,C,D$  D.$B,C,D$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "(2024·浙江) $\\overrightarrow{AB}=\\boldsymbol{e}_1+2\\boldsymbol{e}_2,\\overrightarrow{BC}=-3\\boldsymbol{e}_1+2\\boldsymbol{e}_2,\\overrightarrow{DA}=3\\boldsymbol{e}_1-6\\boldsymbol{e}_2$，三点共线的是____",
+        "answer": "$A,B,D$",
         "gaokaoConnection": "三点共线等价于两向量平行（成比例）：$\\overrightarrow{AB}=(1,2),\\overrightarrow{DA}=(3,-6)$，$\\overrightarrow{DB}=\\overrightarrow{DA}+\\overrightarrow{AB}=(4,-4)$... 验证$\\overrightarrow{AB}$与$\\overrightarrow{AD}$是否平行"
       },
       {
         "id": "vec-l2",
         "unitId": "vec-linear",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2022·全国乙) $|\\boldsymbol{a}|=1,|\\boldsymbol{b}|=3,|\\boldsymbol{a}-2\\boldsymbol{b}|=3$，则$\\boldsymbol{a}\\cdot\\boldsymbol{b}=$（）\nA.$-2$  B.$-1$  C.$1$  D.$2$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "D",
+        "type": "fill",
+        "prompt": "(2022·全国乙) $|\\boldsymbol{a}|=1,|\\boldsymbol{b}|=3,|\\boldsymbol{a}-2\\boldsymbol{b}|=3$，则$\\boldsymbol{a}\\cdot\\boldsymbol{b}=$____",
+        "answer": "$2$",
         "gaokaoConnection": "$|\\boldsymbol{a}-2\\boldsymbol{b}|^2=\\boldsymbol{a}^2-4\\boldsymbol{a}\\cdot\\boldsymbol{b}+4\\boldsymbol{b}^2=1-4\\boldsymbol{a}\\cdot\\boldsymbol{b}+36=9$"
       },
       {
         "id": "vec-l3",
         "unitId": "vec-linear",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2024·江苏) 三个单位向量$\\boldsymbol{a},\\boldsymbol{b},\\boldsymbol{c}$满足$\\boldsymbol{a}=\\boldsymbol{b}+\\boldsymbol{c}$，则$\\boldsymbol{b},\\boldsymbol{c}$夹角为（）\nA.$\\dfrac{\\pi}{6}$  B.$\\dfrac{\\pi}{3}$  C.$\\dfrac{2\\pi}{3}$  D.$\\dfrac{5\\pi}{6}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "(2024·江苏) 三个单位向量$\\boldsymbol{a},\\boldsymbol{b},\\boldsymbol{c}$满足$\\boldsymbol{a}=\\boldsymbol{b}+\\boldsymbol{c}$，则$\\boldsymbol{b},\\boldsymbol{c}$夹角为____",
+        "answer": "$\\dfrac{2\\pi}{3}$",
         "gaokaoConnection": "$|\\boldsymbol{a}|^2=|\\boldsymbol{b}+\\boldsymbol{c}|^2=1+1+2\\cos\theta=1$，得$\\cos\theta=-\\dfrac{1}{2}$"
       },
       {
         "id": "vec-l4",
         "unitId": "vec-linear",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "(2022·新课标Ⅰ卷) 在$\\triangle ABC$中，$D$在$AB$上且$BD=2DA$，记$\\overrightarrow{CA}=\\boldsymbol{m},\\overrightarrow{CD}=\\boldsymbol{n}$，则$\\overrightarrow{CB}=$（）\nA.$3\\boldsymbol{m}-2\\boldsymbol{n}$  B.$-2\\boldsymbol{m}+3\\boldsymbol{n}$  C.$3\\boldsymbol{m}+2\\boldsymbol{n}$  D.$2\\boldsymbol{m}+3\\boldsymbol{n}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "(2022·新课标Ⅰ卷) 在$\\triangle ABC$中，$D$在$AB$上且$BD=2DA$，记$\\overrightarrow{CA}=\\boldsymbol{m},\\overrightarrow{CD}=\\boldsymbol{n}$，则$\\overrightarrow{CB}=$____",
+        "answer": "$-2\\boldsymbol{m}+3\\boldsymbol{n}$",
         "gaokaoConnection": "$\\overrightarrow{CD}=\\dfrac{1}{3}\\overrightarrow{CA}+\\dfrac{2}{3}\\overrightarrow{CB}$，解出$\\overrightarrow{CB}=-\\dfrac{1}{2}\\boldsymbol{m}+\\dfrac{3}{2}\\boldsymbol{n}$"
       },
       {
         "id": "vec-l5",
         "unitId": "vec-linear",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "在平行四边形$ABCD$中，$E$为$AD$中点，$BE$交$AC$于$F$，则$\\overrightarrow{DF}=$（）\nA.$\\dfrac{1}{3}\\overrightarrow{AB}+\\dfrac{2}{3}\\overrightarrow{AD}$  B.$\\dfrac{1}{3}\\overrightarrow{AB}-\\dfrac{2}{3}\\overrightarrow{AD}$\nC.$\\dfrac{1}{4}\\overrightarrow{AB}+\\dfrac{3}{4}\\overrightarrow{AD}$  D.$\\dfrac{1}{4}\\overrightarrow{AB}-\\dfrac{3}{4}\\overrightarrow{AD}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "在平行四边形$ABCD$中，$E$为$AD$中点，$BE$交$AC$于$F$，则$\\overrightarrow{DF}=$____",
+        "answer": "$\\dfrac{1}{3}\\overrightarrow{AB}-\\dfrac{2}{3}\\overrightarrow{AD}$",
         "gaokaoConnection": "$\\triangle AEF \\sim \\triangle CBF$，$AF:FC=1:2$，$\\overrightarrow{DF}=\\overrightarrow{DA}+\\overrightarrow{AF}=-\\overrightarrow{AD}+\\dfrac{1}{3}\\overrightarrow{AC}$"
       },
       {
         "id": "vec-l6",
         "unitId": "vec-linear",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2026·厦门模拟) 等边$\\triangle ABC$，$D$是重心，$E$为$BC$靠近$C$的四等分点，$\\overrightarrow{DE}=\\lambda\\overrightarrow{AB}+\\mu\\overrightarrow{AC}$，则$\\lambda+\\mu=$（）\nA.$-\\dfrac{1}{3}$  B.$\\dfrac{1}{4}$  C.$\\dfrac{1}{3}$  D.$-\\dfrac{1}{4}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "D",
+        "type": "fill",
+        "prompt": "(2026·厦门模拟) 等边$\\triangle ABC$，$D$是重心，$E$为$BC$靠近$C$的四等分点，$\\overrightarrow{DE}=\\lambda\\overrightarrow{AB}+\\mu\\overrightarrow{AC}$，则$\\lambda+\\mu=$____",
+        "answer": "$-\\dfrac{1}{4}$",
         "gaokaoConnection": "$\\overrightarrow{DE}=\\overrightarrow{CE}-\\overrightarrow{CD}=-\\dfrac{1}{4}\\overrightarrow{BC}-\\dfrac{1}{3}\\overrightarrow{CA}-\\dfrac{1}{3}\\overrightarrow{CB}$，用$\\overrightarrow{AB},\\overrightarrow{AC}$表示"
       },
       {
         "id": "vec-l7",
         "unitId": "vec-linear",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2024·辽宁模拟) $\\triangle ABC$中，$D$为$BC$中点，$\\overrightarrow{AD}=3\\overrightarrow{GD}$，用$\\overrightarrow{AB},\\overrightarrow{AC}$表示$\\overrightarrow{BG}=$（）\nA.$-\\dfrac{2}{3}\\overrightarrow{AB}+\\dfrac{1}{3}\\overrightarrow{AC}$  B.$-\\dfrac{1}{3}\\overrightarrow{AB}+\\dfrac{2}{3}\\overrightarrow{AC}$\nC.$\\dfrac{2}{3}\\overrightarrow{AB}-\\dfrac{1}{3}\\overrightarrow{AC}$  D.$\\dfrac{2}{3}\\overrightarrow{AB}+\\dfrac{1}{3}\\overrightarrow{AC}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "(2024·辽宁模拟) $\\triangle ABC$中，$D$为$BC$中点，$\\overrightarrow{AD}=3\\overrightarrow{GD}$，用$\\overrightarrow{AB},\\overrightarrow{AC}$表示$\\overrightarrow{BG}=$____",
+        "answer": "$-\\dfrac{2}{3}\\overrightarrow{AB}+\\dfrac{1}{3}\\overrightarrow{AC}$",
         "gaokaoConnection": "$\\overrightarrow{AD}=\\dfrac{1}{2}(\\overrightarrow{AB}+\\overrightarrow{AC})$，$\\overrightarrow{AG}=\\dfrac{2}{3}\\overrightarrow{AD}$，$\\overrightarrow{BG}=\\overrightarrow{AG}-\\overrightarrow{AB}$"
       },
       {
@@ -120,75 +78,45 @@
         "id": "vec-l9",
         "unitId": "vec-linear",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "正六边形$ABCDEF$，用$\\overrightarrow{AC},\\overrightarrow{AE}$表示$\\overrightarrow{CD}=$（）\nA.$-\\dfrac{2}{3}\\overrightarrow{AC}+\\dfrac{1}{3}\\overrightarrow{AE}$  B.$-\\dfrac{1}{3}\\overrightarrow{AC}+\\dfrac{2}{3}\\overrightarrow{AE}$\nC.$-\\dfrac{2}{3}\\overrightarrow{AC}+\\dfrac{2}{3}\\overrightarrow{AE}$  D.$-\\dfrac{1}{3}\\overrightarrow{AC}+\\dfrac{1}{3}\\overrightarrow{AE}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "正六边形$ABCDEF$，用$\\overrightarrow{AC},\\overrightarrow{AE}$表示$\\overrightarrow{CD}=$____",
+        "answer": "$-\\dfrac{2}{3}\\overrightarrow{AC}+\\dfrac{1}{3}\\overrightarrow{AE}$",
         "gaokaoConnection": "正六边形中$\\overrightarrow{AC}=\\overrightarrow{AB}+\\overrightarrow{BC}$，$\\overrightarrow{AE}=\\overrightarrow{AF}+\\overrightarrow{FE}$，$\\overrightarrow{CD}=\\overrightarrow{BA}=-\\overrightarrow{AB}$"
       },
       {
         "id": "vec-l10",
         "unitId": "vec-linear",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$ABCD$为矩形，$P$是平面外一点，$M$平分$PC$，$PN=2ND$，若$\\overrightarrow{NM}=x\\overrightarrow{AB}+y\\overrightarrow{AD}+z\\overrightarrow{AP}$，则$x+y+z=$（）\nA.$\\dfrac{1}{2}$  B.$\\dfrac{5}{6}$  C.$-\\dfrac{5}{6}$  D.$1$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "$ABCD$为矩形，$P$是平面外一点，$M$平分$PC$，$PN=2ND$，若$\\overrightarrow{NM}=x\\overrightarrow{AB}+y\\overrightarrow{AD}+z\\overrightarrow{AP}$，则$x+y+z=$____",
+        "answer": "$\\dfrac{5}{6}$",
         "gaokaoConnection": "$\\overrightarrow{NM}=\\overrightarrow{PM}-\\overrightarrow{PN}=\\dfrac{1}{2}\\overrightarrow{PC}-\\dfrac{2}{3}\\overrightarrow{PD}$，展开后用$\\overrightarrow{AB},\\overrightarrow{AD},\\overrightarrow{AP}$表示"
       },
       {
         "id": "vec-l11",
         "unitId": "vec-linear",
         "difficulty": 3,
-        "type": "choice",
-        "prompt": "$\\triangle ABC$内接于圆$O$，$|\\overrightarrow{CA}+\\overrightarrow{CB}|=|\\overrightarrow{CA}-\\overrightarrow{CB}|$，$P$为$OC$中点，则$\\overrightarrow{OP}=$（）\nA.$\\dfrac{1}{3}\\overrightarrow{AC}-\\dfrac{1}{2}\\overrightarrow{AB}$  B.$\\dfrac{1}{4}\\overrightarrow{AC}-\\dfrac{1}{2}\\overrightarrow{AB}$\nC.$\\dfrac{1}{2}\\overrightarrow{AC}-\\dfrac{1}{4}\\overrightarrow{AB}$  D.$\\dfrac{1}{2}\\overrightarrow{AC}-\\dfrac{1}{3}\\overrightarrow{AB}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "$\\triangle ABC$内接于圆$O$，$|\\overrightarrow{CA}+\\overrightarrow{CB}|=|\\overrightarrow{CA}-\\overrightarrow{CB}|$，$P$为$OC$中点，则$\\overrightarrow{OP}=$____",
+        "answer": "$\\dfrac{1}{2}\\overrightarrow{AC}-\\dfrac{1}{4}\\overrightarrow{AB}$",
         "gaokaoConnection": "由$|\\overrightarrow{CA}+\\overrightarrow{CB}|=|\\overrightarrow{CA}-\\overrightarrow{CB}|$得$\\overrightarrow{CA}\\perp\\overrightarrow{CB}$，$AB$为直径，$O$为$AB$中点"
       },
       {
         "id": "vec-l12",
         "unitId": "vec-linear",
         "difficulty": 3,
-        "type": "choice",
-        "prompt": "平行四边形$ABCD$，$\\overrightarrow{AE}=\\dfrac{1}{3}\\overrightarrow{AD}$，$\\overrightarrow{CF}=\\dfrac{1}{3}\\overrightarrow{CD}$，则$\\overrightarrow{BA}=$（）\nA.$\\dfrac{6}{5}\\overrightarrow{AF}-\\dfrac{9}{5}\\overrightarrow{CE}$  B.$\\dfrac{2}{5}\\overrightarrow{AF}-\\dfrac{3}{5}\\overrightarrow{CE}$\nC.$\\dfrac{6}{5}\\overrightarrow{AF}+\\dfrac{9}{5}\\overrightarrow{CE}$  D.$\\dfrac{2}{5}\\overrightarrow{AF}+\\dfrac{3}{5}\\overrightarrow{CE}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "平行四边形$ABCD$，$\\overrightarrow{AE}=\\dfrac{1}{3}\\overrightarrow{AD}$，$\\overrightarrow{CF}=\\dfrac{1}{3}\\overrightarrow{CD}$，则$\\overrightarrow{BA}=$____",
+        "answer": "$\\dfrac{6}{5}\\overrightarrow{AF}-\\dfrac{9}{5}\\overrightarrow{CE}$",
         "gaokaoConnection": "设$\\overrightarrow{AB}=\\boldsymbol{a},\\overrightarrow{AD}=\\boldsymbol{b}$，用$\\boldsymbol{a},\\boldsymbol{b}$表示$\\overrightarrow{AF},\\overrightarrow{CE}$，再解线性方程组"
       },
       {
         "id": "vec-l13",
         "unitId": "vec-linear",
         "difficulty": 3,
-        "type": "choice",
-        "prompt": "(2026·珠海模拟) $OD$是$\\triangle OAB$中线，$G$为$OD$中点，过$G$直线交$OA,OB$于$P,Q$，$\\overrightarrow{OP}=m\\overrightarrow{OA},\\overrightarrow{OQ}=n\\overrightarrow{OB}$，$m,n\\in(0,1)$，则$m+4n$最小值为（）\nA.$4$  B.$9$  C.$\\dfrac{4}{9}$  D.$\\dfrac{9}{4}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "D",
+        "type": "fill",
+        "prompt": "(2026·珠海模拟) $OD$是$\\triangle OAB$中线，$G$为$OD$中点，过$G$直线交$OA,OB$于$P,Q$，$\\overrightarrow{OP}=m\\overrightarrow{OA},\\overrightarrow{OQ}=n\\overrightarrow{OB}$，$m,n\\in(0,1)$，则$m+4n$最小值为____",
+        "answer": "$\\dfrac{9}{4}$",
         "gaokaoConnection": "$\\overrightarrow{OG}=\\dfrac{1}{4}(\\overrightarrow{OA}+\\overrightarrow{OB})$，$P,G,Q$共线：$\\dfrac{1}{4m}+\\dfrac{1}{4n}=1$，再用均值不等式求$m+4n$最小值"
       }
     ]
@@ -200,30 +128,18 @@
         "id": "vec-d1",
         "unitId": "vec-dot",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "$|\\boldsymbol{a}|=1,|\\boldsymbol{b}|=2,\\langle\\boldsymbol{a},\\boldsymbol{b}\rangle=\\dfrac{2\\pi}{3}$，则$\\boldsymbol{a}\\cdot(\\boldsymbol{a}+\\boldsymbol{b})=$（）\nA.$-2$  B.$-1$  C.$0$  D.$2$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "$|\\boldsymbol{a}|=1,|\\boldsymbol{b}|=2,\\langle\\boldsymbol{a},\\boldsymbol{b}\rangle=\\dfrac{2\\pi}{3}$，则$\\boldsymbol{a}\\cdot(\\boldsymbol{a}+\\boldsymbol{b})=$____",
+        "answer": "$-1$",
         "gaokaoConnection": "$\\boldsymbol{a}\\cdot(\\boldsymbol{a}+\\boldsymbol{b})=\\boldsymbol{a}^2+\\boldsymbol{a}\\cdot\\boldsymbol{b}=1+1\\cdot2\\cdot(-\\dfrac{1}{2})=0$？等等，$\\cos(2\\pi/3)=-1/2$，$1+(-1)=0$，答案是C？让我重新算：$1+2\times(-1/2)=0$，选C"
       },
       {
         "id": "vec-d2",
         "unitId": "vec-dot",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2024·新课标Ⅱ) $|\\boldsymbol{a}|=1,|\\boldsymbol{a}+2\\boldsymbol{b}|=2,(\\boldsymbol{b}-2\\boldsymbol{a})\\perp\\boldsymbol{b}$，则$|\\boldsymbol{b}|=$（）\nA.$\\dfrac{1}{2}$  B.$\\dfrac{\\sqrt{2}}{2}$  C.$\\dfrac{\\sqrt{3}}{2}$  D.$1$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "(2024·新课标Ⅱ) $|\\boldsymbol{a}|=1,|\\boldsymbol{a}+2\\boldsymbol{b}|=2,(\\boldsymbol{b}-2\\boldsymbol{a})\\perp\\boldsymbol{b}$，则$|\\boldsymbol{b}|=$____",
+        "answer": "$\\dfrac{\\sqrt{2}}{2}$",
         "gaokaoConnection": "$(\\boldsymbol{b}-2\\boldsymbol{a})\\cdot\\boldsymbol{b}=0\\Rightarrow\\boldsymbol{b}^2=2\\boldsymbol{a}\\cdot\\boldsymbol{b}$；$|\\boldsymbol{a}+2\\boldsymbol{b}|^2=1+4\\boldsymbol{a}\\cdot\\boldsymbol{b}+4\\boldsymbol{b}^2=4$"
       },
       {
@@ -248,15 +164,9 @@
         "id": "vec-d5",
         "unitId": "vec-dot",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "正方形边长$2$，中心$O$平分$MN$，$MN=2BC$，$E$为$CD$中点，求$\\overrightarrow{EM}\\cdot\\overrightarrow{EN}$。",
-        "options": [
-          "A. $-1$",
-          "B. $0$",
-          "C. $1$",
-          "D. $2$"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "正方形边长$2$，中心$O$平分$MN$，$MN=2BC$，$E$为$CD$中点，求$\\overrightarrow{EM}\\cdot\\overrightarrow{EN}$____。",
+        "answer": "$1$",
         "gaokaoConnection": "建系：设正方形$ABCD$顶点，$O$为中心，利用$MN=2BC=4$且$O$平分$MN$，$E$为$CD$中点，坐标法求数量积"
       },
       {
@@ -272,15 +182,9 @@
         "id": "vec-d7",
         "unitId": "vec-dot",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2017·北京) 点$P$在圆$x^2+y^2=1$上，$A(-2,0)$，$O$原点，求$\\overrightarrow{AO}\\cdot\\overrightarrow{AP}$最大值。",
-        "options": [
-          "A. $2$",
-          "B. $3$",
-          "C. $4$",
-          "D. $6$"
-        ],
-        "answer": "D",
+        "type": "fill",
+        "prompt": "(2017·北京) 点$P$在圆$x^2+y^2=1$上，$A(-2,0)$，$O$原点，求$\\overrightarrow{AO}\\cdot\\overrightarrow{AP}$最大值____。",
+        "answer": "$6$",
         "gaokaoConnection": "$\\overrightarrow{AO}=(2,0)$，设$P(\\cos\theta,\\sin\theta)$，$\\overrightarrow{AP}=(\\cos\theta+2,\\sin\theta)$，数量积$=2(\\cos\theta+2)$，最大值为$6$"
       },
       {
@@ -296,13 +200,8 @@
         "id": "vec-d9",
         "unitId": "vec-dot",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "边长$1$正六边形，$P$在边上，$\\overrightarrow{PA}\\cdot\\overrightarrow{PB}$最大值为（）\nA.$\\dfrac{11}{4}$  B.$\\dfrac{13}{4}$  C.$3$",
-        "options": [
-          "A",
-          "B",
-          "C"
-        ],
+        "type": "fill",
+        "prompt": "边长$1$正六边形，$P$在边上，$\\overrightarrow{PA}\\cdot\\overrightarrow{PB}$最大值为____",
         "answer": "B",
         "gaokaoConnection": "正六边形对称性，$P$在某条边上时取最大值，建系计算或利用几何性质"
       },
@@ -310,30 +209,18 @@
         "id": "vec-d10",
         "unitId": "vec-dot",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2020·新高考Ⅰ) 边长$2$正六边形内部点$P$，$\\overrightarrow{AP}\\cdot\\overrightarrow{AB}$范围为（）\nA.$(-2,6)$  B.$(-6,2)$  C.$(-2,4)$  D.$(-4,6)$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "(2020·新高考Ⅰ) 边长$2$正六边形内部点$P$，$\\overrightarrow{AP}\\cdot\\overrightarrow{AB}$范围为____",
+        "answer": "$(-2,6)$",
         "gaokaoConnection": "设$A$为原点，$\\overrightarrow{AB}$方向为$x$轴，$P$在正六边形内部，$\\overrightarrow{AP}\\cdot\\overrightarrow{AB}=x_P\\cdot2$，求$x_P$范围"
       },
       {
         "id": "vec-d11",
         "unitId": "vec-dot",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2022·北京卷) 在$\\triangle ABC$中，$AC=3$，$BC=4$，$\\angle C=90^\\circ$，$P$为平面内动点且$|\\overrightarrow{PC}|=1$，则$\\overrightarrow{PA}\\cdot\\overrightarrow{PB}$的取值范围是（）\nA.$[-5,3]$  B.$[-3,5]$  C.$[-6,4]$  D.$[-4,6]$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "D",
+        "type": "fill",
+        "prompt": "(2022·北京卷) 在$\\triangle ABC$中，$AC=3$，$BC=4$，$\\angle C=90^\\circ$，$P$为平面内动点且$|\\overrightarrow{PC}|=1$，则$\\overrightarrow{PA}\\cdot\\overrightarrow{PB}$的取值范围是____",
+        "answer": "$[-4,6]$",
         "gaokaoConnection": "建系：$C(0,0),A(3,0),B(0,4)$，$P(\\cos\\theta,\\sin\\theta)$，$\\overrightarrow{PA}\\cdot\\overrightarrow{PB}=(3-\\cos\\theta)(-\\cos\\theta)+(-\\sin\\theta)(4-\\sin\\theta)$"
       }
     ]
@@ -377,29 +264,17 @@
         "id": "vec-m1",
         "unitId": "vec-mistakes",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(多选) 下列命题正确的是（）\nA.$\\boldsymbol{a}\\parallel\\boldsymbol{b}\\implies\\exists\\lambda,\\boldsymbol{a}=\\lambda\\boldsymbol{b}$（注意：缺少$\\boldsymbol{b}\neq\\boldsymbol{0}$条件）\nB.异面直线上向量一定不共面\nC.$\\dfrac{\\boldsymbol{a}}{|\\boldsymbol{a}|}+\\dfrac{\\boldsymbol{b}}{|\\boldsymbol{b}|}=\\boldsymbol{0}\\implies\\boldsymbol{a},\\boldsymbol{b}$反向共线\nD.$\\dfrac{\\boldsymbol{a}}{|\\boldsymbol{a}|}+\\dfrac{\\boldsymbol{b}}{|\\boldsymbol{b}|}=\\boldsymbol{0}$是共线充分不必要条件",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "(多选) 下列命题正确的是____",
+        "answer": "$\\dfrac{\\boldsymbol{a}}{|\\boldsymbol{a}|}+\\dfrac{\\boldsymbol{b}}{|\\boldsymbol{b}|}=\\boldsymbol{0}\\implies\\boldsymbol{a},\\boldsymbol{b}$反向共线",
         "gaokaoConnection": "A错误：必须$\\boldsymbol{b}\neq\\boldsymbol{0}$；B错误：任意两个向量都共面；C正确；D错误：应为充要条件"
       },
       {
         "id": "vec-m2",
         "unitId": "vec-mistakes",
         "difficulty": 3,
-        "type": "choice",
-        "prompt": "(多选) 向量不等式正确的是（）\nA.$||\\boldsymbol{a}|-|\\boldsymbol{b}||\\le|\\boldsymbol{a}\\pm\\boldsymbol{b}|\\le|\\boldsymbol{a}|+|\\boldsymbol{b}|$\nB.$|\\boldsymbol{a}+\\boldsymbol{b}|=|\\boldsymbol{a}-\\boldsymbol{b}|\\iff\\boldsymbol{a}\\perp\\boldsymbol{b}$\nC.$|\\boldsymbol{a}|-|\\boldsymbol{b}|=|\\boldsymbol{a}+\\boldsymbol{b}|\\iff$同向共线\nD.$||\\boldsymbol{a}|-|\\boldsymbol{b}||=|\\boldsymbol{a}-\\boldsymbol{b}|\\iff$同向",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
+        "type": "fill",
+        "prompt": "(多选) 向量不等式正确的是____",
         "answer": "ABD",
         "gaokaoConnection": "C错误：$|\\boldsymbol{a}|-|\\boldsymbol{b}|=|\\boldsymbol{a}+\\boldsymbol{b}|$应为$\\boldsymbol{a},\\boldsymbol{b}$反向且$|\\boldsymbol{a}|\\ge|\\boldsymbol{b}|$；其余均正确"
       }
@@ -412,15 +287,9 @@
         "id": "vec-c1",
         "unitId": "vec-coord",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "(2024·新课标Ⅰ卷) $\\boldsymbol{a}=(0,1),\\boldsymbol{b}=(2,x)$，若$\\boldsymbol{b}\\perp(\\boldsymbol{b}-4\\boldsymbol{a})$，则$x=$（）\nA.$-2$  B.$-1$  C.$1$  D.$2$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "D",
+        "type": "fill",
+        "prompt": "(2024·新课标Ⅰ卷) $\\boldsymbol{a}=(0,1),\\boldsymbol{b}=(2,x)$，若$\\boldsymbol{b}\\perp(\\boldsymbol{b}-4\\boldsymbol{a})$，则$x=$____",
+        "answer": "$2$",
         "gaokaoConnection": "$\\boldsymbol{b}-4\\boldsymbol{a}=(2,x-4)$，$\\boldsymbol{b}\\cdot(\\boldsymbol{b}-4\\boldsymbol{a})=4+x(x-4)=0$，解得$x=2$"
       },
       {
@@ -445,15 +314,9 @@
         "id": "vec-c4",
         "unitId": "vec-coord",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2024·全国甲卷) 向量$\\boldsymbol{a}=(x+1,x),\\boldsymbol{b}=(x,2)$，下列说法正确的是（）\nA.\\u201cx=-3\\u201d是$\\boldsymbol{a}\\perp\\boldsymbol{b}$的必要条件\nB.\\u201cx=-3\\u201d是$\\boldsymbol{a}\\parallel\\boldsymbol{b}$的必要条件\nC.\\u201cx=0\\u201d是$\\boldsymbol{a}\\perp\\boldsymbol{b}$的充分条件\nD.\\u201cx=-1+\\sqrt{3}\\u201d是$\\boldsymbol{a}\\parallel\\boldsymbol{b}$的充分条件",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "(2024·全国甲卷) 向量$\\boldsymbol{a}=(x+1,x),\\boldsymbol{b}=(x,2)$，下列说法正确的是____",
+        "answer": "\\u201cx=0\\u201d是$\\boldsymbol{a}\\perp\\boldsymbol{b}$的充分条件",
         "gaokaoConnection": "$\\boldsymbol{a}\\perp\\boldsymbol{b}$时$x(x+1)+2x=0$，$x=0$或$x=-3$；$\\boldsymbol{a}\\parallel\\boldsymbol{b}$时$2(x+1)=x^2$，$x=1\\pm\\sqrt{3}$"
       },
       {
@@ -469,15 +332,9 @@
         "id": "vec-c6",
         "unitId": "vec-coord",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "航海风速向量题：视风向量=真风向量+船速相反向量，给出向量大小，判断风力等级（）\nA.轻风  B.微风  C.和风  D.劲风",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "航海风速向量题：视风向量=真风向量+船速相反向量，给出向量大小，判断风力等级____",
+        "answer": "和风",
         "gaokaoConnection": "向量加减法的实际应用：视风=真风+(-船速)，用平行四边形法则合成"
       },
       {
@@ -502,15 +359,9 @@
         "id": "vec-c9",
         "unitId": "vec-coord",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "平面四边形$ABCD$，$AB\\perp BC,AB=BC,AD\\perp AC,\\angle ADC=\\dfrac{\\pi}{3}$，$\\overrightarrow{AC}=x\\overrightarrow{AB}+y\\overrightarrow{AD}$，则$\\dfrac{y}{x}=$（）\nA.$\\dfrac{2}{3}$  B.$\\dfrac{3}{2}$  C.$\\dfrac{1}{2}$  D.$2$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "平面四边形$ABCD$，$AB\\perp BC,AB=BC,AD\\perp AC,\\angle ADC=\\dfrac{\\pi}{3}$，$\\overrightarrow{AC}=x\\overrightarrow{AB}+y\\overrightarrow{AD}$，则$\\dfrac{y}{x}=$____",
+        "answer": "$\\dfrac{3}{2}$",
         "gaokaoConnection": "建系：$B$原点，$A(0,a),C(a,0)$，由$AD\\perp AC,\\angle ADC=60^\\circ$确定$D$坐标，再分解$\\overrightarrow{AC}$"
       },
       {
@@ -535,15 +386,9 @@
         "id": "vec-c12",
         "unitId": "vec-coord",
         "difficulty": 3,
-        "type": "choice",
-        "prompt": "向量满足$|\\boldsymbol{a}|=|\\boldsymbol{b}|=1,\\boldsymbol{a}\\cdot(\\boldsymbol{a}-\\boldsymbol{b})=\\dfrac{1}{2}$，$(\\boldsymbol{b}-\\boldsymbol{c})\\cdot(3\\boldsymbol{b}-\\boldsymbol{c})=0$，则$|\\boldsymbol{a}-\\boldsymbol{c}|$最小值（）\nA.$\\sqrt{3}-1$  B.$\\sqrt{3}$  C.$2$  D.$1$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "向量满足$|\\boldsymbol{a}|=|\\boldsymbol{b}|=1,\\boldsymbol{a}\\cdot(\\boldsymbol{a}-\\boldsymbol{b})=\\dfrac{1}{2}$，$(\\boldsymbol{b}-\\boldsymbol{c})\\cdot(3\\boldsymbol{b}-\\boldsymbol{c})=0$，则$|\\boldsymbol{a}-\\boldsymbol{c}|$最小值____",
+        "answer": "$\\sqrt{3}-1$",
         "gaokaoConnection": "$\\boldsymbol{a}\\cdot\\boldsymbol{b}=\\dfrac{1}{2}$，$\\boldsymbol{c}$在以$\\boldsymbol{b}$为圆心某圆上，几何法求$|\\boldsymbol{a}-\\boldsymbol{c}|$最小值"
       },
       {

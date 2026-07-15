@@ -24,30 +24,18 @@
         "id": "sv-b3",
         "unitId": "sv-basics",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$\\boldsymbol{a}=(2,-1,1),\\boldsymbol{b}=(0,2,1),\\boldsymbol{c}=(1,0,x)$三向量共面，则$x=$（）\nA.$\\dfrac{1}{4}$ B.$\\dfrac{1}{2}$ C.$\\dfrac{3}{4}$ D.$\\dfrac{3}{2}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "D",
+        "type": "fill",
+        "prompt": "$\\boldsymbol{a}=(2,-1,1),\\boldsymbol{b}=(0,2,1),\\boldsymbol{c}=(1,0,x)$三向量共面，则$x=$____",
+        "answer": "$\\dfrac{3}{2}$",
         "gaokaoConnection": "三向量共面则混合积为0：$\\boldsymbol{a}\\cdot(\\boldsymbol{b}\\times\\boldsymbol{c})=0$。$\\boldsymbol{b}\\times\\boldsymbol{c}=(x,1,-2)$，$\\boldsymbol{a}\\cdot(x,1,-2)=2x+1-2=0$，$2x=1$，$x=\\dfrac{1}{2}$，选B"
       },
       {
         "id": "sv-b4",
         "unitId": "sv-basics",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$\\{\\boldsymbol{a},\\boldsymbol{b},\\boldsymbol{c}\\}$是空间一组基底，下列可构成基底（）\nA.$\\boldsymbol{a},\\boldsymbol{a}+\\boldsymbol{b},\\boldsymbol{a}-\\boldsymbol{b}$\nB.$\\boldsymbol{b},\\boldsymbol{a}+\\boldsymbol{b},\\boldsymbol{a}-\\boldsymbol{b}$\nC.$\\boldsymbol{c},\\boldsymbol{a}+\\boldsymbol{b},\\boldsymbol{a}-\\boldsymbol{b}$\nD.$\\boldsymbol{a}+2\\boldsymbol{b},\\boldsymbol{a}+\\boldsymbol{b},\\boldsymbol{a}-\\boldsymbol{b}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "$\\{\\boldsymbol{a},\\boldsymbol{b},\\boldsymbol{c}\\}$是空间一组基底，下列可构成基底____",
+        "answer": "$\\boldsymbol{b},\\boldsymbol{a}+\\boldsymbol{b},\\boldsymbol{a}-\\boldsymbol{b}$",
         "gaokaoConnection": "三向量构成基底$\\Leftrightarrow$混合积不为0。B：$\\boldsymbol{b},\\boldsymbol{a}+\\boldsymbol{b},\\boldsymbol{a}-\\boldsymbol{b}$，混合积$=2\\boldsymbol{a}\\cdot(\\boldsymbol{b}\\times\\boldsymbol{c})\\neq0$"
       }
     ]
@@ -133,29 +121,17 @@
         "id": "sv-q2",
         "unitId": "sv-choice",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "正三棱柱侧棱=底面边长，$AB_1$与侧面$ACC_1A_1$线面角正弦（）\nA.$\\dfrac{\\sqrt{6}}{4}$  B.$\\dfrac{\\sqrt{2}}{2}$  C.$\\dfrac{\\sqrt{2}}{6}$  D.$\\dfrac{\\sqrt{6}}{2}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "正三棱柱侧棱=底面边长，$AB_1$与侧面$ACC_1A_1$线面角正弦____",
+        "answer": "$\\dfrac{\\sqrt{6}}{4}$",
         "gaokaoConnection": "建系求$AB_1$方向向量与侧面$ACC_1A_1$法向量的夹角"
       },
       {
         "id": "sv-q3",
         "unitId": "sv-choice",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(多选) 正方体棱长2，对角线交点$O$，正确（）\nA.$AD_1\\parallel$平面$BOC_1$\nB.$BD\\perp$平面$COC_1$\nC.$C_1O$与底面成$45^\\circ$\nD.三棱锥$C-BOC_1$体积$\\dfrac{4}{3}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
+        "type": "fill",
+        "prompt": "(多选) 正方体棱长2，对角线交点$O$，正确____",
         "answer": "ACD",
         "gaokaoConnection": "A：$AD_1\\parallel B_1C\\subset$平面$BOC_1$；C：$C_1$到底面距离$=2$，$C_1O=\\sqrt{3}$，$\\sin\\theta=\\dfrac{2}{\\sqrt{6}}\\neq\\dfrac{\\sqrt{2}}{2}$...需验证"
       },
@@ -163,45 +139,27 @@
         "id": "sv-q4",
         "unitId": "sv-choice",
         "difficulty": 3,
-        "type": "choice",
-        "prompt": "(2022·北京) 正三棱锥所有棱长6，集合$S$为底面内部点，$T=\\{Q\\mid PQ\\le5,Q\\in S\\}$，$T$区域面积（）\nA.$\\dfrac{3\\pi}{4}$  B.$\\pi$  C.$2\\pi$  D.$3\\pi$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "(2022·北京) 正三棱锥所有棱长6，集合$S$为底面内部点，$T=\\{Q\\mid PQ\\le5,Q\\in S\\}$，$T$区域面积____",
+        "answer": "$\\pi$",
         "gaokaoConnection": "$P$在底面投影为重心，$P$到底面距离$h=\\sqrt{36-12}=2\\sqrt{6}$；$PQ\\le5$在底面上的投影为以重心为圆心、$r=\\sqrt{25-24}=1$的圆，面积$\\pi$"
       },
       {
         "id": "sv-q5",
         "unitId": "sv-choice",
         "difficulty": 3,
-        "type": "choice",
-        "prompt": "$\\triangle ABC$等腰直角，$AB$斜边，等边$\\triangle ABD$，二面角$C-AB-D$为$150^\\circ$，$CD$与底面$ABC$线面角正切（）\nA.$\\dfrac{\\sqrt{5}}{2}$  B.$\\dfrac{\\sqrt{5}}{5}$  C.$\\dfrac{2\\sqrt{5}}{5}$  D.$\\dfrac{\\sqrt{3}}{5}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "$\\triangle ABC$等腰直角，$AB$斜边，等边$\\triangle ABD$，二面角$C-AB-D$为$150^\\circ$，$CD$与底面$ABC$线面角正切____",
+        "answer": "$\\dfrac{2\\sqrt{5}}{5}$",
         "gaokaoConnection": "建系：$AB$中点为原点，$AB$方向$x$轴，二面角$150^\\circ$；$C$在$xy$平面，$D$在$xy$平面翻转$150^\\circ$后"
       },
       {
         "id": "sv-q6",
         "unitId": "sv-choice",
         "difficulty": 3,
-        "type": "choice",
-        "prompt": "正四棱锥高$PO=4$，底面边长2，$H$在$PC$，$\\triangle HBD$面积最小，$OH$与底面夹角余弦（）\nA.$\\dfrac{\\sqrt{2}}{3}$  B.$\\dfrac{\\sqrt{2}}{2}$  C.$\\dfrac{2}{3}$  D.$\\dfrac{3}{2}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "正四棱锥高$PO=4$，底面边长2，$H$在$PC$，$\\triangle HBD$面积最小，$OH$与底面夹角余弦____",
+        "answer": "$\\dfrac{2}{3}$",
         "gaokaoConnection": "$\\triangle HBD$面积最小时$H$到$BD$距离最小，即$OH\\perp PC$"
       }
     ]

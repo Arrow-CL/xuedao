@@ -145,8 +145,11 @@ export function recommendNext(
   const completedSet = new Set(progress.completedQuestionIds);
   const remaining = chapterQs.filter((q) => !completedSet.has(q.id));
 
+  // 过滤多选题（目前系统不支持多选题的板书和引导）
+  const filtered = remaining.filter(q => !q.prompt.includes("(多选)") && (q as any).type !== "multiple");
+
   // 如果没有剩余题目，返回 null
-  if (remaining.length === 0) {
+  if (filtered.length === 0) {
     return {
       question: null,
       reason: "该章节所有题目已完成。",
@@ -157,10 +160,32 @@ export function recommendNext(
   // ---- 3. 计算覆盖分 ----
   const uncoveredIds = getUncoveredIds(chapterId, knowledgePoints, progress);
 
+  // 自适应难度：根据正确率调整目标难度
+  const errorCount = progress.totalAttempted - progress.completedQuestionIds.length;
+  const recentErrorRate = progress.totalAttempted > 0 ? errorCount / progress.totalAttempted : 0;
+
+  // 根据错误率选择目标难度
+  let targetDifficulty: number;
+  if (recentErrorRate > 0.4) {
+    targetDifficulty = 1; // 错误多 → 降难度
+  } else if (recentErrorRate < 0.15) {
+    targetDifficulty = 3; // 几乎全对 → 升难度
+  } else {
+    targetDifficulty = 2; // 中间
+  }
+
+  // 在 filtered 中按难度排序：优先选目标难度的题，其次选相邻难度
+  const sortByDifficulty = (items: typeof filtered) => {
+    const same = items.filter(q => (q as any).difficulty === targetDifficulty);
+    const adjacent = items.filter(q => (q as any).difficulty !== targetDifficulty && Math.abs((q as any).difficulty - targetDifficulty) <= 1);
+    const far = items.filter(q => Math.abs((q as any).difficulty - targetDifficulty) > 1);
+    return [...same, ...adjacent, ...far];
+  };
+
   // 如果所有知识点都已覆盖，退化为随机推荐（帮助巩固）
   if (uncoveredIds.length === 0) {
-    const shuffled = shuffle(remaining);
-    const picked = shuffled[0];
+    const difficultySorted = sortByDifficulty(filtered);
+    const picked = difficultySorted[0];
     return {
       question: picked,
       reason: "所有知识点已覆盖，随机推荐巩固练习。",
@@ -169,14 +194,22 @@ export function recommendNext(
   }
 
   // 计算每道题的覆盖分
-  const scored = remaining.map((q) => ({
+  const scored = filtered.map((q) => ({
     item: q,
     weight: calcCoverageScore(q, uncoveredIds),
   }));
 
   // ---- 4. 取覆盖分最高的前 3 题 ----
-  // 先按覆盖分降序，相同分数随机打破平局
-  scored.sort((a, b) => b.weight - a.weight || Math.random() - 0.5);
+  // 先按覆盖分降序，覆盖分相同时优先选目标难度的题
+  scored.sort((a, b) => {
+    // 覆盖分优先
+    if (b.weight !== a.weight) return b.weight - a.weight;
+    // 覆盖分相同时，优先选目标难度的题
+    const aDiff = Math.abs((a.item as any).difficulty - targetDifficulty);
+    const bDiff = Math.abs((b.item as any).difficulty - targetDifficulty);
+    if (aDiff !== bDiff) return aDiff - bDiff;
+    return Math.random() - 0.5;
+  });
   const topN = scored.slice(0, 3);
 
   // ---- 5. 加权轮盘赌选择 ----

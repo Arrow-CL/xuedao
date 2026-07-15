@@ -6,7 +6,8 @@ const BAIDU_OCR_SECRET_KEY = process.env.BAIDU_OCR_SECRET_KEY || "";
 
 // Qwen 视觉模型（fallback）
 const QWEN_API_KEY = process.env.QWEN_API_KEY || "";
-const QWEN_API_ENDPOINT = "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions";
+const QWEN_API_ENDPOINT = process.env.QWEN_ENDPOINT || "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions";
+const QWEN_MODEL = process.env.QWEN_MODEL || "qwen3.6-flash";
 
 /** 获取百度 access_token */
 async function getBaiduAccessToken(): Promise<string | null> {
@@ -58,14 +59,14 @@ async function qwenVLOCR(imageBase64: string): Promise<string> {
       Authorization: `Bearer ${QWEN_API_KEY}`,
     },
     body: JSON.stringify({
-      model: "qwen-vl-max",
+      model: QWEN_MODEL,
       messages: [
         {
           role: "user",
           content: [
             {
               type: "text",
-              text: "请识别这张图片中的数学表达式和文字，保持数学符号和公式的准确性，用纯文本输出。如果是手写内容，请将手写数学符号转为标准LaTeX格式，用 $...$ 包裹。",
+              text: "请识别这张手写数学解题过程中的所有内容。要求：\n1. 逐行识别，保持原推导顺序\n2. 数学符号用标准文本表示：向量用 a, b（不需要箭头），点乘用·，模用|a|，平方用^2，根号用√，分数用/，π用pi\n3. 不要用LaTeX的$符号，直接输出纯文本数学表达式\n4. 示例：'|a+2b|^2 = 4' 而不是 '$|\\vec{a}+2\\vec{b}|^2=4$'\n5. 每个等式一行，不要加额外解释，只输出识别到的数学内容",
             },
             {
               type: "image_url",

@@ -15,90 +15,54 @@
         "id": "func-f2",
         "unitId": "func-foundation",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$f(x)=\\begin{cases}\\sqrt{x},&x\\ge0\\\\x+1,&x<0\\end{cases}$，若$f(a)=f(a+1)$，则$f\\left(\\dfrac{1}{a}\\right)=$（）\nA.$2$  B.$4$  C.$6$  D.$8$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "$f(x)=\\begin{cases}\\sqrt{x},&x\\ge0\\\\x+1,&x<0\\end{cases}$，若$f(a)=f(a+1)$，则$f\\left(\\dfrac{1}{a}\\right)=$____",
+        "answer": "$4$",
         "gaokaoConnection": "分段函数：分类讨论$a\\ge0$和$a<0$两种情况，利用$f(a)=f(a+1)$列方程"
       },
       {
         "id": "func-f3",
         "unitId": "func-foundation",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$f(x)=\\begin{cases}-x^2-2ax-a,&x<0\\\\e^x+\\ln(x+1),&x\\ge0\\end{cases}$在$\\mathbf{R}$单调递增，则$a$范围（）\nA.$(-\\infty,0]$  B.$[-1,0]$  C.$[-1,1]$  D.$[0,+\\infty)$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "$f(x)=\\begin{cases}-x^2-2ax-a,&x<0\\\\e^x+\\ln(x+1),&x\\ge0\\end{cases}$在$\\mathbf{R}$单调递增，则$a$范围____",
+        "answer": "$[-1,0]$",
         "gaokaoConnection": "分段函数单调递增：各段递增+分段点处左极限$\\le$右极限"
       },
       {
         "id": "func-f4",
         "unitId": "func-foundation",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "$a=2^{0.7},b=\\left(\\dfrac{1}{3}\\right)^{0.7},c=\\log_2\\dfrac{1}{3}$，大小（）\nA.$a>c>b$ B.$b>c>a$ C.$a>b>c$ D.$c>a>b$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "$a=2^{0.7},b=\\left(\\dfrac{1}{3}\\right)^{0.7},c=\\log_2\\dfrac{1}{3}$，大小____",
+        "answer": "$a>b>c$",
         "gaokaoConnection": "指对幂比大小：$a>1,0<b<1,c<0$，先确定正负再比较"
       },
       {
         "id": "func-f5",
         "unitId": "func-foundation",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$a=\\log_34,b=\\log_{0.7}2,c=5^{-0.1}$，大小（）\nA.$a>b>c$ B.$a>c>b$ C.$c>b>a$ D.$c>a>b$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "$a=\\log_34,b=\\log_{0.7}2,c=5^{-0.1}$，大小____",
+        "answer": "$c>b>a$",
         "gaokaoConnection": "$a>1$？$\\log_34<1$；$b=\\log_{0.7}2<0$（底数$<1$真数$>1$）；$c=5^{-0.1}<1$但$>0$"
       },
       {
         "id": "func-f6",
         "unitId": "func-foundation",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$a=2^{\\frac{4}{7}},b=5^{\\frac{2}{7}},c=25^{\\frac{1}{5}}$，大小（）\nA.$b<a<c$ B.$a<b<c$ C.$b<c<a$ D.$c<a<b$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "$a=2^{\\frac{4}{7}},b=5^{\\frac{2}{7}},c=25^{\\frac{1}{5}}$，大小____",
+        "answer": "$b<a<c$",
         "gaokaoConnection": "$c=25^{1/5}=5^{2/5}$，$a=2^{4/7}$，$b=5^{2/7}$，比较$a^7=16$与$b^7=5^2$？不，$a^{35}=2^{20}$"
       },
       {
         "id": "func-f7",
         "unitId": "func-foundation",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "奇函数$f(x)$增函数，$a=-f\\left(\\log_2\\dfrac{1}{5}\\right),b=f(\\log_24.1),c=f(2^{0.8})$，大小（）\nA.$c<b<a$ B.$b<a<c$ C.$a<b<c$ D.$c<a<b$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "奇函数$f(x)$增函数，$a=-f\\left(\\log_2\\dfrac{1}{5}\\right),b=f(\\log_24.1),c=f(2^{0.8})$，大小____",
+        "answer": "$a<b<c$",
         "gaokaoConnection": "奇函数$f(-x)=-f(x)$，$a=-f(-\\log_25)=f(\\log_25)$，比较$\\log_25,\\log_24.1,0.8$"
       }
     ]
@@ -110,15 +74,9 @@
         "id": "func-m1",
         "unitId": "func-monotonicity",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$f(x)=\\dfrac{\\ln2x}{x^2}$递增区间（）\nA.$\\left(0,\\dfrac{1}{2e}\\right)$ B.$\\left(-\\infty,\\dfrac{1}{8}\\right)$ C.$\\left(0,\\dfrac{1}{8}\\right)$ D.$\\left(\\dfrac{1}{2e},+\\infty\\right)$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "$f(x)=\\dfrac{\\ln2x}{x^2}$递增区间____",
+        "answer": "$\\left(0,\\dfrac{1}{8}\\right)$",
         "gaokaoConnection": "求导后令$f'(x)>0$，注意定义域$x>0$"
       },
       {
@@ -134,15 +92,9 @@
         "id": "func-m3",
         "unitId": "func-monotonicity",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$f(x)=ae^x-\\ln x$在$(1,2)$递增，$a$最小值（）\nA.$e^2$ B.$e$ C.$e^{-1}$ D.$e^{-2}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "$f(x)=ae^x-\\ln x$在$(1,2)$递增，$a$最小值____",
+        "answer": "$e^{-1}$",
         "gaokaoConnection": "$f'(x)=ae^x-\\dfrac{1}{x}\\ge0$在$(1,2)$恒成立，分离参数求最值"
       }
     ]
@@ -163,15 +115,9 @@
         "id": "func-p2",
         "unitId": "func-parity",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "任意$x,f'(x)<g'(x)$，$x\\in(a,b)$时（）\nA.$f(x)<g(x)$ B.$f(x)>g(x)$ C.$f(x)+g(a)<g(x)+f(a)$ D.$f(x)+g(b)<g(x)+f(b)$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "任意$x,f'(x)<g'(x)$，$x\\in(a,b)$时____",
+        "answer": "$f(x)+g(a)<g(x)+f(a)$",
         "gaokaoConnection": "$f'(x)<g'(x)\\Rightarrow f(x)-g(x)$递减，利用单调性比较"
       }
     ]
@@ -206,14 +152,8 @@
         "id": "func-t1",
         "unitId": "func-transform",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$y=x\\cos x+\\sin x$在$[-\\pi,\\pi]$的图象大致为（）",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
+        "type": "fill",
+        "prompt": "$y=x\\cos x+\\sin x$在$[-\\pi,\\pi]$的图象大致为____",
         "answer": "A",
         "gaokaoConnection": "判断奇偶性：$f(-x)=-x\\cos(-x)+\\sin(-x)=-x\\cos x-\\sin x=-f(x)$，为奇函数"
       },
@@ -221,14 +161,8 @@
         "id": "func-t2",
         "unitId": "func-transform",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$y=\\dfrac{1+x+\\sin x}{x^2}$大致图象为（）",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
+        "type": "fill",
+        "prompt": "$y=\\dfrac{1+x+\\sin x}{x^2}$大致图象为____",
         "answer": "D",
         "gaokaoConnection": "$x\\to+\\infty$时$y\\to0^+$；$x\\to0^+$时分子$\\to1$分母$\\to0^+$，$y\\to+\\infty$"
       },
@@ -236,14 +170,8 @@
         "id": "func-t3",
         "unitId": "func-transform",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$y=\\dfrac{-x^2+e^x-e^{-x}}{\\sin x},x\\in[-2.8,2.8]$图象大致为（）",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
+        "type": "fill",
+        "prompt": "$y=\\dfrac{-x^2+e^x-e^{-x}}{\\sin x},x\\in[-2.8,2.8]$图象大致为____",
         "answer": "B",
         "gaokaoConnection": "判断奇偶性：分子$-x^2+e^x-e^{-x}$中$e^x-e^{-x}$为奇函数，整体非奇非偶"
       }
@@ -256,30 +184,18 @@
         "id": "func-z1",
         "unitId": "func-zeros",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "$f(x)=0.3^x-x$零点区间（）\nA.$(0,0.3)$ B.$(0.3,0.5)$ C.$(0.5,1)$ D.$(1,2)$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "$f(x)=0.3^x-x$零点区间____",
+        "answer": "$(0.3,0.5)$",
         "gaokaoConnection": "零点存在定理：$f(0)=1>0,f(0.5)=\\sqrt{0.3}-0.5<0$"
       },
       {
         "id": "func-z2",
         "unitId": "func-zeros",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$f(x)=2^x+3x+a$在$(0,1)$存在零点，$a$范围（）\nA.$(-\\infty,-5)$ B.$(-5,-1)$ C.$(0,5)$ D.$(1,+\\infty)$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "$f(x)=2^x+3x+a$在$(0,1)$存在零点，$a$范围____",
+        "answer": "$(-5,-1)$",
         "gaokaoConnection": "$f(0)=1+a,f(1)=5+a$，零点存在需$f(0)f(1)<0$"
       },
       {
@@ -304,45 +220,27 @@
         "id": "func-z5",
         "unitId": "func-zeros",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "$f(x)=x^3-\\dfrac{1}{2^x}$零点区间（）\nA.$(-1,0)$ B.$(0,1)$ C.$(1,2)$ D.$(2,3)$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "$f(x)=x^3-\\dfrac{1}{2^x}$零点区间____",
+        "answer": "$(0,1)$",
         "gaokaoConnection": "$f(0)=-1<0,f(1)=1-1/2>0$，零点在$(0,1)$"
       },
       {
         "id": "func-z6",
         "unitId": "func-zeros",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$f(x)=\\ln x-x-\\dfrac{1}{2}$零点个数（）\nA.$0$ B.$1$ C.$2$ D.$3$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "$f(x)=\\ln x-x-\\dfrac{1}{2}$零点个数____",
+        "answer": "$2$",
         "gaokaoConnection": "$f(1)=-3/2<0$，$f(e)=1/2-e-1/2=-e<0$？$f'(x)=1/x-1$，$x=1$处最大值$f(1)=-3/2<0$... 需要重新分析"
       },
       {
         "id": "func-z7",
         "unitId": "func-zeros",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$f(x)=(x-1)e^x-a$在$(-2,+\\infty)$恰2个零点，$a$范围（）\nA.$(-\\infty,0)$ B.$\\left(0,\\dfrac{1}{e}\\right)$ C.$(0,e)$ D.$\\left(-\\infty,\\dfrac{1}{e}\\right)$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "D",
+        "type": "fill",
+        "prompt": "$f(x)=(x-1)e^x-a$在$(-2,+\\infty)$恰2个零点，$a$范围____",
+        "answer": "$\\left(-\\infty,\\dfrac{1}{e}\\right)$",
         "gaokaoConnection": "$g(x)=(x-1)e^x$在$x=-1$处极小值$-2/e$，$x\\to+\\infty$时$g\\to+\\infty$，$g(0)=-1$"
       }
     ]
@@ -354,15 +252,9 @@
         "id": "deriv-c1",
         "unitId": "derivative-concept",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "$y=\\dfrac{1}{3}x^3+1$在$(-3,-8)$切线斜率（）\nA.$9$ B.$5$ C.$-8$ D.$10$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "$y=\\dfrac{1}{3}x^3+1$在$(-3,-8)$切线斜率____",
+        "answer": "$9$",
         "gaokaoConnection": "$y'=x^2$，在$x=-3$处$y'=9$"
       },
       {
@@ -414,15 +306,9 @@
         "id": "deriv-c7",
         "unitId": "derivative-concept",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$f(x)=\\dfrac{e^x+2\\sin x}{1+x^2}$在$(0,1)$切线与坐标轴围成三角形面积（）\nA.$\\dfrac{1}{6}$ B.$\\dfrac{1}{3}$ C.$\\dfrac{1}{2}$ D.$\\dfrac{2}{3}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "$f(x)=\\dfrac{e^x+2\\sin x}{1+x^2}$在$(0,1)$切线与坐标轴围成三角形面积____",
+        "answer": "$\\dfrac{1}{6}$",
         "gaokaoConnection": "$f(0)=1,f'(0)=1$，切线$y=x+1$，与$x$轴交$(-1,0)$，与$y$轴交$(0,1)$，$S=1/2$"
       }
     ]
@@ -489,14 +375,8 @@
         "id": "deriv-a1",
         "unitId": "derivative-always",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$\\forall x\\in[1,+\\infty),\\ln x-\\dfrac{1}{2}x-a\\ge0$为真，$a$可取（）\nA.$2$ B.$0$ C.$-1$ D.$-2$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
+        "type": "fill",
+        "prompt": "$\\forall x\\in[1,+\\infty),\\ln x-\\dfrac{1}{2}x-a\\ge0$为真，$a$可取____",
         "answer": "CD",
         "gaokaoConnection": "$a\\le\\ln x-\\dfrac{x}{2}$的最小值，求$g(x)=\\ln x-\\dfrac{x}{2}$的最小值"
       },
@@ -504,15 +384,9 @@
         "id": "deriv-a2",
         "unitId": "derivative-always",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$f(x)=ae^x-\\ln x$在$(1,2)$递增，$a$最小值（）\nA.$e^2$ B.$e$ C.$e^{-1}$ D.$e^{-2}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "$f(x)=ae^x-\\ln x$在$(1,2)$递增，$a$最小值____",
+        "answer": "$e^{-1}$",
         "gaokaoConnection": "$f'(x)=ae^x-\\dfrac{1}{x}\\ge0$在$(1,2)$恒成立，$a\\ge\\dfrac{1}{xe^x}$的最大值"
       },
       {
@@ -556,30 +430,18 @@
         "id": "deriv-ct1",
         "unitId": "derivative-construct",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$f(x)$定义域$\\mathbf{R},f(1)=3,f'(x)<2$，不等式$f(x)<2x+1$解集（）\nA.$(1,+\\infty)$ B.$(-\\infty,-1)$ C.$(-1,1)$ D.$(-\\infty,-1)\\cup(1,+\\infty)$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "$f(x)$定义域$\\mathbf{R},f(1)=3,f'(x)<2$，不等式$f(x)<2x+1$解集____",
+        "answer": "$(1,+\\infty)$",
         "gaokaoConnection": "构造函数$g(x)=f(x)-2x-1$，$g'(x)<0$递减，$g(1)=0$"
       },
       {
         "id": "deriv-ct2",
         "unitId": "derivative-construct",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$f'(x)+xf'(x)>0$，不等式$(x+2)f(x+2)>x^2f(x^2)$解集（）\nA.$(-2,1)$ B.$(-\\infty,-2)\\cup(1,+\\infty)$ C.$(-\\infty,-1)\\cup(2,+\\infty)$ D.$(-1,2)$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "$f'(x)+xf'(x)>0$，不等式$(x+2)f(x+2)>x^2f(x^2)$解集____",
+        "answer": "$(-\\infty,-2)\\cup(1,+\\infty)$",
         "gaokaoConnection": "构造函数$g(x)=xf(x)$，$g'(x)=f(x)+xf'(x)>0$，$g(x)$递增"
       },
       {

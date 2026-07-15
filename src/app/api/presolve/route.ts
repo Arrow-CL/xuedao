@@ -7,9 +7,9 @@ const DEEPSEEK_API_KEY = process.env.AI_API_KEY || "";
 const DEEPSEEK_MODEL = process.env.AI_MODEL || "deepseek-chat";
 
 // 含图题引擎（千问 qwen3.6-flash，便宜且支持视觉）
-const QWEN_ENDPOINT = "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions";
+const QWEN_ENDPOINT = process.env.QWEN_ENDPOINT || "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions";
 const QWEN_API_KEY = process.env.QWEN_API_KEY || "";
-const QWEN_MODEL = "qwen3.6-flash";
+const QWEN_MODEL = process.env.QWEN_MODEL || "qwen3.6-flash";
 
 // 需要图片识别的模块（几何类）
 const GEOMETRY_MODULES = [
@@ -39,22 +39,32 @@ export async function POST(req: NextRequest) {
 
     const systemPrompt = {
       role: "system",
-      content: `你是一位高中数学解题专家，正在为"学导"系统预求解高考真题。请将以下数学题拆解为结构化解题步骤。
+      content: `# 角色定位
+高中数学阅卷专家，生成高考标准得分点解题板书，输出仅用于系统苏格拉底引导锚点，不是教学讲解。
+# 步骤划分硬性标准
+1. 单一步骤=单个阅卷得分点：引入新定理、新条件、关键中间结论单独成步；纯代数展开、合并化简不单独拆分步骤，合并写在表达式内；
+2. 化简省略规则：三角恒等变换、多项式展开仅保留起始式与最终结论，中间运算省略；
+3. 书写规范：使用$\\because$、$\\therefore$推理，关键公式首次完整书写，后续简写。
 
-核心要求：
-1. 步骤必须足够细——每一步只做一件事。比如"写出c向量坐标"和"列出垂直条件"应该是两个独立的步骤
-2. action 用**提问式**写法，语气像跟同学聊天，不要用"提示""试一试""已知"等词。关键概念和公式用数学语言表达（如 $\vec{a} \perp \vec{c} \Rightarrow \vec{a} \cdot \vec{c} = 0$），基础坐标运算简单带过
-3. expression 中数学表达式用LaTeX，前后加$（如 $\vec{a} \cdot \vec{c} = 0$）
-4. reasoning 解释"为什么这一步是对的"，不要跳步
-5. checkHint 给学生验证自己这一步的方法
-6. knowledgePoints 数组：列出这道题用到的所有知识点（公式、定理、性质），按使用顺序，每条格式为"中文名称，数学公式"，例如：["向量坐标相加减", "向量垂直数量积为零，$\\vec{a} \\perp \\vec{b} \\Rightarrow \\vec{a} \\cdot \\vec{b} = 0$", "数量积坐标运算，$\\vec{a} \\cdot \\vec{b} = x_1 x_2 + y_1 y_2$"]
-7. knowledgeFragments 数组：每个碎片对应一个卡点，fragment用数学语言提问（如"$\vec{a} \perp \vec{c}$ 能得到什么等式？"），full是完整表述（回顾时用）
-8. commonErrors 列出学生最易犯的2-3个错误
-9. summary 做完后回顾（2-3句话：用了什么知识，关键在哪）
-10. nextHint 下一题方向
-11. 列条件或步骤时，用换行分隔，不要在行首用 - 号（避免LaTeX把减号和向量箭头连在一起渲染成"负向量"）
+# 数形结合硬性规则（几何/向量/解析几何题必须遵守）
+1. 涉及几何图形（三角形、平行四边形、圆、坐标系等）的题目，每一步都必须在stepGeometry中描述该步对应的图形状态；
+2. stepGeometry的设计原则：逐步累积，每步只新增本步涉及的元素。第一步通常画基础图形（如三角形ABC），后续步骤逐步添加辅助点、向量、标注等；
+3. 坐标系范围固定0-100整数坐标，左上角(0,0)，x右y下。点的坐标按比例映射到此范围；
+4. 不涉及图形的纯代数题，stepGeometry填null即可。
 
-返回纯JSON（不要markdown代码块）：
+# 数学符号硬性约束（违反即失效）
+1. "因为"只能用LaTeX符号 $\\because$ 表示，绝对禁止写成 "Because"、"因为"等文字
+2. "所以"只能用LaTeX符号 $\\therefore$ 表示，绝对禁止写成 "herefore"、"所以"等文字
+3. 向量只能用 $\\boldsymbol{a}$ 或 $\\vec{a}$ 格式，绝对禁止写成 "boldsymbol"、"vec"等英文
+4. 所有数学符号、公式、运算符必须在 $...$ 内，包括推理符号 $\\because$、$\\therefore$
+
+# 输出格式顶级强制规则（违反即失效，重复强调3次）
+1. 仅输出纯净标准RFC8259 JSON，禁止任何markdown代码块、注释、解释文字、前后多余说明；
+2. 所有键名、字符串使用双引号，数组末尾无多余逗号，所有括号完整闭合；
+3. 字段严格按下方Schema完整输出，不得缺失、新增自定义字段，数值类型统一为数字，空值填null；
+4. LaTeX表达式内部特殊符号正常转义，公式统一$...$包裹；
+5. 禁止在行首使用减号罗列条件。
+
 {
   "finalAnswer": "最终答案",
   "knowledgePoints": ["知识点1", "知识点2"],
@@ -69,12 +79,21 @@ export async function POST(req: NextRequest) {
     {
       "stepNumber": 1,
       "action": "用提问式：能不能XXX？",
-      "expression": "$LaTeX表达式$",
-      "result": "$计算结果$",
-      "reasoning": "为什么这样做",
-      "checkHint": "怎么验证"
+      "expression": "$\\because ... \\therefore ... 的标准答题文本$",
+      "result": "$关键结论$",
+      "reasoning": "用了什么定理/公式",
+      "checkHint": "怎么验证",
+      "stepGeometry": {
+        "type": "shape",
+        "shape": "triangle",
+        "points": {"A": {"x": 10, "y": 70}, "B": {"x": 80, "y": 70}, "C": {"x": 30, "y": 20}},
+        "edges": [{"from": "A", "to": "B"}, {"from": "B", "to": "C"}, {"from": "A", "to": "C"}],
+        "labels": ["AB=3", "AC=4"],
+        "caption": "建立△ABC"
+      }
     }
-  ]
+  ],
+  "diagram": {"shape": "triangle", "points": {"A": {"x": 10, "y": 70}, "B": {"x": 80, "y": 70}, "C": {"x": 30, "y": 20}}, "labels": ["AB=3", "AC=4"], "annotations": ["∠BAC=60°"]}
 }`,
     };
 
@@ -116,20 +135,59 @@ export async function POST(req: NextRequest) {
     }
 
     const data = await res.json();
-    const reply = data.choices?.[0]?.message?.content || "";
+    let reply = data.choices?.[0]?.message?.content || "";
+
+    // 检查是否因 max_tokens 截断
+    const finishReason = data.choices?.[0]?.finish_reason;
+    if (finishReason === "length" || reply.length < 50) {
+      // 可能被截断，重试一次，增加 max_tokens
+      console.log("[presolve] Retrying with larger max_tokens, finish_reason:", finishReason);
+      const retryRes = await fetch(endpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${apiKey}`,
+        },
+        body: JSON.stringify({
+          model,
+          messages: [systemPrompt, { role: "user", content: userContent }],
+          temperature: 0.2,
+          max_tokens: 8000,
+        }),
+      });
+      if (retryRes.ok) {
+        const retryData = await retryRes.json();
+        reply = retryData.choices?.[0]?.message?.content || reply;
+      }
+    }
 
     // 解析 AI 返回的 JSON
     let parsed: any;
+    let cleanReply = reply.replace(/```json\n?/g, "").replace(/```\n?/g, "").trim();
+    const firstBrace = cleanReply.indexOf("{");
+    const lastBrace = cleanReply.lastIndexOf("}");
+    if (firstBrace >= 0 && lastBrace > firstBrace) {
+      cleanReply = cleanReply.substring(firstBrace, lastBrace + 1);
+    }
+    // 修复尾随逗号
+    cleanReply = cleanReply.replace(/,\s*}/g, "}").replace(/,\s*]/g, "]");
+
     try {
-      // 尝试去掉可能的 markdown 代码块标记
-      const cleanReply = reply.replace(/```json\n?/g, "").replace(/```\n?/g, "").trim();
       parsed = JSON.parse(cleanReply);
-    } catch {
-      console.error("Failed to parse presolve response:", reply.substring(0, 200));
-      return NextResponse.json(
-        { error: "AI 返回格式异常，请重试" },
-        { status: 200 }
-      );
+    } catch (err1) {
+      // 第一次解析失败：尝试修复 LaTeX 反斜杠未转义问题
+      // AI 经常在 JSON 字符串中输出 \overrightarrow、\frac 等，没有转义为 \\
+      const fixed = cleanReply.replace(/\\(?![nrtbf"\\u/]|u[0-9a-fA-F]{4})/g, "\\\\");
+      try {
+        parsed = JSON.parse(fixed);
+        console.log("[presolve] JSON parsed after fixing LaTeX backslashes");
+      } catch (err2) {
+        console.error("Failed to parse presolve response:", reply.substring(0, 800));
+        return NextResponse.json(
+          { error: "AI 返回格式异常，请重试" },
+          { status: 200 }
+        );
+      }
     }
 
     // 构建预求解结果
@@ -144,6 +202,7 @@ export async function POST(req: NextRequest) {
         result: s.result || "",
         reasoning: s.reasoning || "",
         checkHint: s.checkHint || "",
+        stepGeometry: s.stepGeometry || undefined,
       })),
       knowledgePoints: parsed.knowledgePoints || (parsed.knowledgePoint ? [parsed.knowledgePoint] : []),
       knowledgeFragments: parsed.knowledgeFragments || [],

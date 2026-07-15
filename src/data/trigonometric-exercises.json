@@ -6,15 +6,9 @@
         "id": "trig-d1",
         "unitId": "trig-def",
         "difficulty": 1,
-        "type": "choice",
+        "type": "fill",
         "prompt": "角$\\alpha$顶点在原点，始边为$x$轴非负半轴，终边上点$P(m,2)$，$\\cos\\alpha=\\dfrac{\\sqrt{5}}{5}$，则$\\tan\\alpha=$________。",
-        "options": [
-          "A. $\\dfrac{1}{2}$",
-          "B. $2$",
-          "C. $-2$",
-          "D. $-\\dfrac{1}{2}$"
-        ],
-        "answer": "B",
+        "answer": "$2$",
         "gaokaoConnection": "三角函数定义：$\\cos\\alpha=\\dfrac{x}{r}=\\dfrac{m}{\\sqrt{m^2+4}}=\\dfrac{\\sqrt{5}}{5}$，解出$m$后再求$\\tan\\alpha=\\dfrac{y}{x}$"
       },
       {
@@ -39,15 +33,9 @@
         "id": "trig-d4",
         "unitId": "trig-def",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "角$\\alpha$终边上一点$P(\\sin3,\\cos3)$，$0\\leq\\alpha\\leq2\\pi$，则$\\alpha=$（）\nA.$3$  B.$\\dfrac{\\pi}{2}-3$  C.$\\dfrac{5\\pi}{2}-3$  D.$3-\\dfrac{\\pi}{2}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "角$\\alpha$终边上一点$P(\\sin3,\\cos3)$，$0\\leq\\alpha\\leq2\\pi$，则$\\alpha=$____",
+        "answer": "$\\dfrac{5\\pi}{2}-3$",
         "gaokaoConnection": "$\\sin3>0,\\cos3<0$（$3$弧度在第二象限），所以$P$在第四象限，$\\alpha=\\dfrac{5\\pi}{2}-3$"
       }
     ]
@@ -59,15 +47,9 @@
         "id": "trig-s1",
         "unitId": "trig-same-angle",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "$\\cos\\theta=-\\dfrac{4}{5},\\theta\\in\\left(\\dfrac{\\pi}{2},\\pi\\right)$，则$\\tan\\theta=$（）\nA.$\\dfrac{4}{3}$  B.$-\\dfrac{4}{3}$  C.$\\dfrac{3}{4}$  D.$-\\dfrac{3}{4}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "D",
+        "type": "fill",
+        "prompt": "$\\cos\\theta=-\\dfrac{4}{5},\\theta\\in\\left(\\dfrac{\\pi}{2},\\pi\\right)$，则$\\tan\\theta=$____",
+        "answer": "$-\\dfrac{3}{4}$",
         "gaokaoConnection": "第二象限$\\sin\\theta>0$，由$\\sin^2\\theta+\\cos^2\\theta=1$得$\\sin\\theta=\\dfrac{3}{5}$，$\\tan\\theta=\\dfrac{\\sin\\theta}{\\cos\\theta}=-\\dfrac{3}{4}$"
       },
       {
@@ -83,30 +65,18 @@
         "id": "trig-s3",
         "unitId": "trig-same-angle",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2012·江西卷) $\\dfrac{\\sin\\alpha+\\cos\\alpha}{\\sin\\alpha-\\cos\\alpha}=\\dfrac{1}{2}$，则$\\tan2\\alpha=$（）\nA.$-\\dfrac{3}{4}$  B.$\\dfrac{3}{4}$  C.$-\\dfrac{4}{3}$  D.$\\dfrac{4}{3}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "(2012·江西卷) $\\dfrac{\\sin\\alpha+\\cos\\alpha}{\\sin\\alpha-\\cos\\alpha}=\\dfrac{1}{2}$，则$\\tan2\\alpha=$____",
+        "answer": "$-\\dfrac{4}{3}$",
         "gaokaoConnection": "分子分母同除$\\cos\\alpha$得$\\dfrac{\\tan\\alpha+1}{\\tan\\alpha-1}=\\dfrac{1}{2}$，解出$\\tan\\alpha=-3$，再用二倍角公式"
       },
       {
         "id": "trig-s4",
         "unitId": "trig-same-angle",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2016·新课标Ⅲ卷) $\\tan\\alpha=\\dfrac{3}{4}$，则$\\cos2\\alpha+2\\sin2\\alpha=$（）\nA.$\\dfrac{64}{25}$  B.$\\dfrac{48}{25}$  C.$1$  D.$\\dfrac{16}{25}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "(2016·新课标Ⅲ卷) $\\tan\\alpha=\\dfrac{3}{4}$，则$\\cos2\\alpha+2\\sin2\\alpha=$____",
+        "answer": "$\\dfrac{64}{25}$",
         "gaokaoConnection": "$\\cos2\\alpha=\\dfrac{1-\\tan^2\\alpha}{1+\\tan^2\\alpha}=\\dfrac{7}{25}$，$\\sin2\\alpha=\\dfrac{2\\tan\\alpha}{1+\\tan^2\\alpha}=\\dfrac{24}{25}$"
       },
       {
@@ -122,15 +92,9 @@
         "id": "trig-s6",
         "unitId": "trig-same-angle",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2024·全国甲卷) $\\dfrac{\\cos\\alpha}{\\cos\\alpha-\\sin\\alpha}=3$，则$\\tan\\left(\\alpha+\\dfrac{\\pi}{4}\\right)=$（）\nA.$2\\sqrt{3}+1$ B.$2\\sqrt{3}-1$ C.$\\dfrac{3}{2}$ D.$1-\\sqrt{3}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "(2024·全国甲卷) $\\dfrac{\\cos\\alpha}{\\cos\\alpha-\\sin\\alpha}=3$，则$\\tan\\left(\\alpha+\\dfrac{\\pi}{4}\\right)=$____",
+        "answer": "$\\dfrac{3}{2}$",
         "gaokaoConnection": "$\\dfrac{\\cos\\alpha}{\\cos\\alpha-\\sin\\alpha}=3$得$\\cos\\alpha=3\\cos\\alpha-3\\sin\\alpha$，$\\tan\\alpha=\\dfrac{2}{3}$"
       },
       {
@@ -151,15 +115,9 @@
         "id": "trig-i1",
         "unitId": "trig-induction",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "$\\tan(-480^\\circ)=$（）\nA.$-\\dfrac{\\sqrt{3}}{3}$  B.$\\dfrac{\\sqrt{3}}{3}$  C.$-\\sqrt{3}$  D.$\\sqrt{3}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "D",
+        "type": "fill",
+        "prompt": "$\\tan(-480^\\circ)=$____",
+        "answer": "$\\sqrt{3}$",
         "gaokaoConnection": "$-480^\\circ=-360^\\circ-120^\\circ$，$\\tan(-480^\\circ)=\\tan(-120^\\circ)=-\\tan120^\\circ=\\sqrt{3}$"
       },
       {
@@ -175,15 +133,9 @@
         "id": "trig-i3",
         "unitId": "trig-induction",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "$\\alpha$终边交单位圆$P\\left(\\dfrac{4}{5},-\\dfrac{3}{5}\\right)$，则$\\sin\\left(\\dfrac{3\\pi}{2}+\\alpha\\right)=$（）\nA.$\\dfrac{4}{5}$  B.$-\\dfrac{4}{5}$  C.$-\\dfrac{3}{5}$  D.$\\dfrac{3}{5}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "$\\alpha$终边交单位圆$P\\left(\\dfrac{4}{5},-\\dfrac{3}{5}\\right)$，则$\\sin\\left(\\dfrac{3\\pi}{2}+\\alpha\\right)=$____",
+        "answer": "$\\dfrac{4}{5}$",
         "gaokaoConnection": "$\\sin(3\\pi/2+\\alpha)=-\\cos\\alpha=-\\dfrac{4}{5}$？等等，$\\sin(3\\pi/2+\\alpha)=-\\cos\\alpha$，$\\cos\\alpha=\\dfrac{4}{5}$，所以答案是$-\\dfrac{4}{5}$？让我重新检查..."
       },
       {
@@ -204,120 +156,72 @@
         "id": "trig-id1",
         "unitId": "trig-identities",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2023·新课标Ⅱ) $\\alpha$锐角，$\\sin\\dfrac{\\alpha}{2}=\\dfrac{1+\\sqrt{5}}{4}$，则$\\cos\\alpha=$（）\nA.$\\dfrac{3-\\sqrt{5}}{8}$  B.$\\dfrac{-1+\\sqrt{5}}{8}$  C.$\\dfrac{3-\\sqrt{5}}{4}$  D.$\\dfrac{-1+\\sqrt{5}}{4}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "D",
+        "type": "fill",
+        "prompt": "(2023·新课标Ⅱ) $\\alpha$锐角，$\\sin\\dfrac{\\alpha}{2}=\\dfrac{1+\\sqrt{5}}{4}$，则$\\cos\\alpha=$____",
+        "answer": "$\\dfrac{-1+\\sqrt{5}}{4}$",
         "gaokaoConnection": "$\\cos\\alpha=1-2\\sin^2\\dfrac{\\alpha}{2}=1-2\\cdot\\dfrac{6+2\\sqrt{5}}{16}=\\dfrac{-1+\\sqrt{5}}{4}$"
       },
       {
         "id": "trig-id2",
         "unitId": "trig-identities",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2012江西) $\\tan\\theta+\\dfrac{1}{\\tan\\theta}=4$，则$\\sin2\\theta=$（）\nA.$\\dfrac{1}{5}$  B.$\\dfrac{1}{4}$  C.$\\dfrac{1}{3}$  D.$\\dfrac{1}{2}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "D",
+        "type": "fill",
+        "prompt": "(2012江西) $\\tan\\theta+\\dfrac{1}{\\tan\\theta}=4$，则$\\sin2\\theta=$____",
+        "answer": "$\\dfrac{1}{2}$",
         "gaokaoConnection": "$\\tan\\theta+\\dfrac{1}{\\tan\\theta}=\\dfrac{\\sin^2\\theta+\\cos^2\\theta}{\\sin\\theta\\cos\\theta}=\\dfrac{1}{\\sin\\theta\\cos\\theta}=4$，$\\sin2\\theta=2\\sin\\theta\\cos\\theta=\\dfrac{1}{2}$"
       },
       {
         "id": "trig-id3",
         "unitId": "trig-identities",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "(2021全国乙) $\\cos^2\\dfrac{\\pi}{12}-\\cos^2\\dfrac{5\\pi}{12}=$（）\nA.$\\dfrac{1}{2}$  B.$\\dfrac{\\sqrt{3}}{3}$  C.$\\dfrac{\\sqrt{3}}{2}$  D.$\\sqrt{3}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "(2021全国乙) $\\cos^2\\dfrac{\\pi}{12}-\\cos^2\\dfrac{5\\pi}{12}=$____",
+        "answer": "$\\dfrac{\\sqrt{3}}{2}$",
         "gaokaoConnection": "$\\cos^2\\dfrac{5\\pi}{12}=\\sin^2\\dfrac{\\pi}{12}$，原式$=\\cos^2\\dfrac{\\pi}{12}-\\sin^2\\dfrac{\\pi}{12}=\\cos\\dfrac{\\pi}{6}=\\dfrac{\\sqrt{3}}{2}$"
       },
       {
         "id": "trig-id4",
         "unitId": "trig-identities",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2019新课标Ⅱ) $\\alpha\\in\\left(0,\\dfrac{\\pi}{2}\\right),2\\sin2\\alpha=\\cos2\\alpha+1$，$\\sin\\alpha=$（）\nA.$\\dfrac{1}{\\sqrt{5}}$  B.$\\dfrac{\\sqrt{5}}{5}$  C.$\\dfrac{\\sqrt{3}}{5}$  D.$\\dfrac{2\\sqrt{5}}{5}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "(2019新课标Ⅱ) $\\alpha\\in\\left(0,\\dfrac{\\pi}{2}\\right),2\\sin2\\alpha=\\cos2\\alpha+1$，$\\sin\\alpha=$____",
+        "answer": "$\\dfrac{\\sqrt{5}}{5}$",
         "gaokaoConnection": "$4\\sin\\alpha\\cos\\alpha=2\\cos^2\\alpha$，$\\cos\\alpha\\ne0$，$2\\sin\\alpha=\\cos\\alpha$，$\\tan\\alpha=\\dfrac{1}{2}$"
       },
       {
         "id": "trig-id5",
         "unitId": "trig-identities",
         "difficulty": 3,
-        "type": "choice",
-        "prompt": "(2024九省联考) $\\theta\\in\\left(\\dfrac{3\\pi}{4},\\pi\\right),\\tan2\\theta=-4\\tan\\left(\\theta+\\dfrac{\\pi}{4}\\right)$，则$\\dfrac{1+\\sin2\\theta}{2\\cos^2\\theta+\\sin2\\theta}=$（）\nA.$\\dfrac{3}{4}$  B.$\\dfrac{3}{2}$  C.$\\dfrac{1}{4}$  D.$1$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "D",
+        "type": "fill",
+        "prompt": "(2024九省联考) $\\theta\\in\\left(\\dfrac{3\\pi}{4},\\pi\\right),\\tan2\\theta=-4\\tan\\left(\\theta+\\dfrac{\\pi}{4}\\right)$，则$\\dfrac{1+\\sin2\\theta}{2\\cos^2\\theta+\\sin2\\theta}=$____",
+        "answer": "$1$",
         "gaokaoConnection": "$\\tan2\\theta=\\dfrac{2\\tan\\theta}{1-\\tan^2\\theta}$，$\\tan(\\theta+\\pi/4)=\\dfrac{1+\\tan\\theta}{1-\\tan\\theta}$，代入解$\\tan\\theta=-\\dfrac{1}{2}$"
       },
       {
         "id": "trig-id6",
         "unitId": "trig-identities",
         "difficulty": 3,
-        "type": "choice",
-        "prompt": "(2013重庆) $4\\cos50^\\circ-\\tan40^\\circ=$（）\nA.$\\sqrt{2}+\\sqrt{3}$  B.$\\sqrt{2}$  C.$\\sqrt{3}$  D.$2\\sqrt{2}-1$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "(2013重庆) $4\\cos50^\\circ-\\tan40^\\circ=$____",
+        "answer": "$\\sqrt{3}$",
         "gaokaoConnection": "$4\\cos50^\\circ-\\dfrac{\\sin40^\\circ}{\\cos40^\\circ}=\\dfrac{4\\cos50^\\circ\\cos40^\\circ-\\sin40^\\circ}{\\cos40^\\circ}=\\dfrac{2\\sin80^\\circ-\\sin40^\\circ}{\\cos40^\\circ}$"
       },
       {
         "id": "trig-id7",
         "unitId": "trig-identities",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$\\sin\\left(\\alpha-\\dfrac{\\pi}{6}\\right)+\\cos\\alpha=\\dfrac{3}{5}$，则$\\cos\\left(2\\alpha+\\dfrac{\\pi}{3}\\right)=$（）\nA.$-\\dfrac{7}{25}$ B.$\\dfrac{7}{25}$ C.$-\\dfrac{24}{25}$ D.$\\dfrac{24}{25}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "$\\sin\\left(\\alpha-\\dfrac{\\pi}{6}\\right)+\\cos\\alpha=\\dfrac{3}{5}$，则$\\cos\\left(2\\alpha+\\dfrac{\\pi}{3}\\right)=$____",
+        "answer": "$-\\dfrac{7}{25}$",
         "gaokaoConnection": "展开得$\\dfrac{\\sqrt{3}}{2}\\sin\\alpha-\\dfrac{1}{2}\\cos\\alpha+\\cos\\alpha=\\sin(\\alpha+\\pi/6)+\\cos\\alpha=3/5$"
       },
       {
         "id": "trig-id8",
         "unitId": "trig-identities",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2024新课标Ⅰ) $\\cos(\\alpha+\\beta)=m,\\tan\\alpha\\tan\\beta=2$，则$\\cos(\\alpha-\\beta)=$（）\nA.$-3m$ B.$-m^3$ C.$m^3$ D.$3m$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "(2024新课标Ⅰ) $\\cos(\\alpha+\\beta)=m,\\tan\\alpha\\tan\\beta=2$，则$\\cos(\\alpha-\\beta)=$____",
+        "answer": "$-3m$",
         "gaokaoConnection": "$\\cos(\\alpha-\\beta)=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta$，$\\cos(\\alpha+\\beta)=\\cos\\alpha\\cos\\beta-\\sin\\alpha\\sin\\beta=m$"
       },
       {
@@ -338,30 +242,18 @@
         "id": "trig-g1",
         "unitId": "trig-graphs",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "由$y=2\\sin x$得到$y=2\\sin\\left(x+\\dfrac{\\pi}{3}\\right)$只需（）\nA.左移$\\dfrac{\\pi}{6}$  B.右移$\\dfrac{\\pi}{6}$  C.左移$\\dfrac{\\pi}{3}$  D.右移$\\dfrac{\\pi}{3}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "由$y=2\\sin x$得到$y=2\\sin\\left(x+\\dfrac{\\pi}{3}\\right)$只需____",
+        "answer": "左移$\\dfrac{\\pi}{3}$",
         "gaokaoConnection": "$y=\\sin x$左移$\\pi/3$得$\\sin(x+\\pi/3)$，左加右减"
       },
       {
         "id": "trig-g2",
         "unitId": "trig-graphs",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$f(x)=\\sin\\left(2x+\\dfrac{\\pi}{3}\\right)$如何变换得$g(x)=\\cos2x$（）\nA.右移$\\dfrac{\\pi}{6}$  B.右移$\\dfrac{\\pi}{12}$  C.左移$\\dfrac{\\pi}{6}$  D.左移$\\dfrac{\\pi}{12}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "$f(x)=\\sin\\left(2x+\\dfrac{\\pi}{3}\\right)$如何变换得$g(x)=\\cos2x$____",
+        "answer": "右移$\\dfrac{\\pi}{12}$",
         "gaokaoConnection": "$\\cos2x=\\sin(2x+\\pi/2)=\\sin[2(x+\\pi/4)]$，$\\sin(2x+\\pi/3)=\\sin[2(x+\\pi/6)]$，差$\\pi/4-\\pi/6=\\pi/12$"
       },
       {
@@ -377,74 +269,44 @@
         "id": "trig-g4",
         "unitId": "trig-graphs",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$f(x)=\\sin\\left(\\omega x+\\dfrac{\\pi}{4}\\right)(\\omega>0),\\dfrac{\\pi}{2}<T<\\pi$，且$f(x)\\leq|f(\\dfrac{\\pi}{3})|$，$\\omega=$（）\nA.$\\dfrac{4}{15}$  B.$\\dfrac{4}{9}$  C.$\\dfrac{4}{3}$  D.$\\dfrac{15}{4}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "$f(x)=\\sin\\left(\\omega x+\\dfrac{\\pi}{4}\\right)(\\omega>0),\\dfrac{\\pi}{2}<T<\\pi$，且$f(x)\\leq|f(\\dfrac{\\pi}{3})|$，$\\omega=$____",
+        "answer": "$\\dfrac{4}{3}$",
         "gaokaoConnection": "$T=2\\pi/\\omega\\in(\\pi/2,\\pi)$得$2<\\omega<4$；$f(x)\\leq|f(\\pi/3)|$说明$x=\\pi/3$是对称轴"
       },
       {
         "id": "trig-g5",
         "unitId": "trig-graphs",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2024天津) $f(x)=3\\sin\\left(\\omega x+\\dfrac{\\pi}{3}\\right)(\\omega>0)$周期$\\pi$，$x\\in\\left[-\\dfrac{\\pi}{12},\\dfrac{\\pi}{6}\\right]$最小值（）\nA.$-\\dfrac{3}{2}$  B.$\\dfrac{3}{2}$  C.$0$  D.$-3$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "(2024天津) $f(x)=3\\sin\\left(\\omega x+\\dfrac{\\pi}{3}\\right)(\\omega>0)$周期$\\pi$，$x\\in\\left[-\\dfrac{\\pi}{12},\\dfrac{\\pi}{6}\\right]$最小值____",
+        "answer": "$-\\dfrac{3}{2}$",
         "gaokaoConnection": "$T=\\pi$得$\\omega=2$，$2x+\\pi/3\\in[\\pi/6,2\\pi/3]$，$\\sin$在此区间最小值为$1/2$"
       },
       {
         "id": "trig-g6",
         "unitId": "trig-graphs",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2024新课标Ⅰ) $x\\in[0,2\\pi]$，$y=\\sin x$与$y=2\\sin\\left(3x-\\dfrac{\\pi}{6}\\right)$交点个数（）\nA.$3$  B.$4$  C.$6$  D.$8$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "(2024新课标Ⅰ) $x\\in[0,2\\pi]$，$y=\\sin x$与$y=2\\sin\\left(3x-\\dfrac{\\pi}{6}\\right)$交点个数____",
+        "answer": "$6$",
         "gaokaoConnection": "$y=2\\sin(3x-\\pi/6)$周期$2\\pi/3$，在$[0,2\\pi]$有3个完整周期，每个周期与$\\sin x$约2个交点"
       },
       {
         "id": "trig-g7",
         "unitId": "trig-graphs",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "$y=\\sin\\left(\\dfrac{\\pi}{4}-2x\\right)$单调递减区间（）\nA.$\\left[k\\pi-\\dfrac{\\pi}{8},k\\pi+\\dfrac{3\\pi}{8}\\right],k\\in\\mathbf{Z}$\nB.$\\left[2k\\pi-\\dfrac{\\pi}{8},2k\\pi+\\dfrac{3\\pi}{8}\\right],k\\in\\mathbf{Z}$\nC.$\\left[2k\\pi+\\dfrac{3\\pi}{8},2k\\pi+\\dfrac{7\\pi}{8}\\right],k\\in\\mathbf{Z}$\nD.$\\left[k\\pi+\\dfrac{3\\pi}{8},k\\pi+\\dfrac{7\\pi}{8}\\right],k\\in\\mathbf{Z}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "$y=\\sin\\left(\\dfrac{\\pi}{4}-2x\\right)$单调递减区间____",
+        "answer": "$\\left[k\\pi-\\dfrac{\\pi}{8},k\\pi+\\dfrac{3\\pi}{8}\\right],k\\in\\mathbf{Z}$",
         "gaokaoConnection": "$y=\\sin(\\pi/4-2x)=-\\sin(2x-\\pi/4)$，递减即$\\sin(2x-\\pi/4)$递增"
       },
       {
         "id": "trig-g8",
         "unitId": "trig-graphs",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(多选2025新课标Ⅱ) $f(x)=2\\sin\\left(x+\\dfrac{\\pi}{4}\\right)\\cos\\left(x+\\dfrac{\\pi}{4}\\right)$，正确（）\nA.最大值$1$ B.$T=\\pi$ C.$\\left(0,\\dfrac{\\pi}{2}\\right)$递增 D.$x=\\dfrac{\\pi}{4}$对称",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
+        "type": "fill",
+        "prompt": "(多选2025新课标Ⅱ) $f(x)=2\\sin\\left(x+\\dfrac{\\pi}{4}\\right)\\cos\\left(x+\\dfrac{\\pi}{4}\\right)$，正确____",
         "answer": "BC",
         "gaokaoConnection": "$f(x)=\\sin(2x+\\pi/2)=\\cos2x$，周期$\\pi$，最大值1"
       }
@@ -457,22 +319,16 @@
         "id": "trig-gk1",
         "unitId": "trig-gaokao",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2013大纲卷) $y=\\sin(\\omega x+\\varphi)(\\omega>0)$图象，$\\omega=$（）\nA.$5$  B.$4$  C.$3$  D.$2$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "(2013大纲卷) $y=\\sin(\\omega x+\\varphi)(\\omega>0)$图象，$\\omega=$____",
+        "answer": "$4$",
         "gaokaoConnection": "由图像读出周期$T=\\pi/2$，$\\omega=2\\pi/T=4$"
       },
       {
         "id": "trig-gk2",
         "unitId": "trig-gaokao",
         "difficulty": 2,
-        "type": "choice",
+        "type": "fill",
         "prompt": "(2020新课标Ⅲ) $f(x)=\\sin x+\\dfrac{1}{\\sin x}$，真命题序号________\n①关于$y$轴对称 ②关于原点对称 ③$x=\\dfrac{\\pi}{2}$对称轴 ④最小值2",
         "answer": "②③",
         "gaokaoConnection": "奇偶性：$f(-x)=-\\sin x-1/\\sin x=-f(x)$奇函数；$f(\\pi-x)=\\sin x+1/\\sin x=f(x)$关于$x=\\pi/2$对称"
@@ -481,14 +337,8 @@
         "id": "trig-gk3",
         "unitId": "trig-gaokao",
         "difficulty": 3,
-        "type": "choice",
-        "prompt": "(多选2024广西) $f(x)=|\\sin2x|+\\cos4x$，正确（）\nA.最大值$\\sqrt{5}-4$ B.$T=\\dfrac{\\pi}{2}$ C.$x=\\dfrac{k\\pi}{4}$对称轴 D.$[0,\\pi]$内$16f(x)-17$共9个零点",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
+        "type": "fill",
+        "prompt": "(多选2024广西) $f(x)=|\\sin2x|+\\cos4x$，正确____",
         "answer": "BC",
         "gaokaoConnection": "$|\\sin2x|$周期$\\pi/2$，$\\cos4x$周期$\\pi/2$，整体周期$\\pi/2$；验证$x=k\\pi/4$是否为对称轴"
       }

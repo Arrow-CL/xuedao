@@ -1,0 +1,284 @@
+[
+  {
+    "questionId": "gk-2024-xkb1-3",
+    "questionText": "已知向量$\\boldsymbol{a}=(0,1)$，$\\boldsymbol{b}=(2,x)$，若$\\boldsymbol{b}\\perp (\\boldsymbol{b}-4\\boldsymbol{a})$，则$x=$____",
+    "finalAnswer": "$2$",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "action": "垂直条件怎么用？",
+        "expression": "$\\boldsymbol{b}\\perp (\\boldsymbol{b}-4\\boldsymbol{a})$",
+        "result": "$\\boldsymbol{b}\\cdot(\\boldsymbol{b}-4\\boldsymbol{a})=0$",
+        "reasoning": "两向量垂直，数量积为零",
+        "checkHint": "检查是否写出点积等于0",
+        "stepGeometry": null
+      },
+      {
+        "stepNumber": 2,
+        "action": "把$\\boldsymbol{b}-4\\boldsymbol{a}$算出来",
+        "expression": "$\\boldsymbol{b}-4\\boldsymbol{a}=(2,x-4)$",
+        "result": "$(2,x-4)$",
+        "reasoning": "$\\boldsymbol{a}=(0,1)$，$4\\boldsymbol{a}=(0,4)$，$\\boldsymbol{b}-4\\boldsymbol{a}=(2-0,x-4)=(2,x-4)$",
+        "checkHint": "$\\boldsymbol{b}$减$4\\boldsymbol{a}$时对应分量相减",
+        "stepGeometry": null
+      },
+      {
+        "stepNumber": 3,
+        "action": "代入数量积公式，解方程",
+        "expression": "$2\\times 2+x(x-4)=0$",
+        "result": "$x^2-4x+4=0$，$(x-2)^2=0$",
+        "reasoning": "$\\boldsymbol{b}\\cdot(\\boldsymbol{b}-4\\boldsymbol{a})=2\\times 2+x\\cdot(x-4)=4+x^2-4x=x^2-4x+4=(x-2)^2=0$",
+        "checkHint": "完全平方公式是否用对了",
+        "stepGeometry": null
+      },
+      {
+        "stepNumber": 4,
+        "action": "$x$等于多少？",
+        "expression": "$x=2$",
+        "result": "$x=2$",
+        "reasoning": "$(x-2)^2=0$ 只有一个根 $x=2$",
+        "checkHint": "平方等于0只有唯一根",
+        "stepGeometry": null
+      }
+    ],
+    "knowledgePoints": ["向量垂直的充要条件", "向量坐标运算", "数量积坐标公式", "完全平方公式"],
+    "knowledgeFragments": [
+      { "step": 1, "name": "向量垂直", "fragment": "两向量垂直数量积为几？", "full": "$\\boldsymbol{a}\\perp\\boldsymbol{b}\\Leftrightarrow\\boldsymbol{a}\\cdot\\boldsymbol{b}=0$" },
+      { "step": 3, "name": "数量积坐标公式", "fragment": "数量积怎么算？", "full": "$\\boldsymbol{a}=(x_1,y_1),\\boldsymbol{b}=(x_2,y_2)\\Rightarrow\\boldsymbol{a}\\cdot\\boldsymbol{b}=x_1x_2+y_1y_2$" }
+    ],
+    "commonErrors": ["忘记垂直条件是数量积为0", "坐标相减时符号算错", "把$x(x-4)$展开成$x^2-4$"],
+    "entryStep": 1,
+    "summary": "利用向量垂直$\\Leftrightarrow$数量积为0，将坐标代入后解方程，得到$x=2$。",
+    "nextHint": "类似地，可以尝试用数量积条件求参数范围的问题。"
+  },
+  {
+    "questionId": "gk-2022-xkb1-3",
+    "questionText": "在$\\triangle ABC$中，点$D$在边$AB$上，$BD=2DA$。记$\\overrightarrow{CA}=\\boldsymbol{m}$，$\\overrightarrow{CD}=\\boldsymbol{n}$，则$\\overrightarrow{CB}=$____",
+    "finalAnswer": "$-2\\boldsymbol{m}+3\\boldsymbol{n}$",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "action": "$BD=2DA$说明$\\overrightarrow{AD}$和$\\overrightarrow{AB}$是什么关系？",
+        "expression": "$\\overrightarrow{AD}=\\dfrac13\\overrightarrow{AB}$",
+        "result": "$\\overrightarrow{AD}=\\dfrac13\\overrightarrow{AB}$",
+        "reasoning": "$BD=2DA$，所以$AD:AB=1:3$，$\\overrightarrow{AD}=\\dfrac13\\overrightarrow{AB}$",
+        "checkHint": "线段比例和向量比例一致吗",
+        "stepGeometry": null
+      },
+      {
+        "stepNumber": 2,
+        "action": "用$\\boldsymbol{m}$和$\\overrightarrow{AB}$表示$\\overrightarrow{CD}$",
+        "expression": "$\\overrightarrow{CD}=\\overrightarrow{CA}+\\overrightarrow{AD}=\\boldsymbol{m}+\\dfrac13\\overrightarrow{AB}=\\boldsymbol{n}$",
+        "result": "$\\boldsymbol{m}+\\dfrac13\\overrightarrow{AB}=\\boldsymbol{n}$",
+        "reasoning": "向量加法三角形法则，$\\overrightarrow{CD}=\\overrightarrow{CA}+\\overrightarrow{AD}$",
+        "checkHint": "检查三角形法则的方向是否正确",
+        "stepGeometry": null
+      },
+      {
+        "stepNumber": 3,
+        "action": "把$\\overrightarrow{AB}$用$\\boldsymbol{m}$和$\\boldsymbol{n}$表示出来",
+        "expression": "$\\overrightarrow{AB}=3\\boldsymbol{n}-3\\boldsymbol{m}$",
+        "result": "$\\overrightarrow{AB}=3\\boldsymbol{n}-3\\boldsymbol{m}$",
+        "reasoning": "$\\boldsymbol{m}+\\dfrac13\\overrightarrow{AB}=\\boldsymbol{n}\\Rightarrow\\dfrac13\\overrightarrow{AB}=\\boldsymbol{n}-\\boldsymbol{m}\\Rightarrow\\overrightarrow{AB}=3\\boldsymbol{n}-3\\boldsymbol{m}$",
+        "checkHint": "移项时$\\boldsymbol{m}$的符号变了吗",
+        "stepGeometry": null
+      },
+      {
+        "stepNumber": 4,
+        "action": "$\\overrightarrow{CB}$怎么表示？",
+        "expression": "$\\overrightarrow{CB}=\\overrightarrow{CA}+\\overrightarrow{AB}=\\boldsymbol{m}+3\\boldsymbol{n}-3\\boldsymbol{m}$",
+        "result": "$-2\\boldsymbol{m}+3\\boldsymbol{n}$",
+        "reasoning": "$\\overrightarrow{CB}=\\overrightarrow{CA}+\\overrightarrow{AB}=\\boldsymbol{m}+(3\\boldsymbol{n}-3\\boldsymbol{m})=-2\\boldsymbol{m}+3\\boldsymbol{n}$",
+        "checkHint": "合并同类项时$\\boldsymbol{m}$的系数算对了吗",
+        "stepGeometry": null
+      }
+    ],
+    "knowledgePoints": ["平面向量基本定理", "向量线性运算", "向量加法三角形法则"],
+    "knowledgeFragments": [
+      { "step": 1, "name": "向量比例", "fragment": "$BD=2DA$怎么转化？", "full": "$BD=2DA\\Rightarrow\\overrightarrow{AD}=\\dfrac13\\overrightarrow{AB}$" },
+      { "step": 2, "name": "三角形法则", "fragment": "$\\overrightarrow{CD}$怎么用$\\overrightarrow{CA}$和$\\overrightarrow{AD}$表示？", "full": "$\\overrightarrow{CD}=\\overrightarrow{CA}+\\overrightarrow{AD}$" }
+    ],
+    "commonErrors": ["$BD=2DA$时把$\\overrightarrow{AD}$写成$\\dfrac23\\overrightarrow{AB}$", "三角形法则方向搞反", "移项时$\\boldsymbol{m}$符号没变"],
+    "entryStep": 1,
+    "summary": "通过线段比例得到$\\overrightarrow{AD}=\\dfrac13\\overrightarrow{AB}$，再用向量三角形法则建立$\\boldsymbol{m}$、$\\boldsymbol{n}$与$\\overrightarrow{AB}$的关系，最后代入求$\\overrightarrow{CB}$。",
+    "nextHint": "类似地，可以尝试用基底法解决三角形中向量表示的问题。"
+  },
+  {
+    "questionId": "gk-2024-xkb2-3",
+    "questionText": "已知向量$\\boldsymbol{a},\\boldsymbol{b}$满足$|\\boldsymbol{a}|=1$，$|\\boldsymbol{a}+2\\boldsymbol{b}|=2$，且$(\\boldsymbol{b}-2\\boldsymbol{a})\\perp \\boldsymbol{b}$，则$|\\boldsymbol{b}|=$____",
+    "finalAnswer": "$\\dfrac{\\sqrt{2}}{2}$",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "action": "$|\\boldsymbol{a}+2\\boldsymbol{b}|=2$两边平方，能得到什么？",
+        "expression": "$|\\boldsymbol{a}+2\\boldsymbol{b}|^2=4$",
+        "result": "$|\\boldsymbol{a}|^2+4\\boldsymbol{a}\\cdot\\boldsymbol{b}+4|\\boldsymbol{b}|^2=4$",
+        "reasoning": "$|\\boldsymbol{u}|^2=\\boldsymbol{u}\\cdot\\boldsymbol{u}$，展开$(\\boldsymbol{a}+2\\boldsymbol{b})\\cdot(\\boldsymbol{a}+2\\boldsymbol{b})$",
+        "checkHint": "交叉项系数是$4$还是$2$",
+        "stepGeometry": null
+      },
+      {
+        "stepNumber": 2,
+        "action": "代入$|\\boldsymbol{a}|=1$，写出式子①",
+        "expression": "$1+4\\boldsymbol{a}\\cdot\\boldsymbol{b}+4|\\boldsymbol{b}|^2=4$",
+        "result": "式子①：$1+4\\boldsymbol{a}\\cdot\\boldsymbol{b}+4|\\boldsymbol{b}|^2=4$",
+        "reasoning": "$|\\boldsymbol{a}|^2=1^2=1$，代入上式",
+        "checkHint": "$|\\boldsymbol{a}|^2$不是$|\\boldsymbol{a}|$",
+        "stepGeometry": null
+      },
+      {
+        "stepNumber": 3,
+        "action": "垂直条件$(\\boldsymbol{b}-2\\boldsymbol{a})\\perp\\boldsymbol{b}$能给出什么关系？",
+        "expression": "$(\\boldsymbol{b}-2\\boldsymbol{a})\\cdot\\boldsymbol{b}=0$",
+        "result": "$|\\boldsymbol{b}|^2=2\\boldsymbol{a}\\cdot\\boldsymbol{b}$",
+        "reasoning": "$(\\boldsymbol{b}-2\\boldsymbol{a})\\cdot\\boldsymbol{b}=|\\boldsymbol{b}|^2-2\\boldsymbol{a}\\cdot\\boldsymbol{b}=0\\Rightarrow|\\boldsymbol{b}|^2=2\\boldsymbol{a}\\cdot\\boldsymbol{b}$",
+        "checkHint": "数量积分配律用对了吗",
+        "stepGeometry": null
+      },
+      {
+        "stepNumber": 4,
+        "action": "把$\\boldsymbol{a}\\cdot\\boldsymbol{b}$用$|\\boldsymbol{b}|^2$代入式子①",
+        "expression": "$1+2|\\boldsymbol{b}|^2+4|\\boldsymbol{b}|^2=4$",
+        "result": "$6|\\boldsymbol{b}|^2=3$",
+        "reasoning": "由$|\\boldsymbol{b}|^2=2\\boldsymbol{a}\\cdot\\boldsymbol{b}$得$\\boldsymbol{a}\\cdot\\boldsymbol{b}=\\dfrac12|\\boldsymbol{b}|^2$，代入式子①：$1+4\\times\\dfrac12|\\boldsymbol{b}|^2+4|\\boldsymbol{b}|^2=1+2|\\boldsymbol{b}|^2+4|\\boldsymbol{b}|^2=4$",
+        "checkHint": "$4\\times\\dfrac12=2$，不是$4$",
+        "stepGeometry": null
+      },
+      {
+        "stepNumber": 5,
+        "action": "$|\\boldsymbol{b}|$等于多少？",
+        "expression": "$|\\boldsymbol{b}|^2=\\dfrac12$",
+        "result": "$|\\boldsymbol{b}|=\\dfrac{\\sqrt{2}}{2}$",
+        "reasoning": "$6|\\boldsymbol{b}|^2=3\\Rightarrow|\\boldsymbol{b}|^2=\\dfrac12$，模长为正，$|\\boldsymbol{b}|=\\dfrac{\\sqrt{2}}{2}$",
+        "checkHint": "模长必须取正，开方后不能写$\\pm$",
+        "stepGeometry": null
+      }
+    ],
+    "knowledgePoints": ["向量模长公式", "数量积运算律", "向量垂直条件"],
+    "knowledgeFragments": [
+      { "step": 1, "name": "模长平方", "fragment": "$|\\boldsymbol{u}|^2$怎么展开？", "full": "$|\\boldsymbol{u}|^2=\\boldsymbol{u}\\cdot\\boldsymbol{u}$，$|\\boldsymbol{a}+2\\boldsymbol{b}|^2=|\\boldsymbol{a}|^2+4\\boldsymbol{a}\\cdot\\boldsymbol{b}+4|\\boldsymbol{b}|^2$" },
+      { "step": 3, "name": "垂直条件", "fragment": "垂直能得出什么等式？", "full": "$\\boldsymbol{a}\\perp\\boldsymbol{b}\\Leftrightarrow\\boldsymbol{a}\\cdot\\boldsymbol{b}=0$" }
+    ],
+    "commonErrors": ["平方展开时交叉项系数算错", "$|\\boldsymbol{a}|^2$和$|\\boldsymbol{a}|$混淆", "忘记模长取正"],
+    "entryStep": 1,
+    "summary": "将模长条件平方展开得到关于$\\boldsymbol{a}\\cdot\\boldsymbol{b}$和$|\\boldsymbol{b}|^2$的方程，利用垂直条件消去$\\boldsymbol{a}\\cdot\\boldsymbol{b}$，解出$|\\boldsymbol{b}|=\\dfrac{\\sqrt{2}}{2}$。",
+    "nextHint": "类似地，可以尝试用$|\\boldsymbol{a}\\pm\\boldsymbol{b}|^2$公式解决模长相关的综合题。"
+  },
+  {
+    "questionId": "vec-l5",
+    "questionText": "在平行四边形$ABCD$中，$E$为$AD$中点，$BE$交$AC$于$F$，则$\\overrightarrow{DF}=$____",
+    "finalAnswer": "$\\dfrac13\\overrightarrow{AB}-\\dfrac23\\overrightarrow{AD}$",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "action": "$ABCD$是平行四边形，能得出哪些边的关系？",
+        "expression": "$AD\\parallel BC$，$AD=BC$",
+        "result": "$AD\\parallel BC$，$AD=BC$",
+        "reasoning": "平行四边形对边平行且相等",
+        "checkHint": "平行四边形性质：对边平行且相等",
+        "stepGeometry": {
+          "type": "shape",
+          "shape": "parallelogram",
+          "points": {
+            "A": { "x": 20, "y": 20 },
+            "B": { "x": 80, "y": 20 },
+            "C": { "x": 90, "y": 70 },
+            "D": { "x": 30, "y": 70 }
+          },
+          "edges": [
+            { "from": "A", "to": "B", "style": "solid" },
+            { "from": "B", "to": "C", "style": "solid" },
+            { "from": "C", "to": "D", "style": "solid" },
+            { "from": "D", "to": "A", "style": "solid" }
+          ],
+          "labels": ["A", "B", "C", "D"],
+          "caption": "平行四边形ABCD"
+        }
+      },
+      {
+        "stepNumber": 2,
+        "action": "$E$是$AD$中点，$AE$和$BC$有什么关系？",
+        "expression": "$AE=\\dfrac12AD=\\dfrac12BC$",
+        "result": "$AE=\\dfrac12BC$",
+        "reasoning": "$E$是$AD$中点，$AE=\\dfrac12AD$，又$AD=BC$，所以$AE=\\dfrac12BC$",
+        "checkHint": "中点定义：$AE=ED=\\dfrac12AD$",
+        "stepGeometry": {
+          "type": "points",
+          "points": {
+            "A": { "x": 20, "y": 20 },
+            "B": { "x": 80, "y": 20 },
+            "C": { "x": 90, "y": 70 },
+            "D": { "x": 30, "y": 70 },
+            "E": { "x": 25, "y": 45 }
+          },
+          "edges": [
+            { "from": "A", "to": "B", "style": "solid" },
+            { "from": "B", "to": "C", "style": "solid" },
+            { "from": "C", "to": "D", "style": "solid" },
+            { "from": "D", "to": "A", "style": "solid" },
+            { "from": "B", "to": "E", "style": "solid" },
+            { "from": "A", "to": "C", "style": "dashed" }
+          ],
+          "labels": ["A", "B", "C", "D", "E（中点）"],
+          "caption": "连接BE和AC"
+        }
+      },
+      {
+        "stepNumber": 3,
+        "action": "$\\triangle AEF$和$\\triangle CBF$有什么关系？$AF$和$FC$的比例是多少？",
+        "expression": "$\\triangle AEF \\backsim \\triangle CBF$，$\\dfrac{AF}{FC}=\\dfrac12$",
+        "result": "$AF=\\dfrac13AC$",
+        "reasoning": "$AD\\parallel BC\\Rightarrow\\angle EAF=\\angle BCF$，$\\angle AEF=\\angle CBF$（内错角），所以$\\triangle AEF\\backsim\\triangle CBF$；$\\dfrac{AF}{FC}=\\dfrac{AE}{BC}=\\dfrac12$，所以$AF=\\dfrac13AC$",
+        "checkHint": "相似三角形的对应边成比例",
+        "stepGeometry": {
+          "type": "points",
+          "points": {
+            "A": { "x": 20, "y": 20 },
+            "B": { "x": 80, "y": 20 },
+            "C": { "x": 90, "y": 70 },
+            "D": { "x": 30, "y": 70 },
+            "E": { "x": 25, "y": 45 },
+            "F": { "x": 43, "y": 37 }
+          },
+          "edges": [
+            { "from": "A", "to": "B", "style": "solid" },
+            { "from": "B", "to": "C", "style": "solid" },
+            { "from": "C", "to": "D", "style": "solid" },
+            { "from": "D", "to": "A", "style": "solid" },
+            { "from": "B", "to": "E", "style": "solid" },
+            { "from": "A", "to": "C", "style": "dashed" }
+          ],
+          "labels": ["A", "B", "C", "D", "E", "F"],
+          "caption": "\\triangle AEF \\backsim \\triangle CBF，AF:FC=1:2"
+        }
+      },
+      {
+        "stepNumber": 4,
+        "action": "用$\\overrightarrow{AB}$和$\\overrightarrow{AD}$表示$\\overrightarrow{AF}$",
+        "expression": "$\\overrightarrow{AF}=\\dfrac13(\\overrightarrow{AB}+\\overrightarrow{AD})$",
+        "result": "$\\overrightarrow{AF}=\\dfrac13\\overrightarrow{AB}+\\dfrac13\\overrightarrow{AD}$",
+        "reasoning": "$\\overrightarrow{AC}=\\overrightarrow{AB}+\\overrightarrow{AD}$，$AF=\\dfrac13AC$，所以$\\overrightarrow{AF}=\\dfrac13\\overrightarrow{AC}=\\dfrac13(\\overrightarrow{AB}+\\overrightarrow{AD})$",
+        "checkHint": "$\\overrightarrow{AC}=\\overrightarrow{AB}+\\overrightarrow{AD}$是平行四边形法则",
+        "stepGeometry": null
+      },
+      {
+        "stepNumber": 5,
+        "action": "$\\overrightarrow{DF}$怎么表示？",
+        "expression": "$\\overrightarrow{DF}=\\overrightarrow{AF}-\\overrightarrow{AD}$",
+        "result": "$\\dfrac13\\overrightarrow{AB}-\\dfrac23\\overrightarrow{AD}$",
+        "reasoning": "$\\overrightarrow{DF}=\\overrightarrow{AF}-\\overrightarrow{AD}=\\dfrac13(\\overrightarrow{AB}+\\overrightarrow{AD})-\\overrightarrow{AD}=\\dfrac13\\overrightarrow{AB}+\\dfrac13\\overrightarrow{AD}-\\overrightarrow{AD}=\\dfrac13\\overrightarrow{AB}-\\dfrac23\\overrightarrow{AD}$",
+        "checkHint": "$\\dfrac13-1=-\\dfrac23$，符号不要搞错",
+        "stepGeometry": null
+      }
+    ],
+    "knowledgePoints": ["平行四边形性质", "相似三角形判定", "向量减法", "向量数乘"],
+    "knowledgeFragments": [
+      { "step": 1, "name": "平行四边形性质", "fragment": "对边有什么关系？", "full": "$AD\\parallel BC$，$AD=BC$" },
+      { "step": 3, "name": "相似三角形", "fragment": "怎么判定相似？", "full": "$AD\\parallel BC\\Rightarrow$内错角相等$\\Rightarrow\\triangle AEF\\backsim\\triangle CBF$" }
+    ],
+    "commonErrors": ["$AF:FC=1:2$时把$AF$写成$\\dfrac12AC$", "$\\overrightarrow{DF}$方向搞反", "向量系数计算错误"],
+    "entryStep": 1,
+    "summary": "利用平行四边形对边平行且相等得到$\\triangle AEF\\backsim\\triangle CBF$，由$AE=\\dfrac12BC$得$AF=\\dfrac13AC$，再用向量运算求出$\\overrightarrow{DF}=\\dfrac13\\overrightarrow{AB}-\\dfrac23\\overrightarrow{AD}$。",
+    "nextHint": "类似地，可以尝试用向量法解决梯形、矩形中的交点问题。"
+  }
+]

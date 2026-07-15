@@ -15,15 +15,9 @@
         "id": "sol-s2",
         "unitId": "solid-shapes",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "三棱锥$P-ABC$，$PM=\\dfrac{1}{3}PC,PN=\\dfrac{2}{3}PB$，$V_{P-AMN}:V_{P-ABC}=$（）\nA.$\\dfrac{1}{9}$ B.$\\dfrac{2}{9}$ C.$\\dfrac{1}{3}$ D.$\\dfrac{4}{9}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "三棱锥$P-ABC$，$PM=\\dfrac{1}{3}PC,PN=\\dfrac{2}{3}PB$，$V_{P-AMN}:V_{P-ABC}=$____",
+        "answer": "$\\dfrac{2}{9}$",
         "gaokaoConnection": "$\\dfrac{V_{P-AMN}}{V_{P-ABC}}=\\dfrac{PA}{PA}\\cdot\\dfrac{PM}{PC}\\cdot\\dfrac{PN}{PB}=1\\times\\dfrac{1}{3}\\times\\dfrac{2}{3}=\\dfrac{2}{9}$"
       },
       {
@@ -87,15 +81,9 @@
         "id": "sol-s8",
         "unitId": "solid-shapes",
         "difficulty": 3,
-        "type": "choice",
-        "prompt": "甲乙圆锥底面积相等，侧面圆心角和$2\\pi$，$\\dfrac{S_甲}{S_乙}=2$，求$\\dfrac{V_甲}{V_乙}$。",
-        "options": [
-          "A. $2$",
-          "B. $\\sqrt{2}$",
-          "C. $\\sqrt{10}$",
-          "D. $2\\sqrt{2}$"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "甲乙圆锥底面积相等，侧面圆心角和$2\\pi$，$\\dfrac{S_甲}{S_乙}=2$，求$\\dfrac{V_甲}{V_乙}$____。",
+        "answer": "$\\sqrt{10}$",
         "gaokaoConnection": "设底面半径$r$，母线$l_1,l_2$；侧面圆心角$\\theta_1+\\theta_2=2\\pi$，$\\theta=\\dfrac{2\\pi r}{l}$；$\\dfrac{S_甲}{S_乙}=\\dfrac{\\pi rl_1}{\\pi rl_2}=\\dfrac{l_1}{l_2}=2$"
       }
     ]
@@ -107,27 +95,17 @@
         "id": "sol-r1",
         "unitId": "solid-relations",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "面积$9\\sqrt{3}$正三角形三点在球$O$，$V_{O-ABC}=6\\sqrt{3}$，球表面积（）\nA.$32\\pi$ B.$64\\pi$ C.$8\\pi$ D.$16\\pi$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "面积$9\\sqrt{3}$正三角形三点在球$O$，$V_{O-ABC}=6\\sqrt{3}$，球表面积____",
+        "answer": "$64\\pi$",
         "gaokaoConnection": "$S=\\dfrac{\\sqrt{3}}{4}a^2=9\\sqrt{3}$，$a=6$；$V=\\dfrac{1}{3}\\times9\\sqrt{3}\\times h=6\\sqrt{3}$，$h=2$（球心到面距离）；外接圆半径$R_{底}=\\dfrac{a}{\\sqrt{3}}=2\\sqrt{3}$；球半径$R=\\sqrt{(2\\sqrt{3})^2+2^2}=4$，表面积$64\\pi$"
       },
       {
         "id": "sol-r2",
         "unitId": "solid-relations",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "半球内接正四棱锥体积$\\dfrac{4\\sqrt{2}}{3}$，半球体积（）\nA.$\\dfrac{2\\sqrt{3}}{3}\\pi$ B.$\\dfrac{4\\sqrt{2}}{9}\\pi$",
-        "options": [
-          "A",
-          "B"
-        ],
+        "type": "fill",
+        "prompt": "半球内接正四棱锥体积$\\dfrac{4\\sqrt{2}}{3}$，半球体积____",
         "answer": "B",
         "gaokaoConnection": "正四棱锥底面在半球底面圆上，顶点在半球面上；设底面边长$a$，则底面外接圆半径$\\dfrac{a}{\\sqrt{2}}$，锥高$\\sqrt{R^2-\\dfrac{a^2}{2}}$"
       },
@@ -135,12 +113,8 @@
         "id": "sol-r3",
         "unitId": "solid-relations",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "正三棱锥底面周长9，侧棱2，体积（）\nA.$\\dfrac{9\\sqrt{3}}{2}$ B.$\\dfrac{3\\sqrt{3}}{4}$",
-        "options": [
-          "A",
-          "B"
-        ],
+        "type": "fill",
+        "prompt": "正三棱锥底面周长9，侧棱2，体积____",
         "answer": "B",
         "gaokaoConnection": "底面边长3，底面积$\\dfrac{9\\sqrt{3}}{4}$；底面外接圆半径$\\sqrt{3}$；高$h=\\sqrt{4-3}=1$；体积$\\dfrac{1}{3}\\times\\dfrac{9\\sqrt{3}}{4}\\times1=\\dfrac{3\\sqrt{3}}{4}$"
       },
@@ -148,15 +122,9 @@
         "id": "sol-r4",
         "unitId": "solid-relations",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "圆锥底面$r=\\sqrt{3},\\angle AOB=120^\\circ$，$S_{\\triangle PAB}=\\dfrac{9\\sqrt{3}}{4}$，圆锥体积（）\nA.$\\pi$ B.$\\sqrt{6}\\pi$ C.$3\\pi$ D.$36\\pi$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "圆锥底面$r=\\sqrt{3},\\angle AOB=120^\\circ$，$S_{\\triangle PAB}=\\dfrac{9\\sqrt{3}}{4}$，圆锥体积____",
+        "answer": "$3\\pi$",
         "gaokaoConnection": "$AB=\\sqrt{r^2+r^2-2r^2\\cos120^\\circ}=\\sqrt{3+3+3}=3$；$S_{\\triangle PAB}=\\dfrac{1}{2}\\times3\\times l=\\dfrac{9\\sqrt{3}}{4}$，母线$l=\\dfrac{3\\sqrt{3}}{2}$；高$h=\\sqrt{l^2-r^2}=\\sqrt{\\dfrac{27}{4}-3}=\\dfrac{3\\sqrt{3}}{2}$？重算"
       },
       {
@@ -200,15 +168,9 @@
         "id": "sol-r8",
         "unitId": "solid-relations",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "三条侧棱两两垂直长1正三棱锥，外接球表面积（）\nA.$\\pi$ B.$3\\pi$ C.$6\\pi$ D.$9\\pi$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "三条侧棱两两垂直长1正三棱锥，外接球表面积____",
+        "answer": "$3\\pi$",
         "gaokaoConnection": "补成长方体：三条棱为$1,1,1$，外接球直径$\\sqrt{1+1+1}=\\sqrt{3}$，$R=\\dfrac{\\sqrt{3}}{2}$，表面积$3\\pi$"
       },
       {
@@ -224,12 +186,8 @@
         "id": "sol-r10",
         "unitId": "solid-relations",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "正四棱锥高4底边长2，外接球表面积（）\nA.$\\dfrac{81\\pi}{4}$ B.$9\\pi$",
-        "options": [
-          "A",
-          "B"
-        ],
+        "type": "fill",
+        "prompt": "正四棱锥高4底边长2，外接球表面积____",
         "answer": "A",
         "gaokaoConnection": "底面外接圆半径$R_{底}=\\sqrt{2}$；设球心距底面$d$，则$R^2=d^2+2=(4-d)^2+2$，解$d=\\dfrac{7}{4}$，$R^2=\\dfrac{49}{16}+2=\\dfrac{81}{16}$，表面积$\\dfrac{81\\pi}{4}$"
       },
@@ -251,15 +209,9 @@
         "id": "sol-sp1",
         "unitId": "solid-sphere",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "圆柱高为2，侧面积$4\\pi$，上下底面圆周在同一球面上，该球体积为（）\nA.$\\dfrac{8\\sqrt{2}\\pi}{3}$  B.$\\dfrac{8\\sqrt{3}\\pi}{3}$  C.$4\\sqrt{2}\\pi$  D.$4\\sqrt{3}\\pi$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "圆柱高为2，侧面积$4\\pi$，上下底面圆周在同一球面上，该球体积为____",
+        "answer": "$\\dfrac{8\\sqrt{2}\\pi}{3}$",
         "gaokaoConnection": "$2\\pi r\\cdot h=4\\pi$，$rh=2$，$h=2$得$r=1$；球直径$=\\sqrt{h^2+(2r)^2}=\\sqrt{4+4}=2\\sqrt{2}$，$R=\\sqrt{2}$，$V=\\dfrac{8\\sqrt{2}\\pi}{3}$"
       },
       {
@@ -290,15 +242,9 @@
         "id": "sol-sp4",
         "unitId": "solid-sphere",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2021·天津) 球体积$\\dfrac{32\\pi}{3}$，两圆锥底面为球同一截面，高之比$1:3$，两圆锥体积之和（）\nA.$3\\pi$  B.$4\\pi$  C.$9\\pi$  D.$12\\pi$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "(2021·天津) 球体积$\\dfrac{32\\pi}{3}$，两圆锥底面为球同一截面，高之比$1:3$，两圆锥体积之和____",
+        "answer": "$3\\pi$",
         "gaokaoConnection": "$V_{\\text{球}}=\\dfrac{32\\pi}{3}$，$R=2$；截面半径$r$，两锥高$h_1,h_2$，$h_1+h_2=4$，$h_1:h_2=1:3$，$h_1=1,h_2=3$；$r^2=h_1(2R-h_1)=1\\times3=3$，$V_1+V_2=\\dfrac{\\pi r^2}{3}(h_1+h_2)=\\dfrac{\\pi\\times3}{3}\\times4=4\\pi$，选B"
       },
       {
@@ -325,29 +271,17 @@
         "id": "sol-p1",
         "unitId": "solid-position",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2024·惠州一模) $l,n$异面直线，$\\alpha,\\beta$不重合平面，正确命题（）\nA.$\\alpha\\parallel\\beta,l\\subset\\alpha,n\\subset\\beta\\Rightarrow l\\parallel n$\nB.$\\alpha\\perp\\beta,l\\subset\\alpha\\Rightarrow l\\perp\\beta$\nC.$l\\parallel\\alpha,\\alpha\\perp\\beta\\Rightarrow l\\perp\\beta$\nD.$l\\perp\\alpha,l\\parallel\\beta\\Rightarrow\\alpha\\perp\\beta$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "D",
+        "type": "fill",
+        "prompt": "(2024·惠州一模) $l,n$异面直线，$\\alpha,\\beta$不重合平面，正确命题____",
+        "answer": "$l\\perp\\alpha,l\\parallel\\beta\\Rightarrow\\alpha\\perp\\beta$",
         "gaokaoConnection": "A错：可能异面；B错：$l$不一定垂直$\\beta$内所有线；C错：$l$可能在$\\beta$内或平行；D对：$l\\perp\\alpha$且$l\\parallel\\beta$，则$\\beta$内有直线垂直$\\alpha$"
       },
       {
         "id": "sol-p2",
         "unitId": "solid-position",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(多选) 直线$a,b$，平面$\\alpha,\\beta,\\gamma$，能推出$\\alpha\\perp\\beta$的是（）\nA.$a\\parallel\\alpha,a\\parallel\\beta$\nB.$\\gamma\\parallel\\beta,\\alpha\\perp\\gamma$\nC.$\\alpha\\cap\\beta=a,b\\perp a,b\\subset\\beta$\nD.$a\\perp\\beta,a\\parallel\\alpha$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
+        "type": "fill",
+        "prompt": "(多选) 直线$a,b$，平面$\\alpha,\\beta,\\gamma$，能推出$\\alpha\\perp\\beta$的是____",
         "answer": "CD",
         "gaokaoConnection": "C对：面$\\beta$内直线$b\\perp$交线$a$，$b\\perp\\alpha$，$\\alpha\\perp\\beta$；D对：$a\\perp\\beta$且$a\\parallel\\alpha$，则$\\alpha$内有直线$\\parallel a$且$\\perp\\beta$"
       },
@@ -355,30 +289,18 @@
         "id": "sol-p3",
         "unitId": "solid-position",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2024·天津) $m,n$不同直线，$\\alpha$平面，正确（）\nA.$m\\parallel\\alpha,n\\subset\\alpha\\Rightarrow m\\parallel n$\nB.$m\\parallel\\alpha,n\\parallel\\alpha\\Rightarrow m\\parallel n$\nC.$m\\parallel\\alpha,n\\perp\\alpha\\Rightarrow m\\perp n$\nD.$m\\parallel\\alpha,n\\perp\\alpha\\Rightarrow m,n$相交",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "(2024·天津) $m,n$不同直线，$\\alpha$平面，正确____",
+        "answer": "$m\\parallel\\alpha,n\\perp\\alpha\\Rightarrow m\\perp n$",
         "gaokaoConnection": "A对：由线面平行定义；B错：可能异面或相交；C对：$n\\perp\\alpha$则$n$垂直$\\alpha$内所有线；D错：可能异面"
       },
       {
         "id": "sol-p4",
         "unitId": "solid-position",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2024·全国甲) $\\alpha\\cap\\beta=m$，四个命题：\n①$m\\parallel n\\Rightarrow n\\parallel\\alpha$或$n\\parallel\\beta$\n②$m\\perp n\\Rightarrow n\\perp\\alpha$或$n\\perp\\beta$\n③$n\\parallel\\alpha,n\\parallel\\beta\\Rightarrow m\\parallel n$\n④$n$与$\\alpha,\\beta$等角$\\Rightarrow m\\perp n$\n真命题为（）\nA.①④ B.②⑤ C.①②③ D.①③④",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "(2024·全国甲) $\\alpha\\cap\\beta=m$，四个命题：\n①$m\\parallel n\\Rightarrow n\\parallel\\alpha$或$n\\parallel\\beta$\n②$m\\perp n\\Rightarrow n\\perp\\alpha$或$n\\perp\\beta$\n③$n\\parallel\\alpha,n\\parallel\\beta\\Rightarrow m\\parallel n$\n④$n$与$\\alpha,\\beta$等角$\\Rightarrow m\\perp n$\n真命题为____",
+        "answer": "①④",
         "gaokaoConnection": "①对：平行线传递；②错：$n$可能在$\\alpha\\cap\\beta$内；③对：平行于两相交平面的直线平行于交线"
       }
     ]

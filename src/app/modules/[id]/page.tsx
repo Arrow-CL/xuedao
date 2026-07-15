@@ -120,7 +120,7 @@ export default function ModulePage({ params }: { params: Promise<{ id: string }>
           </div>
         </div>
         <div className="flex items-center gap-2.5">
-          <ProgressTracker moduleId={id} />
+          <ProgressTracker chapterId={id} />
           {completed ? (
             <span className="inline-flex items-center gap-1 text-xs text-green-600 font-medium bg-green-50 px-2.5 py-1.5 rounded-md border border-green-100">
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

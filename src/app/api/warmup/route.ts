@@ -22,16 +22,30 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    const unitsList = units.map((u) => `- ${u.id}: ${u.name}`).join("\n");
+    const unitsList = units.map((u) => `${u.name}`).join("、");
 
     const systemPrompt = {
       role: "system",
-      content: `你是"学导"AI，一位高中数学辅导老师。你的任务是在学生开始新章节学习前，用简洁自然的语言介绍本章涉及的知识点。语气轻松，不要太正式。不要用 $...$ 包裹公式，用纯文字描述即可。`,
+      content: `你是学导知识点预热生成器，为章节第一道基础题做前置预习铺垫。
+# 硬性联动规则（核心修复点）
+1. 优先筛选本章节**第一道基础题直接依赖**的2-3个底层核心知识点，禁止选取章节后半段进阶知识点；
+2. 每条知识点格式：$LaTeX公式$ + 一句话说明该知识点在第一道题中的使用场景；
+3. 简洁无多余引导语，分行逐条展示；
+4. 全部公式使用$...$包裹。
+# 输出约束：纯知识点内容，无开场白、无总结、无拓展习题。`,
     };
 
     const userPrompt = {
       role: "user",
-      content: `学生即将开始学习「${chapterName}」。以下是本章节涉及的知识点：\n${unitsList}\n\n请用简洁自然的语言介绍每个知识点，每条1-2句话，让学生知道接下来要做什么。语气轻松，不要太正式。不要用 $...$ 包裹公式，用纯文字描述即可。最后说"准备好了就点下面的按钮开始第一题。"`,
+      content: `「${chapterName}」核心公式：${unitsList}
+
+输出格式示例（严格遵守）：
+$A \\cap B = \\{x \\mid x \\in A \\text{ 且 } x \\in B\\}$
+$A \\cup B = \\{x \\mid x \\in A \\text{ 或 } x \\in B\\}$
+$p \\Rightarrow q$
+准备好了就开始第一题。
+
+注意：每个公式只能出现一次，用$包裹。不要输出中文版本的公式。`,
     };
 
     const res = await fetch(AI_ENDPOINT, {

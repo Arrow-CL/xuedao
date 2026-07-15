@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useMemo } from "react";
+import React, { useMemo, useRef, useEffect } from "react";
+import type { StepGeometry } from "@/lib/presolve";
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -9,6 +10,13 @@ import React, { useMemo } from "react";
 export interface GeometryAnnotation {
   type: "axis" | "point" | "vector" | "clear";
   params: Record<string, string>;
+}
+
+export interface GeometryDiagram {
+  shape: "parallelogram" | "triangle" | "circle" | "polygon" | "coordinate";
+  points: Record<string, { x: number; y: number }>;
+  labels?: string[];
+  annotations?: string[];
 }
 
 export interface GeometryCanvasProps {
@@ -25,7 +33,11 @@ export interface GeometryCanvasProps {
     y: number;
   }>;
   /** AI 动态添加的标注 */
-  annotations: GeometryAnnotation[];
+  annotations?: GeometryAnnotation[];
+  /** 几何图形描述（用于 Canvas 绘制） */
+  diagram?: GeometryDiagram;
+  /** 单步图形数据（数形结合） */
+  stepGeometry?: StepGeometry;
   /** 图形宽度 */
   width?: number;
   /** 图形高度 */
@@ -57,17 +69,378 @@ function parseNums(s: string): number[] {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Component                                                          */
+/*  Sub-component: Step Diagram Canvas (数形结合——板书单步图形)        */
+/*  支持逐步渲染：基础图形 → 标注点 → 向量 → 坐标系等                */
 /* ------------------------------------------------------------------ */
 
-export default function GeometryCanvas({
+function StepDiagramCanvas({ geo, compact = false }: { geo: StepGeometry; compact?: boolean }) {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    const W = compact ? 280 : 240;
+    const H = compact ? 200 : 200;
+    canvas.width = W;
+    canvas.height = H;
+    const scale = Math.min(W, H) / 120;
+
+    ctx.clearRect(0, 0, W, H);
+
+    const pts = geo.points || {};
+    const keys = Object.keys(pts);
+
+    // 1. 绘制坐标系（如果这一步要建立坐标系）
+    if (geo.type === "coordinate-system" && geo.axis) {
+      const ox = geo.axis.originX * scale;
+      const oy = geo.axis.originY * scale;
+      ctx.strokeStyle = "#666";
+      ctx.lineWidth = 1;
+      ctx.fillStyle = "#666";
+      // x 轴
+      ctx.beginPath();
+      ctx.moveTo(ox - 5, oy);
+      ctx.lineTo(ox + 60, oy);
+      ctx.stroke();
+      // 箭头
+      ctx.beginPath();
+      ctx.moveTo(ox + 60, oy);
+      ctx.lineTo(ox + 55, oy - 3);
+      ctx.lineTo(ox + 55, oy + 3);
+      ctx.fill();
+      // y 轴
+      ctx.beginPath();
+      ctx.moveTo(ox, oy + 5);
+      ctx.lineTo(ox, oy - 60);
+      ctx.stroke();
+      // 箭头
+      ctx.beginPath();
+      ctx.moveTo(ox, oy - 60);
+      ctx.lineTo(ox - 3, oy - 55);
+      ctx.lineTo(ox + 3, oy - 55);
+      ctx.fill();
+      // 原点 O
+      ctx.font = "10px sans-serif";
+      ctx.textAlign = "right";
+      ctx.fillText("O", ox - 4, oy + 12);
+      // x, y 标签
+      ctx.textAlign = "left";
+      ctx.fillText("x", ox + 62, oy + 4);
+      ctx.textAlign = "center";
+      ctx.fillText("y", ox + 6, oy - 62);
+      // 刻度
+      const xTicks = geo.axis.xMax || 5;
+      for (let i = 1; i <= xTicks; i++) {
+        const tx = ox + i * (50 / xTicks);
+        ctx.beginPath();
+        ctx.moveTo(tx, oy - 2);
+        ctx.lineTo(tx, oy + 2);
+        ctx.stroke();
+      }
+      const yTicks = geo.axis.yMax || 5;
+      for (let i = 1; i <= yTicks; i++) {
+        const ty = oy - i * (50 / yTicks);
+        ctx.beginPath();
+        ctx.moveTo(ox - 2, ty);
+        ctx.lineTo(ox + 2, ty);
+        ctx.stroke();
+      }
+    }
+
+    // 2. 绘制边/线段
+    if (geo.edges && geo.edges.length > 0) {
+      ctx.lineWidth = 2;
+      for (const edge of geo.edges) {
+        const from = pts[edge.from];
+        const to = pts[edge.to];
+        if (!from || !to) continue;
+
+        ctx.strokeStyle = edge.style === "dashed" ? "#999"
+          : edge.style === "bold" ? "#dc2626"
+          : "#2563eb";
+
+        if (edge.style === "dashed") ctx.setLineDash([4, 3]);
+        else ctx.setLineDash([]);
+
+        ctx.beginPath();
+        ctx.moveTo(from.x * scale, from.y * scale);
+        ctx.lineTo(to.x * scale, to.y * scale);
+        ctx.stroke();
+
+        // 标注边长（如果在 labels 中）
+        if (geo.labels) {
+          const edgeLabel = geo.labels.find(l =>
+            l.includes(edge.from) && l.includes(edge.to)
+          );
+          if (edgeLabel) {
+            const mx = (from.x + to.x) / 2 * scale;
+            const my = (from.y + to.y) / 2 * scale;
+            ctx.setLineDash([]);
+            ctx.fillStyle = "#dc2626";
+            ctx.font = "bold 11px sans-serif";
+            ctx.textAlign = "center";
+            ctx.fillText(edgeLabel, mx, my - 6);
+          }
+        }
+      }
+      ctx.setLineDash([]);
+    }
+
+    // 3. 绘制图形填充（没有 edges 时自动连接所有点）
+    if (keys.length >= 3 && (!geo.edges || geo.edges.length === 0)) {
+      ctx.fillStyle = "rgba(37,99,235,0.08)";
+      ctx.strokeStyle = "#2563eb";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      keys.forEach((k, i) => {
+        const p = pts[k];
+        if (i === 0) ctx.moveTo(p.x * scale, p.y * scale);
+        else ctx.lineTo(p.x * scale, p.y * scale);
+      });
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+    } else if (keys.length >= 2 && (!geo.edges || geo.edges.length === 0)) {
+      // 只有两个点，画线段
+      ctx.strokeStyle = "#2563eb";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      const a = pts[keys[0]], b = pts[keys[1]];
+      ctx.moveTo(a.x * scale, a.y * scale);
+      ctx.lineTo(b.x * scale, b.y * scale);
+      ctx.stroke();
+    }
+
+    // 4. 绘制向量箭头
+    if (geo.vectors && geo.vectors.length > 0) {
+      for (const vec of geo.vectors) {
+        const from = pts[vec.from];
+        const to = pts[vec.to];
+        if (!from || !to) continue;
+
+        const fx = from.x * scale, fy = from.y * scale;
+        const tx = to.x * scale, ty = to.y * scale;
+        const dx = tx - fx, dy = ty - fy;
+        const len = Math.sqrt(dx * dx + dy * dy);
+        if (len === 0) continue;
+
+        ctx.strokeStyle = "#e03131";
+        ctx.fillStyle = "#e03131";
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.moveTo(fx, fy);
+        ctx.lineTo(tx, ty);
+        ctx.stroke();
+
+        // 箭头
+        const angle = Math.atan2(dy, dx);
+        const aSize = 8;
+        ctx.beginPath();
+        ctx.moveTo(tx, ty);
+        ctx.lineTo(tx - aSize * Math.cos(angle - Math.PI / 6), ty - aSize * Math.sin(angle - Math.PI / 6));
+        ctx.lineTo(tx - aSize * Math.cos(angle + Math.PI / 6), ty - aSize * Math.sin(angle + Math.PI / 6));
+        ctx.fill();
+
+        // 向量标签
+        const mx = (fx + tx) / 2, my = (fy + ty) / 2;
+        const nx = (-dy / len) * 12, ny = (dx / len) * 12;
+        ctx.font = "bold 12px sans-serif";
+        ctx.textAlign = "center";
+        ctx.fillText(vec.label, mx + nx, my + ny);
+      }
+    }
+
+    // 5. 绘制顶点
+    ctx.fillStyle = "#1e40af";
+    ctx.font = "bold 13px sans-serif";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    for (const k of keys) {
+      const p = pts[k];
+      const px = p.x * scale, py = p.y * scale;
+
+      // 白色背景
+      const tw = ctx.measureText(k).width;
+      ctx.fillStyle = "rgba(255,255,255,0.85)";
+      ctx.fillRect(px - tw / 2 - 3, py - 9, tw + 6, 18);
+
+      // 点
+      ctx.fillStyle = "#1e40af";
+      ctx.beginPath();
+      ctx.arc(px, py, 3, 0, Math.PI * 2);
+      ctx.fill();
+
+      // 标签
+      ctx.fillText(k, px, py);
+    }
+
+    // 6. 额外标注文字（非边长标注）
+    if (geo.labels) {
+      ctx.fillStyle = "#6b7280";
+      ctx.font = "10px sans-serif";
+      ctx.textAlign = "left";
+      let labelY = H - 10;
+      const edgeLabels = new Set<string>();
+      if (geo.edges) {
+        for (const edge of geo.edges) {
+          const l = geo.labels.find(l => l.includes(edge.from) && l.includes(edge.to));
+          if (l) edgeLabels.add(l);
+        }
+      }
+      for (const label of geo.labels) {
+        if (edgeLabels.has(label)) continue;
+        ctx.fillText(label, 6, labelY);
+        labelY -= 13;
+      }
+    }
+
+    // 7. caption（步骤说明）
+    if (geo.caption) {
+      ctx.fillStyle = "#9ca3af";
+      ctx.font = "10px sans-serif";
+      ctx.textAlign = "right";
+      ctx.fillText(geo.caption, W - 6, H - 6);
+    }
+  }, [geo, compact]);
+
+  return (
+    <canvas
+      ref={canvasRef}
+      style={{
+        width: "100%",
+        maxWidth: 280,
+        height: "auto",
+        borderRadius: 8,
+        background: "white",
+      }}
+    />
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Sub-component: Diagram Canvas (基于 presolve diagram 数据绘制)     */
+/* ------------------------------------------------------------------ */
+
+function DiagramCanvas({ diagram }: { diagram: GeometryDiagram }) {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    // 设置画布大小
+    const size = 240;
+    canvas.width = size;
+    canvas.height = size;
+    const scale = size / 120; // 0-100 坐标映射到画布
+
+    // 清空
+    ctx.clearRect(0, 0, size, size);
+
+    // 绘制图形
+    const pts = diagram.points;
+    const keys = Object.keys(pts);
+
+    ctx.strokeStyle = "#2563eb";
+    ctx.lineWidth = 2;
+    ctx.fillStyle = "#dbeafe";
+
+    if (diagram.shape === "parallelogram" && keys.length >= 4) {
+      // 按 A-B-C-D 顺序绘制
+      const order = ["A", "B", "C", "D"];
+      ctx.beginPath();
+      order.forEach((k, i) => {
+        const p = pts[k];
+        if (!p) return;
+        const x = p.x * scale;
+        const y = p.y * scale;
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      });
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+    } else if (diagram.shape === "triangle" && keys.length >= 3) {
+      const order = keys.slice(0, 3);
+      ctx.beginPath();
+      order.forEach((k, i) => {
+        const p = pts[k];
+        const x = p.x * scale;
+        const y = p.y * scale;
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      });
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+    } else {
+      // 通用多边形
+      ctx.beginPath();
+      keys.forEach((k, i) => {
+        const p = pts[k];
+        const x = p.x * scale;
+        const y = p.y * scale;
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      });
+      if (keys.length > 2) ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+    }
+
+    // 绘制顶点标签
+    ctx.fillStyle = "#1e40af";
+    ctx.font = "bold 14px sans-serif";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    keys.forEach((k) => {
+      const p = pts[k];
+      const x = p.x * scale;
+      const y = p.y * scale;
+      // 标签背景
+      const textWidth = ctx.measureText(k).width;
+      ctx.fillStyle = "rgba(255,255,255,0.8)";
+      ctx.fillRect(x - textWidth / 2 - 3, y - 9, textWidth + 6, 18);
+      // 标签文字
+      ctx.fillStyle = "#1e40af";
+      ctx.fillText(k, x, y);
+    });
+
+    // 绘制条件标注
+    if (diagram.labels) {
+      ctx.fillStyle = "#dc2626";
+      ctx.font = "11px sans-serif";
+      diagram.labels.forEach((label, i) => {
+        ctx.fillText(label, 8, size - 8 - i * 14);
+      });
+    }
+  }, [diagram]);
+
+  return (
+    <canvas
+      ref={canvasRef}
+      style={{ width: "100%", maxWidth: 240, height: "auto", borderRadius: 8 }}
+    />
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Sub-component: SVG Canvas (原有标注模式)                           */
+/* ------------------------------------------------------------------ */
+
+function SvgCanvas({
   initialPaths = [],
   initialPoints = [],
   annotations = [],
   width = 300,
   height = 300,
   backgroundImageUrl,
-}: GeometryCanvasProps) {
+}: Omit<GeometryCanvasProps, "diagram" | "stepGeometry">) {
   /**
    * 从 annotations 中提取动态标注，并处理 CLEAR 指令。
    * CLEAR 会清除它之前所有的动态标注。
@@ -328,8 +701,8 @@ export default function GeometryCanvas({
         const midX = (x1 + x2) / 2;
         const midY = (y1 + y2) / 2;
         // 法线方向偏移
-        const nx = -dy / len * 10;
-        const ny = dx / len * 10;
+        const nx = (-dy / len) * 10;
+        const ny = (dx / len) * 10;
 
         return (
           <g key={`dyn-vec-${i}`}>
@@ -362,5 +735,39 @@ export default function GeometryCanvas({
         );
       })}
     </svg>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Main Component                                                     */
+/* ------------------------------------------------------------------ */
+
+export default function GeometryCanvas({
+  initialPaths = [],
+  initialPoints = [],
+  annotations = [],
+  diagram,
+  stepGeometry,
+  width = 300,
+  height = 300,
+  backgroundImageUrl,
+}: GeometryCanvasProps) {
+  // 优先级：stepGeometry > diagram > SVG annotations
+  if (stepGeometry) {
+    return <StepDiagramCanvas geo={stepGeometry} />;
+  }
+  if (diagram) {
+    return <DiagramCanvas diagram={diagram} />;
+  }
+
+  return (
+    <SvgCanvas
+      initialPaths={initialPaths}
+      initialPoints={initialPoints}
+      annotations={annotations}
+      width={width}
+      height={height}
+      backgroundImageUrl={backgroundImageUrl}
+    />
   );
 }

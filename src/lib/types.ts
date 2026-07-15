@@ -143,6 +143,8 @@ export interface BoardStep {
   timestamp: number;
   /** 关联的其他章节知识（可选） */
   related?: string;
+  /** 数形结合图形数据（可选） */
+  stepGeometry?: import("./presolve").StepGeometry;
 }
 
 // ============ 推荐引擎相关 ============

@@ -6,15 +6,9 @@
         "id": "seq-a1",
         "unitId": "arithmetic",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "(2023·全国甲卷) 记$S_n$为等差数列$\\{a_n\\}$前$n$项和，$a_2+a_6=10,a_4a_8=45$，则$S_5=$（）\nA.$25$ B.$22$ C.$20$ D.$15$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "(2023·全国甲卷) 记$S_n$为等差数列$\\{a_n\\}$前$n$项和，$a_2+a_6=10,a_4a_8=45$，则$S_5=$____",
+        "answer": "$20$",
         "gaokaoConnection": "$a_2+a_6=2a_4=10$，$a_4=5$；$a_4a_8=45$，$a_8=9$；$d=1$，$a_1=2$，$S_5=5\\times2+\\dfrac{5\\times4}{2}\\times1=20$"
       },
       {
@@ -30,27 +24,17 @@
         "id": "seq-a3",
         "unitId": "arithmetic",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2026·云南模拟) 等差数列$\\{a_n\\}$，$S_1=1,S_{33}+S_{66}=9$，$S_5=$（）\nA.$21$ B.$25$ C.$27$ D.$32$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "(2026·云南模拟) 等差数列$\\{a_n\\}$，$S_1=1,S_{33}+S_{66}=9$，$S_5=$____",
+        "answer": "$25$",
         "gaokaoConnection": "$S_1=a_1=1$；$S_n=na_1+\\dfrac{n(n-1)}{2}d$，代入$S_{33}+S_{66}=9$解$d$，再求$S_5$"
       },
       {
         "id": "seq-a4",
         "unitId": "arithmetic",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(温州二模) 等差数列$\\{a_n\\}$，$a_5=5$，$\\{S_n\\}$单调递增，则公差$d$范围（）\nA.$[0,5]$ B.$\\left(0,\\dfrac{10}{7}\\right)$",
-        "options": [
-          "A",
-          "B"
-        ],
+        "type": "fill",
+        "prompt": "(温州二模) 等差数列$\\{a_n\\}$，$a_5=5$，$\\{S_n\\}$单调递增，则公差$d$范围____",
         "answer": "B",
         "gaokaoConnection": "$S_n$单调递增$\\Rightarrow S_{n+1}>S_n\\Rightarrow a_{n+1}>0$对所有$n$成立，$a_5=5$，$a_n=a_5+(n-5)d=5+(n-5)d>0$"
       },
@@ -73,45 +57,27 @@
         "id": "seq-a6",
         "unitId": "arithmetic",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2023·新课标Ⅰ卷) 甲：$\\{a_n\\}$等差；乙：$\\left\\{\\dfrac{S_n}{n}\\right\\}$等差，则（）\nA.甲充分不必要 B.甲必要不充分 C.充要 D.既不充分也不必要",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "(2023·新课标Ⅰ卷) 甲：$\\{a_n\\}$等差；乙：$\\left\\{\\dfrac{S_n}{n}\\right\\}$等差，则____",
+        "answer": "充要",
         "gaokaoConnection": "$\\dfrac{S_n}{n}=a_1+\\dfrac{(n-1)d}{2}$，是等差数列；反之若$\\dfrac{S_n}{n}$等差，设公差为$d'$，则$S_n=n(a_1+(n-1)d')$，$a_n=S_n-S_{n-1}=a_1+(2n-2)d'$，也是等差"
       },
       {
         "id": "seq-a7",
         "unitId": "arithmetic",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(九省联考) 等差数列$a_3+a_7=6,a_{12}=17$，$S_{16}=$（）\nA.$120$ B.$140$ C.$160$ D.$180$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "(九省联考) 等差数列$a_3+a_7=6,a_{12}=17$，$S_{16}=$____",
+        "answer": "$160$",
         "gaokaoConnection": "$a_3+a_7=2a_5=6$，$a_5=3$；$a_{12}=17$，$d=\\dfrac{17-3}{7}=2$，$a_1=-5$，$S_{16}=16\\times(-5)+\\dfrac{16\\times15}{2}\\times2=160$"
       },
       {
         "id": "seq-a8",
         "unitId": "arithmetic",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "《九章算术》金锤问题：五尺金锤，首尺4斤，末尺2斤，中间三尺总重（）\nA.$3$ B.$6$ C.$9$ D.$12$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "《九章算术》金锤问题：五尺金锤，首尺4斤，末尺2斤，中间三尺总重____",
+        "answer": "$6$",
         "gaokaoConnection": "等差数列：$a_1=4,a_5=2$，$d=-\\dfrac{1}{2}$，中间三尺$a_2+a_3+a_4=3a_3=3\\times2=6$"
       },
       {
@@ -156,30 +122,18 @@
         "id": "seq-g2",
         "unitId": "geometric",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "(2024·广州一模) 等比数列$\\{a_n\\}$满足$a_3a_5=2a_2a_4$，则$\\dfrac{S_4}{S_2}=$（）\nA.$5$ B.$4$ C.$3$ D.$2$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "(2024·广州一模) 等比数列$\\{a_n\\}$满足$a_3a_5=2a_2a_4$，则$\\dfrac{S_4}{S_2}=$____",
+        "answer": "$5$",
         "gaokaoConnection": "$a_3a_5=a_4^2=2a_2a_4=2a_3^2$，$q^2=2$，$\\dfrac{S_4}{S_2}=\\dfrac{S_2+a_3+a_4}{S_2}=1+\\dfrac{q^2(a_1+a_2)}{a_1+a_2}=1+q^2=3$？等等，$S_4=a_1+a_2+a_3+a_4=S_2+q^2S_2=3S_2$，选C？重算：$a_4^2=2a_3^2$，$q^2=2$，$S_4/S_2=(1+q^2)=3$"
       },
       {
         "id": "seq-g3",
         "unitId": "geometric",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(南京盐城模拟) 等比数列公比2，$a_1+a_2=3$，$a_k+a_{k+1}+\\dots+a_{k+9}=2^{14}-2^4$，$k=$（）\nA.$4$ B.$5$ C.$6$ D.$7$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "(南京盐城模拟) 等比数列公比2，$a_1+a_2=3$，$a_k+a_{k+1}+\\dots+a_{k+9}=2^{14}-2^4$，$k=$____",
+        "answer": "$5$",
         "gaokaoConnection": "$a_1+a_2=3a_1=3$，$a_1=1$；$a_k+\\dots+a_{k+9}=2^{k-1}(2^{10}-1)=2^{14}-2^4$，$2^{k-1}=2^4$，$k=5$"
       },
       {
@@ -195,15 +149,9 @@
         "id": "seq-g5",
         "unitId": "geometric",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "$a_3a_{10}a_{17}=8$，$a_{10}=$（）\nA.$1$ B.$2$ C.$4$ D.$8$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "$a_3a_{10}a_{17}=8$，$a_{10}=$____",
+        "answer": "$2$",
         "gaokaoConnection": "等比数列性质：$a_3a_{17}=a_{10}^2$，$a_3a_{10}a_{17}=a_{10}^3=8$，$a_{10}=2$"
       },
       {
@@ -228,15 +176,9 @@
         "id": "seq-g8",
         "unitId": "geometric",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2025·全国Ⅰ卷) 各项为正等比，前4项和4，前8项和68，求公比。",
-        "options": [
-          "A. $2$",
-          "B. $\\sqrt{2}$",
-          "C. $\\sqrt{3}$",
-          "D. $3$"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "(2025·全国Ⅰ卷) 各项为正等比，前4项和4，前8项和68，求公比____。",
+        "answer": "$2$",
         "gaokaoConnection": "$S_4=4,S_8-S_4=64=q^4S_4$，$q^4=16$，$q=2$（正项）"
       }
     ]
@@ -248,15 +190,9 @@
         "id": "seq-f1",
         "unitId": "seq-formula",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2026·淄博) $a_1=1,\\dfrac{1}{a_{n+1}}-\\dfrac{1}{a_n}=4n$，$a_{15}=$（）\nA.$\\dfrac{4}{15}-1$ B.$\\dfrac{4}{31}-1$ C.$\\dfrac{3}{415}-1$ D.$\\dfrac{3}{15}-1$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "(2026·淄博) $a_1=1,\\dfrac{1}{a_{n+1}}-\\dfrac{1}{a_n}=4n$，$a_{15}=$____",
+        "answer": "$\\dfrac{3}{415}-1$",
         "gaokaoConnection": "$\\dfrac{1}{a_n}=\\dfrac{1}{a_1}+\\sum_{k=1}^{n-1}4k=1+2n(n-1)=2n^2-2n+1$，$a_{15}=\\dfrac{1}{421}$？选项C应为$\\dfrac{1}{421}$"
       },
       {
@@ -417,14 +353,8 @@
         "id": "seq-k8",
         "unitId": "seq-gaokao",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(多选)三角垛：第一层1，第二层3，第三层6，$a_n=\\dfrac{n(n+1)}{2}$\nA.$a_5=15$ B.$a_{n+1}-a_n$等差 C.$a_{2025}$偶数 D.$1<\\sum\\dfrac{1}{a_n}<2$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
+        "type": "fill",
+        "prompt": "(多选)三角垛：第一层1，第二层3，第三层6，$a_n=\\dfrac{n(n+1)}{2}$____。",
         "answer": "ABD",
         "gaokaoConnection": "B：$a_{n+1}-a_n=n+1$是等差；D：$\\dfrac{1}{a_n}=\\dfrac{2}{n(n+1)}=2(\\dfrac{1}{n}-\\dfrac{1}{n+1})$，裂项和为$2(1-\\dfrac{1}{n+1})<2$"
       },
@@ -432,15 +362,9 @@
         "id": "seq-k9",
         "unitId": "seq-gaokao",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "被2、3除均余1的正整数构成$\\{a_n\\}$，$a_{10}=$（）\nA.$55$ B.$49$ C.$43$ D.$37$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "被2、3除均余1的正整数构成$\\{a_n\\}$，$a_{10}=$____",
+        "answer": "$43$",
         "gaokaoConnection": "$a_n\\equiv1\\pmod{2}$且$a_n\\equiv1\\pmod{3}$，即$a_n\\equiv1\\pmod{6}$，$a_n=6n-5$，$a_{10}=55$？等等，$a_1=1,a_2=7,a_3=13$，$a_n=6(n-1)+1=6n-5$，$a_{10}=55$，选A"
       },
       {

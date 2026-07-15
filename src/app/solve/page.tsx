@@ -3,7 +3,8 @@
 import { useState, useRef, useCallback, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import MathContent from "@/components/MathContent";
-import GeometryCanvas, { type GeometryAnnotation } from "@/components/GeometryCanvas";
+import GeometryCanvas, { type GeometryAnnotation, type GeometryDiagram } from "@/components/GeometryCanvas";
+import type { StepGeometry } from "@/lib/presolve";
 import { chapters } from "@/data/chapters";
 import { knowledgeExercises } from "@/data/knowledge-exercises";
 import { getAllGaokaoQuestions } from "@/data/gaokao-questions";
@@ -135,6 +136,41 @@ function sanitizeReply(reply: string): string {
 }
 
 /**
+ * Extract option contents embedded in prompt text.
+ * Some data files store options inside prompt like:
+ *   "...则 tanθ=（）\nA.$\\dfrac{4}{3}$  B.$-\\dfrac{4}{3}$..."
+ * This parses them out so we can render clickable option buttons.
+ */
+function extractOptionsFromPrompt(prompt: string): {
+  cleanPrompt: string;
+  optionContents: string[];
+} {
+  // Option patterns:
+  // 1. Newline-separated: "A.$xxx$\nB.$yyy$\nC.$zzz$\nD.$www$"
+  // 2. Space-separated: "A.$xxx$  B.$yyy$  C.$zzz$  D.$www$"
+  // Each option content may contain $...$ LaTeX, line breaks, and special chars.
+  // Strategy: split by A. B. C. D. markers using regex with DOTALL-like approach
+
+  // First try: newline-separated with A. at start of line
+  const newlineRegex = /(?:^|\n)\s*A\.\s*([\s\S]+?)(?:\n)\s*B\.\s*([\s\S]+?)(?:\n)\s*C\.\s*([\s\S]+?)(?:\n)\s*D\.\s*([\s\S]+?)$/;
+  let match = prompt.match(newlineRegex);
+
+  if (!match) {
+    // Second try: space-separated (single line)
+    const spaceRegex = /\n?\s*A\.\s*(.+?)\s+B\.\s*(.+?)\s+C\.\s*(.+?)\s+D\.\s*(.+)/;
+    match = prompt.match(spaceRegex);
+  }
+
+  if (!match) {
+    return { cleanPrompt: prompt, optionContents: [] };
+  }
+
+  const cleanPrompt = prompt.substring(0, match.index).trim();
+  const contents = [match[1].trim(), match[2].trim(), match[3].trim(), match[4].trim()];
+  return { cleanPrompt, optionContents: contents };
+}
+
+/**
  * Parse [GEO:...] annotations from AI reply.
  * Extracts all [GEO:ACTION params] lines from the end of the reply,
  * returns the clean reply (without annotations) and parsed annotations.
@@ -233,7 +269,9 @@ function parseStepTag(reply: string): {
   cleanReply: string;
   step: BoardStep | null;
 } {
-  const match = reply.match(/\[STEP:(\d+)\|([^\]\|]+)(?:\|related:([^\]]+))?\]\s*$/m);
+  // 匹配 [STEP:数字|内容] 或 [STEP:数字|内容|related:关联]
+  // 内容中可能包含 | 字符（如 |a| 表示模），所以内容部分用非贪婪匹配到 ]
+  const match = reply.match(/\[STEP:(\d+)\|(.+?)(?:\|related:([^\]]+))?\]/);
   if (!match) return { cleanReply: reply, step: null };
 
   const stepNumber = parseInt(match[1], 10);
@@ -307,8 +345,11 @@ function SolveContent() {
   const [summary, setSummary] = useState<string | null>(null);
   const [coveragePercent, setCoveragePercent] = useState(0);
   const [geometryAnnotations, setGeometryAnnotations] = useState<GeometryAnnotation[]>([]);
+  const [diagram, setDiagram] = useState<GeometryDiagram | null>(null);
   const [pendingImage, setPendingImage] = useState<string | null>(null); // 待发送的图片 base64
   const [boardSteps, setBoardSteps] = useState<BoardStep[]>([]); // 板书步骤
+  const presolvedRef = useRef<any>(null); // 缓存 presolve 数据，传给 guide API
+  const [presolveLoading, setPresolveLoading] = useState(false); // 板书加载状态
   const [warmupContent, setWarmupContent] = useState<string | null>(null); // 知识预习内容
   const [miniReviewContent, setMiniReviewContent] = useState<string | null>(null); // 小回顾内容
 
@@ -396,7 +437,7 @@ function SolveContent() {
       if (result.question) {
         setCurrentQuestion(result.question);
         setQuestionIndex(chapterProg.completedQuestionIds.length + 1);
-        setChat([{ role: "assistant", content: result.question.prompt }]);
+        setChat([{ role: "assistant", content: "题目在左边，你看一下，想一想第一步怎么做。" }]);
         setPageState("solving");
       } else {
         setPageState("chapter-cleared");
@@ -442,11 +483,11 @@ function SolveContent() {
           } catch {
             // warmup 失败不阻塞，直接进入做题
             setWarmupContent(null);
-            setChat([{ role: "assistant", content: result.question.prompt }]);
+            setChat([{ role: "assistant", content: "题目在左边，你看一下，想一想第一步怎么做。" }]);
             setPageState("solving");
           }
         } else {
-          setChat([{ role: "assistant", content: result.question.prompt }]);
+          setChat([{ role: "assistant", content: "题目在左边，你看一下，想一想第一步怎么做。" }]);
           setPageState("solving");
         }
       } else {
@@ -456,10 +497,96 @@ function SolveContent() {
     })();  // async IIFE end
   }, [chapterId]);
 
+  /* ---- 题目加载时调用 presolve，获取完整解题过程放到板书上 ---- */
+  useEffect(() => {
+    if (!currentQuestion) return;
+
+    (async () => {
+
+    const { cleanPrompt, optionContents } = extractOptionsFromPrompt(currentQuestion.prompt);
+    // 构建完整题文：prompt 中的选项（内嵌）或独立 options 数组都要传给 presolve
+    const inlineOptions = optionContents.length === 4
+      ? `\nA.${optionContents[0]}  B.${optionContents[1]}  C.${optionContents[2]}  D.${optionContents[3]}`
+      : "";
+    const standaloneOptions = (!inlineOptions && currentQuestion.options && currentQuestion.options.length > 0)
+      ? "\n" + currentQuestion.options.join("  ")
+      : "";
+    const questionText = cleanPrompt + inlineOptions + standaloneOptions;
+
+    // 先清空板书和缓存
+    setBoardSteps([]);
+    setDiagram(null);
+    presolvedRef.current = null;
+    setPresolveLoading(true);
+
+    fetch("/api/presolve", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        questionId: currentQuestion.id,
+        questionText,
+        answer: currentQuestion.answer,
+        questionType: currentQuestion.type,
+        moduleId: currentQuestion.chapterId,
+      }),
+    })
+      .then((res) => res.json())
+      .then(async (data) => {
+        setPresolveLoading(false);
+        if (data.error) {
+          console.error("[presolve] API returned error:", data.error, "— retrying once...");
+          // presolve 失败时自动重试一次
+          try {
+            const retryRes = await fetch("/api/presolve", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                questionId: currentQuestion.id + "-retry",
+                questionText,
+                answer: currentQuestion.answer,
+                questionType: currentQuestion.type,
+                moduleId: currentQuestion.chapterId,
+              }),
+            });
+            const retryData = await retryRes.json();
+            if (!retryData.error && retryData.steps?.length > 0) {
+              presolvedRef.current = retryData;
+              if (retryData.diagram) {
+                setDiagram(retryData.diagram);
+              }
+              console.log("[presolve] Retry succeeded, got", retryData.steps.length, "steps");
+              return;
+            }
+            console.error("[presolve] Retry also failed:", retryData.error);
+            setDiagram(null);
+          } catch {
+            console.error("[presolve] Retry fetch error");
+          }
+          return;
+        }
+        if (data.steps && data.steps.length > 0) {
+          // 不再一次性显示所有板书步骤，只缓存 presolve 数据
+          // 板书步骤会在学生做对一步后通过 [STEP:DONE|N] 标签逐步显示
+          presolvedRef.current = data;
+        }
+        if (data.diagram) {
+          setDiagram(data.diagram);
+        }
+      })
+      .catch((err) => {
+        console.error("[presolve] fetch error:", err);
+        setPresolveLoading(false);
+        setBoardSteps([]);
+        setDiagram(null);
+        presolvedRef.current = null;
+      });
+    })();
+  }, [currentQuestion?.id]);
+
   /* ---- 开始做题（warmup 后调用） ---- */
   const startSolving = useCallback(() => {
     if (!currentQuestion) return;
-    setChat([{ role: "assistant", content: currentQuestion.prompt }]);
+    setChat([{ role: "assistant", content: "好，我们开始。题目在左边，你想一想第一步怎么做。" }]);
     setPageState("solving");
   }, [currentQuestion]);
 
@@ -531,10 +658,12 @@ function SolveContent() {
       setStepCount((s) => s + 1);
       const currentStep = stepCount + 1;
 
-      const fullQuestionText =
-        currentQuestion.options && currentQuestion.options.length > 0
+      const { cleanPrompt, optionContents } = extractOptionsFromPrompt(currentQuestion.prompt);
+      const fullQuestionText = optionContents.length === 4
+        ? `${cleanPrompt}\nA.${optionContents[0]}  B.${optionContents[1]}  C.${optionContents[2]}  D.${optionContents[3]}`
+        : (currentQuestion.options && currentQuestion.options.length > 0
           ? `${currentQuestion.prompt}\n${currentQuestion.options.join("\n")}`
-          : currentQuestion.prompt;
+          : currentQuestion.prompt);
 
       try {
         const res = await fetch("/api/guide", {
@@ -551,6 +680,8 @@ function SolveContent() {
             chapterId,
             imageUrl: currentQuestion.imageUrl ?? "",
             studentImageUrl: sendingImage || undefined,
+            // 传入 presolve 数据，guide API 以板书为锚引导
+            presolveData: presolvedRef.current || undefined,
           }),
         });
 
@@ -565,20 +696,60 @@ function SolveContent() {
           setGeometryAnnotations((prev) => [...prev, ...annotations]);
         }
 
-        // Parse [STEP:n|content] tag for board
+        // Parse [STEP:n|content] tag for board (fallback mechanism)
         const { cleanReply: stepCleanReply, step: boardStep } = parseStepTag(reply);
         reply = stepCleanReply;
         if (boardStep) {
           setBoardSteps((prev) => {
-            // Replace if same step number, otherwise append
             const exists = prev.findIndex(s => s.stepNumber === boardStep.stepNumber);
             if (exists >= 0) {
-              const updated = [...prev];
-              updated[exists] = boardStep;
-              return updated;
+              return prev; // 已有该步骤，不重复添加
             }
+            // 优先用 presolve 缓存中的完整步骤内容
+            if (presolvedRef.current?.steps?.[boardStep.stepNumber - 1]) {
+              const presolvedStep = presolvedRef.current.steps[boardStep.stepNumber - 1];
+              return [...prev, {
+                stepNumber: boardStep.stepNumber,
+                content: presolvedStep.expression || presolvedStep.result || boardStep.content,
+                isCorrect: true,
+                timestamp: Date.now(),
+              }];
+            }
+            // fallback 到标签中的内容
             return [...prev, boardStep];
           });
+        }
+
+        // 识别板书同步标签 [STEP:DONE|N]（优先级高于 parseStepTag）
+        const doneMatch = reply.match(/\[STEP:DONE\|(\d+)\]/);
+        if (doneMatch) {
+          const completedStep = parseInt(doneMatch[1]);
+          reply = reply.replace(/\[STEP:DONE\|\d+\]/, "").trimEnd();
+
+          // 从 presolve 缓存中取出步骤内容，更新板书
+          if (presolvedRef.current?.steps) {
+            const newSteps: BoardStep[] = [];
+            for (let i = 1; i <= completedStep; i++) {
+              const step = presolvedRef.current.steps[i - 1];
+              if (step) {
+                newSteps.push({
+                  stepNumber: i,
+                  content: step.expression || step.result || "",
+                  isCorrect: true,
+                  timestamp: Date.now(),
+                  stepGeometry: step.stepGeometry,
+                });
+              }
+            }
+            if (newSteps.length > 0) {
+              setBoardSteps(prev => {
+                // 只添加还没显示的步骤
+                const existing = new Set(prev.map(s => s.stepNumber));
+                const toAdd = newSteps.filter(s => !existing.has(s.stepNumber));
+                return [...prev, ...toAdd];
+              });
+            }
+          }
         }
 
         // Detect errors in AI reply (student got something wrong)
@@ -590,6 +761,11 @@ function SolveContent() {
         }
 
         setChat((prev) => [...prev, { role: "assistant", content: reply }]);
+
+        // 当 guide API 返回 matchedStep 时，更新 stepCount 让后续引导从正确位置推进
+        if (data.matchedStep && data.matchedStep > stepCount) {
+          setStepCount(data.matchedStep);
+        }
 
         // Detect completion
         if (
@@ -653,10 +829,9 @@ function SolveContent() {
   /*  Next question: use recommendation engine                         */
   /* ---------------------------------------------------------------- */
   const nextQuestion = useCallback(async () => {
-    const newCompletedCount = completedCount + 1;
-
+    // completedCount 已在 AI 完成时更新，直接用当前值
     // 每4题触发小回顾
-    if (newCompletedCount > 0 && newCompletedCount % 4 === 0) {
+    if (completedCount > 0 && completedCount % 4 === 0) {
       const knowledgePoints = buildKnowledgePoints(chapterId);
       const chapterQuestions = buildChapterQuestions(chapterId);
       const chapterProg = getChapterProgress(chapterId);
@@ -669,6 +844,24 @@ function SolveContent() {
       };
       const coverage = getChapterCoverage(chapterId, knowledgePoints, compatibleProgress);
       setCoveragePercent(coverage.percentage);
+
+      // 收集最近4题的做题详情
+      const recentIds = (chapterProg?.completedQuestionIds ?? []).slice(-4);
+      const allQuestions = Object.values(chapterQuestions).flat();
+      const recentQuestions = allQuestions.filter((q) => recentIds.includes(q.id));
+      const questionSummaries = recentQuestions.map((q) => ({
+        id: q.id,
+        prompt: q.prompt?.substring(0, 120),
+        type: q.type,
+        difficulty: q.difficulty,
+        knowledgePointIds: q.knowledgePointIds ?? [],
+      }));
+
+      // 收集最近4题涉及的知识点名称
+      const coveredKPIds = chapterProg?.coveredKnowledgePointIds ?? [];
+      const coveredKPNames = knowledgePoints
+        .filter((kp) => coveredKPIds.includes(kp.id))
+        .map((kp) => kp.name);
 
       setPageState("mini-review");
       setProcessing(true);
@@ -685,8 +878,10 @@ function SolveContent() {
             errorCount: errorCountRef.current,
             errorSteps: errorStepsRef.current,
             chapterName,
-            completedCount: newCompletedCount,
+            completedCount,
             coveragePercent: coverage.percentage,
+            questionSummaries,
+            coveredKnowledgePoints: coveredKPNames,
           }),
         });
         if (res.ok) {
@@ -734,7 +929,7 @@ function SolveContent() {
       setBoardSteps([]); // 切换题目时清空板书
       errorCountRef.current = 0;
       errorStepsRef.current = [];
-      setChat([{ role: "assistant", content: result.question.prompt }]);
+      setChat([{ role: "assistant", content: "下一题在左边，看看怎么做。" }]);
       setPageState("solving");
     } else {
       // No more questions
@@ -776,9 +971,9 @@ function SolveContent() {
               </div>
               <div className="rounded-xl border border-gray-200 bg-white p-5">
                 {warmupContent ? (
-                  <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-wrap">
-                    {warmupContent}
-                  </p>
+                  <div className="text-sm text-gray-700 leading-relaxed">
+                    <MathContent text={warmupContent} />
+                  </div>
                 ) : (
                   <div className="flex items-center gap-2 text-sm text-gray-400">
                     <div className="w-4 h-4 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin" />
@@ -869,7 +1064,7 @@ function SolveContent() {
                   errorCountRef.current = 0;
                   errorStepsRef.current = [];
                   setMiniReviewContent(null);
-                  setChat([{ role: "assistant", content: result.question.prompt }]);
+                  setChat([{ role: "assistant", content: "下一题在左边，看看怎么做。" }]);
                 } else {
                   setPageState("chapter-cleared");
                 }
@@ -1090,21 +1285,54 @@ function SolveContent() {
             <div className="text-xs text-gray-400 mb-2 font-medium">
               题目
             </div>
-            <div className="text-sm text-gray-800 leading-relaxed">
-              <MathContent text={currentQuestion.prompt} />
-            </div>
-            {currentQuestion.options && currentQuestion.options.length > 0 && (
-              <div className="mt-3 space-y-1.5">
-                {currentQuestion.options.map((opt, i) => (
-                  <div
-                    key={i}
-                    className="text-sm text-gray-700 pl-2 border-l-2 border-gray-200"
-                  >
-                    <MathContent text={opt} />
+            {/* Extract embedded options from prompt (some data files have options inside prompt) */}
+            {(() => {
+              const { cleanPrompt, optionContents } = extractOptionsFromPrompt(currentQuestion.prompt);
+              const hasExtracted = optionContents.length === 4;
+              const opts = hasExtracted
+                ? optionContents
+                : (currentQuestion.options ?? []);
+              const labels = ["A", "B", "C", "D"];
+
+              return (
+                <>
+                  <div className="text-sm text-gray-800 leading-relaxed">
+                    <MathContent text={cleanPrompt} />
                   </div>
-                ))}
-              </div>
-            )}
+                  {opts.length > 0 && (
+                    <div className="mt-3 grid grid-cols-1 gap-2">
+                      {opts.map((opt, i) => {
+                        const label = labels[i] ?? String(i + 1);
+                        const isLetterOnly = /^[A-Da-d]$/.test(opt.trim());
+                        return (
+                          <button
+                            key={i}
+                            onClick={() => {
+                              if (!processing && pageState === "solving") {
+                                sendMessage(label, false);
+                              }
+                            }}
+                            disabled={processing || pageState !== "solving"}
+                            className="flex items-center gap-3 text-left px-3 py-2.5 rounded-lg border border-gray-200 bg-white hover:bg-indigo-50 hover:border-indigo-200 hover:shadow-sm disabled:opacity-50 disabled:cursor-not-allowed transition-all active:scale-[0.98]"
+                          >
+                            <span className="shrink-0 w-7 h-7 rounded-full bg-indigo-100 text-indigo-600 text-xs font-bold flex items-center justify-center">
+                              {label}
+                            </span>
+                            <span className="text-sm text-gray-700 leading-relaxed">
+                              {isLetterOnly ? (
+                                <span className="text-gray-400">选项 {label}</span>
+                              ) : (
+                                <MathContent text={opt} />
+                              )}
+                            </span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
+                </>
+              );
+            })()}
             {currentQuestion.imageUrl && geometryAnnotations.length === 0 && (
               <div className="mt-4">
                 <img
@@ -1136,13 +1364,30 @@ function SolveContent() {
               <PenLine size={14} className="text-indigo-500" />
               <span className="text-xs text-gray-500 font-medium">解题板书</span>
             </div>
+            {diagram && (
+              <div style={{ marginBottom: 16, padding: 12, background: "#f8fafc", borderRadius: 8, border: "1px solid #e2e8f0" }}>
+                <div style={{ fontSize: 12, color: "#64748b", marginBottom: 8, fontWeight: 500 }}>条件图形</div>
+                <GeometryCanvas diagram={diagram} />
+                {diagram.annotations && diagram.annotations.length > 0 && (
+                  <div style={{ marginTop: 8, fontSize: 12, color: "#475569" }}>
+                    {diagram.annotations.join("，")}
+                  </div>
+                )}
+              </div>
+            )}
             <div className="flex-1 overflow-y-auto px-4 lg:px-6 pb-4">
               {boardSteps.length === 0 ? (
                 <div className="flex flex-col items-center justify-center py-8 text-gray-300">
                   <PenLine size={24} className="mb-2" />
-                  <p className="text-xs text-gray-400 text-center leading-relaxed">
-                    完成正确步骤后将自动记录在这里
-                  </p>
+                  {presolveLoading ? (
+                    <p className="text-xs text-indigo-400 text-center leading-relaxed">
+                      正在生成解题板书...
+                    </p>
+                  ) : (
+                    <p className="text-xs text-gray-400 text-center leading-relaxed">
+                      完成正确步骤后将自动记录在这里
+                    </p>
+                  )}
                 </div>
               ) : (
                 <div className="space-y-0">
@@ -1167,6 +1412,12 @@ function SolveContent() {
                             </p>
                           )}
                         </div>
+                        {/* 数形结合：步骤对应的小图形 */}
+                        {step.stepGeometry && (
+                          <div className="mt-2 bg-white border border-gray-100 rounded-lg p-2 shadow-sm">
+                            <GeometryCanvas stepGeometry={step.stepGeometry} />
+                          </div>
+                        )}
                       </div>
                     </div>
                   ))}

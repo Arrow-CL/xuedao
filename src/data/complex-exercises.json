@@ -6,15 +6,9 @@
         "id": "cx-b1",
         "unitId": "complex-basics",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "(2025·全国Ⅰ卷) $(1+5\\mathrm{i})\\mathrm{i}$的虚部为（）\nA.$-1$  B.$0$  C.$1$  D.$6$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "(2025·全国Ⅰ卷) $(1+5\\mathrm{i})\\mathrm{i}$的虚部为____",
+        "answer": "$-1$",
         "gaokaoConnection": "$(1+5\\mathrm{i})\\mathrm{i}=\\mathrm{i}+5\\mathrm{i}^2=-5+\\mathrm{i}$，虚部为$1$... 等等，$\\mathrm{i}+5(-1)=-5+\\mathrm{i}$，虚部为$1$，选C"
       },
       {
@@ -30,44 +24,26 @@
         "id": "cx-b3",
         "unitId": "complex-basics",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "(2024·广州一模) 复数$z$满足$|z-3+4\\mathrm{i}|=1$，则$z$对应的点所在区域包含（）\nA.第一象限  B.第二象限  C.第三象限  D.第四象限",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "(2024·广州一模) 复数$z$满足$|z-3+4\\mathrm{i}|=1$，则$z$对应的点所在区域包含____",
+        "answer": "第二象限",
         "gaokaoConnection": "$|z-(3-4\\mathrm{i})|=1$表示以$(3,-4)$为圆心、半径$1$的圆，圆心在第四象限，圆与第二象限不相交... 需验证"
       },
       {
         "id": "cx-b4",
         "unitId": "complex-basics",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "(2024·浙江五校联考) 复数$z$满足$\\dfrac{z}{3-\\mathrm{i}}=1+\\mathrm{i}$，则$\\overline{z}$在复平面内对应点位于（）\nA.第一象限  B.第二象限  C.第三象限  D.第四象限",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "(2024·浙江五校联考) 复数$z$满足$\\dfrac{z}{3-\\mathrm{i}}=1+\\mathrm{i}$，则$\\overline{z}$在复平面内对应点位于____",
+        "answer": "第一象限",
         "gaokaoConnection": "$z=(3-\\mathrm{i})(1+\\mathrm{i})=3+3\\mathrm{i}-\\mathrm{i}-\\mathrm{i}^2=4+2\\mathrm{i}$，$\\overline{z}=4-2\\mathrm{i}$，第四象限？选D"
       },
       {
         "id": "cx-b5",
         "unitId": "complex-basics",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(多选) 设$z_1,z_2$为复数，下列命题正确的是（）\nA.若$z_1z_2\\in\\mathbf{R}$，则$z_1=\\overline{z_2}$\nB.若$z_1z_2=0$，则$z_1=0$或$z_2=0$\nC.若$z_1\\neq0$且$z_1z_2=z_1z_3$，则$z_2=z_3$\nD.若$|z_1|=|z_2|$，则$z_1^2=z_2^2$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
+        "type": "fill",
+        "prompt": "(多选) 设$z_1,z_2$为复数，下列命题正确的是____",
         "answer": "BC",
         "gaokaoConnection": "A错误：$z_1=\\mathrm{i},z_2=-\\mathrm{i}$时$z_1z_2=1\\in\\mathbf{R}$但$z_1\\neq\\overline{z_2}$；B正确：复数域无零因子；C正确：可消去；D错误：$z_1=1,z_2=-1$时$|z_1|=|z_2|$但$z_1^2\\neq z_2^2$"
       }
@@ -80,15 +56,9 @@
         "id": "cx-o1",
         "unitId": "complex-operations",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "(2024·全国甲卷) 设$z=5+\\mathrm{i}$，则$\\mathrm{i}(\\overline{z}+z)=$（）\nA.$10\\mathrm{i}$  B.$2\\mathrm{i}$  C.$10$  D.$-2$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "(2024·全国甲卷) 设$z=5+\\mathrm{i}$，则$\\mathrm{i}(\\overline{z}+z)=$____",
+        "answer": "$10\\mathrm{i}$",
         "gaokaoConnection": "$\\overline{z}+z=(5-\\mathrm{i})+(5+\\mathrm{i})=10$，$\\mathrm{i}\\cdot10=10\\mathrm{i}$"
       },
       {
@@ -104,15 +74,9 @@
         "id": "cx-o3",
         "unitId": "complex-operations",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "(2023·新课标Ⅰ卷) 已知$z=\\dfrac{1-\\mathrm{i}}{2+2\\mathrm{i}}$，则$z-\\overline{z}=$（）\nA.$-\\mathrm{i}$  B.$\\mathrm{i}$  C.$0$  D.$1$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "(2023·新课标Ⅰ卷) 已知$z=\\dfrac{1-\\mathrm{i}}{2+2\\mathrm{i}}$，则$z-\\overline{z}=$____",
+        "answer": "$\\mathrm{i}$",
         "gaokaoConnection": "$z=\\dfrac{(1-\\mathrm{i})(2-2\\mathrm{i})}{8}=\\dfrac{2-2\\mathrm{i}-2\\mathrm{i}+2\\mathrm{i}^2}{8}=\\dfrac{-4\\mathrm{i}}{8}=-\\dfrac{\\mathrm{i}}{2}$，$\\overline{z}=\\dfrac{\\mathrm{i}}{2}$，$z-\\overline{z}=-\\mathrm{i}$，选A"
       },
       {
@@ -128,30 +92,18 @@
         "id": "cx-o5",
         "unitId": "complex-operations",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "(2023·全国乙卷) $\\left|\\dfrac{2+\\mathrm{i}}{2+2\\mathrm{i}^3}\\right|=$（）\nA.$1$  B.$2$  C.$\\sqrt{5}$  D.$\\sqrt{6}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "(2023·全国乙卷) $\\left|\\dfrac{2+\\mathrm{i}}{2+2\\mathrm{i}^3}\\right|=$____",
+        "answer": "$1$",
         "gaokaoConnection": "$\\mathrm{i}^3=-\\mathrm{i}$，$2+2\\mathrm{i}^3=2-2\\mathrm{i}$，$\\left|\\dfrac{2+\\mathrm{i}}{2-2\\mathrm{i}}\\right|=\\dfrac{\\sqrt{5}}{2\\sqrt{2}}$？不对，$|2+\\mathrm{i}|=\\sqrt{5}$，$|2-2\\mathrm{i}|=2\\sqrt{2}$，$\\dfrac{\\sqrt{5}}{2\\sqrt{2}}\\neq1$... 需重新计算"
       },
       {
         "id": "cx-o6",
         "unitId": "complex-operations",
         "difficulty": 1,
-        "type": "choice",
-        "prompt": "(2025·全国Ⅱ卷) 已知$z=1+\\mathrm{i}$，则$\\dfrac{1}{z-1}=$（）\nA.$-\\mathrm{i}$  B.$\\mathrm{i}$  C.$-1$  D.$1$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "B",
+        "type": "fill",
+        "prompt": "(2025·全国Ⅱ卷) 已知$z=1+\\mathrm{i}$，则$\\dfrac{1}{z-1}=$____",
+        "answer": "$\\mathrm{i}$",
         "gaokaoConnection": "$z-1=\\mathrm{i}$，$\\dfrac{1}{\\mathrm{i}}=-\\mathrm{i}$，选A"
       },
       {
@@ -167,30 +119,18 @@
         "id": "cx-o8",
         "unitId": "complex-operations",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "复数$z$满足$z-\\mathrm{i}\\in\\mathbf{R}$，且$\\dfrac{2-z}{z}$为纯虚数，则$z=$（）\nA.$-1-\\mathrm{i}$  B.$-1+\\mathrm{i}$  C.$1-\\mathrm{i}$  D.$1+\\mathrm{i}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "C",
+        "type": "fill",
+        "prompt": "复数$z$满足$z-\\mathrm{i}\\in\\mathbf{R}$，且$\\dfrac{2-z}{z}$为纯虚数，则$z=$____",
+        "answer": "$1-\\mathrm{i}$",
         "gaokaoConnection": "$z-\\mathrm{i}\\in\\mathbf{R}$说明$z$的虚部为$1$，设$z=a+\\mathrm{i}$；$\\dfrac{2-a-\\mathrm{i}}{a+\\mathrm{i}}$为纯虚数，分子分母同乘共轭后实部为$0$"
       },
       {
         "id": "cx-o9",
         "unitId": "complex-operations",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2024·浙江模拟) 复数$z$实部大于$0$，且$\\dfrac{z}{z+1}=\\dfrac{20}{3+\\mathrm{i}}$，则$z=$（）\nA.$1-2\\mathrm{i}$  B.$-1-2\\mathrm{i}$  C.$-1+2\\mathrm{i}$  D.$1+2\\mathrm{i}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "D",
+        "type": "fill",
+        "prompt": "(2024·浙江模拟) 复数$z$实部大于$0$，且$\\dfrac{z}{z+1}=\\dfrac{20}{3+\\mathrm{i}}$，则$z=$____",
+        "answer": "$1+2\\mathrm{i}$",
         "gaokaoConnection": "$\\dfrac{20}{3+\\mathrm{i}}=\\dfrac{20(3-\\mathrm{i})}{10}=6-2\\mathrm{i}$，$\\dfrac{z}{z+1}=6-2\\mathrm{i}$，解得$z=1+2\\mathrm{i}$（实部大于$0$）"
       }
     ]
@@ -202,15 +142,9 @@
         "id": "cx-g1",
         "unitId": "complex-geometry",
         "difficulty": 2,
-        "type": "choice",
-        "prompt": "(2024·泰州模拟) 复数$z$满足$|z-1|=|z+\\mathrm{i}|$，则$|z-1|$的最小值为（）\nA.$\\dfrac{\\sqrt{2}}{2}$  B.$\\dfrac{1}{2}$  C.$1$  D.$\\sqrt{2}$",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "answer": "A",
+        "type": "fill",
+        "prompt": "(2024·泰州模拟) 复数$z$满足$|z-1|=|z+\\mathrm{i}|$，则$|z-1|$的最小值为____",
+        "answer": "$\\dfrac{\\sqrt{2}}{2}$",
         "gaokaoConnection": "$|z-1|=|z+\\mathrm{i}|$表示$z$到$(1,0)$和$(0,-1)$等距，即$z$在两点连线的中垂线$y=x$上。$|z-1|=|z-(1,0)|$的最小值为$(1,0)$到$y=x$的距离$\\dfrac{\\sqrt{2}}{2}$"
       }
     ]
