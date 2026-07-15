@@ -245,13 +245,12 @@ export default function DemoPage() {
           setCurrentDiagram(data.currentDiagram);
         }
 
-        // 知识点片段管理：答疑模式显示，正常解题且有进展时清除
+        // 知识点片段管理：答疑模式显示，正常解题进展时更新（不清除，保留到下一步）
         if (data.isHelpMode && data.knowledgeFragment) {
           setKnowledgeFragments([data.knowledgeFragment]);
-        } else if (data.matchedNodeId > 0 && !data.isHelpMode) {
-          // 学生答对了新节点，清除答疑知识点弹窗，重置helpCount
-          setKnowledgeFragments([]);
-          setHelpCount(0);
+        } else if (data.knowledgeFragment && !data.isHelpMode) {
+          // 有新知识点时更新（替换旧的），没有新知识点时保留当前
+          setKnowledgeFragments([data.knowledgeFragment]);
         }
 
         // 求助时递增 helpCount

@@ -406,7 +406,19 @@ ${allKP.join("、")}
     }
 
     // 5. 检测是否完成（AI 回复中包含【完成】标记）
-    const isCompleted = reply.includes("【完成】");
+    //    服务端二次校验：即使 AI 输出【完成】，也必须确认所有关键节点都已解锁
+    const aiSaysCompleted = reply.includes("【完成】");
+    const fullSolution = getLocalSolution(questionId);
+    const totalNodeCount = fullSolution?.keyNodes.length || 0;
+    const allNodesUnlocked = matchResult.unlockedNodeIds.length >= totalNodeCount;
+    const isCompleted = aiSaysCompleted && allNodesUnlocked;
+
+    // 如果 AI 误判完成（节点没走完），截掉【完成】标记，追加引导
+    if (aiSaysCompleted && !allNodesUnlocked) {
+      const missingCount = totalNodeCount - matchResult.unlockedNodeIds.length;
+      reply = reply.replace(/【完成】[\s\S]*$/, "").trim();
+      reply += `\n\n还有${missingCount}个关键步骤没走完，咱们继续把思路理清楚。`;
+    }
     let finalBoardLines = matchResult.boardLines;
     let finalUnlockedNodeIds = matchResult.unlockedNodeIds;
     let finalProgress = matchResult.progress;
