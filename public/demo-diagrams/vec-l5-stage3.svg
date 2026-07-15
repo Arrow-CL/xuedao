@@ -1,0 +1,55 @@
+<svg viewBox="0 0 540 340" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-purple" viewBox="0 0 14 14" refX="13" refY="7" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M1 2 L13 7 L1 12 Z" fill="#7C3AED"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 14 14" refX="13" refY="7" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M1 2 L13 7 L1 12 Z" fill="#DC2626"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 14 14" refX="13" refY="7" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M1 2 L13 7 L1 12 Z" fill="#059669"/>
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="540" height="340" fill="#FAFAFA" rx="10"/>
+
+  <!-- 平行四边形（淡色底）
+       A(80,300)  B(380,300)  C(460,80)  D(160,80) -->
+  <line x1="80" y1="300" x2="380" y2="300" stroke="#D1D5DB" stroke-width="1.5"/>
+  <line x1="380" y1="300" x2="460" y2="80" stroke="#D1D5DB" stroke-width="1.5"/>
+  <line x1="460" y1="80" x2="160" y2="80" stroke="#D1D5DB" stroke-width="1.5"/>
+  <line x1="160" y1="80" x2="80" y2="300" stroke="#D1D5DB" stroke-width="1.5"/>
+
+  <!-- AC对角线（淡色虚线） -->
+  <line x1="80" y1="300" x2="460" y2="80" stroke="#D1D5DB" stroke-width="1.2" stroke-dasharray="8 5"/>
+
+  <!-- 向量 AB（紫色基底，从A到B） -->
+  <line x1="80" y1="300" x2="380" y2="300" stroke="#7C3AED" stroke-width="2.5" marker-end="url(#arrow-purple)"/>
+  <text x="210" y="292" font-family="serif" font-size="15" font-weight="bold" fill="#7C3AED" font-style="italic">AB</text>
+
+  <!-- 向量 AD（紫色基底，从A到D） -->
+  <line x1="80" y1="300" x2="160" y2="80" stroke="#7C3AED" stroke-width="2.5" marker-end="url(#arrow-purple)"/>
+  <text x="100" y="195" font-family="serif" font-size="15" font-weight="bold" fill="#7C3AED" font-style="italic">AD</text>
+
+  <!-- 向量 AF（绿色，从A到F(207,227)） -->
+  <line x1="80" y1="300" x2="207" y2="227" stroke="#059669" stroke-width="2.5" marker-end="url(#arrow-green)"/>
+  <text x="130" y="260" font-family="serif" font-size="14" font-weight="bold" fill="#059669" font-style="italic">AF</text>
+
+  <!-- 向量 DF（红色，核心结果，从D(160,80)到F(207,227)） -->
+  <line x1="160" y1="80" x2="207" y2="227" stroke="#DC2626" stroke-width="3" marker-end="url(#arrow-red)"/>
+  <text x="212" y="160" font-family="serif" font-size="16" font-weight="bold" fill="#DC2626" font-style="italic">DF</text>
+
+  <!-- 顶点标签 -->
+  <text x="60" y="318" font-family="serif" font-size="19" font-weight="bold" fill="#1F2937" font-style="italic">A</text>
+  <text x="388" y="318" font-family="serif" font-size="19" font-weight="bold" fill="#1F2937" font-style="italic">B</text>
+  <text x="468" y="78" font-family="serif" font-size="19" font-weight="bold" fill="#1F2937" font-style="italic">C</text>
+  <text x="140" y="72" font-family="serif" font-size="19" font-weight="bold" fill="#1F2937" font-style="italic">D</text>
+
+  <!-- F点 -->
+  <circle cx="207" cy="227" r="6" fill="#059669"/>
+  <text x="178" y="222" font-family="serif" font-size="16" font-weight="bold" fill="#059669" font-style="italic">F</text>
+
+  <!-- 最终答案 -->
+  <text x="280" y="325" font-family="sans-serif" font-size="16" font-weight="bold" fill="#DC2626">DF = ⅓AB − ⅔AD</text>
+</svg>

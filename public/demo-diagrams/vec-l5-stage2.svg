@@ -1,0 +1,55 @@
+<svg viewBox="0 0 540 340" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-green" viewBox="0 0 14 14" refX="13" refY="7" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M1 2 L13 7 L1 12 Z" fill="#059669"/>
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="540" height="340" fill="#FAFAFA" rx="10"/>
+
+  <!-- 平行四边形 ABCD
+       A(80,300)  B(380,300)  C(460,80)  D(160,80) -->
+  <line x1="80" y1="300" x2="380" y2="300" stroke="#374151" stroke-width="2"/>
+  <line x1="380" y1="300" x2="460" y2="80" stroke="#374151" stroke-width="2"/>
+  <line x1="460" y1="80" x2="160" y2="80" stroke="#374151" stroke-width="2"/>
+  <line x1="160" y1="80" x2="80" y2="300" stroke="#374151" stroke-width="2"/>
+
+  <!-- BE连线（E(120,190) 到 B(380,300)） -->
+  <line x1="120" y1="190" x2="380" y2="300" stroke="#059669" stroke-width="2.2"/>
+
+  <!-- AC对角线（虚线）A(80,300)到C(460,80) -->
+  <line x1="80" y1="300" x2="460" y2="80" stroke="#6B7280" stroke-width="1.5" stroke-dasharray="8 5"/>
+
+  <!-- 交点F：BE与AC的交点
+       BE: (120,190)→(380,300), AC: (80,300)→(460,80)
+       BE参数: x=120+260t, y=190+110t
+       AC参数: x=80+380s, y=300-220s
+       解得 t=1/3, s=2/11... 不对，用相似三角形验证
+       △AEF∽△CBF, AE=1/2AD=1/2BC, 所以AF:FC=AE:BC=1:2
+       F分AC为AF:FC=1:2, F=( (2*80+460)/3, (2*300+80)/3 )=(620/3,680/3)=(206.7,226.7)
+       验证F在BE上: BE参数t=(206.7-120)/260=86.7/260=0.333=1/3, y=190+110/3=226.7 ✔ -->
+  <circle cx="207" cy="227" r="6" fill="#059669"/>
+  <text x="178" y="222" font-family="serif" font-size="18" font-weight="bold" fill="#059669" font-style="italic">F</text>
+
+  <!-- 相似三角形高亮 △AEF -->
+  <polygon points="80,300 120,190 207,227" fill="#059669" fill-opacity="0.06" stroke="#059669" stroke-width="1.2"/>
+
+  <!-- 相似三角形高亮 △CBF -->
+  <polygon points="380,300 460,80 207,227" fill="#059669" fill-opacity="0.06" stroke="#059669" stroke-width="1.2"/>
+
+  <!-- 顶点标签 -->
+  <text x="60" y="318" font-family="serif" font-size="19" font-weight="bold" fill="#1F2937" font-style="italic">A</text>
+  <text x="388" y="318" font-family="serif" font-size="19" font-weight="bold" fill="#1F2937" font-style="italic">B</text>
+  <text x="468" y="78" font-family="serif" font-size="19" font-weight="bold" fill="#1F2937" font-style="italic">C</text>
+  <text x="140" y="72" font-family="serif" font-size="19" font-weight="bold" fill="#1F2937" font-style="italic">D</text>
+
+  <!-- E点 -->
+  <circle cx="120" cy="190" r="5" fill="#7C3AED"/>
+  <text x="90" y="188" font-family="serif" font-size="17" font-weight="bold" fill="#7C3AED" font-style="italic">E</text>
+
+  <!-- 比例标注 AF:FC = 1:2 -->
+  <text x="115" y="268" font-family="sans-serif" font-size="12" font-weight="600" fill="#059669">AF</text>
+  <text x="340" y="160" font-family="sans-serif" font-size="12" font-weight="600" fill="#059669">FC</text>
+  <text x="220" y="320" font-family="sans-serif" font-size="13" font-weight="600" fill="#059669">△AEF ∽ △CBF，AF : FC = 1 : 2</text>
+</svg>

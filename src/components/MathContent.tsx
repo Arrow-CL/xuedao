@@ -51,28 +51,14 @@ function segText(t: string): { isMath: boolean; text: string }[] {
       continue;          // $ 本身不加入 cur
     }
 
-    var m = isMathChar(ch);
-
-    // 关键：花括号内强制为数学字符（保护 \text{中文}、\boldsymbol{x} 等）
-    if (braceDepth > 0 && mode) m = true;
-
-    if (m !== mode && cur.length > 0) {
-      r.push({ isMath: mode, text: cur });
-      cur = "";
-    }
-
-    // 切换到数学模式时重置花括号深度
-    if (!mode) braceDepth = 0;
-    mode = m;
-    cur += ch;
-
-    // 花括号深度追踪（数学模式内）
+    // 在 $...$ 内部，跟踪花括号深度（保护 \text{中文} 等）
     if (mode) {
       var prev = cur.length >= 2 ? cur[cur.length - 2] : null;
-      // \{ 和 \} 是转义的花括号，不计入深度
       if (ch === "{" && prev !== "\\") braceDepth++;
       else if (ch === "}" && prev !== "\\") braceDepth = Math.max(0, braceDepth - 1);
     }
+
+    cur += ch;
   }
   if (cur) r.push({ isMath: mode, text: cur });
   return r;

@@ -1,0 +1,55 @@
+[
+  {
+    "questionId": "gk-2024-xkb1-3",
+    "standardProcess": "∵ $\\boldsymbol{b}\\perp (\\boldsymbol{b}-4\\boldsymbol{a})$\\n∴ $\\boldsymbol{b}\\cdot(\\boldsymbol{b}-4\\boldsymbol{a})=0$\\n$\\boldsymbol{b}-4\\boldsymbol{a}=(2,x-4)$\\n$2\\times 2+x(x-4)=0$\\n$x^2-4x+4=0$\\n$(x-2)^2=0$\\n∴ $x=2$",
+    "keyNodes": [
+      { "nodeId": 1, "lines": [0, 1], "keywords": ["垂直", "⊥", "b⊥", "数量积为零", "点积为零", "b·(b-4a)=0", "点乘"], "hint": "题目说b⊥(b-4a)，两向量垂直你想到了什么？", "knowledgeFragment": "向量垂直判定定理：若$\\boldsymbol{m}\\perp\\boldsymbol{n}$，则数量积$\\boldsymbol{m}\\cdot\\boldsymbol{n}=0$；坐标运算：$\\boldsymbol{m}=(x_1,y_1),\\boldsymbol{n}=(x_2,y_2)$，满足$x_1x_2+y_1y_2=0$。" },
+      { "nodeId": 2, "lines": [2], "keywords": ["坐标", "b-4a", "2,x-4", "向量坐标", "4a"], "hint": "接下来把b-4a的坐标算出来。", "knowledgeFragment": "向量坐标运算：已知$\\boldsymbol{a}=(x_1,y_1)$，$\\boldsymbol{b}=(x_2,y_2)$，则$k\\boldsymbol{a}=(kx_1,ky_1)$，$\\boldsymbol{b}-k\\boldsymbol{a}=(x_2-kx_1,y_2-ky_1)$。" },
+      { "nodeId": 3, "lines": [3], "keywords": ["代入", "数量积", "方程", "2×2", "x(x-4)", "x²-4x+4"], "hint": "把坐标代入数量积公式，得到关于x的方程。", "knowledgeFragment": "数量积坐标公式：$\\boldsymbol{a}\\cdot\\boldsymbol{b}=x_1x_2+y_1y_2$，将两个向量坐标对应相乘再相加。" },
+      { "nodeId": 4, "lines": [4, 5], "keywords": ["配方", "化简", "完全平方", "x²-4x", "(x-2)²", "(x-2)²=0"], "hint": "展开整理，看看能不能因式分解。", "knowledgeFragment": "完全平方公式：$(a-b)^2=a^2-2ab+b^2$，本题$x^2-4x+4$正好配成$(x-2)^2$。" },
+      { "nodeId": 5, "lines": [6], "keywords": ["x=2", "答案", "最终结果", "x等于2"], "hint": "解这个方程，x等于多少？" }
+    ],
+    "finalAnswer": "x=2",
+    "knowledgePoints": ["向量垂直⇔数量积为零", "向量坐标运算", "数量积坐标公式", "完全平方公式"]
+  },
+  {
+    "questionId": "gk-2022-xkb1-3",
+    "standardProcess": "∵ $BD=2DA$\\n∴ $\\overrightarrow{AD}=\\dfrac13\\overrightarrow{AB}$\\n$\\overrightarrow{CD}=\\overrightarrow{CA}+\\overrightarrow{AD}=\\boldsymbol{m}+\\dfrac13\\overrightarrow{AB}=\\boldsymbol{n}$\\n整理得 $\\overrightarrow{AB}=3\\boldsymbol{n}-3\\boldsymbol{m}$\\n$\\overrightarrow{CB}=\\overrightarrow{CA}+\\overrightarrow{AB}$\\n$\\;\\;\\;\\;=\\boldsymbol{m}+3\\boldsymbol{n}-3\\boldsymbol{m}=-2\\boldsymbol{m}+3\\boldsymbol{n}$",
+    "keyNodes": [
+      { "nodeId": 1, "lines": [0, 1], "keywords": ["BD=2DA", "比例", "1/3", "AD=1/3AB", "向量比例"], "hint": "BD=2DA说明D把AB分成几比几？AD占AB的几分之几？", "diagram": "/demo-diagrams/gk-2022-xkb1-3.svg" },
+      { "nodeId": 2, "lines": [2], "keywords": ["CD=CA+AD", "m+n", "三角形法则", "向量加法"], "hint": "题目给了CD=n，CD也可以写成CA+AD，把这两个等式联立，能解出AB吗？", "knowledgeFragment": "向量加法三角形法则：$\\overrightarrow{CD}=\\overrightarrow{CA}+\\overrightarrow{AD}$，又已知$\\overrightarrow{CD}=\\boldsymbol{n}$，联立得$\\boldsymbol{m}+\\overrightarrow{AD}=\\boldsymbol{n}$，从而反解$\\overrightarrow{AB}$。" },
+      { "nodeId": 3, "lines": [3], "keywords": ["AB=3n-3m", "整理", "移项", "3(n-m)"], "hint": "把AB单独解出来，用m和n表示。" },
+      { "nodeId": 4, "lines": [4], "keywords": ["CB=CA+AB", "向量加法"], "hint": "要求CB，先用向量加法三角形法则把CB用CA和AB表示出来。" },
+      { "nodeId": 5, "lines": [5], "keywords": ["-2m+3n", "合并", "最终结果"], "hint": "把刚才求出的AB代进去，合并同类项算出最终结果。" }
+    ],
+    "finalAnswer": "-2m+3n",
+    "knowledgePoints": ["向量比例关系", "向量加法三角形法则", "基底表示"]
+  },
+  {
+    "questionId": "gk-2024-xkb2-3",
+    "standardProcess": "由 $|\\boldsymbol{a}+2\\boldsymbol{b}|=2$ 平方：\\n$|\\boldsymbol{a}|^2+4\\boldsymbol{a}\\cdot\\boldsymbol{b}+4|\\boldsymbol{b}|^2=4$，代入 $|\\boldsymbol{a}|=1$\\n$1+4\\boldsymbol{a}\\cdot\\boldsymbol{b}+4|\\boldsymbol{b}|^2=4$ ①\\n由垂直：$(\\boldsymbol{b}-2\\boldsymbol{a})\\cdot\\boldsymbol{b}=0\\Rightarrow |\\boldsymbol{b}|^2=2\\boldsymbol{a}\\cdot\\boldsymbol{b}$ ②\\n把②代入①：$1+2|\\boldsymbol{b}|^2+4|\\boldsymbol{b}|^2=4$\\n$6|\\boldsymbol{b}|^2=3\\Rightarrow |\\boldsymbol{b}|^2=\\dfrac12$\\n模长为正，$|\\boldsymbol{b}|=\\dfrac{\\sqrt{2}}{2}$",
+    "keyNodes": [
+      { "nodeId": 1, "lines": [0, 1], "keywords": ["平方", "|a+2b|²", "展开", "模长平方"], "hint": "|a+2b|=2两边平方，把模长展开成数量积。", "knowledgeFragment": "模长平方公式：$|\\boldsymbol{a}+2\\boldsymbol{b}|^2=|\\boldsymbol{a}|^2+4\\boldsymbol{a}\\cdot\\boldsymbol{b}+4|\\boldsymbol{b}|^2$，将模长转化为数量积运算。" },
+      { "nodeId": 2, "lines": [2], "keywords": ["代入", "|a|=1", "式子①", "1+4a·b"], "hint": "代入|a|=1，得到关于a·b和|b|²的方程。" },
+      { "nodeId": 3, "lines": [3], "keywords": ["垂直", "(b-2a)·b=0", "|b|²=2a·b", "式子②"], "hint": "另一个条件是(b-2a)⊥b，垂直⇒数量积为零，整理一下。", "knowledgeFragment": "向量垂直条件：$(\\boldsymbol{b}-2\\boldsymbol{a})\\cdot\\boldsymbol{b}=0$展开得$|\\boldsymbol{b}|^2=2\\boldsymbol{a}\\cdot\\boldsymbol{b}$，建立两个未知量的关系。" },
+      { "nodeId": 4, "lines": [4, 5], "keywords": ["消去", "a·b", "6|b|²", "代入①", "代入②"], "hint": "把式子②代入式子①，消去a·b，解出|b|²。", "knowledgeFragment": "代入消元法：将$|\\boldsymbol{b}|^2=2\\boldsymbol{a}\\cdot\\boldsymbol{b}$代入方程①，消去$\\boldsymbol{a}\\cdot\\boldsymbol{b}$，只剩$|\\boldsymbol{b}|^2$。" },
+      { "nodeId": 5, "lines": [6], "keywords": ["√2/2", "|b|=", "答案", "模长为正"], "hint": "|b|²=1/2，开方后注意模长必须取正。" }
+    ],
+    "finalAnswer": "√2/2",
+    "knowledgePoints": ["模长平方公式", "数量积运算律", "向量垂直条件", "代入消元"]
+  },
+  {
+    "questionId": "vec-l5",
+    "standardProcess": "$\\triangle AEF \\backsim \\triangle CBF$，$\\dfrac{AF}{FC}=\\dfrac12$，$AF=\\dfrac13AC$\\n$\\overrightarrow{AC}=\\overrightarrow{AB}+\\overrightarrow{AD}$\\n$\\overrightarrow{AF}=\\dfrac13(\\overrightarrow{AB}+\\overrightarrow{AD})$\\n$\\overrightarrow{DF}=\\overrightarrow{AF}-\\overrightarrow{AD}$\\n$\\;\\;\\;\\;=\\dfrac13\\overrightarrow{AB}-\\dfrac23\\overrightarrow{AD}$",
+    "keyNodes": [
+      { "nodeId": 1, "lines": [0], "keywords": ["平行四边形", "AD∥BC", "对边平行", "性质", "中点", "E是"], "hint": "ABCD是平行四边形，E是AD中点，我们先画个图看看。", "diagram": "/demo-diagrams/vec-l5.svg" },
+      { "nodeId": 2, "lines": [0], "keywords": ["相似", "△AEF∽△CBF", "AF/FC", "1:2", "AF=1/3AC"], "hint": "BE和AC交于F，能找到哪对相似三角形？", "diagram": "/demo-diagrams/vec-l5.svg" },
+      { "nodeId": 3, "lines": [1], "keywords": ["AC=AB+AD", "平行四边形法则"], "hint": "用平行四边形法则把AC用AB和AD表示出来。", "diagram": "/demo-diagrams/vec-l5.svg", "knowledgeFragment": "平行四边形法则：$\\overrightarrow{AC}=\\overrightarrow{AB}+\\overrightarrow{AD}$，对角线等于相邻两边向量之和。" },
+      { "nodeId": 4, "lines": [2], "keywords": ["AF=1/3(AB+AD)", "代入"], "hint": "AF是AC的三分之一，把刚才的AC代进去。" },
+      { "nodeId": 5, "lines": [3], "keywords": ["DF=AF-AD", "向量减法"], "hint": "要求DF，用向量减法把DF用AF和AD表示出来。", "diagram": "/demo-diagrams/vec-l5.svg" },
+      { "nodeId": 6, "lines": [4], "keywords": ["1/3AB-2/3AD", "最终结果", "整理"], "hint": "把AF代入，整理出最终结果。" }
+    ],
+    "finalAnswer": "1/3AB-2/3AD",
+    "knowledgePoints": ["平行四边形性质", "相似三角形判定", "向量减法", "向量数乘"]
+  }
+]
